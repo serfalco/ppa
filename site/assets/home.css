@@ -1,0 +1,311 @@
+/* =================================================================
+   PPA Home Portal — Hoja de estilos
+   Vidriera principal con datos vivos y 3 bloques iguales
+   ================================================================= */
+
+.body-home {
+  background: var(--papel);
+}
+
+/* =================================================================
+   FRANJA SUPERIOR DE DATOS (chica, discreta)
+   ================================================================= */
+.franja-datos {
+  background: var(--tinta);
+  color: var(--papel);
+  padding: 6px 0;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 11px;
+  letter-spacing: 0.05em;
+}
+.franja-flex {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.fecha-mini {
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  font-size: 10px;
+  opacity: 0.8;
+}
+.dato-mini {
+  color: var(--papel);
+  font-weight: 500;
+}
+.dato-mini span {
+  font-weight: 700;
+}
+
+/* =================================================================
+   MASTHEAD GRANDE
+   ================================================================= */
+.cabecera-home {
+  border-bottom: 3px double var(--tinta);
+  padding: 36px 0 24px;
+  text-align: center;
+  position: relative;
+}
+.cabecera-home::before,
+.cabecera-home::after {
+  content: '';
+  position: absolute;
+  left: 0; right: 0;
+  height: 1px;
+  background: var(--tinta);
+}
+.cabecera-home::before { top: 8px; }
+.cabecera-home::after { bottom: 8px; }
+
+.titulo-home {
+  font-family: 'Playfair Display', serif;
+  font-weight: 900;
+  font-size: clamp(72px, 14vw, 140px);
+  letter-spacing: -0.04em;
+  line-height: 0.85;
+  color: var(--tinta);
+}
+.bajada-home {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 12px;
+  letter-spacing: 0.45em;
+  text-transform: uppercase;
+  color: var(--gris);
+  margin-top: 10px;
+}
+
+/* =================================================================
+   NAV PRINCIPAL
+   ================================================================= */
+.nav-principal {
+  border-bottom: 1px solid var(--linea);
+  padding: 14px 0;
+  background: var(--papel-2);
+}
+.nav-principal .contenedor {
+  display: flex;
+  justify-content: center;
+  gap: 36px;
+  flex-wrap: wrap;
+}
+.nav-principal a {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--tinta);
+}
+.nav-principal a.activo {
+  color: var(--rojo);
+}
+
+/* =================================================================
+   GRID DE LOS 3 BLOQUES
+   ================================================================= */
+.home-main {
+  padding: 48px 0;
+}
+.home-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 32px;
+}
+
+@media (max-width: 960px) {
+  .home-grid {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+}
+
+/* =================================================================
+   BLOQUE INDIVIDUAL
+   ================================================================= */
+.bloque-home {
+  padding-top: 8px;
+  border-top: 4px solid var(--tinta);
+  display: flex;
+  flex-direction: column;
+}
+
+.bloque-header {
+  margin-bottom: 24px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--linea);
+}
+
+.bloque-kicker {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--rojo);
+  display: block;
+  margin-bottom: 6px;
+}
+
+/* Acento de color por bloque */
+.bloque-institucional .bloque-kicker { color: var(--rojo); }
+.bloque-columnas .bloque-kicker { color: var(--verde); }
+.bloque-stream .bloque-kicker { color: var(--azul); }
+
+.bloque-header h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 26px;
+  font-weight: 900;
+  font-style: italic;
+  line-height: 1.05;
+  margin-bottom: 8px;
+}
+.bloque-header h2 a {
+  color: var(--tinta);
+}
+.bloque-sub {
+  font-family: 'Source Serif 4', serif;
+  font-style: italic;
+  font-size: 13px;
+  color: var(--gris);
+  line-height: 1.4;
+}
+
+/* Items dentro del bloque */
+.bloque-items {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  flex: 1;
+}
+.bloque-item {
+  padding-bottom: 16px;
+  border-bottom: 1px dotted var(--linea);
+}
+.bloque-item:last-child {
+  border-bottom: none;
+}
+.item-cat {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 9px;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--gris);
+  display: block;
+  margin-bottom: 4px;
+}
+.bloque-item h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 4px;
+}
+.bloque-item h3 a {
+  color: var(--tinta);
+}
+.bloque-item h3 a:hover {
+  color: var(--rojo);
+}
+.item-fuente {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 11px;
+  color: var(--gris);
+  letter-spacing: 0.04em;
+}
+
+/* Destacado del bloque columnas (más grande) */
+.bloque-destacado {
+  padding-bottom: 18px;
+  border-bottom: 1px dotted var(--linea);
+  margin-bottom: 16px;
+}
+.bloque-destacado h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.15;
+  margin-bottom: 8px;
+}
+.bloque-destacado h3 a {
+  color: var(--tinta);
+}
+.bloque-destacado p {
+  font-family: 'Source Serif 4', serif;
+  font-size: 14px;
+  color: var(--gris);
+  line-height: 1.5;
+}
+
+.bloque-otras {
+  list-style: none;
+  padding: 0;
+  flex: 1;
+}
+.bloque-otras li {
+  padding: 10px 0;
+  border-bottom: 1px dotted var(--linea);
+  font-family: 'Source Serif 4', serif;
+  font-size: 14px;
+  line-height: 1.4;
+}
+.bloque-otras li:last-child {
+  border-bottom: none;
+}
+.bloque-otras a {
+  color: var(--tinta);
+}
+
+.bloque-link {
+  display: inline-block;
+  margin-top: 20px;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--rojo);
+  align-self: flex-start;
+}
+.bloque-columnas .bloque-link { color: var(--verde); }
+.bloque-stream .bloque-link { color: var(--azul); }
+
+.bloque-vacio {
+  font-family: 'Source Serif 4', serif;
+  font-style: italic;
+  color: var(--gris);
+  padding: 20px 0;
+  text-align: center;
+}
+
+/* =================================================================
+   PIE - editor responsable discreto
+   ================================================================= */
+.pie-legal {
+  margin-top: 12px;
+  font-size: 10px;
+  color: var(--gris-claro);
+  letter-spacing: 0.08em;
+  opacity: 0.6;
+}
+
+/* =================================================================
+   MOBILE
+   ================================================================= */
+@media (max-width: 640px) {
+  .franja-flex {
+    gap: 12px;
+    font-size: 10px;
+  }
+  .titulo-home {
+    font-size: 64px;
+  }
+  .nav-principal .contenedor {
+    gap: 18px;
+  }
+  .nav-principal a {
+    font-size: 12px;
+  }
+}

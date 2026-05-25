@@ -1,0 +1,346 @@
+/* =================================================================
+   PPA Blog Stream — Hoja de estilos
+   Variante hermana del PPA principal, con identidad propia
+   ================================================================= */
+
+:root {
+  --stream-acento: #1e3a5f;       /* azul en vez de rojo */
+  --stream-acento-claro: #345f8c;
+}
+
+.body-stream {
+  font-family: 'IBM Plex Sans', sans-serif;  /* sans-serif en cuerpo */
+  background: var(--papel);
+}
+
+/* =================================================================
+   HEADER ESPECÍFICO
+   ================================================================= */
+.stream-header {
+  border-bottom: 3px double var(--tinta);
+  padding: 36px 0 24px;
+  text-align: center;
+  position: relative;
+}
+.stream-header::before,
+.stream-header::after {
+  content: '';
+  position: absolute;
+  left: 0; right: 0;
+  height: 1px;
+  background: var(--tinta);
+}
+.stream-header::before { top: 8px; }
+.stream-header::after { bottom: 8px; }
+
+.stream-kicker {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 10px;
+  letter-spacing: 0.4em;
+  text-transform: uppercase;
+  color: var(--stream-acento);
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+.stream-header h1 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 900;
+  font-style: italic;
+  font-size: clamp(40px, 7vw, 72px);
+  letter-spacing: -0.02em;
+  line-height: 1;
+  color: var(--tinta);
+}
+.stream-intro {
+  font-family: 'Source Serif 4', serif;
+  font-style: italic;
+  font-size: 16px;
+  color: var(--gris);
+  max-width: 520px;
+  margin: 14px auto 0;
+  line-height: 1.5;
+}
+
+/* =================================================================
+   NAVEGACIÓN ENTRE SECCIONES
+   ================================================================= */
+.stream-nav {
+  border-bottom: 1px solid var(--linea);
+  padding: 14px 0;
+  background: var(--papel-2);
+}
+.stream-nav .contenedor {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  flex-wrap: wrap;
+}
+.stream-nav .nav-link {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 13px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--tinta);
+  font-weight: 500;
+}
+.stream-nav .nav-link.activo {
+  color: var(--stream-acento);
+  font-weight: 700;
+}
+
+/* =================================================================
+   ÍNDICE DE NOTAS
+   ================================================================= */
+.stream-main {
+  padding: 40px 0;
+}
+
+.stream-item {
+  max-width: 720px;
+  margin: 0 auto 32px;
+  padding-bottom: 32px;
+  border-bottom: 1px solid var(--linea);
+}
+.stream-item:last-child {
+  border-bottom: none;
+}
+
+.stream-meta {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.stream-cat {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--stream-acento);
+  padding: 3px 10px;
+  border: 1px solid var(--stream-acento);
+  border-radius: 2px;
+}
+.stream-fecha {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  color: var(--gris);
+  text-transform: uppercase;
+}
+
+.stream-item h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 10px;
+}
+.stream-item h2 a {
+  color: var(--tinta);
+}
+.stream-item h2 a:hover {
+  color: var(--stream-acento);
+}
+.stream-item p {
+  font-family: 'Source Serif 4', serif;
+  font-size: 16px;
+  line-height: 1.55;
+  color: var(--gris);
+}
+
+.stream-vacio {
+  text-align: center;
+  padding: 80px 20px;
+  color: var(--gris);
+  max-width: 500px;
+  margin: 0 auto;
+}
+.stream-vacio p {
+  font-family: 'Source Serif 4', serif;
+  font-style: italic;
+  font-size: 17px;
+  margin-bottom: 12px;
+}
+.stream-vacio .vacio-sub {
+  font-size: 14px;
+  font-style: normal;
+  color: var(--linea);
+}
+
+/* =================================================================
+   NOTA INDIVIDUAL
+   ================================================================= */
+.stream-nota {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 0 32px;
+}
+
+.stream-nota-volver {
+  display: inline-block;
+  margin: 24px 0;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 12px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--gris);
+}
+.stream-nota-volver:hover {
+  color: var(--stream-acento);
+}
+
+.stream-nota-header {
+  border-bottom: 1px solid var(--linea);
+  padding-bottom: 24px;
+  margin-bottom: 32px;
+}
+
+.stream-nota-icono {
+  width: 36px;
+  height: 36px;
+  margin-bottom: 16px;
+  color: var(--stream-acento);
+}
+
+.stream-nota-header h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(28px, 4.5vw, 40px);
+  font-weight: 700;
+  line-height: 1.15;
+  margin-bottom: 16px;
+  color: var(--tinta);
+}
+.stream-nota-header .bajada {
+  font-family: 'Source Serif 4', serif;
+  font-style: italic;
+  font-size: 18px;
+  color: var(--gris);
+  line-height: 1.5;
+  margin-bottom: 18px;
+}
+.stream-nota-header .meta {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 12px;
+  color: var(--gris);
+  letter-spacing: 0.05em;
+}
+
+.stream-nota-cuerpo {
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+.stream-nota-cuerpo p {
+  font-size: 17px;
+  line-height: 1.7;
+  margin-bottom: 20px;
+  color: var(--tinta);
+}
+.stream-nota-cuerpo h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 24px;
+  font-weight: 700;
+  margin-top: 32px;
+  margin-bottom: 12px;
+  color: var(--tinta);
+}
+.stream-nota-cuerpo h3 {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  margin-top: 28px;
+  margin-bottom: 10px;
+  color: var(--stream-acento);
+}
+.stream-nota-cuerpo blockquote {
+  border-left: 4px solid var(--stream-acento);
+  padding: 4px 0 4px 20px;
+  margin: 24px 0;
+  font-family: 'Source Serif 4', serif;
+  font-style: italic;
+  font-size: 18px;
+  color: var(--gris);
+  line-height: 1.5;
+}
+.stream-nota-cuerpo ul, .stream-nota-cuerpo ol {
+  margin: 16px 0 20px 24px;
+  font-size: 17px;
+  line-height: 1.6;
+}
+.stream-nota-cuerpo li {
+  margin-bottom: 8px;
+}
+.stream-nota-cuerpo a {
+  color: var(--stream-acento);
+  text-decoration: underline;
+  text-decoration-color: var(--linea);
+  text-underline-offset: 3px;
+}
+.stream-nota-cuerpo a:hover {
+  text-decoration-color: var(--stream-acento);
+}
+
+/* Hashtags */
+.stream-hashtags {
+  margin: 32px 0 16px;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 13px;
+  color: var(--stream-acento);
+  letter-spacing: 0.02em;
+}
+.stream-hashtags span {
+  margin-right: 12px;
+}
+
+/* Fuente (link al video original) */
+.stream-fuente {
+  margin: 32px 0;
+  padding: 18px 22px;
+  background: var(--papel-2);
+  border-left: 4px solid var(--stream-acento);
+}
+.stream-fuente .label {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 10px;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--gris);
+  font-weight: 600;
+  margin-bottom: 6px;
+  display: block;
+}
+.stream-fuente a {
+  color: var(--stream-acento);
+  font-weight: 600;
+  font-size: 15px;
+}
+
+/* Compartir en notas individuales */
+.stream-nota .compartir {
+  justify-content: center;
+  margin: 28px 0;
+}
+
+/* =================================================================
+   PIE - aclaración editor responsable
+   ================================================================= */
+.pie-legal {
+  margin-top: 12px;
+  font-size: 10px;
+  color: var(--gris-claro);
+  letter-spacing: 0.08em;
+  opacity: 0.7;
+}
+
+/* =================================================================
+   RESPONSIVE
+   ================================================================= */
+@media (max-width: 640px) {
+  .stream-nota { padding: 0 20px; }
+  .stream-item h2 { font-size: 22px; }
+}

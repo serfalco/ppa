@@ -1,0 +1,532 @@
+/* =================================================================
+   PPA — Pulso Productivo Argentino
+   Hoja de estilos principal
+   Estética: editorial sobria, papel crema + tinta negra + rojo
+   ================================================================= */
+
+:root {
+  --tinta: #1a1a1a;
+  --papel: #f4f0e8;
+  --papel-2: #ebe5d6;
+  --rojo: #9a1b1b;
+  --gris: #5a5750;
+  --gris-claro: #cdc7b8;
+  --azul: #1e3a5f;
+  --verde: #2d5a3d;
+  --linea: #b8b1a0;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html, body {
+  background: var(--papel);
+  color: var(--tinta);
+  font-family: 'Source Serif 4', Georgia, serif;
+  line-height: 1.5;
+}
+
+body {
+  background-image:
+    radial-gradient(circle at 20% 10%, rgba(154, 27, 27, 0.03) 0%, transparent 40%),
+    radial-gradient(circle at 80% 60%, rgba(30, 58, 95, 0.025) 0%, transparent 40%);
+  min-height: 100vh;
+}
+
+a { color: inherit; text-decoration: none; transition: color 0.2s; }
+a:hover { color: var(--rojo); }
+
+.contenedor { max-width: 1280px; margin: 0 auto; padding: 0 32px; }
+
+/* =================================================================
+   BARRA SUPERIOR (fecha + clima)
+   ================================================================= */
+.barra-superior {
+  background: var(--tinta);
+  color: var(--papel);
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 11px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  padding: 6px 0;
+}
+.barra-superior .contenedor {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* =================================================================
+   MARQUESINA FULBITO
+   ================================================================= */
+.marquesina-fulbito {
+  background: var(--papel-2);
+  border-bottom: 1px solid var(--linea);
+  padding: 10px 0;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 12px;
+  overflow: hidden;
+}
+.marquesina-fulbito .contenedor {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.fulbito-label {
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  white-space: nowrap;
+  color: var(--rojo);
+}
+.fulbito-scroll {
+  flex: 1;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.fulbito-partido {
+  display: inline-block;
+  margin-right: 32px;
+  font-weight: 500;
+}
+.fulbito-partido .hora {
+  color: var(--rojo);
+  font-weight: 600;
+  margin-left: 6px;
+}
+
+/* =================================================================
+   CABECERA - Masthead PPA
+   ================================================================= */
+.cabecera {
+  border-bottom: 3px double var(--tinta);
+  padding: 32px 0 20px;
+  text-align: center;
+  position: relative;
+}
+.cabecera::before,
+.cabecera::after {
+  content: '';
+  position: absolute;
+  left: 0; right: 0;
+  height: 1px;
+  background: var(--tinta);
+}
+.cabecera::before { top: 8px; }
+.cabecera::after { bottom: 8px; }
+
+.fecha-edicion {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 10px;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--gris);
+  margin-bottom: 8px;
+}
+.titulo-diario {
+  font-family: 'Playfair Display', serif;
+  font-weight: 900;
+  font-size: clamp(64px, 12vw, 132px);
+  letter-spacing: -0.04em;
+  line-height: 0.9;
+}
+.bajada-diario {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 11px;
+  letter-spacing: 0.4em;
+  text-transform: uppercase;
+  color: var(--gris);
+  margin-top: 8px;
+}
+
+/* =================================================================
+   TICKER (dólar + riesgo país)
+   ================================================================= */
+.ticker {
+  background: var(--tinta);
+  color: var(--papel);
+  padding: 10px 0;
+  border-bottom: 1px solid var(--linea);
+}
+.ticker-flex {
+  display: flex;
+  justify-content: center;
+  gap: 48px;
+  flex-wrap: wrap;
+}
+.ticker-item {
+  display: flex;
+  gap: 8px;
+  align-items: baseline;
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+.ticker-label {
+  font-size: 10px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--gris-claro);
+}
+.ticker-valor {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--papel);
+}
+.ticker-valor.sube { color: #6ada6a; }
+.ticker-valor.baja { color: #ff7a7a; }
+
+/* =================================================================
+   WIDGET MULC (solo aparece 17-20hs)
+   ================================================================= */
+.widget-mulc {
+  background: var(--papel-2);
+  border-bottom: 2px solid var(--tinta);
+  padding: 18px 0;
+}
+.mulc-header {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 11px;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--rojo);
+  font-weight: 600;
+  margin-bottom: 8px;
+  text-align: center;
+}
+.mulc-body {
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+  font-size: 22px;
+  font-weight: 700;
+}
+.mulc-loading { color: var(--gris); font-style: italic; font-size: 14px; font-family: 'Source Serif 4', serif; font-weight: 400; }
+
+/* =================================================================
+   NAVEGACIÓN
+   ================================================================= */
+.nav-secciones {
+  border-bottom: 1px solid var(--linea);
+  padding: 14px 0;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.nav-secciones ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+.nav-secciones a.activo { color: var(--rojo); }
+
+/* =================================================================
+   COLUMNA PROPIA (Sergio Falco)
+   ================================================================= */
+.columna-propia {
+  padding: 30px 0 10px;
+}
+.columna-marco {
+  background: var(--papel-2);
+  border-left: 6px solid var(--rojo);
+  padding: 24px 32px;
+  position: relative;
+}
+.columna-tag {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.3em;
+  color: var(--rojo);
+  margin-bottom: 8px;
+}
+.columna-titulo {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: clamp(24px, 3.5vw, 36px);
+  font-weight: 700;
+  line-height: 1.1;
+  margin-bottom: 10px;
+}
+.columna-bajada {
+  font-size: 16px;
+  color: var(--tinta);
+  margin-bottom: 12px;
+}
+.columna-firma {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 12px;
+  color: var(--gris);
+  letter-spacing: 0.05em;
+}
+.columna-leer {
+  display: inline-block;
+  margin-top: 12px;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--rojo);
+  letter-spacing: 0.05em;
+}
+
+/* =================================================================
+   TAPA - destacados
+   ================================================================= */
+.tapa {
+  padding: 36px 0 28px;
+  border-bottom: 1px solid var(--linea);
+}
+.tapa-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 36px;
+}
+@media (max-width: 960px) {
+  .tapa-grid { grid-template-columns: 1fr; }
+}
+
+.destacado-principal .etiqueta {
+  display: inline-block;
+  background: var(--rojo);
+  color: var(--papel);
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  padding: 4px 10px;
+  margin-bottom: 14px;
+}
+.destacado-principal h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(28px, 3.5vw, 42px);
+  font-weight: 700;
+  line-height: 1.05;
+  margin-bottom: 14px;
+}
+.destacado-principal h2 a { color: var(--tinta); }
+.destacado-bajada {
+  font-size: 16px;
+  line-height: 1.55;
+  margin-bottom: 14px;
+  color: var(--tinta);
+}
+.firma {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 11px;
+  letter-spacing: 0.06em;
+  color: var(--gris);
+  border-top: 1px solid var(--linea);
+  padding-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.firma strong { color: var(--tinta); font-weight: 600; }
+.ver-mas { color: var(--rojo); font-weight: 500; }
+
+.destacados-laterales {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+.destacado-secundario {
+  border-bottom: 1px solid var(--linea);
+  padding-bottom: 18px;
+}
+.destacado-secundario:last-child { border-bottom: none; }
+.etiqueta-sec {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--rojo);
+  display: block;
+  margin-bottom: 8px;
+}
+.destacado-secundario h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.15;
+  margin-bottom: 8px;
+}
+.destacado-secundario h3 a { color: var(--tinta); }
+.destacado-secundario p {
+  font-size: 14px;
+  color: var(--gris);
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+/* =================================================================
+   BOTONES COMPARTIR
+   ================================================================= */
+.compartir {
+  margin-top: 10px;
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+.comp-btn {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 10px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--gris);
+  background: transparent;
+  border: 1px solid var(--linea);
+  padding: 3px 10px;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+.comp-btn:hover {
+  border-color: var(--rojo);
+  color: var(--rojo);
+}
+
+/* =================================================================
+   SECCIONES POR CATEGORÍA
+   ================================================================= */
+.layout-con-sidebar {
+  display: grid;
+  grid-template-columns: 1fr 320px;
+  gap: 48px;
+  padding: 32px 0;
+}
+@media (max-width: 960px) {
+  .layout-con-sidebar { grid-template-columns: 1fr; }
+}
+
+.seccion {
+  padding: 28px 0;
+  border-bottom: 1px solid var(--linea);
+}
+.seccion-titulo {
+  margin-bottom: 22px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid var(--tinta);
+}
+.seccion-titulo h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 30px;
+  font-weight: 900;
+  font-style: italic;
+}
+
+.notas-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+@media (max-width: 960px) {
+  .notas-grid { grid-template-columns: 1fr; }
+}
+
+.nota .fuente {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--azul);
+  margin-bottom: 8px;
+}
+.nota h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 8px;
+}
+.nota h3 a { color: var(--tinta); }
+.nota p {
+  font-size: 14px;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+.nota .meta {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 11px;
+  color: var(--gris);
+  display: flex;
+  justify-content: space-between;
+}
+.nota .meta a { color: var(--rojo); font-weight: 500; }
+
+/* =================================================================
+   SIDEBAR ÚLTIMO MOMENTO
+   ================================================================= */
+.sidebar {
+  border-left: 1px solid var(--linea);
+  padding-left: 24px;
+}
+.sidebar-titulo {
+  font-family: 'Playfair Display', serif;
+  font-size: 24px;
+  font-weight: 900;
+  font-style: italic;
+  border-bottom: 2px solid var(--rojo);
+  padding-bottom: 8px;
+  margin-bottom: 16px;
+}
+.sidebar-item {
+  padding: 12px 0;
+  border-bottom: 1px dotted var(--linea);
+  display: flex;
+  gap: 12px;
+}
+.sidebar-item .hora {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--rojo);
+  white-space: nowrap;
+  padding-top: 2px;
+}
+.sidebar-item .texto {
+  font-size: 13px;
+  line-height: 1.4;
+}
+.sidebar-item .fuente-mini {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 10px;
+  color: var(--gris);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  display: block;
+  margin-top: 4px;
+}
+
+/* =================================================================
+   PIE
+   ================================================================= */
+.pie {
+  background: var(--tinta);
+  color: var(--papel);
+  padding: 28px 0;
+  margin-top: 32px;
+  text-align: center;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 12px;
+}
+.pie strong {
+  font-family: 'Playfair Display', serif;
+  font-size: 22px;
+  font-style: italic;
+  letter-spacing: 0;
+}
+.pie-bajada {
+  display: block;
+  margin-top: 6px;
+  color: var(--gris-claro);
+  letter-spacing: 0.05em;
+}
+.pie-meta {
+  margin-top: 12px;
+  font-size: 11px;
+  color: var(--gris-claro);
+}
+.pie-meta a { color: var(--papel); margin: 0 4px; }
