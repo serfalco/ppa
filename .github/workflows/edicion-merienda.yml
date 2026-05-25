@@ -1,0 +1,90 @@
+name: PPA - Edición diaria Merienda
+
+# ============================================================
+# Cuándo corre:
+# - Todos los días a las 21:00 UTC = 18:00 hora Argentina
+# - También se puede disparar manualmente desde la pestaña Actions
+# ============================================================
+on:
+  schedule:
+    - cron: '0 21 * * *'  # 18hs Argentina (UTC-3)
+  workflow_dispatch:      # disparo manual desde GitHub UI
+
+jobs:
+  generar-edicion:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      # 1. Bajar el código del repo
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      # 2. Configurar Python
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      # 3. Instalar dependencias
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install feedparser requests
+
+      # 4. Procesar cola de cambios del panel admin (si hay)
+      # (se completa cuando armemos el webhook que recibe la cola)
+
+      # 5. Leer todos los RSS y armar notas.json
+      - name: Fetcher - leer fuentes RSS
+        run: python scripts/fetcher.py
+
+      # 6. Algoritmo de destacados y portada.json
+      - name: Selector - elegir destacados
+        run: python scripts/selector.py
+
+      # 7. Generar HTML estático de la sección institucional
+      - name: Generador - sección institucional
+        run: python scripts/generador.py
+
+      # 7b. Generar HTML de cada columna y el índice
+      - name: Generador de columnas
+        run: python scripts/generador_columnas.py
+
+      # 7c. Generar índice del Blog Stream
+      - name: Generador de Blog Stream
+        run: python scripts/generador_stream.py
+
+      # 7d. Generar la home portal (lee todo lo anterior)
+      - name: Generador de home portal
+        run: python scripts/generador_home.py
+
+      # 8. Exportar config de fuentes para el panel admin
+      - name: Exportar config de fuentes
+        run: python scripts/exportar_config.py
+
+      # 9. Subir cambios al repo (notas.json, portada.json, HTML del archivo)
+      - name: Commit cambios
+        run: |
+          git config user.name "PPA Bot"
+          git config user.email "bot@pulsoproductivo.com.ar"
+          git add data/ site/
+          git diff --staged --quiet || git commit -m "Edición Merienda automática $(date -u +%Y-%m-%d)"
+          git push
+
+      # 10. Deploy a Hostinger vía FTP
+      - name: Deploy a Hostinger
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          local-dir: ./site/
+          server-dir: /public_html/
+          # Excluye archivos que no van a hosting
+          exclude: |
+            **/.git*
+            **/.git*/**
+            **/node_modules/**
+            **/__pycache__/**
