@@ -64,14 +64,17 @@ jobs:
       - name: Exportar config de fuentes
         run: python scripts/exportar_config.py
 
-      # 9. Subir cambios al repo (notas.json, portada.json, HTML del archivo)
+# 9. Subir cambios al repo (notas.json, portada.json, HTML del archivo)
       - name: Commit cambios
         run: |
           git config user.name "PPA Bot"
           git config user.email "bot@pulsoproductivo.com.ar"
           git add data/ site/
-          git diff --staged --quiet || git commit -m "Edición Merienda automática $(date -u +%Y-%m-%d)"
-          git push
+          if ! git diff --staged --quiet; then
+            git commit -m "Edición Merienda automática $(date -u +%Y-%m-%d)"
+            git pull --rebase origin main
+            git push
+          fi
 
       # 10. Deploy a Hostinger vía FTP
       - name: Deploy a Hostinger
