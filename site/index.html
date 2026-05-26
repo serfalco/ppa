@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PPA · Pulso Productivo Argentino</title>
+<meta name="description" content="Diario económico institucional argentino: análisis de las consultoras, columnas editoriales y comentarios sobre streaming. Actualización diaria.">
+<meta property="og:title" content="PPA · Pulso Productivo Argentino">
+<meta property="og:description" content="Diario económico institucional argentino.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,900&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/ppa.css">
+<link rel="stylesheet" href="/assets/home.css">
+</head>
+<body class="body-home">
+
+<!-- FRANJA SUPERIOR CHICA con datos vivos -->
+<div class="franja-datos">
+  <div class="contenedor franja-flex">
+    <span class="fecha-mini">Lunes 25 de mayo de 2026</span>
+    <span class="dato-mini" id="clima-widget">—</span>
+    <span class="dato-mini">USD <span id="dolar-oficial">—</span></span>
+    <span class="dato-mini">Riesgo <span id="riesgo-pais">—</span></span>
+  </div>
+</div>
+
+<!-- Marquesina Fulbito y MULC -->
+<div class="marquesina-fulbito" id="fulbito-bar" style="display:none">
+  <div class="contenedor">
+    <span class="fulbito-label">⚽ Fulbito hoy</span>
+    <div class="fulbito-scroll" id="fulbito-partidos"></div>
+  </div>
+</div>
+<section class="widget-mulc" id="widget-mulc" style="display:none">
+  <div class="contenedor">
+    <div class="mulc-header">CIERRE MULC</div>
+    <div class="mulc-body" id="mulc-body"><span class="mulc-loading">Cargando...</span></div>
+  </div>
+</section>
+
+<!-- MASTHEAD -->
+<header class="cabecera-home">
+  <div class="contenedor">
+    <h1 class="titulo-home">PPA</h1>
+    <p class="bajada-home">Pulso · Productivo · Argentino</p>
+  </div>
+</header>
+
+<!-- NAVEGACIÓN PRINCIPAL -->
+<nav class="nav-principal">
+  <div class="contenedor">
+    <a href="/" class="activo">Portada</a>
+    <a href="/institucional/">Institucional</a>
+    <a href="/columnas/">Columnas</a>
+    <a href="/stream/">Stream</a>
+  </div>
+</nav>
+
+<!-- TRES BLOQUES IGUALES -->
+<main class="home-main">
+  <div class="contenedor">
+    <div class="home-grid">
+      
+    <section class="bloque-home bloque-institucional">
+      <header class="bloque-header">
+        <span class="bloque-kicker">Institucional</span>
+        <h2><a href="/institucional/">Análisis del día</a></h2>
+        <p class="bloque-sub">Lo más destacado de las instituciones, consultoras y centros de estudio</p>
+      </header>
+      <div class="bloque-items">
+        
+      <article class="bloque-item">
+        <span class="item-cat">Internacional</span>
+        <h3><a href="https://www.bloomberg.com/news/articles/2026-05-25/japan-slips-to-world-s-no-3-creditor-behind-germany-and-china" target="_blank" rel="noopener">Japan Slips to World’s No. 3 Creditor Behind Germany and China</a></h3>
+        <p class="item-fuente">Bloomberg Economics</p>
+      </article>
+      <article class="bloque-item">
+        <span class="item-cat">Energía</span>
+        <h3><a href="https://econojournal.com.ar/2026/05/licitacion-publica-nacional-e-internacional-plan-exploratorio-neuquen-ronda-1-2026-seleccion-de-empresas-para-la-exploracion-desarrollo-y-eventual-explotacion-de-areas-hidrocarbur-2/" target="_blank" rel="noopener">LICITACIÓN PÚBLICA NACIONAL E INTERNACIONAL PLAN EXPLORATORIO NEUQUÉN – RONDA 1/2026 – SELECCIÓN DE EMPRESAS PARA LA EXPLORACIÓN, DESARROLLO Y EVENTUAL EXPLOTACIÓN DE ÁREAS HIDROCARBURÍFERAS GAS Y PETRÓLEO DEL NEUQUÉN S.A. (GyP)</a></h3>
+        <p class="item-fuente">EconoJournal</p>
+      </article>
+      <article class="bloque-item">
+        <span class="item-cat">Macro</span>
+        <h3><a href="https://www.ambito.com/deportes/pleno-argentino-este-lunes-roland-garros-tres-triunfos-y-mas-presencia-segunda-ronda-n6281385" target="_blank" rel="noopener">Pleno argentino este lunes en Roland Garros: tres triunfos y más presencia en segunda ronda</a></h3>
+        <p class="item-fuente">Ámbito Financiero</p>
+      </article>
+      <article class="bloque-item">
+        <span class="item-cat">Internacional</span>
+        <h3><a href="https://www.bloomberg.com/news/articles/2026-05-25/israel-set-to-cut-rates-as-efforts-to-end-to-iran-war-advance" target="_blank" rel="noopener">Israel Set to Cut Rates as Efforts to End to Iran War Advance</a></h3>
+        <p class="item-fuente">Bloomberg Economics</p>
+      </article>
+      </div>
+      <a href="/institucional/" class="bloque-link">Ver edición completa →</a>
+    </section>
+      
+    <section class="bloque-home bloque-columnas">
+      <header class="bloque-header">
+        <span class="bloque-kicker">Columnas</span>
+        <h2><a href="/columnas/">La mirada del editor</a></h2>
+      </header>
+      <p class="bloque-vacio">Los martes a las 18hs sale una nueva columna.</p>
+    </section>
+      
+    <section class="bloque-home bloque-stream">
+      <header class="bloque-header">
+        <span class="bloque-kicker">Stream</span>
+        <h2><a href="/stream/">Comentarios editoriales</a></h2>
+        <p class="bloque-sub">Opiniones personales sobre participaciones en programas de streaming</p>
+      </header>
+      <div class="bloque-items">
+        
+      <article class="bloque-item">
+        <span class="item-cat">Tecnología</span>
+        <h3><a href="/stream/notas/ejemplo.html">De chatbots a compañeros de trabajo: la revolución de las IA agénticas</a></h3>
+        <p class="item-fuente">Santiago Bilinkis explica en Plan M cómo la nueva generación de IA está cambiando las reglas competitivas para las PyMEs</p>
+      </article>
+      </div>
+      <a href="/stream/" class="bloque-link">Todas las notas →</a>
+    </section>
+    </div>
+  </div>
+</main>
+
+<!-- PIE -->
+<footer class="pie">
+  <div class="contenedor">
+    <strong>PPA · Pulso Productivo Argentino</strong><br>
+    <span class="pie-bajada">Diario económico institucional · pulsoproductivo.com.ar</span>
+    <div class="pie-meta">
+      <a href="/institucional/">Institucional</a> ·
+      <a href="/columnas/">Columnas</a> ·
+      <a href="/stream/">Stream</a> ·
+      <a href="/como-trabajamos.html">Cómo trabajamos</a> ·
+      <a href="/acerca.html">Acerca de</a>
+    </div>
+    <div class="pie-legal">Editor responsable: Sergio Falco</div>
+  </div>
+</footer>
+
+<script src="/assets/ppa.js"></script>
+
+</body>
+</html>
