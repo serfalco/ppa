@@ -84,7 +84,7 @@ jobs:
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
           local-dir: ./site/
-          server-dir: /public_html/
+          server-dir: ./
           # Excluye archivos que no van a hosting
           exclude: |
             **/.git*
