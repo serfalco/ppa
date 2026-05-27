@@ -1,4 +1,4 @@
-name: PPA - Edición diaria Merienda
+name: PPA - Edición Merienda
 
 # ============================================================
 # Cuándo corre:
@@ -9,6 +9,9 @@ on:
   schedule:
     - cron: '0 21 * * *'  # 18hs Argentina (UTC-3)
   workflow_dispatch:      # disparo manual desde GitHub UI
+
+permissions:
+  contents: write
 
 jobs:
   generar-edicion:
@@ -33,38 +36,53 @@ jobs:
           python -m pip install --upgrade pip
           pip install feedparser requests
 
-      # 4. Procesar cola de cambios del panel admin (si hay)
-      # (se completa cuando armemos el webhook que recibe la cola)
-
-      # 5. Leer todos los RSS y armar notas.json
+      # 4. Leer todos los RSS y armar notas.json
       - name: Fetcher - leer fuentes RSS
         run: python scripts/fetcher.py
 
-      # 6. Algoritmo de destacados y portada.json
+      # 5. Algoritmo de destacados y portada.json
       - name: Selector - elegir destacados
         run: python scripts/selector.py
 
-      # 7. Generar HTML estático de la sección institucional
-      - name: Generador - sección institucional
+      # 6. Generar HTML de "Lo que se dice"
+      - name: Generador - Lo que se dice
         run: python scripts/generador.py
 
-      # 7b. Generar HTML de cada columna y el índice
-      - name: Generador de columnas
+      # 7. Generar HTML de Expectativas de mercado
+      - name: Generador - Expectativas de mercado
+        run: python scripts/generador_expectativas.py
+
+      # 8. Generar HTML de Documentos en circulación
+      - name: Generador - Documentos en circulación
+        run: python scripts/generador_documentos.py
+
+      # 9. Generar HTML de Columnas
+      - name: Generador - Columnas
         run: python scripts/generador_columnas.py
 
-      # 7c. Generar índice del Blog Stream
-      - name: Generador de Blog Stream
+      # 10. Generar HTML del Stream
+      - name: Generador - Stream
         run: python scripts/generador_stream.py
 
-      # 7d. Generar la home portal (lee todo lo anterior)
-      - name: Generador de home portal
+      # 11. Generar página Acerca de
+      - name: Generador - Acerca de
+        run: python scripts/generador_acerca.py
+
+      # 12. Generar la HOME PORTAL (lee todo lo anterior)
+      - name: Generador - Home portal
         run: python scripts/generador_home.py
 
-      # 8. Exportar config de fuentes para el panel admin
+      # 13. Exportar config de fuentes para el panel
       - name: Exportar config de fuentes
         run: python scripts/exportar_config.py
 
-# 9. Subir cambios al repo (notas.json, portada.json, HTML del archivo)
+      # 14. Copiar JSONs a site/data/ para que el panel los lea
+      - name: Copiar JSONs al site
+        run: |
+          mkdir -p site/data
+          cp data/*.json site/data/ || true
+
+      # 15. Commit de los archivos generados al repo
       - name: Commit cambios
         run: |
           git config user.name "PPA Bot"
@@ -76,7 +94,7 @@ jobs:
             git push
           fi
 
-      # 10. Deploy a Hostinger vía FTP
+      # 16. Deploy a Hostinger vía FTP
       - name: Deploy a Hostinger
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
@@ -85,7 +103,6 @@ jobs:
           password: ${{ secrets.FTP_PASSWORD }}
           local-dir: ./site/
           server-dir: ./
-          # Excluye archivos que no van a hosting
           exclude: |
             **/.git*
             **/.git*/**
