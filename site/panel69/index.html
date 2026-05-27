@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Panel · PPA</title>
+<meta name="robots" content="noindex, nofollow">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --tinta: #1a1a1a;
+    --papel: #f4f0e8;
+    --papel-2: #ebe5d6;
+    --rojo: #9a1b1b;
+    --gris: #5a5750;
+    --linea: #b8b1a0;
+    --verde: #2d5a3d;
+    --naranja: #c87c1c;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    background: var(--papel);
+    color: var(--tinta);
+    font-family: 'IBM Plex Sans', sans-serif;
+    line-height: 1.5;
+    padding: 24px;
+  }
+  .header {
+    border-bottom: 3px double var(--tinta);
+    padding-bottom: 16px;
+    margin-bottom: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+  .header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 32px;
+    font-weight: 900;
+  }
+  .header .sub {
+    font-size: 12px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--gris);
+  }
+  .tabs {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 24px;
+    border-bottom: 1px solid var(--linea);
+  }
+  .tab {
+    padding: 10px 18px;
+    cursor: pointer;
+    font-weight: 500;
+    border: 1px solid transparent;
+    border-bottom: none;
+    background: transparent;
+    color: var(--tinta);
+    font-family: inherit;
+    font-size: 14px;
+  }
+  .tab.activa {
+    background: var(--papel-2);
+    border-color: var(--linea);
+    color: var(--rojo);
+    font-weight: 600;
+  }
+  .panel { display: none; }
+  .panel.activo { display: block; }
+
+  /* ============ LOGIN ============ */
+  .login-box {
+    max-width: 400px;
+    margin: 80px auto;
+    background: var(--papel-2);
+    padding: 32px;
+    border: 1px solid var(--linea);
+  }
+  .login-box h2 {
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 16px;
+  }
+  .login-box input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--linea);
+    margin-bottom: 12px;
+    font-size: 14px;
+    font-family: inherit;
+  }
+  .login-box button {
+    width: 100%;
+    padding: 12px;
+    background: var(--tinta);
+    color: var(--papel);
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    font-family: inherit;
+    font-size: 13px;
+  }
+  .error { color: var(--rojo); font-size: 13px; margin-top: 8px; }
+
+  /* ============ TABLA DE FUENTES ============ */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+  }
+  thead { background: var(--tinta); color: var(--papel); }
+  th, td { padding: 8px 10px; text-align: left; border-bottom: 1px solid var(--linea); }
+  th { font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; }
+  tr:hover { background: var(--papel-2); }
+  td.estado-ok { color: var(--verde); font-weight: 600; }
+  td.estado-atencion { color: var(--naranja); font-weight: 600; }
+  td.estado-sin { color: var(--rojo); font-weight: 600; }
+  td.estado-error { color: var(--tinta); font-weight: 600; background: #ffeaea; }
+  td.estado-suspendida { color: var(--gris); font-style: italic; }
+  .acciones button {
+    font-size: 11px;
+    padding: 4px 8px;
+    background: transparent;
+    border: 1px solid var(--linea);
+    cursor: pointer;
+    margin-right: 4px;
+    font-family: inherit;
+  }
+  .acciones button:hover { border-color: var(--rojo); color: var(--rojo); }
+  .acciones button.peligro:hover { color: #c00; border-color: #c00; }
+
+  /* ============ FORMULARIOS ============ */
+  .form-row {
+    display: grid;
+    grid-template-columns: 180px 1fr;
+    gap: 12px;
+    margin-bottom: 10px;
+    align-items: center;
+  }
+  .form-row label {
+    font-weight: 500;
+    font-size: 13px;
+  }
+  .form-row input, .form-row select, .form-row textarea {
+    padding: 8px;
+    border: 1px solid var(--linea);
+    background: white;
+    font-size: 13px;
+    font-family: inherit;
+    width: 100%;
+  }
+  .form-row textarea { min-height: 100px; resize: vertical; }
+  .btn-primario {
+    background: var(--rojo);
+    color: var(--papel);
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    font-family: inherit;
+    font-size: 13px;
+    margin-top: 12px;
+  }
+  .btn-secundario {
+    background: transparent;
+    color: var(--tinta);
+    border: 1px solid var(--linea);
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-left: 8px;
+    font-family: inherit;
+    font-size: 13px;
+  }
+
+  /* ============ NOTAS ============ */
+  .nota-card {
+    background: white;
+    border: 1px solid var(--linea);
+    padding: 12px 16px;
+    margin-bottom: 10px;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 12px;
+    align-items: center;
+  }
+  .nota-card h4 {
+    font-family: 'Playfair Display', serif;
+    font-size: 17px;
+    margin-bottom: 4px;
+  }
+  .nota-card .meta {
+    font-size: 11px;
+    color: var(--gris);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+  .badge {
+    display: inline-block;
+    padding: 2px 8px;
+    background: var(--papel-2);
+    border-radius: 2px;
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-right: 4px;
+  }
+  .badge-tier-1 { background: var(--rojo); color: var(--papel); }
+  .badge-tier-2 { background: var(--gris); color: var(--papel); }
+  .badge-tier-3 { background: var(--papel-2); color: var(--gris); }
+
+  .filtros {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 16px;
+    flex-wrap: wrap;
+  }
+  .filtros input, .filtros select {
+    padding: 6px 10px;
+    border: 1px solid var(--linea);
+    font-size: 13px;
+    font-family: inherit;
+  }
+
+  /* ============ EDITOR DE COLUMNAS ============ */
+  .editor-columna {
+    background: white;
+    border: 1px solid var(--linea);
+    padding: 24px;
+  }
+  .stats-bar {
+    display: flex;
+    gap: 24px;
+    background: var(--papel-2);
+    padding: 14px 18px;
+    margin-bottom: 18px;
+    font-size: 13px;
+  }
+  .stats-bar strong { font-size: 18px; display: block; }
+  .stats-bar .stat-label {
+    font-size: 10px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--gris);
+  }
+</style>
+</head>
+<body>
+
+<!-- ============ LOGIN ============ -->
+<div id="login-screen" class="login-box">
+  <h2>Panel PPA</h2>
+  <p style="font-size: 13px; color: var(--gris); margin-bottom: 18px;">Acceso restringido. Ingrese clave.</p>
+  <input type="password" id="clave-input" placeholder="Clave de acceso" autocomplete="off">
+  <button onclick="login()">Entrar</button>
+  <div class="error" id="login-error"></div>
+</div>
+
+<!-- ============ APP ============ -->
+<div id="app" style="display:none">
+
+  <div class="header">
+    <h1>PPA · Panel de Control</h1>
+    <span class="sub">Pulso Productivo Argentino</span>
+  </div>
+
+  <div class="stats-bar" id="stats-bar">
+    <div><strong id="stat-notas">—</strong><span class="stat-label">notas activas</span></div>
+    <div><strong id="stat-fuentes-ok">—</strong><span class="stat-label">fuentes OK</span></div>
+    <div><strong id="stat-fuentes-mal">—</strong><span class="stat-label">fuentes con problemas</span></div>
+    <div><strong id="stat-ultima">—</strong><span class="stat-label">última actualización</span></div>
+    <div style="margin-left:auto">
+      <button class="btn-primario" onclick="dispararEdicionExtra()">⚡ Disparar Edición Extra</button>
+    </div>
+  </div>
+
+  <div class="tabs">
+    <button class="tab activa" onclick="cambiarTab('fuentes')">Fuentes</button>
+    <button class="tab" onclick="cambiarTab('notas')">Notas del día</button>
+    <button class="tab" onclick="cambiarTab('columna')">Mi columna</button>
+    <button class="tab" onclick="cambiarTab('nueva-fuente')">+ Agregar fuente</button>
+  </div>
+
+  <!-- ============ TAB: FUENTES ============ -->
+  <div class="panel activo" id="panel-fuentes">
+    <div class="filtros">
+      <input type="text" id="filtro-fuente" placeholder="Buscar fuente..." onkeyup="filtrarFuentes()">
+      <select id="filtro-categoria" onchange="filtrarFuentes()">
+        <option value="">Todas las categorías</option>
+      </select>
+      <select id="filtro-estado" onchange="filtrarFuentes()">
+        <option value="">Todos los estados</option>
+        <option value="ok">OK</option>
+        <option value="atencion">Atención</option>
+        <option value="sin">Sin actividad</option>
+        <option value="error">Error</option>
+        <option value="suspendida">Suspendidas</option>
+      </select>
+    </div>
+
+    <table id="tabla-fuentes">
+      <thead>
+        <tr>
+          <th>Fuente</th>
+          <th>Categoría</th>
+          <th>Tier</th>
+          <th>Última nota</th>
+          <th>Estado</th>
+          <th>Acciones</th>
+        </tr>
+      </thead>
+      <tbody id="tbody-fuentes"></tbody>
+    </table>
+  </div>
+
+  <!-- ============ TAB: NOTAS DEL DÍA ============ -->
+  <div class="panel" id="panel-notas">
+    <div class="filtros">
+      <input type="text" id="filtro-nota" placeholder="Buscar en notas..." onkeyup="filtrarNotas()">
+      <select id="filtro-cat-nota" onchange="filtrarNotas()">
+        <option value="">Todas las categorías</option>
+      </select>
+    </div>
+    <div id="lista-notas"></div>
+  </div>
+
+  <!-- ============ TAB: COLUMNA ============ -->
+  <div class="panel" id="panel-columna">
+    <div class="editor-columna">
+      <h2 style="font-family:'Playfair Display',serif; margin-bottom:16px">Nueva columna</h2>
+      <p style="color:var(--gris); font-size:13px; margin-bottom:20px">Se publica los martes a las 18hs como destacado de la semana.</p>
+      <div class="form-row">
+        <label>Título</label>
+        <input type="text" id="col-titulo" placeholder="Ej: Por qué el peso volvió a apretar">
+      </div>
+      <div class="form-row">
+        <label>Bajada (1-2 líneas)</label>
+        <textarea id="col-bajada" placeholder="Resumen breve que aparece en la tapa"></textarea>
+      </div>
+      <div class="form-row">
+        <label>Cuerpo de la columna</label>
+        <textarea id="col-cuerpo" placeholder="Texto completo. Aprox 600-800 palabras." style="min-height:300px"></textarea>
+      </div>
+      <div style="display:flex; gap:8px; margin-top:16px">
+        <button class="btn-primario" onclick="guardarColumna()">Publicar columna</button>
+        <button class="btn-secundario" onclick="guardarBorrador()">Guardar borrador</button>
+        <button class="btn-secundario" onclick="pedirRevision()">Pedir a Claude que la revise</button>
+      </div>
+      <div id="col-resultado" style="margin-top:16px; font-size:13px"></div>
+    </div>
+  </div>
+
+  <!-- ============ TAB: NUEVA FUENTE ============ -->
+  <div class="panel" id="panel-nueva-fuente">
+    <h2 style="font-family:'Playfair Display',serif; margin-bottom:16px">Agregar nueva fuente</h2>
+    <div class="form-row">
+      <label>Nombre visible</label>
+      <input type="text" id="nf-nombre" placeholder="Ej: Nueva Consultora">
+    </div>
+    <div class="form-row">
+      <label>URL del RSS</label>
+      <input type="text" id="nf-rss" placeholder="https://...">
+    </div>
+    <div class="form-row">
+      <label>URL del sitio web</label>
+      <input type="text" id="nf-web" placeholder="https://...">
+    </div>
+    <div class="form-row">
+      <label>Categoría</label>
+      <select id="nf-categoria"></select>
+    </div>
+    <div class="form-row">
+      <label>Tier (prioridad)</label>
+      <select id="nf-tier">
+        <option value="1">Tier 1 — alta</option>
+        <option value="2" selected>Tier 2 — media</option>
+        <option value="3">Tier 3 — baja</option>
+      </select>
+    </div>
+    <div class="form-row">
+      <label>Descripción</label>
+      <textarea id="nf-desc" placeholder="Qué publica, área de especialización, etc."></textarea>
+    </div>
+    <button class="btn-primario" onclick="agregarFuente()">Agregar fuente</button>
+    <div id="nf-resultado" style="margin-top:12px; font-size:13px"></div>
+  </div>
+</div>
+
+<script>
+  // ============================================================
+  // ACLARACIÓN IMPORTANTE
+  // ============================================================
+  // Este panel es la INTERFAZ. Las acciones que modifican datos
+  // (agregar fuente, borrar nota, publicar columna, etc.) requieren
+  // un endpoint backend que ESCRIBA archivos JSON.
+  //
+  // En este momento el panel funciona en MODO LECTURA + COLA DE CAMBIOS:
+  // las acciones se guardan en localStorage y vos las aplicás a mano,
+  // o cuando armemos el deploy con GitHub Actions, un endpoint las procesa.
+  //
+  // Para el lanzamiento inicial: el panel muestra TODO bien, las acciones
+  // de borrar se guardan en localStorage y se inyectan al borrados.json
+  // cuando se hace push al repo.
+  // ============================================================
+
+  const CLAVE_HARDCODED = 'cambiar-en-produccion';
+  let FUENTES_DATA = [];
+  let NOTAS_DATA = [];
+  let CATEGORIAS = [];
+
+  function login() {
+    const c = document.getElementById('clave-input').value;
+    if (c === CLAVE_HARDCODED) {
+      sessionStorage.setItem('ppa_auth', '1');
+      document.getElementById('login-screen').style.display = 'none';
+      document.getElementById('app').style.display = 'block';
+      cargarTodo();
+    } else {
+      document.getElementById('login-error').textContent = 'Clave incorrecta';
+    }
+  }
+
+  if (sessionStorage.getItem('ppa_auth') === '1') {
+    document.getElementById('login-screen').style.display = 'none';
+    document.getElementById('app').style.display = 'block';
+    cargarTodo();
+  }
+
+  async function cargarTodo() {
+    try {
+      // Cargar fuentes
+      const fr = await fetch('/data/fuentes_runtime.json?t=' + Date.now());
+      const fdata = await fr.json();
+
+      // Cargar config de fuentes desde JSON estático que genera el script de Python
+      const fc = await fetch('/data/fuentes_config.json?t=' + Date.now());
+      const fconfig = await fc.json();
+      CATEGORIAS = fconfig.categorias || [];
+      FUENTES_DATA = (fconfig.fuentes || []).map(f => ({
+        ...f,
+        runtime: (fdata.fuentes || {})[f.id] || {}
+      }));
+
+      // Cargar notas
+      const nr = await fetch('/data/notas.json?t=' + Date.now());
+      const ndata = await nr.json();
+      NOTAS_DATA = ndata.notas || [];
+
+      renderStats(ndata.generado_en);
+      renderFuentes();
+      renderNotas();
+      poblarSelects();
+    } catch (e) {
+      console.error('Error cargando datos:', e);
+      document.getElementById('app').innerHTML = '<p style="padding:24px">Error cargando datos. ¿El sistema corrió alguna vez? Probá ejecutar los scripts primero.</p>';
+    }
+  }
+
+  function renderStats(generadoEn) {
+    document.getElementById('stat-notas').textContent = NOTAS_DATA.length;
+    const ok = FUENTES_DATA.filter(f => f.runtime.estado === 'ok').length;
+    const mal = FUENTES_DATA.filter(f => ['error', 'sin_datos'].includes(f.runtime.estado)).length;
+    document.getElementById('stat-fuentes-ok').textContent = ok;
+    document.getElementById('stat-fuentes-mal').textContent = mal;
+    if (generadoEn) {
+      const d = new Date(generadoEn);
+      document.getElementById('stat-ultima').textContent = d.toLocaleString('es-AR', { hour: '2-digit', minute: '2-digit' });
+    }
+  }
+
+  function poblarSelects() {
+    const sels = ['filtro-categoria', 'filtro-cat-nota', 'nf-categoria'];
+    sels.forEach(id => {
+      const s = document.getElementById(id);
+      if (!s) return;
+      // limpiar manteniendo primer option
+      while (s.options.length > 1) s.remove(1);
+      CATEGORIAS.forEach(c => {
+        const o = document.createElement('option');
+        o.value = c; o.textContent = c;
+        s.appendChild(o);
+      });
+    });
+  }
+
+  function clasificarEstado(runtime) {
+    if (!runtime || !runtime.estado) return { clase: 'estado-error', texto: 'Sin datos' };
+    if (runtime.estado === 'suspendida') return { clase: 'estado-suspendida', texto: 'Suspendida' };
+    if (runtime.estado === 'error') return { clase: 'estado-error', texto: 'Error: ' + (runtime.error || '?') };
+    // Calcular días desde última publicación
+    if (runtime.ultima_publicacion) {
+      const d = new Date(runtime.ultima_publicacion);
+      const dias = Math.floor((Date.now() - d.getTime()) / (1000 * 60 * 60 * 24));
+      if (dias <= 5) return { clase: 'estado-ok', texto: '✓ OK' };
+      if (dias <= 15) return { clase: 'estado-atencion', texto: '⚠ ' + dias + ' días' };
+      return { clase: 'estado-sin', texto: '✗ ' + dias + ' días' };
+    }
+    return { clase: 'estado-atencion', texto: '?' };
+  }
+
+  function renderFuentes() {
+    const tb = document.getElementById('tbody-fuentes');
+    tb.innerHTML = '';
+    FUENTES_DATA.forEach(f => {
+      const tr = document.createElement('tr');
+      tr.dataset.cat = f.categoria;
+      tr.dataset.estado = clasificarEstado(f.runtime).clase.replace('estado-', '');
+      tr.dataset.nombre = (f.nombre || '').toLowerCase();
+
+      const est = clasificarEstado(f.runtime);
+      const ult = f.runtime.ultima_publicacion
+        ? new Date(f.runtime.ultima_publicacion).toLocaleDateString('es-AR')
+        : '—';
+
+      tr.innerHTML = `
+        <td>
+          <strong>${escapar(f.nombre)}</strong><br>
+          <span style="font-size:11px;color:var(--gris)">${escapar(f.descripcion || '')}</span>
+        </td>
+        <td>${escapar(f.categoria)}</td>
+        <td><span class="badge badge-tier-${f.tier}">T${f.tier}</span></td>
+        <td>${ult}</td>
+        <td class="${est.clase}">${est.texto}</td>
+        <td class="acciones">
+          <button onclick="editarFuente('${f.id}')">Editar</button>
+          <button onclick="toggleFuente('${f.id}')">${f.activa === false ? '▶ Activar' : '⏸ Suspender'}</button>
+          <button class="peligro" onclick="eliminarFuente('${f.id}')">Eliminar</button>
+        </td>
+      `;
+      tb.appendChild(tr);
+    });
+  }
+
+  function renderNotas() {
+    const cont = document.getElementById('lista-notas');
+    cont.innerHTML = '';
+    NOTAS_DATA.forEach(n => {
+      const div = document.createElement('div');
+      div.className = 'nota-card';
+      div.dataset.cat = n.categoria;
+      div.dataset.titulo = (n.titulo || '').toLowerCase();
+      div.innerHTML = `
+        <div>
+          <h4><a href="${escapar(n.link)}" target="_blank">${escapar(n.titulo)}</a></h4>
+          <p style="font-size:13px;color:var(--gris);margin-bottom:6px">${escapar(n.bajada || '')}</p>
+          <div class="meta">
+            <span class="badge badge-tier-${n.tier}">T${n.tier}</span>
+            ${escapar(n.fuente_nombre)} · ${escapar(n.categoria)} · ${new Date(n.fecha_publicacion).toLocaleTimeString('es-AR', {hour:'2-digit',minute:'2-digit'})}
+          </div>
+        </div>
+        <div>
+          <button class="peligro" onclick="borrarNota('${n.id}')" style="background:transparent;border:1px solid var(--linea);padding:6px 12px;cursor:pointer;font-family:inherit">🗑 Borrar</button>
+        </div>
+      `;
+      cont.appendChild(div);
+    });
+  }
+
+  function filtrarFuentes() {
+    const txt = document.getElementById('filtro-fuente').value.toLowerCase();
+    const cat = document.getElementById('filtro-categoria').value;
+    const est = document.getElementById('filtro-estado').value;
+    document.querySelectorAll('#tbody-fuentes tr').forEach(tr => {
+      const visible =
+        (!txt || tr.dataset.nombre.includes(txt)) &&
+        (!cat || tr.dataset.cat === cat) &&
+        (!est || tr.dataset.estado === est);
+      tr.style.display = visible ? '' : 'none';
+    });
+  }
+
+  function filtrarNotas() {
+    const txt = document.getElementById('filtro-nota').value.toLowerCase();
+    const cat = document.getElementById('filtro-cat-nota').value;
+    document.querySelectorAll('#lista-notas .nota-card').forEach(c => {
+      const v = (!txt || c.dataset.titulo.includes(txt)) && (!cat || c.dataset.cat === cat);
+      c.style.display = v ? '' : 'none';
+    });
+  }
+
+  function cambiarTab(nombre) {
+    document.querySelectorAll('.tab').forEach(t => t.classList.remove('activa'));
+    document.querySelectorAll('.panel').forEach(p => p.classList.remove('activo'));
+    event.target.classList.add('activa');
+    document.getElementById('panel-' + nombre).classList.add('activo');
+  }
+
+  function escapar(s) {
+    if (!s) return '';
+    return String(s)
+      .replace(/&/g, '&amp;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;')
+      .replace(/"/g, '&quot;');
+  }
+
+  // ============================================================
+  // ACCIONES (guardan en localStorage como cola pendiente)
+  // ============================================================
+  function getCola() {
+    return JSON.parse(localStorage.getItem('ppa_cola') || '[]');
+  }
+  function pushCola(accion) {
+    const cola = getCola();
+    cola.push({ ...accion, ts: Date.now() });
+    localStorage.setItem('ppa_cola', JSON.stringify(cola));
+    alert('Cambio guardado en cola. Se aplicará en la próxima generación.\nCambios pendientes: ' + cola.length);
+  }
+
+  function borrarNota(id) {
+    if (!confirm('¿Marcar esta nota como basura? (No se podrá recuperar en esta edición)')) return;
+    pushCola({ tipo: 'borrar_nota', id });
+    document.querySelectorAll('#lista-notas .nota-card').forEach(c => {
+      if (c.querySelector('[onclick*="' + id + '"]')) c.style.opacity = '0.3';
+    });
+  }
+
+  function toggleFuente(id) {
+    const f = FUENTES_DATA.find(x => x.id === id);
+    if (!f) return;
+    const accion = f.activa === false ? 'reactivar_fuente' : 'suspender_fuente';
+    pushCola({ tipo: accion, id });
+  }
+
+  function eliminarFuente(id) {
+    if (!confirm('¿Eliminar fuente definitivamente? Se puede volver a agregar después.')) return;
+    pushCola({ tipo: 'eliminar_fuente', id });
+  }
+
+  function editarFuente(id) {
+    const f = FUENTES_DATA.find(x => x.id === id);
+    if (!f) return;
+    const nuevaUrl = prompt('Nueva URL del RSS (Enter para no cambiar):', f.rss);
+    if (nuevaUrl !== null && nuevaUrl !== f.rss) {
+      pushCola({ tipo: 'editar_fuente', id, campo: 'rss', valor: nuevaUrl });
+    }
+  }
+
+  function agregarFuente() {
+    const nueva = {
+      id: document.getElementById('nf-nombre').value.toLowerCase().replace(/[^a-z0-9]/g, ''),
+      nombre: document.getElementById('nf-nombre').value,
+      rss: document.getElementById('nf-rss').value,
+      web: document.getElementById('nf-web').value,
+      categoria: document.getElementById('nf-categoria').value,
+      tier: parseInt(document.getElementById('nf-tier').value),
+      descripcion: document.getElementById('nf-desc').value,
+      activa: true,
+    };
+    if (!nueva.nombre || !nueva.rss || !nueva.categoria) {
+      document.getElementById('nf-resultado').innerHTML = '<span style="color:var(--rojo)">Faltan datos obligatorios</span>';
+      return;
+    }
+    pushCola({ tipo: 'agregar_fuente', fuente: nueva });
+    document.getElementById('nf-resultado').innerHTML = '<span style="color:var(--verde)">✓ Fuente agregada a la cola</span>';
+  }
+
+  function dispararEdicionExtra() {
+    if (!confirm('¿Disparar Edición Extra ahora?')) return;
+    pushCola({ tipo: 'edicion_extra' });
+  }
+
+  function guardarColumna() {
+    const c = {
+      titulo: document.getElementById('col-titulo').value,
+      bajada: document.getElementById('col-bajada').value,
+      cuerpo: document.getElementById('col-cuerpo').value,
+      autor: 'Sergio Falco',
+      fecha_publicacion: new Date().toISOString(),
+    };
+    if (!c.titulo || !c.cuerpo) {
+      document.getElementById('col-resultado').innerHTML = '<span style="color:var(--rojo)">Faltan título o cuerpo</span>';
+      return;
+    }
+    pushCola({ tipo: 'publicar_columna', columna: c });
+    document.getElementById('col-resultado').innerHTML = '<span style="color:var(--verde)">✓ Columna lista para publicar</span>';
+  }
+
+  function guardarBorrador() {
+    const c = {
+      titulo: document.getElementById('col-titulo').value,
+      bajada: document.getElementById('col-bajada').value,
+      cuerpo: document.getElementById('col-cuerpo').value,
+    };
+    localStorage.setItem('ppa_borrador', JSON.stringify(c));
+    document.getElementById('col-resultado').innerHTML = '<span style="color:var(--verde)">✓ Borrador guardado localmente</span>';
+  }
+
+  function pedirRevision() {
+    const cuerpo = document.getElementById('col-cuerpo').value;
+    if (!cuerpo) {
+      document.getElementById('col-resultado').innerHTML = '<span style="color:var(--rojo)">Escribí algo primero</span>';
+      return;
+    }
+    // Copia al portapapeles para pegar en Claude
+    navigator.clipboard.writeText(cuerpo);
+    document.getElementById('col-resultado').innerHTML = '<span style="color:var(--verde)">✓ Cuerpo copiado al portapapeles. Pegalo en Claude para pedir revisión.</span>';
+  }
+
+  // Recuperar borrador si existe
+  window.addEventListener('load', () => {
+    const b = localStorage.getItem('ppa_borrador');
+    if (b) {
+      try {
+        const d = JSON.parse(b);
+        if (d.titulo) document.getElementById('col-titulo').value = d.titulo;
+        if (d.bajada) document.getElementById('col-bajada').value = d.bajada;
+        if (d.cuerpo) document.getElementById('col-cuerpo').value = d.cuerpo;
+      } catch {}
+    }
+  });
+</script>
+
+</body>
+</html>

@@ -9,13 +9,17 @@
   // ---------------------------------------------------------------
   // CONFIG
   // ---------------------------------------------------------------
-  const API_DOLAR = 'https://dolarapi.com/v1/dolares/oficial';
+  const API_DOLAR_OFICIAL = 'https://dolarapi.com/v1/dolares/oficial';
+  const API_DOLAR_MEP = 'https://dolarapi.com/v1/dolares/bolsa';
+  const API_DOLAR_CCL = 'https://dolarapi.com/v1/dolares/contadoconliqui';
   const API_RIESGO = 'https://api.argentinadatos.com/v1/finanzas/indices/riesgo-pais/ultimo';
   const API_CLIMA = 'https://api.open-meteo.com/v1/forecast?latitude=-34.6&longitude=-58.4&current=temperature_2m,weather_code&timezone=America/Argentina/Buenos_Aires';
+  const API_MERVAL = 'https://api.argentinadatos.com/v1/finanzas/indices/merval/ultimo';
 
   const REFRESH_DOLAR_MIN = 15;
   const REFRESH_CLIMA_MIN = 30;
   const REFRESH_FULBITO_MIN = 60;
+  const REFRESH_MERCADO_MIN = 15;
 
   // Códigos del clima de Open-Meteo → emoji
   const CLIMA_EMOJI = {
@@ -74,14 +78,28 @@
   }
 
   // ---------------------------------------------------------------
-  // TICKER: DÓLAR + RIESGO PAÍS
+  // TICKER: DÓLAR OFICIAL + DÓLAR MEP + MERVAL + RIESGO PAÍS
   // ---------------------------------------------------------------
   async function actualizarTicker() {
     // Dólar oficial
-    const dol = await fetchJSON(API_DOLAR);
+    const dol = await fetchJSON(API_DOLAR_OFICIAL);
     const elDol = document.getElementById('dolar-oficial');
     if (elDol && dol && dol.venta) {
       elDol.textContent = fmtPesos(dol.venta);
+    }
+
+    // Dólar MEP
+    const mep = await fetchJSON(API_DOLAR_MEP);
+    const elMep = document.getElementById('dolar-mep');
+    if (elMep && mep && mep.venta) {
+      elMep.textContent = fmtPesos(mep.venta);
+    }
+
+    // Merval
+    const merval = await fetchJSON(API_MERVAL);
+    const elMerval = document.getElementById('merval');
+    if (elMerval && merval && merval.valor !== undefined) {
+      elMerval.textContent = fmtNumero(merval.valor);
     }
 
     // Riesgo país
@@ -93,41 +111,64 @@
   }
 
   // ---------------------------------------------------------------
-  // WIDGET MULC (solo lun-vie, 17-20hs hora Argentina)
+  // WIDGET CIERRE DE MERCADO (lunes a viernes, 17 a 19hs)
   // ---------------------------------------------------------------
-  function dentroHorarioMulc() {
+  function dentroHorarioCierre() {
     const ahora = new Date();
-    // hora local del navegador puede no ser Argentina, lo arreglamos con offset
-    // pero asumimos que la mayoría de usuarios argentinos están en zona horaria correcta
-    const dia = ahora.getDay();        // 0 = domingo
-    const hora = ahora.getHours();
+    // Convertir a hora Argentina (UTC-3)
+    const offsetArg = -3 * 60;
+    const offsetLocal = ahora.getTimezoneOffset();
+    const minDif = offsetArg - offsetLocal * -1;
+    const ahoraArg = new Date(ahora.getTime() + minDif * 60000);
 
-    if (dia === 0 || dia === 6) return false; // fin de semana
-    if (hora >= 17 && hora < 20) return true;
+    const dia = ahoraArg.getDay();   // 0=domingo, 6=sábado
+    const hora = ahoraArg.getHours();
+
+    if (dia === 0 || dia === 6) return false;
+    if (hora >= 17 && hora < 19) return true;
     return false;
   }
 
-  async function actualizarMulc() {
-    const widget = document.getElementById('widget-mulc');
+  async function actualizarCierreMercado() {
+    const widget = document.getElementById('widget-cierre');
     if (!widget) return;
 
-    if (!dentroHorarioMulc()) {
+    if (!dentroHorarioCierre()) {
       widget.style.display = 'none';
       return;
     }
 
-    // El dato del MULC viene del backend (lo carga el fetcher cuando lee Ámbito/Cronista)
-    // Por ahora mostramos placeholder. Se puede conectar a un endpoint propio cuando el sitio esté en hosting.
-    const body = document.getElementById('mulc-body');
+    // Tomamos los datos que ya tenemos en las APIs durante el horario de cierre
+    const [mep, ccl, merval] = await Promise.all([
+      fetchJSON(API_DOLAR_MEP),
+      fetchJSON(API_DOLAR_CCL),
+      fetchJSON(API_MERVAL),
+    ]);
+
+    const partes = [];
+    if (merval && merval.valor !== undefined) {
+      const variacion = merval.variacion !== undefined ? merval.variacion : null;
+      const signo = variacion !== null ? (variacion >= 0 ? '+' : '') : '';
+      const claseColor = variacion !== null ? (variacion >= 0 ? 'sube' : 'baja') : '';
+      const txtVar = variacion !== null ? ` <span class="${claseColor}">${signo}${variacion.toFixed(2)}%</span>` : '';
+      partes.push(`<div class="cierre-item"><span class="cierre-label">Merval</span> <strong>${fmtNumero(merval.valor)}</strong>${txtVar}</div>`);
+    }
+    if (mep && mep.venta) {
+      partes.push(`<div class="cierre-item"><span class="cierre-label">Dólar MEP</span> <strong>${fmtPesos(mep.venta)}</strong></div>`);
+    }
+    if (ccl && ccl.venta) {
+      partes.push(`<div class="cierre-item"><span class="cierre-label">Dólar CCL</span> <strong>${fmtPesos(ccl.venta)}</strong></div>`);
+    }
+
+    if (partes.length === 0) {
+      widget.style.display = 'none';
+      return;
+    }
+
+    const body = document.getElementById('cierre-body');
     if (body) {
-      // En la versión inicial dejamos el widget visible solo cuando hay data en /data/mulc.json
-      const data = await fetchJSON('/data/mulc.json');
-      if (data && data.dato) {
-        widget.style.display = 'block';
-        body.innerHTML = data.dato;
-      } else {
-        widget.style.display = 'none';
-      }
+      body.innerHTML = partes.join('');
+      widget.style.display = 'block';
     }
   }
 
@@ -161,13 +202,13 @@
   function iniciar() {
     actualizarClima();
     actualizarTicker();
-    actualizarMulc();
+    actualizarCierreMercado();
     actualizarFulbito();
 
     // Refrescos periódicos
     setInterval(actualizarClima, REFRESH_CLIMA_MIN * 60 * 1000);
     setInterval(actualizarTicker, REFRESH_DOLAR_MIN * 60 * 1000);
-    setInterval(actualizarMulc, 5 * 60 * 1000);  // chequeo cada 5 min por el horario
+    setInterval(actualizarCierreMercado, REFRESH_MERCADO_MIN * 60 * 1000);
     setInterval(actualizarFulbito, REFRESH_FULBITO_MIN * 60 * 1000);
   }
 

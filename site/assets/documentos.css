@@ -1,0 +1,223 @@
+/* =================================================================
+   PPA Documentos en circulación — Hoja de estilos
+   Estética sobria, propia de hemeroteca institucional
+   ================================================================= */
+
+:root {
+  --doc-acento: #2d5a3d;       /* verde oscuro para diferenciar de Stream y Lo que se dice */
+  --doc-papel: #f4f0e8;
+  --doc-sello-fondo: #1a1a1a;
+  --doc-sello-tinta: #f4f0e8;
+}
+
+.body-documentos {
+  font-family: 'Source Serif 4', Georgia, serif;
+  background: var(--papel);
+}
+
+/* =================================================================
+   HEADER
+   ================================================================= */
+.documentos-header {
+  border-bottom: 3px double var(--tinta);
+  padding: 36px 0 24px;
+  text-align: center;
+  position: relative;
+}
+.documentos-header::before,
+.documentos-header::after {
+  content: '';
+  position: absolute;
+  left: 0; right: 0;
+  height: 1px;
+  background: var(--tinta);
+}
+.documentos-header::before { top: 8px; }
+.documentos-header::after { bottom: 8px; }
+
+.documentos-kicker {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 10px;
+  letter-spacing: 0.4em;
+  text-transform: uppercase;
+  color: var(--doc-acento);
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+.documentos-header h1 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 900;
+  font-style: italic;
+  font-size: clamp(36px, 6vw, 64px);
+  letter-spacing: -0.02em;
+  line-height: 1;
+  color: var(--tinta);
+}
+.documentos-intro {
+  font-family: 'Source Serif 4', serif;
+  font-style: italic;
+  font-size: 16px;
+  color: var(--gris);
+  max-width: 600px;
+  margin: 14px auto 8px;
+  line-height: 1.5;
+}
+.documentos-actualizado {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 11px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--gris);
+  margin-top: 10px;
+}
+
+/* =================================================================
+   NAVEGACIÓN
+   ================================================================= */
+.documentos-nav {
+  border-bottom: 1px solid var(--linea);
+  padding: 14px 0;
+  background: var(--papel-2);
+}
+.documentos-nav .contenedor {
+  display: flex;
+  justify-content: center;
+  gap: 28px;
+  flex-wrap: wrap;
+}
+.documentos-nav .nav-link {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--tinta);
+  font-weight: 500;
+}
+.documentos-nav .nav-link.activo {
+  color: var(--doc-acento);
+  font-weight: 700;
+}
+
+/* =================================================================
+   CUERPO
+   ================================================================= */
+.documentos-main {
+  padding: 40px 0;
+}
+
+.doc-categoria {
+  margin-bottom: 48px;
+}
+.doc-categoria h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 28px;
+  font-weight: 900;
+  font-style: italic;
+  border-bottom: 2px solid var(--tinta);
+  padding-bottom: 10px;
+  margin-bottom: 24px;
+}
+
+.doc-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+@media (max-width: 720px) {
+  .doc-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.doc-item {
+  border-left: 4px solid var(--doc-acento);
+  padding: 14px 18px;
+  background: var(--papel-2);
+}
+
+.doc-sello {
+  display: inline-block;
+  background: var(--doc-sello-fondo);
+  color: var(--doc-sello-tinta);
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  padding: 3px 10px;
+  margin-bottom: 10px;
+}
+
+.doc-item h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 8px;
+}
+.doc-item h3 a {
+  color: var(--tinta);
+}
+.doc-item h3 a:hover {
+  color: var(--doc-acento);
+}
+
+.doc-bajada {
+  font-family: 'Source Serif 4', serif;
+  font-size: 14px;
+  color: var(--gris);
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+.doc-meta {
+  display: flex;
+  justify-content: space-between;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 11px;
+  color: var(--gris);
+  letter-spacing: 0.04em;
+  border-top: 1px dotted var(--linea);
+  padding-top: 8px;
+}
+.doc-fuente {
+  font-weight: 600;
+  color: var(--doc-acento);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.doc-vacio {
+  text-align: center;
+  padding: 80px 20px;
+  color: var(--gris);
+  max-width: 520px;
+  margin: 0 auto;
+}
+.doc-vacio p {
+  font-family: 'Source Serif 4', serif;
+  font-style: italic;
+  font-size: 17px;
+  margin-bottom: 12px;
+}
+.doc-vacio .vacio-sub {
+  font-size: 14px;
+  font-style: normal;
+  color: var(--gris-claro);
+}
+
+/* =================================================================
+   SELLO INFORME INSTITUCIONAL — reusable en otras secciones
+   ================================================================= */
+.sello-institucional {
+  display: inline-block;
+  background: var(--doc-sello-fondo);
+  color: var(--doc-sello-tinta);
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  padding: 3px 10px;
+  margin-bottom: 8px;
+}

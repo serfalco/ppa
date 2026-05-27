@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Acerca de — PPA</title>
+<meta name="description" content="Qué es PPA, cómo funciona y cuáles son las fuentes que alimentan la publicación.">
+<meta property="og:title" content="Acerca de — PPA">
+<meta property="og:description" content="Qué es PPA, cómo funciona y cuáles son nuestras fuentes.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,900&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/ppa.css">
+<style>
+  .pagina-acerca {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 0 32px 60px;
+    font-family: 'Source Serif 4', Georgia, serif;
+  }
+  .pagina-acerca .volver {
+    display: inline-block;
+    margin: 24px 0;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 12px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--gris);
+  }
+  .pagina-acerca .volver:hover { color: var(--rojo); }
+
+  .pagina-acerca h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(36px, 5vw, 52px);
+    font-weight: 900;
+    font-style: italic;
+    line-height: 1.05;
+    margin-bottom: 18px;
+    border-bottom: 3px double var(--tinta);
+    padding-bottom: 18px;
+  }
+  .pagina-acerca h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 26px;
+    font-weight: 700;
+    margin-top: 36px;
+    margin-bottom: 14px;
+    color: var(--tinta);
+  }
+  .pagina-acerca h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    font-weight: 700;
+    font-style: italic;
+    margin-top: 28px;
+    margin-bottom: 14px;
+    color: var(--rojo);
+    border-bottom: 1px solid var(--linea);
+    padding-bottom: 6px;
+  }
+  .pagina-acerca p {
+    font-size: 17px;
+    line-height: 1.7;
+    margin-bottom: 18px;
+    color: var(--tinta);
+  }
+  .lista-fuentes {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 20px 0;
+  }
+  .lista-fuentes li {
+    padding: 10px 0;
+    border-bottom: 1px dotted var(--linea);
+    font-size: 15px;
+    line-height: 1.5;
+  }
+  .lista-fuentes li:last-child { border-bottom: none; }
+  .lista-fuentes strong {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 13px;
+    letter-spacing: 0.05em;
+    color: var(--tinta);
+    font-weight: 700;
+  }
+  .fuente-link {
+    display: block;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 11px;
+    color: var(--gris);
+    margin-top: 4px;
+    letter-spacing: 0.04em;
+  }
+  .fuente-link:hover { color: var(--rojo); }
+  .totales {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 12px;
+    color: var(--gris);
+    letter-spacing: 0.05em;
+    margin-bottom: 20px;
+  }
+</style>
+</head>
+<body>
+
+<div class="barra-superior">
+  <div class="contenedor">
+    <span class="fecha-barra">PPA · Pulso Productivo Argentino</span>
+    <span><a href="/" style="color:inherit">Volver a portada →</a></span>
+  </div>
+</div>
+
+<article class="pagina-acerca">
+
+  <a href="/" class="volver">← Volver a portada</a>
+
+  <h1>Acerca de PPA</h1>
+
+  <h2>Qué es</h2>
+
+  <p>
+    PPA — Pulso Productivo Argentino es una publicación económica que filtra, organiza y
+    presenta el trabajo de las principales instituciones, organismos, cámaras y consultoras
+    de Argentina.
+  </p>
+
+  <p>
+    No producimos noticias de actualidad. Lo que hacemos es reunir en un solo lugar lo que
+    publican quienes saben, con curaduría editorial y atribución clara de cada fuente.
+  </p>
+
+  <h2>Cómo funciona</h2>
+
+  <p>
+    Periódicamente, un sistema automatizado revisa las publicaciones de las fuentes
+    seleccionadas, descarta lo viejo, deduplica lo repetido y organiza el contenido por
+    categoría. La selección de fuentes la hacemos nosotros, una por una; el ordenamiento
+    diario lo hace el sistema según reglas que definimos.
+  </p>
+
+  <p>
+    En <a href="/como-trabajamos.html"><strong>Cómo trabajamos</strong></a> está explicada
+    la línea editorial completa: los principios, los criterios y lo que no vas a encontrar
+    en PPA.
+  </p>
+
+  <h2>Nuestras fuentes</h2>
+
+  <p class="totales">PPA agrega contenido de 68 fuentes activas, distribuidas por categoría:</p>
+
+  
+      <section class="categoria-bloque">
+        <h3>Macro</h3>
+        <ul class="lista-fuentes">
+          
+        <li>
+          <strong>BCRA</strong> — Banco Central de la República Argentina. Informes monetarios, política cambiaria, comunicados oficiales.
+          <a href="https://www.bcra.gob.ar" target="_blank" rel="noopener" class="fuente-link">bcra.gob.ar →</a>
+        </li>
+        <li>
+          <strong>INDEC</strong> — Instituto Nacional de Estadística y Censos. IPC, EMAE, industria, empleo, comercio exterior.
+          <a href="https://www.indec.gob.ar" target="_blank" rel="noopener" class="fuente-link">indec.gob.ar →</a>
+        </li>
+        <li>
+          <strong>IARAF</strong> — Instituto Argentino de Análisis Fiscal. Análisis de gasto público, recaudación, coparticipación.
+          <a href="https://www.iaraf.org" target="_blank" rel="noopener" class="fuente-link">iaraf.org →</a>
+        </li>
+        <li>
+          <strong>FIEL</strong> — Fundación de Investigaciones Económicas Latinoamericanas. Una de las fundaciones económicas más antiguas.
+          <a href="https://www.fiel.org" target="_blank" rel="noopener" class="fuente-link">fiel.org →</a>
+        </li>
+        <li>
+          <strong>Fundar</strong> — Centro de estudios económicos y políticos con enfoque productivo.
+          <a href="https://fund.ar" target="_blank" rel="noopener" class="fuente-link">fund.ar →</a>
+        </li>
+        <li>
+          <strong>IERAL / Fundación Mediterránea</strong> — Instituto de Estudios sobre la Realidad Argentina y Latinoamericana. Mirada desde Córdoba.
+          <a href="https://www.ieral.org" target="_blank" rel="noopener" class="fuente-link">ieral.org →</a>
+        </li>
+        <li>
+          <strong>CEDLAS</strong> — Centro de Estudios Distributivos, Laborales y Sociales (UNLP). Pobreza, desigualdad, mercado laboral.
+          <a href="https://www.cedlas.econo.unlp.edu.ar" target="_blank" rel="noopener" class="fuente-link">cedlas.econo.unlp.edu.ar →</a>
+        </li>
+        <li>
+          <strong>Ecolatina</strong> — Consultora económica fundada por Roberto Lavagna.
+          <a href="https://www.ecolatina.com" target="_blank" rel="noopener" class="fuente-link">ecolatina.com →</a>
+        </li>
+        <li>
+          <strong>IDESA</strong> — Instituto para el Desarrollo Social Argentino. Análisis laboral y previsional.
+          <a href="https://www.idesa.org" target="_blank" rel="noopener" class="fuente-link">idesa.org →</a>
+        </li>
+        <li>
+          <strong>IAE Business School</strong> — Escuela de Negocios de la Universidad Austral.
+          <a href="https://www.iae.edu.ar" target="_blank" rel="noopener" class="fuente-link">iae.edu.ar →</a>
+        </li>
+        <li>
+          <strong>UCEMA</strong> — Universidad del CEMA. Centro de Estudios Macroeconómicos de Argentina.
+          <a href="https://ucema.edu.ar" target="_blank" rel="noopener" class="fuente-link">ucema.edu.ar →</a>
+        </li>
+        <li>
+          <strong>Universidad Di Tella</strong> — UTDT. Publica índices de confianza del consumidor y otros indicadores.
+          <a href="https://www.utdt.edu" target="_blank" rel="noopener" class="fuente-link">utdt.edu →</a>
+        </li>
+        <li>
+          <strong>Ámbito Financiero</strong> — Medio financiero. Sección Finanzas para cierre de mercado.
+          <a href="https://www.ambito.com" target="_blank" rel="noopener" class="fuente-link">ambito.com →</a>
+        </li>
+        <li>
+          <strong>El Cronista</strong> — Diario económico. Sección Finanzas y Mercados.
+          <a href="https://www.cronista.com" target="_blank" rel="noopener" class="fuente-link">cronista.com →</a>
+        </li>
+        <li>
+          <strong>El Economista</strong> — Medio económico argentino.
+          <a href="https://eleconomista.com.ar" target="_blank" rel="noopener" class="fuente-link">eleconomista.com.ar →</a>
+        </li>
+        <li>
+          <strong>iProfesional Economía</strong> — iProfesional, sección Economía. Análisis y coyuntura.
+          <a href="https://www.iprofesional.com/economia" target="_blank" rel="noopener" class="fuente-link">iprofesional.com/economia →</a>
+        </li>
+        <li>
+          <strong>iProfesional Finanzas</strong> — iProfesional, sección Finanzas. Mercados y bancos.
+          <a href="https://www.iprofesional.com/finanzas" target="_blank" rel="noopener" class="fuente-link">iprofesional.com/finanzas →</a>
+        </li>
+        </ul>
+      </section>
+      <section class="categoria-bloque">
+        <h3>Expectativas de mercado</h3>
+        <ul class="lista-fuentes">
+          
+        <li>
+          <strong>Empiria Consultores</strong> — Consultora económica de Hernán Lacunza.
+          <a href="https://empiria.com.ar" target="_blank" rel="noopener" class="fuente-link">empiria.com.ar →</a>
+        </li>
+        <li>
+          <strong>LCG</strong> — Consultora económica con énfasis en macro y finanzas.
+          <a href="https://www.lcgsa.com.ar" target="_blank" rel="noopener" class="fuente-link">lcgsa.com.ar →</a>
+        </li>
+        <li>
+          <strong>Invecq</strong> — Consultora económica.
+          <a href="https://invecq.com" target="_blank" rel="noopener" class="fuente-link">invecq.com →</a>
+        </li>
+        <li>
+          <strong>Orlando J. Ferreres</strong> — Consultora económica clásica con índices propios de actividad.
+          <a href="https://www.ojf.com" target="_blank" rel="noopener" class="fuente-link">ojf.com →</a>
+        </li>
+        <li>
+          <strong>Analytica</strong> — Consultora económica.
+          <a href="https://analytica.com.ar" target="_blank" rel="noopener" class="fuente-link">analytica.com.ar →</a>
+        </li>
+        <li>
+          <strong>Outlier</strong> — Consultora de Gabriel Caamaño Gómez. Análisis macro y financiero.
+          <a href="https://outlier.com.ar" target="_blank" rel="noopener" class="fuente-link">outlier.com.ar →</a>
+        </li>
+        <li>
+          <strong>EcoGo</strong> — Consultora de Marina Dal Poggetto.
+          <a href="https://ecogo.com.ar" target="_blank" rel="noopener" class="fuente-link">ecogo.com.ar →</a>
+        </li>
+        <li>
+          <strong>Equilibra</strong> — Consultora dirigida por Diego Bossio. Análisis macro y fiscal.
+          <a href="https://www.equilibra.com.ar" target="_blank" rel="noopener" class="fuente-link">equilibra.com.ar →</a>
+        </li>
+        <li>
+          <strong>CIFRA</strong> — Centro de Investigación y Formación de la República Argentina (CTA). Análisis heterodoxo.
+          <a href="https://www.centrocifra.org.ar" target="_blank" rel="noopener" class="fuente-link">centrocifra.org.ar →</a>
+        </li>
+        <li>
+          <strong>Mirador UCA</strong> — Observatorio de la Actualidad de la Realidad Social Argentina (Universidad Católica). Pobreza, indigencia, trabajo.
+          <a href="https://www.uca.edu.ar/es/mirador" target="_blank" rel="noopener" class="fuente-link">uca.edu.ar/es/mirador →</a>
+        </li>
+        </ul>
+      </section>
+      <section class="categoria-bloque">
+        <h3>Política</h3>
+        <ul class="lista-fuentes">
+          
+        <li>
+          <strong>CIPPEC</strong> — Centro de Implementación de Políticas Públicas para la Equidad y el Crecimiento.
+          <a href="https://www.cippec.org" target="_blank" rel="noopener" class="fuente-link">cippec.org →</a>
+        </li>
+        <li>
+          <strong>Fundación Pensar</strong> — Think tank vinculado al PRO.
+          <a href="https://fundacionpensar.org" target="_blank" rel="noopener" class="fuente-link">fundacionpensar.org →</a>
+        </li>
+        </ul>
+      </section>
+      <section class="categoria-bloque">
+        <h3>Energía</h3>
+        <ul class="lista-fuentes">
+          
+        <li>
+          <strong>EconoJournal</strong> — Medio especializado en energía argentina.
+          <a href="https://econojournal.com.ar" target="_blank" rel="noopener" class="fuente-link">econojournal.com.ar →</a>
+        </li>
+        <li>
+          <strong>Secretaría de Energía</strong> — Secretaría de Energía de la Nación.
+          <a href="https://www.argentina.gob.ar/economia/energia" target="_blank" rel="noopener" class="fuente-link">argentina.gob.ar/economia/energia →</a>
+        </li>
+        <li>
+          <strong>International Energy Agency</strong> — Agencia Internacional de Energía. Informes globales del sector.
+          <a href="https://www.iea.org" target="_blank" rel="noopener" class="fuente-link">iea.org →</a>
+        </li>
+        <li>
+          <strong>Más Energía</strong> — Suplemento de energía de La Mañana de Neuquén.
+          <a href="https://mase.lmneuquen.com" target="_blank" rel="noopener" class="fuente-link">mase.lmneuquen.com →</a>
+        </li>
+        <li>
+          <strong>Energía Estratégica</strong> — Medio líder en noticias de energía renovable en español.
+          <a href="https://energiaestrategica.com" target="_blank" rel="noopener" class="fuente-link">energiaestrategica.com →</a>
+        </li>
+        </ul>
+      </section>
+      <section class="categoria-bloque">
+        <h3>Agro</h3>
+        <ul class="lista-fuentes">
+          
+        <li>
+          <strong>Bolsa de Comercio de Rosario</strong> — Bolsa de Comercio de Rosario. Estimaciones de cosecha, precios FOB, análisis del sector.
+          <a href="https://www.bcr.com.ar" target="_blank" rel="noopener" class="fuente-link">bcr.com.ar →</a>
+        </li>
+        <li>
+          <strong>Bichos de Campo</strong> — Medio agropecuario.
+          <a href="https://bichosdecampo.com" target="_blank" rel="noopener" class="fuente-link">bichosdecampo.com →</a>
+        </li>
+        <li>
+          <strong>Agrositio</strong> — Portal agropecuario.
+          <a href="https://www.agrositio.com.ar" target="_blank" rel="noopener" class="fuente-link">agrositio.com.ar →</a>
+        </li>
+        <li>
+          <strong>Valor Soja</strong> — Especializado en mercado de soja y commodities agrícolas.
+          <a href="https://www.valorsoja.com" target="_blank" rel="noopener" class="fuente-link">valorsoja.com →</a>
+        </li>
+        <li>
+          <strong>Rosgan</strong> — Mercado ganadero de la Bolsa de Comercio de Rosario.
+          <a href="https://rosgan.com.ar" target="_blank" rel="noopener" class="fuente-link">rosgan.com.ar →</a>
+        </li>
+        <li>
+          <strong>MAGyP</strong> — Ministerio de Agricultura, Ganadería y Pesca de la Nación.
+          <a href="https://www.argentina.gob.ar/agricultura" target="_blank" rel="noopener" class="fuente-link">argentina.gob.ar/agricultura →</a>
+        </li>
+        <li>
+          <strong>Sociedad Rural Argentina</strong> — Sociedad Rural Argentina. Análisis y posicionamientos del sector.
+          <a href="https://www.sra.org.ar" target="_blank" rel="noopener" class="fuente-link">sra.org.ar →</a>
+        </li>
+        <li>
+          <strong>CONINAGRO</strong> — Confederación Intercooperativa Agropecuaria. Informes sectoriales.
+          <a href="https://www.coninagro.org.ar" target="_blank" rel="noopener" class="fuente-link">coninagro.org.ar →</a>
+        </li>
+        </ul>
+      </section>
+      <section class="categoria-bloque">
+        <h3>Minería</h3>
+        <ul class="lista-fuentes">
+          
+        <li>
+          <strong>Panorama Minero</strong> — Medio minero argentino.
+          <a href="https://panoramaminero.com" target="_blank" rel="noopener" class="fuente-link">panoramaminero.com →</a>
+        </li>
+        <li>
+          <strong>Mining Press</strong> — Medio especializado en minería.
+          <a href="https://miningpress.com" target="_blank" rel="noopener" class="fuente-link">miningpress.com →</a>
+        </li>
+        <li>
+          <strong>CAEM</strong> — Cámara Argentina de Empresarios Mineros.
+          <a href="https://caem.com.ar" target="_blank" rel="noopener" class="fuente-link">caem.com.ar →</a>
+        </li>
+        <li>
+          <strong>Abeceb</strong> — Consultora económica con foco en sectores productivos.
+          <a href="https://abeceb.com" target="_blank" rel="noopener" class="fuente-link">abeceb.com →</a>
+        </li>
+        </ul>
+      </section>
+      <section class="categoria-bloque">
+        <h3>Comercio Exterior</h3>
+        <ul class="lista-fuentes">
+          
+        <li>
+          <strong>CARI</strong> — Consejo Argentino para las Relaciones Internacionales. El think tank más prestigioso en RR.II.
+          <a href="https://cari.org.ar" target="_blank" rel="noopener" class="fuente-link">cari.org.ar →</a>
+        </li>
+        <li>
+          <strong>CEI / Cancillería</strong> — Centro de Economía Internacional (Ministerio de RR.EE.).
+          <a href="https://cancilleria.gob.ar/es/cei" target="_blank" rel="noopener" class="fuente-link">cancilleria.gob.ar/es/cei →</a>
+        </li>
+        <li>
+          <strong>IRI La Plata</strong> — Instituto de Relaciones Internacionales de la UNLP.
+          <a href="https://www.iri.edu.ar" target="_blank" rel="noopener" class="fuente-link">iri.edu.ar →</a>
+        </li>
+        <li>
+          <strong>CAC</strong> — Cámara Argentina de Comercio y Servicios.
+          <a href="https://www.cac.com.ar" target="_blank" rel="noopener" class="fuente-link">cac.com.ar →</a>
+        </li>
+        <li>
+          <strong>Marcelo Elizondo</strong> — Especialista en comercio internacional. Director del Comité de Economía Internacional del CARI.
+          <a href="https://marceloelizondo.com.ar" target="_blank" rel="noopener" class="fuente-link">marceloelizondo.com.ar →</a>
+        </li>
+        <li>
+          <strong>iProfesional Comex</strong> — iProfesional, sección Comercio Exterior.
+          <a href="https://www.iprofesional.com/comex" target="_blank" rel="noopener" class="fuente-link">iprofesional.com/comex →</a>
+        </li>
+        </ul>
+      </section>
+      <section class="categoria-bloque">
+        <h3>Automotor</h3>
+        <ul class="lista-fuentes">
+          
+        <li>
+          <strong>ACARA</strong> — Asociación de Concesionarios. Fuente oficial de patentamientos mensuales.
+          <a href="https://www.acara.org.ar" target="_blank" rel="noopener" class="fuente-link">acara.org.ar →</a>
+        </li>
+        <li>
+          <strong>ADEFA</strong> — Asociación de Fábricas de Automotores. Datos de producción y exportación.
+          <a href="https://www.adefa.org.ar" target="_blank" rel="noopener" class="fuente-link">adefa.org.ar →</a>
+        </li>
+        <li>
+          <strong>A Rodar Post</strong> — Cobertura del mercado automotor por Horacio Alonso.
+          <a href="https://arodarpost.com.ar" target="_blank" rel="noopener" class="fuente-link">arodarpost.com.ar →</a>
+        </li>
+        <li>
+          <strong>AFAC</strong> — Asociación de Fábricas Argentinas de Componentes (autopartistas).
+          <a href="https://www.afac.org.ar" target="_blank" rel="noopener" class="fuente-link">afac.org.ar →</a>
+        </li>
+        <li>
+          <strong>iProfesional Autos</strong> — iProfesional, sección Autos. Mercado automotor.
+          <a href="https://www.iprofesional.com/autos" target="_blank" rel="noopener" class="fuente-link">iprofesional.com/autos →</a>
+        </li>
+        </ul>
+      </section>
+      <section class="categoria-bloque">
+        <h3>Logística</h3>
+        <ul class="lista-fuentes">
+          
+        <li>
+          <strong>CEDOL</strong> — Cámara Empresaria de Operadores Logísticos. Publica el Índice de Costos Logísticos homologado por UTN.
+          <a href="https://www.cedol.org.ar" target="_blank" rel="noopener" class="fuente-link">cedol.org.ar →</a>
+        </li>
+        <li>
+          <strong>FADEEAC</strong> — Federación Arg. de Entidades del Autotransporte de Cargas. Publica el ICT auditado por UBA.
+          <a href="https://www.fadeeac.org.ar" target="_blank" rel="noopener" class="fuente-link">fadeeac.org.ar →</a>
+        </li>
+        <li>
+          <strong>Argenports</strong> — Puertos y logística marítima.
+          <a href="https://argenports.com" target="_blank" rel="noopener" class="fuente-link">argenports.com →</a>
+        </li>
+        <li>
+          <strong>Trade News</strong> — Medio especializado en comercio exterior y logística.
+          <a href="https://www.trade-news.com.ar" target="_blank" rel="noopener" class="fuente-link">trade-news.com.ar →</a>
+        </li>
+        <li>
+          <strong>Webpicking</strong> — Portal de logística y supply chain en América Latina.
+          <a href="https://webpicking.com" target="_blank" rel="noopener" class="fuente-link">webpicking.com →</a>
+        </li>
+        </ul>
+      </section>
+      <section class="categoria-bloque">
+        <h3>Internacional</h3>
+        <ul class="lista-fuentes">
+          
+        <li>
+          <strong>FMI</strong> — Fondo Monetario Internacional. Comunicados oficiales en español.
+          <a href="https://www.imf.org" target="_blank" rel="noopener" class="fuente-link">imf.org →</a>
+        </li>
+        <li>
+          <strong>CEPAL</strong> — Comisión Económica para América Latina y el Caribe.
+          <a href="https://www.cepal.org" target="_blank" rel="noopener" class="fuente-link">cepal.org →</a>
+        </li>
+        <li>
+          <strong>Bloomberg Línea</strong> — Edición latinoamericana de Bloomberg en español, con cobertura argentina.
+          <a href="https://www.bloomberglinea.com" target="_blank" rel="noopener" class="fuente-link">bloomberglinea.com →</a>
+        </li>
+        <li>
+          <strong>Banco Mundial</strong> — Banco Mundial. Comunicados, informes y publicaciones en español.
+          <a href="https://www.bancomundial.org" target="_blank" rel="noopener" class="fuente-link">bancomundial.org →</a>
+        </li>
+        <li>
+          <strong>BID</strong> — Banco Interamericano de Desarrollo. Blogs y publicaciones en español.
+          <a href="https://www.iadb.org/es" target="_blank" rel="noopener" class="fuente-link">iadb.org/es →</a>
+        </li>
+        <li>
+          <strong>OCDE</strong> — Organización para la Cooperación y el Desarrollo Económicos.
+          <a href="https://www.oecd.org/es" target="_blank" rel="noopener" class="fuente-link">oecd.org/es →</a>
+        </li>
+        </ul>
+      </section>
+
+</article>
+
+<footer class="pie">
+  <div class="contenedor">
+    <strong>PPA · Pulso Productivo Argentino</strong><br>
+    <span class="pie-bajada">Publicación económica</span>
+    <div class="pie-meta">
+      <a href="/">Portada</a> ·
+      <a href="/como-trabajamos.html">Cómo trabajamos</a> ·
+      <a href="/acerca.html">Acerca de</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

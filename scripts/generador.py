@@ -72,7 +72,7 @@ def escapar_html(texto):
 # COMPONENTES HTML
 # =============================================================
 
-def html_head(titulo_pagina, descripcion="Diario económico institucional"):
+def html_head(titulo_pagina, descripcion="Publicación económica institucional"):
     """Genera el <head> común a todas las páginas."""
     return f"""<!DOCTYPE html>
 <html lang="es-AR">
@@ -164,9 +164,11 @@ def html_nav_secciones():
   <div class="contenedor">
     <ul>
       <li><a href="/">Portada</a></li>
-      <li><a href="/institucional/" class="activo">Institucional</a></li>
+      <li><a href="/institucional/" class="activo">Lo que se dice</a></li>
+      <li><a href="/expectativas/">Expectativas de mercado</a></li>
+      <li><a href="/documentos/">Documentos</a></li>
       <li><a href="/columnas/">Columnas</a></li>
-      <li><a href="/stream/">Stream</a></li>
+      <li><a href="/stream/">Opiniones personales · Stream</a></li>
       <li class="divisor">·</li>
       {''.join(items)}
     </ul>
@@ -307,11 +309,14 @@ def html_pie(generado_en):
 <footer class="pie">
   <div class="contenedor">
     <strong>PPA · Pulso Productivo Argentino</strong><br>
-    <span class="pie-bajada">Diario económico institucional · Curaduría automática · Una edición diaria a las 18hs</span>
+    <span class="pie-bajada">Publicación económica · Curaduría automática con criterio editorial</span>
     <div class="pie-meta">
-      Edición generada el {generado_en} ·
-      <a href="/archivo/">Archivo</a> ·
-      <a href="/admin/">Panel</a>
+      Actualizado: {generado_en} ·
+      <a href="/">Portada</a> ·
+      <a href="/columnas/">Columnas</a> ·
+      <a href="/stream/">Stream</a> ·
+      <a href="/como-trabajamos.html">Cómo trabajamos</a> ·
+      <a href="/acerca.html">Acerca de</a>
     </div>
   </div>
 </footer>

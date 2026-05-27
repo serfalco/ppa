@@ -27,7 +27,7 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from config import (
     JSON_NOTAS, DIR_DATA, CATEGORIAS,
     DESTACADOS_CANT, NOTAS_POR_CATEGORIA, ULTIMO_MOMENTO_CANT,
-    HORAS_VENTANA,
+    VENTANA_HORAS_POR_TIER,
 )
 
 JSON_PORTADA = os.path.join(DIR_DATA, "portada.json")
@@ -43,9 +43,10 @@ def score_por_tier(tier):
     return {1: 100, 2: 50, 3: 20}.get(tier, 10)
 
 
-def score_por_recencia(fecha_iso):
+def score_por_recencia(fecha_iso, tier):
     """
-    Decae linealmente de 100 (recién publicada) a 0 (hace HORAS_VENTANA horas).
+    Decae linealmente de 100 (recién publicada) a 0 (al final de la ventana del tier).
+    Tier 1: 7 días, Tier 2: 3 días, Tier 3: 24h.
     Si la nota es más vieja que la ventana, score 0.
     """
     try:
@@ -58,15 +59,17 @@ def score_por_recencia(fecha_iso):
 
     if diff_horas < 0:
         return 100  # fecha futura (raro pero pasa)
-    if diff_horas >= HORAS_VENTANA:
+
+    horas_ventana = VENTANA_HORAS_POR_TIER.get(tier, 24)
+    if diff_horas >= horas_ventana:
         return 0
-    return 100 * (1 - diff_horas / HORAS_VENTANA)
+    return 100 * (1 - diff_horas / horas_ventana)
 
 
 def calcular_score(nota):
-    """Score combinado: 60% tier + 40% recencia."""
+    """Score combinado: 60% tier + 40% recencia (con ventana variable por tier)."""
     s_tier = score_por_tier(nota["tier"])
-    s_rec = score_por_recencia(nota["fecha_publicacion"])
+    s_rec = score_por_recencia(nota["fecha_publicacion"], nota["tier"])
     return round(s_tier * 0.6 + s_rec * 0.4, 2)
 
 

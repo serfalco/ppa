@@ -207,11 +207,11 @@ def generar_indice(notas):
 
 <header class="stream-header">
   <div class="contenedor">
-    <div class="stream-kicker">Blog</div>
-    <h1>Blog Stream</h1>
+    <div class="stream-kicker">Opiniones personales · Stream</div>
+    <h1>Comentarios editoriales</h1>
     <p class="stream-intro">
-      Comentarios editoriales sobre participaciones en programas de streaming.
-      Opiniones personales, sin firma, con fuente clara.
+      Miradas personales sobre participaciones en programas de streaming.
+      Opiniones del editor, sin firma individual, con fuente clara.
     </p>
   </div>
 </header>
@@ -219,7 +219,9 @@ def generar_indice(notas):
 <nav class="stream-nav">
   <div class="contenedor">
     <a href="/" class="nav-link">Portada</a>
-    <a href="/institucional/" class="nav-link">Institucional</a>
+    <a href="/institucional/" class="nav-link">Lo que se dice</a>
+    <a href="/expectativas/" class="nav-link">Expectativas de mercado</a>
+    <a href="/documentos/" class="nav-link">Documentos</a>
     <a href="/columnas/" class="nav-link">Columnas</a>
     <a href="/stream/" class="nav-link activo">Stream</a>
   </div>
@@ -234,10 +236,12 @@ def generar_indice(notas):
 <footer class="pie">
   <div class="contenedor">
     <strong>PPA · Pulso Productivo Argentino</strong><br>
-    <span class="pie-bajada">Diario económico institucional</span>
+    <span class="pie-bajada">Publicación económica</span>
     <div class="pie-meta">
       <a href="/">Portada</a> ·
-      <a href="/institucional/">Institucional</a> ·
+      <a href="/institucional/">Lo que se dice</a> ·
+      <a href="/expectativas/">Expectativas de mercado</a> ·
+      <a href="/documentos/">Documentos</a> ·
       <a href="/columnas/">Columnas</a> ·
       <a href="/stream/">Stream</a> ·
       <a href="/como-trabajamos.html">Cómo trabajamos</a>

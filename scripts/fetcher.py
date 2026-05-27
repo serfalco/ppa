@@ -4,7 +4,7 @@ Lee todos los RSS de las fuentes activas, filtra notas válidas,
 deduplica y guarda en notas.json
 
 Reglas:
-- Solo notas de las últimas HORAS_VENTANA horas (24h por defecto)
+- Solo notas dentro de la ventana del tier (Tier 1: 7 días, Tier 2: 3 días, Tier 3: 24h)
 - Sin retweets, sin replies (no aplica en RSS web, pero sí en filtros de título)
 - Deduplicación por título normalizado
 - Las fuentes marcadas como activas=False se saltean
@@ -31,7 +31,7 @@ import requests
 # Cargo configuración
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from config import (
-    FUENTES, HORAS_VENTANA, JSON_NOTAS, JSON_FUENTES_RUNTIME,
+    FUENTES, VENTANA_HORAS_POR_TIER, JSON_NOTAS, JSON_FUENTES_RUNTIME,
     JSON_BORRADOS, DIR_DATA
 )
 
@@ -172,8 +172,13 @@ def leer_fuente(fuente):
         resultado["error"] = "Feed vacío o malformado"
         return resultado
 
-    # Ventana de tiempo: solo notas más nuevas que esto
-    limite = datetime.now(timezone.utc) - timedelta(hours=HORAS_VENTANA)
+    # Ventana de tiempo VARIABLE según el tier de la fuente
+    # Tier 1 (institucional alto): 7 días
+    # Tier 2 (medio): 3 días
+    # Tier 3 (bajo): 24 horas
+    tier = fuente.get("tier", 3)
+    horas_ventana = VENTANA_HORAS_POR_TIER.get(tier, 24)
+    limite = datetime.now(timezone.utc) - timedelta(hours=horas_ventana)
 
     notas_validas = []
     ultima_pub = None
@@ -217,8 +222,8 @@ def leer_fuente(fuente):
     resultado["ultima_publicacion"] = ultima_pub.isoformat() if ultima_pub else None
 
     if not notas_validas and feed.entries:
-        # tiene entradas pero ninguna entró por la ventana de 24h
-        # eso no es error, solo significa que no publicaron hoy
+        # tiene entradas pero ninguna entró por la ventana del tier
+        # eso no es error, solo significa que no publicaron en ese rango
         pass
 
     return resultado
@@ -313,7 +318,7 @@ def main():
     salida = {
         "generado_en": datetime.now(timezone.utc).isoformat(),
         "total_notas": len(todas_las_notas),
-        "ventana_horas": HORAS_VENTANA,
+        "ventanas_por_tier": VENTANA_HORAS_POR_TIER,
         "notas": todas_las_notas,
     }
     with open(JSON_NOTAS, 'w', encoding='utf-8') as f:

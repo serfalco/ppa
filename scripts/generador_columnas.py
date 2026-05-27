@@ -225,7 +225,7 @@ def html_cuerpo_columna(col, otras_columnas):
   <a href="/columnas/" class="columna-volver">← Todas las columnas</a>
 
   <header class="columna-header">
-    <div class="columna-kicker">Columna · Sergio Falco</div>
+    <div class="columna-kicker">Columna</div>
     <h1>{escapar(col['titulo'])}</h1>
     {f'<p class="bajada-art">{escapar(col.get("bajada", ""))}</p>' if col.get("bajada") else ''}
     <div class="firma-art">
@@ -252,10 +252,14 @@ def html_cuerpo_columna(col, otras_columnas):
 <footer class="pie" style="margin-top:48px">
   <div class="contenedor">
     <strong>PPA · Pulso Productivo Argentino</strong><br>
-    <span class="pie-bajada">Diario económico institucional</span>
+    <span class="pie-bajada">Publicación económica</span>
     <div class="pie-meta">
       <a href="/">Portada</a> ·
+      <a href="/institucional/">Lo que se dice</a> ·
+      <a href="/expectativas/">Expectativas de mercado</a> ·
+      <a href="/documentos/">Documentos</a> ·
       <a href="/columnas/">Columnas</a> ·
+      <a href="/stream/">Stream</a> ·
       <a href="/como-trabajamos.html">Cómo trabajamos</a>
     </div>
   </div>
@@ -360,19 +364,23 @@ def html_indice_columnas(columnas):
 <div class="columnas-page">
   <header class="columnas-titulo">
     <h1>Columnas</h1>
-    <p>Por Sergio Falco · Todos los martes</p>
+    <p>Análisis y miradas estructurales de la economía argentina</p>
   </header>
 
-  {"".join(items_html) if items_html else '<div class="vacio">Aún no hay columnas publicadas.<br>La primera saldrá un martes a las 18hs.</div>'}
+  {"".join(items_html) if items_html else '<div class="vacio">Aún no hay columnas publicadas.</div>'}
 </div>
 
 <footer class="pie" style="margin-top:48px">
   <div class="contenedor">
     <strong>PPA · Pulso Productivo Argentino</strong><br>
-    <span class="pie-bajada">Diario económico institucional</span>
+    <span class="pie-bajada">Publicación económica</span>
     <div class="pie-meta">
       <a href="/">Portada</a> ·
+      <a href="/institucional/">Lo que se dice</a> ·
+      <a href="/expectativas/">Expectativas de mercado</a> ·
+      <a href="/documentos/">Documentos</a> ·
       <a href="/columnas/">Columnas</a> ·
+      <a href="/stream/">Stream</a> ·
       <a href="/como-trabajamos.html">Cómo trabajamos</a>
     </div>
   </div>

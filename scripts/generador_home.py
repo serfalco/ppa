@@ -164,14 +164,8 @@ def bloque_institucional(notas):
 
 def bloque_columnas(columnas):
     if not columnas:
-        return """
-    <section class="bloque-home bloque-columnas">
-      <header class="bloque-header">
-        <span class="bloque-kicker">Columnas</span>
-        <h2><a href="/columnas/">La mirada del editor</a></h2>
-      </header>
-      <p class="bloque-vacio">Los martes a las 18hs sale una nueva columna.</p>
-    </section>"""
+        # Si no hay columnas, el bloque NO se muestra (devuelve string vacío)
+        return ""
 
     principal = columnas[0]
     otras = columnas[1:4]
@@ -185,8 +179,8 @@ def bloque_columnas(columnas):
     <section class="bloque-home bloque-columnas">
       <header class="bloque-header">
         <span class="bloque-kicker">Columnas</span>
-        <h2><a href="/columnas/">La mirada del editor</a></h2>
-        <p class="bloque-sub">Análisis estructural de la economía argentina por Sergio Falco</p>
+        <h2><a href="/columnas/">Análisis y miradas</a></h2>
+        <p class="bloque-sub">Análisis y miradas estructurales de la economía argentina</p>
       </header>
       <article class="bloque-destacado">
         <h3><a href="/columnas/{escapar(principal.get('slug', ''))}.html">{escapar(principal['titulo'])}</a></h3>
@@ -199,14 +193,7 @@ def bloque_columnas(columnas):
 
 def bloque_stream(notas):
     if not notas:
-        return """
-    <section class="bloque-home bloque-stream">
-      <header class="bloque-header">
-        <span class="bloque-kicker">Stream</span>
-        <h2><a href="/stream/">Comentarios editoriales</a></h2>
-      </header>
-      <p class="bloque-vacio">Comentarios sobre programas de streaming. Próximamente.</p>
-    </section>"""
+        return ""
 
     items_html = []
     for n in notas:
@@ -220,9 +207,9 @@ def bloque_stream(notas):
     return f"""
     <section class="bloque-home bloque-stream">
       <header class="bloque-header">
-        <span class="bloque-kicker">Stream</span>
+        <span class="bloque-kicker">Opiniones personales · Stream</span>
         <h2><a href="/stream/">Comentarios editoriales</a></h2>
-        <p class="bloque-sub">Opiniones personales sobre participaciones en programas de streaming</p>
+        <p class="bloque-sub">Miradas personales sobre participaciones en programas de streaming</p>
       </header>
       <div class="bloque-items">
         {''.join(items_html)}
@@ -238,6 +225,7 @@ def bloque_stream(notas):
 def generar_home():
     ahora_ar = datetime.now(TZ_AR)
     fecha_str = fecha_legible(ahora_ar)
+    actualizado = ahora_ar.strftime("%d/%m/%Y %H:%M")
 
     institucional = cargar_institucional()
     columnas = cargar_columnas()
@@ -249,9 +237,9 @@ def generar_home():
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>PPA · Pulso Productivo Argentino</title>
-<meta name="description" content="Diario económico institucional argentino: análisis de las consultoras, columnas editoriales y comentarios sobre streaming. Actualización diaria.">
+<meta name="description" content="Publicación económica argentina: lo que dicen las instituciones, las expectativas del mercado, columnas editoriales y comentarios sobre streaming.">
 <meta property="og:title" content="PPA · Pulso Productivo Argentino">
-<meta property="og:description" content="Diario económico institucional argentino.">
+<meta property="og:description" content="Publicación económica argentina.">
 <meta property="og:type" content="website">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -267,39 +255,46 @@ def generar_home():
     <span class="fecha-mini">{escapar(fecha_str)}</span>
     <span class="dato-mini" id="clima-widget">—</span>
     <span class="dato-mini">USD <span id="dolar-oficial">—</span></span>
+    <span class="dato-mini">MEP <span id="dolar-mep">—</span></span>
+    <span class="dato-mini">Merval <span id="merval">—</span></span>
     <span class="dato-mini">Riesgo <span id="riesgo-pais">—</span></span>
   </div>
 </div>
 
-<!-- Marquesina Fulbito y MULC -->
+<!-- Marquesina Fulbito -->
 <div class="marquesina-fulbito" id="fulbito-bar" style="display:none">
   <div class="contenedor">
     <span class="fulbito-label">⚽ Fulbito hoy</span>
     <div class="fulbito-scroll" id="fulbito-partidos"></div>
   </div>
 </div>
-<section class="widget-mulc" id="widget-mulc" style="display:none">
-  <div class="contenedor">
-    <div class="mulc-header">CIERRE MULC</div>
-    <div class="mulc-body" id="mulc-body"><span class="mulc-loading">Cargando...</span></div>
-  </div>
-</section>
 
 <!-- MASTHEAD -->
 <header class="cabecera-home">
   <div class="contenedor">
     <h1 class="titulo-home">PPA</h1>
     <p class="bajada-home">Pulso · Productivo · Argentino</p>
+    <p class="actualizado-home">Actualizado: {actualizado}</p>
   </div>
 </header>
+
+<!-- WIDGET CIERRE DE MERCADO (solo se muestra entre 17 y 19hs hábiles) -->
+<section class="widget-cierre" id="widget-cierre" style="display:none">
+  <div class="contenedor">
+    <div class="cierre-header">CIERRE DE MERCADO</div>
+    <div class="cierre-body" id="cierre-body"></div>
+  </div>
+</section>
 
 <!-- NAVEGACIÓN PRINCIPAL -->
 <nav class="nav-principal">
   <div class="contenedor">
     <a href="/" class="activo">Portada</a>
-    <a href="/institucional/">Institucional</a>
+    <a href="/institucional/">Lo que se dice</a>
+    <a href="/expectativas/">Expectativas de mercado</a>
+    <a href="/documentos/">Documentos</a>
     <a href="/columnas/">Columnas</a>
-    <a href="/stream/">Stream</a>
+    <a href="/stream/">Opiniones personales · Stream</a>
   </div>
 </nav>
 
@@ -318,11 +313,13 @@ def generar_home():
 <footer class="pie">
   <div class="contenedor">
     <strong>PPA · Pulso Productivo Argentino</strong><br>
-    <span class="pie-bajada">Diario económico institucional · pulsoproductivo.com.ar</span>
+    <span class="pie-bajada">Publicación económica · pulsoproductivo.com.ar</span>
     <div class="pie-meta">
-      <a href="/institucional/">Institucional</a> ·
+      <a href="/institucional/">Lo que se dice</a> ·
+      <a href="/expectativas/">Expectativas de mercado</a> ·
+      <a href="/documentos/">Documentos</a> ·
       <a href="/columnas/">Columnas</a> ·
-      <a href="/stream/">Stream</a> ·
+      <a href="/stream/">Opiniones personales · Stream</a> ·
       <a href="/como-trabajamos.html">Cómo trabajamos</a> ·
       <a href="/acerca.html">Acerca de</a>
     </div>
