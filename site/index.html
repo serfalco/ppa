@@ -4,9 +4,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>PPA · Pulso Productivo Argentino</title>
-<meta name="description" content="Diario económico institucional argentino: análisis de las consultoras, columnas editoriales y comentarios sobre streaming. Actualización diaria.">
+<meta name="description" content="Publicación económica argentina: lo que dicen las instituciones, las expectativas del mercado, columnas editoriales y comentarios sobre streaming.">
 <meta property="og:title" content="PPA · Pulso Productivo Argentino">
-<meta property="og:description" content="Diario económico institucional argentino.">
+<meta property="og:description" content="Publicación económica argentina.">
 <meta property="og:type" content="website">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,42 +19,49 @@
 <!-- FRANJA SUPERIOR CHICA con datos vivos -->
 <div class="franja-datos">
   <div class="contenedor franja-flex">
-    <span class="fecha-mini">Martes 26 de mayo de 2026</span>
+    <span class="fecha-mini">Miércoles 27 de mayo de 2026</span>
     <span class="dato-mini" id="clima-widget">—</span>
     <span class="dato-mini">USD <span id="dolar-oficial">—</span></span>
+    <span class="dato-mini">MEP <span id="dolar-mep">—</span></span>
+    <span class="dato-mini">Merval <span id="merval">—</span></span>
     <span class="dato-mini">Riesgo <span id="riesgo-pais">—</span></span>
   </div>
 </div>
 
-<!-- Marquesina Fulbito y MULC -->
+<!-- Marquesina Fulbito -->
 <div class="marquesina-fulbito" id="fulbito-bar" style="display:none">
   <div class="contenedor">
     <span class="fulbito-label">⚽ Fulbito hoy</span>
     <div class="fulbito-scroll" id="fulbito-partidos"></div>
   </div>
 </div>
-<section class="widget-mulc" id="widget-mulc" style="display:none">
-  <div class="contenedor">
-    <div class="mulc-header">CIERRE MULC</div>
-    <div class="mulc-body" id="mulc-body"><span class="mulc-loading">Cargando...</span></div>
-  </div>
-</section>
 
 <!-- MASTHEAD -->
 <header class="cabecera-home">
   <div class="contenedor">
     <h1 class="titulo-home">PPA</h1>
     <p class="bajada-home">Pulso · Productivo · Argentino</p>
+    <p class="actualizado-home">Actualizado: 27/05/2026 09:17</p>
   </div>
 </header>
+
+<!-- WIDGET CIERRE DE MERCADO (solo se muestra entre 17 y 19hs hábiles) -->
+<section class="widget-cierre" id="widget-cierre" style="display:none">
+  <div class="contenedor">
+    <div class="cierre-header">CIERRE DE MERCADO</div>
+    <div class="cierre-body" id="cierre-body"></div>
+  </div>
+</section>
 
 <!-- NAVEGACIÓN PRINCIPAL -->
 <nav class="nav-principal">
   <div class="contenedor">
     <a href="/" class="activo">Portada</a>
-    <a href="/institucional/">Institucional</a>
+    <a href="/institucional/">Lo que se dice</a>
+    <a href="/expectativas/">Expectativas de mercado</a>
+    <a href="/documentos/">Documentos</a>
     <a href="/columnas/">Columnas</a>
-    <a href="/stream/">Stream</a>
+    <a href="/stream/">Opiniones personales · Stream</a>
   </div>
 </nav>
 
@@ -73,41 +80,34 @@
         
       <article class="bloque-item">
         <span class="item-cat">Internacional</span>
-        <h3><a href="https://www.ft.com/content/e63db59c-ed38-4930-b320-3b2481bf8e60" target="_blank" rel="noopener">BP removes chair Albert Manifold after claims of bullying</a></h3>
-        <p class="item-fuente">Financial Times</p>
-      </article>
-      <article class="bloque-item">
-        <span class="item-cat">Automotor</span>
-        <h3><a href="https://arodarpost.com.ar/los-proximos-lanzamientos-que-prepara-byd-en-la-argentina-para-competir-con-modelos-de-toyota-y-ford/" target="_blank" rel="noopener">Los próximos lanzamientos que prepara BYD en la Argentina para competir con modelos de Toyota y Ford</a></h3>
-        <p class="item-fuente">A Rodar Post</p>
+        <h3><a href="https://www.bloomberglinea.com/mercados/el-super-nino-pone-en-alerta-a-america-latina-como-invertir-y-que-acciones-podrian-ganar/" target="_blank" rel="noopener">El ‘Super Niño’ pone en alerta a América Latina: cómo invertir y qué acciones podrían ganar</a></h3>
+        <p class="item-fuente">Bloomberg Línea</p>
       </article>
       <article class="bloque-item">
         <span class="item-cat">Energía</span>
-        <h3><a href="https://econojournal.com.ar/2026/05/semana-ingenieria-fiuba-2026/" target="_blank" rel="noopener">Nueva edición de la Semana de la Ingeniería: Vaca Muerta, renovables y movilidad eléctrica, en la agenda</a></h3>
+        <h3><a href="https://econojournal.com.ar/2026/05/super-rigi-hidrogeno-gnl-vaca-muerta/" target="_blank" rel="noopener">Hidrógeno verde, GNL onshore, data centers con gas de Vaca Muerta y minerales críticos: qué sectores están alcanzados por el Súper RIGI</a></h3>
         <p class="item-fuente">EconoJournal</p>
       </article>
       <article class="bloque-item">
+        <span class="item-cat">Automotor</span>
+        <h3><a href="https://arodarpost.com.ar/japon-negocia-con-el-mercosur-un-acuerdo-comercial-para-reducir-los-aranceles-para-la-importacion-de-autos/" target="_blank" rel="noopener">Japón negocia con el Mercosur un acuerdo comercial para reducir los aranceles para la importación de autos</a></h3>
+        <p class="item-fuente">A Rodar Post</p>
+      </article>
+      <article class="bloque-item">
         <span class="item-cat">Internacional</span>
-        <h3><a href="https://www.ft.com/content/1f53a603-34ee-453c-a3a6-f7eca164679a" target="_blank" rel="noopener">BP is deeply dysfunctional, but it could be worse</a></h3>
-        <p class="item-fuente">Financial Times</p>
+        <h3><a href="https://www.bloomberglinea.com/latinoamerica/colombia/junta-del-banco-de-la-republica-podra-sesionar-sin-el-minhacienda-por-decision-del-consejo-de-estado/" target="_blank" rel="noopener">Junta del Banco de la República podrá sesionar sin el Minhacienda por decisión del Consejo de Estado</a></h3>
+        <p class="item-fuente">Bloomberg Línea</p>
       </article>
       </div>
       <a href="/institucional/" class="bloque-link">Ver edición completa →</a>
     </section>
       
-    <section class="bloque-home bloque-columnas">
-      <header class="bloque-header">
-        <span class="bloque-kicker">Columnas</span>
-        <h2><a href="/columnas/">La mirada del editor</a></h2>
-      </header>
-      <p class="bloque-vacio">Los martes a las 18hs sale una nueva columna.</p>
-    </section>
       
     <section class="bloque-home bloque-stream">
       <header class="bloque-header">
-        <span class="bloque-kicker">Stream</span>
+        <span class="bloque-kicker">Opiniones personales · Stream</span>
         <h2><a href="/stream/">Comentarios editoriales</a></h2>
-        <p class="bloque-sub">Opiniones personales sobre participaciones en programas de streaming</p>
+        <p class="bloque-sub">Miradas personales sobre participaciones en programas de streaming</p>
       </header>
       <div class="bloque-items">
         
@@ -127,11 +127,13 @@
 <footer class="pie">
   <div class="contenedor">
     <strong>PPA · Pulso Productivo Argentino</strong><br>
-    <span class="pie-bajada">Diario económico institucional · pulsoproductivo.com.ar</span>
+    <span class="pie-bajada">Publicación económica · pulsoproductivo.com.ar</span>
     <div class="pie-meta">
-      <a href="/institucional/">Institucional</a> ·
+      <a href="/institucional/">Lo que se dice</a> ·
+      <a href="/expectativas/">Expectativas de mercado</a> ·
+      <a href="/documentos/">Documentos</a> ·
       <a href="/columnas/">Columnas</a> ·
-      <a href="/stream/">Stream</a> ·
+      <a href="/stream/">Opiniones personales · Stream</a> ·
       <a href="/como-trabajamos.html">Cómo trabajamos</a> ·
       <a href="/acerca.html">Acerca de</a>
     </div>
