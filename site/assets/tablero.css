@@ -1,0 +1,185 @@
+/* =================================================================
+   PPA v3 — Tablero de datos económicos
+   ================================================================= */
+
+.body-tablero {
+  background: var(--papel);
+}
+
+.tablero-cabecera {
+  border-bottom: 3px double var(--tinta);
+  padding: 24px 0 20px;
+  text-align: center;
+}
+
+.tablero-titulo {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(28px, 5vw, 48px);
+  font-weight: 900;
+  color: var(--tinta);
+}
+
+.tablero-sub {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 12px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--gris);
+  margin-top: 6px;
+}
+
+.tablero-disclaimer {
+  font-family: 'Source Serif 4', serif;
+  font-size: 12px;
+  font-style: italic;
+  color: var(--gris);
+  max-width: 600px;
+  margin: 10px auto 0;
+  line-height: 1.5;
+}
+
+/* Nav del tablero */
+.tablero-nav {
+  background: var(--papel-2);
+  border-bottom: 1px solid var(--linea);
+  padding: 8px 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+.tablero-nav .contenedor {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+.tablero-nav a {
+  color: var(--tinta);
+  margin: 0 4px;
+}
+.tablero-nav a:hover { color: var(--rojo); }
+
+/* Main */
+.tablero-main {
+  padding: 32px 0 64px;
+}
+
+/* Secciones */
+.tablero-bloque {
+  margin-bottom: 48px;
+  scroll-margin-top: 50px;
+}
+
+.bloque-titulo {
+  font-family: 'Playfair Display', serif;
+  font-size: 22px;
+  font-weight: 900;
+  font-style: italic;
+  color: var(--tinta);
+  border-top: 4px solid var(--tinta);
+  padding-top: 12px;
+  margin-bottom: 20px;
+}
+
+/* Grid de tarjetas */
+.tablero-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 12px;
+}
+
+@media (max-width: 480px) {
+  .tablero-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Tarjeta de dato */
+.dato-card {
+  background: #fff;
+  border: 1px solid rgba(26,26,26,0.1);
+  border-radius: 3px;
+  padding: 14px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.dato-card-accent {
+  border-color: var(--rojo);
+  border-width: 2px;
+}
+
+.dato-label {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #888;
+}
+
+.dato-valor {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--tinta);
+  line-height: 1.1;
+}
+
+.dato-grande {
+  font-size: 1.7rem;
+}
+
+.dato-par {
+  display: flex;
+  align-items: baseline;
+  gap: 4px;
+}
+.dato-compra { font-family: 'IBM Plex Sans', sans-serif; font-size: 1rem; font-weight: 700; color: #2d5a3d; }
+.dato-venta  { font-family: 'IBM Plex Sans', sans-serif; font-size: 1rem; font-weight: 700; color: var(--rojo); }
+.dato-sep    { color: #ccc; font-weight: 400; }
+
+.dato-var {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 0.78rem;
+  font-weight: 600;
+}
+.dato-var.sube { color: #27ae60; }
+.dato-var.baja { color: var(--rojo); }
+
+.dato-sub {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 0.65rem;
+  color: #aaa;
+  letter-spacing: 0.04em;
+}
+
+.dato-fuente {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 0.6rem;
+  color: #bbb;
+  margin-top: 4px;
+}
+
+/* Dato desactualizado */
+.dato-stale {
+  opacity: 0.65;
+}
+
+/* Colores para saldo positivo/negativo */
+.sube { color: #27ae60 !important; }
+.baja { color: var(--rojo) !important; }
+
+/* Link volver */
+.volver-home {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--papel) !important;
+  letter-spacing: 0.1em;
+  text-decoration: none;
+  opacity: 0.9;
+}
+.volver-home:hover { opacity: 1; }

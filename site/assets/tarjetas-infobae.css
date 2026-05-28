@@ -1,0 +1,89 @@
+/* =================================================================
+   PPA v3 — Tarjetas Infobae (5 datos en home)
+   ================================================================= */
+
+.franja-tarjetas {
+  background: var(--color-fondo, #f5f0e8);
+  border-bottom: 2px solid var(--color-tinta, #1a1a1a);
+  padding: 0.75rem 0;
+}
+
+.tarjetas-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  .tarjetas-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .tarjeta-dato:nth-child(4),
+  .tarjeta-dato:nth-child(5) {
+    grid-column: span 1;
+  }
+}
+
+@media (max-width: 480px) {
+  .tarjetas-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.tarjeta-dato {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  padding: 0.6rem 0.75rem;
+  background: #fff;
+  border: 1px solid rgba(26, 26, 26, 0.12);
+  border-radius: 3px;
+  text-decoration: none;
+  color: inherit;
+  transition: border-color 0.15s, box-shadow 0.15s;
+  cursor: pointer;
+}
+
+.tarjeta-dato:hover {
+  border-color: var(--color-rojo, #c0392b);
+  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+  text-decoration: none;
+}
+
+.tarjeta-titulo {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 0.62rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #666;
+}
+
+.tarjeta-valor {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--color-tinta, #1a1a1a);
+  line-height: 1;
+}
+
+.tarjeta-var {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 0.72rem;
+  font-weight: 500;
+}
+
+.tarjeta-var.sube { color: #27ae60; }
+.tarjeta-var.baja { color: #c0392b; }
+
+.tarjeta-hora {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 0.6rem;
+  color: #999;
+  margin-top: 0.1rem;
+}
+
+/* Dato viejo (API caída, mostrando caché) */
+.dato-stale {
+  opacity: 0.6;
+}

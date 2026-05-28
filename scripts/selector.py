@@ -139,15 +139,26 @@ def organizar_por_categoria(notas, ya_destacadas_ids):
     """
     Agrupa notas por categoría, excluyendo las que ya están en destacados.
     Devuelve dict {categoria: [notas...]} con máximo NOTAS_POR_CATEGORIA por categoría.
+    Tope v3: máximo 2 notas de la misma fuente por portada (diversidad editorial).
     """
     secciones = {cat: [] for cat in CATEGORIAS}
+    fuentes_por_cat = {cat: {} for cat in CATEGORIAS}  # {cat: {fuente_id: count}}
 
     for nota in notas:
         if nota["id"] in ya_destacadas_ids:
             continue
         cat = nota["categoria"]
-        if cat in secciones and len(secciones[cat]) < NOTAS_POR_CATEGORIA:
-            secciones[cat].append(nota)
+        if cat not in secciones:
+            continue
+        if len(secciones[cat]) >= NOTAS_POR_CATEGORIA:
+            continue
+        # Tope de 2 notas por fuente dentro de la misma categoría
+        fuente_id = nota["fuente_id"]
+        cnt = fuentes_por_cat[cat].get(fuente_id, 0)
+        if cnt >= 2:
+            continue
+        secciones[cat].append(nota)
+        fuentes_por_cat[cat][fuente_id] = cnt + 1
 
     # Quitamos categorías vacías
     return {cat: lista for cat, lista in secciones.items() if lista}

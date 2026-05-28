@@ -168,8 +168,8 @@ def html_nav_secciones():
       <li><a href="/expectativas/">Expectativas de mercado</a></li>
       <li><a href="/documentos/">Documentos</a></li>
       <li><a href="/columnas/">Columnas</a></li>
-      <li><a href="/stream/">Opiniones personales · Stream</a></li>
-      <li class="divisor">·</li>
+      <li><a href="/stream/">Stream</a></li>
+      <li><a href="/tablero/">Tablero</a></li>
       {''.join(items)}
     </ul>
   </div>
