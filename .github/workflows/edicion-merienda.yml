@@ -1,14 +1,20 @@
-name: PPA - Edición Merienda
+name: PPA - Ediciones Diarias
 
-# ============================================================
-# Cuándo corre:
-# - Todos los días a las 21:00 UTC = 18:00 hora Argentina
-# - También se puede disparar manualmente desde la pestaña Actions
-# ============================================================
 on:
   schedule:
-    - cron: '0 21 * * *'  # 18hs Argentina (UTC-3)
-  workflow_dispatch:      # disparo manual desde GitHub UI
+    - cron: '0 9 * * *'    # Desayuno 🧉 — 06:00 ARG (UTC-3)
+    - cron: '15 20 * * *'  # Merienda ☕ — 17:15 ARG (UTC-3)
+  workflow_dispatch:
+    inputs:
+      edicion:
+        description: 'Edición a generar'
+        required: false
+        default: 'auto'
+        type: choice
+        options:
+          - auto
+          - desayuno
+          - merienda
 
 permissions:
   contents: write
@@ -19,82 +25,101 @@ jobs:
     timeout-minutes: 15
 
     steps:
-      # 1. Bajar el código del repo
       - name: Checkout
         uses: actions/checkout@v4
 
-      # 2. Configurar Python
       - name: Setup Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.11'
           cache: 'pip'
 
-      # 3. Instalar dependencias
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
           pip install feedparser requests
 
-      # 4. Leer todos los RSS y armar notas.json
+      - name: Detectar edición
+        id: edicion
+        run: |
+          # Determinar qué edición es según la hora UTC
+          HORA=$(date -u +%H)
+          MIN=$(date -u +%M)
+          INPUT="${{ github.event.inputs.edicion }}"
+
+          if [ "$INPUT" = "desayuno" ]; then
+            NOMBRE="Desayuno"
+            ICONO="🧉"
+          elif [ "$INPUT" = "merienda" ]; then
+            NOMBRE="Merienda"
+            ICONO="☕"
+          elif [ "$HORA" -lt 14 ]; then
+            NOMBRE="Desayuno"
+            ICONO="🧉"
+          else
+            NOMBRE="Merienda"
+            ICONO="☕"
+          fi
+
+          echo "nombre=$NOMBRE" >> $GITHUB_OUTPUT
+          echo "icono=$ICONO" >> $GITHUB_OUTPUT
+          echo "[PPA] Generando edición: $NOMBRE $ICONO"
+
       - name: Fetcher - leer fuentes RSS
         run: python scripts/fetcher.py
 
-      # 5. Algoritmo de destacados y portada.json
       - name: Selector - elegir destacados
         run: python scripts/selector.py
 
-      # 6. Generar HTML de "Lo que se dice"
       - name: Generador - Lo que se dice
         run: python scripts/generador.py
 
-      # 7. Generar HTML de Expectativas de mercado
       - name: Generador - Expectativas de mercado
         run: python scripts/generador_expectativas.py
 
-      # 8. Generar HTML de Documentos en circulación
       - name: Generador - Documentos en circulación
         run: python scripts/generador_documentos.py
 
-      # 9. Generar HTML de Columnas
       - name: Generador - Columnas
         run: python scripts/generador_columnas.py
 
-      # 10. Generar HTML del Stream
       - name: Generador - Stream
         run: python scripts/generador_stream.py
 
-      # 11. Generar página Acerca de
       - name: Generador - Acerca de
         run: python scripts/generador_acerca.py
 
-      # 12. Generar la HOME PORTAL (lee todo lo anterior)
+      - name: Generador - Tablero PPA
+        run: python scripts/generador_tablero.py
+        continue-on-error: true  # si todavía no existe, no rompe el deploy
+
       - name: Generador - Home portal
+        env:
+          PPA_EDICION_NOMBRE: ${{ steps.edicion.outputs.nombre }}
+          PPA_EDICION_ICONO: ${{ steps.edicion.outputs.icono }}
         run: python scripts/generador_home.py
 
-      # 13. Exportar config de fuentes para el panel
       - name: Exportar config de fuentes
         run: python scripts/exportar_config.py
 
-      # 14. Copiar JSONs a site/data/ para que el panel los lea
       - name: Copiar JSONs al site
         run: |
           mkdir -p site/data
           cp data/*.json site/data/ || true
 
-      # 15. Commit de los archivos generados al repo
       - name: Commit cambios
         run: |
           git config user.name "PPA Bot"
           git config user.email "bot@pulsoproductivo.com.ar"
           git add data/ site/
           if ! git diff --staged --quiet; then
-            git commit -m "Edición Merienda automática $(date -u +%Y-%m-%d)"
+            EDICION="${{ steps.edicion.outputs.nombre }}"
+            ICONO="${{ steps.edicion.outputs.icono }}"
+            git commit -m "Edición ${EDICION} ${ICONO} — $(date -u '+%Y-%m-%d %H:%M UTC')"
             git pull --rebase origin main
             git push
           fi
 
-      # 16. Deploy a Hostinger vía FTP
       - name: Deploy a Hostinger
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
