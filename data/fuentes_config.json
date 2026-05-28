@@ -37,7 +37,7 @@
       "nombre": "IARAF",
       "categoria": "Macro",
       "tier": 1,
-      "rss": "https://www.iaraf.org/feed/",
+      "rss": "https://www.iaraf.org/index.php/informes-economicos/area-fiscal?format=feed&type=rss",
       "web": "https://www.iaraf.org",
       "descripcion": "Instituto Argentino de Análisis Fiscal. Análisis de gasto público, recaudación, coparticipación.",
       "activa": true
@@ -420,6 +420,76 @@
       "rss": "https://www.iprofesional.com/rss/finanzas",
       "web": "https://www.iprofesional.com/finanzas",
       "descripcion": "iProfesional, sección Finanzas. Mercados y bancos.",
+      "activa": true
+    },
+    {
+      "id": "econviews",
+      "nombre": "Econviews",
+      "categoria": "Expectativas de mercado",
+      "tier": 2,
+      "rss": "https://econviews.com/feed/",
+      "web": "https://econviews.com",
+      "descripcion": "Consultora de Miguel Kiguel. Análisis macro y financiero.",
+      "activa": true
+    },
+    {
+      "id": "ceso",
+      "nombre": "CESO",
+      "categoria": "Expectativas de mercado",
+      "tier": 2,
+      "rss": "https://ceso.com.ar/feed/",
+      "web": "https://ceso.com.ar",
+      "descripcion": "Centro de Estudios Scalabrini Ortiz. Análisis heterodoxo.",
+      "activa": true
+    },
+    {
+      "id": "bcra_nitter",
+      "nombre": "BCRA (Twitter)",
+      "categoria": "Macro",
+      "tier": 1,
+      "rss": "https://nitter.net/BancoCentral_AR/rss",
+      "web": "https://www.bcra.gob.ar",
+      "descripcion": "Cuenta oficial del BCRA en Twitter/X vía Nitter RSS.",
+      "activa": true
+    },
+    {
+      "id": "indec_nitter",
+      "nombre": "INDEC (Twitter)",
+      "categoria": "Macro",
+      "tier": 1,
+      "rss": "https://nitter.net/INDECArgentina/rss",
+      "web": "https://www.indec.gob.ar",
+      "descripcion": "Cuenta oficial del INDEC en Twitter/X vía Nitter RSS.",
+      "activa": true
+    },
+    {
+      "id": "clarin_economia",
+      "nombre": "Clarín Economía",
+      "categoria": "Macro",
+      "tier": 2,
+      "rss": "https://www.clarin.com/rss/economia/",
+      "web": "https://www.clarin.com/economia",
+      "descripcion": "Sección Economía de Clarín.",
+      "activa": true
+    },
+    {
+      "id": "clarin_autos",
+      "nombre": "Clarín Autos",
+      "categoria": "Automotor",
+      "tier": 2,
+      "rss": "https://www.clarin.com/rss/autos/",
+      "web": "https://www.clarin.com/autos",
+      "descripcion": "Sección Autos de Clarín.",
+      "activa": true
+    },
+    {
+      "id": "perfil_economia",
+      "nombre": "Perfil Economía",
+      "categoria": "Macro",
+      "tier": 2,
+      "rss": "https://www.perfil.com/feed/economia",
+      "web": "https://www.perfil.com/economia",
+      "descripcion": "Sección Economía de Perfil.",
       "activa": true
     },
     {
