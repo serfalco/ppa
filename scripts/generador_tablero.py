@@ -11,6 +11,7 @@ from datetime import datetime, timezone, timedelta
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from config import DIR_SITE
+from iconos import ICONO
 
 TZ_AR = timezone(timedelta(hours=-3))
 
@@ -135,6 +136,29 @@ def generar_tablero():
           <span class="dato-sub">MEP vs. dólar oficial</span>
         </div>
 
+      </div>
+
+      <!-- VELÓMETRO BANDA CAMBIARIA -->
+      <div class="banda-velo-card" id="banda-velo-card" style="display:none">
+        <div class="velo-label">BANDA CAMBIARIA · dólar mayorista</div>
+        <div class="banda-velo">
+          <svg viewBox="0 0 220 130">
+            <defs><linearGradient id="bvg" x1="0" y1="0" x2="1" y2="0">
+              <stop offset="0%" stop-color="#27ae60"/><stop offset="55%" stop-color="#e8c84a"/><stop offset="100%" stop-color="#c0392b"/>
+            </linearGradient></defs>
+            <path d="M 20 115 A 90 90 0 0 1 200 115" fill="none" stroke="url(#bvg)" stroke-width="16" stroke-linecap="round"/>
+            <g id="banda-aguja" transform="rotate(0 110 115)">
+              <line x1="110" y1="115" x2="110" y2="40" stroke="#1a1a1a" stroke-width="3"/>
+              <circle cx="110" cy="115" r="6" fill="#1a1a1a"/>
+            </g>
+          </svg>
+        </div>
+        <div class="banda-velo-num" id="banda-velo-num">…</div>
+        <div class="banda-velo-sub" id="banda-velo-sub">del recorrido de la banda</div>
+        <div class="banda-velo-pies">
+          <span class="p" id="banda-velo-piso">…</span>
+          <span class="t" id="banda-velo-techo">…</span>
+        </div>
       </div>
     </section>
 
@@ -415,6 +439,24 @@ def generar_tablero():
 
 </body>
 </html>"""
+
+    # Insertar íconos en los títulos de sección
+    titulos_iconos = {
+        '<h2 class="bloque-titulo">Dólares</h2>':
+            f'<h2 class="bloque-titulo">{ICONO["dolares"]}Dólares</h2>',
+        '<h2 class="bloque-titulo">Mercado</h2>':
+            f'<h2 class="bloque-titulo">{ICONO["mercado"]}Mercado</h2>',
+        '<h2 class="bloque-titulo">Macro</h2>':
+            f'<h2 class="bloque-titulo">{ICONO["macro"]}Macro</h2>',
+        '<h2 class="bloque-titulo">Sector externo</h2>':
+            f'<h2 class="bloque-titulo">{ICONO["comex"]}Sector externo</h2>',
+        '<h2 class="bloque-titulo">Empleo y salarios</h2>':
+            f'<h2 class="bloque-titulo">{ICONO["empleo"]}Empleo y salarios</h2>',
+        '<h2 class="bloque-titulo">Fiscal</h2>':
+            f'<h2 class="bloque-titulo">{ICONO["fiscal"]}Fiscal</h2>',
+    }
+    for viejo, nuevo in titulos_iconos.items():
+        html = html.replace(viejo, nuevo)
 
     dir_tablero = os.path.join(DIR_SITE, "tablero")
     os.makedirs(dir_tablero, exist_ok=True)

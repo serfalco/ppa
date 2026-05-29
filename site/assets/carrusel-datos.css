@@ -1,0 +1,134 @@
+/* =================================================================
+   PPA v3 — Carrusel de datos (corre horizontal)
+   Riesgo Pais destacado al frente. Linkea al Tablero.
+   ================================================================= */
+
+.franja-tarjetas {
+  background: var(--color-fondo, #f5f0e8);
+  border-bottom: 2px solid var(--color-tinta, #1a1a1a);
+  border-top: 1px solid rgba(26,26,26,0.15);
+  padding: 0.7rem 0;
+}
+
+/* Contenedor que scrollea horizontal */
+.carrusel-datos {
+  overflow-x: auto;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+}
+.carrusel-datos::-webkit-scrollbar { display: none; }
+
+/* Pista: fila de tarjetas en linea, no se parten */
+.carrusel-pista {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 0.5rem;
+  padding: 0 1rem;
+  width: max-content;
+}
+
+.tarjeta-dato {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  padding: 0.6rem 0.9rem;
+  min-width: 140px;
+  flex: 0 0 auto;
+  background: #fff;
+  border: 1px solid rgba(26, 26, 26, 0.12);
+  border-radius: 4px;
+  text-decoration: none;
+  color: inherit;
+  transition: border-color 0.15s, box-shadow 0.15s;
+  cursor: pointer;
+}
+
+.tarjeta-dato:hover {
+  border-color: var(--color-rojo, #c0392b);
+  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+  text-decoration: none;
+}
+
+/* RIESGO PAIS destacado: mas ancho, borde rojo, fondo sutil */
+.tarjeta-destacada {
+  min-width: 165px;
+  border: 2px solid var(--color-rojo, #c0392b);
+  background: #fff;
+  box-shadow: 0 1px 6px rgba(192,57,43,0.15);
+}
+.tarjeta-destacada .tarjeta-titulo {
+  color: var(--color-rojo, #c0392b);
+  font-weight: 700;
+}
+.tarjeta-destacada .tarjeta-valor {
+  font-size: 1.45rem;
+}
+
+.tarjeta-titulo {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 0.62rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #666;
+  white-space: nowrap;
+}
+
+.tarjeta-valor {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--color-tinta, #1a1a1a);
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.tarjeta-var {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 0.72rem;
+  font-weight: 500;
+}
+.tarjeta-var.sube { color: #27ae60; }
+.tarjeta-var.baja { color: #c0392b; }
+
+.tarjeta-hora {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 0.6rem;
+  color: #999;
+  margin-top: 0.1rem;
+  white-space: nowrap;
+}
+
+/* Dato viejo (fuente caida, mostrando ultimo valor bueno) */
+.dato-stale { opacity: 0.6; }
+
+/* ============ TARJETA BANDA CAMBIARIA (termometro) ============ */
+.tarjeta-banda { min-width: 250px; }
+.tarjeta-banda .tarjeta-titulo {
+  display: flex; align-items: center; gap: 5px;
+}
+.tarjeta-banda .ic {
+  width: 14px; height: 14px; stroke: currentColor; stroke-width: 2.4;
+  fill: none; stroke-linecap: round; stroke-linejoin: round;
+}
+.banda-term { margin-top: 8px; }
+.banda-barra {
+  position: relative; height: 10px; border-radius: 5px;
+  background: linear-gradient(to right, #27ae60 0%, #e8c84a 55%, #c0392b 100%);
+}
+.banda-marcador {
+  position: absolute; top: -4px; width: 4px; height: 18px;
+  background: #1a1a1a; border-radius: 2px;
+  transform: translateX(-50%); box-shadow: 0 0 0 2px #fff;
+  left: 50%;
+}
+.banda-pies {
+  display: flex; justify-content: space-between; align-items: center;
+  margin-top: 8px; font-size: 0.62rem;
+}
+.banda-piso  { color: #27ae60; font-weight: 600; }
+.banda-techo { color: #c0392b; font-weight: 600; }
+.banda-actual {
+  font-weight: 700; font-size: 0.7rem; color: #1a1a1a;
+}

@@ -369,68 +369,110 @@
 }
 
 /* =================================================================
-   PPA v3 — Ajustes visuales
+   PPA v3 — Ajustes visuales (cabecera + navegación)
    ================================================================= */
 
-/* Título en un solo renglón, achicado */
+/* PPA grande arriba */
 .titulo-home {
-  font-size: clamp(22px, 4vw, 36px) !important;
-  letter-spacing: 0.05em !important;
-  font-weight: 700 !important;
-  white-space: nowrap;
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(56px, 12vw, 110px) !important;
+  font-weight: 900 !important;
+  letter-spacing: -0.02em !important;
+  line-height: 0.9;
+  white-space: normal;
+  color: var(--tinta);
 }
 
-/* Línea de edición (reemplaza "Actualizado:") */
+/* Subtítulo chico debajo, SIN puntos entre palabras */
+.subtitulo-home {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: clamp(11px, 2.5vw, 14px);
+  letter-spacing: 0.35em;
+  text-transform: uppercase;
+  color: var(--gris);
+  margin-top: 6px;
+}
+
+/* Línea de edición (Desayuno/Merienda + fecha) */
 .linea-edicion {
   font-family: 'IBM Plex Sans', sans-serif;
   font-size: 12px;
-  letter-spacing: 0.15em;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
   color: var(--gris);
-  margin-top: 8px;
+  margin-top: 12px;
 }
 
-/* Nav: alineado izquierda, achicado */
+/* Menú principal: centrado, limpio, sin pipes */
 .nav-principal {
-  padding: 8px 0 !important;
-}
-.nav-flex {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 6px;
+  padding: 12px 0 !important;
+  border-bottom: 1px solid var(--linea);
+  background: var(--papel-2);
 }
 .nav-menu {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 22px;
   font-family: 'IBM Plex Sans', sans-serif;
-  font-size: 12px;
+  font-size: 13px;
   font-weight: 600;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
 }
-.nav-menu a {
-  color: var(--tinta);
-  margin: 0 4px;
-}
+.nav-menu a { color: var(--tinta); }
 .nav-menu a.activo { color: var(--rojo); }
 .nav-menu a:hover { color: var(--rojo); }
 
-.nav-cats {
+/* Cinta de categorías: fila propia debajo, sin título, scrolleable en móvil */
+.nav-cats-cinta {
+  border-top: 1px solid var(--linea);
+  border-bottom: 1px solid var(--linea);
+  background: var(--papel);
+  padding: 14px 0;
+  margin-top: 8px;
+}
+.nav-cats-scroll {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 16px;
   font-family: 'IBM Plex Sans', sans-serif;
-  font-size: 10px;
+  font-size: 11px;
   letter-spacing: 0.05em;
-  color: var(--gris);
-}
-.nav-cats-label {
-  font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 0.1em;
-  margin-right: 4px;
 }
-.nav-cats a {
+.nav-cats-scroll a {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
   color: var(--gris);
-  margin: 0 3px;
+  white-space: nowrap;
 }
-.nav-cats a:hover { color: var(--tinta); }
+.nav-cats-scroll a:hover { color: var(--rojo); }
+.nav-cats-scroll a .ic {
+  width: 18px;
+  height: 18px;
+  stroke: currentColor;
+  stroke-width: 2.4;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  flex: 0 0 auto;
+}
+
+/* En móvil la cinta de categorías scrollea horizontal en vez de amontonarse */
+@media (max-width: 640px) {
+  .nav-cats-scroll {
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+  .nav-cats-scroll::-webkit-scrollbar { display: none; }
+  .nav-menu { gap: 16px; font-size: 12px; }
+}
 
 /* Layout home con sidebar para encuesta */
 .home-layout {

@@ -4,7 +4,7 @@ Genera la home portal (/) con:
   - Franja de datos vivos (ticker)
   - Línea de edición: "Edición Desayuno 🧉 · Miércoles 28/05/2026 06:42"
   - Menú achicado, alineado izquierda, separado con |
-  - 5 tarjetas Infobae clickeables
+  - Carrusel de datos clickeable
   - Bloques: Lo que se dice / Columnas / Stream
   - Encuesta lateral (desactivada por defecto)
 
@@ -19,6 +19,7 @@ from html.parser import HTMLParser
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from config import DIR_DATA, DIR_SITE
+from iconos import ICONO
 
 TZ_AR = timezone(timedelta(hours=-3))
 MESES = ["enero","febrero","marzo","abril","mayo","junio",
@@ -110,7 +111,7 @@ def bloque_institucional(notas):
         return """
     <section class="bloque-home">
       <header class="bloque-header">
-        <span class="bloque-kicker">Lo que se dice</span>
+        <span class="bloque-kicker">Institucional</span>
         <h2><a href="/institucional/">La Data del día</a></h2>
       </header>
       <p class="bloque-vacio">Cargando contenido...</p>
@@ -128,7 +129,7 @@ def bloque_institucional(notas):
     return f"""
     <section class="bloque-home bloque-institucional">
       <header class="bloque-header">
-        <span class="bloque-kicker">Lo que se dice</span>
+        <span class="bloque-kicker">Institucional</span>
         <h2><a href="/institucional/">La Data del día</a></h2>
         <p class="bloque-sub">Lo más destacado de las instituciones, consultoras y centros de estudio</p>
       </header>
@@ -187,28 +188,52 @@ def bloque_stream(notas):
     </section>"""
 
 
-def tarjetas_infobae():
-    """5 tarjetas clickeables que llevan al Tablero PPA."""
+def carrusel_datos():
+    """Carrusel horizontal de datos que corre solo y linkea al Tablero.
+    Riesgo País primero y destacado. El resto de los datos a continuación."""
+    # (id, título, href, destacada)  — orden = orden de aparición
     tarjetas = [
-        ("tarjeta-dolar-oficial", "DÓLAR OFICIAL",  "/tablero/#dolares"),
-        ("tarjeta-dolar-mep",     "DÓLAR MEP",      "/tablero/#dolares"),
-        ("tarjeta-riesgo",        "RIESGO PAÍS",    "/tablero/#mercado"),
-        ("tarjeta-merval",        "MERVAL",          "/tablero/#mercado"),
-        ("tarjeta-reservas",      "RESERVAS BCRA",  "/tablero/#macro"),
+        ("tarjeta-riesgo",        "RIESGO PAÍS",   "/tablero/#mercado",  True),
+        ("tarjeta-dolar-oficial", "DÓLAR OFICIAL", "/tablero/#dolares",  False),
+        ("tarjeta-dolar-mep",     "DÓLAR MEP",     "/tablero/#dolares",  False),
+        ("tarjeta-dolar-ccl",     "DÓLAR CCL",     "/tablero/#dolares",  False),
+        ("tarjeta-dolar-blue",    "DÓLAR BLUE",    "/tablero/#dolares",  False),
+        ("tarjeta-merval",        "MERVAL",        "/tablero/#mercado",  False),
+        ("tarjeta-reservas",      "RESERVAS BCRA", "/tablero/#mercado",  False),
+        ("tarjeta-brecha",        "BRECHA MEP",    "/tablero/#dolares",  False),
+        ("tarjeta-ipc",           "IPC MENSUAL",   "/tablero/#macro",    False),
+        ("tarjeta-emae",          "EMAE",          "/tablero/#macro",    False),
     ]
     cards_html = []
-    for id_, titulo, href in tarjetas:
+    for id_, titulo, href, destacada in tarjetas:
+        clase = "tarjeta-dato" + (" tarjeta-destacada" if destacada else "")
         cards_html.append(f"""
-      <a href="{href}" class="tarjeta-dato" id="{id_}" title="Ver en Tablero PPA">
+      <a href="{href}" class="{clase}" id="{id_}" title="Ver en Tablero PPA">
         <span class="tarjeta-titulo">{titulo}</span>
-        <span class="tarjeta-valor">—</span>
+        <span class="tarjeta-valor">…</span>
         <span class="tarjeta-var"></span>
         <span class="tarjeta-hora"></span>
       </a>""")
+    # Tarjeta especial de BANDA CAMBIARIA (termómetro), va al final
+    tarjeta_banda = f"""
+      <a href="/tablero/#dolares" class="tarjeta-dato tarjeta-banda" id="tarjeta-banda" title="Banda cambiaria — ver en Tablero">
+        <span class="tarjeta-titulo">{ICONO['banda']}Banda cambiaria</span>
+        <div class="banda-term">
+          <div class="banda-barra"><div class="banda-marcador" id="banda-marcador"></div></div>
+          <div class="banda-pies">
+            <span class="banda-piso" id="banda-piso">…</span>
+            <span class="banda-actual" id="banda-actual"></span>
+            <span class="banda-techo" id="banda-techo">…</span>
+          </div>
+        </div>
+      </a>"""
+    cards_html.append(tarjeta_banda)
     return f"""
 <section class="franja-tarjetas">
-  <div class="contenedor tarjetas-grid">
+  <div class="carrusel-datos" id="carrusel-datos">
+    <div class="carrusel-pista" id="carrusel-pista">
     {''.join(cards_html)}
+    </div>
   </div>
 </section>"""
 
@@ -248,7 +273,7 @@ def generar_home():
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,900&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/assets/ppa.css">
 <link rel="stylesheet" href="/assets/home.css">
-<link rel="stylesheet" href="/assets/tarjetas-infobae.css">
+<link rel="stylesheet" href="/assets/carrusel-datos.css">
 </head>
 <body class="body-home">
 
@@ -275,7 +300,8 @@ def generar_home():
 <!-- MASTHEAD -->
 <header class="cabecera-home">
   <div class="contenedor">
-    <h1 class="titulo-home">Pulso · Productivo · Argentino</h1>
+    <h1 class="titulo-home">PPA</h1>
+    <p class="subtitulo-home">Pulso Productivo Argentino</p>
     <p class="linea-edicion">{escapar(linea_edicion)}</p>
   </div>
 </header>
@@ -290,33 +316,21 @@ def generar_home():
 
 <!-- NAVEGACIÓN PRINCIPAL -->
 <nav class="nav-principal">
-  <div class="contenedor nav-flex">
+  <div class="contenedor">
     <div class="nav-menu">
-      <a href="/" class="activo">Portada</a> |
-      <a href="/institucional/">Lo que se dice</a> |
-      <a href="/expectativas/">Expectativas</a> |
-      <a href="/documentos/">Documentos</a> |
-      <a href="/columnas/">Columnas</a> |
-      <a href="/stream/">Stream</a> |
+      <a href="/" class="activo">Portada</a>
+      <a href="/institucional/">Institucional</a>
+      <a href="/expectativas/">Expectativas</a>
+      <a href="/documentos/">Documentos</a>
+      <a href="/columnas/">Columnas</a>
+      <a href="/stream/">Stream</a>
       <a href="/tablero/">Tablero</a>
-    </div>
-    <div class="nav-cats">
-      <span class="nav-cats-label">Categorías:</span>
-      <a href="/institucional/#macro">Macro</a> |
-      <a href="/institucional/#politica">Política</a> |
-      <a href="/institucional/#energia">Energía</a> |
-      <a href="/institucional/#agro">Agro</a> |
-      <a href="/institucional/#mineria">Minería</a> |
-      <a href="/institucional/#comex">Comex</a> |
-      <a href="/institucional/#automotor">Automotor</a> |
-      <a href="/institucional/#logistica">Logística</a> |
-      <a href="/institucional/#internacional">Internacional</a>
     </div>
   </div>
 </nav>
 
-<!-- 5 TARJETAS INFOBAE -->
-{tarjetas_infobae()}
+<!-- CARRUSEL DE DATOS -->
+{carrusel_datos()}
 
 <!-- CONTENIDO PRINCIPAL + ENCUESTA -->
 <main class="home-main">
@@ -335,13 +349,28 @@ def generar_home():
   </div>
 </main>
 
+<!-- CINTA DE CATEGORÍAS (al pie, después de las notas) -->
+<nav class="nav-cats-cinta">
+  <div class="contenedor nav-cats-scroll">
+    <a href="/institucional/#macro">{ICONO['macro']}<span>Macro</span></a>
+    <a href="/institucional/#politica">{ICONO['politica']}<span>Política</span></a>
+    <a href="/institucional/#energia">{ICONO['energia']}<span>Energía</span></a>
+    <a href="/institucional/#agro">{ICONO['agro']}<span>Agro</span></a>
+    <a href="/institucional/#mineria">{ICONO['mineria']}<span>Minería</span></a>
+    <a href="/institucional/#comex">{ICONO['comex']}<span>Comex</span></a>
+    <a href="/institucional/#automotor">{ICONO['automotor']}<span>Automotor</span></a>
+    <a href="/institucional/#logistica">{ICONO['logistica']}<span>Logística</span></a>
+    <a href="/institucional/#internacional">{ICONO['internacional']}<span>Internacional</span></a>
+  </div>
+</nav>
+
 <!-- PIE -->
 <footer class="pie">
   <div class="contenedor">
     <strong>PPA · Pulso Productivo Argentino</strong><br>
     <span class="pie-bajada">Publicación económica · pulsoproductivo.com.ar</span>
     <div class="pie-meta">
-      <a href="/institucional/">Lo que se dice</a> ·
+      <a href="/institucional/">Institucional</a> ·
       <a href="/expectativas/">Expectativas de mercado</a> ·
       <a href="/documentos/">Documentos</a> ·
       <a href="/columnas/">Columnas</a> ·

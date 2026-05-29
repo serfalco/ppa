@@ -183,3 +183,44 @@
   opacity: 0.9;
 }
 .volver-home:hover { opacity: 1; }
+
+/* ============ ÍCONOS EN TÍTULOS DE SECCIÓN ============ */
+.bloque-titulo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.bloque-titulo .ic {
+  width: 26px;
+  height: 26px;
+  stroke: currentColor;
+  stroke-width: 2.4;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  flex: 0 0 auto;
+}
+
+/* ============ VELÓMETRO DE BANDA CAMBIARIA (tablero) ============ */
+.banda-velo-card {
+  grid-column: 1 / -1;
+  background: #fff;
+  border: 1px solid rgba(26,26,26,.12);
+  border-radius: 6px;
+  padding: 18px 20px;
+  text-align: center;
+}
+.banda-velo-card .velo-label {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: .72rem; font-weight: 600; letter-spacing: .08em;
+  text-transform: uppercase; color: #888;
+  display: flex; align-items: center; justify-content: center; gap: 6px;
+  margin-bottom: 6px;
+}
+.banda-velo-card .velo-label .ic { width: 16px; height: 16px; stroke: currentColor; stroke-width: 2.4; fill: none; }
+.banda-velo svg { width: 240px; height: 140px; max-width: 100%; }
+.banda-velo-num { font-size: 1.6rem; font-weight: 700; margin-top: -8px; }
+.banda-velo-sub { font-size: .8rem; color: #888; margin-bottom: 8px; }
+.banda-velo-pies { display: flex; justify-content: space-between; max-width: 280px; margin: 0 auto; font-size: .78rem; }
+.banda-velo-pies .p { color: #27ae60; font-weight: 600; }
+.banda-velo-pies .t { color: #c0392b; font-weight: 600; }
