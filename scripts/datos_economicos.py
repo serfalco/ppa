@@ -332,17 +332,19 @@ def obtener_merval(previo):
 #   tipo "nivel"   -> muestro el valor tal cual
 #   tipo "var_men" -> muestro la variación % mensual (IPC: nivel general)
 SERIES = [
-    ("reservas",      "174.1_T_1.0_0_100",        "MM USD",  "diaria",  "nivel"),
-    # IPC nacional nivel general base dic-2016 (el v3 usaba el de GBA, viejo)
+    # Reservas: el ID 174.1 está muerto; usamos el que verificó OK
+    ("reservas",      "92.1_RID_0_0_32",           "MM USD",  "diaria",  "nivel"),
+    # IPC nacional nivel general (verificado OK)
     ("ipc_mensual",   "101.1_I2NG_2016_M_22",      "%",      "mensual", "var_men"),
+    # IPC núcleo (verificado OK) — como variación mensual
+    ("ipc_nucleo",    "103.1_I2N_2016_M_15",       "%",      "mensual", "var_men"),
+    # EMAE desestacionalizado (verificado OK)
     ("emae",          "143.3_NO_PR_2004_A_21",     "puntos", "mensual", "nivel"),
-    ("exportaciones", "37.3_EXPFOBNM_0_M_22",      "M USD",  "mensual", "nivel"),
-    ("importaciones", "37.3_IMPCIFSM_0_M_23",      "M USD",  "mensual", "nivel"),
+    # TCRM (verificado OK)
     ("tcrm",          "116.4_TCRM_0_D_36",         "índice", "diaria",  "nivel"),
-    ("desocupacion",  "41.1_DEOCT_TOTAL_0_T_26",   "%",      "trimestral", "nivel"),
+    # PENDIENTES (IDs muertos, a reemplazar tras 2ª verificación):
+    # exportaciones, importaciones, saldo comercial, desocupación
 ]
-# NOTA: correr scripts/verificar_series.py para confirmar qué IDs responden
-# con dato fresco y reemplazar acá los que fallen.
 
 
 def obtener_series(previo):
@@ -375,16 +377,7 @@ def obtener_series(previo):
             print(f"   ⚠  {clave}: sin dato nuevo"
                   + (" (conservo previo)" if cons else " (sin previo)"))
 
-    # Saldo comercial (derivado)
-    try:
-        exp = out.get("exportaciones", {}).get("valor")
-        imp = out.get("importaciones", {}).get("valor")
-        if exp is not None and imp is not None:
-            out["saldo_comercial"] = dato(round(exp - imp), unidad="M USD",
-                                          periodo=out["exportaciones"].get("periodo"),
-                                          fuente="cálculo PPA", frecuencia="mensual")
-    except Exception:
-        pass
+    # Saldo comercial: se reactivará cuando confirmemos IDs de exp/imp
     return out
 
 

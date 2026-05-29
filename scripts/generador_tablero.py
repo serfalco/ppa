@@ -277,21 +277,21 @@ def generar_tablero():
 
         <div class="dato-card">
           <span class="dato-label">Exportaciones (último mes)</span>
-          <span class="dato-valor" id="t-exportaciones">…</span>
+          <span class="dato-valor dato-proximo" id="t-exportaciones">próximamente</span>
           <span class="dato-sub">millones de USD</span>
           <span class="dato-fuente">INDEC vía datos.gob.ar</span>
         </div>
 
         <div class="dato-card">
           <span class="dato-label">Importaciones (último mes)</span>
-          <span class="dato-valor" id="t-importaciones">…</span>
+          <span class="dato-valor dato-proximo" id="t-importaciones">próximamente</span>
           <span class="dato-sub">millones de USD</span>
           <span class="dato-fuente">INDEC vía datos.gob.ar</span>
         </div>
 
         <div class="dato-card dato-card-accent">
           <span class="dato-label">Saldo comercial</span>
-          <span class="dato-valor dato-grande" id="t-saldo-comercial">…</span>
+          <span class="dato-valor dato-grande dato-proximo" id="t-saldo-comercial">próximamente</span>
           <span class="dato-sub">millones de USD</span>
           <span class="dato-fuente">INDEC vía datos.gob.ar</span>
         </div>
@@ -315,20 +315,20 @@ def generar_tablero():
 
         <div class="dato-card">
           <span class="dato-label">Desocupación</span>
-          <span class="dato-valor dato-grande" id="t-desocupacion">…</span>
+          <span class="dato-valor dato-grande dato-proximo" id="t-desocupacion">próximamente</span>
           <span class="dato-sub" id="t-desocupacion-fecha">último trimestre</span>
           <span class="dato-fuente">INDEC vía datos.gob.ar</span>
         </div>
 
         <div class="dato-card">
           <span class="dato-label">Tasa de empleo</span>
-          <span class="dato-valor" id="t-empleo">…</span>
+          <span class="dato-valor dato-proximo" id="t-empleo">próximamente</span>
           <span class="dato-fuente">INDEC vía datos.gob.ar</span>
         </div>
 
         <div class="dato-card">
           <span class="dato-label">Tasa de actividad</span>
-          <span class="dato-valor" id="t-actividad">…</span>
+          <span class="dato-valor dato-proximo" id="t-actividad">próximamente</span>
           <span class="dato-fuente">INDEC vía datos.gob.ar</span>
         </div>
 

@@ -224,3 +224,11 @@
 .banda-velo-pies { display: flex; justify-content: space-between; max-width: 280px; margin: 0 auto; font-size: .78rem; }
 .banda-velo-pies .p { color: #27ae60; font-weight: 600; }
 .banda-velo-pies .t { color: #c0392b; font-weight: 600; }
+
+/* Dato pendiente de fuente (próximamente) — gris, discreto, no parece error */
+.dato-proximo {
+  color: #b0a89c !important;
+  font-size: .85rem !important;
+  font-style: italic;
+  font-weight: 500 !important;
+}

@@ -18,33 +18,31 @@ HDRS = {"User-Agent": "Mozilla/5.0 (compatible; PPA-Bot/1.0)"}
 # Candidatos a probar. Varios por indicador: el verificador dice cuál anda.
 # Formato: (etiqueta, id_serie, que_esperamos)
 CANDIDATOS = [
-    # --- IPC ---
-    ("IPC nacional nivel gral (nuevo)", "101.1_I2NG_2016_M_22", "índice mensual"),
-    ("IPC GBA nivel gral (viejo v3)",   "148.3_INIVELGBA_DICI_M_26", "índice mensual"),
-    ("IPC variación mensual directa",   "101.1_I2NG_2016_M_19", "% mensual"),
-    ("IPC núcleo",                       "103.1_I2N_2016_M_15", "índice"),
-    # --- EMAE ---
-    ("EMAE desestacionalizado (v3)",    "143.3_NO_PR_2004_A_21", "índice"),
-    ("EMAE serie original",             "143.3_NO_PR_2004_A_28", "índice"),
-    # --- Reservas ---
-    ("Reservas BCRA (v3)",              "174.1_T_1.0_0_100", "millones USD"),
-    ("Reservas internacionales",        "92.1_RID_0_0_32", "millones USD"),
-    # --- Comercio exterior ---
-    ("Exportaciones FOB (v3)",          "37.3_EXPFOBNM_0_M_22", "millones USD"),
-    ("Importaciones CIF (v3)",          "37.3_IMPCIFSM_0_M_23", "millones USD"),
-    ("Balanza comercial saldo",         "173.2_BCSGYP_0_M_30", "millones USD"),
-    # --- TCRM ---
-    ("TCRM (v3)",                        "116.4_TCRM_0_D_36", "índice"),
+    # ====== 2ª RONDA: reemplazos para los que fallaron ======
+    # --- Comercio exterior (ICA) ---
+    ("Exportaciones FOB alt 1",   "74.3_IEXNN_2004_M_27", "millones USD"),
+    ("Exportaciones FOB alt 2",   "37.2_E_0_M_30", "millones USD"),
+    ("Exportaciones total mensual","151.1_EXPORTAC_0_0_22", "millones USD"),
+    ("Importaciones CIF alt 1",   "74.3_IIMNN_2004_M_32", "millones USD"),
+    ("Importaciones alt 2",       "37.2_I_0_M_32", "millones USD"),
+    ("Balanza comercial alt 1",   "151.1_SALDO_0_0_18", "millones USD"),
+    ("Balanza comercial alt 2",   "74.3_ISNN_2004_M_15", "millones USD"),
     # --- Empleo (EPH trimestral) ---
-    ("Desocupación (v3)",               "41.1_DEOCT_TOTAL_0_T_26", "%"),
-    ("Tasa empleo (v3)",                "41.1_TEOCT_TOTAL_0_T_26", "%"),
-    ("Tasa actividad (v3)",             "41.1_TAOCT_TOTAL_0_T_26", "%"),
-    ("Desocupación alt",                "168.1_TD_0_M_24", "%"),
-    # --- Salarios ---
-    ("Índice salarios privado (v3)",    "148.3_ICTOTAL_DICI_M_16", "índice"),
-    # --- Fiscal (las que nunca anduvieron) ---
-    ("Recaudación tributaria total",    "168.1_T_RECAUDAC_0_0_38", "millones $"),
-    ("Resultado primario SPN",          "168.1_T_RESULTADOP_0_0_25", "millones $"),
+    ("Desocupación alt 1",        "45.2_ECTDT_0_T_42", "%"),
+    ("Desocupación alt 2",        "45.2_TD_0_T_18", "%"),
+    ("Desocupación alt 3",        "192.1_TASDESOCUPACION_T_31", "%"),
+    ("Tasa empleo alt",           "45.2_TE_0_T_15", "%"),
+    ("Tasa actividad alt",        "45.2_TA_0_T_12", "%"),
+    # --- Reservas BCRA (confirmar si hay diaria mejor que la mensual RID) ---
+    ("Reservas intl (confirmada)","92.1_RID_0_0_32", "millones USD"),
+    ("Base monetaria",            "175.1_BM_0_0_15", "millones $"),
+    ("Tasa política monetaria",   "160.1_TPMBADLARABE_0_0_10", "% TNA"),
+
+    # ====== 1ª RONDA (confirmados OK, dejo para re-chequear) ======
+    ("IPC nacional nivel gral",   "101.1_I2NG_2016_M_22", "índice"),
+    ("IPC núcleo",                "103.1_I2N_2016_M_15", "índice"),
+    ("EMAE desest.",              "143.3_NO_PR_2004_A_21", "índice"),
+    ("TCRM",                      "116.4_TCRM_0_D_36", "índice"),
 ]
 
 
