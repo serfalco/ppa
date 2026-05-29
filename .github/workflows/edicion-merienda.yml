@@ -89,6 +89,9 @@ jobs:
       - name: Generador - Acerca de
         run: python scripts/generador_acerca.py
 
+      - name: Datos económicos (completo, incluye mensuales)
+        run: python scripts/datos_economicos.py
+
       - name: Generador - Tablero PPA
         run: python scripts/generador_tablero.py
         continue-on-error: true  # si todavía no existe, no rompe el deploy
