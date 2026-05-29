@@ -13,7 +13,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,900&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/assets/ppa.css">
 <link rel="stylesheet" href="/assets/home.css">
-<link rel="stylesheet" href="/assets/tarjetas-infobae.css">
+<link rel="stylesheet" href="/assets/carrusel-datos.css">
 </head>
 <body class="body-home">
 
@@ -40,8 +40,9 @@
 <!-- MASTHEAD -->
 <header class="cabecera-home">
   <div class="contenedor">
-    <h1 class="titulo-home">Pulso · Productivo · Argentino</h1>
-    <p class="linea-edicion">Edición Desayuno 🧉 · Viernes 29/05/2026 09:16</p>
+    <h1 class="titulo-home">PPA</h1>
+    <p class="subtitulo-home">Pulso Productivo Argentino</p>
+    <p class="linea-edicion">Edición Desayuno 🧉 · Viernes 29/05/2026 10:18</p>
   </div>
 </header>
 
@@ -55,66 +56,97 @@
 
 <!-- NAVEGACIÓN PRINCIPAL -->
 <nav class="nav-principal">
-  <div class="contenedor nav-flex">
+  <div class="contenedor">
     <div class="nav-menu">
-      <a href="/" class="activo">Portada</a> |
-      <a href="/institucional/">Lo que se dice</a> |
-      <a href="/expectativas/">Expectativas</a> |
-      <a href="/documentos/">Documentos</a> |
-      <a href="/columnas/">Columnas</a> |
-      <a href="/stream/">Stream</a> |
+      <a href="/" class="activo">Portada</a>
+      <a href="/institucional/">Institucional</a>
+      <a href="/expectativas/">Expectativas</a>
+      <a href="/documentos/">Documentos</a>
+      <a href="/columnas/">Columnas</a>
+      <a href="/stream/">Stream</a>
       <a href="/tablero/">Tablero</a>
-    </div>
-    <div class="nav-cats">
-      <span class="nav-cats-label">Categorías:</span>
-      <a href="/institucional/#macro">Macro</a> |
-      <a href="/institucional/#politica">Política</a> |
-      <a href="/institucional/#energia">Energía</a> |
-      <a href="/institucional/#agro">Agro</a> |
-      <a href="/institucional/#mineria">Minería</a> |
-      <a href="/institucional/#comex">Comex</a> |
-      <a href="/institucional/#automotor">Automotor</a> |
-      <a href="/institucional/#logistica">Logística</a> |
-      <a href="/institucional/#internacional">Internacional</a>
     </div>
   </div>
 </nav>
 
-<!-- 5 TARJETAS INFOBAE -->
+<!-- CARRUSEL DE DATOS -->
 
 <section class="franja-tarjetas">
-  <div class="contenedor tarjetas-grid">
+  <div class="carrusel-datos" id="carrusel-datos">
+    <div class="carrusel-pista" id="carrusel-pista">
     
+      <a href="/tablero/#mercado" class="tarjeta-dato tarjeta-destacada" id="tarjeta-riesgo" title="Ver en Tablero PPA">
+        <span class="tarjeta-titulo">RIESGO PAÍS</span>
+        <span class="tarjeta-valor">…</span>
+        <span class="tarjeta-var"></span>
+        <span class="tarjeta-hora"></span>
+      </a>
       <a href="/tablero/#dolares" class="tarjeta-dato" id="tarjeta-dolar-oficial" title="Ver en Tablero PPA">
         <span class="tarjeta-titulo">DÓLAR OFICIAL</span>
-        <span class="tarjeta-valor">—</span>
+        <span class="tarjeta-valor">…</span>
         <span class="tarjeta-var"></span>
         <span class="tarjeta-hora"></span>
       </a>
       <a href="/tablero/#dolares" class="tarjeta-dato" id="tarjeta-dolar-mep" title="Ver en Tablero PPA">
         <span class="tarjeta-titulo">DÓLAR MEP</span>
-        <span class="tarjeta-valor">—</span>
+        <span class="tarjeta-valor">…</span>
         <span class="tarjeta-var"></span>
         <span class="tarjeta-hora"></span>
       </a>
-      <a href="/tablero/#mercado" class="tarjeta-dato" id="tarjeta-riesgo" title="Ver en Tablero PPA">
-        <span class="tarjeta-titulo">RIESGO PAÍS</span>
-        <span class="tarjeta-valor">—</span>
+      <a href="/tablero/#dolares" class="tarjeta-dato" id="tarjeta-dolar-ccl" title="Ver en Tablero PPA">
+        <span class="tarjeta-titulo">DÓLAR CCL</span>
+        <span class="tarjeta-valor">…</span>
+        <span class="tarjeta-var"></span>
+        <span class="tarjeta-hora"></span>
+      </a>
+      <a href="/tablero/#dolares" class="tarjeta-dato" id="tarjeta-dolar-blue" title="Ver en Tablero PPA">
+        <span class="tarjeta-titulo">DÓLAR BLUE</span>
+        <span class="tarjeta-valor">…</span>
         <span class="tarjeta-var"></span>
         <span class="tarjeta-hora"></span>
       </a>
       <a href="/tablero/#mercado" class="tarjeta-dato" id="tarjeta-merval" title="Ver en Tablero PPA">
         <span class="tarjeta-titulo">MERVAL</span>
-        <span class="tarjeta-valor">—</span>
+        <span class="tarjeta-valor">…</span>
         <span class="tarjeta-var"></span>
         <span class="tarjeta-hora"></span>
       </a>
-      <a href="/tablero/#macro" class="tarjeta-dato" id="tarjeta-reservas" title="Ver en Tablero PPA">
+      <a href="/tablero/#mercado" class="tarjeta-dato" id="tarjeta-reservas" title="Ver en Tablero PPA">
         <span class="tarjeta-titulo">RESERVAS BCRA</span>
-        <span class="tarjeta-valor">—</span>
+        <span class="tarjeta-valor">…</span>
         <span class="tarjeta-var"></span>
         <span class="tarjeta-hora"></span>
       </a>
+      <a href="/tablero/#dolares" class="tarjeta-dato" id="tarjeta-brecha" title="Ver en Tablero PPA">
+        <span class="tarjeta-titulo">BRECHA MEP</span>
+        <span class="tarjeta-valor">…</span>
+        <span class="tarjeta-var"></span>
+        <span class="tarjeta-hora"></span>
+      </a>
+      <a href="/tablero/#macro" class="tarjeta-dato" id="tarjeta-ipc" title="Ver en Tablero PPA">
+        <span class="tarjeta-titulo">IPC MENSUAL</span>
+        <span class="tarjeta-valor">…</span>
+        <span class="tarjeta-var"></span>
+        <span class="tarjeta-hora"></span>
+      </a>
+      <a href="/tablero/#macro" class="tarjeta-dato" id="tarjeta-emae" title="Ver en Tablero PPA">
+        <span class="tarjeta-titulo">EMAE</span>
+        <span class="tarjeta-valor">…</span>
+        <span class="tarjeta-var"></span>
+        <span class="tarjeta-hora"></span>
+      </a>
+      <a href="/tablero/#dolares" class="tarjeta-dato tarjeta-banda" id="tarjeta-banda" title="Banda cambiaria — ver en Tablero">
+        <span class="tarjeta-titulo"><svg viewBox="0 0 32 32" class="ic"><line x1="6" y1="16" x2="26" y2="16"/><line x1="6" y1="11" x2="6" y2="21"/><line x1="26" y1="11" x2="26" y2="21"/><circle cx="16" cy="16" r="3"/></svg>Banda cambiaria</span>
+        <div class="banda-term">
+          <div class="banda-barra"><div class="banda-marcador" id="banda-marcador"></div></div>
+          <div class="banda-pies">
+            <span class="banda-piso" id="banda-piso">…</span>
+            <span class="banda-actual" id="banda-actual"></span>
+            <span class="banda-techo" id="banda-techo">…</span>
+          </div>
+        </div>
+      </a>
+    </div>
   </div>
 </section>
 
@@ -127,12 +159,17 @@
       
     <section class="bloque-home bloque-institucional">
       <header class="bloque-header">
-        <span class="bloque-kicker">Lo que se dice</span>
+        <span class="bloque-kicker">Institucional</span>
         <h2><a href="/institucional/">La Data del día</a></h2>
         <p class="bloque-sub">Lo más destacado de las instituciones, consultoras y centros de estudio</p>
       </header>
       <div class="bloque-items">
         
+      <article class="bloque-item">
+        <span class="item-cat">Automotor</span>
+        <h3><a href="https://arodarpost.com.ar/confirmado-byd-comenzo-la-preventa-del-seal-u-dm-i-hibrido-enchufable-se-entra-con-us500/" target="_blank" rel="noopener">Confirmado: BYD comenzó la preventa del Seal U DM-i híbrido enchufable (se entra con u$s500)</a></h3>
+        <p class="item-fuente">A Rodar Post</p>
+      </article>
       <article class="bloque-item">
         <span class="item-cat">Internacional</span>
         <h3><a href="https://www.bloomberglinea.com/latinoamerica/este-es-el-panorama-para-los-minerales-criticos-y-el-oil-gas-en-latinoamerica-segun-moodys/" target="_blank" rel="noopener">Este es el panorama para los minerales críticos y el oil &amp; gas en Latinoamérica, según Moody’s</a></h3>
@@ -144,14 +181,9 @@
         <p class="item-fuente">CIPPEC</p>
       </article>
       <article class="bloque-item">
-        <span class="item-cat">Automotor</span>
-        <h3><a href="https://arodarpost.com.ar/byd-presento-en-europa-el-dolphin-g-un-electrico-enchufable-que-tambien-llegara-a-la-argentina/" target="_blank" rel="noopener">BYD presentó en Europa el Dolphin G, un híbrido enchufable que también llegará a la Argentina</a></h3>
-        <p class="item-fuente">A Rodar Post</p>
-      </article>
-      <article class="bloque-item">
-        <span class="item-cat">Energía</span>
-        <h3><a href="https://econojournal.com.ar/2026/05/el-gobierno-evita-costo-fiscal-por-la-importacion-de-gnl/" target="_blank" rel="noopener">El gobierno evita costo fiscal por la importación de GNL y acuerda con Trafigura un mecanismo de cesión de gas para centrales térmicas</a></h3>
-        <p class="item-fuente">EconoJournal</p>
+        <span class="item-cat">Internacional</span>
+        <h3><a href="https://www.bloomberglinea.com/latinoamerica/mexico/banca-en-mexico-dice-que-subsidios-del-gobierno-a-pemex-no-benefician-a-mexicanos/" target="_blank" rel="noopener">Banca en México dice que subsidios del Gobierno a Pemex no benefician a mexicanos</a></h3>
+        <p class="item-fuente">Bloomberg Línea</p>
       </article>
       </div>
       <a href="/institucional/" class="bloque-link">Ver edición completa →</a>
@@ -182,13 +214,28 @@
   </div>
 </main>
 
+<!-- CINTA DE CATEGORÍAS (al pie, después de las notas) -->
+<nav class="nav-cats-cinta">
+  <div class="contenedor nav-cats-scroll">
+    <a href="/institucional/#macro"><svg viewBox="0 0 32 32" class="ic"><line x1="5" y1="27" x2="27" y2="27"/><rect x="7" y="18" width="4" height="9"/><rect x="14" y="13" width="4" height="14"/><rect x="21" y="8" width="4" height="19"/></svg><span>Macro</span></a>
+    <a href="/institucional/#politica"><svg viewBox="0 0 32 32" class="ic"><polyline points="6,12 16,6 26,12"/><line x1="8" y1="12" x2="8" y2="24"/><line x1="13" y1="12" x2="13" y2="24"/><line x1="19" y1="12" x2="19" y2="24"/><line x1="24" y1="12" x2="24" y2="24"/><line x1="5" y1="24" x2="27" y2="24"/></svg><span>Política</span></a>
+    <a href="/institucional/#energia"><svg viewBox="0 0 32 32" class="ic"><polygon points="18,4 8,18 15,18 14,28 24,14 17,14"/></svg><span>Energía</span></a>
+    <a href="/institucional/#agro"><svg viewBox="0 0 32 32" class="ic"><line x1="16" y1="29" x2="16" y2="13"/><path d="M16 14 q-5 -1 -5 -6 q5 1 5 6"/><path d="M16 14 q5 -1 5 -6 q-5 1 -5 6"/><path d="M16 20 q-4 -1 -4 -5 q4 1 4 5"/><path d="M16 20 q4 -1 4 -5 q-4 1 -4 5"/></svg><span>Agro</span></a>
+    <a href="/institucional/#mineria"><svg viewBox="0 0 32 32" class="ic"><path d="M5 22 C 5 14, 11 9, 16 9 C 21 9, 27 14, 27 22"/><line x1="4" y1="22" x2="28" y2="22"/><rect x="14" y="6" width="4" height="5"/><circle cx="16" cy="14" r="2"/></svg><span>Minería</span></a>
+    <a href="/institucional/#comex"><svg viewBox="0 0 32 32" class="ic"><path d="M5 20 L27 20 L24 26 L8 26 Z"/><rect x="11" y="13" width="5" height="7"/><rect x="16" y="13" width="5" height="7"/><line x1="16" y1="8" x2="16" y2="13"/></svg><span>Comex</span></a>
+    <a href="/institucional/#automotor"><svg viewBox="0 0 32 32" class="ic"><path d="M5 21 L7 14 L25 14 L27 21"/><line x1="4" y1="21" x2="28" y2="21"/><circle cx="10" cy="23" r="2.5"/><circle cx="22" cy="23" r="2.5"/></svg><span>Automotor</span></a>
+    <a href="/institucional/#logistica"><svg viewBox="0 0 32 32" class="ic"><rect x="4" y="11" width="13" height="10"/><path d="M17 14 L23 14 L27 18 L27 21 L17 21"/><circle cx="10" cy="23" r="2.5"/><circle cx="23" cy="23" r="2.5"/></svg><span>Logística</span></a>
+    <a href="/institucional/#internacional"><svg viewBox="0 0 32 32" class="ic"><circle cx="16" cy="16" r="11"/><ellipse cx="16" cy="16" rx="5" ry="11"/><line x1="5" y1="16" x2="27" y2="16"/></svg><span>Internacional</span></a>
+  </div>
+</nav>
+
 <!-- PIE -->
 <footer class="pie">
   <div class="contenedor">
     <strong>PPA · Pulso Productivo Argentino</strong><br>
     <span class="pie-bajada">Publicación económica · pulsoproductivo.com.ar</span>
     <div class="pie-meta">
-      <a href="/institucional/">Lo que se dice</a> ·
+      <a href="/institucional/">Institucional</a> ·
       <a href="/expectativas/">Expectativas de mercado</a> ·
       <a href="/documentos/">Documentos</a> ·
       <a href="/columnas/">Columnas</a> ·
