@@ -259,7 +259,7 @@ def generar_expectativas():
 
 <header class="exp-header">
   <div class="contenedor">
-    <div class="exp-kicker">Expectativas de mercado</div>
+    <div class="exp-kicker">Expectativas</div>
     <h1>Las firmas</h1>
     <p class="exp-intro">
       Las consultoras y firmas profesionales que arman las expectativas del
@@ -272,11 +272,11 @@ def generar_expectativas():
 <nav class="exp-nav">
   <div class="contenedor">
     <a href="/">Portada</a>
-    <a href="/institucional/">Lo que se dice</a>
-    <a href="/expectativas/" class="activo">Expectativas de mercado</a>
+    <a href="/institucional/">Institucional</a>
+    <a href="/expectativas/" class="activo">Expectativas</a>
     <a href="/documentos/">Documentos</a>
     <a href="/columnas/">Columnas</a>
-    <a href="/stream/">Opiniones personales · Stream</a>
+    <a href="/stream/">Stream</a>
   </div>
 </nav>
 

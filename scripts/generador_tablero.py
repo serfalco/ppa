@@ -227,13 +227,13 @@ def generar_tablero():
 
         <div class="dato-card">
           <span class="dato-label">IPC interanual</span>
-          <span class="dato-valor dato-grande" id="t-ipc-interanual">…</span>
+          <span class="dato-valor dato-grande dato-proximo" id="t-ipc-interanual">próximamente</span>
           <span class="dato-fuente">INDEC vía datos.gob.ar</span>
         </div>
 
         <div class="dato-card">
           <span class="dato-label">IPC acumulado año</span>
-          <span class="dato-valor" id="t-ipc-acumulado">…</span>
+          <span class="dato-valor dato-proximo" id="t-ipc-acumulado">próximamente</span>
           <span class="dato-fuente">INDEC vía datos.gob.ar</span>
         </div>
 
@@ -334,27 +334,27 @@ def generar_tablero():
 
         <div class="dato-card">
           <span class="dato-label">Índice de salarios (privado)</span>
-          <span class="dato-valor" id="t-salarios-privado">…</span>
+          <span class="dato-valor dato-proximo" id="t-salarios-privado">próximamente</span>
           <span class="dato-fuente">INDEC vía datos.gob.ar</span>
         </div>
 
         <div class="dato-card">
           <span class="dato-label">Salario Mínimo Vital y Móvil</span>
-          <span class="dato-valor" id="t-smvm">…</span>
+          <span class="dato-valor dato-proximo" id="t-smvm">próximamente</span>
           <span class="dato-sub">pesos corrientes</span>
           <span class="dato-fuente">datos.gob.ar</span>
         </div>
 
         <div class="dato-card">
           <span class="dato-label">Canasta básica total</span>
-          <span class="dato-valor" id="t-cbt">…</span>
+          <span class="dato-valor dato-proximo" id="t-cbt">próximamente</span>
           <span class="dato-sub">línea de pobreza familiar</span>
           <span class="dato-fuente">INDEC vía datos.gob.ar</span>
         </div>
 
         <div class="dato-card">
           <span class="dato-label">Canasta básica alimentaria</span>
-          <span class="dato-valor" id="t-cba">…</span>
+          <span class="dato-valor dato-proximo" id="t-cba">próximamente</span>
           <span class="dato-sub">línea de indigencia familiar</span>
           <span class="dato-fuente">INDEC vía datos.gob.ar</span>
         </div>
@@ -371,21 +371,21 @@ def generar_tablero():
 
         <div class="dato-card">
           <span class="dato-label">Recaudación tributaria</span>
-          <span class="dato-valor" id="t-recaudacion">…</span>
+          <span class="dato-valor dato-proximo" id="t-recaudacion">próximamente</span>
           <span class="dato-sub">millones de pesos — último mes</span>
           <span class="dato-fuente">AFIP vía datos.gob.ar</span>
         </div>
 
         <div class="dato-card">
           <span class="dato-label">IVA</span>
-          <span class="dato-valor" id="t-iva">…</span>
+          <span class="dato-valor dato-proximo" id="t-iva">próximamente</span>
           <span class="dato-sub">millones de pesos</span>
           <span class="dato-fuente">AFIP vía datos.gob.ar</span>
         </div>
 
         <div class="dato-card">
           <span class="dato-label">Ganancias</span>
-          <span class="dato-valor" id="t-ganancias">…</span>
+          <span class="dato-valor dato-proximo" id="t-ganancias">próximamente</span>
           <span class="dato-sub">millones de pesos</span>
           <span class="dato-fuente">AFIP vía datos.gob.ar</span>
         </div>
@@ -399,14 +399,14 @@ def generar_tablero():
 
         <div class="dato-card dato-card-accent">
           <span class="dato-label">Resultado primario</span>
-          <span class="dato-valor dato-grande" id="t-resultado-primario">…</span>
+          <span class="dato-valor dato-grande dato-proximo" id="t-resultado-primario">próximamente</span>
           <span class="dato-sub">acumulado año — millones de pesos</span>
           <span class="dato-fuente">Secretaría de Hacienda vía datos.gob.ar</span>
         </div>
 
         <div class="dato-card dato-card-accent">
           <span class="dato-label">Resultado financiero</span>
-          <span class="dato-valor dato-grande" id="t-resultado-financiero">…</span>
+          <span class="dato-valor dato-grande dato-proximo" id="t-resultado-financiero">próximamente</span>
           <span class="dato-sub">acumulado año — millones de pesos</span>
           <span class="dato-fuente">Secretaría de Hacienda vía datos.gob.ar</span>
         </div>
@@ -424,7 +424,7 @@ def generar_tablero():
     <span class="pie-bajada">Publicación económica · pulsoproductivo.com.ar</span>
     <div class="pie-meta">
       <a href="/">Portada</a> ·
-      <a href="/institucional/">Lo que se dice</a> ·
+      <a href="/institucional/">Institucional</a> ·
       <a href="/expectativas/">Expectativas</a> ·
       <a href="/tablero/">Tablero</a> ·
       <a href="/como-trabajamos.html">Cómo trabajamos</a> ·

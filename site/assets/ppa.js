@@ -72,7 +72,12 @@
     const rp  = d(datos, 'riesgo_pais');
     if (ofi) pintar('dolar-oficial', fmtPesos(venta(ofi)), ofi.stale);
     if (mep) pintar('dolar-mep',     fmtPesos(venta(mep)), mep.stale);
-    if (mer) pintar('merval',        fmtNumero(mer.valor), mer.stale);
+    if (mer) {
+      pintar('merval', fmtNumero(mer.valor), mer.stale);
+    } else {
+      const it = document.getElementById('merval-item');
+      if (it) it.style.display = 'none';   // sin dato → no mostrar "Merval ..." cortado
+    }
     if (rp)  pintar('riesgo-pais',   fmtNumero(rp.valor),  rp.stale, ' pb');
   }
 
@@ -201,7 +206,8 @@
     if (!datos) return;
     pintarTicker(datos);
     pintarTarjetas(datos);
-    pintarCierre(datos);
+    // pintarCierre eliminado: el bloque "Cierre de mercado" era redundante
+    // con el ticker y el carrusel. Cada dato va en un solo lugar.
   }
 
   // ---------------- CLIMA ----------------

@@ -234,11 +234,13 @@ def _rp_ambito():
 
 
 # Orden de preferencia. La primera que devuelva número plausible gana.
+# Rava PRIMERO: trae el valor INTRADÍA real (actualizado durante la rueda).
+# argentinadatos da el cierre del día anterior, por eso quedaba atrasado.
 FUENTES_RIESGO = [
-    ("argentinadatos", _rp_argentinadatos),
-    ("indicadores.ar", _rp_indicadores_ar),
     ("rava", _rp_rava),
     ("ambito", _rp_ambito),
+    ("indicadores.ar", _rp_indicadores_ar),
+    ("argentinadatos", _rp_argentinadatos),
 ]
 
 
@@ -332,16 +334,15 @@ def obtener_merval(previo):
 #   tipo "nivel"   -> muestro el valor tal cual
 #   tipo "var_men" -> muestro la variación % mensual (IPC: nivel general)
 SERIES = [
-    # Reservas: el ID 174.1 está muerto; usamos el que verificó OK
-    ("reservas",      "92.1_RID_0_0_32",           "MM USD",  "diaria",  "nivel"),
+    # Reservas YA NO acá: vienen del BCRA v4 diario (ver obtener_bcra)
     # IPC nacional nivel general (verificado OK)
     ("ipc_mensual",   "101.1_I2NG_2016_M_22",      "%",      "mensual", "var_men"),
     # IPC núcleo (verificado OK) — como variación mensual
     ("ipc_nucleo",    "103.1_I2N_2016_M_15",       "%",      "mensual", "var_men"),
     # EMAE desestacionalizado (verificado OK)
     ("emae",          "143.3_NO_PR_2004_A_21",     "puntos", "mensual", "nivel"),
-    # TCRM (verificado OK)
-    ("tcrm",          "116.4_TCRM_0_D_36",         "índice", "diaria",  "nivel"),
+    # TCRM diario (verificado 30/05: dato fresco, mejor que el anterior)
+    ("tcrm",          "168.1_T_CAMBIOR_D_0_0_26",  "índice", "diaria",  "nivel"),
     # PENDIENTES (IDs muertos, a reemplazar tras 2ª verificación):
     # exportaciones, importaciones, saldo comercial, desocupación
 ]
@@ -399,6 +400,44 @@ BANDA_ANCLA = {
     # ritmo mensual aplicado en junio = IPC de abril (T-2) = 2.6%
     "ipc_mensual_pct": 2.6,
 }
+
+
+def obtener_bcra(previo):
+    """API oficial BCRA v4 (api.bcra.gob.ar/estadisticas/v4.0).
+    idVariable 1 = Reservas internacionales (DIARIA, millones USD).
+    Reemplaza la reserva mensual de datos.gob.ar por el dato diario oficial.
+    Sin autenticación. El BCRA puede tener SSL con cadena incompleta."""
+    print("· BCRA v4 (reservas diarias)")
+    url = "https://api.bcra.gob.ar/estadisticas/v4.0/monetarias/1?limit=2"
+    j = get_json(url)
+    if j is None:
+        # Reintento sin verificar SSL (el BCRA es conocido por esto)
+        try:
+            import urllib3
+            urllib3.disable_warnings()
+            r = requests.get(url, headers=HDRS, timeout=12, verify=False)
+            r.raise_for_status()
+            j = r.json()
+        except Exception as e:
+            print(f"   ⚠  BCRA no respondió: {str(e)[:60]}")
+            return conservar(previo, "reservas")
+    try:
+        detalle = j["results"][0]["detalle"]   # ordenado desc, [0] = último
+        ultimo = detalle[0]
+        valor = round(float(ultimo["valor"]))
+        fecha = ultimo.get("fecha")
+        # variación vs día anterior si está disponible
+        variacion = None
+        if len(detalle) > 1:
+            prev_v = float(detalle[1]["valor"])
+            if prev_v:
+                variacion = round((valor - prev_v) / prev_v * 100, 1)
+        print(f"   ✓ reservas {valor} MM USD ({fecha})")
+        return dato(valor, unidad="MM USD", fecha=fecha, variacion=variacion,
+                    fuente="BCRA", frecuencia="diaria")
+    except Exception as e:
+        print(f"   ⚠  BCRA formato inesperado: {str(e)[:60]}")
+        return conservar(previo, "reservas")
 
 
 def obtener_banda(previo, datos_actuales):
@@ -469,6 +508,7 @@ def main():
         datos.update(obtener_dolares(previo))
         datos["merval"] = obtener_merval(previo) or datos.get("merval")
         datos["riesgo_pais"] = obtener_riesgo_pais(previo) or datos.get("riesgo_pais")
+        datos["reservas"] = obtener_bcra(previo) or datos.get("reservas")
         datos["banda"] = obtener_banda(previo, datos) or datos.get("banda")
 
     if hacer_mensual:

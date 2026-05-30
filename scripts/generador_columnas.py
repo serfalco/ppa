@@ -255,8 +255,8 @@ def html_cuerpo_columna(col, otras_columnas):
     <span class="pie-bajada">Publicación económica</span>
     <div class="pie-meta">
       <a href="/">Portada</a> ·
-      <a href="/institucional/">Lo que se dice</a> ·
-      <a href="/expectativas/">Expectativas de mercado</a> ·
+      <a href="/institucional/">Institucional</a> ·
+      <a href="/expectativas/">Expectativas</a> ·
       <a href="/documentos/">Documentos</a> ·
       <a href="/columnas/">Columnas</a> ·
       <a href="/stream/">Stream</a> ·
@@ -376,8 +376,8 @@ def html_indice_columnas(columnas):
     <span class="pie-bajada">Publicación económica</span>
     <div class="pie-meta">
       <a href="/">Portada</a> ·
-      <a href="/institucional/">Lo que se dice</a> ·
-      <a href="/expectativas/">Expectativas de mercado</a> ·
+      <a href="/institucional/">Institucional</a> ·
+      <a href="/expectativas/">Expectativas</a> ·
       <a href="/documentos/">Documentos</a> ·
       <a href="/columnas/">Columnas</a> ·
       <a href="/stream/">Stream</a> ·

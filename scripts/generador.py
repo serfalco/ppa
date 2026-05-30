@@ -164,8 +164,8 @@ def html_nav_secciones():
   <div class="contenedor">
     <ul>
       <li><a href="/">Portada</a></li>
-      <li><a href="/institucional/" class="activo">Lo que se dice</a></li>
-      <li><a href="/expectativas/">Expectativas de mercado</a></li>
+      <li><a href="/institucional/" class="activo">Institucional</a></li>
+      <li><a href="/expectativas/">Expectativas</a></li>
       <li><a href="/documentos/">Documentos</a></li>
       <li><a href="/columnas/">Columnas</a></li>
       <li><a href="/stream/">Stream</a></li>

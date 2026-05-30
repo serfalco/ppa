@@ -207,7 +207,7 @@ def generar_indice(notas):
 
 <header class="stream-header">
   <div class="contenedor">
-    <div class="stream-kicker">Opiniones personales · Stream</div>
+    <div class="stream-kicker">Stream</div>
     <h1>Comentarios editoriales</h1>
     <p class="stream-intro">
       Miradas personales sobre participaciones en programas de streaming.
@@ -219,8 +219,8 @@ def generar_indice(notas):
 <nav class="stream-nav">
   <div class="contenedor">
     <a href="/" class="nav-link">Portada</a>
-    <a href="/institucional/" class="nav-link">Lo que se dice</a>
-    <a href="/expectativas/" class="nav-link">Expectativas de mercado</a>
+    <a href="/institucional/" class="nav-link">Institucional</a>
+    <a href="/expectativas/" class="nav-link">Expectativas</a>
     <a href="/documentos/" class="nav-link">Documentos</a>
     <a href="/columnas/" class="nav-link">Columnas</a>
     <a href="/stream/" class="nav-link activo">Stream</a>
@@ -239,8 +239,8 @@ def generar_indice(notas):
     <span class="pie-bajada">Publicación económica</span>
     <div class="pie-meta">
       <a href="/">Portada</a> ·
-      <a href="/institucional/">Lo que se dice</a> ·
-      <a href="/expectativas/">Expectativas de mercado</a> ·
+      <a href="/institucional/">Institucional</a> ·
+      <a href="/expectativas/">Expectativas</a> ·
       <a href="/documentos/">Documentos</a> ·
       <a href="/columnas/">Columnas</a> ·
       <a href="/stream/">Stream</a> ·

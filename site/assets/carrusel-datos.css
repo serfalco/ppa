@@ -8,10 +8,13 @@
   border-bottom: 2px solid var(--color-tinta, #1a1a1a);
   border-top: 1px solid rgba(26,26,26,0.15);
   padding: 0.7rem 0;
+  max-width: 100%;
+  overflow: hidden;        /* contiene la pista, no deja desbordar la página */
 }
 
 /* Contenedor que scrollea horizontal */
 .carrusel-datos {
+  max-width: 100%;
   overflow-x: auto;
   overflow-y: hidden;
   -webkit-overflow-scrolling: touch;

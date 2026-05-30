@@ -23,6 +23,8 @@ html, body {
   color: var(--tinta);
   font-family: 'Source Serif 4', Georgia, serif;
   line-height: 1.5;
+  max-width: 100%;
+  overflow-x: hidden;   /* ningún elemento ancho corre la página entera */
 }
 
 body {

@@ -228,11 +228,11 @@ def generar_indice(documentos):
 <nav class="documentos-nav">
   <div class="contenedor">
     <a href="/" class="nav-link">Portada</a>
-    <a href="/institucional/" class="nav-link">Lo que se dice</a>
-    <a href="/expectativas/" class="nav-link">Expectativas de mercado</a>
+    <a href="/institucional/" class="nav-link">Institucional</a>
+    <a href="/expectativas/" class="nav-link">Expectativas</a>
     <a href="/documentos/" class="nav-link activo">Documentos</a>
     <a href="/columnas/" class="nav-link">Columnas</a>
-    <a href="/stream/" class="nav-link">Opiniones personales · Stream</a>
+    <a href="/stream/" class="nav-link">Stream</a>
   </div>
 </nav>
 

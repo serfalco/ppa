@@ -13,6 +13,7 @@ Lee la edición de variables de entorno: PPA_EDICION_NOMBRE, PPA_EDICION_ICONO
 
 import json
 import os
+import re
 import sys
 from datetime import datetime, timezone, timedelta
 from html.parser import HTMLParser
@@ -20,6 +21,20 @@ from html.parser import HTMLParser
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from config import DIR_DATA, DIR_SITE
 from iconos import ICONO
+
+
+def limpiar_url(texto):
+    """Quita URLs pegadas en títulos/bajadas (vienen de RSS de Twitter:
+    'Accedé al informe en: https://www.bcra.gob.ar/...'). También limpia
+    'Accedé... en:' colgando y espacios dobles."""
+    if not texto:
+        return texto
+    t = re.sub(r'https?://\S+', '', str(texto))            # saca la URL
+    t = re.sub(r'\b(Acced[eé]|Disponible|Ver|Leer|Más|Link|Enlace)[^.:]*[:]\s*$',
+               '', t, flags=re.IGNORECASE)                  # saca "Accedé ... en:" colgando
+    t = re.sub(r'\s{2,}', ' ', t)                           # espacios dobles
+    t = re.sub(r'[\s·\-–—:]+$', '', t)                      # basura al final
+    return t.strip()
 
 TZ_AR = timezone(timedelta(hours=-3))
 MESES = ["enero","febrero","marzo","abril","mayo","junio",
@@ -122,7 +137,7 @@ def bloque_institucional(notas):
         items_html.append(f"""
       <article class="bloque-item">
         <span class="item-cat">{escapar(n.get('categoria',''))}</span>
-        <h3><a href="{escapar(n['link'])}" target="_blank" rel="noopener">{escapar(n['titulo'])}</a></h3>
+        <h3><a href="{escapar(n['link'])}" target="_blank" rel="noopener">{escapar(limpiar_url(n['titulo']))}</a></h3>
         <p class="item-fuente">{escapar(n['fuente_nombre'])}</p>
       </article>""")
 
@@ -252,7 +267,9 @@ def generar_home():
         edicion_nombre = "Desayuno" if ahora_ar.hour < 14 else "Merienda"
         edicion_icono  = "🧉" if edicion_nombre == "Desayuno" else "☕"
 
-    linea_edicion = f"Edición {edicion_nombre} {edicion_icono} · {fecha_edicion(ahora_ar)}"
+    # Solo "Edición Desayuno 🧉" — sin fecha ni hora (la fecha ya está en el ticker;
+    # la hora confundía: a las 18hs mostraba "10:18" y parecía desactualizado).
+    linea_edicion = f"Edición {edicion_nombre} {edicion_icono}"
 
     institucional = cargar_institucional()
     columnas      = cargar_columnas()
@@ -284,7 +301,7 @@ def generar_home():
     <span class="dato-mini" id="clima-widget"></span>
     <span class="dato-mini">USD <span id="dolar-oficial">…</span></span>
     <span class="dato-mini">MEP <span id="dolar-mep">…</span></span>
-    <span class="dato-mini">Merval <span id="merval">…</span></span>
+    <span class="dato-mini" id="merval-item">Merval <span id="merval">…</span></span>
     <span class="dato-mini">Riesgo <span id="riesgo-pais">…</span></span>
   </div>
 </div>
@@ -305,14 +322,6 @@ def generar_home():
     <p class="linea-edicion">{escapar(linea_edicion)}</p>
   </div>
 </header>
-
-<!-- WIDGET CIERRE DE MERCADO -->
-<section class="widget-cierre" id="widget-cierre" style="display:none">
-  <div class="contenedor">
-    <div class="cierre-header">CIERRE DE MERCADO</div>
-    <div class="cierre-body" id="cierre-body"></div>
-  </div>
-</section>
 
 <!-- NAVEGACIÓN PRINCIPAL -->
 <nav class="nav-principal">
