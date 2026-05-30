@@ -1,13 +1,13 @@
 {
-  "generado_en": "2026-05-29T22:38:01.961315+00:00",
-  "generado_ar": "29/05/2026 19:38",
+  "generado_en": "2026-05-30T10:48:26.197040+00:00",
+  "generado_ar": "30/05/2026 07:48",
   "datos": {
     "dolar_oficial": {
       "valor": {
         "compra": 1380,
         "venta": 1430
       },
-      "actualizado": "2026-05-29T22:38:01.250946+00:00",
+      "actualizado": "2026-05-30T10:48:20.681280+00:00",
       "stale": false,
       "unidad": "ARS",
       "fuente": "dolarapi.com",
@@ -18,7 +18,7 @@
         "compra": 1432.1,
         "venta": 1434.8
       },
-      "actualizado": "2026-05-29T22:38:01.299354+00:00",
+      "actualizado": "2026-05-30T10:48:20.773713+00:00",
       "stale": false,
       "unidad": "ARS",
       "fuente": "dolarapi.com",
@@ -29,7 +29,7 @@
         "compra": 1480.7,
         "venta": 1483.9
       },
-      "actualizado": "2026-05-29T22:38:01.389437+00:00",
+      "actualizado": "2026-05-30T10:48:20.849269+00:00",
       "stale": false,
       "unidad": "ARS",
       "fuente": "dolarapi.com",
@@ -40,7 +40,7 @@
         "compra": 1410,
         "venta": 1430
       },
-      "actualizado": "2026-05-29T22:38:01.440465+00:00",
+      "actualizado": "2026-05-30T10:48:20.913447+00:00",
       "stale": false,
       "unidad": "ARS",
       "fuente": "dolarapi.com",
@@ -51,7 +51,7 @@
         "compra": 1399,
         "venta": 1408
       },
-      "actualizado": "2026-05-29T22:38:01.487145+00:00",
+      "actualizado": "2026-05-30T10:48:20.987439+00:00",
       "stale": false,
       "unidad": "ARS",
       "variacion": -0.14,
@@ -63,7 +63,7 @@
         "compra": 1794,
         "venta": 1859
       },
-      "actualizado": "2026-05-29T22:38:01.533324+00:00",
+      "actualizado": "2026-05-30T10:48:21.069073+00:00",
       "stale": false,
       "unidad": "ARS",
       "fuente": "dolarapi.com",
@@ -74,7 +74,7 @@
         "compra": 1482.8,
         "venta": 1482.9
       },
-      "actualizado": "2026-05-29T22:38:01.575948+00:00",
+      "actualizado": "2026-05-30T10:48:21.133395+00:00",
       "stale": false,
       "unidad": "ARS",
       "fuente": "dolarapi.com",
@@ -82,19 +82,19 @@
     },
     "brecha_mep": {
       "valor": 0.3,
-      "actualizado": "2026-05-29T22:38:01.575978+00:00",
+      "actualizado": "2026-05-30T10:48:21.133438+00:00",
       "stale": false,
       "unidad": "%",
       "fuente": "cálculo PPA",
       "frecuencia": "intradia"
     },
     "riesgo_pais": {
-      "valor": 500,
-      "actualizado": "2026-05-29T22:38:01.946520+00:00",
+      "valor": 494,
+      "actualizado": "2026-05-30T10:48:21.594402+00:00",
       "stale": false,
       "unidad": "pb",
-      "fecha": "2026-05-27",
-      "variacion": -1.57,
+      "fecha": "2026-05-28",
+      "variacion": -1.2,
       "fuente": "argentinadatos.com",
       "frecuencia": "intradia"
     },
@@ -105,14 +105,14 @@
         "dolar": 1408,
         "posicion": 63.5
       },
-      "actualizado": "2026-05-29T22:38:01.961305+00:00",
+      "actualizado": "2026-05-30T10:48:21.615909+00:00",
       "stale": false,
       "fuente": "cálculo PPA (esquema BCRA)",
       "frecuencia": "diaria"
     },
     "reservas": {
       "valor": 45475.71,
-      "actualizado": "2026-05-29T22:10:30.458510+00:00",
+      "actualizado": "2026-05-30T10:48:23.079516+00:00",
       "stale": false,
       "unidad": "MM USD",
       "fecha": "2026-02-01",
@@ -122,7 +122,7 @@
     },
     "ipc_mensual": {
       "valor": 2.8,
-      "actualizado": "2026-05-29T22:10:31.168197+00:00",
+      "actualizado": "2026-05-30T10:48:23.806133+00:00",
       "stale": false,
       "unidad": "%",
       "fecha": "2026-04-01",
@@ -132,7 +132,7 @@
     },
     "ipc_nucleo": {
       "valor": 2.3,
-      "actualizado": "2026-05-29T22:10:31.873118+00:00",
+      "actualizado": "2026-05-30T10:48:24.527017+00:00",
       "stale": false,
       "unidad": "%",
       "fecha": "2026-04-01",
@@ -142,7 +142,7 @@
     },
     "emae": {
       "valor": 158.65,
-      "actualizado": "2026-05-29T22:10:32.889867+00:00",
+      "actualizado": "2026-05-30T10:48:25.255403+00:00",
       "stale": false,
       "unidad": "puntos",
       "fecha": "2026-03-01",
