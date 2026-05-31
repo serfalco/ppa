@@ -18,7 +18,8 @@ from datetime import datetime, timezone, timedelta
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from config import DIR_DATA, DIR_SITE
-import componentes as comp, FUENTES
+import componentes as comp
+from FUENTES import FUENTES
 
 JSON_NOTAS = os.path.join(DIR_DATA, "notas.json")
 DIR_EXPECTATIVAS = os.path.join(DIR_SITE, "expectativas")
