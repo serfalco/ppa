@@ -24,7 +24,7 @@ FUENTES = [
     {
         "id": "ambito",
         "nombre": "Ámbito Financiero",
-        "url": "https://www.ambito.com/rss/economia.xml",
+        "web": "https://www.ambito.com/rss/economia.xml",
         "categoria": "Macro",
         "tier": 1,
         "activa": True,
@@ -32,7 +32,7 @@ FUENTES = [
     {
         "id": "lanacion",
         "nombre": "La Nación Economía",
-        "url": "https://www.lanacion.com.ar/arc/outboundfeeds/rss/category/economia/",
+        "web": "https://www.lanacion.com.ar/arc/outboundfeeds/rss/category/economia/",
         "categoria": "Macro",
         "tier": 1,
         "activa": True,
@@ -40,7 +40,7 @@ FUENTES = [
     {
         "id": "clarin",
         "nombre": "Clarín Economía",
-        "url": "https://www.clarin.com/rss/economia/",
+        "web": "https://www.clarin.com/rss/economia/",
         "categoria": "Macro",
         "tier": 1,
         "activa": True,
@@ -48,7 +48,7 @@ FUENTES = [
     {
         "id": "cronista",
         "nombre": "El Cronista",
-        "url": "https://www.cronista.com/arc/outboundfeeds/rss/",
+        "web": "https://www.cronista.com/arc/outboundfeeds/rss/",
         "categoria": "Macro",
         "tier": 1,
         "activa": True,
@@ -56,7 +56,7 @@ FUENTES = [
     {
         "id": "pagina12",
         "nombre": "Página 12 Economía",
-        "url": "https://www.pagina12.com.ar/rss/secciones/economia/notas",
+        "web": "https://www.pagina12.com.ar/rss/secciones/economia/notas",
         "categoria": "Macro",
         "tier": 1,
         "activa": True,
@@ -64,7 +64,7 @@ FUENTES = [
     {
         "id": "bae",
         "nombre": "BAE Negocios",
-        "url": "https://www.baenegocios.com/rss",
+        "web": "https://www.baenegocios.com/rss",
         "categoria": "Macro",
         "tier": 1,
         "activa": True,
@@ -72,7 +72,7 @@ FUENTES = [
     {
         "id": "infobae",
         "nombre": "Infobae Economía",
-        "url": "https://www.infobae.com/feeds/rss/economia/",
+        "web": "https://www.infobae.com/feeds/rss/economia/",
         "categoria": "Macro",
         "tier": 1,
         "activa": True,
@@ -84,7 +84,7 @@ FUENTES = [
     {
         "id": "bcra",
         "nombre": "BCRA",
-        "url": "https://nitter.net/BancoCentral_AR/rss",
+        "web": "https://nitter.net/BancoCentral_AR/rss",
         "categoria": "Macro",
         "tier": 1,
         "activa": True,
@@ -92,7 +92,7 @@ FUENTES = [
     {
         "id": "indec",
         "nombre": "INDEC",
-        "url": "https://nitter.net/INDECArgentina/rss",
+        "web": "https://nitter.net/INDECArgentina/rss",
         "categoria": "Macro",
         "tier": 1,
         "activa": True,
@@ -100,7 +100,7 @@ FUENTES = [
     {
         "id": "mecon",
         "nombre": "Ministerio de Economía",
-        "url": "https://www.argentina.gob.ar/noticias/rss-ministerio-de-economia.xml",
+        "web": "https://www.argentina.gob.ar/noticias/rss-ministerio-de-economia.xml",
         "categoria": "Política",
         "tier": 1,
         "activa": True,
@@ -112,7 +112,7 @@ FUENTES = [
     {
         "id": "econviews",
         "nombre": "Econviews",
-        "url": "https://econviews.com/feed/",
+        "web": "https://econviews.com/feed/",
         "categoria": "Expectativas de mercado",
         "tier": 1,
         "activa": True,
@@ -120,7 +120,7 @@ FUENTES = [
     {
         "id": "fiel",
         "nombre": "FIEL",
-        "url": "https://www.fiel.org.ar/publicaciones/feed/",
+        "web": "https://www.fiel.org.ar/publicaciones/feed/",
         "categoria": "Expectativas de mercado",
         "tier": 1,
         "activa": True,
@@ -128,7 +128,7 @@ FUENTES = [
     {
         "id": "ieral",
         "nombre": "IERAL (Fundación Mediterránea)",
-        "url": "https://www.ieral.org/feed.xml",
+        "web": "https://www.ieral.org/feed.xml",
         "categoria": "Expectativas de mercado",
         "tier": 1,
         "activa": True,
@@ -136,7 +136,7 @@ FUENTES = [
     {
         "id": "fundar",
         "nombre": "Fundar",
-        "url": "https://fund.ar/feed/",
+        "web": "https://fund.ar/feed/",
         "categoria": "Expectativas de mercado",
         "tier": 1,
         "activa": True,
@@ -148,7 +148,7 @@ FUENTES = [
     {
         "id": "iaraf",
         "nombre": "IARAF",
-        "url": "https://www.iaraf.org/index.php/informes-economicos/area-fiscal?format=feed&type=rss",
+        "web": "https://www.iaraf.org/index.php/informes-economicos/area-fiscal?format=feed&type=rss",
         "categoria": "Expectativas de mercado",
         "tier": 2,
         "activa": True,
@@ -156,7 +156,7 @@ FUENTES = [
     {
         "id": "ceso",
         "nombre": "CESO",
-        "url": "https://ceso.com.ar/feed/",
+        "web": "https://ceso.com.ar/feed/",
         "categoria": "Expectativas de mercado",
         "tier": 2,
         "activa": True,
@@ -164,7 +164,7 @@ FUENTES = [
     {
         "id": "cedlas",
         "nombre": "CEDLAS (UNLP)",
-        "url": "https://cedlas.econo.unlp.edu.ar/wp/feed/",
+        "web": "https://cedlas.econo.unlp.edu.ar/wp/feed/",
         "categoria": "Expectativas de mercado",
         "tier": 2,
         "activa": True,
@@ -172,7 +172,7 @@ FUENTES = [
     {
         "id": "cippec",
         "nombre": "CIPPEC",
-        "url": "https://www.cippec.org/feed/",
+        "web": "https://www.cippec.org/feed/",
         "categoria": "Expectativas de mercado",
         "tier": 2,
         "activa": True,
@@ -184,7 +184,7 @@ FUENTES = [
     {
         "id": "bcr",
         "nombre": "Bolsa de Cereales de Rosario",
-        "url": "https://www.bcr.com.ar/feed.xml",
+        "web": "https://www.bcr.com.ar/feed.xml",
         "categoria": "Agro",
         "tier": 1,
         "activa": True,
@@ -192,7 +192,7 @@ FUENTES = [
     {
         "id": "magyp",
         "nombre": "Ministerio de Agricultura",
-        "url": "https://www.argentina.gob.ar/noticias/rss-agricultura.xml",
+        "web": "https://www.argentina.gob.ar/noticias/rss-agricultura.xml",
         "categoria": "Agro",
         "tier": 1,
         "activa": True,
@@ -200,7 +200,7 @@ FUENTES = [
     {
         "id": "acara",
         "nombre": "ACARA",
-        "url": "https://acara.org.ar/feed.xml",
+        "web": "https://acara.org.ar/feed.xml",
         "categoria": "Automotor",
         "tier": 1,
         "activa": True,
@@ -208,7 +208,7 @@ FUENTES = [
     {
         "id": "adefa",
         "nombre": "ADEFA",
-        "url": "https://adefa.com.ar/feed.xml",
+        "web": "https://adefa.com.ar/feed.xml",
         "categoria": "Automotor",
         "tier": 1,
         "activa": True,
@@ -216,7 +216,7 @@ FUENTES = [
     {
         "id": "caem",
         "nombre": "CAEM",
-        "url": "https://caem.com.ar/feed/",
+        "web": "https://caem.com.ar/feed/",
         "categoria": "Minería",
         "tier": 1,
         "activa": True,
@@ -224,7 +224,7 @@ FUENTES = [
     {
         "id": "fmi",
         "nombre": "FMI",
-        "url": "https://www.imf.org/en/News/rss?language=eng",
+        "web": "https://www.imf.org/en/News/rss?language=eng",
         "categoria": "Internacional",
         "tier": 1,
         "activa": True,
@@ -232,7 +232,7 @@ FUENTES = [
     {
         "id": "cepal",
         "nombre": "CEPAL",
-        "url": "https://www.cepal.org/es/rss.xml",
+        "web": "https://www.cepal.org/es/rss.xml",
         "categoria": "Internacional",
         "tier": 2,
         "activa": True,
