@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Análisis económico — PPA · Domingo 31 de mayo de 2026</title>
+<meta name="description" content="Lo más destacado de consultoras, institutos y organismos sobre la economía argentina.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,900&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/ppa.css">
+<link rel="stylesheet" href="/assets/analisis.css">
+</head>
+<body class="body-analisis">
+
+
+<div id="cabecera-wrap">
+<header class="cabecera-ppa expandida" id="cabecera-ppa">
+  <!-- Fila superior: fecha · clima · edición -->
+  <div class="cab-top">
+    <div class="cab-top-izq">
+      <span class="cab-fecha">DOM 31/05/2026</span>
+      <span class="cab-clima" id="cab-clima"></span>
+    </div>
+    <span class="cab-edicion">Edición Merienda ☕</span>
+  </div>
+  <!-- Fila logo + datos + hamburguesa -->
+  <div class="cab-logo-fila">
+    <div>
+      <a href="/" class="cab-logo">PPA</a>
+      <div class="cab-tagline">Pulso Productivo Argentino</div>
+    </div>
+    <div class="cab-datos-expandidos">
+      <div class="cab-dato">
+        <span class="cab-dato-label">Oficial</span>
+        <span class="cab-dato-valor" id="dolar-oficial">…</span>
+      </div>
+      <div class="cab-dato">
+        <span class="cab-dato-label">MEP</span>
+        <span class="cab-dato-valor" id="dolar-mep">…</span>
+      </div>
+      <div class="cab-dato hide-mobile">
+        <span class="cab-dato-label">Blue</span>
+        <span class="cab-dato-valor" id="dolar-blue-cab">…</span>
+      </div>
+      <div class="cab-dato">
+        <span class="cab-dato-label">Riesgo</span>
+        <span class="cab-dato-valor" id="riesgo-pais">…</span>
+      </div>
+      <button class="cab-hamburguesa" id="btn-menu" aria-label="Menú">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+<div class="cab-spacer" id="cab-spacer"></div>
+</div>
+
+<!-- DRAWER MENÚ -->
+<div class="menu-overlay" id="menu-overlay"></div>
+<nav class="menu-drawer" id="menu-drawer">
+  <div class="menu-drawer-header">
+    <span class="menu-drawer-logo">PPA</span>
+    <button class="menu-cerrar" id="btn-menu-cerrar">✕</button>
+  </div>
+  <div class="menu-nav">
+    <a href="/">Portada</a>
+    <a href="/analisis/" class="activo">Análisis</a>
+    <a href="/tuits/">EconoTuits</a>
+    <a href="/rem/">REM</a>
+    <a href="/tablero/">Tablero</a>
+    <a href="/documentos/">Documentos</a>
+    <a href="/columnas/">Columnas</a>
+    <a href="/stream/">Stream</a>
+  </div>
+  <div class="menu-datos">
+    <div class="menu-dato">
+      <span class="menu-dato-label">USD Oficial</span>
+      <span class="menu-dato-valor" id="m-dolar-oficial">…</span>
+    </div>
+    <div class="menu-dato">
+      <span class="menu-dato-label">MEP</span>
+      <span class="menu-dato-valor" id="m-dolar-mep">…</span>
+    </div>
+    <div class="menu-dato">
+      <span class="menu-dato-label">Blue</span>
+      <span class="menu-dato-valor" id="m-dolar-blue">…</span>
+    </div>
+    <div class="menu-dato">
+      <span class="menu-dato-label">Riesgo</span>
+      <span class="menu-dato-valor" id="m-riesgo">…</span>
+    </div>
+  </div>
+</nav>
+
+
+<nav class="an-nav-cats">
+  <div class="an-nav-scroll">
+    <a href="#macro"><svg viewBox="0 0 32 32" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="27" x2="27" y2="27"/><rect x="7" y="18" width="4" height="9"/><rect x="14" y="13" width="4" height="14"/><rect x="21" y="8" width="4" height="19"/></svg>Macro</a><a href="#politica"><svg viewBox="0 0 32 32" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="6,12 16,6 26,12"/><line x1="8" y1="12" x2="8" y2="24"/><line x1="13" y1="12" x2="13" y2="24"/><line x1="19" y1="12" x2="19" y2="24"/><line x1="24" y1="12" x2="24" y2="24"/><line x1="5" y1="24" x2="27" y2="24"/></svg>Política</a><a href="#energia"><svg viewBox="0 0 32 32" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polygon points="18,4 8,18 15,18 14,28 24,14 17,14"/></svg>Energía</a><a href="#automotor"><svg viewBox="0 0 32 32" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 21 L7 14 L25 14 L27 21"/><line x1="4" y1="21" x2="28" y2="21"/><circle cx="10" cy="23" r="2.5"/><circle cx="22" cy="23" r="2.5"/></svg>Automotor</a><a href="#logistica"><svg viewBox="0 0 32 32" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="11" width="13" height="10"/><path d="M17 14 L23 14 L27 18 L27 21 L17 21"/><circle cx="10" cy="23" r="2.5"/><circle cx="23" cy="23" r="2.5"/></svg>Logística</a><a href="#internacional"><svg viewBox="0 0 32 32" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="16" cy="16" r="11"/><ellipse cx="16" cy="16" rx="5" ry="11"/><line x1="5" y1="16" x2="27" y2="16"/></svg>Internacional</a>
+  </div>
+</nav>
+
+<main class="an-main">
+  <div class="contenedor">
+
+    <div class="an-header">
+      <h1 class="an-titulo-seccion">Análisis</h1>
+      <p class="an-sub">Consultoras · Institutos · Organismos · Domingo 31 de mayo de 2026</p>
+      <p class="an-total">29 notas en esta edición</p>
+    </div>
+
+    <div class="an-destacados">
+<article class="an-destacado">
+  <span class="an-cat">Internacional</span>
+  <h2 class="an-titulo-grande"><a href="https://www.bloomberglinea.com/latinoamerica/argentina/los-cuatro-ejes-de-la-politica-nuclear-que-anuncio-argentina-liderazgo-regional-y-exportaciones/" target="_blank" rel="noopener">Los cuatro ejes de la política nuclear que anunció Argentina: liderazgo regional y exportaciones</a></h2>
+  <p class="an-bajada">El Gobierno presentó un documento de 54 páginas con un nuevo marco doctrinario para el sector, a un año y medio del primer anuncio del Plan Nuclear de Milei. No incluye cronogramas, presupuestos ni proyectos específicos.</p>
+  <div class="an-meta"><span class="an-fuente">Bloomberg Línea</span> · <span class="an-hora">15:47</span></div>
+</article><div class="an-dest-rest">
+<article class="an-nota">
+  <h3 class="an-titulo"><a href="https://arodarpost.com.ar/los-tres-proyectos-de-la-marca-china-chery-para-fabricar-vehiculos-en-la-argentina-cual-se-concretara/" target="_blank" rel="noopener">Los tres proyectos de la marca china Chery para fabricar vehículos en la Argentina: ¿Cuál se concretará?</a></h3>
+  <div class="an-meta"><span class="an-fuente">A Rodar Post</span> · <span class="an-hora">18:41</span></div>
+</article>
+<article class="an-nota">
+  <h3 class="an-titulo"><a href="https://econojournal.com.ar/2026/05/vmos-concreta-en-el-puerto-de-quequen-la-carga-de-componentes-para-la-infraestructura-offshore/" target="_blank" rel="noopener">VMOS concreta en el Puerto de Quequén la carga de componentes para la infraestructura offshore</a></h3>
+  <div class="an-meta"><span class="an-fuente">EconoJournal</span> · <span class="an-hora">17:01</span></div>
+</article>
+<article class="an-nota">
+  <h3 class="an-titulo"><a href="https://nitter.net/BancoCentral_AR/status/2060441935173632033#m" target="_blank" rel="noopener">Publicamos el Informe de Evolución del Mercado de Cambios y #BalanceCambiario, que analiza la evolución de las compras y ventas de moneda extranjera en el mercado de cambios. Accedé al informe de abril de 2026 en</a></h3>
+  <div class="an-meta"><span class="an-fuente">BCRA (Twitter)</span> · <span class="an-hora">16:23</span></div>
+</article>
+<article class="an-nota">
+  <h3 class="an-titulo"><a href="https://nitter.net/INDECArgentina/status/2060436080021667875#m" target="_blank" rel="noopener">#DatoINDEC
+Dotación de personal de la administración pública nacional, empresas y sociedades del Estado: ya están disponibles los datos a abril de 2026</a></h3>
+  <div class="an-meta"><span class="an-fuente">INDEC (Twitter)</span> · <span class="an-hora">16:00</span></div>
+</article></div></div>
+
+    <div class="an-cuerpo">
+      
+<section class="an-seccion" id="macro">
+  <div class="an-seccion-header">
+    <span class="an-ic"><svg viewBox="0 0 32 32" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="27" x2="27" y2="27"/><rect x="7" y="18" width="4" height="9"/><rect x="14" y="13" width="4" height="14"/><rect x="21" y="8" width="4" height="19"/></svg></span>
+    <h2 class="an-seccion-nombre">Macro</h2>
+  </div>
+  <div class="an-notas">
+    
+<article class="an-nota">
+  <h3 class="an-titulo"><a href="https://www.ambito.com/finanzas/dolar-blue-hoy-cuanto-opera-este-domingo-31-mayo-n6283364" target="_blank" rel="noopener">Dólar blue hoy: a cuánto opera este domingo 31 de mayo</a></h3>
+  <div class="an-meta"><span class="an-fuente">Ámbito Financiero</span> · <span class="an-hora">18:10</span></div>
+</article>
+<article class="an-nota">
+  <h3 class="an-titulo"><a href="https://www.ambito.com/finanzas/dolar-hoy-cuanto-cotiza-este-domingo-31-mayo-n6283363" target="_blank" rel="noopener">Dólar hoy: a cuánto cotiza este domingo 31 de mayo</a></h3>
+  <div class="an-meta"><span class="an-fuente">Ámbito Financiero</span> · <span class="an-hora">18:10</span></div>
+</article>
+<article class="an-nota">
+  <h3 class="an-titulo"><a href="https://www.iprofesional.com/finanzas/456057-sociedad-de-bolsa-revela-su-estrategia-para-invertir-1-millon-de-pesos-en-11-acciones-argentinas" target="_blank" rel="noopener">Sociedad de bolsa revela su estrategia para invertir $1 millón en 11 acciones argentinas</a></h3>
+  <div class="an-meta"><span class="an-fuente">iProfesional Economía</span> · <span class="an-hora">17:00</span></div>
+</article>
+<article class="an-nota">
+  <h3 class="an-titulo"><a href="https://www.iprofesional.com/economia/455757-cual-es-la-diferencia-entre-rimi-y-rigi-y-como-impacta-cada-uno" target="_blank" rel="noopener">Las diferencias entre RIMI y RIGI y su impacto en cada uno</a></h3>
+  <div class="an-meta"><span class="an-fuente">iProfesional Economía</span> · <span class="an-hora">16:00</span></div>
+</article>
+<article class="an-nota">
+  <h3 class="an-titulo"><a href="https://www.iprofesional.com/impuestos/455839-arca-que-pasa-si-me-hacen-muchas-transferencias-a-mi-cuenta-en-junio-2026" target="_blank" rel="noopener">Las consecuencias con ARCA de recibir muchas transferencias a una cuenta en junio 2026</a></h3>
+  <div class="an-meta"><span class="an-fuente">iProfesional Finanzas</span> · <span class="an-hora">16:00</span></div>
+</article>
+<article class="an-nota">
+  <h3 class="an-titulo"><a href="https://www.perfil.com/noticias/economia/aumentan-colectivos-subte-y-peajes-desde-el-1-de-junio-el-boleto-minimo-supera-los-1000-en-el-conurbano.phtml" target="_blank" rel="noopener">Aumentan colectivos, subte y peajes desde el 1° de junio: el boleto mínimo supera los $1.000 en el conurbano</a></h3>
+  <div class="an-meta"><span class="an-fuente">Perfil Economía</span> · <span class="an-hora">15:30</span></div>
+</article>
+  </div>
+</section>
+<section class="an-seccion" id="politica">
+  <div class="an-seccion-header">
+    <span class="an-ic"><svg viewBox="0 0 32 32" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="6,12 16,6 26,12"/><line x1="8" y1="12" x2="8" y2="24"/><line x1="13" y1="12" x2="13" y2="24"/><line x1="19" y1="12" x2="19" y2="24"/><line x1="24" y1="12" x2="24" y2="24"/><line x1="5" y1="24" x2="27" y2="24"/></svg></span>
+    <h2 class="an-seccion-nombre">Política</h2>
+  </div>
+  <div class="an-notas">
+    
+<article class="an-nota">
+  <h3 class="an-titulo"><a href="https://www.cippec.org/como-mejoran-las-ciudades-su-clima-de-negocios/" target="_blank" rel="noopener">¿Cómo mejoran las ciudades su clima de negocios?</a></h3>
+  <div class="an-meta"><span class="an-fuente">CIPPEC</span> · <span class="an-hora">22:33</span></div>
+</article>
+  </div>
+</section>
+<section class="an-seccion" id="energia">
+  <div class="an-seccion-header">
+    <span class="an-ic"><svg viewBox="0 0 32 32" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polygon points="18,4 8,18 15,18 14,28 24,14 17,14"/></svg></span>
+    <h2 class="an-seccion-nombre">Energía</h2>
+  </div>
+  <div class="an-notas">
+    
+<article class="an-nota">
+  <h3 class="an-titulo"><a href="https://econojournal.com.ar/2026/05/martin-alfie-peru-recibe-miles-de-millones-de-dolares-de-inversion-en-mineria-y-no-esta-transitando-un-camino-hacia-el-desarrollo/" target="_blank" rel="noopener">Martín Alfie: “Perú recibe miles de millones de dólares de inversión en minería y no está transitando un camino hacia el desarrollo”</a></h3>
+  <div class="an-meta"><span class="an-fuente">EconoJournal</span> · <span class="an-hora">15:33</span></div>
+</article>
+<article class="an-nota">
+  <h3 class="an-titulo"><a href="https://econojournal.com.ar/2026/05/el-enemigo-de-las-distribuidoras-electricas-las-perdidas-no-tecnicas-le-cuestan-a-las-empresas-de-la-region-mas-de-us16-600-millones-anuales/" target="_blank" rel="noopener">El enemigo de las distribuidoras eléctricas: las pérdidas no técnicas le cuestan a las empresas de la región más de US$16.600 millones anuales</a></h3>
+  <div class="an-meta"><span class="an-fuente">EconoJournal</span> · <span class="an-hora">15:30</span></div>
+</article>
+  </div>
+</section>
+<section class="an-seccion" id="automotor">
+  <div class="an-seccion-header">
+    <span class="an-ic"><svg viewBox="0 0 32 32" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 21 L7 14 L25 14 L27 21"/><line x1="4" y1="21" x2="28" y2="21"/><circle cx="10" cy="23" r="2.5"/><circle cx="22" cy="23" r="2.5"/></svg></span>
+    <h2 class="an-seccion-nombre">Automotor</h2>
+  </div>
+  <div class="an-notas">
+    
+<article class="an-nota">
+  <h3 class="an-titulo"><a href="https://www.clarin.com/autos/pocos-usan-bien-significa-letra-l-auto-usarla_0_qAQZk5Jr2L.html" target="_blank" rel="noopener">Pocos la usan bien: qué significa la letra L del auto y cuándo usarla</a></h3>
+  <div class="an-meta"><span class="an-fuente">Clarín Autos</span> · <span class="an-hora">12:40</span></div>
+</article>
+<article class="an-nota">
+  <h3 class="an-titulo"><a href="https://www.clarin.com/autos/salarios-hacen-falta-comprar-0-km-barato-argentina-junio-2026_0_kGQinLewzc.html" target="_blank" rel="noopener">Cuántos salarios hacen falta para comprar el 0 km más barato de Argentina en junio 2026</a></h3>
+  <div class="an-meta"><span class="an-fuente">Clarín Autos</span> · <span class="an-hora">10:03</span></div>
+</article>
+<article class="an-nota">
+  <h3 class="an-titulo"><a href="https://www.iprofesional.com/autos/456065-ferrari-luce-duras-criticas-al-primer-cavallino-electrico-que-perdio-el-adn" target="_blank" rel="noopener">Ferrari Luce: duras críticas al primer auto eléctrico por perder su ADN</a></h3>
+  <div class="an-meta"><span class="an-fuente">iProfesional Autos</span> · <span class="an-hora">07:21</span></div>
+</article>
+<article class="an-nota">
+  <h3 class="an-titulo"><a href="https://www.iprofesional.com/autos/456061-tres-marcas-de-autos-chinos-lideran-las-ventas-de-0km-importados" target="_blank" rel="noopener">Tres marcas de autos chinos lideran las ventas de 0km importados</a></h3>
+  <div class="an-meta"><span class="an-fuente">iProfesional Autos</span> · <span class="an-hora">06:31</span></div>
+</article>
+<article class="an-nota">
+  <h3 class="an-titulo"><a href="https://arodarpost.com.ar/byd-desplazo-a-toyota-y-ford-en-el-liderazgo-de-ventas-de-vehiculos-hibridos/" target="_blank" rel="noopener">BYD desplazó a Toyota y Ford en el liderazgo de ventas de vehículos hïbridos</a></h3>
+  <div class="an-meta"><span class="an-fuente">A Rodar Post</span> · <span class="an-hora">16:49</span></div>
+</article>
+<article class="an-nota">
+  <h3 class="an-titulo"><a href="https://arodarpost.com.ar/efecto-apertura-las-marcas-importadas-de-autos-fuera-de-adefa-ya-representan-mas-de-15-del-mercado-e-impulsan-la-baja-de-precios/" target="_blank" rel="noopener">Efecto apertura: las marcas importadas de autos (fuera de ADEFA) ya representan más de 15% del mercado e impulsan la baja de precios</a></h3>
+  <div class="an-meta"><span class="an-fuente">A Rodar Post</span> · <span class="an-hora">12:25</span></div>
+</article>
+  </div>
+</section>
+<section class="an-seccion" id="logistica">
+  <div class="an-seccion-header">
+    <span class="an-ic"><svg viewBox="0 0 32 32" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="11" width="13" height="10"/><path d="M17 14 L23 14 L27 18 L27 21 L17 21"/><circle cx="10" cy="23" r="2.5"/><circle cx="23" cy="23" r="2.5"/></svg></span>
+    <h2 class="an-seccion-nombre">Logística</h2>
+  </div>
+  <div class="an-notas">
+    
+<article class="an-nota">
+  <h3 class="an-titulo"><a href="https://webpicking.com/grupo-l-y-miebach-firman-alianza-estrategica-para-potenciar-operaciones/" target="_blank" rel="noopener">Grupo L y Miebach firman alianza estratégica para potenciar operaciones</a></h3>
+  <div class="an-meta"><span class="an-fuente">Webpicking</span> · <span class="an-hora">17:59</span></div>
+</article>
+<article class="an-nota">
+  <h3 class="an-titulo"><a href="https://argenports.com/nota/en-video-la-impactante-imagen-de-mas-de-500-delfines-frente-a-las-grutas/" target="_blank" rel="noopener">En video: la impactante imagen de más de 500 delfines frente a Las Grutas</a></h3>
+  <div class="an-meta"><span class="an-fuente">Argenports</span> · <span class="an-hora">14:56</span></div>
+</article>
+<article class="an-nota">
+  <h3 class="an-titulo"><a href="https://argenports.com/nota/puerto-quequen-refuerza-infraestructura-clave-para-proteger-sus-muelles-y-garantizar-la-operatoria-exportadora/" target="_blank" rel="noopener">Puerto Quequén refuerza infraestructura clave para proteger sus muelles y garantizar la operatoria exportadora</a></h3>
+  <div class="an-meta"><span class="an-fuente">Argenports</span> · <span class="an-hora">14:25</span></div>
+</article>
+<article class="an-nota">
+  <h3 class="an-titulo"><a href="https://webpicking.com/la-estrategia-de-plaza-logistica-y-enviopack-ante-la-demanda-masiva/" target="_blank" rel="noopener">La estrategia de Plaza Logística y Envíopack ante la demanda masiva</a></h3>
+  <div class="an-meta"><span class="an-fuente">Webpicking</span> · <span class="an-hora">16:56</span></div>
+</article>
+  </div>
+</section>
+<section class="an-seccion" id="internacional">
+  <div class="an-seccion-header">
+    <span class="an-ic"><svg viewBox="0 0 32 32" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="16" cy="16" r="11"/><ellipse cx="16" cy="16" rx="5" ry="11"/><line x1="5" y1="16" x2="27" y2="16"/></svg></span>
+    <h2 class="an-seccion-nombre">Internacional</h2>
+  </div>
+  <div class="an-notas">
+    
+<article class="an-nota">
+  <h3 class="an-titulo"><a href="https://www.bloomberglinea.com/mercados/las-tres-colombias-que-imagina-wall-street-para-el-dia-despues-de-las-elecciones/" target="_blank" rel="noopener">Las tres Colombias que imagina Wall Street para el día después de las elecciones</a></h3>
+  <div class="an-meta"><span class="an-fuente">Bloomberg Línea</span> · <span class="an-hora">10:00</span></div>
+</article>
+<article class="an-nota">
+  <h3 class="an-titulo"><a href="https://www.bloomberglinea.com/latinoamerica/colombia/en-vivo-colombia-elige-hoy-quien-sera-su-proximo-presidente-desde-el-7-de-agosto-2026/" target="_blank" rel="noopener">En vivo: Colombia inicia el preconteo de los votos que definirá presidente</a></h3>
+  <div class="an-meta"><span class="an-fuente">Bloomberg Línea</span> · <span class="an-hora">08:06</span></div>
+</article>
+  </div>
+</section>
+<section class="an-seccion" id="expectativas-de-mercado">
+  <div class="an-seccion-header">
+    <span class="an-ic"></span>
+    <h2 class="an-seccion-nombre">Expectativas de mercado</h2>
+  </div>
+  <div class="an-notas">
+    
+<article class="an-nota">
+  <h3 class="an-titulo"><a href="https://www.invecq.com/contenidos/pese-al-incumplimiento-en-reservas-el-fmi-aprobo-la-segunda-revision/" target="_blank" rel="noopener">Pese al incumplimiento en reservas, el FMI aprobó la segunda revisión</a></h3>
+  <div class="an-meta"><span class="an-fuente">Invecq</span> · <span class="an-hora">18:03</span></div>
+</article>
+<article class="an-nota">
+  <h3 class="an-titulo"><a href="https://www.invecq.com/contenidos/resumen-semanal-del-25-al-29-de-mayo/" target="_blank" rel="noopener">Resumen semanal: del 25 al 29 de mayo</a></h3>
+  <div class="an-meta"><span class="an-fuente">Invecq</span> · <span class="an-hora">18:00</span></div>
+</article>
+  </div>
+</section>
+<section class="an-seccion" id="comercio-exterior">
+  <div class="an-seccion-header">
+    <span class="an-ic"></span>
+    <h2 class="an-seccion-nombre">Comercio Exterior</h2>
+  </div>
+  <div class="an-notas">
+    
+<article class="an-nota">
+  <h3 class="an-titulo"><a href="https://www.iprofesional.com/comex/455992-gran-rosario-recupero-liderazgo-agroexportador-supero-estados-unidos-brasil" target="_blank" rel="noopener">Argentina recuperó el podio y tiene al principal nodo agroexportador del mundo</a></h3>
+  <div class="an-meta"><span class="an-fuente">iProfesional Comex</span> · <span class="an-hora">15:25</span></div>
+</article>
+  </div>
+</section>
+    </div>
+
+  </div>
+</main>
+
+
+<footer class="pie">
+  <div class="contenedor">
+    <span class="pie-logo">PPA</span>
+    <span class="pie-bajada">Pulso Productivo Argentino · pulsoproductivo.com.ar</span>
+    <div class="pie-meta">
+      <a href="/analisis/">Análisis</a>
+      <a href="/tuits/">EconoTuits</a>
+      <a href="/rem/">REM</a>
+      <a href="/tablero/">Tablero</a>
+      <a href="/documentos/">Documentos</a>
+      <a href="/columnas/">Columnas</a>
+      <a href="/stream/">Stream</a>
+      <a href="/como-trabajamos.html">Cómo trabajamos</a>
+    </div>
+    <span class="pie-legal">Editor responsable: Sergio Falco</span>
+  </div>
+</footer>
+<script src="/assets/ppa.js"></script>
+</body>
+</html>

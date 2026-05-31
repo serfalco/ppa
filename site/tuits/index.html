@@ -3,47 +3,102 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Tuits institucionales — PPA</title>
-<meta name="description" content="Lo último de BCRA, INDEC y Ministerio de Economía en Twitter/X.">
+<title>EconoTuits — PPA</title>
+<meta name="description" content="Lo último de BCRA, INDEC y Ministerio de Economía en X/Twitter.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,900&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/assets/ppa.css">
-<link rel="stylesheet" href="/assets/ppa.css"><link rel="stylesheet" href="/assets/tuits.css">
+<link rel="stylesheet" href="/assets/ppa.css"><link rel="stylesheet" href="/assets/interior.css"><link rel="stylesheet" href="/assets/tuits.css">
 </head>
 <body>
 
 
-<div class="franja-datos">
-  <div class="contenedor franja-flex">
-    <span class="fecha-mini">Domingo 31 de mayo de 2026</span>
-    <span class="dato-mini">USD <span id="dolar-oficial">…</span></span>
-    <span class="dato-mini">MEP <span id="dolar-mep">…</span></span>
-    <span class="dato-mini" id="merval-item">Merval <span id="merval">…</span></span>
-    <span class="dato-mini">Riesgo <span id="riesgo-pais">…</span></span>
-  </div>
-</div>
 
-<header class="cabecera-home">
-  <div class="contenedor">
-    <h1 class="titulo-home">PPA</h1>
-    <p class="subtitulo-home">Pulso Productivo Argentino</p>
-    <p class="linea-edicion">Edición Merienda ☕</p>
+<div id="cabecera-wrap">
+<header class="cabecera-ppa expandida" id="cabecera-ppa">
+  <!-- Fila superior: fecha · clima · edición -->
+  <div class="cab-top">
+    <div class="cab-top-izq">
+      <span class="cab-fecha">DOM 31/05/2026</span>
+      <span class="cab-clima" id="cab-clima"></span>
+    </div>
+    <span class="cab-edicion">Edición Merienda ☕</span>
+  </div>
+  <!-- Fila logo + datos + hamburguesa -->
+  <div class="cab-logo-fila">
+    <div>
+      <a href="/" class="cab-logo">PPA</a>
+      <div class="cab-tagline">Pulso Productivo Argentino</div>
+    </div>
+    <div class="cab-datos-expandidos">
+      <div class="cab-dato">
+        <span class="cab-dato-label">Oficial</span>
+        <span class="cab-dato-valor" id="dolar-oficial">…</span>
+      </div>
+      <div class="cab-dato">
+        <span class="cab-dato-label">MEP</span>
+        <span class="cab-dato-valor" id="dolar-mep">…</span>
+      </div>
+      <div class="cab-dato hide-mobile">
+        <span class="cab-dato-label">Blue</span>
+        <span class="cab-dato-valor" id="dolar-blue-cab">…</span>
+      </div>
+      <div class="cab-dato">
+        <span class="cab-dato-label">Riesgo</span>
+        <span class="cab-dato-valor" id="riesgo-pais">…</span>
+      </div>
+      <button class="cab-hamburguesa" id="btn-menu" aria-label="Menú">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
   </div>
 </header>
+<div class="cab-spacer" id="cab-spacer"></div>
+</div>
 
-<nav class="nav-principal">
-  <div class="contenedor">
-    <div class="nav-menu">
-      <a href="/">Portada</a><a href="/institucional/">Institucional</a><a href="/expectativas/">Expectativas</a><a href="/documentos/">Documentos</a><a href="/columnas/">Columnas</a><a href="/stream/">Stream</a><a href="/tablero/">Tablero</a>
+<!-- DRAWER MENÚ -->
+<div class="menu-overlay" id="menu-overlay"></div>
+<nav class="menu-drawer" id="menu-drawer">
+  <div class="menu-drawer-header">
+    <span class="menu-drawer-logo">PPA</span>
+    <button class="menu-cerrar" id="btn-menu-cerrar">✕</button>
+  </div>
+  <div class="menu-nav">
+    <a href="/">Portada</a>
+    <a href="/analisis/">Análisis</a>
+    <a href="/tuits/">EconoTuits</a>
+    <a href="/rem/">REM</a>
+    <a href="/tablero/">Tablero</a>
+    <a href="/documentos/">Documentos</a>
+    <a href="/columnas/">Columnas</a>
+    <a href="/stream/">Stream</a>
+  </div>
+  <div class="menu-datos">
+    <div class="menu-dato">
+      <span class="menu-dato-label">USD Oficial</span>
+      <span class="menu-dato-valor" id="m-dolar-oficial">…</span>
+    </div>
+    <div class="menu-dato">
+      <span class="menu-dato-label">MEP</span>
+      <span class="menu-dato-valor" id="m-dolar-mep">…</span>
+    </div>
+    <div class="menu-dato">
+      <span class="menu-dato-label">Blue</span>
+      <span class="menu-dato-valor" id="m-dolar-blue">…</span>
+    </div>
+    <div class="menu-dato">
+      <span class="menu-dato-label">Riesgo</span>
+      <span class="menu-dato-valor" id="m-riesgo">…</span>
     </div>
   </div>
 </nav>
 
+
 <main class="tuits-main">
   <div class="contenedor">
     <div class="tuits-header">
-      <h1 class="tuits-titulo">Tuits institucionales</h1>
+      <h1 class="tuits-titulo">EconoTuits</h1>
       <p class="tuits-sub">Lo último de BCRA, INDEC y Ministerio de Economía en X/Twitter.
       Se actualiza con cada edición. Si Nitter no responde, muestra el último valor conocido.</p>
     </div>
@@ -116,19 +171,19 @@ Maquinaria agrícola: la facturación aumentó 5,7% interanual en el 1° trimest
 
 <footer class="pie">
   <div class="contenedor">
-    <strong>PPA · Pulso Productivo Argentino</strong><br>
-    <span class="pie-bajada">Publicación económica · pulsoproductivo.com.ar</span>
+    <span class="pie-logo">PPA</span>
+    <span class="pie-bajada">Pulso Productivo Argentino · pulsoproductivo.com.ar</span>
     <div class="pie-meta">
-      <a href="/institucional/">Institucional</a> ·
-      <a href="/expectativas/">Expectativas de mercado</a> ·
-      <a href="/documentos/">Documentos</a> ·
-      <a href="/columnas/">Columnas</a> ·
-      <a href="/stream/">Stream</a> ·
-      <a href="/tablero/">Tablero</a> ·
-      <a href="/como-trabajamos.html">Cómo trabajamos</a> ·
-      <a href="/acerca.html">Acerca de</a>
+      <a href="/analisis/">Análisis</a>
+      <a href="/tuits/">EconoTuits</a>
+      <a href="/rem/">REM</a>
+      <a href="/tablero/">Tablero</a>
+      <a href="/documentos/">Documentos</a>
+      <a href="/columnas/">Columnas</a>
+      <a href="/stream/">Stream</a>
+      <a href="/como-trabajamos.html">Cómo trabajamos</a>
     </div>
-    <div class="pie-legal">Editor responsable: Sergio Falco</div>
+    <span class="pie-legal">Editor responsable: Sergio Falco</span>
   </div>
 </footer>
 </body>
