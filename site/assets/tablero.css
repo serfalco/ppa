@@ -318,3 +318,51 @@
   display: inline-block;
 }
 .dato-link:hover { color: var(--tinta); }
+
+/* =================================================================
+   CONTEXTO — variación diaria / mensual / anual bajo el valor
+   ================================================================= */
+.dato-contexto {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 10px;
+  margin-top: 4px;
+}
+.ctx-item {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 9px;
+  color: var(--gris, #6B6358);
+}
+.ctx-item.sube { color: var(--verde, #BFC24F); font-weight: 600; }
+.ctx-item.baja { color: var(--rojo, #A8362B); font-weight: 600; }
+.ctx-mes::before { content: "· "; color: var(--grisclaro, #C8BC9E); }
+
+/* Paleta tresempanadas override en el tablero */
+.tablero-cabecera {
+  background: var(--papel, #EBE0C2);
+  padding: 20px 0 16px;
+  border-bottom: 2px solid var(--tinta, #1B1612);
+  margin-bottom: 0;
+}
+.tablero-titulo {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(22px, 4vw, 32px);
+  font-weight: 900;
+  color: var(--tinta, #1B1612);
+  margin-bottom: 4px;
+}
+.tablero-sub {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 9px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--gris, #6B6358);
+}
+.tablero-disclaimer {
+  font-family: 'Source Serif 4', serif;
+  font-size: 11px;
+  color: var(--grisclaro, #C8BC9E);
+  font-style: italic;
+  margin-top: 6px;
+  max-width: 500px;
+}

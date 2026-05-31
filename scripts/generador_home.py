@@ -14,6 +14,7 @@ from html.parser import HTMLParser
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from config import DIR_DATA, DIR_SITE
 from iconos import ICONO
+import componentes as comp
 
 
 def limpiar_url(texto):
@@ -356,59 +357,15 @@ def generar_home():
     columnas      = cargar_columnas()
     stream        = cargar_stream()
 
-    html = f"""<!DOCTYPE html>
-<html lang="es-AR">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>PPA · Pulso Productivo Argentino</title>
-<meta name="description" content="Publicación económica argentina: lo que dicen las instituciones, las expectativas del mercado, columnas editoriales y comentarios sobre streaming.">
-<meta property="og:title" content="PPA · Pulso Productivo Argentino">
-<meta property="og:description" content="Publicación económica argentina.">
-<meta property="og:type" content="website">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,900&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/assets/ppa.css">
-<link rel="stylesheet" href="/assets/home.css">
-<link rel="stylesheet" href="/assets/carrusel-datos.css">
-</head>
+    html = (
+        comp.head_comun(
+            "PPA · Pulso Productivo Argentino",
+            "Publicación económica argentina: análisis, datos de mercado, columnas y más.",
+            css_extra='<link rel="stylesheet" href="/assets/home.css">\n<link rel="stylesheet" href="/assets/carrusel-datos.css">'
+        ) + f"""
 <body class="body-home">
 
-<!-- FRANJA SUPERIOR: datos vivos -->
-<div class="franja-datos">
-  <div class="contenedor franja-flex">
-    <span class="fecha-mini">{escapar(fecha_legible(ahora_ar))}</span>
-    <span class="dato-mini">USD <span id="dolar-oficial">…</span></span>
-    <span class="dato-mini">MEP <span id="dolar-mep">…</span></span>
-    <span class="dato-mini" id="merval-item">Merval <span id="merval">…</span></span>
-    <span class="dato-mini">Riesgo <span id="riesgo-pais">…</span></span>
-  </div>
-</div>
-
-<!-- MASTHEAD -->
-<header class="cabecera-home">
-  <div class="contenedor">
-    <h1 class="titulo-home">PPA</h1>
-    <p class="subtitulo-home">Pulso Productivo Argentino</p>
-    <p class="linea-edicion">{escapar(linea_edicion)}</p>
-  </div>
-</header>
-
-<!-- NAVEGACIÓN PRINCIPAL -->
-<nav class="nav-principal">
-  <div class="contenedor">
-    <div class="nav-menu">
-      <a href="/" class="activo">Portada</a>
-      <a href="/institucional/">Institucional</a>
-      <a href="/expectativas/">Expectativas</a>
-      <a href="/documentos/">Documentos</a>
-      <a href="/columnas/">Columnas</a>
-      <a href="/stream/">Stream</a>
-      <a href="/tablero/">Tablero</a>
-    </div>
-  </div>
-</nav>
+{comp.cabecera("Portada", edicion_nombre, edicion_icono)}
 
 <!-- CARRUSEL DE DATOS -->
 {carrusel_datos()}
@@ -465,6 +422,7 @@ def generar_home():
 
 </body>
 </html>"""
+    )
 
     out = os.path.join(DIR_SITE, "index.html")
     os.makedirs(DIR_SITE, exist_ok=True)

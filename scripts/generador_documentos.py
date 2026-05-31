@@ -204,6 +204,7 @@ def generar_indice(documentos):
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,900&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/assets/ppa.css">
+<link rel="stylesheet" href="/assets/interior.css">
 <link rel="stylesheet" href="/assets/documentos.css">
 </head>
 <body class="body-documentos">

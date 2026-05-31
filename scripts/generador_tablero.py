@@ -29,6 +29,7 @@ def generar_tablero():
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/assets/ppa.css">
+<link rel="stylesheet" href="/assets/interior.css">
 <link rel="stylesheet" href="/assets/tablero.css">
 </head>
 <body class="body-tablero">
@@ -183,6 +184,10 @@ def generar_tablero():
           <span class="dato-label">Riesgo País</span>
           <span class="dato-valor dato-enorme" id="t-riesgo">…</span>
           <span class="dato-sub">puntos básicos · EMBI+</span>
+          <div class="dato-contexto">
+            <span class="ctx-item" id="t-riesgo-var-dia"></span>
+            <span class="ctx-item ctx-mes" id="t-riesgo-var-mes"></span>
+          </div>
           <span class="dato-fuente">rava.com</span>
         </div>
 
@@ -211,6 +216,11 @@ def generar_tablero():
               <span class="bcra-sub">Reservas</span>
               <span class="dato-valor" id="t-reservas">…</span>
               <span class="bcra-detalle">millones de USD</span>
+              <div class="dato-contexto">
+                <span class="ctx-item" id="t-reservas-var-dia"></span>
+                <span class="ctx-item" id="t-reservas-var-mes"></span>
+                <span class="ctx-item" id="t-reservas-var-anio"></span>
+              </div>
             </div>
             <div class="bcra-sep"></div>
             <div class="bcra-item" id="bcra-mulc-bloque">
@@ -242,6 +252,10 @@ def generar_tablero():
           <span class="dato-label">IPC mensual (último)</span>
           <span class="dato-valor dato-grande" id="t-ipc-mensual">…</span>
           <span class="dato-sub" id="t-ipc-mensual-fecha">cargando…</span>
+          <div class="dato-contexto">
+            <span class="ctx-item" id="t-ipc-interanual-ctx"></span>
+            <span class="ctx-item" id="t-ipc-acumulado-ctx"></span>
+          </div>
           <span class="dato-fuente">INDEC vía datos.gob.ar</span>
         </div>
 
@@ -348,6 +362,10 @@ def generar_tablero():
           <span class="dato-label">TCRM</span>
           <span class="dato-valor" id="t-tcrm">…</span>
           <span class="dato-sub">Tipo de cambio real multilateral</span>
+          <div class="dato-contexto">
+            <span class="ctx-item" id="t-tcrm-var-dia"></span>
+            <span class="ctx-item ctx-mes" id="t-tcrm-var-mes"></span>
+          </div>
           <span class="dato-fuente">BCRA vía datos.gob.ar</span>
           <a href="/tcrm/" class="dato-link">Ver perspectiva histórica →</a>
         </div>

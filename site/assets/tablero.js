@@ -109,6 +109,37 @@
       mulcLabel.textContent = 's/d';
     }
 
+    // ---- CONTEXTO: variación diaria / mensual / anual ----
+    function ctx(id, valor, tipo) {
+      // tipo: 'pesos' | 'pct' | 'pb' | 'usd'
+      const el = document.getElementById(id);
+      if (!el || valor == null) return;
+      const signo = valor >= 0 ? '+' : '';
+      let txt = '', cls = valor >= 0 ? 'sube' : 'baja';
+      if (tipo === 'pct') txt = signo + Number(valor).toFixed(1) + '%';
+      else if (tipo === 'pb') txt = signo + Math.round(valor) + ' pb';
+      else if (tipo === 'usd') txt = signo + 'USD ' + Math.round(Math.abs(valor)) + ' M';
+      else txt = signo + Number(valor).toFixed(2);
+      el.textContent = txt;
+      el.className = 'ctx-item ' + cls;
+    }
+
+    // Reservas contexto
+    if (res && res.variacion != null) ctx('t-reservas-var-dia', res.variacion, 'pct');
+
+    // Riesgo contexto
+    if (rp && rp.variacion != null) ctx('t-riesgo-var-dia', rp.variacion, 'pb');
+
+    // TCRM contexto
+    if (tcrm && tcrm.variacion != null) ctx('t-tcrm-var-dia', tcrm.variacion, 'pct');
+
+    // IPC contexto interanual (si viene en el dato)
+    const ipcAnual = d(datos, 'ipc_interanual');
+    if (ipcAnual) {
+      const el = document.getElementById('t-ipc-interanual-ctx');
+      if (el) { el.textContent = 'i.a. ' + pct(ipcAnual.valor); el.className = 'ctx-item'; }
+    }
+
     // bonos AL30/GD30/GD35: pendientes de BYMA EOD -> quedan en s/d
 
     // ---- MACRO + BCRA monetario ----

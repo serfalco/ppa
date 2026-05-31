@@ -1,0 +1,152 @@
+/* =================================================================
+   PPA — rem.css · Sección REM
+   ================================================================= */
+
+.body-rem { background: var(--papel); }
+.rem-main { padding: 20px 0 48px; }
+
+.rem-header {
+  padding-bottom: 16px;
+  border-bottom: 2px solid var(--tinta);
+  margin-bottom: 24px;
+}
+.rem-titulo {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(32px, 6vw, 48px);
+  font-weight: 900;
+  line-height: 1;
+  margin-bottom: 4px;
+}
+.rem-subtitulo {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 10px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--gris);
+  margin-bottom: 8px;
+}
+.rem-desc {
+  font-family: 'Source Serif 4', serif;
+  font-size: 13px;
+  color: var(--gris);
+  line-height: 1.5;
+  max-width: 580px;
+  font-style: italic;
+}
+
+/* Último REM */
+.rem-ultimo { margin-bottom: 32px; }
+.rem-ultimo-label {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--gris);
+  margin-bottom: 10px;
+}
+
+/* Cards */
+.rem-card {
+  background: var(--papel-2, #E0D4A8);
+  border-top: 3px solid var(--tinta);
+  padding: 16px;
+  margin-bottom: 12px;
+}
+.rem-card-ultimo {
+  border-top-color: var(--rojo);
+  background: #fff;
+}
+.rem-card-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+.rem-mes {
+  font-family: 'Playfair Display', serif;
+  font-size: 20px;
+  font-weight: 700;
+}
+.rem-badge {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 8px;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  background: var(--rojo);
+  color: #fff;
+  padding: 2px 6px;
+  border-radius: 2px;
+}
+
+/* Datos del REM */
+.rem-datos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-bottom: 14px;
+}
+.rem-dato {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.rem-dato-label {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 8px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--gris);
+}
+.rem-dato-valor {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--tinta);
+}
+.rem-card-ultimo .rem-dato-valor { color: var(--rojo); }
+
+.rem-ver {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 10px;
+  font-weight: 600;
+  color: var(--rojo);
+  letter-spacing: 0.04em;
+}
+.rem-ver:hover { color: var(--tinta); }
+
+.rem-sin-datos {
+  font-family: 'Source Serif 4', serif;
+  font-style: italic;
+  color: var(--gris);
+  font-size: 12px;
+  margin-bottom: 12px;
+}
+
+/* Histórico */
+.rem-hist-titulo {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--gris);
+  margin-bottom: 12px;
+  padding-top: 4px;
+}
+.rem-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+@media (max-width: 480px) { .rem-grid { grid-template-columns: 1fr; } }
+@media (min-width: 768px) { .rem-grid { grid-template-columns: 1fr 1fr 1fr; } }
+
+.rem-vacio {
+  font-family: 'Source Serif 4', serif;
+  font-style: italic;
+  color: var(--gris);
+  padding: 24px 0;
+}

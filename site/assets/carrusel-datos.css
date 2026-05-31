@@ -4,9 +4,9 @@
    ================================================================= */
 
 .franja-tarjetas {
-  background: var(--color-fondo, #f5f0e8);
-  border-bottom: 2px solid var(--color-tinta, #1a1a1a);
-  border-top: 1px solid rgba(26,26,26,0.15);
+  background: var(--papel, #EBE0C2);
+  border-bottom: 1px solid var(--linea, #D4C99A);
+  
   padding: 0.7rem 0;
   width: 100%;             /* anclada al viewport, nunca más ancha */
   max-width: 100%;
@@ -41,7 +41,7 @@
   min-width: 140px;
   flex: 0 0 auto;
   background: #fff;
-  border: 1px solid rgba(26, 26, 26, 0.12);
+  border: 1px solid var(--linea, #D4C99A);
   border-radius: 4px;
   text-decoration: none;
   color: inherit;
@@ -50,7 +50,7 @@
 }
 
 .tarjeta-dato:hover {
-  border-color: var(--color-rojo, #c0392b);
+  border-color: var(--rojo, #A8362B);
   box-shadow: 0 1px 4px rgba(0,0,0,0.1);
   text-decoration: none;
 }
@@ -58,12 +58,11 @@
 /* RIESGO PAIS destacado: mas ancho, borde rojo, fondo sutil */
 .tarjeta-destacada {
   min-width: 165px;
-  border: 2px solid var(--color-rojo, #c0392b);
+  border: 1px solid var(--linea, #D4C99A);
   background: #fff;
-  box-shadow: 0 1px 6px rgba(192,57,43,0.15);
 }
 .tarjeta-destacada .tarjeta-titulo {
-  color: var(--color-rojo, #c0392b);
+  color: var(--gris, #6B6358);
   font-weight: 700;
 }
 .tarjeta-destacada .tarjeta-valor {
@@ -94,8 +93,8 @@
   font-size: 0.72rem;
   font-weight: 500;
 }
-.tarjeta-var.sube { color: #27ae60; }
-.tarjeta-var.baja { color: #c0392b; }
+.tarjeta-var.sube { color: var(--verde, #BFC24F); }
+.tarjeta-var.baja { color: var(--rojo, #A8362B); }
 
 .tarjeta-hora {
   font-family: 'IBM Plex Sans', sans-serif;
@@ -120,7 +119,7 @@
 .banda-term { margin-top: 8px; }
 .banda-barra {
   position: relative; height: 10px; border-radius: 5px;
-  background: linear-gradient(to right, #27ae60 0%, #e8c84a 55%, #c0392b 100%);
+  background: linear-gradient(to right, var(--verde, #BFC24F) 0%, #e8c84a 55%, var(--rojo, #A8362B) 100%);
 }
 .banda-marcador {
   position: absolute; top: -4px; width: 4px; height: 18px;
@@ -132,8 +131,8 @@
   display: flex; justify-content: space-between; align-items: center;
   margin-top: 8px; font-size: 0.62rem;
 }
-.banda-piso  { color: #27ae60; font-weight: 600; }
-.banda-techo { color: #c0392b; font-weight: 600; }
+.banda-piso  { color: var(--verde, #BFC24F); font-weight: 600; }
+.banda-techo { color: var(--rojo, #A8362B); font-weight: 600; }
 .banda-actual {
   font-weight: 700; font-size: 0.7rem; color: #1a1a1a;
 }

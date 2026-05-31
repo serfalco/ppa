@@ -271,9 +271,9 @@ def generar_pagina_tuits(tuits_por_cuenta):
     total = sum(len(d.get("tuits", [])) for d in tuits_por_cuenta.values())
 
     html = f"""{comp.head_comun(
-        "Tuits institucionales — PPA",
-        "Lo último de BCRA, INDEC y Ministerio de Economía en Twitter/X.",
-        css_extra='<link rel="stylesheet" href="/assets/ppa.css"><link rel="stylesheet" href="/assets/tuits.css">'
+        "EconoTuits — PPA",
+        "Lo último de BCRA, INDEC y Ministerio de Economía en X/Twitter.",
+        css_extra='<link rel="stylesheet" href="/assets/ppa.css"><link rel="stylesheet" href="/assets/interior.css"><link rel="stylesheet" href="/assets/tuits.css">'
     )}
 <body>
 
@@ -284,7 +284,7 @@ def generar_pagina_tuits(tuits_por_cuenta):
 <main class="tuits-main">
   <div class="contenedor">
     <div class="tuits-header">
-      <h1 class="tuits-titulo">Tuits institucionales</h1>
+      <h1 class="tuits-titulo">EconoTuits</h1>
       <p class="tuits-sub">Lo último de BCRA, INDEC y Ministerio de Economía en X/Twitter.
       Se actualiza con cada edición. Si Nitter no responde, muestra el último valor conocido.</p>
     </div>

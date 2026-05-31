@@ -1,541 +1,458 @@
 /* =================================================================
    PPA — Pulso Productivo Argentino
-   Hoja de estilos principal
-   Estética: editorial sobria, papel crema + tinta negra + rojo
+   Paleta tresempanadas · mobile-first · sin líneas innecesarias
    ================================================================= */
 
 :root {
-  --tinta: #1a1a1a;
-  --papel: #f4f0e8;
-  --papel-2: #ebe5d6;
-  --rojo: #9a1b1b;
-  --gris: #5a5750;
-  --gris-claro: #cdc7b8;
-  --azul: #1e3a5f;
-  --verde: #2d5a3d;
-  --linea: #b8b1a0;
+  --tinta:    #1B1612;
+  --papel:    #EBE0C2;
+  --papel-2:  #E0D4A8;
+  --rojo:     #A8362B;
+  --verde:    #BFC24F;
+  --violeta:  #726C98;
+  --gris:     #6B6358;
+  --gris-claro: #C8BC9E;
+  --linea:    #D4C99A;
+  --negro:    #1B1612;
 }
 
 * { box-sizing: border-box; margin: 0; padding: 0; }
 
-html {
-  background: var(--papel);
-  /* NO overflow-x aquí: en html rompe el scroll containment en algunos browsers
-     y provoca desborde fantasma (página corrida a la izquierda) */
-}
+html { background: var(--papel); }
 
 body {
   background: var(--papel);
   color: var(--tinta);
   font-family: 'Source Serif 4', Georgia, serif;
+  font-size: 15px;
   line-height: 1.5;
   width: 100%;
   max-width: 100%;
   overflow-x: hidden;
 }
 
-body {
-  background-image:
-    radial-gradient(circle at 20% 10%, rgba(154, 27, 27, 0.03) 0%, transparent 40%),
-    radial-gradient(circle at 80% 60%, rgba(30, 58, 95, 0.025) 0%, transparent 40%);
-  min-height: 100vh;
-}
-
-a { color: inherit; text-decoration: none; transition: color 0.2s; }
+a { color: inherit; text-decoration: none; transition: color 0.15s; }
 a:hover { color: var(--rojo); }
 
-.contenedor { max-width: 1280px; margin: 0 auto; padding: 0 32px; }
+.contenedor { max-width: 1280px; margin: 0 auto; padding: 0 16px; }
+@media (min-width: 640px) { .contenedor { padding: 0 24px; } }
+@media (min-width: 1024px) { .contenedor { padding: 0 32px; } }
 
 /* =================================================================
-   BARRA SUPERIOR (fecha + clima)
+   CABECERA STICKY — dos estados
    ================================================================= */
-.barra-superior {
+
+/* Wrapper que reserva espacio para evitar jump al volverse fixed */
+#cabecera-wrap {
+  position: relative;
+}
+
+.cabecera-ppa {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 100;
+  transition: all 0.25s ease;
   background: var(--tinta);
   color: var(--papel);
+}
+
+/* Estado expandido (top) */
+.cabecera-ppa.expandida {
+  background: var(--tinta);
+}
+
+.cab-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 6px 16px;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 10px;
+  letter-spacing: 0.08em;
+  color: var(--gris-claro);
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+  transition: all 0.25s;
+}
+
+.cab-top-izq { display: flex; gap: 10px; align-items: center; }
+.cab-fecha { text-transform: uppercase; letter-spacing: 0.12em; font-size: 9px; }
+.cab-edicion { color: var(--verde); font-weight: 600; }
+.cab-clima { color: var(--gris-claro); }
+
+/* Estado expandido: fila del logo */
+.cab-logo-fila {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 16px;
+  transition: all 0.25s;
+}
+
+.cab-logo {
+  font-family: 'Playfair Display', serif;
+  font-weight: 900;
+  font-size: 28px;
+  color: var(--papel);
+  letter-spacing: -0.02em;
+  line-height: 1;
+}
+
+.cab-tagline {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 9px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--gris-claro);
+  margin-top: 2px;
+}
+
+.cab-datos-expandidos {
+  display: flex;
+  gap: 14px;
+  align-items: center;
   font-family: 'IBM Plex Sans', sans-serif;
   font-size: 11px;
-  letter-spacing: 0.15em;
-  text-transform: uppercase;
-  padding: 6px 0;
 }
-.barra-superior .contenedor {
+
+.cab-dato {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 1px;
 }
+.cab-dato-label {
+  font-size: 8px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--gris-claro);
+}
+.cab-dato-valor {
+  font-weight: 700;
+  font-size: 12px;
+  color: var(--papel);
+}
+
+.cab-hamburguesa {
+  background: none;
+  border: none;
+  color: var(--papel);
+  cursor: pointer;
+  padding: 4px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-left: 12px;
+}
+.cab-hamburguesa span {
+  display: block;
+  width: 20px;
+  height: 2px;
+  background: var(--papel);
+  border-radius: 1px;
+  transition: all 0.2s;
+}
+
+/* Estado sticky (compacto, al scrollear) */
+.cabecera-ppa.sticky .cab-top { display: none; }
+.cabecera-ppa.sticky .cab-logo-fila { padding: 7px 16px; }
+.cabecera-ppa.sticky .cab-logo { font-size: 18px; }
+.cabecera-ppa.sticky .cab-tagline { display: none; }
+.cabecera-ppa.sticky .cab-datos-expandidos { gap: 10px; }
+.cabecera-ppa.sticky .cab-dato-valor { font-size: 11px; }
+
+/* Espacio reservado para la cabecera fija */
+.cab-spacer {
+  height: 88px; /* expandida */
+  transition: height 0.25s;
+}
+.cab-spacer.sticky { height: 52px; }
+
+/* En mobile ocultar algunos datos en sticky */
+@media (max-width: 480px) {
+  .cab-dato.hide-mobile { display: none; }
+  .cab-dato-label { display: none; }
+  .cab-dato-valor { font-size: 11px; }
+}
+
+/* =================================================================
+   MENÚ HAMBURGUESA — drawer lateral
+   ================================================================= */
+
+.menu-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(27,22,18,0.6);
+  z-index: 200;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.25s;
+}
+.menu-overlay.abierto {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.menu-drawer {
+  position: fixed;
+  top: 0; right: -280px;
+  width: 260px;
+  height: 100%;
+  background: var(--tinta);
+  z-index: 201;
+  transition: right 0.25s ease;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  overflow-y: auto;
+}
+.menu-drawer.abierto { right: 0; }
+
+.menu-drawer-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 20px;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+.menu-drawer-logo {
+  font-family: 'Playfair Display', serif;
+  font-size: 22px;
+  font-weight: 900;
+  color: var(--papel);
+}
+.menu-cerrar {
+  background: none;
+  border: none;
+  color: var(--gris-claro);
+  font-size: 20px;
+  cursor: pointer;
+  line-height: 1;
+  padding: 4px;
+}
+
+.menu-nav {
+  padding: 12px 0;
+  flex: 1;
+}
+.menu-nav a {
+  display: block;
+  padding: 12px 20px;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--papel);
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+  transition: background 0.15s, color 0.15s;
+}
+.menu-nav a:hover { background: rgba(255,255,255,0.06); color: var(--verde); }
+.menu-nav a.activo { color: var(--verde); }
+
+.menu-datos {
+  padding: 16px 20px;
+  border-top: 1px solid rgba(255,255,255,0.1);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+.menu-dato {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.menu-dato-label {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 8px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--gris-claro);
+}
+.menu-dato-valor {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--papel);
+}
+
+/* =================================================================
+   NAVEGACIÓN (ya no se usa la barra separada — queda en el drawer)
+   ================================================================= */
 
 /* =================================================================
    MARQUESINA FULBITO
    ================================================================= */
 .marquesina-fulbito {
   background: var(--papel-2);
-  border-bottom: 1px solid var(--linea);
-  padding: 10px 0;
+  padding: 8px 0;
   font-family: 'IBM Plex Sans', sans-serif;
-  font-size: 12px;
+  font-size: 11px;
   overflow: hidden;
 }
 .marquesina-fulbito .contenedor {
   display: flex;
   align-items: center;
-  gap: 16px;
+  gap: 12px;
 }
 .fulbito-label {
   font-weight: 600;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.06em;
   text-transform: uppercase;
   white-space: nowrap;
-  color: var(--rojo);
-}
-.fulbito-scroll {
-  flex: 1;
-  overflow: hidden;
-  white-space: nowrap;
-}
-.fulbito-partido {
-  display: inline-block;
-  margin-right: 32px;
-  font-weight: 500;
-}
-.fulbito-partido .hora {
-  color: var(--rojo);
-  font-weight: 600;
-  margin-left: 6px;
-}
-
-/* =================================================================
-   CABECERA - Masthead PPA
-   ================================================================= */
-.cabecera {
-  border-bottom: 3px double var(--tinta);
-  padding: 32px 0 20px;
-  text-align: center;
-  position: relative;
-}
-.cabecera::before,
-.cabecera::after {
-  content: '';
-  position: absolute;
-  left: 0; right: 0;
-  height: 1px;
-  background: var(--tinta);
-}
-.cabecera::before { top: 8px; }
-.cabecera::after { bottom: 8px; }
-
-.fecha-edicion {
-  font-family: 'IBM Plex Sans', sans-serif;
   font-size: 10px;
-  letter-spacing: 0.3em;
-  text-transform: uppercase;
-  color: var(--gris);
-  margin-bottom: 8px;
 }
-.titulo-diario {
-  font-family: 'Playfair Display', serif;
-  font-weight: 900;
-  font-size: clamp(64px, 12vw, 132px);
-  letter-spacing: -0.04em;
-  line-height: 0.9;
-}
-.bajada-diario {
-  font-family: 'IBM Plex Sans', sans-serif;
-  font-size: 11px;
-  letter-spacing: 0.4em;
-  text-transform: uppercase;
-  color: var(--gris);
-  margin-top: 8px;
-}
+.fulbito-scroll { overflow-x: auto; white-space: nowrap; }
 
 /* =================================================================
-   TICKER (dólar + riesgo país)
+   FRANJA DE DATOS (ya integrada en cabecera — mantener para compat.)
    ================================================================= */
-.ticker {
-  background: var(--tinta);
-  color: var(--papel);
-  padding: 10px 0;
-  border-bottom: 1px solid var(--linea);
-}
-.ticker-flex {
-  display: flex;
-  justify-content: center;
-  gap: 48px;
-  flex-wrap: wrap;
-}
-.ticker-item {
-  display: flex;
-  gap: 8px;
-  align-items: baseline;
-  font-family: 'IBM Plex Sans', sans-serif;
-}
-.ticker-label {
-  font-size: 10px;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-  color: var(--gris-claro);
-}
-.ticker-valor {
-  font-size: 14px;
-  font-weight: 600;
-  color: var(--papel);
-}
-.ticker-valor.sube { color: #6ada6a; }
-.ticker-valor.baja { color: #ff7a7a; }
+.franja-datos { display: none; } /* reemplazada por cabecera sticky */
 
 /* =================================================================
-   WIDGET MULC (solo aparece 17-20hs)
+   TICKER (legacy — reemplazado)
+   ================================================================= */
+.ticker { display: none; }
+
+/* =================================================================
+   WIDGET MULC
    ================================================================= */
 .widget-mulc {
   background: var(--papel-2);
-  border-bottom: 2px solid var(--tinta);
-  padding: 18px 0;
+  padding: 10px 0;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 12px;
 }
 .mulc-header {
-  font-family: 'IBM Plex Sans', sans-serif;
-  font-size: 11px;
-  letter-spacing: 0.3em;
-  text-transform: uppercase;
-  color: var(--rojo);
-  font-weight: 600;
-  margin-bottom: 8px;
-  text-align: center;
-}
-.mulc-body {
-  text-align: center;
-  font-family: 'Playfair Display', serif;
-  font-size: 22px;
+  font-size: 9px;
   font-weight: 700;
-}
-.mulc-loading { color: var(--gris); font-style: italic; font-size: 14px; font-family: 'Source Serif 4', serif; font-weight: 400; }
-
-/* =================================================================
-   NAVEGACIÓN
-   ================================================================= */
-.nav-secciones {
-  border-bottom: 1px solid var(--linea);
-  padding: 14px 0;
-  font-family: 'IBM Plex Sans', sans-serif;
-  font-size: 12px;
-  font-weight: 500;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.25em;
   text-transform: uppercase;
-}
-.nav-secciones ul {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  gap: 24px;
-  flex-wrap: wrap;
-}
-.nav-secciones a.activo { color: var(--rojo); }
-
-/* =================================================================
-   COLUMNA PROPIA (Sergio Falco)
-   ================================================================= */
-.columna-propia {
-  padding: 30px 0 10px;
-}
-.columna-marco {
-  background: var(--papel-2);
-  border-left: 6px solid var(--rojo);
-  padding: 24px 32px;
-  position: relative;
-}
-.columna-tag {
-  font-family: 'IBM Plex Sans', sans-serif;
-  font-size: 10px;
-  font-weight: 600;
-  letter-spacing: 0.3em;
   color: var(--rojo);
   margin-bottom: 8px;
 }
-.columna-titulo {
-  font-family: 'Playfair Display', serif;
-  font-style: italic;
-  font-size: clamp(24px, 3.5vw, 36px);
-  font-weight: 700;
-  line-height: 1.1;
-  margin-bottom: 10px;
-}
-.columna-bajada {
-  font-size: 16px;
-  color: var(--tinta);
-  margin-bottom: 12px;
-}
-.columna-firma {
-  font-family: 'IBM Plex Sans', sans-serif;
-  font-size: 12px;
-  color: var(--gris);
-  letter-spacing: 0.05em;
-}
-.columna-leer {
-  display: inline-block;
-  margin-top: 12px;
-  font-family: 'IBM Plex Sans', sans-serif;
-  font-size: 13px;
-  font-weight: 600;
-  color: var(--rojo);
-  letter-spacing: 0.05em;
-}
 
 /* =================================================================
-   TAPA - destacados
-   ================================================================= */
-.tapa {
-  padding: 36px 0 28px;
-  border-bottom: 1px solid var(--linea);
-}
-.tapa-grid {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  gap: 36px;
-}
-@media (max-width: 960px) {
-  .tapa-grid { grid-template-columns: 1fr; }
-}
-
-.destacado-principal .etiqueta {
-  display: inline-block;
-  background: var(--rojo);
-  color: var(--papel);
-  font-family: 'IBM Plex Sans', sans-serif;
-  font-size: 10px;
-  font-weight: 600;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-  padding: 4px 10px;
-  margin-bottom: 14px;
-}
-.destacado-principal h2 {
-  font-family: 'Playfair Display', serif;
-  font-size: clamp(28px, 3.5vw, 42px);
-  font-weight: 700;
-  line-height: 1.05;
-  margin-bottom: 14px;
-}
-.destacado-principal h2 a { color: var(--tinta); }
-.destacado-bajada {
-  font-size: 16px;
-  line-height: 1.55;
-  margin-bottom: 14px;
-  color: var(--tinta);
-}
-.firma {
-  font-family: 'IBM Plex Sans', sans-serif;
-  font-size: 11px;
-  letter-spacing: 0.06em;
-  color: var(--gris);
-  border-top: 1px solid var(--linea);
-  padding-top: 10px;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 8px;
-}
-.firma strong { color: var(--tinta); font-weight: 600; }
-.ver-mas { color: var(--rojo); font-weight: 500; }
-
-.destacados-laterales {
-  display: flex;
-  flex-direction: column;
-  gap: 18px;
-}
-.destacado-secundario {
-  border-bottom: 1px solid var(--linea);
-  padding-bottom: 18px;
-}
-.destacado-secundario:last-child { border-bottom: none; }
-.etiqueta-sec {
-  font-family: 'IBM Plex Sans', sans-serif;
-  font-size: 10px;
-  font-weight: 600;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-  color: var(--rojo);
-  display: block;
-  margin-bottom: 8px;
-}
-.destacado-secundario h3 {
-  font-family: 'Playfair Display', serif;
-  font-size: 20px;
-  font-weight: 700;
-  line-height: 1.15;
-  margin-bottom: 8px;
-}
-.destacado-secundario h3 a { color: var(--tinta); }
-.destacado-secundario p {
-  font-size: 14px;
-  color: var(--gris);
-  margin-bottom: 10px;
-  line-height: 1.5;
-}
-
-/* =================================================================
-   BOTONES COMPARTIR
-   ================================================================= */
-.compartir {
-  margin-top: 10px;
-  display: flex;
-  gap: 6px;
-  flex-wrap: wrap;
-}
-.comp-btn {
-  font-family: 'IBM Plex Sans', sans-serif;
-  font-size: 10px;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-  color: var(--gris);
-  background: transparent;
-  border: 1px solid var(--linea);
-  padding: 3px 10px;
-  cursor: pointer;
-  transition: all 0.15s;
-}
-.comp-btn:hover {
-  border-color: var(--rojo);
-  color: var(--rojo);
-}
-
-/* =================================================================
-   SECCIONES POR CATEGORÍA
-   ================================================================= */
-.layout-con-sidebar {
-  display: grid;
-  grid-template-columns: 1fr 320px;
-  gap: 48px;
-  padding: 32px 0;
-}
-@media (max-width: 960px) {
-  .layout-con-sidebar { grid-template-columns: 1fr; }
-}
-
-.seccion {
-  padding: 28px 0;
-  border-bottom: 1px solid var(--linea);
-}
-.seccion-titulo {
-  margin-bottom: 22px;
-  padding-bottom: 10px;
-  border-bottom: 2px solid var(--tinta);
-}
-.seccion-titulo h2 {
-  font-family: 'Playfair Display', serif;
-  font-size: 30px;
-  font-weight: 900;
-  font-style: italic;
-}
-
-.notas-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 24px;
-}
-@media (max-width: 960px) {
-  .notas-grid { grid-template-columns: 1fr; }
-}
-
-.nota .fuente {
-  font-family: 'IBM Plex Sans', sans-serif;
-  font-size: 10px;
-  font-weight: 600;
-  letter-spacing: 0.15em;
-  text-transform: uppercase;
-  color: var(--azul);
-  margin-bottom: 8px;
-}
-.nota h3 {
-  font-family: 'Playfair Display', serif;
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 1.2;
-  margin-bottom: 8px;
-}
-.nota h3 a { color: var(--tinta); }
-.nota p {
-  font-size: 14px;
-  line-height: 1.5;
-  margin-bottom: 10px;
-}
-.nota .meta {
-  font-family: 'IBM Plex Sans', sans-serif;
-  font-size: 11px;
-  color: var(--gris);
-  display: flex;
-  justify-content: space-between;
-}
-.nota .meta a { color: var(--rojo); font-weight: 500; }
-
-/* =================================================================
-   SIDEBAR ÚLTIMO MOMENTO
-   ================================================================= */
-.sidebar {
-  border-left: 1px solid var(--linea);
-  padding-left: 24px;
-}
-.sidebar-titulo {
-  font-family: 'Playfair Display', serif;
-  font-size: 24px;
-  font-weight: 900;
-  font-style: italic;
-  border-bottom: 2px solid var(--rojo);
-  padding-bottom: 8px;
-  margin-bottom: 16px;
-}
-.sidebar-item {
-  padding: 12px 0;
-  border-bottom: 1px dotted var(--linea);
-  display: flex;
-  gap: 12px;
-}
-.sidebar-item .hora {
-  font-family: 'IBM Plex Sans', sans-serif;
-  font-size: 11px;
-  font-weight: 600;
-  color: var(--rojo);
-  white-space: nowrap;
-  padding-top: 2px;
-}
-.sidebar-item .texto {
-  font-size: 13px;
-  line-height: 1.4;
-}
-.sidebar-item .fuente-mini {
-  font-family: 'IBM Plex Sans', sans-serif;
-  font-size: 10px;
-  color: var(--gris);
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  display: block;
-  margin-top: 4px;
-}
-
-/* =================================================================
-   PIE
+   PIE COMPACTO
    ================================================================= */
 .pie {
   background: var(--tinta);
   color: var(--papel);
-  padding: 28px 0;
-  margin-top: 32px;
-  text-align: center;
+  padding: 20px 0;
+  margin-top: 40px;
   font-family: 'IBM Plex Sans', sans-serif;
-  font-size: 12px;
+  font-size: 11px;
 }
-.pie strong {
+.pie .contenedor {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.pie-logo {
   font-family: 'Playfair Display', serif;
-  font-size: 22px;
-  font-style: italic;
-  letter-spacing: 0;
+  font-size: 16px;
+  font-weight: 900;
+  color: var(--papel);
 }
 .pie-bajada {
-  display: block;
-  margin-top: 6px;
+  font-size: 10px;
   color: var(--gris-claro);
-  letter-spacing: 0.05em;
+  letter-spacing: 0.06em;
 }
 .pie-meta {
-  margin-top: 12px;
-  font-size: 11px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 12px;
+  font-size: 10px;
   color: var(--gris-claro);
 }
-.pie-meta a { color: var(--papel); margin: 0 4px; }
+.pie-meta a { color: var(--gris-claro); }
+.pie-meta a:hover { color: var(--verde); }
+.pie-legal {
+  font-size: 9px;
+  color: var(--gris-claro);
+  opacity: 0.5;
+  letter-spacing: 0.06em;
+}
+
+/* =================================================================
+   UTILIDADES
+   ================================================================= */
+.sube { color: var(--verde); }
+.baja { color: var(--rojo); }
+.dato-stale { opacity: 0.55; }
+
+/* Scrollbar mínima */
+::-webkit-scrollbar { width: 4px; height: 4px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: var(--linea); border-radius: 2px; }
+
+/* =================================================================
+   BARRA SUPERIOR legacy (ocultar — reemplazada por cabecera)
+   ================================================================= */
+.barra-superior { display: none; }
+
+/* =================================================================
+   NAV PRINCIPAL legacy (ocultar — reemplazada por drawer)
+   ================================================================= */
+.nav-principal { display: none; }
+.nav-menu { display: none; }
+
+/* =================================================================
+   CINTA DE CATEGORÍAS
+   ================================================================= */
+.nav-cats-cinta {
+  background: var(--papel);
+  padding: 10px 0;
+}
+.nav-cats-scroll {
+  display: flex;
+  gap: 14px;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  padding-bottom: 2px;
+  flex-wrap: nowrap;
+}
+.nav-cats-scroll::-webkit-scrollbar { display: none; }
+.nav-cats-scroll a {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  color: var(--gris);
+  white-space: nowrap;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 10px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.nav-cats-scroll a:hover { color: var(--rojo); }
+.nav-cats-scroll a .ic {
+  width: 14px; height: 14px;
+  stroke: currentColor; stroke-width: 2.2;
+  fill: none; stroke-linecap: round; stroke-linejoin: round;
+  flex: 0 0 auto;
+}
+
+/* =================================================================
+   CARRUSEL DE DATOS
+   (ver carrusel-datos.css — solo override de colores acá)
+   ================================================================= */
+.tarjeta-dato {
+  background: var(--papel);
+  border-color: var(--linea);
+}
+.tarjeta-destacada {
+  /* Sin borde rojo — jerarquía por tamaño, no por color */
+  border: 1px solid var(--linea) !important;
+  box-shadow: none !important;
+}
+.tarjeta-destacada .tarjeta-titulo { color: var(--gris) !important; font-weight: 700; }
+
+/* =================================================================
+   RESPONSIVE BASE
+   ================================================================= */
+@media (min-width: 768px) {
+  .cab-logo-fila { padding: 12px 24px; }
+  .cab-logo { font-size: 32px; }
+}

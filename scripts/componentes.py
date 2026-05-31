@@ -1,10 +1,11 @@
 """
-PPA — componentes.py
-Componentes HTML compartidos entre todos los generadores (v4).
-Importar con: from componentes import franja_datos, cabecera, nav_principal, pie
+PPA — componentes.py v4.1
+Cabecera sticky, menú hamburguesa, pie compacto.
+Paleta tresempanadas.
 """
 
 import os
+import re
 from datetime import datetime, timezone, timedelta
 
 TZ_AR = timezone(timedelta(hours=-3))
@@ -17,90 +18,138 @@ def fecha_legible(dt=None):
         dt = datetime.now(TZ_AR)
     return f"{DIAS_SEMANA[dt.weekday()]} {dt.day} de {MESES[dt.month-1]} de {dt.year}"
 
-# IDs JS que el ppa.js ya sabe leer — no cambiar sin actualizar el JS
-def franja_datos(dt=None):
-    """Franja superior negra: fecha + USD + MEP + Merval + Riesgo."""
-    fecha = fecha_legible(dt)
-    return f"""
-<div class="franja-datos">
-  <div class="contenedor franja-flex">
-    <span class="fecha-mini">{fecha}</span>
-    <span class="dato-mini">USD <span id="dolar-oficial">…</span></span>
-    <span class="dato-mini">MEP <span id="dolar-mep">…</span></span>
-    <span class="dato-mini" id="merval-item">Merval <span id="merval">…</span></span>
-    <span class="dato-mini">Riesgo <span id="riesgo-pais">…</span></span>
-  </div>
-</div>"""
+def fecha_corta(dt=None):
+    if dt is None:
+        dt = datetime.now(TZ_AR)
+    return f"{DIAS_SEMANA[dt.weekday()][:3].upper()} {dt.day}/{dt.month:02d}/{dt.year}"
 
 
-def cabecera(edicion_nombre="", edicion_icono=""):
-    """Masthead: PPA grande + subtítulo + línea de edición."""
+_SECCIONES = [
+    ("Portada",     "/"),
+    ("Análisis",    "/analisis/"),
+    ("EconoTuits",  "/tuits/"),
+    ("REM",         "/rem/"),
+    ("Tablero",     "/tablero/"),
+    ("Documentos",  "/documentos/"),
+    ("Columnas",    "/columnas/"),
+    ("Stream",      "/stream/"),
+]
+
+
+def cabecera(activo="", edicion_nombre="", edicion_icono=""):
     if not edicion_nombre:
         ahora = datetime.now(TZ_AR)
         edicion_nombre = "Desayuno" if ahora.hour < 14 else "Merienda"
         edicion_icono  = "🧉" if edicion_nombre == "Desayuno" else "☕"
-    linea = f"Edición {edicion_nombre} {edicion_icono}"
+    fecha = fecha_corta()
+
+    items = '\n    '.join(f'<a href="{href}"{" class=\"activo\"" if nombre == activo else ""}>{nombre}</a>' for nombre, href in _SECCIONES)
     return f"""
-<header class="cabecera-home">
-  <div class="contenedor">
-    <h1 class="titulo-home">PPA</h1>
-    <p class="subtitulo-home">Pulso Productivo Argentino</p>
-    <p class="linea-edicion">{linea}</p>
+<div id="cabecera-wrap">
+<header class="cabecera-ppa expandida" id="cabecera-ppa">
+  <!-- Fila superior: fecha · clima · edición -->
+  <div class="cab-top">
+    <div class="cab-top-izq">
+      <span class="cab-fecha">{fecha}</span>
+      <span class="cab-clima" id="cab-clima"></span>
+    </div>
+    <span class="cab-edicion">Edición {edicion_nombre} {edicion_icono}</span>
   </div>
-</header>"""
+  <!-- Fila logo + datos + hamburguesa -->
+  <div class="cab-logo-fila">
+    <div>
+      <a href="/" class="cab-logo">PPA</a>
+      <div class="cab-tagline">Pulso Productivo Argentino</div>
+    </div>
+    <div class="cab-datos-expandidos">
+      <div class="cab-dato">
+        <span class="cab-dato-label">Oficial</span>
+        <span class="cab-dato-valor" id="dolar-oficial">…</span>
+      </div>
+      <div class="cab-dato">
+        <span class="cab-dato-label">MEP</span>
+        <span class="cab-dato-valor" id="dolar-mep">…</span>
+      </div>
+      <div class="cab-dato hide-mobile">
+        <span class="cab-dato-label">Blue</span>
+        <span class="cab-dato-valor" id="dolar-blue-cab">…</span>
+      </div>
+      <div class="cab-dato">
+        <span class="cab-dato-label">Riesgo</span>
+        <span class="cab-dato-valor" id="riesgo-pais">…</span>
+      </div>
+      <button class="cab-hamburguesa" id="btn-menu" aria-label="Menú">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+<div class="cab-spacer" id="cab-spacer"></div>
+</div>
 
-
-# Mapa sección → href (para marcar la activa)
-_SECCIONES = [
-    ("Portada",        "/"),
-    ("Institucional",  "/institucional/"),
-    ("Expectativas",   "/expectativas/"),
-    ("Documentos",     "/documentos/"),
-    ("Columnas",       "/columnas/"),
-    ("Stream",         "/stream/"),
-    ("Tablero",        "/tablero/"),
-]
-
-def nav_principal(activo=""):
-    """Nav horizontal con la sección activa marcada. activo = nombre exacto de _SECCIONES."""
-    items = []
-    for nombre, href in _SECCIONES:
-        clase = ' class="activo"' if nombre == activo else ''
-        items.append(f'<a href="{href}"{clase}>{nombre}</a>')
-    return f"""
-<nav class="nav-principal">
-  <div class="contenedor">
-    <div class="nav-menu">
-      {''.join(items)}
+<!-- DRAWER MENÚ -->
+<div class="menu-overlay" id="menu-overlay"></div>
+<nav class="menu-drawer" id="menu-drawer">
+  <div class="menu-drawer-header">
+    <span class="menu-drawer-logo">PPA</span>
+    <button class="menu-cerrar" id="btn-menu-cerrar">✕</button>
+  </div>
+  <div class="menu-nav">
+    {items}
+  </div>
+  <div class="menu-datos">
+    <div class="menu-dato">
+      <span class="menu-dato-label">USD Oficial</span>
+      <span class="menu-dato-valor" id="m-dolar-oficial">…</span>
+    </div>
+    <div class="menu-dato">
+      <span class="menu-dato-label">MEP</span>
+      <span class="menu-dato-valor" id="m-dolar-mep">…</span>
+    </div>
+    <div class="menu-dato">
+      <span class="menu-dato-label">Blue</span>
+      <span class="menu-dato-valor" id="m-dolar-blue">…</span>
+    </div>
+    <div class="menu-dato">
+      <span class="menu-dato-label">Riesgo</span>
+      <span class="menu-dato-valor" id="m-riesgo">…</span>
     </div>
   </div>
 </nav>"""
 
 
+def nav_principal(activo=""):
+    """Compatibilidad — el nav real está en el drawer. Devuelve vacío."""
+    return ""
+
+
+def franja_datos(dt=None):
+    """Compatibilidad — los datos están en la cabecera. Devuelve vacío."""
+    return ""
+
+
 def pie():
-    """Pie de página común."""
     return """
 <footer class="pie">
   <div class="contenedor">
-    <strong>PPA · Pulso Productivo Argentino</strong><br>
-    <span class="pie-bajada">Publicación económica · pulsoproductivo.com.ar</span>
+    <span class="pie-logo">PPA</span>
+    <span class="pie-bajada">Pulso Productivo Argentino · pulsoproductivo.com.ar</span>
     <div class="pie-meta">
-      <a href="/institucional/">Institucional</a> ·
-      <a href="/expectativas/">Expectativas de mercado</a> ·
-      <a href="/documentos/">Documentos</a> ·
-      <a href="/columnas/">Columnas</a> ·
-      <a href="/stream/">Stream</a> ·
-      <a href="/tablero/">Tablero</a> ·
-      <a href="/como-trabajamos.html">Cómo trabajamos</a> ·
-      <a href="/acerca.html">Acerca de</a>
+      <a href="/analisis/">Análisis</a>
+      <a href="/tuits/">EconoTuits</a>
+      <a href="/rem/">REM</a>
+      <a href="/tablero/">Tablero</a>
+      <a href="/documentos/">Documentos</a>
+      <a href="/columnas/">Columnas</a>
+      <a href="/stream/">Stream</a>
+      <a href="/como-trabajamos.html">Cómo trabajamos</a>
     </div>
-    <div class="pie-legal">Editor responsable: Sergio Falco</div>
+    <span class="pie-legal">Editor responsable: Sergio Falco</span>
   </div>
 </footer>"""
 
 
 def head_comun(titulo, descripcion="Publicación económica argentina.", css_extra=""):
-    """<head> estándar con fuentes y CSS base. css_extra = tags <link> adicionales."""
     return f"""<!DOCTYPE html>
 <html lang="es-AR">
 <head>
@@ -119,8 +168,6 @@ def head_comun(titulo, descripcion="Publicación económica argentina.", css_ext
 import re
 
 def limpiar_url(texto):
-    """Quita URLs pegadas en títulos/bajadas (frecuente en RSS de Twitter/BCRA/INDEC).
-    Ej: 'Accedé al informe en: https://...' → 'Accedé al informe en'"""
     if not texto: return texto
     t = re.sub(r'https?://\S+', '', str(texto))
     t = re.sub(r'\b(Acced[eé]|Disponible|Ver|Leer|Más|Link|Enlace)[^.:]*[:]\\s*$', '', t, flags=re.IGNORECASE)

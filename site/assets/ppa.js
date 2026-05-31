@@ -70,15 +70,29 @@
     const mep = d(datos, 'dolar_mep');
     const mer = d(datos, 'merval');
     const rp  = d(datos, 'riesgo_pais');
-    if (ofi) pintar('dolar-oficial', fmtPesos(venta(ofi)), ofi.stale);
-    if (mep) pintar('dolar-mep',     fmtPesos(venta(mep)), mep.stale);
+    if (ofi) {
+      pintar('dolar-oficial', fmtPesos(venta(ofi)), ofi.stale);
+      pintar('m-dolar-oficial', fmtPesos(venta(ofi)), ofi.stale);
+    }
+    if (mep) {
+      pintar('dolar-mep', fmtPesos(venta(mep)), mep.stale);
+      pintar('m-dolar-mep', fmtPesos(venta(mep)), mep.stale);
+    }
+    const blue = d(datos, 'dolar_blue');
+    if (blue) {
+      pintar('dolar-blue-cab', fmtPesos(venta(blue)), blue.stale);
+      pintar('m-dolar-blue', fmtPesos(venta(blue)), blue.stale);
+    }
     if (mer) {
       pintar('merval', fmtNumero(mer.valor), mer.stale);
     } else {
       const it = document.getElementById('merval-item');
       if (it) it.style.display = 'none';   // sin dato → no mostrar "Merval ..." cortado
     }
-    if (rp)  pintar('riesgo-pais',   fmtNumero(rp.valor),  rp.stale, ' pb');
+    if (rp) {
+      pintar('riesgo-pais', fmtNumero(rp.valor), rp.stale, ' pb');
+      pintar('m-riesgo', fmtNumero(rp.valor), rp.stale, ' pb');
+    }
   }
 
   // ---------------- 5 TARJETAS ----------------
@@ -293,4 +307,47 @@
     iniciar();
   }
 
+})();
+
+// ================================================================
+// CABECERA STICKY + MENÚ HAMBURGUESA
+// ================================================================
+(function() {
+  const cab     = document.getElementById('cabecera-ppa');
+  const spacer  = document.getElementById('cab-spacer');
+  const overlay = document.getElementById('menu-overlay');
+  const drawer  = document.getElementById('menu-drawer');
+  const btnAbrir  = document.getElementById('btn-menu');
+  const btnCerrar = document.getElementById('btn-menu-cerrar');
+
+  // ── Sticky al scrollear ──
+  if (cab && spacer) {
+    function checkSticky() {
+      const es = window.scrollY > 10;
+      cab.classList.toggle('sticky', es);
+      cab.classList.toggle('expandida', !es);
+      spacer.classList.toggle('sticky', es);
+    }
+    window.addEventListener('scroll', checkSticky, { passive: true });
+    checkSticky();
+  }
+
+  // ── Menú hamburguesa ──
+  function abrirMenu() {
+    if (overlay) overlay.classList.add('abierto');
+    if (drawer)  drawer.classList.add('abierto');
+    document.body.style.overflow = 'hidden';
+  }
+  function cerrarMenu() {
+    if (overlay) overlay.classList.remove('abierto');
+    if (drawer)  drawer.classList.remove('abierto');
+    document.body.style.overflow = '';
+  }
+
+  if (btnAbrir)  btnAbrir.addEventListener('click', abrirMenu);
+  if (btnCerrar) btnCerrar.addEventListener('click', cerrarMenu);
+  if (overlay)   overlay.addEventListener('click', cerrarMenu);
+
+  // Cerrar con Escape
+  document.addEventListener('keydown', e => { if (e.key === 'Escape') cerrarMenu(); });
 })();
