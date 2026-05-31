@@ -139,10 +139,14 @@
 </head>
 <body>
 
-<div class="barra-superior">
-  <div class="contenedor">
-    <span class="fecha-barra">PPA · Expectativas de mercado</span>
-    <span><a href="/" style="color:inherit">Volver a portada →</a></span>
+
+<div class="franja-datos">
+  <div class="contenedor franja-flex">
+    <span class="fecha-mini">Domingo 31 de mayo de 2026</span>
+    <span class="dato-mini">USD <span id="dolar-oficial">…</span></span>
+    <span class="dato-mini">MEP <span id="dolar-mep">…</span></span>
+    <span class="dato-mini" id="merval-item">Merval <span id="merval">…</span></span>
+    <span class="dato-mini">Riesgo <span id="riesgo-pais">…</span></span>
   </div>
 </div>
 
@@ -154,18 +158,16 @@
       Las consultoras y firmas profesionales que arman las expectativas del
       mercado argentino. Análisis macro, financiero y sectorial.
     </p>
-    <p class="exp-actualizado">Actualizado: 31/05/2026 07:57</p>
+    <p class="exp-actualizado">Actualizado: 31/05/2026 13:12</p>
   </div>
 </header>
 
-<nav class="exp-nav">
+
+<nav class="nav-principal">
   <div class="contenedor">
-    <a href="/">Portada</a>
-    <a href="/institucional/">Institucional</a>
-    <a href="/expectativas/" class="activo">Expectativas</a>
-    <a href="/documentos/">Documentos</a>
-    <a href="/columnas/">Columnas</a>
-    <a href="/stream/">Stream</a>
+    <div class="nav-menu">
+      <a href="/">Portada</a><a href="/institucional/">Institucional</a><a href="/expectativas/" class="activo">Expectativas</a><a href="/documentos/">Documentos</a><a href="/columnas/">Columnas</a><a href="/stream/">Stream</a><a href="/tablero/">Tablero</a>
+    </div>
   </div>
 </nav>
 
@@ -198,78 +200,65 @@
       <h3>Firmas activas</h3>
       <ul>
       <li>
-        <a href="https://empiria.com.ar" target="_blank" rel="noopener">
-          <strong>Empiria Consultores</strong>
-        </a>
-      </li>
-      <li>
-        <a href="https://www.lcgsa.com.ar" target="_blank" rel="noopener">
-          <strong>LCG</strong>
-        </a>
-      </li>
-      <li>
-        <a href="https://invecq.com" target="_blank" rel="noopener">
-          <strong>Invecq</strong>
-        </a>
-      </li>
-      <li>
-        <a href="https://www.ojf.com" target="_blank" rel="noopener">
-          <strong>Orlando J. Ferreres</strong>
-        </a>
-      </li>
-      <li>
-        <a href="https://analytica.com.ar" target="_blank" rel="noopener">
-          <strong>Analytica</strong>
-        </a>
-      </li>
-      <li>
-        <a href="https://outlier.com.ar" target="_blank" rel="noopener">
-          <strong>Outlier</strong>
-        </a>
-      </li>
-      <li>
-        <a href="https://ecogo.com.ar" target="_blank" rel="noopener">
-          <strong>EcoGo</strong>
-        </a>
-      </li>
-      <li>
-        <a href="https://www.equilibra.com.ar" target="_blank" rel="noopener">
-          <strong>Equilibra</strong>
-        </a>
-      </li>
-      <li>
-        <a href="https://www.centrocifra.org.ar" target="_blank" rel="noopener">
-          <strong>CIFRA</strong>
-        </a>
-      </li>
-      <li>
-        <a href="https://www.uca.edu.ar/es/mirador" target="_blank" rel="noopener">
-          <strong>Mirador UCA</strong>
-        </a>
-      </li>
-      <li>
-        <a href="https://econviews.com" target="_blank" rel="noopener">
+        <a href="https://econviews.com/feed/" target="_blank" rel="noopener">
           <strong>Econviews</strong>
         </a>
       </li>
       <li>
-        <a href="https://ceso.com.ar" target="_blank" rel="noopener">
+        <a href="https://www.fiel.org.ar/publicaciones/feed/" target="_blank" rel="noopener">
+          <strong>FIEL</strong>
+        </a>
+      </li>
+      <li>
+        <a href="https://www.ieral.org/feed.xml" target="_blank" rel="noopener">
+          <strong>IERAL (Fundación Mediterránea)</strong>
+        </a>
+      </li>
+      <li>
+        <a href="https://fund.ar/feed/" target="_blank" rel="noopener">
+          <strong>Fundar</strong>
+        </a>
+      </li>
+      <li>
+        <a href="https://www.iaraf.org/index.php/informes-economicos/area-fiscal?format=feed&amp;type=rss" target="_blank" rel="noopener">
+          <strong>IARAF</strong>
+        </a>
+      </li>
+      <li>
+        <a href="https://ceso.com.ar/feed/" target="_blank" rel="noopener">
           <strong>CESO</strong>
+        </a>
+      </li>
+      <li>
+        <a href="https://cedlas.econo.unlp.edu.ar/wp/feed/" target="_blank" rel="noopener">
+          <strong>CEDLAS (UNLP)</strong>
+        </a>
+      </li>
+      <li>
+        <a href="https://www.cippec.org/feed/" target="_blank" rel="noopener">
+          <strong>CIPPEC</strong>
         </a>
       </li></ul>
     </aside>
   </div>
 </main>
 
+
 <footer class="pie">
   <div class="contenedor">
     <strong>PPA · Pulso Productivo Argentino</strong><br>
-    <span class="pie-bajada">Publicación económica</span>
+    <span class="pie-bajada">Publicación económica · pulsoproductivo.com.ar</span>
     <div class="pie-meta">
-      <a href="/">Portada</a> ·
+      <a href="/institucional/">Institucional</a> ·
+      <a href="/expectativas/">Expectativas de mercado</a> ·
+      <a href="/documentos/">Documentos</a> ·
+      <a href="/columnas/">Columnas</a> ·
+      <a href="/stream/">Stream</a> ·
+      <a href="/tablero/">Tablero</a> ·
       <a href="/como-trabajamos.html">Cómo trabajamos</a> ·
       <a href="/acerca.html">Acerca de</a>
     </div>
+    <div class="pie-legal">Editor responsable: Sergio Falco</div>
   </div>
 </footer>
 

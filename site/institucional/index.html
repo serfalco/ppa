@@ -3,84 +3,52 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Edición Nº 151 · Domingo 31 de mayo de 2026 — PPA</title>
+<title>PPA · Institucional — Domingo 31 de mayo de 2026</title>
 <meta name="description" content="Pulso Productivo Argentino: análisis económico curado de instituciones y consultoras.">
-<meta property="og:title" content="Edición Nº 151 · Domingo 31 de mayo de 2026">
-<meta property="og:description" content="Pulso Productivo Argentino: análisis económico curado de instituciones y consultoras.">
-<meta property="og:type" content="website">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,900&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/assets/ppa.css">
+<link rel="stylesheet" href="/assets/home.css">
 </head>
 <body>
-<div class="barra-superior">
-  <div class="contenedor">
-    <span class="fecha-barra">Domingo 31 de mayo de 2026 · Buenos Aires</span>
-    <span class="clima" id="clima-widget">—</span>
+<div class="franja-datos">
+  <div class="contenedor franja-flex">
+    <span class="fecha-mini">Domingo 31 de mayo de 2026</span>
+    <span class="dato-mini">USD <span id="dolar-oficial">…</span></span>
+    <span class="dato-mini">MEP <span id="dolar-mep">…</span></span>
+    <span class="dato-mini" id="merval-item">Merval <span id="merval">…</span></span>
+    <span class="dato-mini">Riesgo <span id="riesgo-pais">…</span></span>
   </div>
 </div>
-<div class="marquesina-fulbito" id="fulbito-bar" style="display:none">
+<header class="cabecera-home">
   <div class="contenedor">
-    <span class="fulbito-label">⚽ Fulbito hoy</span>
-    <div class="fulbito-scroll" id="fulbito-partidos"></div>
-  </div>
-</div>
-<header class="cabecera">
-  <div class="contenedor">
-    <div class="fecha-edicion">Edición Nº 151 · DOMINGO 31 DE MAYO DE 2026</div>
-    <h1 class="titulo-diario">PPA</h1>
-    <div class="bajada-diario">Pulso · Productivo · Argentino</div>
+    <h1 class="titulo-home">PPA</h1>
+    <p class="subtitulo-home">Pulso Productivo Argentino</p>
+    <p class="linea-edicion">Edición Desayuno 🧉</p>
   </div>
 </header>
-<div class="ticker" id="ticker-datos">
-  <div class="contenedor ticker-flex">
-    <div class="ticker-item">
-      <span class="ticker-label">Dólar oficial</span>
-      <span class="ticker-valor" id="dolar-oficial">—</span>
-    </div>
-    <div class="ticker-item">
-      <span class="ticker-label">Riesgo país</span>
-      <span class="ticker-valor" id="riesgo-pais">—</span>
-    </div>
-  </div>
-</div>
-<section class="widget-mulc" id="widget-mulc" style="display:none">
+<nav class="nav-principal">
   <div class="contenedor">
-    <div class="mulc-header">CIERRE MULC</div>
-    <div class="mulc-body" id="mulc-body">
-      <span class="mulc-loading">Cargando datos del cierre...</span>
+    <div class="nav-menu">
+      <a href="/">Portada</a><a href="/institucional/" class="activo">Institucional</a><a href="/expectativas/">Expectativas</a><a href="/documentos/">Documentos</a><a href="/columnas/">Columnas</a><a href="/stream/">Stream</a><a href="/tablero/">Tablero</a>
     </div>
-  </div>
-</section>
-<nav class="nav-secciones">
-  <div class="contenedor">
-    <ul>
-      <li><a href="/">Portada</a></li>
-      <li><a href="/institucional/" class="activo">Institucional</a></li>
-      <li><a href="/expectativas/">Expectativas</a></li>
-      <li><a href="/documentos/">Documentos</a></li>
-      <li><a href="/columnas/">Columnas</a></li>
-      <li><a href="/stream/">Stream</a></li>
-      <li><a href="/tablero/">Tablero</a></li>
-      <li><a href="#macro">Macro</a></li><li><a href="#expectativas-de-mercado">Expectativas de mercado</a></li><li><a href="#política">Política</a></li><li><a href="#energía">Energía</a></li><li><a href="#agro">Agro</a></li><li><a href="#minería">Minería</a></li><li><a href="#comercio-exterior">Comercio Exterior</a></li><li><a href="#automotor">Automotor</a></li><li><a href="#logística">Logística</a></li><li><a href="#internacional">Internacional</a></li>
-    </ul>
   </div>
 </nav><section class="tapa"><div class="contenedor"><div class="tapa-grid">
 <article class="destacado-principal">
   <span class="etiqueta">★ Destacado del día</span>
-  <h2><a href="https://www.bloomberglinea.com/mercados/la-reserva-federal-esta-sobreasegurada-asegura-deutsche-bank/" target="_blank" rel="noopener">La Reserva Federal está “sobreasegurada”, asegura Deutsche Bank</a></h2>
-  <p class="destacado-bajada">Deutsche Bank sostuvo que los recortes aplicados por la Reserva Federal dejaron a la política monetaria en un nivel más expansivo de lo que sugieren varias reglas históricas de referencia</p>
+  <h2><a href="https://www.bloomberglinea.com/mercados/las-tres-colombias-que-imagina-wall-street-para-el-dia-despues-de-las-elecciones/" target="_blank" rel="noopener">Las tres Colombias que imagina Wall Street para el día después de las elecciones</a></h2>
+  <p class="destacado-bajada">La elección presidencial de Colombia se ha convertido en una prueba clave para los mercados que miran el rumbo de la deuda pública, el peso, la inversión y la estabilidad fiscal del país.</p>
   <div class="firma">
     <span><strong>Bloomberg Línea</strong> · Internacional</span>
-    <span><a href="https://www.bloomberglinea.com/mercados/la-reserva-federal-esta-sobreasegurada-asegura-deutsche-bank/" target="_blank" rel="noopener" class="ver-mas">Ver en Bloomberg Línea →</a></span>
+    <span><a href="https://www.bloomberglinea.com/mercados/las-tres-colombias-que-imagina-wall-street-para-el-dia-despues-de-las-elecciones/" target="_blank" rel="noopener" class="ver-mas">Ver en Bloomberg Línea →</a></span>
   </div>
   
 <div class="compartir">
-  <a class="comp-btn" href="https://wa.me/?text=La%20Reserva%20Federal%20está%20“sobreasegurada”,%20asegura%20Deutsche%20Bank%20—%20vía%20PPA%20https://www.bloomberglinea.com/mercados/la-reserva-federal-esta-sobreasegurada-asegura-deutsche-bank/" target="_blank" rel="noopener" title="Compartir por WhatsApp">WhatsApp</a>
-  <a class="comp-btn" href="https://twitter.com/intent/tweet?text=La%20Reserva%20Federal%20está%20“sobreasegurada”,%20asegura%20Deutsche%20Bank%20—%20vía%20PPA&url=https://www.bloomberglinea.com/mercados/la-reserva-federal-esta-sobreasegurada-asegura-deutsche-bank/" target="_blank" rel="noopener" title="Compartir en X">X</a>
-  <a class="comp-btn" href="https://www.linkedin.com/sharing/share-offsite/?url=https://www.bloomberglinea.com/mercados/la-reserva-federal-esta-sobreasegurada-asegura-deutsche-bank/" target="_blank" rel="noopener" title="Compartir en LinkedIn">LinkedIn</a>
-  <button class="comp-btn" onclick="navigator.clipboard.writeText('https://www.bloomberglinea.com/mercados/la-reserva-federal-esta-sobreasegurada-asegura-deutsche-bank/'); this.textContent='Copiado'" title="Copiar enlace">Copiar</button>
+  <a class="comp-btn" href="https://wa.me/?text=Las%20tres%20Colombias%20que%20imagina%20Wall%20Street%20para%20el%20día%20después%20de%20las%20elecciones%20—%20vía%20PPA%20https://www.bloomberglinea.com/mercados/las-tres-colombias-que-imagina-wall-street-para-el-dia-despues-de-las-elecciones/" target="_blank" rel="noopener" title="Compartir por WhatsApp">WhatsApp</a>
+  <a class="comp-btn" href="https://twitter.com/intent/tweet?text=Las%20tres%20Colombias%20que%20imagina%20Wall%20Street%20para%20el%20día%20después%20de%20las%20elecciones%20—%20vía%20PPA&url=https://www.bloomberglinea.com/mercados/las-tres-colombias-que-imagina-wall-street-para-el-dia-despues-de-las-elecciones/" target="_blank" rel="noopener" title="Compartir en X">X</a>
+  <a class="comp-btn" href="https://www.linkedin.com/sharing/share-offsite/?url=https://www.bloomberglinea.com/mercados/las-tres-colombias-que-imagina-wall-street-para-el-dia-despues-de-las-elecciones/" target="_blank" rel="noopener" title="Compartir en LinkedIn">LinkedIn</a>
+  <button class="comp-btn" onclick="navigator.clipboard.writeText('https://www.bloomberglinea.com/mercados/las-tres-colombias-que-imagina-wall-street-para-el-dia-despues-de-las-elecciones/'); this.textContent='Copiado'" title="Copiar enlace">Copiar</button>
 </div>
 </article><div class="destacados-laterales">
 <article class="destacado-secundario">
@@ -115,8 +83,7 @@
 </article>
 <article class="destacado-secundario">
   <span class="etiqueta-sec">Macro</span>
-  <h3><a href="https://nitter.net/BancoCentral_AR/status/2060441935173632033#m" target="_blank" rel="noopener">Publicamos el Informe de Evolución del Mercado de Cambios y #BalanceCambiario, que analiza la evolución de las compras y ventas de moneda extranjera en el mercado de cambios.  
-Accedé al informe de abril de 2026 en: https://www.bcra.gob.ar/publicaciones/informe-de-evolucion-del-mercado-de-cambios-y-balance-cambiario-abril-de-2026/</a></h3>
+  <h3><a href="https://nitter.net/BancoCentral_AR/status/2060441935173632033#m" target="_blank" rel="noopener">Publicamos el Informe de Evolución del Mercado de Cambios y #BalanceCambiario, que analiza la evolución de las compras y ventas de moneda extranjera en el mercado de cambios. Accedé al informe de abril de 2026 en</a></h3>
   <p>Publicamos el Informe de Evolución del Mercado de Cambios y #BalanceCambiario , que analiza la evolución de las compras y ventas de moneda extranjera en el mercado de cambios. Accedé al informe de abril de 2026 en…</p>
   <div class="firma">
     <span><strong>BCRA (Twitter)</strong></span>
@@ -134,7 +101,7 @@ Accedé%20al%20informe%20de%20abril%20de%202026%20en:%20https://www.bcra.gob.ar/
 <article class="destacado-secundario">
   <span class="etiqueta-sec">Macro</span>
   <h3><a href="https://nitter.net/INDECArgentina/status/2060436080021667875#m" target="_blank" rel="noopener">#DatoINDEC
-Dotación de personal de la administración pública nacional, empresas y sociedades del Estado: ya están disponibles los datos a abril de 2026 https://www.indec.gob.ar/uploads/informesdeprensa/dotacion_personal_apn_05_26BADF32068F.pdf</a></h3>
+Dotación de personal de la administración pública nacional, empresas y sociedades del Estado: ya están disponibles los datos a abril de 2026</a></h3>
   <p>#DatoINDEC Dotación de personal de la administración pública nacional, empresas y sociedades del Estado: ya están disponibles los datos a abril de 2026 indec.gob.ar/uploads/informe…</p>
   <div class="firma">
     <span><strong>INDEC (Twitter)</strong></span>
@@ -160,7 +127,7 @@ Dotación%20de%20personal%20de%20la%20administración%20pública%20nacional,%20e
   <h3><a href="https://www.ambito.com/finanzas/dolar-blue-hoy-cuanto-opera-este-domingo-31-mayo-n6283364" target="_blank" rel="noopener">Dólar blue hoy: a cuánto opera este domingo 31 de mayo</a></h3>
   <p>Conoc&amp;#233; las cotizaciones d&amp;#243;lar blue, el oficial, el MEP y el CCL.</p>
   <div class="meta">
-    <span>07:38</span>
+    <span>12:38</span>
     <a href="https://www.ambito.com/finanzas/dolar-blue-hoy-cuanto-opera-este-domingo-31-mayo-n6283364" target="_blank" rel="noopener">Ver en Ámbito Financiero →</a>
   </div>
 </article>
@@ -169,8 +136,35 @@ Dotación%20de%20personal%20de%20la%20administración%20pública%20nacional,%20e
   <h3><a href="https://www.ambito.com/finanzas/dolar-hoy-cuanto-cotiza-este-domingo-31-mayo-n6283363" target="_blank" rel="noopener">Dólar hoy: a cuánto cotiza este domingo 31 de mayo</a></h3>
   <p>Conoc&amp;#233; las cotizaciones d&amp;#243;lar blue, el oficial, el MEP y el CCL.</p>
   <div class="meta">
-    <span>07:38</span>
+    <span>12:38</span>
     <a href="https://www.ambito.com/finanzas/dolar-hoy-cuanto-cotiza-este-domingo-31-mayo-n6283363" target="_blank" rel="noopener">Ver en Ámbito Financiero →</a>
+  </div>
+</article>
+<article class="nota">
+  <div class="fuente">Perfil Economía</div>
+  <h3><a href="https://noticias.perfil.com/noticias/empresas/la-trampa-oculta-de-los-reintegros.phtml" target="_blank" rel="noopener">Billeteras virtuales: la trampa oculta de los reintegros</a></h3>
+  <p>La tentación de &quot;consumir con descuento&quot; frente al verdadero ahorro y cómo la invisibilidad del saldo digital nos empuja a sobregastarnos. Leer más</p>
+  <div class="meta">
+    <span>09:01</span>
+    <a href="https://noticias.perfil.com/noticias/empresas/la-trampa-oculta-de-los-reintegros.phtml" target="_blank" rel="noopener">Ver en Perfil Economía →</a>
+  </div>
+</article>
+<article class="nota">
+  <div class="fuente">Clarín Economía</div>
+  <h3><a href="https://www.clarin.com/economia/ethereum-hoy-cotizacion-y-precio-del-eth-este-domingo-31-de-mayo-de-2026_0_wBgekoyXSd.html" target="_blank" rel="noopener">Ethereum hoy: cotización y precio del ETH este domingo 31 de mayo de 2026</a></h3>
+  <p>El valor actualizado de la segunda criptomoneda más importante por capitalización. Origen e historia de Ethereum.</p>
+  <div class="meta">
+    <span>07:15</span>
+    <a href="https://www.clarin.com/economia/ethereum-hoy-cotizacion-y-precio-del-eth-este-domingo-31-de-mayo-de-2026_0_wBgekoyXSd.html" target="_blank" rel="noopener">Ver en Clarín Economía →</a>
+  </div>
+</article>
+<article class="nota">
+  <div class="fuente">Clarín Economía</div>
+  <h3><a href="https://www.clarin.com/economia/bitcoin-hoy-cotizacion-y-precio-del-btc-este-domingo-31-de-mayo-de-2026_0_jckrhGIJSr.html" target="_blank" rel="noopener">Bitcoin hoy: cotización y precio del BTC este domingo 31 de mayo de 2026</a></h3>
+  <p>El valor actualizado del Bitcoin y la comparación con la jornada previa. Las claves para entender la volatilidad de la principal criptomoneda en el mercado.</p>
+  <div class="meta">
+    <span>07:15</span>
+    <a href="https://www.clarin.com/economia/bitcoin-hoy-cotizacion-y-precio-del-btc-este-domingo-31-de-mayo-de-2026_0_jckrhGIJSr.html" target="_blank" rel="noopener">Ver en Clarín Economía →</a>
   </div>
 </article>
 <article class="nota">
@@ -180,33 +174,6 @@ Dotación%20de%20personal%20de%20la%20administración%20pública%20nacional,%20e
   <div class="meta">
     <span>06:32</span>
     <a href="https://www.iprofesional.com/finanzas/456016-el-bcra-esta-por-alcanzar-un-record-clave-y-esto-preve-la-city-para-el-dolar-en-junio" target="_blank" rel="noopener">Ver en iProfesional Economía →</a>
-  </div>
-</article>
-<article class="nota">
-  <div class="fuente">iProfesional Economía</div>
-  <h3><a href="https://www.iprofesional.com/finanzas/455684-la-inversion-que-al-que-pocos-le-ponian-fichas-y-derroto-con-holgura-al-dolar" target="_blank" rel="noopener">Una inversión desafió los pronósticos y lideró el ranking de la City en el el primer semestre</a></h3>
-  <p>El ranking de activos muestra que el dólar quedó lejos de los mejores rendimientos y la City ya ajusta su estrategia para lo que viene</p>
-  <div class="meta">
-    <span>06:03</span>
-    <a href="https://www.iprofesional.com/finanzas/455684-la-inversion-que-al-que-pocos-le-ponian-fichas-y-derroto-con-holgura-al-dolar" target="_blank" rel="noopener">Ver en iProfesional Economía →</a>
-  </div>
-</article>
-<article class="nota">
-  <div class="fuente">Clarín Economía</div>
-  <h3><a href="https://www.clarin.com/economia/martin-dalessandro-politologo-presidente-poder-ciudadano-democracia-sufre-milei-sufrio-cristina_0_B0L2FcEpv6.html" target="_blank" rel="noopener">Martín D&#39;Alessandro, politólogo y presidente de Poder Ciudadano: &quot;La democracia sufre con Milei como sufrió con Cristina&quot;</a></h3>
-  <p>El experto cree que el principal resultado político del Gobierno ha sido la baja de la inflación y que pese a ese éxito &quot;Milei se encuentra en una trampa: es un líder populista y parte de su electorado tiene valores republicanos&quot;.</p>
-  <div class="meta">
-    <span>06:00</span>
-    <a href="https://www.clarin.com/economia/martin-dalessandro-politologo-presidente-poder-ciudadano-democracia-sufre-milei-sufrio-cristina_0_B0L2FcEpv6.html" target="_blank" rel="noopener">Ver en Clarín Economía →</a>
-  </div>
-</article>
-<article class="nota">
-  <div class="fuente">Clarín Economía</div>
-  <h3><a href="https://www.clarin.com/economia/trenes-lujo-negocio-sigue-creciendo-europa_0_2HyRaOWZKj.html" target="_blank" rel="noopener">Los trenes de lujo, un negocio que sigue creciendo en Europa</a></h3>
-  <p>Al legendario Expreso de Oriente se suman nuevas propuestas en Gran Bretaña y en el continente, con tickets que llegan a los 100.000 euros.</p>
-  <div class="meta">
-    <span>06:00</span>
-    <a href="https://www.clarin.com/economia/trenes-lujo-negocio-sigue-creciendo-europa_0_2HyRaOWZKj.html" target="_blank" rel="noopener">Ver en Clarín Economía →</a>
   </div>
 </article>
   </div>
@@ -313,6 +280,24 @@ Dotación%20de%20personal%20de%20la%20administración%20pública%20nacional,%20e
   <div class="notas-grid">
     
 <article class="nota">
+  <div class="fuente">Clarín Autos</div>
+  <h3><a href="https://www.clarin.com/autos/salarios-hacen-falta-comprar-0-km-barato-argentina-junio-2026_0_kGQinLewzc.html" target="_blank" rel="noopener">Cuántos salarios hacen falta para comprar el 0 km más barato de Argentina en junio 2026</a></h3>
+  <p>El Renault Kwid es el auto más barato del mercado actual. Cuánto tiempo de trabajo y ahorro se necesita para comprarlo en junio de 2026.</p>
+  <div class="meta">
+    <span>10:03</span>
+    <a href="https://www.clarin.com/autos/salarios-hacen-falta-comprar-0-km-barato-argentina-junio-2026_0_kGQinLewzc.html" target="_blank" rel="noopener">Ver en Clarín Autos →</a>
+  </div>
+</article>
+<article class="nota">
+  <div class="fuente">iProfesional Autos</div>
+  <h3><a href="https://www.iprofesional.com/autos/456065-ferrari-luce-duras-criticas-al-primer-cavallino-electrico-que-perdio-el-adn" target="_blank" rel="noopener">Ferrari presentó el Luce y se desató una gran polémica</a></h3>
+  <p>El primer modelo 100% eléctrico de la italiana causó duras críticas. Llevaba cinco años de diseño. Las razones de un giro inesperado en el adn Ferrari</p>
+  <div class="meta">
+    <span>07:21</span>
+    <a href="https://www.iprofesional.com/autos/456065-ferrari-luce-duras-criticas-al-primer-cavallino-electrico-que-perdio-el-adn" target="_blank" rel="noopener">Ver en iProfesional Autos →</a>
+  </div>
+</article>
+<article class="nota">
   <div class="fuente">iProfesional Autos</div>
   <h3><a href="https://www.iprofesional.com/autos/456061-tres-marcas-de-autos-chinos-lideran-las-ventas-de-0km-importados" target="_blank" rel="noopener">Tres marcas de autos chinos lideran las ventas de 0km importados</a></h3>
   <p>Con un 15% de participación, los importadores de autos reportan un buen año, en un contexto de baja general en los patentamientos. Estos son los líderes.</p>
@@ -328,15 +313,6 @@ Dotación%20de%20personal%20de%20la%20administración%20pública%20nacional,%20e
   <div class="meta">
     <span>16:49</span>
     <a href="https://arodarpost.com.ar/byd-desplazo-a-toyota-y-ford-en-el-liderazgo-de-ventas-de-vehiculos-hibridos/" target="_blank" rel="noopener">Ver en A Rodar Post →</a>
-  </div>
-</article>
-<article class="nota">
-  <div class="fuente">iProfesional Autos</div>
-  <h3><a href="https://www.iprofesional.com/autos/456028-sorpresa-en-podio-de-los-autos-mas-vendidos-de-argentina-cual-salio-y-cual-entro" target="_blank" rel="noopener">Ventas de autos se derrumbaron 25% y trajeron una sorpresa en el podio de los más patentados</a></h3>
-  <p>Las ventas de 0km tuvieron una fuerte caída interanual en mayo. Sin embargo, hay sorpresas en el ranking de los más vendidos y es momento de oportunidades</p>
-  <div class="meta">
-    <span>14:25</span>
-    <a href="https://www.iprofesional.com/autos/456028-sorpresa-en-podio-de-los-autos-mas-vendidos-de-argentina-cual-salio-y-cual-entro" target="_blank" rel="noopener">Ver en iProfesional Autos →</a>
   </div>
 </article>
 <article class="nota">
@@ -411,20 +387,20 @@ Dotación%20de%20personal%20de%20la%20administración%20pública%20nacional,%20e
     
 <article class="nota">
   <div class="fuente">Bloomberg Línea</div>
-  <h3><a href="https://www.bloomberglinea.com/latinoamerica/colombia/en-vivo-colombia-elige-hoy-quien-sera-su-proximo-presidente-desde-el-7-de-agosto-2026/" target="_blank" rel="noopener">En vivo: Colombia elige hoy quién será su próximo presidente desde el 7 de agosto 2026</a></h3>
+  <h3><a href="https://www.bloomberglinea.com/latinoamerica/colombia/en-vivo-colombia-elige-hoy-quien-sera-su-proximo-presidente-desde-el-7-de-agosto-2026/" target="_blank" rel="noopener">En vivo: Inician con normalidad las votaciones para la presidencia en Colombia</a></h3>
   <p>Hasta las 4:00 p.m. de este domingo estarán habilitados los puestos de votación. Se espera que el preconteo arroje resultados concluyentes hacia las 5:30 p.m. Siga en vivo los resultados.</p>
   <div class="meta">
-    <span>02:00</span>
+    <span>08:06</span>
     <a href="https://www.bloomberglinea.com/latinoamerica/colombia/en-vivo-colombia-elige-hoy-quien-sera-su-proximo-presidente-desde-el-7-de-agosto-2026/" target="_blank" rel="noopener">Ver en Bloomberg Línea →</a>
   </div>
 </article>
 <article class="nota">
   <div class="fuente">Bloomberg Línea</div>
-  <h3><a href="https://www.bloomberglinea.com/latinoamerica/colombia/a-que-hora-abren-y-cierran-urnas-en-las-elecciones-de-este-31-de-mayo-horarios-de-puestos-de-votacion/" target="_blank" rel="noopener">A qué hora abren y cierran urnas en las elecciones de este 31 de mayo: horarios de puestos de votación</a></h3>
-  <p>Conozca los horarios oficiales de apertura y cierre de las urnas para las elecciones presidenciales de este 31 de mayo y qué debe tener en cuenta para votar.</p>
+  <h3><a href="https://www.bloomberglinea.com/mercados/la-reserva-federal-esta-sobreasegurada-asegura-deutsche-bank/" target="_blank" rel="noopener">La Reserva Federal está “sobreasegurada”, asegura Deutsche Bank</a></h3>
+  <p>Deutsche Bank sostuvo que los recortes aplicados por la Reserva Federal dejaron a la política monetaria en un nivel más expansivo de lo que sugieren varias reglas históricas de referencia</p>
   <div class="meta">
-    <span>16:59</span>
-    <a href="https://www.bloomberglinea.com/latinoamerica/colombia/a-que-hora-abren-y-cierran-urnas-en-las-elecciones-de-este-31-de-mayo-horarios-de-puestos-de-votacion/" target="_blank" rel="noopener">Ver en Bloomberg Línea →</a>
+    <span>04:00</span>
+    <a href="https://www.bloomberglinea.com/mercados/la-reserva-federal-esta-sobreasegurada-asegura-deutsche-bank/" target="_blank" rel="noopener">Ver en Bloomberg Línea →</a>
   </div>
 </article>
   </div>
@@ -433,72 +409,72 @@ Dotación%20de%20personal%20de%20la%20administración%20pública%20nacional,%20e
   <h3 class="sidebar-titulo">Último momento</h3>
   
     <div class="sidebar-item">
-      <span class="hora">07:38</span>
+      <span class="hora">12:38</span>
       <div class="texto">
         <a href="https://www.ambito.com/finanzas/dolar-blue-hoy-cuanto-opera-este-domingo-31-mayo-n6283364" target="_blank" rel="noopener">Dólar blue hoy: a cuánto opera este domingo 31 de mayo</a>
         <span class="fuente-mini">Ámbito Financiero</span>
       </div>
     </div>
     <div class="sidebar-item">
-      <span class="hora">07:38</span>
+      <span class="hora">12:38</span>
       <div class="texto">
         <a href="https://www.ambito.com/finanzas/dolar-hoy-cuanto-cotiza-este-domingo-31-mayo-n6283363" target="_blank" rel="noopener">Dólar hoy: a cuánto cotiza este domingo 31 de mayo</a>
         <span class="fuente-mini">Ámbito Financiero</span>
       </div>
     </div>
     <div class="sidebar-item">
-      <span class="hora">06:32</span>
+      <span class="hora">12:25</span>
       <div class="texto">
-        <a href="https://www.iprofesional.com/finanzas/456016-el-bcra-esta-por-alcanzar-un-record-clave-y-esto-preve-la-city-para-el-dolar-en-junio" target="_blank" rel="noopener">BCRA, a un paso del récord de compras por u$s10.000 M: qué prevé la City para el dólar en junio</a>
-        <span class="fuente-mini">iProfesional Economía</span>
+        <a href="https://www.ambito.com/finanzas/dolar-hoy-cuanto-cerro-este-jueves-28-mayo-n6282642" target="_blank" rel="noopener">Dólar hoy: a cuánto cerró este jueves 28 de mayo</a>
+        <span class="fuente-mini">Ámbito Financiero</span>
       </div>
     </div>
     <div class="sidebar-item">
-      <span class="hora">06:31</span>
+      <span class="hora">12:25</span>
       <div class="texto">
-        <a href="https://www.iprofesional.com/autos/456061-tres-marcas-de-autos-chinos-lideran-las-ventas-de-0km-importados" target="_blank" rel="noopener">Tres marcas de autos chinos lideran las ventas de 0km importados</a>
+        <a href="https://www.ambito.com/finanzas/dolar-blue-hoy-cuanto-cerro-este-jueves-28-mayo-n6282643" target="_blank" rel="noopener">Dólar blue hoy: a cuánto cerró este jueves 28 de mayo</a>
+        <span class="fuente-mini">Ámbito Financiero</span>
+      </div>
+    </div>
+    <div class="sidebar-item">
+      <span class="hora">10:47</span>
+      <div class="texto">
+        <a href="https://www.ambito.com/finanzas/spacex-debuta-wall-street-el-rol-goldman-sachs-starlink-y-como-sera-la-mega-opi-us750000-millones-n6283391" target="_blank" rel="noopener">SpaceX debuta en Wall Street: el rol de Goldman Sachs, Starlink y cómo será la mega OPI de u$s750.000 millones</a>
+        <span class="fuente-mini">Ámbito Financiero</span>
+      </div>
+    </div>
+    <div class="sidebar-item">
+      <span class="hora">10:03</span>
+      <div class="texto">
+        <a href="https://www.clarin.com/autos/salarios-hacen-falta-comprar-0-km-barato-argentina-junio-2026_0_kGQinLewzc.html" target="_blank" rel="noopener">Cuántos salarios hacen falta para comprar el 0 km más barato de Argentina en junio 2026</a>
+        <span class="fuente-mini">Clarín Autos</span>
+      </div>
+    </div>
+    <div class="sidebar-item">
+      <span class="hora">09:01</span>
+      <div class="texto">
+        <a href="https://noticias.perfil.com/noticias/empresas/la-trampa-oculta-de-los-reintegros.phtml" target="_blank" rel="noopener">Billeteras virtuales: la trampa oculta de los reintegros</a>
+        <span class="fuente-mini">Perfil Economía</span>
+      </div>
+    </div>
+    <div class="sidebar-item">
+      <span class="hora">08:06</span>
+      <div class="texto">
+        <a href="https://www.bloomberglinea.com/latinoamerica/colombia/en-vivo-colombia-elige-hoy-quien-sera-su-proximo-presidente-desde-el-7-de-agosto-2026/" target="_blank" rel="noopener">En vivo: Inician con normalidad las votaciones para la presidencia en Colombia</a>
+        <span class="fuente-mini">Bloomberg Línea</span>
+      </div>
+    </div>
+    <div class="sidebar-item">
+      <span class="hora">07:21</span>
+      <div class="texto">
+        <a href="https://www.iprofesional.com/autos/456065-ferrari-luce-duras-criticas-al-primer-cavallino-electrico-que-perdio-el-adn" target="_blank" rel="noopener">Ferrari presentó el Luce y se desató una gran polémica</a>
         <span class="fuente-mini">iProfesional Autos</span>
       </div>
     </div>
     <div class="sidebar-item">
-      <span class="hora">06:03</span>
+      <span class="hora">07:15</span>
       <div class="texto">
-        <a href="https://www.iprofesional.com/finanzas/455684-la-inversion-que-al-que-pocos-le-ponian-fichas-y-derroto-con-holgura-al-dolar" target="_blank" rel="noopener">Una inversión desafió los pronósticos y lideró el ranking de la City en el el primer semestre</a>
-        <span class="fuente-mini">iProfesional Economía</span>
-      </div>
-    </div>
-    <div class="sidebar-item">
-      <span class="hora">06:00</span>
-      <div class="texto">
-        <a href="https://www.clarin.com/economia/martin-dalessandro-politologo-presidente-poder-ciudadano-democracia-sufre-milei-sufrio-cristina_0_B0L2FcEpv6.html" target="_blank" rel="noopener">Martín D&#39;Alessandro, politólogo y presidente de Poder Ciudadano: &quot;La democracia sufre con Milei como sufrió con Cristina&quot;</a>
-        <span class="fuente-mini">Clarín Economía</span>
-      </div>
-    </div>
-    <div class="sidebar-item">
-      <span class="hora">06:00</span>
-      <div class="texto">
-        <a href="https://www.clarin.com/economia/trenes-lujo-negocio-sigue-creciendo-europa_0_2HyRaOWZKj.html" target="_blank" rel="noopener">Los trenes de lujo, un negocio que sigue creciendo en Europa</a>
-        <span class="fuente-mini">Clarín Economía</span>
-      </div>
-    </div>
-    <div class="sidebar-item">
-      <span class="hora">06:00</span>
-      <div class="texto">
-        <a href="https://www.clarin.com/economia/ypf-rompio-propio-record-exploto-precio-accion-empresa-vale-toda-historia_0_iTPUzP9GbQ.html" target="_blank" rel="noopener">YPF rompió su propio récord: explotó el precio de su acción y la empresa ya vale más que en toda su historia</a>
-        <span class="fuente-mini">Clarín Economía</span>
-      </div>
-    </div>
-    <div class="sidebar-item">
-      <span class="hora">06:00</span>
-      <div class="texto">
-        <a href="https://www.clarin.com/economia/6-10-sectores-recorto-empleos-milei-sufrieron-pocos-salvaron_0_5UFoXdVEnY.html" target="_blank" rel="noopener">Casi 6 de cada 10 sectores recortó empleos en la era Milei: los que más sufrieron y los pocos que se salvaron</a>
-        <span class="fuente-mini">Clarín Economía</span>
-      </div>
-    </div>
-    <div class="sidebar-item">
-      <span class="hora">06:00</span>
-      <div class="texto">
-        <a href="https://www.clarin.com/economia/problematica-ejecuciones-fiscales-embargos_0_TZXanlAQZM.html" target="_blank" rel="noopener">La problemática de las ejecuciones fiscales y los embargos</a>
+        <a href="https://www.clarin.com/economia/ethereum-hoy-cotizacion-y-precio-del-eth-este-domingo-31-de-mayo-de-2026_0_wBgekoyXSd.html" target="_blank" rel="noopener">Ethereum hoy: cotización y precio del ETH este domingo 31 de mayo de 2026</a>
         <span class="fuente-mini">Clarín Economía</span>
       </div>
     </div>
@@ -506,17 +482,17 @@ Dotación%20de%20personal%20de%20la%20administración%20pública%20nacional,%20e
 <footer class="pie">
   <div class="contenedor">
     <strong>PPA · Pulso Productivo Argentino</strong><br>
-    <span class="pie-bajada">Publicación económica · Curaduría automática con criterio editorial</span>
+    <span class="pie-bajada">Publicación económica · pulsoproductivo.com.ar</span>
     <div class="pie-meta">
-      Actualizado: 31/05/2026 07:57 ·
-      <a href="/">Portada</a> ·
+      <a href="/institucional/">Institucional</a> ·
+      <a href="/expectativas/">Expectativas de mercado</a> ·
+      <a href="/documentos/">Documentos</a> ·
       <a href="/columnas/">Columnas</a> ·
       <a href="/stream/">Stream</a> ·
+      <a href="/tablero/">Tablero</a> ·
       <a href="/como-trabajamos.html">Cómo trabajamos</a> ·
       <a href="/acerca.html">Acerca de</a>
     </div>
+    <div class="pie-legal">Editor responsable: Sergio Falco</div>
   </div>
 </footer>
-<script src="/assets/ppa.js"></script>
-</body>
-</html>
