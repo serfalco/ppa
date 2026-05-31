@@ -260,12 +260,132 @@ def generar_indice(notas):
     print(f"[PPA Stream] Índice: {out}")
 
 
+def fecha_legible(iso):
+    """ISO → '31 de mayo de 2026'."""
+    try:
+        d = datetime.fromisoformat(iso.replace("Z", "+00:00"))
+        return f"{d.day} de {MESES[d.month-1]} de {d.year}"
+    except Exception:
+        return ""
+
+
+def parrafos(texto):
+    """Convierte texto plano (líneas en blanco = párrafo) en <p>...</p>."""
+    bloques = re.split(r'\n\s*\n', (texto or "").replace("\r\n", "\n").strip())
+    return "\n".join(f"    <p>{escapar(b.strip())}</p>" for b in bloques if b.strip())
+
+
+def escapar(s):
+    if not s:
+        return ""
+    return (str(s).replace("&", "&amp;").replace("<", "&lt;")
+            .replace(">", "&gt;").replace('"', "&quot;"))
+
+
+def generar_notas_desde_panel():
+    """Lee stream_manual.json (lo que carga el panel69) y genera una página HTML
+    por cada ítem, con embed de YouTube si hay. Devuelve la cantidad generada."""
+    ruta = os.path.join(DIR_DATA, "stream_manual.json")
+    if not os.path.exists(ruta):
+        return 0
+    try:
+        with open(ruta, "r", encoding="utf-8") as f:
+            data = json.load(f)
+    except Exception:
+        return 0
+    items = data.get("items", [])
+    generadas = 0
+    for it in items:
+        slug = it.get("slug") or slugify(it.get("titulo", "nota"))
+        titulo = it.get("titulo", "")
+        bajada = it.get("bajada", "")
+        texto = it.get("texto", "")
+        yt_id = it.get("youtube_id", "")
+        fecha_iso = it.get("fecha", datetime.now(TZ_AR).isoformat())
+        categoria = it.get("categoria", "General")
+
+        # Embed de YouTube (si hay id)
+        embed = ""
+        if yt_id:
+            embed = (f'\n  <div class="stream-video">'
+                     f'<iframe width="100%" height="315" '
+                     f'src="https://www.youtube.com/embed/{yt_id}" '
+                     f'title="{escapar(titulo)}" frameborder="0" '
+                     f'allow="accelerometer; autoplay; clipboard-write; encrypted-media; '
+                     f'gyroscope; picture-in-picture" allowfullscreen></iframe></div>\n')
+
+        html = f"""<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{escapar(titulo)} — PPA Stream</title>
+<meta name="description" content="{escapar(bajada)}">
+<meta property="og:title" content="{escapar(titulo)}">
+<meta property="og:description" content="{escapar(bajada)}">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="{fecha_iso}">
+<meta property="article:section" content="{escapar(categoria)}">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,900&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/ppa.css">
+<link rel="stylesheet" href="/assets/stream.css">
+</head>
+<body class="body-stream">
+
+<div class="barra-superior">
+  <div class="contenedor">
+    <span class="fecha-barra">PPA · Blog Stream</span>
+    <span><a href="/stream/" style="color:inherit">Todas las notas →</a></span>
+  </div>
+</div>
+
+<nav class="stream-nav">
+  <div class="contenedor">
+    <a href="/" class="nav-link">Portada</a>
+    <a href="/institucional/" class="nav-link">Institucional</a>
+    <a href="/columnas/" class="nav-link">Columnas</a>
+    <a href="/stream/" class="nav-link activo">Stream</a>
+  </div>
+</nav>
+
+<article class="stream-nota">
+  <a href="/stream/" class="stream-nota-volver">← Todas las notas</a>
+  <header class="stream-nota-header">
+    <h1>{escapar(titulo)}</h1>
+    <p class="bajada">{escapar(bajada)}</p>
+    <div class="meta">
+      <span class="stream-cat">{escapar(categoria)}</span>
+      <time datetime="{fecha_iso[:10]}">{fecha_legible(fecha_iso)}</time>
+    </div>
+  </header>
+{embed}
+  <div class="stream-nota-cuerpo">
+{parrafos(texto)}
+  </div>
+</article>
+
+</body>
+</html>"""
+        with open(os.path.join(DIR_STREAM_NOTAS, f"{slug}.html"), "w", encoding="utf-8") as f:
+            f.write(html)
+        generadas += 1
+        print(f"   [stream] {slug}.html" + (" (con video)" if yt_id else ""))
+    return generadas
+
+
 def main():
     print(f"[PPA Stream] Inicio: {datetime.now(timezone.utc).isoformat()}")
     os.makedirs(DIR_STREAM_NOTAS, exist_ok=True)
 
+    # 1) Generar notas desde lo cargado en el panel69
+    n = generar_notas_desde_panel()
+    if n:
+        print(f"[PPA Stream] {n} notas generadas desde el panel")
+
+    # 2) Listar todas las notas HTML (las del panel + las que ya existían)
     notas = listar_notas_html()
-    print(f"[PPA Stream] {len(notas)} notas encontradas en site/stream/notas/")
+    print(f"[PPA Stream] {len(notas)} notas en site/stream/notas/")
 
     generar_indice(notas)
     print(f"[PPA Stream] Fin")

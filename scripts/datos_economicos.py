@@ -244,7 +244,41 @@ FUENTES_RIESGO = [
 ]
 
 
+def _leer_manual():
+    """Lee riesgo_manual.json (lo que carga Checho en el panel69).
+    Devuelve el dict o None. No falla nunca."""
+    ruta = os.path.join(DIR_DATA, "riesgo_manual.json")
+    if not os.path.exists(ruta):
+        return None
+    try:
+        with open(ruta, "r", encoding="utf-8") as f:
+            return json.load(f)
+    except Exception:
+        return None
+
+
+def _manual_fresco(manual, horas=30):
+    """True si el dato manual fue cargado hace menos de `horas`."""
+    if not manual or not manual.get("cargado_en"):
+        return False
+    try:
+        t = datetime.fromisoformat(manual["cargado_en"].replace("Z", "+00:00"))
+        edad = (datetime.now(timezone.utc) - t).total_seconds() / 3600
+        return edad < horas
+    except Exception:
+        return False
+
+
 def obtener_riesgo_pais(previo):
+    # 1) PRIORIDAD: dato manual del panel (lo que Checho vio en Rava y cargó).
+    manual = _leer_manual()
+    if manual and manual.get("riesgo_pais") and _manual_fresco(manual):
+        v = manual["riesgo_pais"]
+        print(f"· Riesgo País: MANUAL {v} pb (cargado en panel)")
+        return dato(v, unidad="pb", fuente="carga manual",
+                    fecha=manual.get("cargado_en"), frecuencia="manual")
+
+    # 2) Si no hay manual fresco, cadena automática (Rava primero)
     print("· Riesgo País (fallback en cadena)")
     for nombre, fn in FUENTES_RIESGO:
         try:
@@ -264,6 +298,23 @@ def obtener_riesgo_pais(previo):
             )
     print("   ✗ Ninguna fuente respondió. Conservo último valor bueno.")
     return conservar(previo, "riesgo_pais")
+
+
+def obtener_mulc(previo):
+    """Lee el dato de intervención del BCRA (compró/vendió) cargado en el panel.
+    Solo se muestra si es fresco; si no, conserva el anterior."""
+    manual = _leer_manual()
+    if manual and manual.get("mulc") and _manual_fresco(manual):
+        m = manual["mulc"]
+        print(f"· MULC: BCRA {m.get('operacion')} {m.get('monto')} {m.get('unidad','MM USD')}")
+        return dato(
+            {"operacion": m.get("operacion"), "monto": m.get("monto")},
+            unidad=m.get("unidad", "MM USD"),
+            fecha=manual.get("cargado_en"),
+            fuente="BCRA (carga manual)",
+            frecuencia="diaria",
+        )
+    return conservar(previo, "mulc")
 
 
 # =============================================================
@@ -508,6 +559,7 @@ def main():
         datos.update(obtener_dolares(previo))
         datos["merval"] = obtener_merval(previo) or datos.get("merval")
         datos["riesgo_pais"] = obtener_riesgo_pais(previo) or datos.get("riesgo_pais")
+        datos["mulc"] = obtener_mulc(previo) or datos.get("mulc")
         datos["reservas"] = obtener_bcra(previo) or datos.get("reservas")
         datos["banda"] = obtener_banda(previo, datos) or datos.get("banda")
 

@@ -129,6 +129,8 @@ def html_head_columna(titulo, bajada):
     line-height: 1.7;
     margin-bottom: 22px;
     color: var(--tinta);
+    overflow-wrap: break-word;
+    word-wrap: break-word;
   }}
   .columna-cuerpo p:first-of-type::first-letter {{
     font-family: 'Playfair Display', serif;
@@ -391,19 +393,32 @@ def html_indice_columnas(columnas):
 
 
 def cargar_columnas():
-    """Carga todas las columnas publicadas y les genera slug si no tienen."""
-    if not os.path.exists(JSON_NOTAS_PROPIAS):
-        return []
-    try:
-        with open(JSON_NOTAS_PROPIAS, 'r', encoding='utf-8') as f:
-            data = json.load(f)
-    except Exception:
-        return []
-    columnas = data.get("notas", [])
-    # Asegurar que cada columna tenga slug
-    for c in columnas:
-        if not c.get("slug"):
-            c["slug"] = slugify(c.get("titulo", "columna"))
+    """Carga columnas publicadas y les genera slug si no tienen.
+    Lee del archivo del panel (columnas_manual.json, clave 'columnas') y, como
+    respaldo, del viejo notas_propias.json (clave 'notas' o 'columnas')."""
+    columnas = []
+    archivos = [
+        os.path.join(DIR_DATA, "columnas_manual.json"),   # lo que escribe el panel69
+        JSON_NOTAS_PROPIAS,                                # respaldo histórico
+    ]
+    vistos = set()
+    for ruta in archivos:
+        if not os.path.exists(ruta):
+            continue
+        try:
+            with open(ruta, 'r', encoding='utf-8') as f:
+                data = json.load(f)
+        except Exception:
+            continue
+        # Soporta ambas claves: 'columnas' (panel) y 'notas' (viejo)
+        items = data.get("columnas") or data.get("notas") or []
+        for c in items:
+            slug = c.get("slug") or slugify(c.get("titulo", "columna"))
+            if slug in vistos:        # evita duplicados si está en los dos archivos
+                continue
+            vistos.add(slug)
+            c["slug"] = slug
+            columnas.append(c)
     # Ordenar por fecha descendente
     columnas.sort(key=lambda c: c.get("fecha_publicacion", ""), reverse=True)
     return columnas
