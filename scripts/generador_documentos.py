@@ -19,7 +19,11 @@ from datetime import datetime, timezone, timedelta
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from config import DIR_DATA, DIR_SITE
-import componentes as comp, VENTANA_DOCUMENTOS_HORAS
+import componentes as comp
+try:
+    from config import VENTANA_DOCUMENTOS_HORAS
+except ImportError:
+    VENTANA_DOCUMENTOS_HORAS = 72  # default: ventana de 72hs
 
 JSON_NOTAS = os.path.join(DIR_DATA, "notas.json")
 DIR_DOCUMENTOS = os.path.join(DIR_SITE, "documentos")
