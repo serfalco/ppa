@@ -43,7 +43,11 @@ def cabecera(activo="", edicion_nombre="", edicion_icono=""):
         edicion_icono  = "🧉" if edicion_nombre == "Desayuno" else "☕"
     fecha = fecha_corta()
 
-    items = '\n    '.join(f'<a href="{href}"{" class=\"activo\"" if nombre == activo else ""}>{nombre}</a>' for nombre, href in _SECCIONES)
+    _partes = []
+    for nombre, href in _SECCIONES:
+        clase = ' class="activo"' if nombre == activo else ''
+        _partes.append(f'<a href="{href}"{clase}>{nombre}</a>')
+    items = '\n    '.join(_partes)
     return f"""
 <div id="cabecera-wrap">
 <header class="cabecera-ppa expandida" id="cabecera-ppa">
