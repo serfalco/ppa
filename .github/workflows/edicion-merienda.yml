@@ -22,7 +22,7 @@ permissions:
 jobs:
   generar-edicion:
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    timeout-minutes: 25
 
     steps:
       - name: Checkout
@@ -37,29 +37,22 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install feedparser requests
+          pip install feedparser requests pandas openpyxl xlrd
 
       - name: Detectar edición
         id: edicion
         run: |
           HORA=$(date -u +%H)
-          MIN=$(date -u +%M)
           INPUT="${{ github.event.inputs.edicion }}"
-
           if [ "$INPUT" = "desayuno" ]; then
-            NOMBRE="Desayuno"
-            ICONO="🧉"
+            NOMBRE="Desayuno"; ICONO="🧉"
           elif [ "$INPUT" = "merienda" ]; then
-            NOMBRE="Merienda"
-            ICONO="☕"
+            NOMBRE="Merienda"; ICONO="☕"
           elif [ "$HORA" -lt 14 ]; then
-            NOMBRE="Desayuno"
-            ICONO="🧉"
+            NOMBRE="Desayuno"; ICONO="🧉"
           else
-            NOMBRE="Merienda"
-            ICONO="☕"
+            NOMBRE="Merienda"; ICONO="☕"
           fi
-
           echo "nombre=$NOMBRE" >> $GITHUB_OUTPUT
           echo "icono=$ICONO" >> $GITHUB_OUTPUT
           echo "[PPA] Generando edición: $NOMBRE $ICONO"
@@ -70,13 +63,17 @@ jobs:
       - name: Selector - elegir destacados
         run: python scripts/selector.py
 
-      - name: Generador - Lo que se dice
-        run: python scripts/generador.py
+      - name: Datos económicos (completo, incluye mensuales)
+        run: python scripts/datos_economicos.py
 
-      - name: Generador - Expectativas de mercado
-        run: python scripts/generador_expectativas.py
+      - name: Generador - Análisis (fusión Institucional + Expectativas)
+        run: python scripts/generador_analisis.py
 
-      - name: Generador - Documentos en circulación
+      - name: Generador - REM
+        run: python scripts/generador_rem.py
+        continue-on-error: true
+
+      - name: Generador - Documentos
         run: python scripts/generador_documentos.py
 
       - name: Generador - Columnas
@@ -85,11 +82,9 @@ jobs:
       - name: Generador - Stream
         run: python scripts/generador_stream.py
 
-      - name: Generador - Acerca de
-        run: python scripts/generador_acerca.py
-
-      - name: Datos económicos (completo, incluye mensuales)
-        run: python scripts/datos_economicos.py
+      - name: Generador - EconoTuits
+        run: python scripts/generador_tuits.py
+        continue-on-error: true
 
       - name: Generador - Tablero PPA
         run: python scripts/generador_tablero.py
@@ -99,8 +94,8 @@ jobs:
         run: python scripts/generador_tcrm.py
         continue-on-error: true
 
-      - name: Generador - Tuits institucionales
-        run: python scripts/generador_tuits.py
+      - name: Generador - Acerca de
+        run: python scripts/generador_acerca.py
         continue-on-error: true
 
       - name: Generador - Home portal
@@ -111,6 +106,7 @@ jobs:
 
       - name: Exportar config de fuentes
         run: python scripts/exportar_config.py
+        continue-on-error: true
 
       - name: Copiar JSONs al site
         run: |
