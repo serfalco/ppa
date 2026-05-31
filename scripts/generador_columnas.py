@@ -20,6 +20,7 @@ from datetime import datetime, timezone, timedelta
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from config import DIR_DATA, DIR_SITE
+import componentes as comp
 
 JSON_NOTAS_PROPIAS = os.path.join(DIR_DATA, "notas_propias.json")
 DIR_COLUMNAS = os.path.join(DIR_SITE, "columnas")
@@ -216,12 +217,7 @@ def html_cuerpo_columna(col, otras_columnas):
   </section>"""
 
     return f"""
-<div class="barra-superior">
-  <div class="contenedor">
-    <span class="fecha-barra">PPA · Pulso Productivo Argentino</span>
-    <span><a href="/" style="color:inherit">Volver a la portada →</a></span>
-  </div>
-</div>
+{comp.franja_datos()}
 
 <article class="columna-page">
   <a href="/columnas/" class="columna-volver">← Todas las columnas</a>
@@ -251,21 +247,7 @@ def html_cuerpo_columna(col, otras_columnas):
   {otras_html}
 </article>
 
-<footer class="pie" style="margin-top:48px">
-  <div class="contenedor">
-    <strong>PPA · Pulso Productivo Argentino</strong><br>
-    <span class="pie-bajada">Publicación económica</span>
-    <div class="pie-meta">
-      <a href="/">Portada</a> ·
-      <a href="/institucional/">Institucional</a> ·
-      <a href="/expectativas/">Expectativas</a> ·
-      <a href="/documentos/">Documentos</a> ·
-      <a href="/columnas/">Columnas</a> ·
-      <a href="/stream/">Stream</a> ·
-      <a href="/como-trabajamos.html">Cómo trabajamos</a>
-    </div>
-  </div>
-</footer>
+{comp.pie()}
 </body>
 </html>"""
 
@@ -356,12 +338,7 @@ def html_indice_columnas(columnas):
 </head>
 <body>
 
-<div class="barra-superior">
-  <div class="contenedor">
-    <span class="fecha-barra">PPA · Pulso Productivo Argentino</span>
-    <span><a href="/" style="color:inherit">Volver a la portada →</a></span>
-  </div>
-</div>
+{comp.franja_datos()}
 
 <div class="columnas-page">
   <header class="columnas-titulo">
@@ -372,21 +349,7 @@ def html_indice_columnas(columnas):
   {"".join(items_html) if items_html else '<div class="vacio">Aún no hay columnas publicadas.</div>'}
 </div>
 
-<footer class="pie" style="margin-top:48px">
-  <div class="contenedor">
-    <strong>PPA · Pulso Productivo Argentino</strong><br>
-    <span class="pie-bajada">Publicación económica</span>
-    <div class="pie-meta">
-      <a href="/">Portada</a> ·
-      <a href="/institucional/">Institucional</a> ·
-      <a href="/expectativas/">Expectativas</a> ·
-      <a href="/documentos/">Documentos</a> ·
-      <a href="/columnas/">Columnas</a> ·
-      <a href="/stream/">Stream</a> ·
-      <a href="/como-trabajamos.html">Cómo trabajamos</a>
-    </div>
-  </div>
-</footer>
+{comp.pie()}
 
 </body>
 </html>"""

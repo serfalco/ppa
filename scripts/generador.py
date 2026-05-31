@@ -21,6 +21,7 @@ from calendar import monthrange
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from config import DIR_DATA, DIR_SITE, DIR_ARCHIVO, CATEGORIAS
+import componentes as comp
 
 JSON_PORTADA = os.path.join(DIR_DATA, "portada.json")
 
@@ -209,7 +210,7 @@ def html_destacado_principal(nota):
     return f"""
 <article class="destacado-principal">
   <span class="etiqueta">★ Destacado del día</span>
-  <h2><a href="{escapar_html(nota['link'])}" target="_blank" rel="noopener">{escapar_html(nota['titulo'])}</a></h2>
+  <h2><a href="{escapar_html(nota['link'])}" target="_blank" rel="noopener">{escapar_html(comp.limpiar_url(nota['titulo']))}</a></h2>
   <p class="destacado-bajada">{escapar_html(nota['bajada'])}</p>
   <div class="firma">
     <span><strong>{escapar_html(nota['fuente_nombre'])}</strong> · {escapar_html(nota['categoria'])}</span>
@@ -224,7 +225,7 @@ def html_destacado_secundario(nota):
     return f"""
 <article class="destacado-secundario">
   <span class="etiqueta-sec">{escapar_html(nota['categoria'])}</span>
-  <h3><a href="{escapar_html(nota['link'])}" target="_blank" rel="noopener">{escapar_html(nota['titulo'])}</a></h3>
+  <h3><a href="{escapar_html(nota['link'])}" target="_blank" rel="noopener">{escapar_html(comp.limpiar_url(nota['titulo']))}</a></h3>
   <p>{escapar_html(nota['bajada'])}</p>
   <div class="firma">
     <span><strong>{escapar_html(nota['fuente_nombre'])}</strong></span>
@@ -255,7 +256,7 @@ def html_nota_seccion(nota):
     return f"""
 <article class="nota">
   <div class="fuente">{escapar_html(nota['fuente_nombre'])}</div>
-  <h3><a href="{escapar_html(nota['link'])}" target="_blank" rel="noopener">{escapar_html(nota['titulo'])}</a></h3>
+  <h3><a href="{escapar_html(nota['link'])}" target="_blank" rel="noopener">{escapar_html(comp.limpiar_url(nota['titulo']))}</a></h3>
   <p>{escapar_html(nota['bajada'])}</p>
   <div class="meta">
     <span>{hora_corta(nota['fecha_publicacion'])}</span>
@@ -349,14 +350,14 @@ def generar_portada():
 
     # Construir HTML
     partes = []
-    partes.append(html_head(f"Edición Nº {num_ed} · {fecha_str}",
-                            "Pulso Productivo Argentino: análisis económico curado de instituciones y consultoras."))
-    partes.append(html_barra_superior(fecha_str))
-    partes.append(html_marquesina_fulbito())
-    partes.append(html_cabecera(num_ed, fecha_str))
-    partes.append(html_ticker())
-    partes.append(html_widget_mulc())
-    partes.append(html_nav_secciones())
+    partes.append(comp.head_comun(
+        f"PPA · Institucional — {fecha_str}",
+        "Pulso Productivo Argentino: análisis económico curado de instituciones y consultoras.",
+        css_extra='<link rel="stylesheet" href="/assets/home.css">'
+    ) + "\n<body>")
+    partes.append(comp.franja_datos(ahora_ar))
+    partes.append(comp.cabecera())
+    partes.append(comp.nav_principal("Institucional"))
     partes.append(html_columna_propia(nota_propia))
 
     # Tapa con destacados
@@ -378,7 +379,7 @@ def generar_portada():
     partes.append(html_sidebar_ultimo_momento(ult_mom))
     partes.append('</div></div>')
 
-    partes.append(html_pie(ahora_ar.strftime("%d/%m/%Y %H:%M")))
+    partes.append(comp.pie())
 
     html = "".join(partes)
 

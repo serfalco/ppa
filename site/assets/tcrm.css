@@ -1,0 +1,202 @@
+/* =================================================================
+   PPA — tcrm.css
+   Página "El peso en perspectiva" — gráfico histórico TCRM
+   ================================================================= */
+
+.body-tcrm { background: var(--papel); }
+
+.tcrm-main {
+  padding: 40px 0 60px;
+}
+
+/* ── Intro: texto + stats ── */
+.tcrm-intro {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 32px;
+  align-items: start;
+  margin-bottom: 32px;
+  padding-bottom: 24px;
+  border-bottom: 2px solid var(--tinta);
+}
+
+@media (max-width: 720px) {
+  .tcrm-intro { grid-template-columns: 1fr; }
+}
+
+.tcrm-titulo {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(28px, 5vw, 42px);
+  font-weight: 900;
+  line-height: 1.05;
+  margin-bottom: 6px;
+}
+
+.tcrm-sub {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 11px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--gris);
+  margin-bottom: 14px;
+}
+
+.tcrm-desc {
+  font-family: 'Source Serif 4', serif;
+  font-size: 14px;
+  color: var(--gris);
+  line-height: 1.6;
+  max-width: 580px;
+}
+
+/* Stats cuadro derecho */
+.tcrm-stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px 20px;
+  min-width: 240px;
+}
+
+.tcrm-stat {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding: 10px 14px;
+  background: var(--papel-2);
+  border-top: 2px solid var(--tinta);
+}
+
+.tcrm-stat-label {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--gris);
+}
+
+.tcrm-stat-valor {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--tinta);
+  line-height: 1.1;
+}
+
+.tcrm-stat-fecha {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 9px;
+  color: var(--gris);
+}
+
+/* ── Canvas ── */
+.tcrm-grafico-wrap {
+  position: relative;
+  width: 100%;
+  margin-bottom: 36px;
+  background: var(--papel-2);
+  border: 1px solid var(--linea);
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+#tcrm-canvas {
+  display: block;
+  width: 100%;
+  cursor: crosshair;
+}
+
+/* ── Tooltip ── */
+.tcrm-tooltip {
+  position: absolute;
+  background: var(--tinta);
+  color: var(--papel);
+  padding: 8px 12px;
+  border-radius: 3px;
+  pointer-events: none;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 11px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 140px;
+  z-index: 10;
+}
+
+.tt-fecha { color: var(--gris-claro); font-size: 10px; }
+.tt-valor { font-weight: 700; font-size: 13px; }
+.tt-hito  { color: #e8a0a0; font-size: 10px; font-style: italic; }
+
+/* ── Leyenda de hitos ── */
+.tcrm-hitos-leyenda {
+  margin-bottom: 32px;
+  padding-top: 24px;
+  border-top: 1px solid var(--linea);
+}
+
+.tcrm-hitos-leyenda h3 {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--gris);
+  margin-bottom: 14px;
+}
+
+.hitos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 8px 20px;
+}
+
+.hito-item {
+  display: grid;
+  grid-template-columns: 18px 70px 1fr;
+  gap: 0 8px;
+  align-items: baseline;
+  padding: 6px 0;
+  border-bottom: 1px dotted var(--linea);
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 12px;
+}
+
+.hito-num {
+  font-weight: 700;
+  color: var(--rojo);
+  font-size: 10px;
+}
+
+.hito-fecha {
+  color: var(--gris);
+  font-size: 10px;
+}
+
+.hito-label {
+  font-weight: 600;
+  color: var(--tinta);
+}
+
+.hito-desc {
+  grid-column: 3;
+  font-size: 11px;
+  color: var(--gris);
+  font-style: italic;
+  margin-top: 2px;
+}
+
+/* ── Nota metodológica ── */
+.tcrm-nota {
+  font-family: 'Source Serif 4', serif;
+  font-size: 12px;
+  color: var(--gris);
+  line-height: 1.6;
+  padding: 16px;
+  background: var(--papel-2);
+  border-left: 3px solid var(--linea);
+}
+
+.tcrm-nota a {
+  color: var(--rojo);
+  font-style: italic;
+}

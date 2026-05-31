@@ -453,42 +453,83 @@ BANDA_ANCLA = {
 }
 
 
-def obtener_bcra(previo):
-    """API oficial BCRA v4 (api.bcra.gob.ar/estadisticas/v4.0).
-    idVariable 1 = Reservas internacionales (DIARIA, millones USD).
-    Reemplaza la reserva mensual de datos.gob.ar por el dato diario oficial.
-    Sin autenticación. El BCRA puede tener SSL con cadena incompleta."""
-    print("· BCRA v4 (reservas diarias)")
-    url = "https://api.bcra.gob.ar/estadisticas/v4.0/monetarias/1?limit=2"
+# Variables BCRA v4 que consultamos
+# IDs verificados contra el Informe Monetario Diario (mayo 2026)
+# Fuente: api.bcra.gob.ar/estadisticas/v4.0/monetarias/{idVariable}
+#
+#   ID   1 = Reservas internacionales (diaria, millones USD)
+#   ID   6 = BADLAR bancos privados (diaria, % TNA)
+#      NOTA: ID 6 = BADLAR privada. La "tasa de política monetaria" dejó
+#      de existir como tal desde jul-2025 (pases a 0). BADLAR es la
+#      referencia real del mercado para plazo fijo hoy.
+#   ID  15 = Base monetaria (diaria, millones de pesos)
+#   ID  17 = M2 privado transaccional (diaria, millones de pesos)
+#      = Billetes+monedas públicos + cuentas corrientes y cajas de ahorro
+#        del sector privado en pesos (excluyendo vista remunerada PJ)
+#   ID  27 = BAIBAR / Call entre bancos privados hasta 15 días (diaria, % TNA)
+#   ID   7 = Circulación monetaria (diaria, millones de pesos)
+#
+# Los IDs se verifican con GET /estadisticas/v4.0/monetarias (lista completa).
+# Si un ID devuelve 0 o None en producción, revisar la lista y corregir.
+_BCRA_VARS = [
+    # clave interna     ID   unidad     descripción visible
+    ("reservas",         1,  "MM USD",  "Reservas BCRA (millones USD)"),
+    ("badlar",           6,  "% TNA",   "BADLAR bancos privados"),
+    ("base_monetaria",  15,  "MM $",    "Base monetaria (millones $)"),
+    ("m2_privado",      17,  "MM $",    "M2 privado transaccional (millones $)"),
+    ("call_baibar",     27,  "% TNA",   "BAIBAR call bancos privados"),
+    ("circulacion",      7,  "MM $",    "Circulación monetaria (millones $)"),
+    # UVA: Unidad de Valor Adquisitivo (base 31/3/2016=14.05)
+    # Del IMD 22-may: 1956.47 — clave para hipotecarios y contratos
+    ("uva",             29,  "índice",  "UVA (base 31/3/2016=14.05)"),
+]
+
+def _bcra_get(id_variable):
+    """Llama a BCRA v4 para una variable. Reintenta sin SSL si falla."""
+    import urllib3
+    url = f"https://api.bcra.gob.ar/estadisticas/v4.0/monetarias/{id_variable}?limit=2"
     j = get_json(url)
     if j is None:
-        # Reintento sin verificar SSL (el BCRA es conocido por esto)
         try:
-            import urllib3
             urllib3.disable_warnings()
             r = requests.get(url, headers=HDRS, timeout=12, verify=False)
             r.raise_for_status()
             j = r.json()
+        except Exception:
+            return None
+    return j
+
+def obtener_bcra(previo):
+    """API oficial BCRA v4. Trae reservas, tasa política y base monetaria."""
+    print("· BCRA v4 (reservas + tasa + base monetaria)")
+    out = {}
+    for clave, id_var, unidad, desc in _BCRA_VARS:
+        j = _bcra_get(id_var)
+        if not j:
+            cons = conservar(previo, clave)
+            if cons:
+                out[clave] = cons
+            print(f"   ⚠  {clave}: BCRA no respondió (conservo previo)")
+            continue
+        try:
+            detalle = j["results"][0]["detalle"]
+            ultimo = detalle[0]
+            valor = round(float(ultimo["valor"]), 2 if id_var == 6 else 0)
+            fecha = ultimo.get("fecha")
+            variacion = None
+            if len(detalle) > 1:
+                prev_v = float(detalle[1]["valor"])
+                if prev_v:
+                    variacion = round((valor - prev_v) / prev_v * 100, 2)
+            out[clave] = dato(valor, unidad=unidad, fecha=fecha, variacion=variacion,
+                              fuente="BCRA API v4", frecuencia="diaria")
+            print(f"   ✓ {clave}: {valor} {unidad} ({fecha})")
         except Exception as e:
-            print(f"   ⚠  BCRA no respondió: {str(e)[:60]}")
-            return conservar(previo, "reservas")
-    try:
-        detalle = j["results"][0]["detalle"]   # ordenado desc, [0] = último
-        ultimo = detalle[0]
-        valor = round(float(ultimo["valor"]))
-        fecha = ultimo.get("fecha")
-        # variación vs día anterior si está disponible
-        variacion = None
-        if len(detalle) > 1:
-            prev_v = float(detalle[1]["valor"])
-            if prev_v:
-                variacion = round((valor - prev_v) / prev_v * 100, 1)
-        print(f"   ✓ reservas {valor} MM USD ({fecha})")
-        return dato(valor, unidad="MM USD", fecha=fecha, variacion=variacion,
-                    fuente="BCRA", frecuencia="diaria")
-    except Exception as e:
-        print(f"   ⚠  BCRA formato inesperado: {str(e)[:60]}")
-        return conservar(previo, "reservas")
+            cons = conservar(previo, clave)
+            if cons:
+                out[clave] = cons
+            print(f"   ⚠  {clave}: formato inesperado ({str(e)[:50]})")
+    return out
 
 
 def obtener_banda(previo, datos_actuales):
@@ -560,7 +601,9 @@ def main():
         datos["merval"] = obtener_merval(previo) or datos.get("merval")
         datos["riesgo_pais"] = obtener_riesgo_pais(previo) or datos.get("riesgo_pais")
         datos["mulc"] = obtener_mulc(previo) or datos.get("mulc")
-        datos["reservas"] = obtener_bcra(previo) or datos.get("reservas")
+        bcra = obtener_bcra(previo)
+        for k, v in bcra.items():
+            datos[k] = v or datos.get(k)
         datos["banda"] = obtener_banda(previo, datos) or datos.get("banda")
 
     if hacer_mensual:

@@ -412,16 +412,21 @@
 .nav-menu {
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;          /* una sola fila siempre */
   gap: 22px;
   font-family: 'IBM Plex Sans', sans-serif;
   font-size: 13px;
   font-weight: 600;
   letter-spacing: 0.08em;
   text-transform: uppercase;
+  overflow-x: auto;           /* scroll en mobile si no entran */
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  padding-bottom: 2px;        /* evita que el scrollbar recorte */
 }
-.nav-menu a { color: var(--tinta); }
-.nav-menu a.activo { color: var(--rojo); }
+.nav-menu::-webkit-scrollbar { display: none; }
+.nav-menu a { color: var(--tinta); white-space: nowrap; }
+.nav-menu a.activo { color: var(--rojo); }  /* rojo SOLO en sección activa */
 .nav-menu a:hover { color: var(--rojo); }
 
 /* Cinta de categorías: fila propia debajo, sin título, scrolleable en móvil */
@@ -486,4 +491,282 @@
     grid-template-columns: 1fr 280px;
     align-items: start;
   }
+}
+
+
+/* =================================================================
+   HOME DENSA v4 — layout principal + sidebar
+   ================================================================= */
+
+/* Layout: 2 columnas (principal ancha + sidebar) */
+.home-layout-densa {
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  gap: 48px;
+  align-items: start;
+  padding-top: 36px;
+  padding-bottom: 48px;
+}
+
+@media (max-width: 960px) {
+  .home-layout-densa {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+}
+
+/* =================================================================
+   COLUMNA PRINCIPAL
+   ================================================================= */
+.home-col-principal {}
+
+.col-header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  border-top: 4px solid var(--tinta);
+  padding-top: 12px;
+  margin-bottom: 24px;
+}
+.col-kicker {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--gris);
+}
+.col-ver-todo {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--rojo);
+  letter-spacing: 0.05em;
+}
+.col-ver-todo:hover { color: var(--tinta); }
+
+/* =================================================================
+   DESTACADOS DEL DÍA (arriba de la grilla)
+   ================================================================= */
+.home-destacados {
+  margin-bottom: 32px;
+  padding-bottom: 28px;
+  border-bottom: 2px solid var(--tinta);
+}
+
+.dest-label {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.35em;
+  text-transform: uppercase;
+  color: var(--gris);
+  margin-bottom: 14px;
+}
+
+.dest-lista {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.dest-item { display: flex; flex-direction: column; gap: 3px; }
+
+.dest-cat {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 9px;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--gris);
+}
+
+.dest-principal .dest-titulo {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(20px, 3vw, 26px);
+  font-weight: 900;
+  line-height: 1.15;
+}
+.dest-secundario .dest-titulo {
+  font-family: 'Source Serif 4', serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+.dest-titulo a { color: var(--tinta); }
+.dest-titulo a:hover { color: var(--rojo); }
+
+.dest-fuente {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 10px;
+  color: var(--gris);
+  letter-spacing: 0.05em;
+}
+
+/* =================================================================
+   GRILLA DE CATEGORÍAS (2 columnas)
+   ================================================================= */
+.home-cats-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 28px 40px;
+}
+
+@media (max-width: 640px) {
+  .home-cats-grid { grid-template-columns: 1fr; }
+}
+
+/* Bloque por categoría */
+.home-bloque-cat {
+  padding-top: 12px;
+  border-top: 1px solid var(--linea);
+}
+
+.cat-header {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 10px;
+}
+.cat-icono {
+  display: flex;
+  align-items: center;
+  color: var(--gris);
+}
+.cat-icono .ic {
+  width: 14px;
+  height: 14px;
+  stroke: currentColor;
+  stroke-width: 2.2;
+  fill: none;
+  flex: 0 0 auto;
+}
+.cat-nombre {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--tinta);
+}
+.cat-nombre:hover { color: var(--rojo); }
+
+/* Lista de títulos dentro de la categoría */
+.cat-lista {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+.cat-item {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  padding: 7px 0;
+  border-bottom: 1px dotted var(--linea);
+}
+.cat-item:last-child { border-bottom: none; }
+
+.cat-titulo {
+  font-family: 'Source Serif 4', serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.35;
+  color: var(--tinta);
+}
+.cat-titulo:hover { color: var(--rojo); }
+
+.cat-fuente {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 10px;
+  color: var(--gris);
+  letter-spacing: 0.03em;
+}
+
+/* =================================================================
+   SIDEBAR
+   ================================================================= */
+.home-sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+}
+
+.sidebar-bloque {
+  padding-top: 12px;
+  border-top: 3px solid var(--tinta);
+}
+
+.sb-header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-bottom: 18px;
+}
+.sb-kicker {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+}
+.sidebar-columnas .sb-kicker { color: var(--verde); }
+.sidebar-stream   .sb-kicker { color: var(--azul); }
+
+.sb-link {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+}
+.sidebar-columnas .sb-link { color: var(--verde); }
+.sidebar-stream   .sb-link { color: var(--azul); }
+
+.sb-item {
+  padding: 12px 0;
+  border-bottom: 1px dotted var(--linea);
+}
+.sb-item:last-child { border-bottom: none; }
+
+.sb-cat {
+  display: block;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 9px;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--gris);
+  margin-bottom: 3px;
+}
+.sb-titulo {
+  font-family: 'Source Serif 4', serif;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.3;
+  margin-bottom: 4px;
+}
+.sb-titulo a { color: var(--tinta); }
+.sb-titulo a:hover { color: var(--rojo); }
+
+.sb-bajada {
+  font-family: 'Source Serif 4', serif;
+  font-style: italic;
+  font-size: 13px;
+  color: var(--gris);
+  line-height: 1.4;
+  margin-bottom: 4px;
+}
+.sb-fuente {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 10px;
+  color: var(--gris);
+}
+
+/* Vacío */
+.home-vacio {
+  font-family: 'Source Serif 4', serif;
+  font-style: italic;
+  color: var(--gris);
+  padding: 20px 0;
 }

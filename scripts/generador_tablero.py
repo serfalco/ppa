@@ -12,6 +12,7 @@ from datetime import datetime, timezone, timedelta
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from config import DIR_SITE
 from iconos import ICONO
+import componentes as comp
 
 TZ_AR = timezone(timedelta(hours=-3))
 
@@ -43,6 +44,8 @@ def generar_tablero():
     <span class="dato-mini">Riesgo <span id="riesgo-pais">…</span></span>
   </div>
 </div>
+
+{comp.nav_principal("Tablero")}
 
 <!-- CABECERA -->
 <header class="tablero-cabecera">
@@ -176,11 +179,11 @@ def generar_tablero():
           <span class="dato-fuente">argentinadatos.com</span>
         </div>
 
-        <div class="dato-card">
+        <div class="dato-card dato-card-riesgo">
           <span class="dato-label">Riesgo País</span>
-          <span class="dato-valor dato-grande" id="t-riesgo">…</span>
-          <span class="dato-sub">puntos básicos</span>
-          <span class="dato-fuente">argentinadatos.com</span>
+          <span class="dato-valor dato-enorme" id="t-riesgo">…</span>
+          <span class="dato-sub">puntos básicos · EMBI+</span>
+          <span class="dato-fuente">rava.com</span>
         </div>
 
         <div class="dato-card">
@@ -201,11 +204,28 @@ def generar_tablero():
           <span class="dato-fuente">BYMA delayed</span>
         </div>
 
-        <div class="dato-card">
-          <span class="dato-label">Reservas BCRA</span>
-          <span class="dato-valor" id="t-reservas">…</span>
-          <span class="dato-sub">millones de USD</span>
-          <span class="dato-fuente">datos.gob.ar</span>
+        <div class="dato-card dato-card-bcra">
+          <span class="dato-label">BCRA</span>
+          <div class="bcra-fila">
+            <div class="bcra-item">
+              <span class="bcra-sub">Reservas</span>
+              <span class="dato-valor" id="t-reservas">…</span>
+              <span class="bcra-detalle">millones de USD</span>
+            </div>
+            <div class="bcra-sep"></div>
+            <div class="bcra-item" id="bcra-mulc-bloque">
+              <span class="bcra-sub">BCRA hoy</span>
+              <span class="bcra-mulc" id="t-mulc-label">…</span>
+              <span class="bcra-detalle" id="t-mulc-monto"></span>
+            </div>
+            <div class="bcra-sep"></div>
+            <div class="bcra-item">
+              <span class="bcra-sub">BADLAR privada</span>
+              <span class="dato-valor" id="t-badlar">…</span>
+              <span class="bcra-detalle">% TNA · plazo fijo</span>
+            </div>
+          </div>
+          <span class="dato-fuente">BCRA API v4</span>
         </div>
 
       </div>
@@ -245,24 +265,52 @@ def generar_tablero():
         </div>
 
         <div class="dato-card">
+          <span class="dato-label">UVA</span>
+          <span class="dato-valor" id="t-uva">…</span>
+          <span class="dato-sub">base 31/3/2016 = 14.05</span>
+          <span class="dato-fuente">BCRA API v4</span>
+        </div>
+
+        <div class="dato-card">
           <span class="dato-label">Reservas Brutas BCRA</span>
           <span class="dato-valor" id="t-reservas-macro">…</span>
           <span class="dato-sub">millones de USD</span>
-          <span class="dato-fuente">datos.gob.ar</span>
+          <span class="dato-fuente">BCRA API v4</span>
         </div>
 
         <div class="dato-card">
           <span class="dato-label">Base Monetaria</span>
           <span class="dato-valor" id="t-base-monetaria">…</span>
           <span class="dato-sub">millones de pesos</span>
-          <span class="dato-fuente">BCRA</span>
+          <span class="dato-fuente">BCRA API v4</span>
         </div>
 
         <div class="dato-card">
-          <span class="dato-label">Tasa política monetaria</span>
-          <span class="dato-valor" id="t-tasa-politica">…</span>
-          <span class="dato-sub">% TNA</span>
-          <span class="dato-fuente">BCRA</span>
+          <span class="dato-label">M2 Privado transaccional</span>
+          <span class="dato-valor" id="t-m2-privado">…</span>
+          <span class="dato-sub">billetes + cc + ca sector privado</span>
+          <span class="dato-fuente">BCRA API v4</span>
+        </div>
+
+        <div class="dato-card">
+          <span class="dato-label">Circulación monetaria</span>
+          <span class="dato-valor" id="t-circulacion">…</span>
+          <span class="dato-sub">millones de pesos</span>
+          <span class="dato-fuente">BCRA API v4</span>
+        </div>
+
+        <div class="dato-card">
+          <span class="dato-label">BADLAR bancos privados</span>
+          <span class="dato-valor" id="t-badlar-macro">…</span>
+          <span class="dato-sub">% TNA · referencia plazo fijo</span>
+          <span class="dato-fuente">BCRA API v4</span>
+        </div>
+
+        <div class="dato-card">
+          <span class="dato-label">BAIBAR (call interbancario)</span>
+          <span class="dato-valor" id="t-baibar">…</span>
+          <span class="dato-sub">% TNA · hasta 15 días</span>
+          <span class="dato-fuente">BCRA API v4</span>
         </div>
 
       </div>
@@ -301,6 +349,7 @@ def generar_tablero():
           <span class="dato-valor" id="t-tcrm">…</span>
           <span class="dato-sub">Tipo de cambio real multilateral</span>
           <span class="dato-fuente">BCRA vía datos.gob.ar</span>
+          <a href="/tcrm/" class="dato-link">Ver perspectiva histórica →</a>
         </div>
 
       </div>
@@ -418,21 +467,7 @@ def generar_tablero():
 </main>
 
 <!-- PIE -->
-<footer class="pie">
-  <div class="contenedor">
-    <strong>PPA · Pulso Productivo Argentino</strong><br>
-    <span class="pie-bajada">Publicación económica · pulsoproductivo.com.ar</span>
-    <div class="pie-meta">
-      <a href="/">Portada</a> ·
-      <a href="/institucional/">Institucional</a> ·
-      <a href="/expectativas/">Expectativas</a> ·
-      <a href="/tablero/">Tablero</a> ·
-      <a href="/como-trabajamos.html">Cómo trabajamos</a> ·
-      <a href="/acerca.html">Acerca de</a>
-    </div>
-    <div class="pie-legal">Editor responsable: Sergio Falco</div>
-  </div>
-</footer>
+{comp.pie()}
 
 <script src="/assets/ppa.js"></script>
 <script src="/assets/tablero.js"></script>

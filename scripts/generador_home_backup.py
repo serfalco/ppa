@@ -1,7 +1,14 @@
 """
-PPA — generador_home.py v4
-HOME DENSA: columna principal con muchos títulos por bloques temáticos + sidebar columnas/stream.
-El clic en la home va a la sección interna de PPA (no directo a la fuente) → +1 página vista.
+PPA — generador_home.py v3
+Genera la home portal (/) con:
+  - Franja de datos vivos (ticker)
+  - Línea de edición: "Edición Desayuno 🧉 · Miércoles 28/05/2026 06:42"
+  - Menú achicado, alineado izquierda, separado con |
+  - Carrusel de datos clickeable
+  - Bloques: Lo que se dice / Columnas / Stream
+  - Encuesta lateral (desactivada por defecto)
+
+Lee la edición de variables de entorno: PPA_EDICION_NOMBRE, PPA_EDICION_ICONO
 """
 
 import json
@@ -17,11 +24,16 @@ from iconos import ICONO
 
 
 def limpiar_url(texto):
-    if not texto: return texto
-    t = re.sub(r'https?://\S+', '', str(texto))
-    t = re.sub(r'\b(Acced[eé]|Disponible|Ver|Leer|Más|Link|Enlace)[^.:]*[:]\\s*$', '', t, flags=re.IGNORECASE)
-    t = re.sub(r'\s{2,}', ' ', t)
-    t = re.sub(r'[\s·\-–—:]+$', '', t)
+    """Quita URLs pegadas en títulos/bajadas (vienen de RSS de Twitter:
+    'Accedé al informe en: https://www.bcra.gob.ar/...'). También limpia
+    'Accedé... en:' colgando y espacios dobles."""
+    if not texto:
+        return texto
+    t = re.sub(r'https?://\S+', '', str(texto))            # saca la URL
+    t = re.sub(r'\b(Acced[eé]|Disponible|Ver|Leer|Más|Link|Enlace)[^.:]*[:]\s*$',
+               '', t, flags=re.IGNORECASE)                  # saca "Accedé ... en:" colgando
+    t = re.sub(r'\s{2,}', ' ', t)                           # espacios dobles
+    t = re.sub(r'[\s·\-–—:]+$', '', t)                      # basura al final
     return t.strip()
 
 TZ_AR = timezone(timedelta(hours=-3))
@@ -29,33 +41,9 @@ MESES = ["enero","febrero","marzo","abril","mayo","junio",
          "julio","agosto","septiembre","octubre","noviembre","diciembre"]
 DIAS_SEMANA = ["Lunes","Martes","Miércoles","Jueves","Viernes","Sábado","Domingo"]
 
-JSON_PORTADA        = os.path.join(DIR_DATA, "portada.json")
-JSON_NOTAS_PROPIAS  = os.path.join(DIR_DATA, "notas_propias.json")
-JSON_COLUMNAS_PANEL = os.path.join(DIR_DATA, "columnas_manual.json")
-DIR_STREAM_NOTAS    = os.path.join(DIR_SITE, "stream", "notas")
-
-# Orden canónico de categorías en la home densa
-CATEGORIAS_HOME = [
-    "Macro", "Política", "Mercados", "Finanzas",
-    "Energía", "Agro", "Minería", "Comex",
-    "Laboral", "Automotor", "Logística", "Internacional",
-]
-
-# Iconos por categoría (usa los disponibles en iconos.py)
-ICONO_CAT = {
-    "Macro":         "macro",
-    "Política":      "politica",
-    "Mercados":      "mercado",
-    "Finanzas":      "finanzas",
-    "Energía":       "energia",
-    "Agro":          "agro",
-    "Minería":       "mineria",
-    "Comex":         "comex",
-    "Laboral":       "laboral",
-    "Automotor":     "automotor",
-    "Logística":     "logistica",
-    "Internacional": "internacional",
-}
+JSON_PORTADA       = os.path.join(DIR_DATA, "portada.json")
+JSON_NOTAS_PROPIAS = os.path.join(DIR_DATA, "notas_propias.json")
+DIR_STREAM_NOTAS   = os.path.join(DIR_SITE, "stream", "notas")
 
 
 def escapar(s):
@@ -66,49 +54,32 @@ def escapar(s):
 def fecha_legible(dt):
     return f"{DIAS_SEMANA[dt.weekday()]} {dt.day} de {MESES[dt.month-1]} de {dt.year}"
 
+def fecha_edicion(dt):
+    """Formato para la línea de edición: Miércoles 28/05/2026 06:42"""
+    return f"{DIAS_SEMANA[dt.weekday()]} {dt.strftime('%d/%m/%Y %H:%M')}"
+
 
 # =============================================================
 # CARGAR DATOS
 # =============================================================
 
 def cargar_institucional():
-    """Devuelve dict con 'destacados' (lista) y 'secciones' (dict cat → lista notas)."""
-    if not os.path.exists(JSON_PORTADA):
-        return {"destacados": [], "secciones": {}}
+    if not os.path.exists(JSON_PORTADA): return []
     try:
         with open(JSON_PORTADA,'r',encoding='utf-8') as f:
             data = json.load(f)
-        return {
-            "destacados": data.get("destacados", [])[:5],
-            "secciones":  data.get("secciones", {}),
-        }
-    except:
-        return {"destacados": [], "secciones": {}}
+        return data.get("destacados",[])[:4]
+    except: return []
 
 def cargar_columnas():
-    """Combina columnas del panel y de notas_propias. Devuelve las 4 más recientes."""
-    columnas = []
-    # Panel primero
-    if os.path.exists(JSON_COLUMNAS_PANEL):
-        try:
-            with open(JSON_COLUMNAS_PANEL,'r',encoding='utf-8') as f:
-                data = json.load(f)
-            columnas += data.get("columnas", [])
-        except: pass
-    # Respaldo notas_propias
-    if os.path.exists(JSON_NOTAS_PROPIAS):
-        try:
-            with open(JSON_NOTAS_PROPIAS,'r',encoding='utf-8') as f:
-                data = json.load(f)
-            respaldo = data.get("notas", data.get("columnas", []))
-            slugs = {c.get("slug") for c in columnas}
-            for c in respaldo:
-                if c.get("slug") not in slugs:
-                    columnas.append(c)
-        except: pass
-    columnas.sort(key=lambda c: c.get("fecha_publicacion",""), reverse=True)
-    return columnas[:4]
-
+    if not os.path.exists(JSON_NOTAS_PROPIAS): return []
+    try:
+        with open(JSON_NOTAS_PROPIAS,'r',encoding='utf-8') as f:
+            data = json.load(f)
+        columnas = data.get("notas",[])
+        columnas.sort(key=lambda c: c.get("fecha_publicacion",""), reverse=True)
+        return columnas[:4]
+    except: return []
 
 class MetaParser(HTMLParser):
     def __init__(self):
@@ -147,21 +118,106 @@ def cargar_stream():
 
 
 # =============================================================
-# CARRUSEL DE DATOS
+# BLOQUES HTML
 # =============================================================
 
+def bloque_institucional(notas):
+    if not notas:
+        return """
+    <section class="bloque-home">
+      <header class="bloque-header">
+        <span class="bloque-kicker">Institucional</span>
+        <h2><a href="/institucional/">La Data del día</a></h2>
+      </header>
+      <p class="bloque-vacio">Cargando contenido...</p>
+    </section>"""
+
+    items_html = []
+    for n in notas:
+        items_html.append(f"""
+      <article class="bloque-item">
+        <span class="item-cat">{escapar(n.get('categoria',''))}</span>
+        <h3><a href="{escapar(n['link'])}" target="_blank" rel="noopener">{escapar(limpiar_url(n['titulo']))}</a></h3>
+        <p class="item-fuente">{escapar(n['fuente_nombre'])}</p>
+      </article>""")
+
+    return f"""
+    <section class="bloque-home bloque-institucional">
+      <header class="bloque-header">
+        <span class="bloque-kicker">Institucional</span>
+        <h2><a href="/institucional/">La Data del día</a></h2>
+        <p class="bloque-sub">Lo más destacado de las instituciones, consultoras y centros de estudio</p>
+      </header>
+      <div class="bloque-items">
+        {''.join(items_html)}
+      </div>
+      <a href="/institucional/" class="bloque-link">Ver edición completa →</a>
+    </section>"""
+
+
+def bloque_columnas(columnas):
+    if not columnas: return ""
+    principal = columnas[0]
+    otras = columnas[1:4]
+    otras_html = ""
+    if otras:
+        items = [f'<li><a href="/columnas/{escapar(c.get("slug",""))}.html">{escapar(c["titulo"])}</a></li>' for c in otras]
+        otras_html = f'<ul class="bloque-otras">{"".join(items)}</ul>'
+    return f"""
+    <section class="bloque-home bloque-columnas">
+      <header class="bloque-header">
+        <span class="bloque-kicker">Columnas</span>
+        <h2><a href="/columnas/">Análisis y miradas</a></h2>
+        <p class="bloque-sub">Análisis y miradas estructurales de la economía argentina</p>
+      </header>
+      <article class="bloque-destacado">
+        <h3><a href="/columnas/{escapar(principal.get('slug',''))}.html">{escapar(principal['titulo'])}</a></h3>
+        <p>{escapar(principal.get('bajada',''))}</p>
+      </article>
+      {otras_html}
+      <a href="/columnas/" class="bloque-link">Todas las columnas →</a>
+    </section>"""
+
+
+def bloque_stream(notas):
+    if not notas: return ""
+    items_html = []
+    for n in notas:
+        items_html.append(f"""
+      <article class="bloque-item">
+        <span class="item-cat">{escapar(n.get('categoria','General'))}</span>
+        <h3><a href="/stream/notas/{escapar(n['slug'])}.html">{escapar(n['titulo'])}</a></h3>
+        <p class="item-fuente">{escapar(n.get('bajada',''))[:120]}</p>
+      </article>""")
+    return f"""
+    <section class="bloque-home bloque-stream">
+      <header class="bloque-header">
+        <span class="bloque-kicker">Stream</span>
+        <h2><a href="/stream/">Opiniones personales</a></h2>
+        <p class="bloque-sub">Miradas personales sobre participaciones en programas de streaming</p>
+      </header>
+      <div class="bloque-items">
+        {''.join(items_html)}
+      </div>
+      <a href="/stream/" class="bloque-link">Todas las notas →</a>
+    </section>"""
+
+
 def carrusel_datos():
+    """Carrusel horizontal de datos que corre solo y linkea al Tablero.
+    Riesgo País primero y destacado. El resto de los datos a continuación."""
+    # (id, título, href, destacada)  — orden = orden de aparición
     tarjetas = [
         ("tarjeta-riesgo",        "RIESGO PAÍS",   "/tablero/#mercado",  True),
         ("tarjeta-dolar-oficial", "DÓLAR OFICIAL", "/tablero/#dolares",  False),
         ("tarjeta-dolar-mep",     "DÓLAR MEP",     "/tablero/#dolares",  False),
         ("tarjeta-dolar-ccl",     "DÓLAR CCL",     "/tablero/#dolares",  False),
         ("tarjeta-dolar-blue",    "DÓLAR BLUE",    "/tablero/#dolares",  False),
-        ("tarjeta-merval",        "MERVAL",         "/tablero/#mercado",  False),
+        ("tarjeta-merval",        "MERVAL",        "/tablero/#mercado",  False),
         ("tarjeta-reservas",      "RESERVAS BCRA", "/tablero/#mercado",  False),
         ("tarjeta-brecha",        "BRECHA MEP",    "/tablero/#dolares",  False),
         ("tarjeta-ipc",           "IPC MENSUAL",   "/tablero/#macro",    False),
-        ("tarjeta-emae",          "EMAE",           "/tablero/#macro",    False),
+        ("tarjeta-emae",          "EMAE",          "/tablero/#macro",    False),
     ]
     cards_html = []
     for id_, titulo, href, destacada in tarjetas:
@@ -173,8 +229,9 @@ def carrusel_datos():
         <span class="tarjeta-var"></span>
         <span class="tarjeta-hora"></span>
       </a>""")
+    # Tarjeta especial de BANDA CAMBIARIA (termómetro), va al final
     tarjeta_banda = f"""
-      <a href="/tablero/#dolares" class="tarjeta-dato tarjeta-banda" id="tarjeta-banda" title="Banda cambiaria">
+      <a href="/tablero/#dolares" class="tarjeta-dato tarjeta-banda" id="tarjeta-banda" title="Banda cambiaria — ver en Tablero">
         <span class="tarjeta-titulo">{ICONO['banda']}Banda cambiaria</span>
         <div class="banda-term">
           <div class="banda-barra"><div class="banda-marcador" id="banda-marcador"></div></div>
@@ -197,159 +254,21 @@ def carrusel_datos():
 
 
 # =============================================================
-# HOME DENSA — bloques temáticos
-# =============================================================
-
-def bloque_destacados(notas):
-    """Los 3-5 destacados del día: título grande + fuente. Van arriba del todo."""
-    if not notas: return ""
-    items = []
-    for i, n in enumerate(notas):
-        titulo = escapar(limpiar_url(n.get("titulo","")))
-        fuente = escapar(n.get("fuente_nombre",""))
-        cat    = escapar(n.get("categoria",""))
-        link_interno = f"/institucional/"
-        clase = "dest-principal" if i == 0 else "dest-secundario"
-        items.append(f"""
-      <article class="dest-item {clase}">
-        <span class="dest-cat">{cat}</span>
-        <h2 class="dest-titulo"><a href="{link_interno}">{titulo}</a></h2>
-        <span class="dest-fuente">{fuente}</span>
-      </article>""")
-    return f"""
-<div class="home-destacados">
-  <div class="dest-label">LO MÁS IMPORTANTE</div>
-  <div class="dest-lista">
-    {''.join(items)}
-  </div>
-</div>"""
-
-
-def bloque_categoria(cat, notas, max_notas=6):
-    """Un bloque temático: título de sección + lista de títulos."""
-    if not notas: return ""
-    icono_key = ICONO_CAT.get(cat, "")
-    icono_html = ICONO.get(icono_key, "") if icono_key else ""
-    cat_slug = cat.lower().replace(" ", "-").replace("é","e").replace("í","i").replace("ó","o")
-    link_seccion = f"/institucional/#{cat_slug}"
-
-    items = []
-    for n in notas[:max_notas]:
-        titulo = escapar(limpiar_url(n.get("titulo","")))
-        fuente = escapar(n.get("fuente_nombre",""))
-        # El clic va a la sección interna, no directo a la fuente
-        items.append(f"""
-        <li class="cat-item">
-          <a href="{link_seccion}" class="cat-titulo">{titulo}</a>
-          <span class="cat-fuente">{fuente}</span>
-        </li>""")
-
-    return f"""
-<div class="home-bloque-cat">
-  <div class="cat-header">
-    <span class="cat-icono">{icono_html}</span>
-    <a href="{link_seccion}" class="cat-nombre">{escapar(cat)}</a>
-  </div>
-  <ul class="cat-lista">
-    {''.join(items)}
-  </ul>
-</div>"""
-
-
-def columna_principal(institucional):
-    """La columna gruesa: destacados + grilla de bloques por categoría."""
-    destacados = institucional.get("destacados", [])
-    secciones  = institucional.get("secciones", {})
-
-    bloques_cats = []
-    for cat in CATEGORIAS_HOME:
-        notas = secciones.get(cat, [])
-        if notas:
-            bloques_cats.append(bloque_categoria(cat, notas))
-
-    # Si no hay ninguna categoría del orden canónico, mostrar lo que haya
-    if not bloques_cats:
-        for cat, notas in secciones.items():
-            if cat not in CATEGORIAS_HOME and notas:
-                bloques_cats.append(bloque_categoria(cat, notas))
-
-    bloques_html = "".join(bloques_cats) if bloques_cats else """
-<div class="home-vacio">
-  <p>Cargando la edición…</p>
-</div>"""
-
-    return f"""
-<div class="home-col-principal">
-  <div class="col-header">
-    <span class="col-kicker">LA DATA DEL DÍA</span>
-    <a href="/institucional/" class="col-ver-todo">Edición completa →</a>
-  </div>
-  {bloque_destacados(destacados)}
-  <div class="home-cats-grid">
-    {bloques_html}
-  </div>
-</div>"""
-
-
-def sidebar_columnas(columnas):
-    if not columnas: return ""
-    items = []
-    for c in columnas:
-        titulo = escapar(c.get("titulo",""))
-        bajada = escapar(c.get("bajada",""))
-        slug   = escapar(c.get("slug",""))
-        autor  = escapar(c.get("autor",""))
-        items.append(f"""
-    <article class="sb-item">
-      <h3 class="sb-titulo"><a href="/columnas/{slug}.html">{titulo}</a></h3>
-      {f'<p class="sb-bajada">{bajada}</p>' if bajada else ''}
-      {f'<span class="sb-fuente">{autor}</span>' if autor else ''}
-    </article>""")
-    return f"""
-<div class="sidebar-bloque sidebar-columnas">
-  <div class="sb-header">
-    <span class="sb-kicker">Columnas</span>
-    <a href="/columnas/" class="sb-link">Ver todas →</a>
-  </div>
-  {''.join(items)}
-</div>"""
-
-
-def sidebar_stream(notas):
-    if not notas: return ""
-    items = []
-    for n in notas:
-        titulo = escapar(n.get("titulo",""))
-        slug   = escapar(n.get("slug",""))
-        cat    = escapar(n.get("categoria",""))
-        items.append(f"""
-    <article class="sb-item">
-      <span class="sb-cat">{cat}</span>
-      <h3 class="sb-titulo"><a href="/stream/notas/{slug}.html">{titulo}</a></h3>
-    </article>""")
-    return f"""
-<div class="sidebar-bloque sidebar-stream">
-  <div class="sb-header">
-    <span class="sb-kicker">Stream</span>
-    <a href="/stream/" class="sb-link">Ver todo →</a>
-  </div>
-  {''.join(items)}
-</div>"""
-
-
-# =============================================================
 # GENERAR HOME
 # =============================================================
 
 def generar_home():
     ahora_ar = datetime.now(TZ_AR)
 
+    # Edición: lee variable de entorno o detecta por hora
     edicion_nombre = os.environ.get("PPA_EDICION_NOMBRE", "")
     edicion_icono  = os.environ.get("PPA_EDICION_ICONO", "")
     if not edicion_nombre:
         edicion_nombre = "Desayuno" if ahora_ar.hour < 14 else "Merienda"
         edicion_icono  = "🧉" if edicion_nombre == "Desayuno" else "☕"
 
+    # Solo "Edición Desayuno 🧉" — sin fecha ni hora (la fecha ya está en el ticker;
+    # la hora confundía: a las 18hs mostraba "10:18" y parecía desactualizado).
     linea_edicion = f"Edición {edicion_nombre} {edicion_icono}"
 
     institucional = cargar_institucional()
@@ -379,10 +298,19 @@ def generar_home():
 <div class="franja-datos">
   <div class="contenedor franja-flex">
     <span class="fecha-mini">{escapar(fecha_legible(ahora_ar))}</span>
+    <span class="dato-mini" id="clima-widget"></span>
     <span class="dato-mini">USD <span id="dolar-oficial">…</span></span>
     <span class="dato-mini">MEP <span id="dolar-mep">…</span></span>
     <span class="dato-mini" id="merval-item">Merval <span id="merval">…</span></span>
     <span class="dato-mini">Riesgo <span id="riesgo-pais">…</span></span>
+  </div>
+</div>
+
+<!-- MARQUESINA FULBITO -->
+<div class="marquesina-fulbito" id="fulbito-bar" style="display:none">
+  <div class="contenedor">
+    <span class="fulbito-label">⚽ Fulbito hoy</span>
+    <div class="fulbito-scroll" id="fulbito-partidos"></div>
   </div>
 </div>
 
@@ -413,21 +341,24 @@ def generar_home():
 <!-- CARRUSEL DE DATOS -->
 {carrusel_datos()}
 
-<!-- CONTENIDO: columna principal + sidebar -->
+<!-- CONTENIDO PRINCIPAL + ENCUESTA -->
 <main class="home-main">
-  <div class="contenedor home-layout-densa">
+  <div class="contenedor home-layout">
 
-    {columna_principal(institucional)}
+    <!-- BLOQUES EDITORIALES -->
+    <div class="home-grid">
+      {bloque_institucional(institucional)}
+      {bloque_columnas(columnas)}
+      {bloque_stream(stream)}
+    </div>
 
-    <aside class="home-sidebar">
-      {sidebar_columnas(columnas)}
-      {sidebar_stream(stream)}
-    </aside>
+    <!-- ENCUESTA LATERAL (desactivada por defecto) -->
+    <!-- ENCUESTA_PLACEHOLDER -->
 
   </div>
 </main>
 
-<!-- CINTA DE CATEGORÍAS -->
+<!-- CINTA DE CATEGORÍAS (al pie, después de las notas) -->
 <nav class="nav-cats-cinta">
   <div class="contenedor nav-cats-scroll">
     <a href="/institucional/#macro">{ICONO['macro']}<span>Macro</span></a>
@@ -470,13 +401,13 @@ def generar_home():
     os.makedirs(DIR_SITE, exist_ok=True)
     with open(out,'w',encoding='utf-8') as f:
         f.write(html)
-    print(f"[PPA Home v4] Generada: {out} — Edición {edicion_nombre} {edicion_icono}")
+    print(f"[PPA Home v3] Generada: {out} — Edición {edicion_nombre} {edicion_icono}")
 
 
 def main():
-    print(f"[PPA Home v4] Inicio: {datetime.now(timezone.utc).isoformat()}")
+    print(f"[PPA Home v3] Inicio: {datetime.now(timezone.utc).isoformat()}")
     generar_home()
-    print(f"[PPA Home v4] Fin")
+    print(f"[PPA Home v3] Fin")
 
 if __name__ == "__main__":
     main()

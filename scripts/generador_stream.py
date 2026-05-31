@@ -25,6 +25,7 @@ from html.parser import HTMLParser
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from config import DIR_DATA, DIR_SITE
+import componentes as comp
 
 DIR_STREAM = os.path.join(DIR_SITE, "stream")
 DIR_STREAM_NOTAS = os.path.join(DIR_STREAM, "notas")
@@ -198,12 +199,7 @@ def generar_indice(notas):
 </head>
 <body class="body-stream">
 
-<div class="barra-superior">
-  <div class="contenedor">
-    <span class="fecha-barra">PPA · Blog Stream</span>
-    <span><a href="/" style="color:inherit">Volver a portada →</a></span>
-  </div>
-</div>
+{comp.franja_datos()}
 
 <header class="stream-header">
   <div class="contenedor">
@@ -216,16 +212,7 @@ def generar_indice(notas):
   </div>
 </header>
 
-<nav class="stream-nav">
-  <div class="contenedor">
-    <a href="/" class="nav-link">Portada</a>
-    <a href="/institucional/" class="nav-link">Institucional</a>
-    <a href="/expectativas/" class="nav-link">Expectativas</a>
-    <a href="/documentos/" class="nav-link">Documentos</a>
-    <a href="/columnas/" class="nav-link">Columnas</a>
-    <a href="/stream/" class="nav-link activo">Stream</a>
-  </div>
-</nav>
+{comp.nav_principal("Stream")}
 
 <main class="stream-main">
   <div class="contenedor">
@@ -233,22 +220,7 @@ def generar_indice(notas):
   </div>
 </main>
 
-<footer class="pie">
-  <div class="contenedor">
-    <strong>PPA · Pulso Productivo Argentino</strong><br>
-    <span class="pie-bajada">Publicación económica</span>
-    <div class="pie-meta">
-      <a href="/">Portada</a> ·
-      <a href="/institucional/">Institucional</a> ·
-      <a href="/expectativas/">Expectativas</a> ·
-      <a href="/documentos/">Documentos</a> ·
-      <a href="/columnas/">Columnas</a> ·
-      <a href="/stream/">Stream</a> ·
-      <a href="/como-trabajamos.html">Cómo trabajamos</a>
-    </div>
-    <div class="pie-legal">Editor responsable: Sergio Falco</div>
-  </div>
-</footer>
+{comp.pie()}
 
 </body>
 </html>"""
@@ -333,21 +305,9 @@ def generar_notas_desde_panel():
 </head>
 <body class="body-stream">
 
-<div class="barra-superior">
-  <div class="contenedor">
-    <span class="fecha-barra">PPA · Blog Stream</span>
-    <span><a href="/stream/" style="color:inherit">Todas las notas →</a></span>
-  </div>
-</div>
+{comp.franja_datos()}
 
-<nav class="stream-nav">
-  <div class="contenedor">
-    <a href="/" class="nav-link">Portada</a>
-    <a href="/institucional/" class="nav-link">Institucional</a>
-    <a href="/columnas/" class="nav-link">Columnas</a>
-    <a href="/stream/" class="nav-link activo">Stream</a>
-  </div>
-</nav>
+{comp.nav_principal("Stream")}
 
 <article class="stream-nota">
   <a href="/stream/" class="stream-nota-volver">← Todas las notas</a>

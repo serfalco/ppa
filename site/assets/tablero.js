@@ -92,13 +92,50 @@
     if (rp)  set('t-riesgo', num(rp.valor) + ' pb', rp.stale);
     if (res) { set('t-reservas', millones(res.valor), res.stale);
                set('t-reservas-macro', millones(res.valor), res.stale); }
+
+    // ---- MULC (BCRA compró/vendió en el mercado) ----
+    const mulc = d(datos, 'mulc');
+    const mulcLabel = document.getElementById('t-mulc-label');
+    const mulcMonto = document.getElementById('t-mulc-monto');
+    if (mulc && mulc.valor && mulc.valor.operacion && mulcLabel) {
+      const op = mulc.valor.operacion.toLowerCase();
+      const monto = mulc.valor.monto;
+      const unidad = mulc.unidad || 'MM USD';
+      const esCompra = op.includes('compr');
+      mulcLabel.textContent = (esCompra ? '🟢 Compró' : '🔴 Vendió') + ' US$ ' + monto + ' M';
+      mulcLabel.className = 'bcra-mulc ' + (esCompra ? 'compro' : 'vendio');
+      if (mulcMonto) mulcMonto.textContent = unidad + (mulc.stale ? ' *' : '');
+    } else if (mulcLabel) {
+      mulcLabel.textContent = 's/d';
+    }
+
     // bonos AL30/GD30/GD35: pendientes de BYMA EOD -> quedan en s/d
 
-    // ---- MACRO ----
-    const ipc = d(datos,'ipc_mensual'), emae = d(datos,'emae');
+    // ---- MACRO + BCRA monetario ----
+    const ipc  = d(datos,'ipc_mensual'), emae = d(datos,'emae'),
+          bm   = d(datos,'base_monetaria'),
+          m2   = d(datos,'m2_privado'),
+          circ = d(datos,'circulacion'),
+          badl = d(datos,'badlar'),
+          baib = d(datos,'call_baibar');
+
+    if (bm)   set('t-base-monetaria', millones(bm.valor)   + ' M$', bm.stale);
+    if (m2)   set('t-m2-privado',     millones(m2.valor)   + ' M$', m2.stale);
+    if (circ) set('t-circulacion',    millones(circ.valor) + ' M$', circ.stale);
+
+    // BADLAR: aparece en el bloque BCRA (t-badlar) y en Macro (t-badlar-macro)
+    if (badl) {
+      const badlStr = num(badl.valor, 2) + '%';
+      set('t-badlar',       badlStr, badl.stale);
+      set('t-badlar-macro', badlStr, badl.stale);
+    }
+    if (baib) set('t-baibar', num(baib.valor, 2) + '%', baib.stale);
     if (ipc) { set('t-ipc-mensual', pct(ipc.valor), ipc.stale);
                if (ipc.periodo) set('t-ipc-mensual-fecha', ipc.periodo); }
     if (emae) set('t-emae', num(emae.valor,1), emae.stale);
+
+    const uva = d(datos,'uva');
+    if (uva) set('t-uva', num(uva.valor, 2), uva.stale);
 
     // ---- SECTOR EXTERNO ----
     const exp = d(datos,'exportaciones'), imp = d(datos,'importaciones'),

@@ -17,7 +17,8 @@ import sys
 from datetime import datetime, timezone, timedelta
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from config import DIR_DATA, DIR_SITE, FUENTES
+from config import DIR_DATA, DIR_SITE
+import componentes as comp, FUENTES
 
 JSON_NOTAS = os.path.join(DIR_DATA, "notas.json")
 DIR_EXPECTATIVAS = os.path.join(DIR_SITE, "expectativas")
@@ -250,12 +251,7 @@ def generar_expectativas():
 </head>
 <body>
 
-<div class="barra-superior">
-  <div class="contenedor">
-    <span class="fecha-barra">PPA · Expectativas de mercado</span>
-    <span><a href="/" style="color:inherit">Volver a portada →</a></span>
-  </div>
-</div>
+{comp.franja_datos()}
 
 <header class="exp-header">
   <div class="contenedor">
@@ -269,16 +265,7 @@ def generar_expectativas():
   </div>
 </header>
 
-<nav class="exp-nav">
-  <div class="contenedor">
-    <a href="/">Portada</a>
-    <a href="/institucional/">Institucional</a>
-    <a href="/expectativas/" class="activo">Expectativas</a>
-    <a href="/documentos/">Documentos</a>
-    <a href="/columnas/">Columnas</a>
-    <a href="/stream/">Stream</a>
-  </div>
-</nav>
+{comp.nav_principal("Expectativas")}
 
 <main class="exp-page">
   <div class="exp-layout">
@@ -292,17 +279,7 @@ def generar_expectativas():
   </div>
 </main>
 
-<footer class="pie">
-  <div class="contenedor">
-    <strong>PPA · Pulso Productivo Argentino</strong><br>
-    <span class="pie-bajada">Publicación económica</span>
-    <div class="pie-meta">
-      <a href="/">Portada</a> ·
-      <a href="/como-trabajamos.html">Cómo trabajamos</a> ·
-      <a href="/acerca.html">Acerca de</a>
-    </div>
-  </div>
-</footer>
+{comp.pie()}
 
 </body>
 </html>"""
