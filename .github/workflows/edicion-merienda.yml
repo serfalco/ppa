@@ -22,7 +22,7 @@ permissions:
 jobs:
   generar-edicion:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 20
 
     steps:
       - name: Checkout
@@ -42,7 +42,6 @@ jobs:
       - name: Detectar edición
         id: edicion
         run: |
-          # Determinar qué edición es según la hora UTC
           HORA=$(date -u +%H)
           MIN=$(date -u +%M)
           INPUT="${{ github.event.inputs.edicion }}"
@@ -94,7 +93,15 @@ jobs:
 
       - name: Generador - Tablero PPA
         run: python scripts/generador_tablero.py
-        continue-on-error: true  # si todavía no existe, no rompe el deploy
+        continue-on-error: true
+
+      - name: Generador - TCRM histórico
+        run: python scripts/generador_tcrm.py
+        continue-on-error: true
+
+      - name: Generador - Tuits institucionales
+        run: python scripts/generador_tuits.py
+        continue-on-error: true
 
       - name: Generador - Home portal
         env:
