@@ -66,6 +66,12 @@ jobs:
       - name: Datos económicos (completo, incluye mensuales)
         run: python scripts/datos_economicos.py
 
+      - name: Resumidor - Generar resúmenes con Gemini
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: python scripts/resumidor.py
+        continue-on-error: true
+
       - name: Generador - La Data del Día
         run: python scripts/generador_la_data.py
 
