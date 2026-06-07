@@ -90,8 +90,10 @@
       if (it) it.style.display = 'none';   // sin dato → no mostrar "Merval ..." cortado
     }
     if (rp) {
-      pintar('riesgo-pais', fmtNumero(rp.valor), rp.stale, ' pb');
-      pintar('m-riesgo', fmtNumero(rp.valor), rp.stale, ' pb');
+      const rpStr = fmtNumero(rp.valor) + ' pb';
+      pintar('riesgo-pais',        fmtNumero(rp.valor), rp.stale, ' pb');
+      pintar('riesgo-pais-ticker', rpStr, rp.stale);
+      pintar('m-riesgo',           rpStr, rp.stale);
     }
   }
 
