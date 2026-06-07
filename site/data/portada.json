@@ -1,5 +1,651 @@
 {
-  "generado_en": "2026-06-07T21:42:36.771192+00:00",
-  "destacados": [],
-  "secciones": {}
+  "generado_en": "2026-06-07T21:59:54.255758+00:00",
+  "destacados": [
+    {
+      "id": "888dcf67883b",
+      "titulo": "Oficial | Ciudad de México, Tijuana y Monterrey multará a todos los conductores que no presenten este trámite vehicular antes del 30 de junio",
+      "link": "https://www.cronista.com/mexico/finanzas-economia/oficial-ciudad-de-mexico-tijuana-y-monterrey-multara-a-todos-los-conductores-que-no-presenten-este-tramite-vehicular-antes-del-30-de-junio/",
+      "descripcion": "Las tres ciudades más transitadas de México aplicarán multas de casi 10,000 pesos a todos los conductores que no realicen los trámites obligatorios antes de fin de mes. Conoce los detalles.",
+      "fecha_publicacion": "2026-06-07T21:48:00+00:00",
+      "fuente_id": "cronista",
+      "fuente_nombre": "El Cronista",
+      "categoria": "Macro"
+    },
+    {
+      "id": "5f60db29cc81",
+      "titulo": "UBS responde las principales preguntas sobre las salidas del KOSPI y el KRW",
+      "link": "https://es.investing.com/news/economy-news/ubs-responde-las-principales-preguntas-sobre-las-salidas-del-kospi-y-el-krw-3693773",
+      "descripcion": "",
+      "fecha_publicacion": "2026-06-07T16:03:24+00:00",
+      "fuente_id": "investing_eco",
+      "fuente_nombre": "Investing Economía",
+      "categoria": "Mercados"
+    },
+    {
+      "id": "d9116830a37a",
+      "titulo": "Viernes negro en el mundo, con impacto más acotado en Argentina",
+      "link": "https://eleconomista.com.ar/finanzas/viernes-negro-mundo-impacto-mas-acotado-argentina-n95558",
+      "descripcion": "Una conjunción de factores (mal balance de una empresa clave de IA, más inflación en Europa y mucha creación de empleo en EE.UU.) plantó un viernes negro en los mercados del mundo. El índice Nasdaq, donde están las tecnológicas, sufrió la peor caída diaria desde que Trump anunció los aranceles en abril de 2025. Subió fuerte el dólar afuera, sobre todo en Brasil, México y Chile. En Argentina los dólares estuvieron sostenidos, pero con subas menores. El BCRA compró dólares, pero perdió reservas. L",
+      "fecha_publicacion": "2026-06-05T22:32:00+00:00",
+      "fuente_id": "eleconomista",
+      "fuente_nombre": "El Economista Finanzas",
+      "categoria": "Finanzas"
+    }
+  ],
+  "secciones": {
+    "Internacional": [
+      {
+        "id": "a19e0b9d4330",
+        "titulo": "Fondos internacionales multiplican por cuatro el peso de empresas españolas en diez años",
+        "link": "http://www.eleconomista.es/mercados-cotizaciones/noticias/13957677/06/26/fondos-internacionales-multiplican-por-cuatro-el-peso-de-empresas-espanolas-en-diez-anos.html",
+        "descripcion": "Los fondos internacionales han multiplicado por cuatro el tamaño de sus carteras de participadas en España en los últimos diez años y, a cierre de 2025, el volumen alcanzado era de 37.825 millones de euros, repartidos en 935 inversiones.",
+        "fecha_publicacion": "2026-06-07T21:59:23.894661+00:00",
+        "fuente_id": "eleconomista_es",
+        "fuente_nombre": "El Economista España",
+        "categoria": "Internacional"
+      },
+      {
+        "id": "880ffdae28e5",
+        "titulo": "Si el retorno de la inversión en IA no se materializa, los mercados se hundirán, prevé Capital Group",
+        "link": "http://www.eleconomista.es/mercados-cotizaciones/noticias/13958062/06/26/si-el-retorno-de-la-inversion-en-ia-no-se-materializa-los-mercados-se-hundiran-preve-capital-group.html",
+        "descripcion": "La gestora de inversión y fondos privados Capital Group prevé que en el caso de que el retorno de la inversión en Inteligencia Artificial (IA) por parte de las empresas no se materialice a medio plazo los mercados bursátiles se hundirán.",
+        "fecha_publicacion": "2026-06-07T21:59:23.894640+00:00",
+        "fuente_id": "eleconomista_es",
+        "fuente_nombre": "El Economista España",
+        "categoria": "Internacional"
+      },
+      {
+        "id": "5ed9f1188d51",
+        "titulo": "La OPEP+ aprueba un nuevo incremento en su cuota de producción de 188.000 barriles diarios",
+        "link": "http://www.eleconomista.es/mercados-cotizaciones/noticias/13958068/06/26/la-opep-aprueba-un-nuevo-incremento-en-su-cuota-de-produccion-de-188000-barriles-diarios.html",
+        "descripcion": "La alianza OPEP+, liderada por Arabia Saudí y Rusia, aprobó este domingo un cuarto aumento consecutivo de sus cuotas de producción, al aprobar un incremento de 188.000 barriles diarios (bd) para julio, pese a que el cierre del estrecho de Ormuz por la guerra de EEUU e Israel contra Irán dificulta subir las exportaciones de crudo.",
+        "fecha_publicacion": "2026-06-07T21:59:23.894604+00:00",
+        "fuente_id": "eleconomista_es",
+        "fuente_nombre": "El Economista España",
+        "categoria": "Internacional"
+      },
+      {
+        "id": "a47a102283bf",
+        "titulo": "Mientras SpaceX se prepara para su debut en la bolsa, Rusia lanzará su propia versión de Starlink",
+        "link": "https://eleconomista.com.ar/internacional/mientras-spacex-prepara-su-debut-bolsa-rusia-lanzara-su-propia-version-starlink-n95557",
+        "descripcion": "La empresa de Elon Musk debutará en la bolsa próximamente",
+        "fecha_publicacion": "2026-06-05T21:08:00+00:00",
+        "fuente_id": "eleconomista_i",
+        "fuente_nombre": "El Economista Internacional",
+        "categoria": "Internacional"
+      },
+      {
+        "id": "3972e66ad25f",
+        "titulo": "Perú: quién lidera los sondeos de cara al balotaje del domingo",
+        "link": "https://eleconomista.com.ar/internacional/peru-quien-lidera-sondeos-cara-balotaje-domingo-n95555",
+        "descripcion": "Este domingo, Keiko Fujimori y Roberto Sánchez irán en busca de la presidencia",
+        "fecha_publicacion": "2026-06-05T21:02:00+00:00",
+        "fuente_id": "eleconomista_i",
+        "fuente_nombre": "El Economista Internacional",
+        "categoria": "Internacional"
+      },
+      {
+        "id": "8f44a10d898a",
+        "titulo": "Junio, mes de balotajes en Colombia y Perú",
+        "link": "https://eleconomista.com.ar/internacional/junio-mes-balotajes-colombia-peru-n95525",
+        "descripcion": "Mientras que este domingo Fujimori y Sánchez competirán por la presidencia de Perú, de la Espriella y Cepeda lo harán por la de Colombia el 21 de junio",
+        "fecha_publicacion": "2026-06-05T20:04:00+00:00",
+        "fuente_id": "eleconomista_i",
+        "fuente_nombre": "El Economista Internacional",
+        "categoria": "Internacional"
+      }
+    ],
+    "Macro": [
+      {
+        "id": "888dcf67883b",
+        "titulo": "Oficial | Ciudad de México, Tijuana y Monterrey multará a todos los conductores que no presenten este trámite vehicular antes del 30 de junio",
+        "link": "https://www.cronista.com/mexico/finanzas-economia/oficial-ciudad-de-mexico-tijuana-y-monterrey-multara-a-todos-los-conductores-que-no-presenten-este-tramite-vehicular-antes-del-30-de-junio/",
+        "descripcion": "Las tres ciudades más transitadas de México aplicarán multas de casi 10,000 pesos a todos los conductores que no realicen los trámites obligatorios antes de fin de mes. Conoce los detalles.",
+        "fecha_publicacion": "2026-06-07T21:48:00+00:00",
+        "fuente_id": "cronista",
+        "fuente_nombre": "El Cronista",
+        "categoria": "Macro"
+      },
+      {
+        "id": "052a51f5e03f",
+        "titulo": "Las provincias del norte y Cuyo lideran la mora y duplican los niveles de la Ciudad",
+        "link": "https://www.lanacion.com.ar/economia/las-provincias-del-norte-y-cuyo-lideran-la-mora-y-duplican-los-niveles-de-la-ciudad-nid07062026/",
+        "descripcion": "San Juan, La Rioja y Catamarca encabezan el ranking de incumplimientos, mientras que la Ciudad de Buenos Aires exhibe la menor proporción de deudores con atrasos; fuertes diferencias dentro de la provincia de Buenos Aires, con tasas más elevadas en el conurbano",
+        "fecha_publicacion": "2026-06-07T21:41:56+00:00",
+        "fuente_id": "lanacion",
+        "fuente_nombre": "La Nación Economía",
+        "categoria": "Macro"
+      },
+      {
+        "id": "b5153dc679f1",
+        "titulo": "Crece la cobertura cambiaria de privados: inversores anticipan trade electoral",
+        "link": "https://www.cronista.com/finanzas-mercados/crece-la-cobertura-cambiaria-de-privados-inversores-anticipan-trade-electoral/",
+        "descripcion": "",
+        "fecha_publicacion": "2026-06-07T21:39:00+00:00",
+        "fuente_id": "cronista",
+        "fuente_nombre": "El Cronista",
+        "categoria": "Macro"
+      },
+      {
+        "id": "2787557e0f71",
+        "titulo": "Cuánto sale esquiar en Bariloche en 2026: precios del ascenso, ropa y equipo",
+        "link": "https://www.ambito.com/economia/cuanto-sale-esquiar-bariloche-2026-precios-del-ascenso-ropa-y-equipo-n6285348",
+        "descripcion": "De cara a las vacaciones de invierno, la ciudad más popular del sur argentino es una de las alternativas más visitadas y estos son sus precios.",
+        "fecha_publicacion": "2026-06-07T21:30:00+00:00",
+        "fuente_id": "ambito",
+        "fuente_nombre": "Ámbito Financiero",
+        "categoria": "Macro"
+      },
+      {
+        "id": "c974f495f6d0",
+        "titulo": "La mora alcanza a 5,3 millones de personas: casi 3 de cada 10 deudores tienen atrasos",
+        "link": "https://www.lanacion.com.ar/economia/la-mora-alcanza-a-53-millones-de-personas-casi-3-de-cada-10-deudores-tienen-atrasos-nid07062026/",
+        "descripcion": "El 26,9% de quienes tienen algún crédito registra incumplimientos de más de 90 días; la situación es especialmente crítica entre los argentinos de 18 a 30 años, en un contexto de deterioro de la inserción laboral",
+        "fecha_publicacion": "2026-06-07T20:50:43+00:00",
+        "fuente_id": "lanacion",
+        "fuente_nombre": "La Nación Economía",
+        "categoria": "Macro"
+      },
+      {
+        "id": "f56dafda2c67",
+        "titulo": "Su empresa no daba suficiente plata y tomaron una decisión que cambió el rumbo",
+        "link": "https://www.lanacion.com.ar/economia/campo/su-empresa-no-daba-suficiente-plata-y-tomaron-una-decision-que-cambio-el-rumbo-nid07062026/",
+        "descripcion": "En Córdoba, la familia Monzoni pasó de un tambo tradicional a un sistema dry lot; los detalles",
+        "fecha_publicacion": "2026-06-07T20:22:21+00:00",
+        "fuente_id": "lanacion",
+        "fuente_nombre": "La Nación Economía",
+        "categoria": "Macro"
+      },
+      {
+        "id": "46f2a16ee42b",
+        "titulo": "Supermercados y beneficios: cómo ahorrar en las compras de este domingo 7 de junio",
+        "link": "https://www.ambito.com/economia/supermercados-y-beneficios-como-ahorrar-las-compras-este-domingo-7-junio-n6285212",
+        "descripcion": "La cadena mantiene ofertas para usuarios adheridos a su programa de fidelización y suma promociones, según el medio de pago.",
+        "fecha_publicacion": "2026-06-07T14:00:00+00:00",
+        "fuente_id": "ambito",
+        "fuente_nombre": "Ámbito Financiero",
+        "categoria": "Macro"
+      },
+      {
+        "id": "a14cfee71595",
+        "titulo": "Clave para las reservas: Santiago Bausili viaja a China para negociar la renovación del swap",
+        "link": "https://www.ambito.com/economia/clave-las-reservas-santiago-bausili-viaja-china-asegurar-la-continuidad-del-swap-n6286025",
+        "descripcion": "El titular del Banco Central (BCRA) emprenderá un nuevo viaje al gigante asiático para renovar el préstamo negociado en 2009, que tiene su vencimiento en agosto.",
+        "fecha_publicacion": "2026-06-07T13:32:00+00:00",
+        "fuente_id": "ambito",
+        "fuente_nombre": "Ámbito Financiero",
+        "categoria": "Macro"
+      }
+    ],
+    "Fulbito": [
+      {
+        "id": "b7184b838294",
+        "titulo": "Los juveniles de Estudiantes que podrían salir a préstamo en este mercado de pases",
+        "link": "https://www.0221.com.ar/estudiantes/los-juveniles-estudiantes-que-podrian-salir-prestamo-este-mercado-pases-n129234",
+        "descripcion": "Con el cierre de la primera parte del año, Alexander Medina evaluará el plantel de Estudiantes y debe definir el futuro de los jugadores que no tuvo en cuenta.",
+        "fecha_publicacion": "2026-06-07T21:24:00+00:00",
+        "fuente_id": "pincha",
+        "fuente_nombre": "0221 Estudiantes",
+        "categoria": "Fulbito"
+      },
+      {
+        "id": "ffc4bd604f40",
+        "titulo": "Con Gabriel Rojas cerca de irse, Racing apunta a Gastón Benedetti para reforzar su defensa",
+        "link": "https://www.0221.com.ar/estudiantes/con-gabriel-rojas-cerca-irse-racing-apunta-gaston-benedetti-reforzar-su-defensa-n129227",
+        "descripcion": "Racing inició contactos para conocer la situación de Gastón Benedetti y analiza avanzar por el defensor de Estudiantes en este mercado de pases.",
+        "fecha_publicacion": "2026-06-07T17:51:00+00:00",
+        "fuente_id": "pincha",
+        "fuente_nombre": "0221 Estudiantes",
+        "categoria": "Fulbito"
+      },
+      {
+        "id": "caa2606e57c9",
+        "titulo": "Un jugador promesa de Estudiantes fue sondeado por un grande de Brasil",
+        "link": "https://www.0221.com.ar/estudiantes/un-jugador-promesa-estudiantes-fue-sondeado-un-grande-brasil-n129217",
+        "descripcion": "Los primeros movimientos del mercado de pases tienen a Estudiantes activo y ahora se sumó un nuevo frente, por clubes interesados en una promesa juvenil.",
+        "fecha_publicacion": "2026-06-07T15:16:00+00:00",
+        "fuente_id": "pincha",
+        "fuente_nombre": "0221 Estudiantes",
+        "categoria": "Fulbito"
+      }
+    ],
+    "Comex": [
+      {
+        "id": "71935e098d11",
+        "titulo": "El gobierno preadjudicó la privatización de la Vía Navegable Troncal",
+        "link": "https://mercojuris.com/el-gobierno-preadjudico-la-privatizacion-de-la-via-navegable-troncal/",
+        "descripcion": "La licitación dio un paso más hacia la nueva concesión que traerá modernización y baja de costos logísticos. El Gobierno Nacional informó a las empresas oferentes la preadjudicación del contrato de concesión de la licitación para la privatización de la Vía Navegable Troncal, mediante el Dictamen de Preadjudicación que repasa la totalidad del proceso de tres etapas y recomienda una ganadora en base al sistema de puntajes establecido junto a la Conferencia de las Naciones Unidas sobre Comercio y D",
+        "fecha_publicacion": "2026-06-07T21:23:57+00:00",
+        "fuente_id": "mercojuris",
+        "fuente_nombre": "Mercojuris",
+        "categoria": "Comex"
+      },
+      {
+        "id": "55fed1cbc8ed",
+        "titulo": "Las exportaciones del complejo girasolero crecieron 160% y marcaron récord de los últimos 20 años",
+        "link": "https://mercojuris.com/las-exportaciones-del-complejo-girasolero-crecieron-160-y-marcaron-record-de-los-ultimos-20-anos/",
+        "descripcion": "Impulsado por una producción histórica, el complejo se consolida como uno de los principales pilares del comercio exterior argentino y obtiene USD 1.328 millones por 2,2 millones de toneladas vendidas durante los primeros cuatro meses de 2026. La Secretaría de Agricultura Ganadería y Pesca del Ministerio de Economía de la Nación informa que las exportaciones del complejo girasolero alcanzaron la mayor performance en 2 décadas en el período enero-abril y crecieron 169% en volumen y 160% en valor ",
+        "fecha_publicacion": "2026-06-07T21:20:36+00:00",
+        "fuente_id": "mercojuris",
+        "fuente_nombre": "Mercojuris",
+        "categoria": "Comex"
+      },
+      {
+        "id": "dde5ff60bdce",
+        "titulo": "Aumentan exportaciones de la pesca",
+        "link": "https://mercojuris.com/70490-2/",
+        "descripcion": "Las exportaciones del sector pesquero mostraron un crecimiento interanual de 32% en valor durante el primer cuatrimestre de 2026. La industria pesquera argentina se consolida en los mercados externos reafirmando su papel estratégico en el ingreso de divisas y el desarrollo productivo. La Secretaría de Agricultura, Ganadería y Pesca del Ministerio de Economía de la Nación informa que las exportaciones del sector pesquero nacional experimentaron, durante el primer cuatrimestre de 2026, un crecimie",
+        "fecha_publicacion": "2026-06-07T21:15:41+00:00",
+        "fuente_id": "mercojuris",
+        "fuente_nombre": "Mercojuris",
+        "categoria": "Comex"
+      },
+      {
+        "id": "25c32e8cc992",
+        "titulo": "OMC: el comercio mundial sigue por encima de la tendencia pese al conflicto en Oriente Medio",
+        "link": "https://aduananews.com/omc-el-comercio-mundial-sigue-por-encima-de-la-tendencia-pese-al-conflicto-en-oriente-medio/?utm_source=rss&utm_medium=rss&utm_campaign=omc-el-comercio-mundial-sigue-por-encima-de-la-tendencia-pese-al-conflicto-en-oriente-medio",
+        "descripcion": "El comercio mundial de mercancías continúa mostrando resiliencia en un contexto marcado por el conflicto en Oriente Medio y el encarecimiento de la energía. Así lo refleja la última edición del Barómetro del Comercio de Mercancías de la Organización Mundial del Comercio (OMC), cuyo índice se ubicó en 101,7 puntos, por encima del valor de [&#8230;] The post OMC: el comercio mundial sigue por encima de la tendencia pese al conflicto en Oriente Medio appeared first on Aduana News .",
+        "fecha_publicacion": "2026-06-05T20:18:55+00:00",
+        "fuente_id": "aduananews",
+        "fuente_nombre": "Aduana News",
+        "categoria": "Comex"
+      },
+      {
+        "id": "5168f567e664",
+        "titulo": "Implementación de las resoluciones anticipadas de origen en la Ventanilla Única (VUCEA)",
+        "link": "https://aduananews.com/implementacion-de-las-resoluciones-anticipadas-de-origen-en-la-ventanilla-unica-vucea/?utm_source=rss&utm_medium=rss&utm_campaign=implementacion-de-las-resoluciones-anticipadas-de-origen-en-la-ventanilla-unica-vucea",
+        "descripcion": "El Régimen Nacional de Ventanilla Única de Comercio Exterior Argentino (VUCEA) incorporó el tratamiento de las resoluciones anticipadas de origen, en el marco del proceso de digitalización del comercio exterior, según informó la Agencia de Recaudación y Control Aduanero (ARCA). La medida fue oficializada mediante la Resolución General 5859/2026, publicada hoy (05.06.2026) en el Boletín [&#8230;] The post Implementación de las resoluciones anticipadas de origen en la Ventanilla Única (VUCEA) appe",
+        "fecha_publicacion": "2026-06-05T14:04:29+00:00",
+        "fuente_id": "aduananews",
+        "fuente_nombre": "Aduana News",
+        "categoria": "Comex"
+      },
+      {
+        "id": "b53c16af343b",
+        "titulo": "Los instrumentos jurídicos de la OMA y su influencia en la construcción de reglas aduaneras globales",
+        "link": "https://aduananews.com/los-instrumentos-juridicos-de-la-oma-y-su-influencia-en-la-construccion-de-reglas-aduaneras-globales/?utm_source=rss&utm_medium=rss&utm_campaign=los-instrumentos-juridicos-de-la-oma-y-su-influencia-en-la-construccion-de-reglas-aduaneras-globales",
+        "descripcion": "SUMARIO I. IntroducciónII. Convenios internacionalesIII. RecomendacionesIV. DeclaracionesV. ResolucionesVI. Opiniones técnicasVII. Memorándums de entendimientoVIII. Otros convenios administrados o gestionadosIX. Conclusión I.- Introducción La Organización Mundial de Aduanas —OMA— es el principal organismo intergubernamental en materia aduanera. Con 187 miembros, cuyas administraciones aduaneras gestionan más del 98% del comercio mundial, constituye el ámbito técnico natural para la [&#8230;] The",
+        "fecha_publicacion": "2026-06-05T08:00:00+00:00",
+        "fuente_id": "aduananews",
+        "fuente_nombre": "Aduana News",
+        "categoria": "Comex"
+      }
+    ],
+    "Automotor": [
+      {
+        "id": "be46da72cfc9",
+        "titulo": "Los autos usados más vendidos en mayo de 2026",
+        "link": "https://noticias.autocosmos.com.ar/2026/06/07/los-autos-usados-mas-vendidos-en-mayo-de-2026",
+        "descripcion": "Las ventas de usados también caen y estos son los números y los modelos más transferidos.",
+        "fecha_publicacion": "2026-06-07T18:50:23+00:00",
+        "fuente_id": "autocosmos",
+        "fuente_nombre": "Autocosmos Argentina",
+        "categoria": "Automotor"
+      },
+      {
+        "id": "9de51e2f39e2",
+        "titulo": "This One-Of-A-Kind Koenigsegg Could Fetch $10 Million",
+        "link": "https://www.motor1.com/news/797948/koenigsegg-one-one-photo-gallery/",
+        "descripcion": "This Koenigsegg One:1 is looking for a new owner. It’s one of six examples built, with 1,360 hp and just 2,630 miles on the odometer.",
+        "fecha_publicacion": "2026-06-07T16:00:00+00:00",
+        "fuente_id": "motor1",
+        "fuente_nombre": "Motor1 Argentina",
+        "categoria": "Automotor"
+      },
+      {
+        "id": "1a36febac13e",
+        "titulo": "Chevrolet anticipa la S10 Trail Boss en Argentina",
+        "link": "https://noticias.autocosmos.com.ar/2026/06/06/chevrolet-anticipa-la-s10-trail-boss-en-argentina",
+        "descripcion": "Te contamos las novedades y fechas de lanzamiento de la pickup con corte aventurero.",
+        "fecha_publicacion": "2026-06-06T10:32:55+00:00",
+        "fuente_id": "autocosmos",
+        "fuente_nombre": "Autocosmos Argentina",
+        "categoria": "Automotor"
+      },
+      {
+        "id": "a4ca46bcdd4f",
+        "titulo": "Franco Colapinto tuvo una clasificación difícil en el GP de Mónaco 2026",
+        "link": "https://noticias.autocosmos.com.ar/2026/06/06/franco-colapinto-tuvo-una-clasificacion-dificil-en-el-gp-de-monaco-2026",
+        "descripcion": "El argentino avanzó a la Q2, pero no pudo meterse entre los diez mejores. En un circuito donde adelantar es una misión compleja, Alpine apostará a la estrategia para intentar avanzar posiciones.",
+        "fecha_publicacion": "2026-06-06T00:00:00+00:00",
+        "fuente_id": "autocosmos",
+        "fuente_nombre": "Autocosmos Argentina",
+        "categoria": "Automotor"
+      },
+      {
+        "id": "813256c87e86",
+        "titulo": "Honda Racing Boss: 'Look Forward' To A More Hardcore Civic Type R",
+        "link": "https://www.motor1.com/news/797959/honda-civic-type-r-hrc-preview/",
+        "descripcion": "The Honda Civic Type R HRC Concept is debuting this year, according to HRC President Koji Watanabe.",
+        "fecha_publicacion": "2026-06-05T21:00:00+00:00",
+        "fuente_id": "motor1",
+        "fuente_nombre": "Motor1 Argentina",
+        "categoria": "Automotor"
+      },
+      {
+        "id": "5c3df988d8cc",
+        "titulo": "The Dodge Charger EV Got A Massive Price Hike",
+        "link": "https://www.motor1.com/news/797936/2027-dodge-charger-pricing-trims/",
+        "descripcion": "The entry-level, 420-horsepower Charger R/T has the same starting price as before at $49,995.",
+        "fecha_publicacion": "2026-06-05T19:00:00+00:00",
+        "fuente_id": "motor1",
+        "fuente_nombre": "Motor1 Argentina",
+        "categoria": "Automotor"
+      },
+      {
+        "id": "6a12dab50c1c",
+        "titulo": "Citroën C5 Aircross: Confort, alto nivel de equipamiento, baúl record y financiación TASA 0% 💸",
+        "link": "https://visionmotor.com/citroen-c5-aircross-confort-alto-nivel-de-equipamiento-baul-record-y-financiacion-tasa-0-%f0%9f%92%b8/",
+        "descripcion": "Hoy les presentamos en detalle la segunda generación del Citroën C5 Aircross en Argentina. Este SUV del segmento C llega importado de Francia y se convierte en el nuevo referente de la marca en términos de habitabilidad, tecnología y modularidad. Capítulos del video: 00:00 Introducción al nuevo Citroën C5 Aircross. 00:19 El baúl más grande &#8230; Seguir leyendo Citroën C5 Aircross: Confort, alto nivel de equipamiento, baúl record y financiación TASA 0% 💸 &#8594;",
+        "fecha_publicacion": "2026-05-20T16:48:33+00:00",
+        "fuente_id": "visionmotor",
+        "fuente_nombre": "Vision Motor",
+        "categoria": "Automotor"
+      },
+      {
+        "id": "38d526a24016",
+        "titulo": "¡CHAU EMBRAGUE! Honda XL750 Transalp, ahora también con tecnología E-Clutch",
+        "link": "https://visionmotor.com/chau-embrague-honda-xl750-transalp-ahora-tambien-con-tecnologia-e-clutch/",
+        "descripcion": "Hoy nos subimos a las dos ruedas para presentarte una revolución total en la transmisión de motocicletas: el nuevo sistema Honda E-Clutch. &#160; Esta innovadora tecnología combina la esencia de una caja manual tradicional con actuadores electrónicos que te permiten arrancar, frenar y pasar de marcha sin necesidad de accionar el embrague, pero manteniendo el &#8230; Seguir leyendo ¡CHAU EMBRAGUE! Honda XL750 Transalp, ahora también con tecnología E-Clutch &#8594;",
+        "fecha_publicacion": "2026-05-15T23:32:05+00:00",
+        "fuente_id": "visionmotor",
+        "fuente_nombre": "Vision Motor",
+        "categoria": "Automotor"
+      }
+    ],
+    "Mercados": [
+      {
+        "id": "5f60db29cc81",
+        "titulo": "UBS responde las principales preguntas sobre las salidas del KOSPI y el KRW",
+        "link": "https://es.investing.com/news/economy-news/ubs-responde-las-principales-preguntas-sobre-las-salidas-del-kospi-y-el-krw-3693773",
+        "descripcion": "",
+        "fecha_publicacion": "2026-06-07T16:03:24+00:00",
+        "fuente_id": "investing_eco",
+        "fuente_nombre": "Investing Economía",
+        "categoria": "Mercados"
+      },
+      {
+        "id": "bf1c620e1553",
+        "titulo": "¿Tiene razón Kevin Warsh sobre el impacto de la IA en la inflación y los tipos de interés?",
+        "link": "https://es.investing.com/news/economy-news/tiene-razon-kevin-warsh-sobre-el-impacto-de-la-ia-en-la-inflacion-y-los-tipos-de-interes-3693769",
+        "descripcion": "",
+        "fecha_publicacion": "2026-06-07T14:58:36+00:00",
+        "fuente_id": "investing_eco",
+        "fuente_nombre": "Investing Economía",
+        "categoria": "Mercados"
+      },
+      {
+        "id": "a21d6aca8211",
+        "titulo": "Copa Mundial FIFA 2026: Deutsche Bank revela las mejores acciones",
+        "link": "https://es.investing.com/news/economy-news/copa-mundial-fifa-2026-deutsche-bank-revela-las-mejores-acciones-3693766",
+        "descripcion": "",
+        "fecha_publicacion": "2026-06-07T14:11:33+00:00",
+        "fuente_id": "investing_eco",
+        "fuente_nombre": "Investing Economía",
+        "categoria": "Mercados"
+      }
+    ],
+    "Logística": [
+      {
+        "id": "7d83eb0697f8",
+        "titulo": "Día Mundial del Medio Ambiente: cuando la sustentabilidad se traduce en decisiones concretas",
+        "link": "https://webpicking.com/dia-mundial-del-medio-ambiente-cuando-la-sustentabilidad-se-traduce-en-decisiones-concretas/",
+        "descripcion": "De acuerdo con Smurfit Westrock, en industrias como la del packaging y el papel, ese cambio empieza a verse en proyectos específicos. La entrada Día Mundial del Medio Ambiente: cuando la sustentabilidad se traduce en decisiones concretas se publicó primero en Webpicking .",
+        "fecha_publicacion": "2026-06-06T19:39:26+00:00",
+        "fuente_id": "webpicking",
+        "fuente_nombre": "Webpicking",
+        "categoria": "Logística"
+      },
+      {
+        "id": "2c02700b7418",
+        "titulo": "El sector portuario argentino despide a Gustavo Anschutz",
+        "link": "https://webpicking.com/el-sector-portuario-despide-a-gustavo-anschutz/",
+        "descripcion": "En los últimos 10 años, como socio director de la consultora AIC Estudios y Proyectos, trabajó en planes estratégicos de puertos y vías fluviales. La entrada El sector portuario argentino despide a Gustavo Anschutz se publicó primero en Webpicking .",
+        "fecha_publicacion": "2026-06-06T19:31:02+00:00",
+        "fuente_id": "webpicking",
+        "fuente_nombre": "Webpicking",
+        "categoria": "Logística"
+      },
+      {
+        "id": "6c5121f271cf",
+        "titulo": "ARLOG anuncia su propuesta de capacitación para junio y julio",
+        "link": "https://webpicking.com/arlog-anuncia-su-propuesta-de-capacitacion-para-junio-y-julio/",
+        "descripcion": "La Asociación Argentina de Logística Empresaria (ARLOG) presentó el cronograma de cursos virtuales correspondientes al bimestre. La entrada ARLOG anuncia su propuesta de capacitación para junio y julio se publicó primero en Webpicking .",
+        "fecha_publicacion": "2026-06-06T19:22:01+00:00",
+        "fuente_id": "webpicking",
+        "fuente_nombre": "Webpicking",
+        "categoria": "Logística"
+      }
+    ],
+    "Agro": [
+      {
+        "id": "48c1bcf21a3a",
+        "titulo": "El primer ministro de Canadá, Carney, habla de comercio con Subianto",
+        "link": "https://es.investing.com/news/world-news/el-primer-ministro-de-canada-carney-habla-de-comercio-con-subianto-93CH-3693677",
+        "descripcion": "",
+        "fecha_publicacion": "2026-06-06T19:01:38+00:00",
+        "fuente_id": "investing_comm",
+        "fuente_nombre": "Investing Commodities",
+        "categoria": "Agro"
+      },
+      {
+        "id": "3fe9e741a7b4",
+        "titulo": "S&P Global confirma la calificación AAA de Suecia por gasto en defensa y crecimiento",
+        "link": "https://es.investing.com/news/world-news/sp-global-confirma-la-calificacion-aaa-de-suecia-por-gasto-en-defensa-y-crecimiento-93CH-3693404",
+        "descripcion": "",
+        "fecha_publicacion": "2026-06-05T20:25:52+00:00",
+        "fuente_id": "investing_comm",
+        "fuente_nombre": "Investing Commodities",
+        "categoria": "Agro"
+      },
+      {
+        "id": "bf6d9629aa88",
+        "titulo": "Fitch mejora la calificación de Sudáfrica a BB por avances fiscales",
+        "link": "https://es.investing.com/news/world-news/fitch-mejora-la-calificacion-de-sudafrica-a-bb-por-avances-fiscales-93CH-3693202",
+        "descripcion": "",
+        "fecha_publicacion": "2026-06-05T15:36:47+00:00",
+        "fuente_id": "investing_comm",
+        "fuente_nombre": "Investing Commodities",
+        "categoria": "Agro"
+      }
+    ],
+    "Finanzas": [
+      {
+        "id": "d9116830a37a",
+        "titulo": "Viernes negro en el mundo, con impacto más acotado en Argentina",
+        "link": "https://eleconomista.com.ar/finanzas/viernes-negro-mundo-impacto-mas-acotado-argentina-n95558",
+        "descripcion": "Una conjunción de factores (mal balance de una empresa clave de IA, más inflación en Europa y mucha creación de empleo en EE.UU.) plantó un viernes negro en los mercados del mundo. El índice Nasdaq, donde están las tecnológicas, sufrió la peor caída diaria desde que Trump anunció los aranceles en abril de 2025. Subió fuerte el dólar afuera, sobre todo en Brasil, México y Chile. En Argentina los dólares estuvieron sostenidos, pero con subas menores. El BCRA compró dólares, pero perdió reservas. L",
+        "fecha_publicacion": "2026-06-05T22:32:00+00:00",
+        "fuente_id": "eleconomista",
+        "fuente_nombre": "El Economista Finanzas",
+        "categoria": "Finanzas"
+      },
+      {
+        "id": "b488120921e5",
+        "titulo": "YPF, una joya para comprar y mantener",
+        "link": "https://eleconomista.com.ar/finanzas/ypf-una-joya-comprar-mantener-n95523",
+        "descripcion": "Algunos de los más importantes inversores internacionales están comprando importantes cantidades de acciones ahora, bajo la premisa de que, mantenerlas en cartera durante varios años, podría ser una sabia decisión, llamada a proporcionar una elevada rentabilidad.",
+        "fecha_publicacion": "2026-06-05T04:29:00+00:00",
+        "fuente_id": "eleconomista",
+        "fuente_nombre": "El Economista Finanzas",
+        "categoria": "Finanzas"
+      },
+      {
+        "id": "3f4784349319",
+        "titulo": "Una tormenta perfecta mundial arrastra al mercado argentino",
+        "link": "https://eleconomista.com.ar/finanzas/una-tormenta-perfecta-mundial-arrastra-mercado-argentino-n95488",
+        "descripcion": "Más tensiones en Medio Oriente, con crecientes dudas sobre el sostén de la Inteligencia Artificial provocaron hoy un día difícil en los mercados mundiales. Por eso, el dólar subió en todo el mundo y lo mismo sucedió en Argentina, donde en tres días los dólares subieron más de lo que pagan las tasas en todo un mes. Los bonos aguantan, pero las acciones locales cambiaron de dirección. Hay más datos malos de la economía real, con tensiones en la política y la seguridad.",
+        "fecha_publicacion": "2026-06-03T22:28:00+00:00",
+        "fuente_id": "eleconomista",
+        "fuente_nombre": "El Economista Finanzas",
+        "categoria": "Finanzas"
+      }
+    ],
+    "Energía": [
+      {
+        "id": "3680565dc172",
+        "titulo": "Inversión en transporte eléctrico: PCR y ArcelorMittal Acindar inauguraron la ampliación de la Estación Transformadora de Ezeiza",
+        "link": "https://dataenergia.ar/electricidad/inversion-en-transporte-electrico-pcr-y-arcelormittal-acindar-inauguraron-la-ampliacion-de-la-estacion-transformadora-de-ezeiza-20266515170",
+        "descripcion": "Las empresas PCR y ArcelorMittal Acindar inauguraron la ampliación de la Estación Transformadora de Ezeiza, un proyecto de u$s40 millones de financiamiento privado destinado a robustecer el sistema de transporte nacional (SADI).",
+        "fecha_publicacion": "2026-06-05T18:17:00+00:00",
+        "fuente_id": "dataenergia",
+        "fuente_nombre": "Data Energía",
+        "categoria": "Energía"
+      },
+      {
+        "id": "7e6e5b761109",
+        "titulo": "Transición energética en Cuyo: Genneia habilitó el Parque Solar San Rafael y Mendoza roza los 800 MW de potencia",
+        "link": "https://dataenergia.ar/renovables-y-de-transicion/transicion-energetica-en-cuyo-genneia-habilito-el-parque-solar-san-rafael-y-mendoza-roza-los-800-mw-de-potencia-20266514290",
+        "descripcion": "La compañía Genneia habilitó comercialmente la última etapa del Parque Solar San Rafael en Mendoza, alcanzando su potencia máxima de 180 MW tras desembolsar parte de una inversión consolidada de u$s430 millones en la provincia.",
+        "fecha_publicacion": "2026-06-05T17:29:00+00:00",
+        "fuente_id": "dataenergia",
+        "fuente_nombre": "Data Energía",
+        "categoria": "Energía"
+      },
+      {
+        "id": "01583877b2ec",
+        "titulo": "El Gobierno aprobó el RIGI para el gasoducto San Matías por u$s1.300 millones: la salida de Vaca Muerta a la exportación",
+        "link": "https://dataenergia.ar/gubernamental/el-gobierno-aprobo-el-rigi-para-el-gasoducto-san-matias-por-u-s1-300-millones-la-salida-de-vaca-muerta-a-la-exportacion-20266513550",
+        "descripcion": "El Comité Evaluador del RIGI aprobó el proyecto del Gasoducto Tratayén-San Antonio por u$s1.300 millones, una megaobra estratégica liderada por San Matías Pipeline que destraba el cuello de botella del midstream para viabilizar la exportación de gas de Vaca Muerta.",
+        "fecha_publicacion": "2026-06-05T16:55:00+00:00",
+        "fuente_id": "dataenergia",
+        "fuente_nombre": "Data Energía",
+        "categoria": "Energía"
+      },
+      {
+        "id": "46e874df10b9",
+        "titulo": "Río Negro está a punto de dar un paso histórico gracias a los recursos hídricos: “Beneficios para los rionegrinos”",
+        "link": "https://www.noticiasnet.com.ar/noticias/2026/06/05/206306-rio-negro-esta-a-punto-de-dar-un-paso-historico-gracias-a-los-recursos-hidricos-beneficios-para-los-rionegrinos",
+        "descripcion": "El secretario de Energía Eléctrica de Río Negro, Santiago Yanoti, habló con Energía 360 y dio los detalles del alcance de este proyecto que se tratará en el parlamento en la sesión del jueves 11.",
+        "fecha_publicacion": "2026-06-05T14:26:11+00:00",
+        "fuente_id": "noticiasnet_en",
+        "fuente_nombre": "NoticiasNet Energía",
+        "categoria": "Energía"
+      },
+      {
+        "id": "2e3d0891feee",
+        "titulo": "Primera mesa de trabajo del proyecto GNL: empresas, gremios y organismos técnicos avanzan en conjunto",
+        "link": "https://www.noticiasnet.com.ar/noticias/2026/06/05/206303-primera-mesa-de-trabajo-del-proyecto-gnl-empresas-gremios-y-organismos-tecnicos-avanzan-en-conjunto",
+        "descripcion": "El consorcio Southern Energy SA, sindicatos y el Gobierno provincial abrieron un espacio de diálogo estratégico para planificar las capacitaciones, el empleo y la demanda de proveedores en Río Negro.",
+        "fecha_publicacion": "2026-06-05T14:09:27+00:00",
+        "fuente_id": "noticiasnet_en",
+        "fuente_nombre": "NoticiasNet Energía",
+        "categoria": "Energía"
+      }
+    ],
+    "Expectativas de mercado": [
+      {
+        "id": "5214b8fe496d",
+        "titulo": "Se presentó la edición 2025 del Índice de Transparencia de Empresas de Propiedad Estatal",
+        "link": "https://www.cippec.org/se-presento-la-edicion-2025-del-indice-de-transparencia-de-empresas-de-propiedad-estatal/",
+        "descripcion": "En un auditorio repleto, CIPPEC presentó la tercera edición del ITEPE en el marco de la Mesa de Diálogo &#8220;Transparencia e Integridad en tiempos de transformación&#8221;. El encuentro fue encabezado por Luciano Laspina, director ejecutivo de CIPPEC; David Groisman, director del Programa Estado y Gobierno; Alejandro Fabián Díaz, síndico general de la Nación; y Mónica Freda, síndica general del [&#8230;] La entrada Se presentó la edición 2025 del Índice de Transparencia de Empresas de Propieda",
+        "fecha_publicacion": "2026-06-01T20:50:16+00:00",
+        "fuente_id": "cippec",
+        "fuente_nombre": "CIPPEC",
+        "categoria": "Expectativas de mercado"
+      },
+      {
+        "id": "15555b8b57fc",
+        "titulo": "Nº 374 (Junio, 2026). Bautista Santamarina, Matías Ciaschi y Mariana Marchionni",
+        "link": "https://www.cedlas.econo.unlp.edu.ar/wp/no-374/",
+        "descripcion": "",
+        "fecha_publicacion": "2026-06-01T05:46:03+00:00",
+        "fuente_id": "cedlas",
+        "fuente_nombre": "CEDLAS UNLP",
+        "categoria": "Expectativas de mercado"
+      },
+      {
+        "id": "cfd981115f32",
+        "titulo": "¿Cómo mejoran las ciudades su clima de negocios?",
+        "link": "https://www.cippec.org/como-mejoran-las-ciudades-su-clima-de-negocios/",
+        "descripcion": "&#160; El 28 de mayo, CIPPEC presentó el documento de trabajo &#8220;Clima de negocios en ciudades: marco conceptual, indicadores y buenas prácticas para la acción local&#8221;, elaborado en el marco de un proyecto junto a la Municipalidad de la Ciudad de Mendoza y el Consejo Empresario Mendocino, con la asistencia técnica del Banco Interamericano de Desarrollo y el apoyo [&#8230;] La entrada ¿Cómo mejoran las ciudades su clima de negocios? se publicó primero en CIPPEC .",
+        "fecha_publicacion": "2026-05-29T01:33:58+00:00",
+        "fuente_id": "cippec",
+        "fuente_nombre": "CIPPEC",
+        "categoria": "Expectativas de mercado"
+      },
+      {
+        "id": "cbe7751595c5",
+        "titulo": "CIPPEC presentó evidencia sobre vivienda vacía en Smart City Expo Santiago del Estero",
+        "link": "https://www.cippec.org/cippec-presento-evidencia-sobre-vivienda-vacia-en-smart-city-expo-santiago-del-estero/",
+        "descripcion": "El 21 de mayo de 2026, CIPPEC participó de Smart City Expo Santiago del Estero, un espacio de intercambio sobre innovación, tecnología y políticas urbanas, donde presentó resultados de investigaciones recientes sobre vivienda vacía en ciudades argentinas. La intervención estuvo a cargo de Nicolás Ferme, coordinador del Programa de Estado y Gobierno de CIPPEC, quien compartió avances de una agenda [&#8230;] La entrada CIPPEC presentó evidencia sobre vivienda vacía en Smart City Expo Santiago del ",
+        "fecha_publicacion": "2026-05-22T18:18:34+00:00",
+        "fuente_id": "cippec",
+        "fuente_nombre": "CIPPEC",
+        "categoria": "Expectativas de mercado"
+      },
+      {
+        "id": "af29c5f0774b",
+        "titulo": "¿Cuánto cuesta alquilar un departamento en Rosario? – Mayo 2026",
+        "link": "https://ceso.com.ar/cuanto-cuesta-alquilar-un-departamento-en-rosario-mayo-2026/",
+        "descripcion": "Informe Precios de Alquileres. Rosario, Santa Fe.",
+        "fecha_publicacion": "2026-05-20T21:29:07+00:00",
+        "fuente_id": "ceso",
+        "fuente_nombre": "CESO",
+        "categoria": "Expectativas de mercado"
+      },
+      {
+        "id": "d153700c97de",
+        "titulo": "¿Cuánto cuesta alquilar un departamento en CABA? – Mayo 2026",
+        "link": "https://ceso.com.ar/cuanto-cuesta-alquilar-un-departamento-en-caba-mayo-2026/",
+        "descripcion": "Informe Precios de Alquileres Ciudad Autónoma de Buenos Aires",
+        "fecha_publicacion": "2026-05-20T21:24:54+00:00",
+        "fuente_id": "ceso",
+        "fuente_nombre": "CESO",
+        "categoria": "Expectativas de mercado"
+      },
+      {
+        "id": "249c6df3d5d3",
+        "titulo": "Nº 373 (Mayo, 2026). Facundo L. Crosta y Carlos Vallejos",
+        "link": "https://www.cedlas.econo.unlp.edu.ar/wp/no-373/",
+        "descripcion": "",
+        "fecha_publicacion": "2026-05-14T06:13:25+00:00",
+        "fuente_id": "cedlas",
+        "fuente_nombre": "CEDLAS UNLP",
+        "categoria": "Expectativas de mercado"
+      },
+      {
+        "id": "6b6e485ebf1d",
+        "titulo": "Nº 372 (Mayo, 2026). Adriana Camacho, Leonardo Gasparini, Luis Laguinge, Jorge Puig y Hernán Winkler",
+        "link": "https://www.cedlas.econo.unlp.edu.ar/wp/no-372/",
+        "descripcion": "",
+        "fecha_publicacion": "2026-05-01T05:00:36+00:00",
+        "fuente_id": "cedlas",
+        "fuente_nombre": "CEDLAS UNLP",
+        "categoria": "Expectativas de mercado"
+      }
+    ],
+    "Laboral": [
+      {
+        "id": "07f564b6ffd7",
+        "titulo": "Riesgos psicosociales en el trabajo: la amenaza invisible para la salud de los trabajadores",
+        "link": "https://voices.ilo.org/es-es/podcast/riesgos-psicosociales-en-el-trabajo-la-amenaza-invisible-para-la-salud-de-los-trabajadores",
+        "descripcion": "En este episodio del pódcast “El futuro del trabajo de la OIT”, Dafne Papandrea y Lucía Risueño Navarro explican cómo los riesgos psicosociales —como las largas jornadas laborales, la inseguridad en el empleo y el acoso en el lugar de trabajo— afectan a la salud de los trabajadores, y qué medidas pueden adoptarse para crear entornos laborales más saludables en todo el mundo.",
+        "fecha_publicacion": "2026-04-28T00:00:00+00:00",
+        "fuente_id": "oit_podcast",
+        "fuente_nombre": "OIT Podcast",
+        "categoria": "Laboral"
+      },
+      {
+        "id": "ef1638f33032",
+        "titulo": "La inteligencia artificial generativa y las desigualdades de género en el trabajo",
+        "link": "https://voices.ilo.org/es-es/podcast/la-inteligencia-artificial-generativa-y-las-desigualdades-de-genero-en-el-trabajo",
+        "descripcion": "En este episodio del pódcast de la Organización Internacional del Trabajo, Janine Berg, Economista senior en la OIT, presenta un nuevo informe sobre el impacto de la inteligencia artificial generativa en el mundo del trabajo. La experta explica por qué las mujeres están más expuestas que los hombres a los riesgos asociados a esta tecnología y qué significa esto para la igualdad en el mercado laboral.",
+        "fecha_publicacion": "2026-03-09T00:00:00+00:00",
+        "fuente_id": "oit_podcast",
+        "fuente_nombre": "OIT Podcast",
+        "categoria": "Laboral"
+      },
+      {
+        "id": "a9cae82ea7a7",
+        "titulo": "Una mirada al estado del empleo mundial y sus principales desafíos",
+        "link": "https://voices.ilo.org/es-es/podcast/una-mirada-al-estado-del-empleo-mundial-y-sus-principales-desafios",
+        "descripcion": "En este episodio del pódcast Futuro del Trabajo de la OIT, analizamos el estado del empleo y los principales desafíos que enfrentan los mercados laborales a nivel mundial y en América Latina y el Caribe, junto a Miguel Sánchez Martínez, economista del Departamento de Investigación de la OIT, y Gerson Martínez, Especialista Regional Senior en Economía Laboral.",
+        "fecha_publicacion": "2026-01-22T00:00:00+00:00",
+        "fuente_id": "oit_podcast",
+        "fuente_nombre": "OIT Podcast",
+        "categoria": "Laboral"
+      }
+    ]
+  }
 }
