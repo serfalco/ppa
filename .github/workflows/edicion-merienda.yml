@@ -11,17 +11,14 @@ on:
         required: false
         default: 'auto'
         type: choice
-        options:
-          - auto
-          - desayuno
-          - merienda
+        options: [auto, desayuno, merienda]
 
 permissions:
   contents: write
 
 jobs:
   generar-edicion:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     timeout-minutes: 25
 
     steps:
@@ -36,7 +33,6 @@ jobs:
 
       - name: Install dependencies
         run: |
-          python -m pip install --upgrade pip
           pip install feedparser requests pandas openpyxl xlrd
 
       - name: Detectar edición
@@ -44,29 +40,25 @@ jobs:
         run: |
           HORA=$(date -u +%H)
           INPUT="${{ github.event.inputs.edicion }}"
-          if [ "$INPUT" = "desayuno" ]; then
-            NOMBRE="Desayuno"; ICONO="🧉"
-          elif [ "$INPUT" = "merienda" ]; then
-            NOMBRE="Merienda"; ICONO="☕"
-          elif [ "$HORA" -lt 14 ]; then
-            NOMBRE="Desayuno"; ICONO="🧉"
-          else
-            NOMBRE="Merienda"; ICONO="☕"
+          if [ "$INPUT" = "desayuno" ]; then NOMBRE="Desayuno"; ICONO="🧉"
+          elif [ "$INPUT" = "merienda" ]; then NOMBRE="Merienda"; ICONO="☕"
+          elif [ "$HORA" -lt 14 ]; then NOMBRE="Desayuno"; ICONO="🧉"
+          else NOMBRE="Merienda"; ICONO="☕"
           fi
           echo "nombre=$NOMBRE" >> $GITHUB_OUTPUT
           echo "icono=$ICONO" >> $GITHUB_OUTPUT
           echo "[PPA] Generando edición: $NOMBRE $ICONO"
 
-      - name: Fetcher - leer fuentes RSS
+      - name: Fetcher - bajar RSS (con cache)
         run: python scripts/fetcher.py
 
-      - name: Selector - elegir destacados
+      - name: Selector - elegir notas
         run: python scripts/selector.py
 
-      - name: Datos económicos (completo, incluye mensuales)
+      - name: Datos económicos
         run: python scripts/datos_economicos.py
 
-      - name: Resumidor - Generar resúmenes con Gemini
+      - name: Resumidor - resúmenes con Gemini
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: python scripts/resumidor.py
@@ -85,7 +77,7 @@ jobs:
       - name: Generador - Columnas
         run: python scripts/generador_columnas.py
 
-      - name: Generador - Stream
+      - name: Generador - TXT-Stream
         run: python scripts/generador_stream.py
 
       - name: Generador - EconoTuits

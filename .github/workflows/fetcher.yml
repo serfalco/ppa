@@ -1,0 +1,55 @@
+name: PPA - Fetcher RSS
+
+# Workflow LIVIANO: solo baja los feeds RSS y los cachea.
+# Corre antes de cada edición para tener los datos listos.
+# Tier 1: cada 6hs | Tier 2: 24hs | Tier 3: 48hs
+# El cache evita rebajar si ya está fresco.
+
+on:
+  schedule:
+    - cron: '0 7 * * *'   # 04:00 ARG — antes del Desayuno
+    - cron: '0 18 * * *'  # 15:00 ARG — antes de la Merienda
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: ppa-fetcher
+  cancel-in-progress: false
+
+jobs:
+  fetcher:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: |
+          pip install feedparser requests
+
+      - name: Bajar feeds RSS
+        run: python scripts/fetcher.py
+
+      - name: Selector - elegir notas
+        run: python scripts/selector.py
+
+      - name: Commit cache
+        run: |
+          git config user.name "PPA Bot"
+          git config user.email "bot@pulsoproductivo.com.ar"
+          git add data/
+          if ! git diff --staged --quiet; then
+            git commit -m "RSS cache — $(date -u '+%Y-%m-%d %H:%M UTC')"
+            git pull --rebase origin main
+            git push
+          fi
