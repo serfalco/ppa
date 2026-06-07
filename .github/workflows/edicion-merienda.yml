@@ -120,7 +120,7 @@ jobs:
             EDICION="${{ steps.edicion.outputs.nombre }}"
             ICONO="${{ steps.edicion.outputs.icono }}"
             git commit -m "Edición ${EDICION} ${ICONO} — $(date -u '+%Y-%m-%d %H:%M UTC')"
-            git pull --rebase origin main
+            git pull --rebase -X theirs origin main
             git push
           fi
 
