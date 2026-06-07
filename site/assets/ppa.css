@@ -1,19 +1,17 @@
 /* =================================================================
-   PPA — Pulso Productivo Argentino
-   Paleta tresempanadas · mobile-first · sin líneas innecesarias
+   PPA — ppa.css v5
+   2 fuentes · 5 colores · mobile-first
    ================================================================= */
 
 :root {
-  --tinta:    #1B1612;
-  --papel:    #EBE0C2;
-  --papel-2:  #E0D4A8;
-  --rojo:     #A8362B;
-  --verde:    #BFC24F;
-  --violeta:  #726C98;
-  --gris:     #6B6358;
-  --gris-claro: #C8BC9E;
-  --linea:    #D4C99A;
-  --negro:    #1B1612;
+  --tinta:      #1B1612;
+  --papel:      #EBE0C2;
+  --papel2:     #E0D4A8;
+  --gris:       #6B6358;
+  --rojo:       #A8362B;
+  --linea:      #D4C99A;
+  --verde:      #BFC24F;   /* reservado, usar con criterio */
+  --violeta:    #726C98;   /* reservado, usar con criterio */
 }
 
 * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -23,8 +21,8 @@ html { background: var(--papel); }
 body {
   background: var(--papel);
   color: var(--tinta);
-  font-family: 'Source Serif 4', Georgia, serif;
-  font-size: 15px;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 14px;
   line-height: 1.5;
   width: 100%;
   max-width: 100%;
@@ -35,103 +33,59 @@ a { color: inherit; text-decoration: none; transition: color 0.15s; }
 a:hover { color: var(--rojo); }
 
 .contenedor { max-width: 1280px; margin: 0 auto; padding: 0 16px; }
-@media (min-width: 640px) { .contenedor { padding: 0 24px; } }
+@media (min-width: 640px)  { .contenedor { padding: 0 24px; } }
 @media (min-width: 1024px) { .contenedor { padding: 0 32px; } }
 
 /* =================================================================
-   CABECERA STICKY — dos estados
+   CABECERA STICKY
    ================================================================= */
-
-/* Wrapper que reserva espacio para evitar jump al volverse fixed */
-#cabecera-wrap {
-  position: relative;
-}
-
 .cabecera-ppa {
   position: fixed;
   top: 0; left: 0; right: 0;
   z-index: 100;
-  transition: all 0.25s ease;
   background: var(--tinta);
   color: var(--papel);
+  transition: all 0.2s ease;
 }
 
-/* Estado expandido (top) */
-.cabecera-ppa.expandida {
-  background: var(--tinta);
-}
-
+/* Fila 1: fecha + edición */
 .cab-top {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 6px 16px;
-  font-family: 'IBM Plex Sans', sans-serif;
-  font-size: 10px;
-  letter-spacing: 0.08em;
-  color: var(--gris-claro);
-  border-bottom: 1px solid rgba(255,255,255,0.08);
-  transition: all 0.25s;
+  padding: 5px 16px;
+  font-size: 9px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #C8BC9E;
+  border-bottom: 1px solid rgba(255,255,255,0.07);
+  transition: all 0.2s;
 }
+.cab-edicion { color: var(--papel); font-weight: 600; }
 
-.cab-top-izq { display: flex; gap: 10px; align-items: center; }
-.cab-fecha { text-transform: uppercase; letter-spacing: 0.12em; font-size: 9px; }
-.cab-edicion { color: var(--verde); font-weight: 600; }
-.cab-clima { color: var(--gris-claro); }
-
-/* Estado expandido: fila del logo */
+/* Fila 2: logo + hamburguesa */
 .cab-logo-fila {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 10px 16px;
-  transition: all 0.25s;
+  padding: 8px 16px 5px;
+  transition: all 0.2s;
 }
-
 .cab-logo {
   font-family: 'Playfair Display', serif;
+  font-size: 26px;
   font-weight: 900;
-  font-size: 28px;
   color: var(--papel);
-  letter-spacing: -0.02em;
   line-height: 1;
+  letter-spacing: -0.02em;
 }
-
 .cab-tagline {
-  font-family: 'IBM Plex Sans', sans-serif;
-  font-size: 9px;
-  letter-spacing: 0.2em;
+  font-size: 8px;
+  letter-spacing: 0.18em;
   text-transform: uppercase;
-  color: var(--gris-claro);
+  color: #C8BC9E;
   margin-top: 2px;
 }
-
-.cab-datos-expandidos {
-  display: flex;
-  gap: 14px;
-  align-items: center;
-  font-family: 'IBM Plex Sans', sans-serif;
-  font-size: 11px;
-}
-
-.cab-dato {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  gap: 1px;
-}
-.cab-dato-label {
-  font-size: 8px;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: var(--gris-claro);
-}
-.cab-dato-valor {
-  font-weight: 700;
-  font-size: 12px;
-  color: var(--papel);
-}
-
 .cab-hamburguesa {
   background: none;
   border: none;
@@ -141,68 +95,74 @@ a:hover { color: var(--rojo); }
   display: flex;
   flex-direction: column;
   gap: 4px;
-  margin-left: 12px;
 }
 .cab-hamburguesa span {
   display: block;
-  width: 20px;
+  width: 18px;
   height: 2px;
   background: var(--papel);
   border-radius: 1px;
   transition: all 0.2s;
 }
 
-/* Estado sticky (compacto, al scrollear) */
-.cabecera-ppa.sticky .cab-top { display: none; }
-.cabecera-ppa.sticky .cab-logo-fila { padding: 7px 16px; }
-.cabecera-ppa.sticky .cab-logo { font-size: 18px; }
-.cabecera-ppa.sticky .cab-tagline { display: none; }
-.cabecera-ppa.sticky .cab-datos-expandidos { gap: 10px; }
-.cabecera-ppa.sticky .cab-dato-valor { font-size: 11px; }
-
-/* Espacio reservado para la cabecera fija */
-.cab-spacer {
-  height: 88px; /* expandida */
-  transition: height 0.25s;
+/* Fila 3: ticker pasarela */
+.cab-ticker-wrap {
+  overflow: hidden;
+  padding: 4px 0;
+  border-top: 1px solid rgba(255,255,255,0.07);
 }
+.cab-ticker {
+  display: flex;
+  width: max-content;
+  animation: cab-scroll 22s linear infinite;
+}
+.cab-ticker span {
+  font-size: 10px;
+  font-weight: 500;
+  color: #C8BC9E;
+  white-space: nowrap;
+  padding: 0 14px;
+}
+.cab-ticker span b {
+  color: var(--papel);
+  font-weight: 700;
+  margin-left: 3px;
+}
+@keyframes cab-scroll {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+/* Estado sticky (compacto) */
+.cabecera-ppa.sticky .cab-top    { display: none; }
+.cabecera-ppa.sticky .cab-tagline { display: none; }
+.cabecera-ppa.sticky .cab-logo-fila { padding: 6px 16px; }
+.cabecera-ppa.sticky .cab-logo  { font-size: 18px; }
+
+/* Spacer */
+.cab-spacer { height: 88px; transition: height 0.2s; }
 .cab-spacer.sticky { height: 52px; }
 
-/* En mobile ocultar algunos datos en sticky */
-@media (max-width: 480px) {
-  .cab-dato.hide-mobile { display: none; }
-  .cab-dato-label { display: none; }
-  .cab-dato-valor { font-size: 11px; }
-}
-
 /* =================================================================
-   MENÚ HAMBURGUESA — drawer lateral
+   DRAWER MENÚ
    ================================================================= */
-
 .menu-overlay {
-  position: fixed;
-  inset: 0;
-  background: rgba(27,22,18,0.6);
+  position: fixed; inset: 0;
+  background: rgba(27,22,18,0.55);
   z-index: 200;
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity 0.25s;
+  opacity: 0; pointer-events: none;
+  transition: opacity 0.2s;
 }
-.menu-overlay.abierto {
-  opacity: 1;
-  pointer-events: all;
-}
+.menu-overlay.abierto { opacity: 1; pointer-events: all; }
 
 .menu-drawer {
   position: fixed;
   top: 0; right: -280px;
-  width: 260px;
-  height: 100%;
+  width: 260px; height: 100%;
   background: var(--tinta);
   z-index: 201;
-  transition: right 0.25s ease;
-  display: flex;
-  flex-direction: column;
-  padding: 0;
+  transition: right 0.22s ease;
+  display: flex; flex-direction: column;
   overflow-y: auto;
 }
 .menu-drawer.abierto { right: 0; }
@@ -211,125 +171,32 @@ a:hover { color: var(--rojo); }
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 16px 20px;
-  border-bottom: 1px solid rgba(255,255,255,0.1);
+  padding: 16px 18px;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
 }
 .menu-drawer-logo {
   font-family: 'Playfair Display', serif;
-  font-size: 22px;
-  font-weight: 900;
+  font-size: 20px; font-weight: 900;
   color: var(--papel);
 }
 .menu-cerrar {
-  background: none;
-  border: none;
-  color: var(--gris-claro);
-  font-size: 20px;
-  cursor: pointer;
-  line-height: 1;
-  padding: 4px;
+  background: none; border: none;
+  color: #C8BC9E; font-size: 18px;
+  cursor: pointer; padding: 4px;
 }
 
-.menu-nav {
-  padding: 12px 0;
-  flex: 1;
-}
+.menu-nav { padding: 8px 0; flex: 1; }
 .menu-nav a {
   display: block;
-  padding: 12px 20px;
-  font-family: 'IBM Plex Sans', sans-serif;
-  font-size: 13px;
-  font-weight: 600;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
+  padding: 13px 18px;
+  font-size: 12px; font-weight: 600;
+  letter-spacing: 0.1em; text-transform: uppercase;
   color: var(--papel);
-  border-bottom: 1px solid rgba(255,255,255,0.06);
-  transition: background 0.15s, color 0.15s;
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+  transition: color 0.15s;
 }
-.menu-nav a:hover { background: rgba(255,255,255,0.06); color: var(--verde); }
-.menu-nav a.activo { color: var(--verde); }
-
-.menu-datos {
-  padding: 16px 20px;
-  border-top: 1px solid rgba(255,255,255,0.1);
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 10px;
-}
-.menu-dato {
-  display: flex;
-  flex-direction: column;
-  gap: 2px;
-}
-.menu-dato-label {
-  font-family: 'IBM Plex Sans', sans-serif;
-  font-size: 8px;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: var(--gris-claro);
-}
-.menu-dato-valor {
-  font-family: 'IBM Plex Sans', sans-serif;
-  font-size: 13px;
-  font-weight: 700;
-  color: var(--papel);
-}
-
-/* =================================================================
-   NAVEGACIÓN (ya no se usa la barra separada — queda en el drawer)
-   ================================================================= */
-
-/* =================================================================
-   MARQUESINA FULBITO
-   ================================================================= */
-.marquesina-fulbito {
-  background: var(--papel-2);
-  padding: 8px 0;
-  font-family: 'IBM Plex Sans', sans-serif;
-  font-size: 11px;
-  overflow: hidden;
-}
-.marquesina-fulbito .contenedor {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-}
-.fulbito-label {
-  font-weight: 600;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  white-space: nowrap;
-  font-size: 10px;
-}
-.fulbito-scroll { overflow-x: auto; white-space: nowrap; }
-
-/* =================================================================
-   FRANJA DE DATOS (ya integrada en cabecera — mantener para compat.)
-   ================================================================= */
-.franja-datos { display: none; } /* reemplazada por cabecera sticky */
-
-/* =================================================================
-   TICKER (legacy — reemplazado)
-   ================================================================= */
-.ticker { display: none; }
-
-/* =================================================================
-   WIDGET MULC
-   ================================================================= */
-.widget-mulc {
-  background: var(--papel-2);
-  padding: 10px 0;
-  font-family: 'IBM Plex Sans', sans-serif;
-  font-size: 12px;
-}
-.mulc-header {
-  font-size: 9px;
-  font-weight: 700;
-  letter-spacing: 0.25em;
-  text-transform: uppercase;
-  color: var(--rojo);
-  margin-bottom: 8px;
-}
+.menu-nav a:hover { color: var(--rojo); }
+.menu-nav a.activo { color: var(--rojo); }
 
 /* =================================================================
    PIE COMPACTO
@@ -337,122 +204,49 @@ a:hover { color: var(--rojo); }
 .pie {
   background: var(--tinta);
   color: var(--papel);
-  padding: 20px 0;
-  margin-top: 40px;
-  font-family: 'IBM Plex Sans', sans-serif;
-  font-size: 11px;
+  padding: 18px 0;
+  margin-top: 32px;
+  font-size: 10px;
 }
-.pie .contenedor {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-}
+.pie .contenedor { display: flex; flex-direction: column; gap: 8px; }
 .pie-logo {
   font-family: 'Playfair Display', serif;
-  font-size: 16px;
-  font-weight: 900;
+  font-size: 15px; font-weight: 900;
   color: var(--papel);
 }
-.pie-bajada {
-  font-size: 10px;
-  color: var(--gris-claro);
-  letter-spacing: 0.06em;
-}
+.pie-bajada { font-size: 9px; color: #C8BC9E; letter-spacing: 0.05em; }
 .pie-meta {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 4px 12px;
-  font-size: 10px;
-  color: var(--gris-claro);
+  display: flex; flex-wrap: wrap;
+  gap: 4px 10px; font-size: 9px;
 }
-.pie-meta a { color: var(--gris-claro); }
-.pie-meta a:hover { color: var(--verde); }
-.pie-legal {
-  font-size: 9px;
-  color: var(--gris-claro);
-  opacity: 0.5;
-  letter-spacing: 0.06em;
+.pie-meta a { color: #C8BC9E; }
+.pie-meta a:hover { color: var(--rojo); }
+.pie-legal { font-size: 8px; color: #C8BC9E; opacity: 0.4; letter-spacing: 0.05em; }
+
+/* =================================================================
+   KICKER — patrón único para todas las secciones
+   ================================================================= */
+.kicker {
+  font-size: 9px; font-weight: 700;
+  letter-spacing: 0.28em; text-transform: uppercase;
+  color: var(--gris);
+}
+.kicker-linea {
+  height: 1.5px; background: var(--tinta);
+  margin: 6px 0 10px;
 }
 
 /* =================================================================
    UTILIDADES
    ================================================================= */
-.sube { color: var(--verde); }
-.baja { color: var(--rojo); }
-.dato-stale { opacity: 0.55; }
+.sube { color: var(--verde); font-weight: 600; }
+.baja { color: var(--rojo); font-weight: 600; }
+.dato-stale { opacity: 0.5; }
 
-/* Scrollbar mínima */
-::-webkit-scrollbar { width: 4px; height: 4px; }
-::-webkit-scrollbar-track { background: transparent; }
-::-webkit-scrollbar-thumb { background: var(--linea); border-radius: 2px; }
-
-/* =================================================================
-   BARRA SUPERIOR legacy (ocultar — reemplazada por cabecera)
-   ================================================================= */
 .barra-superior { display: none; }
+.nav-principal  { display: none; }
+.franja-datos   { display: none; }
+.cabecera-home  { display: none; }
 
-/* =================================================================
-   NAV PRINCIPAL legacy (ocultar — reemplazada por drawer)
-   ================================================================= */
-.nav-principal { display: none; }
-.nav-menu { display: none; }
-
-/* =================================================================
-   CINTA DE CATEGORÍAS
-   ================================================================= */
-.nav-cats-cinta {
-  background: var(--papel);
-  padding: 10px 0;
-}
-.nav-cats-scroll {
-  display: flex;
-  gap: 14px;
-  overflow-x: auto;
-  -webkit-overflow-scrolling: touch;
-  scrollbar-width: none;
-  padding-bottom: 2px;
-  flex-wrap: nowrap;
-}
-.nav-cats-scroll::-webkit-scrollbar { display: none; }
-.nav-cats-scroll a {
-  display: inline-flex;
-  align-items: center;
-  gap: 5px;
-  color: var(--gris);
-  white-space: nowrap;
-  font-family: 'IBM Plex Sans', sans-serif;
-  font-size: 10px;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  font-weight: 600;
-}
-.nav-cats-scroll a:hover { color: var(--rojo); }
-.nav-cats-scroll a .ic {
-  width: 14px; height: 14px;
-  stroke: currentColor; stroke-width: 2.2;
-  fill: none; stroke-linecap: round; stroke-linejoin: round;
-  flex: 0 0 auto;
-}
-
-/* =================================================================
-   CARRUSEL DE DATOS
-   (ver carrusel-datos.css — solo override de colores acá)
-   ================================================================= */
-.tarjeta-dato {
-  background: var(--papel);
-  border-color: var(--linea);
-}
-.tarjeta-destacada {
-  /* Sin borde rojo — jerarquía por tamaño, no por color */
-  border: 1px solid var(--linea) !important;
-  box-shadow: none !important;
-}
-.tarjeta-destacada .tarjeta-titulo { color: var(--gris) !important; font-weight: 700; }
-
-/* =================================================================
-   RESPONSIVE BASE
-   ================================================================= */
-@media (min-width: 768px) {
-  .cab-logo-fila { padding: 12px 24px; }
-  .cab-logo { font-size: 32px; }
-}
+::-webkit-scrollbar { width: 3px; height: 3px; }
+::-webkit-scrollbar-thumb { background: var(--linea); border-radius: 2px; }

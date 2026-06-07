@@ -1,7 +1,7 @@
 """
-PPA — componentes.py v4.1
-Cabecera sticky, menú hamburguesa, pie compacto.
-Paleta tresempanadas.
+PPA — componentes.py v5
+2 fuentes (Playfair Display + IBM Plex Sans) · 5 colores
+Cabecera sticky con ticker pasarela · Drawer sin datos
 """
 
 import os
@@ -13,27 +13,44 @@ MESES = ["enero","febrero","marzo","abril","mayo","junio",
          "julio","agosto","septiembre","octubre","noviembre","diciembre"]
 DIAS_SEMANA = ["Lunes","Martes","Miércoles","Jueves","Viernes","Sábado","Domingo"]
 
-def fecha_legible(dt=None):
-    if dt is None:
-        dt = datetime.now(TZ_AR)
-    return f"{DIAS_SEMANA[dt.weekday()]} {dt.day} de {MESES[dt.month-1]} de {dt.year}"
-
 def fecha_corta(dt=None):
     if dt is None:
         dt = datetime.now(TZ_AR)
-    return f"{DIAS_SEMANA[dt.weekday()][:3].upper()} {dt.day}/{dt.month:02d}/{dt.year}"
+    dias = ["Lun","Mar","Mié","Jue","Vie","Sáb","Dom"]
+    return f"{dias[dt.weekday()]} {dt.day}/{dt.month:02d}/{dt.year}"
 
-
+# Menú definitivo — orden cerrado
 _SECCIONES = [
-    ("Portada",     "/"),
-    ("Análisis",    "/analisis/"),
-    ("EconoTuits",  "/tuits/"),
-    ("REM",         "/rem/"),
-    ("Tablero",     "/tablero/"),
-    ("Documentos",  "/documentos/"),
-    ("Columnas",    "/columnas/"),
-    ("Stream",      "/stream/"),
+    ("Portada",         "/"),
+    ("La Data del Día", "/la-data/"),
+    ("REM",             "/rem/"),
+    ("Columnas",        "/columnas/"),
+    ("TXT-Stream",      "/stream/"),
+    ("EconoTuits",      "/tuits/"),
+    ("Tablero",         "/tablero/"),
+    ("Documentos",      "/documentos/"),
+    ("Cómo trabajamos", "/como-trabajamos.html"),
 ]
+
+# Ticker: IDs que lee el JS de ppa.js
+_TICKER_ITEMS = [
+    ("OFICIAL",   "dolar-oficial"),
+    ("MEP",       "dolar-mep"),
+    ("BLUE",      "dolar-blue-cab"),
+    ("RIESGO",    "riesgo-pais"),
+    ("RESERVAS",  "reservas-cab"),
+    ("IPC",       "ipc-cab"),
+    ("TCRM",      "tcrm-cab"),
+]
+
+def _ticker_html():
+    """Genera la pista del ticker doble (para loop continuo)."""
+    items = "".join(
+        f'<span>{label}<b id="{id_}">…</b></span>'
+        for label, id_ in _TICKER_ITEMS
+    )
+    # Duplicado para el loop infinito
+    return items + items
 
 
 def cabecera(activo="", edicion_nombre="", edicion_icono=""):
@@ -43,55 +60,42 @@ def cabecera(activo="", edicion_nombre="", edicion_icono=""):
         edicion_icono  = "🧉" if edicion_nombre == "Desayuno" else "☕"
     fecha = fecha_corta()
 
+    # Menú items
     _partes = []
     for nombre, href in _SECCIONES:
         clase = ' class="activo"' if nombre == activo else ''
         _partes.append(f'<a href="{href}"{clase}>{nombre}</a>')
-    items = '\n    '.join(_partes)
+    menu_items = "\n    ".join(_partes)
+
     return f"""
 <div id="cabecera-wrap">
 <header class="cabecera-ppa expandida" id="cabecera-ppa">
-  <!-- Fila superior: fecha · clima · edición -->
+
   <div class="cab-top">
-    <div class="cab-top-izq">
-      <span class="cab-fecha">{fecha}</span>
-      <span class="cab-clima" id="cab-clima"></span>
-    </div>
+    <span class="cab-fecha">{fecha}</span>
     <span class="cab-edicion">Edición {edicion_nombre} {edicion_icono}</span>
   </div>
-  <!-- Fila logo + datos + hamburguesa -->
+
   <div class="cab-logo-fila">
     <div>
       <a href="/" class="cab-logo">PPA</a>
       <div class="cab-tagline">Pulso Productivo Argentino</div>
     </div>
-    <div class="cab-datos-expandidos">
-      <div class="cab-dato">
-        <span class="cab-dato-label">Oficial</span>
-        <span class="cab-dato-valor" id="dolar-oficial">…</span>
-      </div>
-      <div class="cab-dato">
-        <span class="cab-dato-label">MEP</span>
-        <span class="cab-dato-valor" id="dolar-mep">…</span>
-      </div>
-      <div class="cab-dato hide-mobile">
-        <span class="cab-dato-label">Blue</span>
-        <span class="cab-dato-valor" id="dolar-blue-cab">…</span>
-      </div>
-      <div class="cab-dato">
-        <span class="cab-dato-label">Riesgo</span>
-        <span class="cab-dato-valor" id="riesgo-pais">…</span>
-      </div>
-      <button class="cab-hamburguesa" id="btn-menu" aria-label="Menú">
-        <span></span><span></span><span></span>
-      </button>
+    <button class="cab-hamburguesa" id="btn-menu" aria-label="Menú">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+
+  <div class="cab-ticker-wrap">
+    <div class="cab-ticker" id="cab-ticker">
+      {_ticker_html()}
     </div>
   </div>
+
 </header>
 <div class="cab-spacer" id="cab-spacer"></div>
 </div>
 
-<!-- DRAWER MENÚ -->
 <div class="menu-overlay" id="menu-overlay"></div>
 <nav class="menu-drawer" id="menu-drawer">
   <div class="menu-drawer-header">
@@ -99,54 +103,31 @@ def cabecera(activo="", edicion_nombre="", edicion_icono=""):
     <button class="menu-cerrar" id="btn-menu-cerrar">✕</button>
   </div>
   <div class="menu-nav">
-    {items}
-  </div>
-  <div class="menu-datos">
-    <div class="menu-dato">
-      <span class="menu-dato-label">USD Oficial</span>
-      <span class="menu-dato-valor" id="m-dolar-oficial">…</span>
-    </div>
-    <div class="menu-dato">
-      <span class="menu-dato-label">MEP</span>
-      <span class="menu-dato-valor" id="m-dolar-mep">…</span>
-    </div>
-    <div class="menu-dato">
-      <span class="menu-dato-label">Blue</span>
-      <span class="menu-dato-valor" id="m-dolar-blue">…</span>
-    </div>
-    <div class="menu-dato">
-      <span class="menu-dato-label">Riesgo</span>
-      <span class="menu-dato-valor" id="m-riesgo">…</span>
-    </div>
+    {menu_items}
   </div>
 </nav>"""
 
 
 def nav_principal(activo=""):
-    """Compatibilidad — el nav real está en el drawer. Devuelve vacío."""
-    return ""
+    return ""  # reemplazado por el drawer
 
 
 def franja_datos(dt=None):
-    """Compatibilidad — los datos están en la cabecera. Devuelve vacío."""
-    return ""
+    return ""  # reemplazado por el ticker de la cabecera
 
 
 def pie():
-    return """
+    links = " ·\n      ".join(
+        f'<a href="{href}">{nombre}</a>'
+        for nombre, href in _SECCIONES
+    )
+    return f"""
 <footer class="pie">
   <div class="contenedor">
     <span class="pie-logo">PPA</span>
     <span class="pie-bajada">Pulso Productivo Argentino · pulsoproductivo.com.ar</span>
     <div class="pie-meta">
-      <a href="/analisis/">Análisis</a>
-      <a href="/tuits/">EconoTuits</a>
-      <a href="/rem/">REM</a>
-      <a href="/tablero/">Tablero</a>
-      <a href="/documentos/">Documentos</a>
-      <a href="/columnas/">Columnas</a>
-      <a href="/stream/">Stream</a>
-      <a href="/como-trabajamos.html">Cómo trabajamos</a>
+      {links}
     </div>
     <span class="pie-legal">Editor responsable: Sergio Falco</span>
   </div>
@@ -163,18 +144,17 @@ def head_comun(titulo, descripcion="Publicación económica argentina.", css_ext
 <meta name="description" content="{descripcion}">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,900&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/assets/ppa.css">
 {css_extra}
 </head>"""
 
 
-import re
-
 def limpiar_url(texto):
+    """Quita URLs pegadas en títulos (frecuente en RSS de Twitter/BCRA/INDEC)."""
     if not texto: return texto
     t = re.sub(r'https?://\S+', '', str(texto))
-    t = re.sub(r'\b(Acced[eé]|Disponible|Ver|Leer|Más|Link|Enlace)[^.:]*[:]\\s*$', '', t, flags=re.IGNORECASE)
+    t = re.sub(r'\b(Acced[eé]|Disponible|Ver|Leer|Más|Link|Enlace)[^.:]*[:]\s*$', '', t, flags=re.IGNORECASE)
     t = re.sub(r'\s{2,}', ' ', t)
     t = re.sub(r'[\s·\-–—:]+$', '', t)
     return t.strip()

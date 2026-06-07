@@ -310,7 +310,7 @@
 })();
 
 // ================================================================
-// CABECERA STICKY + MENÚ HAMBURGUESA
+// CABECERA STICKY + TICKER + MENÚ HAMBURGUESA
 // ================================================================
 (function() {
   const cab     = document.getElementById('cabecera-ppa');
@@ -320,7 +320,7 @@
   const btnAbrir  = document.getElementById('btn-menu');
   const btnCerrar = document.getElementById('btn-menu-cerrar');
 
-  // ── Sticky al scrollear ──
+  // ── Sticky ──
   if (cab && spacer) {
     function checkSticky() {
       const es = window.scrollY > 10;
@@ -332,7 +332,23 @@
     checkSticky();
   }
 
-  // ── Menú hamburguesa ──
+  // ── Ticker: actualizar los spans con los datos vivos ──
+  // Los IDs del ticker (cab-ticker) son los mismos que usa pintarTicker()
+  // Se actualizan solos cuando actualizarDatos() corre — no hay que hacer nada extra.
+  // Solo ajustamos la velocidad de la animación según el ancho de la pista.
+  const ticker = document.getElementById('cab-ticker');
+  if (ticker) {
+    // La animación CSS ya corre; aquí solo sincronizamos si hay resize
+    function ajustarTicker() {
+      const w = ticker.scrollWidth / 2; // la pista está duplicada
+      const dur = Math.max(15, w / 60); // ~60px/s
+      ticker.style.animationDuration = dur + 's';
+    }
+    window.addEventListener('resize', ajustarTicker);
+    ajustarTicker();
+  }
+
+  // ── Hamburguesa ──
   function abrirMenu() {
     if (overlay) overlay.classList.add('abierto');
     if (drawer)  drawer.classList.add('abierto');
@@ -347,7 +363,5 @@
   if (btnAbrir)  btnAbrir.addEventListener('click', abrirMenu);
   if (btnCerrar) btnCerrar.addEventListener('click', cerrarMenu);
   if (overlay)   overlay.addEventListener('click', cerrarMenu);
-
-  // Cerrar con Escape
   document.addEventListener('keydown', e => { if (e.key === 'Escape') cerrarMenu(); });
 })();

@@ -35,8 +35,16 @@ DIR_TUITS  = os.path.join(DIR_SITE, "tuits")
 CUENTAS = [
     {"id": "bcra",   "usuario": "BancoCentral_AR",  "nombre": "BCRA",                 "activa": True},
     {"id": "indec",  "usuario": "INDECArgentina",    "nombre": "INDEC",                "activa": True},
-    {"id": "mecon",  "usuario": "MinEconomiaAR",     "nombre": "Ministerio de Economía","activa": True},
-    {"id": "milei",  "usuario": "JMilei",            "nombre": "Javier Milei",         "activa": False},  # off por defecto
+    {"id": "mecon",    "usuario": "MinEconomiaAR",    "nombre": "Ministerio de Economía",  "activa": True},
+    {"id": "hacienda",  "usuario": "SecHacienda",       "nombre": "Secretaría de Hacienda",   "activa": True},
+    {"id": "finanzas",  "usuario": "SecFinanzasAR",     "nombre": "Secretaría de Finanzas",   "activa": True},
+    {"id": "energia",   "usuario": "EnergiaAR",         "nombre": "Secretaría de Energía",    "activa": True},
+    {"id": "magyp",     "usuario": "magyp_ar",          "nombre": "Ministerio de Agricultura","activa": True},
+    {"id": "comercio",  "usuario": "SecComercioAR",     "nombre": "Secretaría de Comercio",   "activa": True},
+    {"id": "afip",      "usuario": "AFIP_Argentina",    "nombre": "AFIP",                     "activa": True},
+    {"id": "cnv",       "usuario": "CNV_Argentina",     "nombre": "CNV",                      "activa": True},
+    {"id": "canciller", "usuario": "CancilleriaARG",    "nombre": "Cancillería",              "activa": True},
+    {"id": "opublica",  "usuario": "ObraPublicaAR",     "nombre": "Obras Públicas",           "activa": True},
 ]
 TUITS_POR_CUENTA = 3   # máx tuits a mostrar por cuenta
 
@@ -171,13 +179,30 @@ def guardar_cache(cache):
         json.dump(cache, f, ensure_ascii=False, indent=2)
 
 
+def _leer_config_panel():
+    """Lee la config de cuentas activas desde el panel69."""
+    config_path = os.path.join(DIR_DATA, "econotuits_config.json")
+    if not os.path.exists(config_path):
+        return {}
+    try:
+        with open(config_path,'r',encoding='utf-8') as f:
+            data = json.load(f)
+        return data.get("config", {})
+    except:
+        return {}
+
+
 def obtener_todos_los_tuits():
     """Para cada cuenta activa: intenta Nitter, si falla usa cache."""
-    print("· Tuits institucionales (Nitter)")
+    print("· EconoTuits (Nitter)")
     cache = cargar_cache()
+    config_panel = _leer_config_panel()
     resultado = {}
     for cuenta in CUENTAS:
-        if not cuenta["activa"]:
+        cid = cuenta["id"]
+        # Config del panel tiene prioridad sobre el default de CUENTAS
+        activa = config_panel.get(cid, cuenta.get("activa", True))
+        if not activa:
             continue
         cid = cuenta["id"]
         tuits = fetch_tuits_cuenta(cuenta)
