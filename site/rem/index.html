@@ -7,7 +7,7 @@
 <meta name="description" content="Las proyecciones de inflación, dólar y PBI de las principales consultoras argentinas, según el REM del BCRA.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,900&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/assets/ppa.css">
 <link rel="stylesheet" href="/assets/rem.css">
 </head>
@@ -16,47 +16,32 @@
 
 <div id="cabecera-wrap">
 <header class="cabecera-ppa expandida" id="cabecera-ppa">
-  <!-- Fila superior: fecha · clima · edición -->
+
   <div class="cab-top">
-    <div class="cab-top-izq">
-      <span class="cab-fecha">DOM 7/06/2026</span>
-      <span class="cab-clima" id="cab-clima"></span>
-    </div>
-    <span class="cab-edicion">Edición Desayuno 🧉</span>
+    <span class="cab-fecha">Dom 7/06/2026</span>
+    <span class="cab-edicion">Edición Merienda ☕</span>
   </div>
-  <!-- Fila logo + datos + hamburguesa -->
+
   <div class="cab-logo-fila">
     <div>
       <a href="/" class="cab-logo">PPA</a>
       <div class="cab-tagline">Pulso Productivo Argentino</div>
     </div>
-    <div class="cab-datos-expandidos">
-      <div class="cab-dato">
-        <span class="cab-dato-label">Oficial</span>
-        <span class="cab-dato-valor" id="dolar-oficial">…</span>
-      </div>
-      <div class="cab-dato">
-        <span class="cab-dato-label">MEP</span>
-        <span class="cab-dato-valor" id="dolar-mep">…</span>
-      </div>
-      <div class="cab-dato hide-mobile">
-        <span class="cab-dato-label">Blue</span>
-        <span class="cab-dato-valor" id="dolar-blue-cab">…</span>
-      </div>
-      <div class="cab-dato">
-        <span class="cab-dato-label">Riesgo</span>
-        <span class="cab-dato-valor" id="riesgo-pais">…</span>
-      </div>
-      <button class="cab-hamburguesa" id="btn-menu" aria-label="Menú">
-        <span></span><span></span><span></span>
-      </button>
+    <button class="cab-hamburguesa" id="btn-menu" aria-label="Menú">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+
+  <div class="cab-ticker-wrap">
+    <div class="cab-ticker" id="cab-ticker">
+      <span>OFICIAL<b id="dolar-oficial">…</b></span><span>MEP<b id="dolar-mep">…</b></span><span>BLUE<b id="dolar-blue-cab">…</b></span><span>RIESGO<b id="riesgo-pais">…</b></span><span>RESERVAS<b id="reservas-cab">…</b></span><span>IPC<b id="ipc-cab">…</b></span><span>TCRM<b id="tcrm-cab">…</b></span><span>OFICIAL<b id="dolar-oficial">…</b></span><span>MEP<b id="dolar-mep">…</b></span><span>BLUE<b id="dolar-blue-cab">…</b></span><span>RIESGO<b id="riesgo-pais">…</b></span><span>RESERVAS<b id="reservas-cab">…</b></span><span>IPC<b id="ipc-cab">…</b></span><span>TCRM<b id="tcrm-cab">…</b></span>
     </div>
   </div>
+
 </header>
 <div class="cab-spacer" id="cab-spacer"></div>
 </div>
 
-<!-- DRAWER MENÚ -->
 <div class="menu-overlay" id="menu-overlay"></div>
 <nav class="menu-drawer" id="menu-drawer">
   <div class="menu-drawer-header">
@@ -65,31 +50,14 @@
   </div>
   <div class="menu-nav">
     <a href="/">Portada</a>
-    <a href="/analisis/">Análisis</a>
-    <a href="/tuits/">EconoTuits</a>
+    <a href="/la-data/">La Data del Día</a>
     <a href="/rem/" class="activo">REM</a>
+    <a href="/columnas/">Columnas</a>
+    <a href="/stream/">TXT-Stream</a>
+    <a href="/tuits/">EconoTuits</a>
     <a href="/tablero/">Tablero</a>
     <a href="/documentos/">Documentos</a>
-    <a href="/columnas/">Columnas</a>
-    <a href="/stream/">Stream</a>
-  </div>
-  <div class="menu-datos">
-    <div class="menu-dato">
-      <span class="menu-dato-label">USD Oficial</span>
-      <span class="menu-dato-valor" id="m-dolar-oficial">…</span>
-    </div>
-    <div class="menu-dato">
-      <span class="menu-dato-label">MEP</span>
-      <span class="menu-dato-valor" id="m-dolar-mep">…</span>
-    </div>
-    <div class="menu-dato">
-      <span class="menu-dato-label">Blue</span>
-      <span class="menu-dato-valor" id="m-dolar-blue">…</span>
-    </div>
-    <div class="menu-dato">
-      <span class="menu-dato-label">Riesgo</span>
-      <span class="menu-dato-valor" id="m-riesgo">…</span>
-    </div>
+    <a href="/como-trabajamos.html">Cómo trabajamos</a>
   </div>
 </nav>
 
@@ -113,13 +81,14 @@
     <span class="pie-logo">PPA</span>
     <span class="pie-bajada">Pulso Productivo Argentino · pulsoproductivo.com.ar</span>
     <div class="pie-meta">
-      <a href="/analisis/">Análisis</a>
-      <a href="/tuits/">EconoTuits</a>
-      <a href="/rem/">REM</a>
-      <a href="/tablero/">Tablero</a>
-      <a href="/documentos/">Documentos</a>
-      <a href="/columnas/">Columnas</a>
-      <a href="/stream/">Stream</a>
+      <a href="/">Portada</a> ·
+      <a href="/la-data/">La Data del Día</a> ·
+      <a href="/rem/">REM</a> ·
+      <a href="/columnas/">Columnas</a> ·
+      <a href="/stream/">TXT-Stream</a> ·
+      <a href="/tuits/">EconoTuits</a> ·
+      <a href="/tablero/">Tablero</a> ·
+      <a href="/documentos/">Documentos</a> ·
       <a href="/como-trabajamos.html">Cómo trabajamos</a>
     </div>
     <span class="pie-legal">Editor responsable: Sergio Falco</span>

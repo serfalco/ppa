@@ -4,10 +4,10 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>PPA · Pulso Productivo Argentino</title>
-<meta name="description" content="Publicación económica argentina: análisis, datos de mercado, columnas y más.">
+<meta name="description" content="Publicación económica argentina. La Data del Día, datos de mercado, columnas y más.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,900&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/assets/ppa.css">
 <link rel="stylesheet" href="/assets/home.css">
 <link rel="stylesheet" href="/assets/carrusel-datos.css">
@@ -17,47 +17,32 @@
 
 <div id="cabecera-wrap">
 <header class="cabecera-ppa expandida" id="cabecera-ppa">
-  <!-- Fila superior: fecha · clima · edición -->
+
   <div class="cab-top">
-    <div class="cab-top-izq">
-      <span class="cab-fecha">DOM 7/06/2026</span>
-      <span class="cab-clima" id="cab-clima"></span>
-    </div>
-    <span class="cab-edicion">Edición Desayuno 🧉</span>
+    <span class="cab-fecha">Dom 7/06/2026</span>
+    <span class="cab-edicion">Edición Merienda ☕</span>
   </div>
-  <!-- Fila logo + datos + hamburguesa -->
+
   <div class="cab-logo-fila">
     <div>
       <a href="/" class="cab-logo">PPA</a>
       <div class="cab-tagline">Pulso Productivo Argentino</div>
     </div>
-    <div class="cab-datos-expandidos">
-      <div class="cab-dato">
-        <span class="cab-dato-label">Oficial</span>
-        <span class="cab-dato-valor" id="dolar-oficial">…</span>
-      </div>
-      <div class="cab-dato">
-        <span class="cab-dato-label">MEP</span>
-        <span class="cab-dato-valor" id="dolar-mep">…</span>
-      </div>
-      <div class="cab-dato hide-mobile">
-        <span class="cab-dato-label">Blue</span>
-        <span class="cab-dato-valor" id="dolar-blue-cab">…</span>
-      </div>
-      <div class="cab-dato">
-        <span class="cab-dato-label">Riesgo</span>
-        <span class="cab-dato-valor" id="riesgo-pais">…</span>
-      </div>
-      <button class="cab-hamburguesa" id="btn-menu" aria-label="Menú">
-        <span></span><span></span><span></span>
-      </button>
+    <button class="cab-hamburguesa" id="btn-menu" aria-label="Menú">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+
+  <div class="cab-ticker-wrap">
+    <div class="cab-ticker" id="cab-ticker">
+      <span>OFICIAL<b id="dolar-oficial">…</b></span><span>MEP<b id="dolar-mep">…</b></span><span>BLUE<b id="dolar-blue-cab">…</b></span><span>RIESGO<b id="riesgo-pais">…</b></span><span>RESERVAS<b id="reservas-cab">…</b></span><span>IPC<b id="ipc-cab">…</b></span><span>TCRM<b id="tcrm-cab">…</b></span><span>OFICIAL<b id="dolar-oficial">…</b></span><span>MEP<b id="dolar-mep">…</b></span><span>BLUE<b id="dolar-blue-cab">…</b></span><span>RIESGO<b id="riesgo-pais">…</b></span><span>RESERVAS<b id="reservas-cab">…</b></span><span>IPC<b id="ipc-cab">…</b></span><span>TCRM<b id="tcrm-cab">…</b></span>
     </div>
   </div>
+
 </header>
 <div class="cab-spacer" id="cab-spacer"></div>
 </div>
 
-<!-- DRAWER MENÚ -->
 <div class="menu-overlay" id="menu-overlay"></div>
 <nav class="menu-drawer" id="menu-drawer">
   <div class="menu-drawer-header">
@@ -66,347 +51,258 @@
   </div>
   <div class="menu-nav">
     <a href="/" class="activo">Portada</a>
-    <a href="/analisis/">Análisis</a>
-    <a href="/tuits/">EconoTuits</a>
+    <a href="/la-data/">La Data del Día</a>
     <a href="/rem/">REM</a>
+    <a href="/columnas/">Columnas</a>
+    <a href="/stream/">TXT-Stream</a>
+    <a href="/tuits/">EconoTuits</a>
     <a href="/tablero/">Tablero</a>
     <a href="/documentos/">Documentos</a>
-    <a href="/columnas/">Columnas</a>
-    <a href="/stream/">Stream</a>
-  </div>
-  <div class="menu-datos">
-    <div class="menu-dato">
-      <span class="menu-dato-label">USD Oficial</span>
-      <span class="menu-dato-valor" id="m-dolar-oficial">…</span>
-    </div>
-    <div class="menu-dato">
-      <span class="menu-dato-label">MEP</span>
-      <span class="menu-dato-valor" id="m-dolar-mep">…</span>
-    </div>
-    <div class="menu-dato">
-      <span class="menu-dato-label">Blue</span>
-      <span class="menu-dato-valor" id="m-dolar-blue">…</span>
-    </div>
-    <div class="menu-dato">
-      <span class="menu-dato-label">Riesgo</span>
-      <span class="menu-dato-valor" id="m-riesgo">…</span>
-    </div>
+    <a href="/como-trabajamos.html">Cómo trabajamos</a>
   </div>
 </nav>
 
-<!-- CARRUSEL DE DATOS -->
+<main class="home-main">
+<div class="contenedor">
 
-<section class="franja-tarjetas">
-  <div class="carrusel-datos" id="carrusel-datos">
-    <div class="carrusel-pista" id="carrusel-pista">
+
+<section class="home-la-data">
+  <div class="kicker">La Data del Día</div>
+  <div class="kicker-linea"></div>
+  <ul class="data-lista">
     
-      <a href="/tablero/#mercado" class="tarjeta-dato tarjeta-destacada" id="tarjeta-riesgo" title="Ver en Tablero PPA">
-        <span class="tarjeta-titulo">RIESGO PAÍS</span>
-        <span class="tarjeta-valor">…</span>
-        <span class="tarjeta-var"></span>
-        <span class="tarjeta-hora"></span>
+      <li class="data-item">
+        <span class="data-cat">Energía</span>
+        <a href="https://econojournal.com.ar/2026/06/ypf-se-suma-al-mega-proyecto-de-separacion-de-liquidos-del-gas-de-vaca-muerta-anunciado-por-tgs/" class="data-titulo" target="_blank" rel="noopener">YPF se suma al mega proyecto de separación de líquidos del gas de Vaca Muerta anunciado por TGS</a>
+        <span class="data-fuente">EconoJournal</span>
+      </li>
+      <li class="data-item">
+        <span class="data-cat">Automotor</span>
+        <a href="https://arodarpost.com.ar/las-10-claves-del-byd-yuan-pro-100-electrico/" class="data-titulo" target="_blank" rel="noopener">Las 10 claves del BYD Yuan Pro 100% eléctrico</a>
+        <span class="data-fuente">A Rodar Post</span>
+      </li>
+      <li class="data-item">
+        <span class="data-cat">Internacional</span>
+        <a href="https://www.bloomberglinea.com/latinoamerica/peru/los-primeros-100-dias-de-fujimori-o-sanchez-las-decisiones-que-marcaran-el-rumbo-economico-de-peru/" class="data-titulo" target="_blank" rel="noopener">Los primeros 100 días de Fujimori o Sánchez: las decisiones que marcarán el rumbo económico de Perú</a>
+        <span class="data-fuente">Bloomberg Línea</span>
+      </li>
+      <li class="data-item">
+        <span class="data-cat">Energía</span>
+        <a href="https://econojournal.com.ar/2026/06/weretilneck-paso-el-mando-de-su-partido-en-rio-negro-y-dejo-un-mensaje-para-el-2027-nadie-va-a-querer-retroceder/" class="data-titulo" target="_blank" rel="noopener">Weretilneck pasó el mando de su partido en Río Negro y dejó mensajes para el 2027: «Nadie va a querer retroceder»</a>
+        <span class="data-fuente">EconoJournal</span>
+      </li>
+      <li class="data-item">
+        <span class="data-cat">Internacional</span>
+        <a href="https://www.bloomberglinea.com/mercados/tras-la-euforia-por-la-ia-wall-street-busca-su-proxima-revolucion-la-computacion-cuantica/" class="data-titulo" target="_blank" rel="noopener">Tras la euforia por la IA, Wall Street busca su próxima revolución: la computación cuántica</a>
+        <span class="data-fuente">Bloomberg Línea</span>
+      </li>
+      <li class="data-item">
+        <span class="data-cat">Macro</span>
+        <a href="https://www.ambito.com/finanzas/dolar-hoy-cuanto-cotiza-este-domingo-7-junio-n6285987" class="data-titulo" target="_blank" rel="noopener">Dólar hoy: a cuánto cotiza este domingo 7 de junio</a>
+        <span class="data-fuente">Ámbito Financiero</span>
+      </li>
+      <li class="data-item">
+        <span class="data-cat">Macro</span>
+        <a href="https://www.ambito.com/finanzas/dolar-blue-hoy-cuanto-opera-este-domingo-7-junio-n6285988" class="data-titulo" target="_blank" rel="noopener">Dólar blue hoy: a cuánto opera este domingo 7 de junio</a>
+        <span class="data-fuente">Ámbito Financiero</span>
+      </li>
+      <li class="data-item">
+        <span class="data-cat">Macro</span>
+        <a href="https://idesa.org/los-nacimientos-cayeron-casi-a-la-mitad-en-una-decada/" class="data-titulo" target="_blank" rel="noopener">Los nacimientos cayeron casi a la mitad en una década</a>
+        <span class="data-fuente">IDESA</span>
+      </li>
+  </ul>
+</section>
+
+
+<section class="home-categorias">
+  <div class="cats-grid">
+    
+      <a href="/la-data/#macro" class="cat-link">
+        <span class="cat-ic"><svg viewBox="0 0 32 32" class="ic" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="27" x2="27" y2="27"/><rect x="7" y="18" width="4" height="9"/><rect x="14" y="13" width="4" height="14"/><rect x="21" y="8" width="4" height="19"/></svg></span>
+        <span class="cat-txt">Macro</span>
       </a>
-      <a href="/tablero/#dolares" class="tarjeta-dato" id="tarjeta-dolar-oficial" title="Ver en Tablero PPA">
-        <span class="tarjeta-titulo">DÓLAR OFICIAL</span>
-        <span class="tarjeta-valor">…</span>
-        <span class="tarjeta-var"></span>
-        <span class="tarjeta-hora"></span>
+      <a href="/la-data/#politica" class="cat-link">
+        <span class="cat-ic"><svg viewBox="0 0 32 32" class="ic" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="6,12 16,6 26,12"/><line x1="8" y1="12" x2="8" y2="24"/><line x1="13" y1="12" x2="13" y2="24"/><line x1="19" y1="12" x2="19" y2="24"/><line x1="24" y1="12" x2="24" y2="24"/><line x1="5" y1="24" x2="27" y2="24"/></svg></span>
+        <span class="cat-txt">Política</span>
       </a>
-      <a href="/tablero/#dolares" class="tarjeta-dato" id="tarjeta-dolar-mep" title="Ver en Tablero PPA">
-        <span class="tarjeta-titulo">DÓLAR MEP</span>
-        <span class="tarjeta-valor">…</span>
-        <span class="tarjeta-var"></span>
-        <span class="tarjeta-hora"></span>
+      <a href="/la-data/#energia" class="cat-link">
+        <span class="cat-ic"><svg viewBox="0 0 32 32" class="ic" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polygon points="18,4 8,18 15,18 14,28 24,14 17,14"/></svg></span>
+        <span class="cat-txt">Energía</span>
       </a>
-      <a href="/tablero/#dolares" class="tarjeta-dato" id="tarjeta-dolar-ccl" title="Ver en Tablero PPA">
-        <span class="tarjeta-titulo">DÓLAR CCL</span>
-        <span class="tarjeta-valor">…</span>
-        <span class="tarjeta-var"></span>
-        <span class="tarjeta-hora"></span>
+      <a href="/la-data/#agro" class="cat-link">
+        <span class="cat-ic"><svg viewBox="0 0 32 32" class="ic" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><line x1="16" y1="29" x2="16" y2="13"/><path d="M16 14 q-5 -1 -5 -6 q5 1 5 6"/><path d="M16 14 q5 -1 5 -6 q-5 1 -5 6"/><path d="M16 20 q-4 -1 -4 -5 q4 1 4 5"/><path d="M16 20 q4 -1 4 -5 q-4 1 -4 5"/></svg></span>
+        <span class="cat-txt">Agro</span>
       </a>
-      <a href="/tablero/#dolares" class="tarjeta-dato" id="tarjeta-dolar-blue" title="Ver en Tablero PPA">
-        <span class="tarjeta-titulo">DÓLAR BLUE</span>
-        <span class="tarjeta-valor">…</span>
-        <span class="tarjeta-var"></span>
-        <span class="tarjeta-hora"></span>
+      <a href="/la-data/#mercados" class="cat-link">
+        <span class="cat-ic"><svg viewBox="0 0 32 32" class="ic" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="5,22 12,15 17,18 26,7"/><polyline points="21,7 26,7 26,12"/></svg></span>
+        <span class="cat-txt">Mercados</span>
       </a>
-      <a href="/tablero/#mercado" class="tarjeta-dato" id="tarjeta-merval" title="Ver en Tablero PPA">
-        <span class="tarjeta-titulo">MERVAL</span>
-        <span class="tarjeta-valor">…</span>
-        <span class="tarjeta-var"></span>
-        <span class="tarjeta-hora"></span>
+      <a href="/la-data/#finanzas" class="cat-link">
+        <span class="cat-ic"></span>
+        <span class="cat-txt">Finanzas</span>
       </a>
-      <a href="/tablero/#mercado" class="tarjeta-dato" id="tarjeta-reservas" title="Ver en Tablero PPA">
-        <span class="tarjeta-titulo">RESERVAS BCRA</span>
-        <span class="tarjeta-valor">…</span>
-        <span class="tarjeta-var"></span>
-        <span class="tarjeta-hora"></span>
+      <a href="/la-data/#comex" class="cat-link">
+        <span class="cat-ic"><svg viewBox="0 0 32 32" class="ic" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 20 L27 20 L24 26 L8 26 Z"/><rect x="11" y="13" width="5" height="7"/><rect x="16" y="13" width="5" height="7"/><line x1="16" y1="8" x2="16" y2="13"/></svg></span>
+        <span class="cat-txt">Comex</span>
       </a>
-      <a href="/tablero/#dolares" class="tarjeta-dato" id="tarjeta-brecha" title="Ver en Tablero PPA">
-        <span class="tarjeta-titulo">BRECHA MEP</span>
-        <span class="tarjeta-valor">…</span>
-        <span class="tarjeta-var"></span>
-        <span class="tarjeta-hora"></span>
+      <a href="/la-data/#mineria" class="cat-link">
+        <span class="cat-ic"><svg viewBox="0 0 32 32" class="ic" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 22 C 5 14, 11 9, 16 9 C 21 9, 27 14, 27 22"/><line x1="4" y1="22" x2="28" y2="22"/><rect x="14" y="6" width="4" height="5"/><circle cx="16" cy="14" r="2"/></svg></span>
+        <span class="cat-txt">Minería</span>
       </a>
-      <a href="/tablero/#macro" class="tarjeta-dato" id="tarjeta-ipc" title="Ver en Tablero PPA">
-        <span class="tarjeta-titulo">IPC MENSUAL</span>
-        <span class="tarjeta-valor">…</span>
-        <span class="tarjeta-var"></span>
-        <span class="tarjeta-hora"></span>
+      <a href="/la-data/#laboral" class="cat-link">
+        <span class="cat-ic"></span>
+        <span class="cat-txt">Laboral</span>
       </a>
-      <a href="/tablero/#macro" class="tarjeta-dato" id="tarjeta-emae" title="Ver en Tablero PPA">
-        <span class="tarjeta-titulo">EMAE</span>
-        <span class="tarjeta-valor">…</span>
-        <span class="tarjeta-var"></span>
-        <span class="tarjeta-hora"></span>
+      <a href="/la-data/#automotor" class="cat-link">
+        <span class="cat-ic"><svg viewBox="0 0 32 32" class="ic" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 21 L7 14 L25 14 L27 21"/><line x1="4" y1="21" x2="28" y2="21"/><circle cx="10" cy="23" r="2.5"/><circle cx="22" cy="23" r="2.5"/></svg></span>
+        <span class="cat-txt">Automotor</span>
       </a>
-      <a href="/tablero/#dolares" class="tarjeta-dato tarjeta-banda" id="tarjeta-banda" title="Banda cambiaria">
-        <span class="tarjeta-titulo"><svg viewBox="0 0 32 32" class="ic" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><line x1="6" y1="16" x2="26" y2="16"/><line x1="6" y1="11" x2="6" y2="21"/><line x1="26" y1="11" x2="26" y2="21"/><circle cx="16" cy="16" r="3"/></svg>Banda cambiaria</span>
-        <div class="banda-term">
-          <div class="banda-barra"><div class="banda-marcador" id="banda-marcador"></div></div>
-          <div class="banda-pies">
-            <span class="banda-piso" id="banda-piso">…</span>
-            <span class="banda-actual" id="banda-actual"></span>
-            <span class="banda-techo" id="banda-techo">…</span>
-          </div>
-        </div>
+      <a href="/la-data/#logistica" class="cat-link">
+        <span class="cat-ic"><svg viewBox="0 0 32 32" class="ic" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="11" width="13" height="10"/><path d="M17 14 L23 14 L27 18 L27 21 L17 21"/><circle cx="10" cy="23" r="2.5"/><circle cx="23" cy="23" r="2.5"/></svg></span>
+        <span class="cat-txt">Logística</span>
       </a>
-    </div>
+      <a href="/la-data/#internacional" class="cat-link">
+        <span class="cat-ic"><svg viewBox="0 0 32 32" class="ic" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="16" cy="16" r="11"/><ellipse cx="16" cy="16" rx="5" ry="11"/><line x1="5" y1="16" x2="27" y2="16"/></svg></span>
+        <span class="cat-txt">Internacional</span>
+      </a>
+      <a href="/la-data/#fiscal" class="cat-link">
+        <span class="cat-ic"><svg viewBox="0 0 32 32" class="ic" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><rect x="7" y="5" width="18" height="22" rx="2"/><line x1="11" y1="11" x2="21" y2="11"/><line x1="11" y1="16" x2="21" y2="16"/><line x1="11" y1="21" x2="17" y2="21"/></svg></span>
+        <span class="cat-txt">Fiscal</span>
+      </a>
+      <a href="/la-data/#fulbito" class="cat-link">
+        <span class="cat-ic"></span>
+        <span class="cat-txt">Fulbito</span>
+      </a>
   </div>
 </section>
 
-<!-- CONTENIDO: columna principal + sidebar -->
-<main class="home-main">
-  <div class="contenedor home-layout-densa">
 
+<section class="home-tarjetas">
+  <div class="tablero-scroll">
     
-<div class="home-col-principal">
-  <div class="col-header">
-    <span class="col-kicker">LA DATA DEL DÍA</span>
-    <a href="/institucional/" class="col-ver-todo">Edición completa →</a>
+      <a href="/tablero/#dolares" class="t-card" id="tarjeta-dolar-oficial">
+        <span class="t-label">Oficial</span>
+        <span class="t-valor">…</span>
+        <span class="t-var"></span>
+      </a>
+      <a href="/tablero/#dolares" class="t-card" id="tarjeta-dolar-mep">
+        <span class="t-label">MEP</span>
+        <span class="t-valor">…</span>
+        <span class="t-var"></span>
+      </a>
+      <a href="/tablero/#dolares" class="t-card" id="tarjeta-dolar-ccl">
+        <span class="t-label">CCL</span>
+        <span class="t-valor">…</span>
+        <span class="t-var"></span>
+      </a>
+      <a href="/tablero/#dolares" class="t-card" id="tarjeta-dolar-blue">
+        <span class="t-label">Blue</span>
+        <span class="t-valor">…</span>
+        <span class="t-var"></span>
+      </a>
+      <a href="/tablero/#bcra" class="t-card" id="tarjeta-reservas">
+        <span class="t-label">Reservas</span>
+        <span class="t-valor">…</span>
+        <span class="t-var"></span>
+      </a>
+      <a href="/tablero/#dolares" class="t-card" id="tarjeta-brecha">
+        <span class="t-label">Brecha MEP</span>
+        <span class="t-valor">…</span>
+        <span class="t-var"></span>
+      </a>
+      <a href="/tablero/#dolares" class="t-card" id="tarjeta-banda">
+        <span class="t-label">Banda</span>
+        <span class="t-valor">…</span>
+        <span class="t-var"></span>
+      </a>
+      <a href="/tablero/#macro" class="t-card" id="tarjeta-ipc">
+        <span class="t-label">IPC</span>
+        <span class="t-valor">…</span>
+        <span class="t-var"></span>
+      </a>
+      <a href="/tcrm/" class="t-card" id="tarjeta-tcrm">
+        <span class="t-label">TCRM</span>
+        <span class="t-valor">…</span>
+        <span class="t-var"></span>
+      </a>
   </div>
-  
-<div class="home-destacados">
-  <div class="dest-label">LO MÁS IMPORTANTE</div>
-  <div class="dest-lista">
-    
-      <article class="dest-item dest-principal">
-        <span class="dest-cat">Energía</span>
-        <h2 class="dest-titulo"><a href="/institucional/">Weretilneck pasó el mando de su partido en Río Negro y dejó mensajes para el 2027: «Nadie va a querer retroceder»</a></h2>
-        <span class="dest-fuente">EconoJournal</span>
-      </article>
-      <article class="dest-item dest-secundario">
-        <span class="dest-cat">Internacional</span>
-        <h2 class="dest-titulo"><a href="/institucional/">Tras la euforia por la IA, Wall Street busca su próxima revolución: la computación cuántica</a></h2>
-        <span class="dest-fuente">Bloomberg Línea</span>
-      </article>
-      <article class="dest-item dest-secundario">
-        <span class="dest-cat">Macro</span>
-        <h2 class="dest-titulo"><a href="/institucional/">Publicamos el Informe Monetario Mensual de mayo de 2026.
-Accedé al informe completo: #InformeMonetarioMensual</a></h2>
-        <span class="dest-fuente">BCRA (Twitter)</span>
-      </article>
-      <article class="dest-item dest-secundario">
-        <span class="dest-cat">Internacional</span>
-        <h2 class="dest-titulo"><a href="/institucional/">Dólar subió a su nivel más alto desde marzo y golpeó con fuerza a las monedas de América Latina</a></h2>
-        <span class="dest-fuente">Bloomberg Línea</span>
-      </article>
-      <article class="dest-item dest-secundario">
-        <span class="dest-cat">Macro</span>
-        <h2 class="dest-titulo"><a href="/institucional/">Tomate unos minutos antes de interactuar con una cuenta en redes sociales que parece del Banco Central, de un banco o de una billetera digital. Puede ser un perfil falso. Los estafadores copian logos, nombres, fotos de perfil y publicaciones recientes para que la cuenta parezca auténtica. Desde esos perfiles falsos envían mensajes directos que simulan ser de ayuda o atención al público para conseguir datos personales, información bancaria, códigos de verificación o tokens. ¿Cómo reconocer un perfil clonado? ☑ Revisá el nombre de usuario: muchas veces tiene guiones, números extra o letras cambiadas. ☑ Verificá la tilde azul o la insignia oficial. ☑ Mirá la antigüedad de la cuenta y su actividad real. ☑ Desconfiá si responde demasiado rápido o con mensajes genéricos automatizados. ¿Qué hacer si te escribe uno? ☑ No abras enlaces ni compartas información. ☑ Bloqueá y reportá el perfil. ☑ Consultá vos los canales oficiales del banco u organismo. ☑ Si diste información, llamá urgente a tu banco y denunciá en UFECI: denunciasufeci@mpf.gob.ar. #VosSosLaClave #SeguridadBancaria</a></h2>
-        <span class="dest-fuente">BCRA (Twitter)</span>
-      </article>
-  </div>
-</div>
-  <div class="home-cats-grid">
-    
-<div class="home-bloque-cat">
-  <div class="cat-header">
-    <span class="cat-icono"><svg viewBox="0 0 32 32" class="ic" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="27" x2="27" y2="27"/><rect x="7" y="18" width="4" height="9"/><rect x="14" y="13" width="4" height="14"/><rect x="21" y="8" width="4" height="19"/></svg></span>
-    <a href="/institucional/#macro" class="cat-nombre">Macro</a>
-  </div>
-  <ul class="cat-lista">
-    
-        <li class="cat-item">
-          <a href="/institucional/#macro" class="cat-titulo">Dólar hoy: a cuánto cotiza este domingo 7 de junio</a>
-          <span class="cat-fuente">Ámbito Financiero</span>
-        </li>
-        <li class="cat-item">
-          <a href="/institucional/#macro" class="cat-titulo">Dólar blue hoy: a cuánto opera este domingo 7 de junio</a>
-          <span class="cat-fuente">Ámbito Financiero</span>
-        </li>
-        <li class="cat-item">
-          <a href="/institucional/#macro" class="cat-titulo">Dólar tarjeta hoy: a cuánto cotiza este domingo 07 de junio</a>
-          <span class="cat-fuente">Clarín Economía</span>
-        </li>
-        <li class="cat-item">
-          <a href="/institucional/#macro" class="cat-titulo">Dólar CCL hoy: a cuánto cotiza este domingo 07 de junio</a>
-          <span class="cat-fuente">Clarín Economía</span>
-        </li>
-        <li class="cat-item">
-          <a href="/institucional/#macro" class="cat-titulo">Por qué Starlink es el negocio que sostiene a SpaceX ante su inminente salida a bolsa</a>
-          <span class="cat-fuente">iProfesional Finanzas</span>
-        </li>
-        <li class="cat-item">
-          <a href="/institucional/#macro" class="cat-titulo">Argentinos, sin valores de referencia: un mismo producto puede tener más de 5 precios diferentes</a>
-          <span class="cat-fuente">iProfesional Economía</span>
-        </li>
-  </ul>
-</div>
-<div class="home-bloque-cat">
-  <div class="cat-header">
-    <span class="cat-icono"><svg viewBox="0 0 32 32" class="ic" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="6,12 16,6 26,12"/><line x1="8" y1="12" x2="8" y2="24"/><line x1="13" y1="12" x2="13" y2="24"/><line x1="19" y1="12" x2="19" y2="24"/><line x1="24" y1="12" x2="24" y2="24"/><line x1="5" y1="24" x2="27" y2="24"/></svg></span>
-    <a href="/institucional/#politica" class="cat-nombre">Política</a>
-  </div>
-  <ul class="cat-lista">
-    
-        <li class="cat-item">
-          <a href="/institucional/#politica" class="cat-titulo">Se presentó la edición 2025 del Índice de Transparencia de Empresas de Propiedad Estatal</a>
-          <span class="cat-fuente">CIPPEC</span>
-        </li>
-  </ul>
-</div>
-<div class="home-bloque-cat">
-  <div class="cat-header">
-    <span class="cat-icono"><svg viewBox="0 0 32 32" class="ic" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polygon points="18,4 8,18 15,18 14,28 24,14 17,14"/></svg></span>
-    <a href="/institucional/#energia" class="cat-nombre">Energía</a>
-  </div>
-  <ul class="cat-lista">
-    
-        <li class="cat-item">
-          <a href="/institucional/#energia" class="cat-titulo">Tierras raras: ¿qué son y por qué se convirtieron en eje de la tensión energética entre Estados Unidos y China?</a>
-          <span class="cat-fuente">EconoJournal</span>
-        </li>
-        <li class="cat-item">
-          <a href="/institucional/#energia" class="cat-titulo">Ente regulador: las peleas que llevaron a la renuncia de Lamboglia y el dilema que enfrenta el gobierno</a>
-          <span class="cat-fuente">EconoJournal</span>
-        </li>
-  </ul>
-</div>
-<div class="home-bloque-cat">
-  <div class="cat-header">
-    <span class="cat-icono"><svg viewBox="0 0 32 32" class="ic" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 21 L7 14 L25 14 L27 21"/><line x1="4" y1="21" x2="28" y2="21"/><circle cx="10" cy="23" r="2.5"/><circle cx="22" cy="23" r="2.5"/></svg></span>
-    <a href="/institucional/#automotor" class="cat-nombre">Automotor</a>
-  </div>
-  <ul class="cat-lista">
-    
-        <li class="cat-item">
-          <a href="/institucional/#automotor" class="cat-titulo">Son emprendedores argentinos y encontraron la forma de que sus clientes vendan un 20% más</a>
-          <span class="cat-fuente">iProfesional Autos</span>
-        </li>
-        <li class="cat-item">
-          <a href="/institucional/#automotor" class="cat-titulo">Cómo es el SUV chino Jetour T1, competidor del exitoso Baic BJ30 y Ford Bronco</a>
-          <span class="cat-fuente">iProfesional Autos</span>
-        </li>
-        <li class="cat-item">
-          <a href="/institucional/#automotor" class="cat-titulo">Volkswagen pisó fuerte en Agroactiva: desplegó su gama de pick-ups y pesados</a>
-          <span class="cat-fuente">Clarín Autos</span>
-        </li>
-        <li class="cat-item">
-          <a href="/institucional/#automotor" class="cat-titulo">El chino del momento: cómo anda y cuánto consume el BYD Atto 2</a>
-          <span class="cat-fuente">Clarín Autos</span>
-        </li>
-  </ul>
-</div>
-<div class="home-bloque-cat">
-  <div class="cat-header">
-    <span class="cat-icono"><svg viewBox="0 0 32 32" class="ic" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="11" width="13" height="10"/><path d="M17 14 L23 14 L27 18 L27 21 L17 21"/><circle cx="10" cy="23" r="2.5"/><circle cx="23" cy="23" r="2.5"/></svg></span>
-    <a href="/institucional/#logistica" class="cat-nombre">Logística</a>
-  </div>
-  <ul class="cat-lista">
-    
-        <li class="cat-item">
-          <a href="/institucional/#logistica" class="cat-titulo">Día Mundial del Medio Ambiente: cuando la sustentabilidad se traduce en decisiones concretas</a>
-          <span class="cat-fuente">Webpicking</span>
-        </li>
-        <li class="cat-item">
-          <a href="/institucional/#logistica" class="cat-titulo">El sector portuario argentino despide a Gustavo Anschutz</a>
-          <span class="cat-fuente">Webpicking</span>
-        </li>
-        <li class="cat-item">
-          <a href="/institucional/#logistica" class="cat-titulo">Falleció Juan Roberto Cafasso exdirector del Puerto de Bahía Blanca</a>
-          <span class="cat-fuente">Argenports</span>
-        </li>
-        <li class="cat-item">
-          <a href="/institucional/#logistica" class="cat-titulo">Puerto Dock Sud amplía la medición de su huella de carbono y lanza un programa de educación ambiental</a>
-          <span class="cat-fuente">Argenports</span>
-        </li>
-  </ul>
-</div>
-<div class="home-bloque-cat">
-  <div class="cat-header">
-    <span class="cat-icono"><svg viewBox="0 0 32 32" class="ic" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="16" cy="16" r="11"/><ellipse cx="16" cy="16" rx="5" ry="11"/><line x1="5" y1="16" x2="27" y2="16"/></svg></span>
-    <a href="/institucional/#internacional" class="cat-nombre">Internacional</a>
-  </div>
-  <ul class="cat-lista">
-    
-        <li class="cat-item">
-          <a href="/institucional/#internacional" class="cat-titulo">Fórmula 1: a qué hora y dónde ver en vivo el Gran Premio de Mónaco 2026 en México, Argentina y Colombia</a>
-          <span class="cat-fuente">Bloomberg Línea</span>
-        </li>
-        <li class="cat-item">
-          <a href="/institucional/#internacional" class="cat-titulo">A qué hora abren y cierran las urnas hoy en las elecciones de segunda vuelta en Perú</a>
-          <span class="cat-fuente">Bloomberg Línea</span>
-        </li>
-  </ul>
-</div>
-  </div>
-</div>
+</section>
 
-    <aside class="home-sidebar">
-      
-      
-<div class="sidebar-bloque sidebar-stream">
-  <div class="sb-header">
-    <span class="sb-kicker">Stream</span>
-    <a href="/stream/" class="sb-link">Ver todo →</a>
-  </div>
-  
-    <article class="sb-item">
-      <span class="sb-cat">Tecnología</span>
-      <h3 class="sb-titulo"><a href="/stream/notas/ejemplo.html">De chatbots a compañeros de trabajo: la revolución de las IA agénticas</a></h3>
-    </article>
-</div>
-    </aside>
 
+
+
+<section class="home-stream">
+  <div class="kicker">TXT-Stream</div>
+  <div class="kicker-linea"></div>
+  <p class="stream-bajada">Versión en texto de nuestros últimos streams.</p>
+  <ul class="sb-lista">
+    
+      <li class="sb-item">
+        <span class="sb-cat">Tecnología</span>
+        <a href="/stream/notas/ejemplo.html" class="sb-titulo">De chatbots a compañeros de trabajo: la revolución de las IA agénticas</a>
+      </li>
+  </ul>
+  <a href="/stream/" class="sb-ver">Ver todo →</a>
+</section>
+
+
+<section class="home-econotuits">
+  <div class="kicker">EconoTuits</div>
+  <div class="kicker-linea"></div>
+  <div class="et-grid">
+    
+      <div class="et-col">
+        <div class="et-col-titulo">Oficiales</div>
+        
+          <div class="et-tuit">
+            <span class="et-cuenta">@BancoCentral_AR</span>
+            <p class="et-texto">Publicamos el Informe Monetario Mensual de mayo de 2026.
+Accedé al informe completo: #InformeMonetarioMensual</p>
+            <a href="https://twitter.com/BancoCentral_AR/status/2062998959027552714#m" target="_blank" rel="noopener" class="et-link">Ver →</a>
+          </div>
+          <div class="et-tuit">
+            <span class="et-cuenta">@BancoCentral_AR</span>
+            <p class="et-texto">Tomate unos minutos antes de interactuar con una cuenta en redes sociales que parece del Banco Central, de un banco o de</p>
+            <a href="https://twitter.com/BancoCentral_AR/status/2062989621261418528#m" target="_blank" rel="noopener" class="et-link">Ver →</a>
+          </div>
+      </div>
+    
+      <div class="et-col">
+        <div class="et-col-titulo">Institucionales</div>
+        <p class="et-vacio">Sin datos</p>
+      </div>
+    
+      <div class="et-col">
+        <div class="et-col-titulo">Personales</div>
+        <p class="et-vacio">Sin datos</p>
+      </div>
   </div>
+  <a href="/tuits/" class="sb-ver">Ver todos →</a>
+</section>
+
+</div>
 </main>
 
-<!-- CINTA DE CATEGORÍAS -->
-<nav class="nav-cats-cinta">
-  <div class="contenedor nav-cats-scroll">
-    <a href="/institucional/#macro"><svg viewBox="0 0 32 32" class="ic" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="27" x2="27" y2="27"/><rect x="7" y="18" width="4" height="9"/><rect x="14" y="13" width="4" height="14"/><rect x="21" y="8" width="4" height="19"/></svg><span>Macro</span></a>
-    <a href="/institucional/#politica"><svg viewBox="0 0 32 32" class="ic" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="6,12 16,6 26,12"/><line x1="8" y1="12" x2="8" y2="24"/><line x1="13" y1="12" x2="13" y2="24"/><line x1="19" y1="12" x2="19" y2="24"/><line x1="24" y1="12" x2="24" y2="24"/><line x1="5" y1="24" x2="27" y2="24"/></svg><span>Política</span></a>
-    <a href="/institucional/#energia"><svg viewBox="0 0 32 32" class="ic" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polygon points="18,4 8,18 15,18 14,28 24,14 17,14"/></svg><span>Energía</span></a>
-    <a href="/institucional/#agro"><svg viewBox="0 0 32 32" class="ic" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><line x1="16" y1="29" x2="16" y2="13"/><path d="M16 14 q-5 -1 -5 -6 q5 1 5 6"/><path d="M16 14 q5 -1 5 -6 q-5 1 -5 6"/><path d="M16 20 q-4 -1 -4 -5 q4 1 4 5"/><path d="M16 20 q4 -1 4 -5 q-4 1 -4 5"/></svg><span>Agro</span></a>
-    <a href="/institucional/#mineria"><svg viewBox="0 0 32 32" class="ic" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 22 C 5 14, 11 9, 16 9 C 21 9, 27 14, 27 22"/><line x1="4" y1="22" x2="28" y2="22"/><rect x="14" y="6" width="4" height="5"/><circle cx="16" cy="14" r="2"/></svg><span>Minería</span></a>
-    <a href="/institucional/#comex"><svg viewBox="0 0 32 32" class="ic" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 20 L27 20 L24 26 L8 26 Z"/><rect x="11" y="13" width="5" height="7"/><rect x="16" y="13" width="5" height="7"/><line x1="16" y1="8" x2="16" y2="13"/></svg><span>Comex</span></a>
-    <a href="/institucional/#automotor"><svg viewBox="0 0 32 32" class="ic" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 21 L7 14 L25 14 L27 21"/><line x1="4" y1="21" x2="28" y2="21"/><circle cx="10" cy="23" r="2.5"/><circle cx="22" cy="23" r="2.5"/></svg><span>Automotor</span></a>
-    <a href="/institucional/#logistica"><svg viewBox="0 0 32 32" class="ic" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="11" width="13" height="10"/><path d="M17 14 L23 14 L27 18 L27 21 L17 21"/><circle cx="10" cy="23" r="2.5"/><circle cx="23" cy="23" r="2.5"/></svg><span>Logística</span></a>
-    <a href="/institucional/#internacional"><svg viewBox="0 0 32 32" class="ic" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="16" cy="16" r="11"/><ellipse cx="16" cy="16" rx="5" ry="11"/><line x1="5" y1="16" x2="27" y2="16"/></svg><span>Internacional</span></a>
-  </div>
-</nav>
 
-<!-- PIE -->
 <footer class="pie">
   <div class="contenedor">
-    <strong>PPA · Pulso Productivo Argentino</strong><br>
-    <span class="pie-bajada">Publicación económica · pulsoproductivo.com.ar</span>
+    <span class="pie-logo">PPA</span>
+    <span class="pie-bajada">Pulso Productivo Argentino · pulsoproductivo.com.ar</span>
     <div class="pie-meta">
-      <a href="/institucional/">Institucional</a> ·
-      <a href="/expectativas/">Expectativas de mercado</a> ·
-      <a href="/documentos/">Documentos</a> ·
+      <a href="/">Portada</a> ·
+      <a href="/la-data/">La Data del Día</a> ·
+      <a href="/rem/">REM</a> ·
       <a href="/columnas/">Columnas</a> ·
-      <a href="/stream/">Stream</a> ·
+      <a href="/stream/">TXT-Stream</a> ·
+      <a href="/tuits/">EconoTuits</a> ·
       <a href="/tablero/">Tablero</a> ·
-      <a href="/como-trabajamos.html">Cómo trabajamos</a> ·
-      <a href="/acerca.html">Acerca de</a>
+      <a href="/documentos/">Documentos</a> ·
+      <a href="/como-trabajamos.html">Cómo trabajamos</a>
     </div>
-    <div class="pie-legal">Editor responsable: Sergio Falco</div>
+    <span class="pie-legal">Editor responsable: Sergio Falco</span>
   </div>
 </footer>
-
 <script src="/assets/ppa.js"></script>
-
 </body>
 </html>

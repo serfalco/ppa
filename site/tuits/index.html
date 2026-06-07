@@ -7,7 +7,7 @@
 <meta name="description" content="Lo último de BCRA, INDEC y Ministerio de Economía en X/Twitter.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,900&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/assets/ppa.css">
 <link rel="stylesheet" href="/assets/ppa.css"><link rel="stylesheet" href="/assets/interior.css"><link rel="stylesheet" href="/assets/tuits.css">
 </head>
@@ -17,47 +17,32 @@
 
 <div id="cabecera-wrap">
 <header class="cabecera-ppa expandida" id="cabecera-ppa">
-  <!-- Fila superior: fecha · clima · edición -->
+
   <div class="cab-top">
-    <div class="cab-top-izq">
-      <span class="cab-fecha">DOM 7/06/2026</span>
-      <span class="cab-clima" id="cab-clima"></span>
-    </div>
-    <span class="cab-edicion">Edición Desayuno 🧉</span>
+    <span class="cab-fecha">Dom 7/06/2026</span>
+    <span class="cab-edicion">Edición Merienda ☕</span>
   </div>
-  <!-- Fila logo + datos + hamburguesa -->
+
   <div class="cab-logo-fila">
     <div>
       <a href="/" class="cab-logo">PPA</a>
       <div class="cab-tagline">Pulso Productivo Argentino</div>
     </div>
-    <div class="cab-datos-expandidos">
-      <div class="cab-dato">
-        <span class="cab-dato-label">Oficial</span>
-        <span class="cab-dato-valor" id="dolar-oficial">…</span>
-      </div>
-      <div class="cab-dato">
-        <span class="cab-dato-label">MEP</span>
-        <span class="cab-dato-valor" id="dolar-mep">…</span>
-      </div>
-      <div class="cab-dato hide-mobile">
-        <span class="cab-dato-label">Blue</span>
-        <span class="cab-dato-valor" id="dolar-blue-cab">…</span>
-      </div>
-      <div class="cab-dato">
-        <span class="cab-dato-label">Riesgo</span>
-        <span class="cab-dato-valor" id="riesgo-pais">…</span>
-      </div>
-      <button class="cab-hamburguesa" id="btn-menu" aria-label="Menú">
-        <span></span><span></span><span></span>
-      </button>
+    <button class="cab-hamburguesa" id="btn-menu" aria-label="Menú">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+
+  <div class="cab-ticker-wrap">
+    <div class="cab-ticker" id="cab-ticker">
+      <span>OFICIAL<b id="dolar-oficial">…</b></span><span>MEP<b id="dolar-mep">…</b></span><span>BLUE<b id="dolar-blue-cab">…</b></span><span>RIESGO<b id="riesgo-pais">…</b></span><span>RESERVAS<b id="reservas-cab">…</b></span><span>IPC<b id="ipc-cab">…</b></span><span>TCRM<b id="tcrm-cab">…</b></span><span>OFICIAL<b id="dolar-oficial">…</b></span><span>MEP<b id="dolar-mep">…</b></span><span>BLUE<b id="dolar-blue-cab">…</b></span><span>RIESGO<b id="riesgo-pais">…</b></span><span>RESERVAS<b id="reservas-cab">…</b></span><span>IPC<b id="ipc-cab">…</b></span><span>TCRM<b id="tcrm-cab">…</b></span>
     </div>
   </div>
+
 </header>
 <div class="cab-spacer" id="cab-spacer"></div>
 </div>
 
-<!-- DRAWER MENÚ -->
 <div class="menu-overlay" id="menu-overlay"></div>
 <nav class="menu-drawer" id="menu-drawer">
   <div class="menu-drawer-header">
@@ -66,31 +51,14 @@
   </div>
   <div class="menu-nav">
     <a href="/">Portada</a>
-    <a href="/analisis/">Análisis</a>
-    <a href="/tuits/">EconoTuits</a>
+    <a href="/la-data/">La Data del Día</a>
     <a href="/rem/">REM</a>
+    <a href="/columnas/">Columnas</a>
+    <a href="/stream/">TXT-Stream</a>
+    <a href="/tuits/">EconoTuits</a>
     <a href="/tablero/">Tablero</a>
     <a href="/documentos/">Documentos</a>
-    <a href="/columnas/">Columnas</a>
-    <a href="/stream/">Stream</a>
-  </div>
-  <div class="menu-datos">
-    <div class="menu-dato">
-      <span class="menu-dato-label">USD Oficial</span>
-      <span class="menu-dato-valor" id="m-dolar-oficial">…</span>
-    </div>
-    <div class="menu-dato">
-      <span class="menu-dato-label">MEP</span>
-      <span class="menu-dato-valor" id="m-dolar-mep">…</span>
-    </div>
-    <div class="menu-dato">
-      <span class="menu-dato-label">Blue</span>
-      <span class="menu-dato-valor" id="m-dolar-blue">…</span>
-    </div>
-    <div class="menu-dato">
-      <span class="menu-dato-label">Riesgo</span>
-      <span class="menu-dato-valor" id="m-riesgo">…</span>
-    </div>
+    <a href="/como-trabajamos.html">Cómo trabajamos</a>
   </div>
 </nav>
 
@@ -162,6 +130,35 @@ Los accesos a internet crecieron 3,8% interanual en el 1° trimestre de 2026: lo
             <a href="https://twitter.com/INDECArgentina/status/2061511117164224962#m" target="_blank" rel="noopener" class="tuit-link">Ver en X →</a>
           </div>
         </article>
+    </div>
+    <div class="tuits-cuenta">
+      <div class="tuits-cuenta-header">
+        <span class="tuits-nombre">Secretaría de Hacienda</span>
+        <a href="https://twitter.com/SecHacienda" target="_blank" rel="noopener" class="tuits-perfil">@SecHacienda</a>
+        
+      </div>
+      
+        <article class="tuit-item">
+          <p class="tuit-texto">RT by @SecHacienda: El @SecHacienda visitó el Centro de Preparación y Radicación de Planillas Electrónicas en Plaza del Caribe, Ponce, donde nuestro equipo continúa brindando asistencia directa a los contribuyentes durante el Ciclo Contributivo. @gobiernodepr</p>
+          <div class="tuit-meta">
+            <span class="tuit-hora">25/03 17:51</span>
+            <a href="https://twitter.com/DptoHacienda/status/2036908930350100908#m" target="_blank" rel="noopener" class="tuit-link">Ver en X →</a>
+          </div>
+        </article>
+        <article class="tuit-item">
+          <p class="tuit-texto">RT by @SecHacienda: 📍Desde Plaza del Caribe en Ponce El @SecHacienda visitó el Centro de Preparación y Radicación de Planillas Electrónicas, donde continuamos apoyando a los contribuyentes en cada paso del proceso contributivo. @gobiernodepr #HaciendaPR</p>
+          <div class="tuit-meta">
+            <span class="tuit-hora">24/03 14:19</span>
+            <a href="https://twitter.com/DptoHacienda/status/2036493118485205453#m" target="_blank" rel="noopener" class="tuit-link">Ver en X →</a>
+          </div>
+        </article>
+        <article class="tuit-item">
+          <p class="tuit-texto">En este año 2025, agilizamos aún más el pago de los reintegros, adelantamos medidas legislativas puntuales como parte del Comité de Reforma Contributiva y ampliamos servicios para ciudadanos y negocios. Aún así, nos queda mucho por hacer. En el Departamento, ya estamos enfocados en el 2026 y superar la marca de trabajo ya trazada. Aquí algunos de los logros del @DptoHacienda de este año.</p>
+          <div class="tuit-meta">
+            <span class="tuit-hora">16/12 19:15</span>
+            <a href="https://twitter.com/SecHacienda/status/2001053704456450384#m" target="_blank" rel="noopener" class="tuit-link">Ver en X →</a>
+          </div>
+        </article>
     </div></div>
   </div>
 </main>
@@ -172,13 +169,14 @@ Los accesos a internet crecieron 3,8% interanual en el 1° trimestre de 2026: lo
     <span class="pie-logo">PPA</span>
     <span class="pie-bajada">Pulso Productivo Argentino · pulsoproductivo.com.ar</span>
     <div class="pie-meta">
-      <a href="/analisis/">Análisis</a>
-      <a href="/tuits/">EconoTuits</a>
-      <a href="/rem/">REM</a>
-      <a href="/tablero/">Tablero</a>
-      <a href="/documentos/">Documentos</a>
-      <a href="/columnas/">Columnas</a>
-      <a href="/stream/">Stream</a>
+      <a href="/">Portada</a> ·
+      <a href="/la-data/">La Data del Día</a> ·
+      <a href="/rem/">REM</a> ·
+      <a href="/columnas/">Columnas</a> ·
+      <a href="/stream/">TXT-Stream</a> ·
+      <a href="/tuits/">EconoTuits</a> ·
+      <a href="/tablero/">Tablero</a> ·
+      <a href="/documentos/">Documentos</a> ·
       <a href="/como-trabajamos.html">Cómo trabajamos</a>
     </div>
     <span class="pie-legal">Editor responsable: Sergio Falco</span>
