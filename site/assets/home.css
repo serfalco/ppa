@@ -352,9 +352,11 @@
 }
 .data-titulo {
   font-size: 13px; line-height: 1.3;
-  color: var(--tinta); font-weight: 500;
+  color: var(--tinta) !important; font-weight: 500;
+  text-decoration: none;
 }
-.data-titulo:hover { color: var(--rojo); }
+.data-titulo:hover   { color: var(--rojo) !important; }
+.data-titulo:visited { color: var(--tinta) !important; }
 .data-fuente { font-size: 9px; color: #C8BC9E; }
 
 /* =================================================================
@@ -538,4 +540,11 @@
 .et-vacio {
   font-size: 11px; color: var(--gris);
   font-style: italic; padding: 8px 0;
+}
+
+.data-resumen {
+  font-size: 11px;
+  color: var(--gris);
+  line-height: 1.4;
+  display: block;
 }
