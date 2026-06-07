@@ -45,7 +45,30 @@ CUENTAS = [
     {"id": "cnv",       "usuario": "CNV_Argentina",     "nombre": "CNV",                      "activa": True},
     {"id": "canciller", "usuario": "CancilleriaARG",    "nombre": "Cancillería",              "activa": True},
     {"id": "opublica",  "usuario": "ObraPublicaAR",     "nombre": "Obras Públicas",           "activa": True},
+    # ── Institucionales ──
+    {"id":"fiel",       "usuario":"FIEL_arg",         "nombre":"FIEL",                   "activa":True},
+    {"id":"ieral",      "usuario":"ieralprovincia",   "nombre":"IERAL",                  "activa":True},
+    {"id":"fundar",     "usuario":"FundAr",           "nombre":"Fundar",                 "activa":True},
+    {"id":"cippec",     "usuario":"CIPPEC",           "nombre":"CIPPEC",                 "activa":True},
+    {"id":"cedlas",     "usuario":"CEDLAS_UNLP",      "nombre":"CEDLAS",                 "activa":True},
+    {"id":"econviews",  "usuario":"econviews",        "nombre":"Econviews",              "activa":True},
+    {"id":"acde",       "usuario":"ACDEArgentina",    "nombre":"ACDE",                   "activa":True},
+    {"id":"abeceb",     "usuario":"AbecebConsult",    "nombre":"Abeceb",                 "activa":True},
+    {"id":"pxq",        "usuario":"pxqconsultora",    "nombre":"PxQ",                    "activa":True},
+    # ── Personales ──
+    {"id":"vitelli",    "usuario":"SalvadorVitell1",  "nombre":"Salvador Vitelli",       "activa":True},
+    {"id":"kiguel",     "usuario":"KiguelMiguel",     "nombre":"Miguel Kiguel",          "activa":True},
+    {"id":"laspina",    "usuario":"laspina",          "nombre":"Luciano Laspina",        "activa":True},
+    {"id":"spotorno",   "usuario":"fspotorno",        "nombre":"Fausto Spotorno",        "activa":True},
+    {"id":"sica",       "usuario":"DanteSica",        "nombre":"Dante Sica",             "activa":True},
+    {"id":"melconian",  "usuario":"mcarlosmelconian", "nombre":"Carlos Melconian",       "activa":True},
+    {"id":"dalpoggetto","usuario":"DalPoggettoM",     "nombre":"Marina Dal Poggetto",    "activa":True},
 ]
+
+# Clasificación por tipo
+OFICIALES       = {"bcra","indec","mecon","hacienda","finanzas","energia","magyp","comercio","afip","cnv","canciller","opublica"}
+INSTITUCIONALES = {"fiel","ieral","fundar","cippec","cedlas","econviews","acde","abeceb","pxq"}
+
 TUITS_POR_CUENTA = 3   # máx tuits a mostrar por cuenta
 
 

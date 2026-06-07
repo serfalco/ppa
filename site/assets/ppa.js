@@ -11,7 +11,7 @@
   'use strict';
 
   const DATOS_URL  = '/data/datos.json';
-  const REFRESH_MS = 15 * 60 * 1000;
+  const REFRESH_MS = 30 * 60 * 1000;
   const REFRESH_CLIMA_MS  = 30 * 60 * 1000;
   const REFRESH_FULBITO_MS = 60 * 60 * 1000;
 

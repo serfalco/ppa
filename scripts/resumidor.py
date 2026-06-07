@@ -1,13 +1,8 @@
 """
-PPA — resumidor.py
-Lee portada.json, genera un resumen de 1-2 líneas para cada nota
-usando la API de Gemini (gratuita), y lo guarda de vuelta en portada.json.
-
-Corre DESPUÉS del selector.py y ANTES del generador_home.py.
-Solo genera resumen para notas que no tienen uno todavía.
-Si la API falla, la nota queda sin resumen (no rompe nada).
-
-Variable de entorno requerida: GEMINI_API_KEY
+PPA — resumidor.py v2
+Genera resúmenes con Gemini en batch (8 títulos por llamada).
+Una sola llamada API en vez de 8 separadas.
+Solo procesa notas sin resumen previo.
 """
 
 import json
@@ -22,48 +17,54 @@ from config import DIR_DATA
 
 JSON_PORTADA = os.path.join(DIR_DATA, "portada.json")
 GEMINI_URL   = "https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent"
-MAX_NOTAS    = 12   # máximo de notas a resumir por corrida
-ESPERA_SEG   = 1    # pausa entre llamadas para no exceder rate limit
+BATCH_SIZE   = 8
+MAX_NOTAS    = 16
 
 
-def gemini_resumir(titulo, descripcion, api_key):
-    """Llama a Gemini para generar un resumen de 1-2 líneas."""
-    texto_entrada = titulo
-    if descripcion and len(descripcion) > 20:
-        texto_entrada += f"\n\n{descripcion[:500]}"
+def gemini_batch(notas_sin_resumen, api_key):
+    """Manda hasta BATCH_SIZE notas en un solo prompt. Devuelve dict {idx: resumen}."""
+    if not notas_sin_resumen:
+        return {}
+
+    items = []
+    for i, nota in enumerate(notas_sin_resumen):
+        titulo = nota.get("titulo", "")
+        desc   = nota.get("descripcion", "")[:200]
+        texto  = titulo + (f" — {desc}" if desc else "")
+        items.append(f"{i+1}. {texto}")
 
     prompt = (
-        "Sos un editor de una publicación económica argentina. "
-        "En base al siguiente título y descripción de una noticia, "
-        "escribí un resumen de exactamente 1 o 2 oraciones en español rioplatense, "
-        "informativo, directo, sin adornos. "
-        "No uses comillas. No repitas el título. Solo el resumen.\n\n"
-        f"{texto_entrada}"
+        "Sos editor de una publicación económica argentina. "
+        "Para cada noticia numerada, escribí UN resumen de 1-2 oraciones en español rioplatense. "
+        "Directo, informativo, sin adornos, sin repetir el título. "
+        "Respondé SOLO con el formato:\n"
+        "1. [resumen]\n2. [resumen]\netc.\n\n"
+        "Noticias:\n" + "\n".join(items)
     )
 
     payload = {
         "contents": [{"parts": [{"text": prompt}]}],
-        "generationConfig": {
-            "maxOutputTokens": 120,
-            "temperature": 0.3,
-        }
+        "generationConfig": {"maxOutputTokens": 600, "temperature": 0.2}
     }
 
     try:
-        r = requests.post(
-            f"{GEMINI_URL}?key={api_key}",
-            json=payload,
-            timeout=15
-        )
+        r = requests.post(f"{GEMINI_URL}?key={api_key}", json=payload, timeout=20)
         r.raise_for_status()
-        data = r.json()
-        texto = data["candidates"][0]["content"]["parts"][0]["text"].strip()
-        # Limpiar posibles comillas o saltos
-        texto = texto.replace('"', '').replace('\n', ' ').strip()
-        return texto if len(texto) > 15 else None
+        texto = r.json()["candidates"][0]["content"]["parts"][0]["text"]
+
+        # Parsear respuesta "1. resumen\n2. resumen..."
+        resultados = {}
+        for linea in texto.strip().split("\n"):
+            m = __import__('re').match(r'^(\d+)\.\s+(.+)', linea.strip())
+            if m:
+                idx = int(m.group(1)) - 1
+                resumen = m.group(2).strip().replace('"','')
+                if 10 < len(resumen) < 300:
+                    resultados[idx] = resumen
+        return resultados
     except Exception as e:
-        print(f"   ⚠ Gemini error: {str(e)[:60]}")
-        return None
+        print(f"   ⚠ Gemini batch error: {str(e)[:60]}")
+        return {}
 
 
 def main():
@@ -79,48 +80,51 @@ def main():
     with open(JSON_PORTADA, 'r', encoding='utf-8') as f:
         portada = json.load(f)
 
-    destacados = portada.get("destacados", [])
-    secciones  = portada.get("secciones", {})
+    # Recolectar notas sin resumen
+    sin_resumen = []
+    refs = []  # (lista_origen, indice) para actualizar in-place
 
-    # Juntar todas las notas para procesar
-    todas = []
-    for n in destacados:
-        todas.append(("destacados", None, n))
-    for cat, notas in secciones.items():
-        for n in notas:
-            todas.append(("seccion", cat, n))
+    for i, nota in enumerate(portada.get("destacados", [])):
+        if not nota.get("resumen") and len(sin_resumen) < MAX_NOTAS:
+            sin_resumen.append(nota)
+            refs.append(("destacados", i))
 
-    procesadas = 0
-    for origen, cat, nota in todas:
-        if procesadas >= MAX_NOTAS:
-            break
-        # Solo si no tiene resumen todavía
-        if nota.get("resumen"):
-            continue
+    for cat, notas in portada.get("secciones", {}).items():
+        for i, nota in enumerate(notas):
+            if not nota.get("resumen") and len(sin_resumen) < MAX_NOTAS:
+                sin_resumen.append(nota)
+                refs.append(("seccion", cat, i))
 
-        titulo = nota.get("titulo", "")
-        desc   = nota.get("descripcion", nota.get("bajada", ""))
-        if not titulo:
-            continue
+    if not sin_resumen:
+        print("[Resumidor] Sin notas nuevas para resumir")
+        return
 
-        print(f"   → Resumiendo: {titulo[:60]}...")
-        resumen = gemini_resumir(titulo, desc, api_key)
-        if resumen:
-            nota["resumen"] = resumen
-            procesadas += 1
-            print(f"   ✓ {resumen[:80]}")
-        else:
-            print(f"   ✗ Sin resumen")
+    print(f"[Resumidor] {len(sin_resumen)} notas para resumir en batches de {BATCH_SIZE}")
 
-        if procesadas < MAX_NOTAS:
-            time.sleep(ESPERA_SEG)
+    total = 0
+    for start in range(0, len(sin_resumen), BATCH_SIZE):
+        batch = sin_resumen[start:start+BATCH_SIZE]
+        batch_refs = refs[start:start+BATCH_SIZE]
 
-    if procesadas > 0:
+        resultados = gemini_batch(batch, api_key)
+
+        for idx, resumen in resultados.items():
+            ref = batch_refs[idx]
+            if ref[0] == "destacados":
+                portada["destacados"][ref[1]]["resumen"] = resumen
+            else:
+                portada["secciones"][ref[1]][ref[2]]["resumen"] = resumen
+            total += 1
+
+        if start + BATCH_SIZE < len(sin_resumen):
+            time.sleep(1)  # pausa entre batches
+
+    if total > 0:
         with open(JSON_PORTADA, 'w', encoding='utf-8') as f:
             json.dump(portada, f, ensure_ascii=False, indent=2)
-        print(f"[Resumidor] {procesadas} resúmenes generados y guardados")
+        print(f"[Resumidor] {total} resúmenes generados y guardados")
     else:
-        print("[Resumidor] Sin notas nuevas para resumir")
+        print("[Resumidor] Sin resúmenes nuevos")
 
 
 if __name__ == "__main__":
