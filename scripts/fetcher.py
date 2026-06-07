@@ -107,10 +107,12 @@ def bajar_fuente(fuente):
 
     print(f"   ↓ {fid}: bajando {url[:60]}...")
     try:
+        import socket
+        socket.setdefaulttimeout(8)
         feed = feedparser.parse(url, request_headers={
             "User-Agent": "PPA/2.0 RSS Reader",
             "Accept": "application/rss+xml, application/xml, text/xml"
-        }, timeout=8)
+        })
     except Exception as e:
         print(f"   ✗ {fid}: {str(e)[:50]}")
         return []
