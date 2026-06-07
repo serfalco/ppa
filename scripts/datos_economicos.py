@@ -159,34 +159,60 @@ def _rp_argentinadatos():
 
 
 def _rp_rava():
-    """Rava Bursátil — perfil RIESGO PAIS. El dato viene embebido en el HTML
-    dentro de un atributo/JSON de Vue (ej '"ultimo":508' o '"cierre":508').
-    Probamos varios patrones porque Rava cambia la estructura seguido."""
+    """Rava Bursátil — perfil RIESGO PAIS.
+    El valor correcto está en el campo 'ultimo' del primer JSON embebido
+    que contenga el precio de cierre/último de la rueda.
+    OJO: Rava tiene múltiples JSONs en la página — buscamos el que
+    tenga 'ultimo' con un valor entre 100 y 5000 pb."""
     html = get_html("https://www.rava.com/perfil/RIESGO%20PAIS")
     if not html:
         return None
+
     val, variacion = None, None
-    # 1) JSON embebido tipo "ultimo":508.0 / "cierre":508
-    for campo in ("ultimo", "cierre", "ultimoPrecio", "valor"):
-        m = re.search(rf'"{campo}"\s*:\s*"?(\d[\d.,]*)"?', html)
-        if m:
-            val = primer_numero(m.group(1))
-            if val and 100 <= val <= 5000:
-                break
-            val = None
-    # 2) Variación porcentual si aparece
-    mv = re.search(r'"variacion"\s*:\s*"?(-?\d[\d.,]*)"?', html)
-    if mv:
-        try:
-            variacion = round(float(mv.group(1).replace(",", ".")), 2)
-        except Exception:
-            variacion = None
-    # 3) Fallback: primer número plausible cerca de "riesgo"
-    if val is None:
-        m = re.search(r"riesgo[^0-9]{0,60}(\d[\d.]{2,5})", html, re.IGNORECASE)
-        cand = primer_numero(m.group(1)) if m else None
+
+    # Estrategia 1: buscar el bloque JSON principal que tiene el precio
+    # Rava embebe los datos del instrumento en un objeto JS tipo:
+    # {"simbolo":"RIESGO PAIS","ultimo":499,"cierre":499,...}
+    # Buscamos "ultimo" SOLO cuando está acompañado de "simbolo" o "cierre"
+    # para no confundir con otros JSONs de la página
+    bloques = re.findall(r'\{[^{}]{0,800}\}', html)
+    for bloque in bloques:
+        if '"ultimo"' not in bloque:
+            continue
+        m_u = re.search(r'"ultimo"\s*:\s*"?(\d[\d.,]*)"?', bloque)
+        if not m_u:
+            continue
+        cand = primer_numero(m_u.group(1))
         if cand and 100 <= cand <= 5000:
             val = cand
+            # Variación diaria si está en el mismo bloque
+            mv = re.search(r'"variacion(?:Porcentual|Diaria)?"\s*:\s*"?(-?\d[\d.,]*)"?', bloque)
+            if mv:
+                try:
+                    variacion = round(float(mv.group(1).replace(",", ".")), 2)
+                except Exception:
+                    pass
+            break
+
+    # Estrategia 2: buscar "ultimo":NNN en cualquier lugar del HTML
+    if val is None:
+        for m in re.finditer(r'"ultimo"\s*:\s*"?(\d[\d.,]*)"?', html):
+            cand = primer_numero(m.group(1))
+            if cand and 100 <= cand <= 5000:
+                val = cand
+                break
+
+    # Estrategia 3: número prominente cerca del texto "RIESGO PAIS" en el HTML
+    # (lo que aparece en grande en la página)
+    if val is None:
+        # Buscar el primer número de 3 dígitos en el rango que aparece
+        # dentro de los primeros 5000 caracteres (donde está el dato visible)
+        for m in re.finditer(r'(?<![0-9])(\d{3,4})(?![0-9])', html[:8000]):
+            cand = int(m.group(1))
+            if 100 <= cand <= 5000:
+                val = cand
+                break
+
     if val:
         return {"valor": val, "variacion": variacion, "fecha": None, "fuente": "rava.com"}
     return None
@@ -234,13 +260,14 @@ def _rp_ambito():
 
 
 # Orden de preferencia. La primera que devuelva número plausible gana.
-# Rava PRIMERO: trae el valor INTRADÍA real (actualizado durante la rueda).
-# argentinadatos da el cierre del día anterior, por eso quedaba atrasado.
+# ArgentinaDatos PRIMERO: API JSON pura, sin scraping, más confiable.
+# Rava SEGUNDO: intradía real pero el scraper es frágil (Rava cambia el HTML).
+# Ámbito e indicadores.ar como respaldo adicional.
 FUENTES_RIESGO = [
-    ("rava", _rp_rava),
-    ("ambito", _rp_ambito),
-    ("indicadores.ar", _rp_indicadores_ar),
     ("argentinadatos", _rp_argentinadatos),
+    ("rava",           _rp_rava),
+    ("ambito",         _rp_ambito),
+    ("indicadores.ar", _rp_indicadores_ar),
 ]
 
 
