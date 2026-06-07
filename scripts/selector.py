@@ -42,9 +42,22 @@ ORDEN_CATS = [
 ]
 
 
+PATRONES_LOCALES = [
+    "cuánto sale", "cuanto sale", "precio del dólar",
+    "esquiar", "ski", "vacaciones", "turismo",
+    "cómo quedó", "como quedo", "resultado del partido",
+    "qué pasó", "que paso hoy", "resumen del día",
+    "horóscopo", "horoscopo", "clima hoy",
+    "receta", "cocina", "gastronomía",
+]
+
 def _es_basura(titulo):
     t = titulo.lower()
-    return any(p in t for p in TITULOS_BASURA)
+    if any(p in t for p in TITULOS_BASURA):
+        return True
+    if any(p in t for p in PATRONES_LOCALES):
+        return True
+    return False
 
 
 def _score(nota):
@@ -96,10 +109,27 @@ def main():
     cat_home_count = defaultdict(int)
     fuente_home_count = defaultdict(int)
 
+    # Pasada 1: 1 nota por categoría (máximo diversidad)
     for cat in ORDEN_CATS:
+        if len(home_notas) >= MAX_HOME_TOTAL:
+            break
         for nota in por_cat.get(cat, []):
-            if len(home_notas) >= MAX_HOME_TOTAL:
+            if cat_home_count[cat] >= 1:
                 break
+            if fuente_home_count[nota.get("fuente_id","")] >= 1:
+                continue
+            home_notas.append(nota)
+            cat_home_count[cat] += 1
+            fuente_home_count[nota.get("fuente_id","")] += 1
+            break
+
+    # Pasada 2: hasta MAX_POR_CAT_HOME por categoría para completar las 8
+    for cat in ORDEN_CATS:
+        if len(home_notas) >= MAX_HOME_TOTAL:
+            break
+        for nota in por_cat.get(cat, []):
+            if nota in home_notas:
+                continue
             if cat_home_count[cat] >= MAX_POR_CAT_HOME:
                 break
             if fuente_home_count[nota.get("fuente_id","")] >= 2:

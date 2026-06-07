@@ -28,7 +28,7 @@ _SECCIONES = [
     ("TXT-Stream",      "/stream/"),
     ("EconoTuits",      "/tuits/"),
     ("Tablero",         "/tablero/"),
-    ("Documentos",      "/documentos/"),
+    ("Informes",        "/informes/"),
     ("Cómo trabajamos", "/como-trabajamos.html"),
 ]
 
@@ -144,7 +144,7 @@ def head_comun(titulo, descripcion="Publicación económica argentina.", css_ext
 <meta name="description" content="{descripcion}">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900&family=IBM+Plex+Sans:wght@400;500;600;700;900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/assets/ppa.css">
 {css_extra}
 </head>"""

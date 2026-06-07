@@ -13,7 +13,7 @@
 }
 
 .tablero-titulo {
-  font-family: 'Playfair Display', serif;
+  font-family: 'IBM Plex Sans', sans-serif;
   font-size: clamp(28px, 5vw, 48px);
   font-weight: 900;
   color: var(--tinta);
@@ -29,9 +29,9 @@
 }
 
 .tablero-disclaimer {
-  font-family: 'Source Serif 4', serif;
+  font-family: 'IBM Plex Sans', sans-serif;
   font-size: 12px;
-  font-style: italic;
+  
   color: var(--gris);
   max-width: 600px;
   margin: 10px auto 0;
@@ -72,10 +72,10 @@
 }
 
 .bloque-titulo {
-  font-family: 'Playfair Display', serif;
+  font-family: 'IBM Plex Sans', sans-serif;
   font-size: 22px;
   font-weight: 900;
-  font-style: italic;
+  
   color: var(--tinta);
   border-top: 4px solid var(--tinta);
   padding-top: 12px;
@@ -229,7 +229,7 @@
 .dato-proximo {
   color: #b0a89c !important;
   font-size: .85rem !important;
-  font-style: italic;
+  
   font-weight: 500 !important;
 }
 
@@ -331,24 +331,24 @@
 .ctx-item {
   font-family: 'IBM Plex Sans', sans-serif;
   font-size: 9px;
-  color: var(--gris, #6B6358);
+  color: var(--gris, #6B4C35);
 }
-.ctx-item.sube { color: var(--verde, #BFC24F); font-weight: 600; }
-.ctx-item.baja { color: var(--rojo, #A8362B); font-weight: 600; }
-.ctx-mes::before { content: "· "; color: var(--grisclaro, #C8BC9E); }
+.ctx-item.sube { color: var(--verde, #6B6B2A); font-weight: 600; }
+.ctx-item.baja { color: var(--rojo, #7A1C1C); font-weight: 600; }
+.ctx-mes::before { content: "· "; color: var(--grisclaro, #C4A882); }
 
 /* Paleta tresempanadas override en el tablero */
 .tablero-cabecera {
-  background: var(--papel, #EBE0C2);
+  background: var(--papel, #F0E6CC);
   padding: 20px 0 16px;
-  border-bottom: 2px solid var(--tinta, #1B1612);
+  border-bottom: 2px solid var(--tinta, #2A1408);
   margin-bottom: 0;
 }
 .tablero-titulo {
-  font-family: 'Playfair Display', serif;
+  font-family: 'IBM Plex Sans', sans-serif;
   font-size: clamp(22px, 4vw, 32px);
   font-weight: 900;
-  color: var(--tinta, #1B1612);
+  color: var(--tinta, #2A1408);
   margin-bottom: 4px;
 }
 .tablero-sub {
@@ -356,13 +356,13 @@
   font-size: 9px;
   letter-spacing: 0.15em;
   text-transform: uppercase;
-  color: var(--gris, #6B6358);
+  color: var(--gris, #6B4C35);
 }
 .tablero-disclaimer {
-  font-family: 'Source Serif 4', serif;
+  font-family: 'IBM Plex Sans', sans-serif;
   font-size: 11px;
-  color: var(--grisclaro, #C8BC9E);
-  font-style: italic;
+  color: var(--grisclaro, #C4A882);
+  
   margin-top: 6px;
   max-width: 500px;
 }

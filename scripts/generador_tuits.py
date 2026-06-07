@@ -54,7 +54,7 @@ CUENTAS = [
     {"id":"econviews",  "usuario":"econviews",        "nombre":"Econviews",              "activa":True},
     {"id":"acde",       "usuario":"ACDEArgentina",    "nombre":"ACDE",                   "activa":True},
     {"id":"abeceb",     "usuario":"AbecebConsult",    "nombre":"Abeceb",                 "activa":True},
-    {"id":"pxq",        "usuario":"pxqconsultora",    "nombre":"PxQ",                    "activa":True},
+    {"id":"ecogo",      "usuario":"EcoGoConsultor1",  "nombre":"EcoGo Consultores",      "activa":True},
     # ── Personales ──
     {"id":"vitelli",    "usuario":"SalvadorVitell1",  "nombre":"Salvador Vitelli",       "activa":True},
     {"id":"kiguel",     "usuario":"KiguelMiguel",     "nombre":"Miguel Kiguel",          "activa":True},

@@ -328,7 +328,7 @@ def html_stream(notas):
 <section class="home-stream">
   <div class="kicker">TXT-Stream</div>
   <div class="kicker-linea"></div>
-  <p class="stream-bajada">Versión en texto de nuestros últimos streams.</p>
+  <p class="stream-bajada">Lo que se dijo. Ahora para leer.</p>
   <ul class="sb-lista">
     {''.join(items)}
   </ul>

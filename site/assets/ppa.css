@@ -1,21 +1,23 @@
 /* =================================================================
-   PPA — ppa.css v5
-   2 fuentes · 5 colores · mobile-first
+   PPA — ppa.css v6
+   Paleta Tres Empanadas
+   1 fuente: IBM Plex Sans (todo) — Playfair Display solo para logo PPA
    ================================================================= */
 
 :root {
-  --tinta:      #1B1612;
-  --papel:      #EBE0C2;
-  --papel2:     #E0D4A8;
-  --gris:       #6B6358;
-  --rojo:       #A8362B;
-  --linea:      #D4C99A;
-  --verde:      #BFC24F;   /* reservado, usar con criterio */
-  --violeta:    #726C98;   /* reservado, usar con criterio */
+  /* Paleta Tres Empanadas */
+  --tinta:    #2A1408;   /* marrón oscuro cálido */
+  --papel:    #F0E6CC;   /* crema cálida */
+  --papel2:   #E8D8B0;   /* crema más oscura */
+  --gris:     #6B4C35;   /* marrón medio */
+  --rojo:     #7A1C1C;   /* rojo bordo */
+  --violeta:  #5C2D6E;   /* violeta */
+  --oliva:    #6B6B2A;   /* verde oliva */
+  --linea:    #C8A878;   /* línea cálida */
+  --grisclaro:#C4A882;   /* texto secundario */
 }
 
 * { box-sizing: border-box; margin: 0; padding: 0; }
-
 html { background: var(--papel); }
 
 body {
@@ -25,30 +27,29 @@ body {
   font-size: 14px;
   line-height: 1.5;
   width: 100%;
-  max-width: 100%;
   overflow-x: hidden;
 }
 
 a { color: inherit; text-decoration: none; transition: color 0.15s; }
 a:hover { color: var(--rojo); }
+a:visited { color: inherit; }
 
 .contenedor { max-width: 1280px; margin: 0 auto; padding: 0 16px; }
 @media (min-width: 640px)  { .contenedor { padding: 0 24px; } }
 @media (min-width: 1024px) { .contenedor { padding: 0 32px; } }
 
 /* =================================================================
-   CABECERA STICKY
+   CABECERA STICKY — fondo violeta
    ================================================================= */
 .cabecera-ppa {
   position: fixed;
   top: 0; left: 0; right: 0;
   z-index: 100;
-  background: var(--tinta);
+  background: var(--violeta);
   color: var(--papel);
   transition: all 0.2s ease;
 }
 
-/* Fila 1: fecha + edición */
 .cab-top {
   display: flex;
   align-items: center;
@@ -57,13 +58,12 @@ a:hover { color: var(--rojo); }
   font-size: 9px;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: #C8BC9E;
-  border-bottom: 1px solid rgba(255,255,255,0.07);
+  color: rgba(240,230,204,0.7);
+  border-bottom: 1px solid rgba(255,255,255,0.1);
   transition: all 0.2s;
 }
-.cab-edicion { color: var(--papel); font-weight: 600; }
+.cab-edicion { color: var(--papel); font-weight: 700; }
 
-/* Fila 2: logo + hamburguesa */
 .cab-logo-fila {
   display: flex;
   align-items: center;
@@ -83,7 +83,7 @@ a:hover { color: var(--rojo); }
   font-size: 8px;
   letter-spacing: 0.18em;
   text-transform: uppercase;
-  color: #C8BC9E;
+  color: rgba(240,230,204,0.7);
   margin-top: 2px;
 }
 .cab-hamburguesa {
@@ -102,14 +102,12 @@ a:hover { color: var(--rojo); }
   height: 2px;
   background: var(--papel);
   border-radius: 1px;
-  transition: all 0.2s;
 }
 
-/* Fila 3: ticker pasarela */
 .cab-ticker-wrap {
   overflow: hidden;
   padding: 4px 0;
-  border-top: 1px solid rgba(255,255,255,0.07);
+  border-top: 1px solid rgba(255,255,255,0.1);
 }
 .cab-ticker {
   display: flex;
@@ -119,7 +117,7 @@ a:hover { color: var(--rojo); }
 .cab-ticker span {
   font-size: 10px;
   font-weight: 500;
-  color: #C8BC9E;
+  color: rgba(240,230,204,0.7);
   white-space: nowrap;
   padding: 0 14px;
 }
@@ -133,22 +131,21 @@ a:hover { color: var(--rojo); }
   100% { transform: translateX(-50%); }
 }
 
-/* Estado sticky (compacto) */
+/* Sticky compacto */
 .cabecera-ppa.sticky .cab-top    { display: none; }
 .cabecera-ppa.sticky .cab-tagline { display: none; }
 .cabecera-ppa.sticky .cab-logo-fila { padding: 6px 16px; }
 .cabecera-ppa.sticky .cab-logo  { font-size: 18px; }
 
-/* Spacer */
 .cab-spacer { height: 88px; transition: height 0.2s; }
 .cab-spacer.sticky { height: 52px; }
 
 /* =================================================================
-   DRAWER MENÚ
+   DRAWER MENÚ — fondo violeta oscuro
    ================================================================= */
 .menu-overlay {
   position: fixed; inset: 0;
-  background: rgba(27,22,18,0.55);
+  background: rgba(42,20,8,0.6);
   z-index: 200;
   opacity: 0; pointer-events: none;
   transition: opacity 0.2s;
@@ -159,7 +156,7 @@ a:hover { color: var(--rojo); }
   position: fixed;
   top: 0; right: -280px;
   width: 260px; height: 100%;
-  background: var(--tinta);
+  background: var(--violeta);
   z-index: 201;
   transition: right 0.22s ease;
   display: flex; flex-direction: column;
@@ -172,7 +169,7 @@ a:hover { color: var(--rojo); }
   align-items: center;
   justify-content: space-between;
   padding: 16px 18px;
-  border-bottom: 1px solid rgba(255,255,255,0.08);
+  border-bottom: 1px solid rgba(255,255,255,0.1);
 }
 .menu-drawer-logo {
   font-family: 'Playfair Display', serif;
@@ -181,7 +178,7 @@ a:hover { color: var(--rojo); }
 }
 .menu-cerrar {
   background: none; border: none;
-  color: #C8BC9E; font-size: 18px;
+  color: rgba(240,230,204,0.7); font-size: 18px;
   cursor: pointer; padding: 4px;
 }
 
@@ -192,36 +189,35 @@ a:hover { color: var(--rojo); }
   font-size: 12px; font-weight: 600;
   letter-spacing: 0.1em; text-transform: uppercase;
   color: var(--papel);
-  border-bottom: 1px solid rgba(255,255,255,0.05);
-  transition: color 0.15s;
+  border-bottom: 1px solid rgba(255,255,255,0.07);
+  transition: color 0.15s, background 0.15s;
 }
-.menu-nav a:hover { color: var(--rojo); }
-.menu-nav a.activo { color: var(--rojo); }
+.menu-nav a:hover { color: var(--papel); background: rgba(255,255,255,0.08); }
+.menu-nav a.activo { color: #F5C842; }
 
 /* =================================================================
-   PIE COMPACTO
+   PIE — fondo violeta
    ================================================================= */
 .pie {
-  background: var(--tinta);
+  background: var(--violeta);
   color: var(--papel);
-  padding: 18px 0;
+  padding: 20px 0;
   margin-top: 32px;
-  font-size: 10px;
 }
 .pie .contenedor { display: flex; flex-direction: column; gap: 8px; }
 .pie-logo {
   font-family: 'Playfair Display', serif;
-  font-size: 15px; font-weight: 900;
+  font-size: 16px; font-weight: 900;
   color: var(--papel);
 }
-.pie-bajada { font-size: 9px; color: #C8BC9E; letter-spacing: 0.05em; }
+.pie-bajada { font-size: 9px; color: rgba(240,230,204,0.6); letter-spacing: 0.05em; }
 .pie-meta {
   display: flex; flex-wrap: wrap;
   gap: 4px 10px; font-size: 9px;
 }
-.pie-meta a { color: #C8BC9E; }
-.pie-meta a:hover { color: var(--rojo); }
-.pie-legal { font-size: 8px; color: #C8BC9E; opacity: 0.4; letter-spacing: 0.05em; }
+.pie-meta a { color: rgba(240,230,204,0.6); }
+.pie-meta a:hover { color: var(--papel); }
+.pie-legal { font-size: 8px; color: rgba(240,230,204,0.3); letter-spacing: 0.05em; }
 
 /* =================================================================
    KICKER — patrón único para todas las secciones
@@ -229,24 +225,23 @@ a:hover { color: var(--rojo); }
 .kicker {
   font-size: 9px; font-weight: 700;
   letter-spacing: 0.28em; text-transform: uppercase;
-  color: var(--gris);
+  color: var(--rojo);
 }
 .kicker-linea {
-  height: 1.5px; background: var(--tinta);
+  height: 1.5px; background: var(--oliva);
   margin: 6px 0 10px;
 }
 
 /* =================================================================
    UTILIDADES
    ================================================================= */
-.sube { color: var(--verde); font-weight: 600; }
+.sube { color: var(--oliva); font-weight: 600; }
 .baja { color: var(--rojo); font-weight: 600; }
 .dato-stale { opacity: 0.5; }
 
-.barra-superior { display: none; }
-.nav-principal  { display: none; }
-.franja-datos   { display: none; }
-.cabecera-home  { display: none; }
+/* Ocultar elementos legacy */
+.barra-superior, .nav-principal, .franja-datos,
+.cabecera-home, .nav-principal { display: none; }
 
 ::-webkit-scrollbar { width: 3px; height: 3px; }
 ::-webkit-scrollbar-thumb { background: var(--linea); border-radius: 2px; }

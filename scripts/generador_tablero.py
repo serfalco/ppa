@@ -18,43 +18,22 @@ TZ_AR = timezone(timedelta(hours=-3))
 
 
 def generar_tablero():
-    html = """<!DOCTYPE html>
-<html lang="es-AR">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Tablero PPA · Pulso Productivo Argentino</title>
-<meta name="description" content="Tablero de datos económicos argentinos en tiempo real: dólares, mercado, macro, sector externo, empleo y fiscal.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/assets/ppa.css">
-<link rel="stylesheet" href="/assets/interior.css">
-<link rel="stylesheet" href="/assets/tablero.css">
-</head>
+    html = (
+        comp.head_comun(
+            "Tablero PPA · Pulso Productivo Argentino",
+            "Tablero de datos económicos argentinos: dólares, mercado, macro, sector externo, empleo y fiscal.",
+            css_extra='<link rel="stylesheet" href="/assets/interior.css">\n<link rel="stylesheet" href="/assets/tablero.css">'
+        ) + """
 <body class="body-tablero">
 
-<!-- FRANJA SUPERIOR -->
-<div class="franja-datos">
-  <div class="contenedor franja-flex">
-    <a href="/" class="volver-home">← PPA</a>
-    <span class="dato-mini" id="clima-widget"></span>
-    <span class="dato-mini">USD <span id="dolar-oficial">…</span></span>
-    <span class="dato-mini">MEP <span id="dolar-mep">…</span></span>
-    <span class="dato-mini">Merval <span id="merval">…</span></span>
-    <span class="dato-mini">Riesgo <span id="riesgo-pais">…</span></span>
-  </div>
-</div>
+""" + comp.cabecera("Tablero") + """
 
-{comp.nav_principal("Tablero")}
-
-<!-- CABECERA -->
+<!-- CABECERA TABLERO -->
 <header class="tablero-cabecera">
   <div class="contenedor">
-    <h1 class="tablero-titulo">Tablero PPA</h1>
-    <p class="tablero-sub">Datos económicos argentinos · Actualización cada 15 minutos</p>
-    <p class="tablero-disclaimer">Los datos se cargan desde APIs públicas oficiales y gratuitas.
-    Si una fuente no responde, se muestra el último valor conocido marcado como desactualizado.</p>
+    <h1 class="tablero-titulo">Tablero</h1>
+    <p class="tablero-sub">Datos económicos argentinos · Actualización cada 30 minutos</p>
+    <p class="tablero-disclaimer">Datos desde APIs públicas oficiales y gratuitas. Si una fuente no responde se muestra el último valor conocido.</p>
   </div>
 </header>
 
@@ -180,7 +159,7 @@ def generar_tablero():
           <span class="dato-fuente">argentinadatos.com</span>
         </div>
 
-        <div class="dato-card dato-card-riesgo">
+        <div class="dato-card">
           <span class="dato-label">Riesgo País</span>
           <span class="dato-valor dato-enorme" id="t-riesgo">…</span>
           <span class="dato-sub">puntos básicos · EMBI+</span>
@@ -484,14 +463,12 @@ def generar_tablero():
   </div>
 </main>
 
-<!-- PIE -->
-{comp.pie()}
-
 <script src="/assets/ppa.js"></script>
 <script src="/assets/tablero.js"></script>
 
 </body>
 </html>"""
+    ) + comp.pie()
 
     # Insertar íconos en los títulos de sección
     titulos_iconos = {

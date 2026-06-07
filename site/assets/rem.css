@@ -11,7 +11,7 @@
   margin-bottom: 24px;
 }
 .rem-titulo {
-  font-family: 'Playfair Display', serif;
+  font-family: 'IBM Plex Sans', sans-serif;
   font-size: clamp(32px, 6vw, 48px);
   font-weight: 900;
   line-height: 1;
@@ -26,7 +26,7 @@
   margin-bottom: 8px;
 }
 .rem-desc {
-  font-family: 'Source Serif 4', serif;
+  font-family: 'IBM Plex Sans', sans-serif;
   font-size: 13px;
   color: var(--gris);
   line-height: 1.5;
@@ -48,7 +48,7 @@
 
 /* Cards */
 .rem-card {
-  background: var(--papel-2, #E0D4A8);
+  background: var(--papel-2, #E8D8B0);
   border-top: 3px solid var(--tinta);
   padding: 16px;
   margin-bottom: 12px;
@@ -64,7 +64,7 @@
   margin-bottom: 12px;
 }
 .rem-mes {
-  font-family: 'Playfair Display', serif;
+  font-family: 'IBM Plex Sans', sans-serif;
   font-size: 20px;
   font-weight: 700;
 }
@@ -118,7 +118,7 @@
 .rem-ver:hover { color: var(--tinta); }
 
 .rem-sin-datos {
-  font-family: 'Source Serif 4', serif;
+  font-family: 'IBM Plex Sans', sans-serif;
   font-style: italic;
   color: var(--gris);
   font-size: 12px;
@@ -145,7 +145,7 @@
 @media (min-width: 768px) { .rem-grid { grid-template-columns: 1fr 1fr 1fr; } }
 
 .rem-vacio {
-  font-family: 'Source Serif 4', serif;
+  font-family: 'IBM Plex Sans', sans-serif;
   font-style: italic;
   color: var(--gris);
   padding: 24px 0;

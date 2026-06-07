@@ -1,372 +1,47 @@
 /* =================================================================
-   PPA — home.css v5
-   La home completa: Data del Día, Categorías, Tarjetas,
-   Columna, TXT-Stream, EconoTuits
-   2 fuentes · 5 colores · mobile-first
+   PPA — home.css v6
+   Paleta Tres Empanadas · IBM Plex Sans · mobile-first
    ================================================================= */
 
 .body-home { background: var(--papel); }
 
 /* =================================================================
-   CARRUSEL TARJETAS (datos en home)
-   ================================================================= */
-.franja-tarjetas {
-  background: var(--papel);
-  border-bottom: 1px solid var(--linea);
-  padding: 10px 0 10px 16px;
-  width: 100%; overflow: hidden;
-  box-sizing: border-box;
-}
-.carrusel-datos {
-  overflow-x: auto; overflow-y: hidden;
-  -webkit-overflow-scrolling: touch;
-  scrollbar-width: none;
-}
-.carrusel-datos::-webkit-scrollbar { display: none; }
-.carrusel-pista {
-  display: flex; flex-wrap: nowrap;
-  gap: 8px; width: max-content;
-  padding-right: 16px;
-}
-.tarjeta-dato {
-  background: #fff;
-  border: 1px solid var(--linea);
-  border-radius: 3px;
-  padding: 8px 12px;
-  min-width: 100px;
-}
-.tarjeta-titulo {
-  font-size: 8px; font-weight: 700;
-  letter-spacing: 0.1em; text-transform: uppercase;
-  color: var(--gris); display: block;
-}
-.tarjeta-valor {
-  font-size: 16px; font-weight: 700;
-  color: var(--tinta); display: block;
-  margin-top: 3px; line-height: 1.1;
-}
-.tarjeta-var  { font-size: 10px; font-weight: 600; display: block; margin-top: 1px; }
-.tarjeta-hora { font-size: 8px; color: #C8BC9E; display: block; margin-top: 1px; }
-.tarjeta-destacada { border-color: var(--linea) !important; }
-
-/* Banda cambiaria */
-.tarjeta-banda { min-width: 200px; }
-.banda-barra {
-  height: 4px; background: var(--linea);
-  border-radius: 2px; margin: 6px 0 4px;
-  position: relative;
-}
-.banda-marcador {
-  position: absolute; top: -3px;
-  width: 3px; height: 10px;
-  background: var(--tinta); border-radius: 1px;
-}
-.banda-pies {
-  display: flex; justify-content: space-between;
-  font-size: 8px; color: var(--gris);
-}
-
-/* =================================================================
-   HOME LAYOUT
-   ================================================================= */
-.home-main { padding: 0 0 32px; }
-.home-layout-densa {
-  display: grid;
-  grid-template-columns: 1fr 260px;
-  gap: 32px;
-  align-items: start;
-  padding-top: 0;
-}
-@media (max-width: 860px) {
-  .home-layout-densa { grid-template-columns: 1fr; gap: 0; }
-}
-
-/* =================================================================
    LA DATA DEL DÍA
    ================================================================= */
-.home-col-principal { padding: 14px 0 0; }
-
-.col-header { margin-bottom: 0; }
-
-.home-destacados { margin-bottom: 4px; }
-
-/* Notas */
-.cat-lista { list-style: none; }
-.cat-item {
-  padding: 7px 0;
-  border-bottom: 1px dotted var(--linea);
-  display: flex; flex-direction: column; gap: 2px;
-}
-.cat-item:last-child { border-bottom: none; }
-.cat-cat {
-  font-size: 8px; font-weight: 700;
-  letter-spacing: 0.15em; text-transform: uppercase;
-  color: var(--gris);
-}
-.cat-titulo {
-  font-size: 13px; line-height: 1.3;
-  color: var(--tinta);
-}
-.cat-titulo:hover { color: var(--rojo); }
-.cat-fuente { font-size: 9px; color: #C8BC9E; }
-
-/* Cats grid */
-.home-cats-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 0;
-  border-top: 1px solid var(--linea);
-  margin-top: 8px;
-}
-@media (max-width: 400px) { .home-cats-grid { grid-template-columns: 1fr; } }
-
-.home-bloque-cat {
-  padding: 10px 0;
-  border-bottom: 1px solid var(--linea);
-}
-.home-cats-grid > .home-bloque-cat:nth-child(odd)  { padding-right: 10px; }
-.home-cats-grid > .home-bloque-cat:nth-child(even) {
-  padding-left: 10px;
-  border-left: 1px solid var(--linea);
-}
-.cat-header {
-  display: flex; align-items: center;
-  gap: 5px; margin-bottom: 7px;
-}
-.cat-icono { display: flex; align-items: center; color: var(--gris); }
-.cat-icono .ic {
-  width: 12px; height: 12px;
-  stroke: currentColor; stroke-width: 2.2;
-  fill: none; stroke-linecap: round; stroke-linejoin: round;
-}
-.cat-nombre {
-  font-size: 9px; font-weight: 700;
-  letter-spacing: 0.18em; text-transform: uppercase;
-  color: var(--tinta);
-}
-.cat-nombre:hover { color: var(--rojo); }
-
-/* =================================================================
-   TARJETAS TABLERO (entre categorías y columna)
-   ================================================================= */
-.home-tablero-bloque {
-  padding: 14px 0;
-  border-top: 1px solid var(--linea);
-}
-.tablero-bloque-label {
-  font-size: 9px; font-weight: 700;
-  letter-spacing: 0.22em; text-transform: uppercase;
-  color: var(--gris); margin-bottom: 8px;
-  display: block;
-}
-.tablero-scroll {
-  display: flex; gap: 8px;
-  overflow-x: auto; scrollbar-width: none;
-  -webkit-overflow-scrolling: touch;
-}
-.tablero-scroll::-webkit-scrollbar { display: none; }
-
-/* =================================================================
-   SIDEBAR
-   ================================================================= */
-.home-sidebar {
-  display: flex; flex-direction: column;
-  gap: 0; padding-top: 14px;
-}
-@media (max-width: 860px) {
-  .home-sidebar { padding-top: 0; }
-}
-
-/* Bloque genérico del sidebar */
-.sb-bloque {
-  padding: 14px 0;
-  border-top: 1.5px solid var(--tinta);
-}
-.sb-bloque + .sb-bloque { border-top: 1px solid var(--linea); }
-
-.sb-header {
-  display: flex; align-items: baseline;
-  justify-content: space-between;
-  margin-bottom: 10px;
-}
-.sb-kicker {
-  font-size: 9px; font-weight: 700;
-  letter-spacing: 0.28em; text-transform: uppercase;
-  color: var(--gris);
-}
-.sb-link {
-  font-size: 9px; font-weight: 600;
-  color: var(--rojo);
-}
-
-.sb-item {
-  padding: 7px 0;
-  border-bottom: 1px dotted var(--linea);
-}
-.sb-item:last-child { border-bottom: none; }
-
-.sb-cat {
-  font-size: 8px; font-weight: 700;
-  letter-spacing: 0.12em; text-transform: uppercase;
-  color: var(--gris); display: block; margin-bottom: 2px;
-}
-.sb-titulo {
-  font-size: 13px; line-height: 1.3;
-  color: var(--tinta); font-weight: 500;
-}
-.sb-titulo a { color: var(--tinta); }
-.sb-titulo a:hover { color: var(--rojo); }
-.sb-fuente {
-  font-size: 9px; color: #C8BC9E;
-  display: block; margin-top: 2px;
-}
-
-/* =================================================================
-   COLUMNA — degradado
-   ================================================================= */
-.home-columna-bloque {
-  padding: 14px 0;
-  border-top: 1.5px solid var(--tinta);
-}
-.col-titulo-h {
-  font-family: 'Playfair Display', serif;
-  font-size: clamp(20px, 4vw, 28px);
-  font-weight: 900; line-height: 1.1;
-  color: var(--tinta); margin-bottom: 6px;
-}
-.col-bajada-h {
-  font-size: 13px; color: var(--gris);
-  line-height: 1.45; margin-bottom: 8px;
-  font-style: italic;
-}
-.col-texto-wrap { position: relative; }
-.col-texto-h {
-  font-size: 13px; line-height: 1.6;
-  color: var(--tinta);
-  max-height: 64px; overflow: hidden;
-}
-.col-fade-h {
-  position: absolute; bottom: 0; left: 0; right: 0;
-  height: 40px;
-  background: linear-gradient(transparent, var(--papel));
-}
-.col-ver-h {
-  display: inline-block; margin-top: 6px;
-  font-size: 10px; font-weight: 700;
-  color: var(--rojo); letter-spacing: 0.04em;
-}
-
-/* =================================================================
-   ECONOTUITS — 3 columnas Oficiales/Institucionales/Personales
-   ================================================================= */
-.home-econotuits-bloque {
-  padding: 14px 0;
-  border-top: 1.5px solid var(--tinta);
-}
-.et-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 12px;
-  margin-top: 10px;
-}
-@media (min-width: 640px) {
-  .et-grid { grid-template-columns: 1fr 1fr 1fr; }
-}
-.et-col-titulo {
-  font-size: 8px; font-weight: 700;
-  letter-spacing: 0.15em; text-transform: uppercase;
-  color: var(--gris); margin-bottom: 6px;
-  padding-bottom: 4px;
-  border-bottom: 1px solid var(--linea);
-}
-.et-tuit {
-  padding: 5px 0;
-  border-bottom: 1px dotted var(--linea);
-}
-.et-tuit:last-child { border-bottom: none; }
-.et-cuenta {
-  font-size: 8px; font-weight: 700;
-  color: var(--tinta); display: block;
-}
-.et-texto {
-  font-size: 10px; line-height: 1.3;
-  color: var(--tinta); margin-top: 1px;
-}
-.et-ver {
-  font-size: 9px; font-weight: 700;
-  color: var(--rojo); display: block;
-  text-align: right; margin-top: 8px;
-}
-
-/* =================================================================
-   CINTA DE CATEGORÍAS (pie de home, scrolleable)
-   ================================================================= */
-.nav-cats-cinta {
-  background: var(--papel);
-  padding: 10px 0 10px 16px;
-  border-top: 1px solid var(--linea);
-}
-.nav-cats-scroll {
-  display: flex; gap: 16px;
-  overflow-x: auto; scrollbar-width: none;
-  flex-wrap: nowrap;
-  -webkit-overflow-scrolling: touch;
-}
-.nav-cats-scroll::-webkit-scrollbar { display: none; }
-.nav-cats-scroll a {
-  display: inline-flex; align-items: center; gap: 5px;
-  color: var(--gris); white-space: nowrap;
-  font-size: 9px; font-weight: 600;
-  letter-spacing: 0.08em; text-transform: uppercase;
-}
-.nav-cats-scroll a:hover { color: var(--rojo); }
-.nav-cats-scroll a .ic {
-  width: 13px; height: 13px;
-  stroke: currentColor; stroke-width: 2.2;
-  fill: none; stroke-linecap: round; stroke-linejoin: round;
-  flex: 0 0 auto;
-}
-
-/* Vacío */
-.home-vacio {
-  font-size: 12px; font-style: italic;
-  color: var(--gris); padding: 16px 0;
-}
-
-/* =================================================================
-   LA DATA DEL DÍA
-   ================================================================= */
-.home-la-data { padding: 14px 0 0; }
+.home-la-data { padding: 16px 0 0; }
 
 .data-lista { list-style: none; }
 .data-item {
-  padding: 8px 0;
-  border-bottom: 1px dotted var(--linea);
-  display: flex; flex-direction: column; gap: 2px;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--linea);
+  display: flex; flex-direction: column; gap: 3px;
 }
 .data-item:last-child { border-bottom: none; }
 .data-cat {
-  font-size: 8px; font-weight: 700;
-  letter-spacing: 0.15em; text-transform: uppercase;
-  color: var(--gris);
+  font-size: 9px; font-weight: 700;
+  letter-spacing: 0.18em; text-transform: uppercase;
+  color: var(--rojo);
 }
 .data-titulo {
-  font-size: 13px; line-height: 1.3;
-  color: var(--tinta) !important; font-weight: 500;
-  text-decoration: none;
+  font-size: 15px; font-weight: 600;
+  line-height: 1.3; color: var(--tinta);
 }
-.data-titulo:hover   { color: var(--rojo) !important; }
+.data-titulo:hover { color: var(--rojo); }
 .data-titulo:visited { color: var(--tinta) !important; }
-.data-fuente { font-size: 9px; color: #C8BC9E; }
+.data-resumen {
+  font-size: 12px; color: var(--gris);
+  line-height: 1.4;
+}
+.data-fuente { font-size: 10px; color: var(--grisclaro); }
 
 /* =================================================================
-   CATEGORÍAS — 2 columnas
+   CATEGORÍAS — 2 columnas con íconos en rojo bordo
    ================================================================= */
 .home-categorias {
   padding: 12px 0;
   border-top: 1px solid var(--linea);
   border-bottom: 1px solid var(--linea);
-  margin: 8px 0;
+  margin: 10px 0;
 }
 .cats-grid {
   display: grid;
@@ -374,10 +49,10 @@
   gap: 0;
 }
 .cat-link {
-  display: flex; align-items: center; gap: 6px;
-  padding: 8px 4px;
+  display: flex; align-items: center; gap: 8px;
+  padding: 10px 4px;
   border-bottom: 1px dotted var(--linea);
-  font-size: 10px; font-weight: 600;
+  font-size: 11px; font-weight: 700;
   letter-spacing: 0.06em; text-transform: uppercase;
   color: var(--tinta);
 }
@@ -387,19 +62,17 @@
   border-left: 1px solid var(--linea);
 }
 .cat-link:hover { color: var(--rojo); }
-.cat-ic { display: flex; align-items: center; color: var(--gris); }
+.cat-ic { display: flex; align-items: center; }
 .cat-ic .ic {
-  width: 13px; height: 13px;
-  stroke: currentColor; stroke-width: 2.2;
+  width: 20px; height: 20px;
+  stroke: var(--rojo); stroke-width: 2.2;
   fill: none; stroke-linecap: round; stroke-linejoin: round;
 }
-.cat-txt { line-height: 1; }
 
 /* =================================================================
    TARJETAS TABLERO
    ================================================================= */
 .home-tarjetas { padding: 12px 0; }
-
 .tablero-scroll {
   display: flex; gap: 8px;
   overflow-x: auto; scrollbar-width: none;
@@ -407,12 +80,11 @@
   padding-bottom: 4px;
 }
 .tablero-scroll::-webkit-scrollbar { display: none; }
-
 .t-card {
   background: #fff;
   border: 1px solid var(--linea);
-  border-radius: 3px;
-  padding: 8px 12px;
+  border-radius: 4px;
+  padding: 9px 12px;
   min-width: 90px; flex: 0 0 auto;
   display: flex; flex-direction: column; gap: 2px;
   color: var(--tinta);
@@ -423,21 +95,17 @@
   letter-spacing: 0.1em; text-transform: uppercase;
   color: var(--gris);
 }
-.t-valor {
-  font-size: 15px; font-weight: 700;
-  color: var(--tinta); line-height: 1.1;
-}
-.t-var { font-size: 9px; font-weight: 600; }
+.t-valor { font-size: 16px; font-weight: 700; color: var(--tinta); line-height: 1.1; }
+.t-var   { font-size: 9px; font-weight: 600; }
 
 /* =================================================================
-   COLUMNA — degradado
+   COLUMNA — degradado crema
    ================================================================= */
 .home-columna {
   padding: 14px 0;
-  border-top: 1.5px solid var(--tinta);
+  border-top: 2px solid var(--oliva);
 }
 .col-titulo-h {
-  font-family: 'Playfair Display', serif;
   font-size: clamp(20px, 4vw, 26px);
   font-weight: 900; line-height: 1.1;
   color: var(--tinta); margin-bottom: 6px;
@@ -445,13 +113,11 @@
 .col-bajada-h {
   font-size: 12px; color: var(--gris);
   line-height: 1.45; margin-bottom: 8px;
-  font-style: italic;
 }
 .col-texto-wrap { position: relative; }
 .col-texto-h {
   font-size: 13px; line-height: 1.6;
-  color: var(--tinta);
-  max-height: 62px; overflow: hidden;
+  color: var(--tinta); max-height: 62px; overflow: hidden;
 }
 .col-fade-h {
   position: absolute; bottom: 0; left: 0; right: 0;
@@ -460,7 +126,7 @@
 }
 .col-ver-h {
   display: inline-block; margin-top: 8px;
-  font-size: 10px; font-weight: 700;
+  font-size: 11px; font-weight: 700;
   color: var(--rojo); letter-spacing: 0.04em;
 }
 
@@ -469,32 +135,32 @@
    ================================================================= */
 .home-stream {
   padding: 14px 0;
-  border-top: 1.5px solid var(--tinta);
+  border-top: 2px solid var(--oliva);
 }
 .stream-bajada {
-  font-size: 11px; color: var(--gris);
-  font-style: italic; margin-bottom: 10px;
+  font-size: 12px; font-weight: 600;
+  color: var(--gris); margin-bottom: 10px;
 }
 .sb-lista { list-style: none; }
 .sb-item {
-  padding: 7px 0;
+  padding: 8px 0;
   border-bottom: 1px dotted var(--linea);
   display: flex; flex-direction: column; gap: 2px;
 }
 .sb-item:last-child { border-bottom: none; }
 .sb-cat {
-  font-size: 8px; font-weight: 700;
-  letter-spacing: 0.12em; text-transform: uppercase;
-  color: var(--gris);
+  font-size: 9px; font-weight: 700;
+  letter-spacing: 0.15em; text-transform: uppercase;
+  color: var(--rojo);
 }
 .sb-titulo {
-  font-size: 13px; line-height: 1.3;
-  color: var(--tinta); font-weight: 500;
+  font-size: 14px; font-weight: 600;
+  line-height: 1.3; color: var(--tinta);
 }
 .sb-titulo:hover { color: var(--rojo); }
 .sb-ver {
   display: inline-block; margin-top: 8px;
-  font-size: 10px; font-weight: 700;
+  font-size: 11px; font-weight: 700;
   color: var(--rojo); letter-spacing: 0.04em;
 }
 
@@ -503,48 +169,51 @@
    ================================================================= */
 .home-econotuits {
   padding: 14px 0;
-  border-top: 1.5px solid var(--tinta);
+  border-top: 2px solid var(--oliva);
 }
 .et-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 12px; margin-top: 10px;
 }
-@media (min-width: 640px) {
-  .et-grid { grid-template-columns: 1fr 1fr 1fr; }
-}
+@media (min-width: 640px) { .et-grid { grid-template-columns: 1fr 1fr 1fr; } }
 .et-col-titulo {
-  font-size: 8px; font-weight: 700;
+  font-size: 9px; font-weight: 700;
   letter-spacing: 0.15em; text-transform: uppercase;
   color: var(--gris); margin-bottom: 6px;
-  padding-bottom: 4px;
-  border-bottom: 1px solid var(--linea);
+  padding-bottom: 4px; border-bottom: 1px solid var(--linea);
 }
-.et-tuit {
-  padding: 5px 0;
-  border-bottom: 1px dotted var(--linea);
-}
+.et-tuit { padding: 6px 0; border-bottom: 1px dotted var(--linea); }
 .et-tuit:last-child { border-bottom: none; }
-.et-cuenta {
-  font-size: 8px; font-weight: 700;
-  color: var(--tinta); display: block;
-}
-.et-texto {
-  font-size: 10px; line-height: 1.3;
-  color: var(--tinta); margin-top: 1px;
-}
-.et-link {
-  font-size: 9px; font-weight: 600;
-  color: var(--rojo); display: block; margin-top: 2px;
-}
-.et-vacio {
-  font-size: 11px; color: var(--gris);
-  font-style: italic; padding: 8px 0;
-}
+.et-cuenta { font-size: 9px; font-weight: 700; color: var(--tinta); display: block; margin-bottom: 2px; }
+.et-texto  { font-size: 10px; line-height: 1.35; color: var(--tinta); }
+.et-link   { font-size: 9px; font-weight: 700; color: var(--rojo); display: block; margin-top: 2px; }
+.et-vacio  { font-size: 11px; color: var(--gris); padding: 8px 0; }
+.et-ver    { display: block; text-align: right; font-size: 11px; font-weight: 700; color: var(--rojo); margin-top: 10px; }
 
-.data-resumen {
-  font-size: 11px;
-  color: var(--gris);
-  line-height: 1.4;
-  display: block;
+/* =================================================================
+   CARRUSEL TARJETAS
+   ================================================================= */
+.franja-tarjetas {
+  background: var(--papel);
+  border-bottom: 1px solid var(--linea);
+  padding: 10px 0 10px 16px;
+  overflow: hidden;
 }
+.carrusel-datos { overflow-x: auto; scrollbar-width: none; }
+.carrusel-datos::-webkit-scrollbar { display: none; }
+.carrusel-pista { display: flex; flex-wrap: nowrap; gap: 8px; padding-right: 16px; width: max-content; }
+.tarjeta-dato {
+  background: #fff;
+  border: 1px solid var(--linea);
+  border-radius: 3px;
+  padding: 8px 12px; min-width: 100px;
+}
+.tarjeta-titulo { font-size: 8px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gris); display: block; }
+.tarjeta-valor  { font-size: 16px; font-weight: 700; color: var(--tinta); display: block; margin-top: 3px; line-height: 1.1; }
+.tarjeta-var    { font-size: 10px; font-weight: 600; display: block; margin-top: 1px; }
+.tarjeta-hora   { font-size: 8px; color: var(--grisclaro); display: block; margin-top: 1px; }
+.tarjeta-destacada { border-color: var(--linea) !important; }
+
+/* Vacío */
+.home-vacio { font-size: 12px; color: var(--gris); padding: 16px 0; }

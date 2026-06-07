@@ -80,7 +80,7 @@
     }
     const blue = d(datos, 'dolar_blue');
     if (blue) {
-      pintar('dolar-blue-cab', fmtPesos(venta(blue)), blue.stale);
+      pintar('dolar-blue-ticker', fmtPesos(venta(blue)), blue.stale);
       pintar('m-dolar-blue', fmtPesos(venta(blue)), blue.stale);
     }
     if (mer) {

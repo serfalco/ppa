@@ -14,7 +14,7 @@
   margin-bottom: 20px;
 }
 .interior-titulo {
-  font-family: 'Playfair Display', serif;
+  font-family: 'IBM Plex Sans', sans-serif;
   font-size: clamp(22px, 5vw, 34px);
   font-weight: 900;
   line-height: 1.05;
@@ -84,12 +84,12 @@
 .dato-sub {
   font-family: 'IBM Plex Sans', sans-serif;
   font-size: 9px;
-  color: #C8BC9E;
+  color: #C4A882;
 }
 .dato-fuente {
   font-family: 'IBM Plex Sans', sans-serif;
   font-size: 8px;
-  color: #C8BC9E;
+  color: #C4A882;
   margin-top: 2px;
 }
 .dato-link {
@@ -103,7 +103,7 @@
 .dato-link:hover { color: var(--tinta); }
 .dato-proximo {
   font-size: 11px !important;
-  color: #C8BC9E !important;
+  color: #C4A882 !important;
   font-style: italic;
 }
 
@@ -113,12 +113,12 @@
   font-size: 11px;
   font-weight: 600;
 }
-.sube { color: var(--verde); }
+.sube { color: var(--oliva); }
 .baja { color: var(--rojo); }
 
 /* Par compra/venta */
 .dato-par { display: flex; align-items: baseline; gap: 3px; }
-.dato-compra { font-family: 'IBM Plex Sans', sans-serif; font-size: 14px; font-weight: 700; color: var(--verde); }
+.dato-compra { font-family: 'IBM Plex Sans', sans-serif; font-size: 14px; font-weight: 700; color: var(--oliva); }
 .dato-venta  { font-family: 'IBM Plex Sans', sans-serif; font-size: 14px; font-weight: 700; color: var(--rojo); }
 .dato-sep    { color: var(--linea); }
 
@@ -128,10 +128,10 @@
 .bcra-fila { display: flex; gap: 16px; align-items: flex-start; margin: 6px 0 4px; }
 .bcra-item { display: flex; flex-direction: column; gap: 2px; flex: 1; }
 .bcra-sep  { width: 1px; background: var(--linea); align-self: stretch; margin: 4px 0; }
-.bcra-sub  { font-family: 'IBM Plex Sans', sans-serif; font-size: 8px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: #C8BC9E; }
-.bcra-detalle { font-family: 'IBM Plex Sans', sans-serif; font-size: 9px; color: #C8BC9E; }
+.bcra-sub  { font-family: 'IBM Plex Sans', sans-serif; font-size: 8px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: #C4A882; }
+.bcra-detalle { font-family: 'IBM Plex Sans', sans-serif; font-size: 9px; color: #C4A882; }
 .bcra-mulc { font-family: 'IBM Plex Sans', sans-serif; font-size: 14px; font-weight: 700; color: var(--tinta); line-height: 1.2; }
-.bcra-mulc.compro { color: var(--verde); }
+.bcra-mulc.compro { color: var(--oliva); }
 .bcra-mulc.vendio { color: var(--rojo); }
 
 /* Tablero nav interna */
@@ -190,7 +190,7 @@
   margin-bottom: 8px;
 }
 .columna-titulo-h1 {
-  font-family: 'Playfair Display', serif;
+  font-family: 'IBM Plex Sans', sans-serif;
   font-size: clamp(22px, 5vw, 34px);
   font-weight: 900;
   line-height: 1.1;
@@ -219,7 +219,7 @@
 }
 .columna-cuerpo p { margin-bottom: 14px; }
 .columna-capitular::first-letter {
-  font-family: 'Playfair Display', serif;
+  font-family: 'IBM Plex Sans', sans-serif;
   font-size: 3.5em;
   font-weight: 900;
   float: left;
@@ -233,7 +233,7 @@
 .columnas-page { max-width: 680px; margin: 0 auto; }
 .columnas-titulo { margin-bottom: 20px; padding-bottom: 14px; border-bottom: 2px solid var(--tinta); }
 .columnas-titulo h1 {
-  font-family: 'Playfair Display', serif;
+  font-family: 'IBM Plex Sans', sans-serif;
   font-size: clamp(22px, 5vw, 32px);
   font-weight: 900;
 }
@@ -242,11 +242,11 @@
   padding: 14px 0;
   border-bottom: 1px solid var(--linea);
 }
-.columna-card h2 { font-family: 'Playfair Display', serif; font-size: 18px; font-weight: 700; margin-bottom: 4px; }
+.columna-card h2 { font-family: 'IBM Plex Sans', sans-serif; font-size: 18px; font-weight: 700; margin-bottom: 4px; }
 .columna-card h2 a { color: var(--tinta); }
 .columna-card h2 a:hover { color: var(--rojo); }
 .columna-card .bajada { font-family: 'IBM Plex Sans', sans-serif; font-size: 13px; color: var(--gris); font-style: italic; margin-bottom: 6px; }
-.columna-card .meta { font-family: 'IBM Plex Sans', sans-serif; font-size: 9px; color: #C8BC9E; }
+.columna-card .meta { font-family: 'IBM Plex Sans', sans-serif; font-size: 9px; color: #C4A882; }
 
 /* =================================================================
    STREAM
@@ -263,14 +263,14 @@
 .stream-nota-volver:hover { color: var(--rojo); }
 .stream-nota-header { margin-bottom: 20px; padding-bottom: 14px; border-bottom: 1px solid var(--linea); }
 .stream-nota-header h1 {
-  font-family: 'Playfair Display', serif;
+  font-family: 'IBM Plex Sans', sans-serif;
   font-size: clamp(20px, 4vw, 28px);
   font-weight: 900;
   line-height: 1.1;
   margin-bottom: 8px;
 }
 .bajada { font-family: 'IBM Plex Sans', sans-serif; font-size: 14px; font-style: italic; color: var(--gris); line-height: 1.5; }
-.meta { font-family: 'IBM Plex Sans', sans-serif; font-size: 9px; color: #C8BC9E; margin-top: 8px; }
+.meta { font-family: 'IBM Plex Sans', sans-serif; font-size: 9px; color: #C4A882; margin-top: 8px; }
 .stream-cat { font-weight: 700; color: var(--violeta); }
 .stream-cuerpo { font-family: 'IBM Plex Sans', sans-serif; font-size: 14px; line-height: 1.65; }
 .stream-cuerpo p { margin-bottom: 12px; }
@@ -314,7 +314,7 @@
    ================================================================= */
 .tuits-main { padding: 20px 0 48px; }
 .tuits-header { margin-bottom: 20px; padding-bottom: 14px; border-bottom: 2px solid var(--tinta); }
-.tuits-titulo { font-family: 'Playfair Display', serif; font-size: clamp(22px, 5vw, 32px); font-weight: 900; margin-bottom: 4px; }
+.tuits-titulo { font-family: 'IBM Plex Sans', sans-serif; font-size: clamp(22px, 5vw, 32px); font-weight: 900; margin-bottom: 4px; }
 .tuits-sub { font-family: 'IBM Plex Sans', sans-serif; font-size: 12px; color: var(--gris); font-style: italic; max-width: 520px; line-height: 1.5; }
 .tuits-grid { display: grid; grid-template-columns: 1fr; gap: 24px; }
 @media (min-width: 640px) { .tuits-grid { grid-template-columns: 1fr 1fr; } }
@@ -324,13 +324,13 @@
 .tuits-nombre { font-family: 'IBM Plex Sans', sans-serif; font-size: 12px; font-weight: 700; color: var(--tinta); }
 .tuits-perfil { font-family: 'IBM Plex Sans', sans-serif; font-size: 10px; color: var(--gris); }
 .tuits-perfil:hover { color: var(--rojo); }
-.tuit-stale-aviso { font-family: 'IBM Plex Sans', sans-serif; font-size: 9px; color: #C8BC9E; font-style: italic; }
+.tuit-stale-aviso { font-family: 'IBM Plex Sans', sans-serif; font-size: 9px; color: #C4A882; font-style: italic; }
 .tuit-item { padding: 9px 0; border-bottom: 1px dotted var(--linea); }
 .tuit-item:last-child { border-bottom: none; }
 .tuit-stale { opacity: 0.65; }
 .tuit-texto { font-family: 'IBM Plex Sans', sans-serif; font-size: 13px; line-height: 1.4; color: var(--tinta); margin-bottom: 5px; }
 .tuit-meta { display: flex; align-items: center; gap: 10px; }
-.tuit-hora { font-family: 'IBM Plex Sans', sans-serif; font-size: 9px; color: #C8BC9E; }
+.tuit-hora { font-family: 'IBM Plex Sans', sans-serif; font-size: 9px; color: #C4A882; }
 .tuit-link { font-family: 'IBM Plex Sans', sans-serif; font-size: 9px; font-weight: 600; color: var(--violeta); }
 .tuit-link:hover { color: var(--rojo); }
 .tuits-vacio { font-family: 'IBM Plex Sans', sans-serif; font-style: italic; color: var(--gris); padding: 20px 0; font-size: 13px; }
