@@ -200,10 +200,12 @@ def html_la_data(portada):
         fuente = escapar(n.get("fuente_nombre",""))
         cat    = escapar(n.get("categoria",""))
         link   = escapar(n.get("link","#"))
+        resumen = escapar(comp.limpiar_url(n.get("resumen","")))
         items.append(f"""
       <li class="data-item">
         <span class="data-cat">{cat}</span>
         <a href="{link}" class="data-titulo" target="_blank" rel="noopener">{titulo}</a>
+        {f'<span class="data-resumen">{resumen}</span>' if resumen else ''}
         <span class="data-fuente">{fuente}</span>
       </li>""")
 
