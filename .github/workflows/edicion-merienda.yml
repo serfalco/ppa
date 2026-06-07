@@ -23,10 +23,10 @@ jobs:
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v4.2.2
 
       - name: Setup Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v5.3.0
         with:
           python-version: '3.11'
           cache: 'pip'
@@ -69,6 +69,10 @@ jobs:
 
       - name: Generador - REM
         run: python scripts/generador_rem.py
+        continue-on-error: true
+
+      - name: Generador - Informes
+        run: python scripts/generador_informes.py
         continue-on-error: true
 
       - name: Generador - Documentos
