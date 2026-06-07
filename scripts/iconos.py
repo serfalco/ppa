@@ -44,6 +44,12 @@ ICONO = {
     "fiscal": f'<svg {_A}><rect x="7" y="5" width="18" height="22" rx="2"/><line x1="11" y1="11" x2="21" y2="11"/><line x1="11" y1="16" x2="21" y2="16"/><line x1="11" y1="21" x2="17" y2="21"/></svg>',
 
     "banda": f'<svg {_A}><line x1="6" y1="16" x2="26" y2="16"/><line x1="6" y1="11" x2="6" y2="21"/><line x1="26" y1="11" x2="26" y2="21"/><circle cx="16" cy="16" r="3"/></svg>',
+
+    "finanzas": f'<svg {_A}><circle cx="16" cy="16" r="11"/><line x1="16" y1="9" x2="16" y2="23"/><path d="M19 12 C 19 10, 17 10, 16 10 C 14 10, 13 11, 13 13 C 13 15, 15 15, 16 16 C 18 16, 19 17, 19 19 C 19 21, 17 22, 16 22 C 14 22, 13 21, 13 20"/></svg>',
+
+    "laboral": f'<svg {_A}><circle cx="16" cy="11" r="5"/><path d="M6 27 C 6 20, 11 18, 16 18 C 21 18, 26 20, 26 27"/></svg>',
+
+    "fulbito": f'<svg {_A}><circle cx="16" cy="16" r="11"/><path d="M16 5 L19 10 L16 13 L13 10 Z"/><path d="M27 13 L22 14 L20 18 L23 22"/><path d="M27 19 L22 18"/><path d="M5 13 L10 14 L12 18 L9 22"/><path d="M5 19 L10 18"/><path d="M16 27 L19 22 L16 19 L13 22 Z"/><polygon points="16,13 20,18 19,22 13,22 12,18" fill="currentColor" opacity="0.15"/></svg>',
 }
 
 

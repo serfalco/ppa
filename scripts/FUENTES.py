@@ -237,6 +237,41 @@ FUENTES = [
         "tier": 2,
         "activa": True,
     },
+    # ================================================================
+    # FULBITO — fútbol argentino
+    # ================================================================
+    {
+        "id": "ole",
+        "nombre": "Olé",
+        "web": "https://www.ole.com.ar/rss/home.xml",
+        "categoria": "Fulbito",
+        "tier": 1,
+        "activa": True,
+    },
+    {
+        "id": "tycsports",
+        "nombre": "TyC Sports",
+        "web": "https://www.tycsports.com/rss.xml",
+        "categoria": "Fulbito",
+        "tier": 1,
+        "activa": True,
+    },
+    {
+        "id": "infobae_deportes",
+        "nombre": "Infobae Deportes",
+        "web": "https://www.infobae.com/feeds/rss/deportes/",
+        "categoria": "Fulbito",
+        "tier": 1,
+        "activa": True,
+    },
+    {
+        "id": "pincha",
+        "nombre": "0221 — Estudiantes",
+        "web": "https://www.0221.com.ar/rss/pages/estudiantes.xml",
+        "categoria": "Fulbito",
+        "tier": 1,
+        "activa": True,
+    },
 ]
 
 # Lookup rápido por id
