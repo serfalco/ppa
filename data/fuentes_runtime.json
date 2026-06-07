@@ -1,5 +1,5 @@
 {
-  "generado_en": "2026-06-07T18:33:14.487769+00:00",
+  "generado_en": "2026-06-07T19:53:56.314790+00:00",
   "fuentes": {
     "bcra": {
       "nombre": "BCRA",
@@ -7,7 +7,7 @@
       "error": "HTTP: 404 Client Error: Not Found for url: https://www.bcra.gob.ar/Noticias/RSS_Notici",
       "ultima_publicacion": null,
       "notas_obtenidas": 0,
-      "ultima_lectura": "2026-06-07T18:31:33.928979+00:00"
+      "ultima_lectura": "2026-06-07T19:51:49.491853+00:00"
     },
     "indec": {
       "nombre": "INDEC",
@@ -15,15 +15,15 @@
       "error": "Feed vacío o malformado",
       "ultima_publicacion": null,
       "notas_obtenidas": 0,
-      "ultima_lectura": "2026-06-07T18:31:34.909458+00:00"
+      "ultima_lectura": "2026-06-07T19:51:54.589436+00:00"
     },
     "iaraf": {
       "nombre": "IARAF",
-      "estado": "error",
-      "error": "HTTP: HTTPSConnectionPool(host='www.iaraf.org', port=443): Max retries exceeded with u",
-      "ultima_publicacion": null,
-      "notas_obtenidas": 0,
-      "ultima_lectura": "2026-06-07T18:31:50.412654+00:00"
+      "estado": "ok",
+      "error": null,
+      "ultima_publicacion": "2026-06-05T19:48:00+00:00",
+      "notas_obtenidas": 1,
+      "ultima_lectura": "2026-06-07T19:52:00.879041+00:00"
     },
     "fiel": {
       "nombre": "FIEL",
@@ -31,7 +31,7 @@
       "error": "HTTP: 404 Client Error: Not Found for url: https://www.fiel.org/feed/",
       "ultima_publicacion": null,
       "notas_obtenidas": 0,
-      "ultima_lectura": "2026-06-07T18:31:50.623548+00:00"
+      "ultima_lectura": "2026-06-07T19:52:01.137005+00:00"
     },
     "fundar": {
       "nombre": "Fundar",
@@ -39,7 +39,7 @@
       "error": "Feed vacío o malformado",
       "ultima_publicacion": null,
       "notas_obtenidas": 0,
-      "ultima_lectura": "2026-06-07T18:31:51.549229+00:00"
+      "ultima_lectura": "2026-06-07T19:52:02.216651+00:00"
     },
     "ieral": {
       "nombre": "IERAL / Fundación Mediterránea",
@@ -47,7 +47,7 @@
       "error": "HTTP: 403 Client Error: Forbidden for url: https://www.ieral.org/feed/",
       "ultima_publicacion": null,
       "notas_obtenidas": 0,
-      "ultima_lectura": "2026-06-07T18:31:51.611233+00:00"
+      "ultima_lectura": "2026-06-07T19:52:02.346850+00:00"
     },
     "cedlas": {
       "nombre": "CEDLAS",
@@ -55,7 +55,7 @@
       "error": null,
       "ultima_publicacion": "2026-06-01T05:46:03+00:00",
       "notas_obtenidas": 0,
-      "ultima_lectura": "2026-06-07T18:31:53.574637+00:00"
+      "ultima_lectura": "2026-06-07T19:52:04.287148+00:00"
     },
     "ecolatina": {
       "nombre": "Ecolatina",
@@ -63,7 +63,7 @@
       "error": null,
       "ultima_publicacion": "2026-03-20T22:07:47+00:00",
       "notas_obtenidas": 0,
-      "ultima_lectura": "2026-06-07T18:31:56.260014+00:00"
+      "ultima_lectura": "2026-06-07T19:52:06.840253+00:00"
     },
     "idesa": {
       "nombre": "IDESA",
@@ -71,7 +71,7 @@
       "error": null,
       "ultima_publicacion": "2026-06-07T17:00:18+00:00",
       "notas_obtenidas": 1,
-      "ultima_lectura": "2026-06-07T18:32:00.289520+00:00"
+      "ultima_lectura": "2026-06-07T19:52:15.707155+00:00"
     },
     "empiria": {
       "nombre": "Empiria Consultores",
@@ -79,7 +79,7 @@
       "error": "HTTP: HTTPSConnectionPool(host='empiria.com.ar', port=443): Max retries exceeded with ",
       "ultima_publicacion": null,
       "notas_obtenidas": 0,
-      "ultima_lectura": "2026-06-07T18:32:00.705924+00:00"
+      "ultima_lectura": "2026-06-07T19:52:16.186290+00:00"
     },
     "lcg": {
       "nombre": "LCG",
@@ -87,7 +87,7 @@
       "error": null,
       "ultima_publicacion": "2023-02-28T18:46:05+00:00",
       "notas_obtenidas": 0,
-      "ultima_lectura": "2026-06-07T18:32:03.670337+00:00"
+      "ultima_lectura": "2026-06-07T19:52:19.090175+00:00"
     },
     "invecq": {
       "nombre": "Invecq",
@@ -95,7 +95,7 @@
       "error": null,
       "ultima_publicacion": "2026-06-05T20:26:07+00:00",
       "notas_obtenidas": 2,
-      "ultima_lectura": "2026-06-07T18:32:06.732205+00:00"
+      "ultima_lectura": "2026-06-07T19:52:22.024885+00:00"
     },
     "ojf": {
       "nombre": "Orlando J. Ferreres",
@@ -103,7 +103,7 @@
       "error": "HTTP: 404 Client Error:  for url: https://www.ojf.com/feed/",
       "ultima_publicacion": null,
       "notas_obtenidas": 0,
-      "ultima_lectura": "2026-06-07T18:32:07.211321+00:00"
+      "ultima_lectura": "2026-06-07T19:52:22.595265+00:00"
     },
     "analytica": {
       "nombre": "Analytica",
@@ -111,7 +111,7 @@
       "error": "HTTP: 404 Client Error: Not Found for url: https://analytica.com.ar/feed/",
       "ultima_publicacion": null,
       "notas_obtenidas": 0,
-      "ultima_lectura": "2026-06-07T18:32:07.770071+00:00"
+      "ultima_lectura": "2026-06-07T19:52:23.298207+00:00"
     },
     "outlier": {
       "nombre": "Outlier",
@@ -119,7 +119,7 @@
       "error": "HTTP: 404 Client Error: Not Found for url: https://outlier.com.ar/feed/",
       "ultima_publicacion": null,
       "notas_obtenidas": 0,
-      "ultima_lectura": "2026-06-07T18:32:08.857504+00:00"
+      "ultima_lectura": "2026-06-07T19:52:24.522958+00:00"
     },
     "ecogo": {
       "nombre": "EcoGo",
@@ -127,7 +127,7 @@
       "error": null,
       "ultima_publicacion": "2026-06-02T20:56:51+00:00",
       "notas_obtenidas": 0,
-      "ultima_lectura": "2026-06-07T18:32:09.843592+00:00"
+      "ultima_lectura": "2026-06-07T19:52:24.969652+00:00"
     },
     "consultora1816": {
       "nombre": "1816",
@@ -135,7 +135,7 @@
       "error": null,
       "ultima_publicacion": null,
       "notas_obtenidas": 0,
-      "ultima_lectura": "2026-06-07T18:32:09.843634+00:00"
+      "ultima_lectura": "2026-06-07T19:52:24.969692+00:00"
     },
     "equilibra": {
       "nombre": "Equilibra",
@@ -143,7 +143,7 @@
       "error": "HTTP: HTTPSConnectionPool(host='www.equilibra.com.ar', port=443): Max retries exceeded",
       "ultima_publicacion": null,
       "notas_obtenidas": 0,
-      "ultima_lectura": "2026-06-07T18:32:10.260644+00:00"
+      "ultima_lectura": "2026-06-07T19:52:25.443816+00:00"
     },
     "pxq": {
       "nombre": "PxQ",
@@ -151,7 +151,7 @@
       "error": null,
       "ultima_publicacion": null,
       "notas_obtenidas": 0,
-      "ultima_lectura": "2026-06-07T18:32:10.260694+00:00"
+      "ultima_lectura": "2026-06-07T19:52:25.443890+00:00"
     },
     "anker": {
       "nombre": "Anker Latinoamérica",
@@ -159,7 +159,7 @@
       "error": null,
       "ultima_publicacion": null,
       "notas_obtenidas": 0,
-      "ultima_lectura": "2026-06-07T18:32:10.260710+00:00"
+      "ultima_lectura": "2026-06-07T19:52:25.443913+00:00"
     },
     "ecosur": {
       "nombre": "Eco Sur",
@@ -167,7 +167,7 @@
       "error": null,
       "ultima_publicacion": null,
       "notas_obtenidas": 0,
-      "ultima_lectura": "2026-06-07T18:32:10.260747+00:00"
+      "ultima_lectura": "2026-06-07T19:52:25.443926+00:00"
     },
     "myr": {
       "nombre": "MyR Consultores",
@@ -175,7 +175,7 @@
       "error": null,
       "ultima_publicacion": null,
       "notas_obtenidas": 0,
-      "ultima_lectura": "2026-06-07T18:32:10.260757+00:00"
+      "ultima_lectura": "2026-06-07T19:52:25.443939+00:00"
     },
     "suramericanavision": {
       "nombre": "Suramericana Visión",
@@ -183,7 +183,7 @@
       "error": null,
       "ultima_publicacion": null,
       "notas_obtenidas": 0,
-      "ultima_lectura": "2026-06-07T18:32:10.260770+00:00"
+      "ultima_lectura": "2026-06-07T19:52:25.443953+00:00"
     },
     "cifra": {
       "nombre": "CIFRA",
@@ -191,7 +191,7 @@
       "error": null,
       "ultima_publicacion": "2026-05-14T19:56:10+00:00",
       "notas_obtenidas": 0,
-      "ultima_lectura": "2026-06-07T18:32:12.230933+00:00"
+      "ultima_lectura": "2026-06-07T19:52:27.391080+00:00"
     },
     "quantum": {
       "nombre": "Quantum Finanzas",
@@ -199,7 +199,7 @@
       "error": null,
       "ultima_publicacion": null,
       "notas_obtenidas": 0,
-      "ultima_lectura": "2026-06-07T18:32:12.230975+00:00"
+      "ultima_lectura": "2026-06-07T19:52:27.391117+00:00"
     },
     "romanogroup": {
       "nombre": "Romano Group",
@@ -207,7 +207,7 @@
       "error": null,
       "ultima_publicacion": null,
       "notas_obtenidas": 0,
-      "ultima_lectura": "2026-06-07T18:32:12.230992+00:00"
+      "ultima_lectura": "2026-06-07T19:52:27.391133+00:00"
     },
     "aurum": {
       "nombre": "Aurum Valores",
@@ -215,7 +215,7 @@
       "error": null,
       "ultima_publicacion": null,
       "notas_obtenidas": 0,
-      "ultima_lectura": "2026-06-07T18:32:12.231003+00:00"
+      "ultima_lectura": "2026-06-07T19:52:27.391144+00:00"
     },
     "cp_consultora": {
       "nombre": "C-P Consultora",
@@ -223,7 +223,7 @@
       "error": null,
       "ultima_publicacion": null,
       "notas_obtenidas": 0,
-      "ultima_lectura": "2026-06-07T18:32:12.231013+00:00"
+      "ultima_lectura": "2026-06-07T19:52:27.391154+00:00"
     },
     "vectorial": {
       "nombre": "Vectorial",
@@ -231,7 +231,7 @@
       "error": null,
       "ultima_publicacion": null,
       "notas_obtenidas": 0,
-      "ultima_lectura": "2026-06-07T18:32:12.231023+00:00"
+      "ultima_lectura": "2026-06-07T19:52:27.391164+00:00"
     },
     "gmacapital": {
       "nombre": "GMA Capital",
@@ -239,7 +239,7 @@
       "error": null,
       "ultima_publicacion": null,
       "notas_obtenidas": 0,
-      "ultima_lectura": "2026-06-07T18:32:12.231034+00:00"
+      "ultima_lectura": "2026-06-07T19:52:27.391174+00:00"
     },
     "consultatio": {
       "nombre": "Consultatio Investments",
@@ -247,7 +247,7 @@
       "error": null,
       "ultima_publicacion": null,
       "notas_obtenidas": 0,
-      "ultima_lectura": "2026-06-07T18:32:12.231044+00:00"
+      "ultima_lectura": "2026-06-07T19:52:27.391183+00:00"
     },
     "miradoruca": {
       "nombre": "Mirador UCA",
@@ -255,7 +255,7 @@
       "error": "HTTP: HTTPSConnectionPool(host='www.uca.edu.ar', port=443): Max retries exceeded with ",
       "ultima_publicacion": null,
       "notas_obtenidas": 0,
-      "ultima_lectura": "2026-06-07T18:32:12.862291+00:00"
+      "ultima_lectura": "2026-06-07T19:52:28.128332+00:00"
     },
     "oetec": {
       "nombre": "OETEC",
@@ -263,7 +263,7 @@
       "error": null,
       "ultima_publicacion": null,
       "notas_obtenidas": 0,
-      "ultima_lectura": "2026-06-07T18:32:12.862342+00:00"
+      "ultima_lectura": "2026-06-07T19:52:28.128378+00:00"
     },
     "iae": {
       "nombre": "IAE Business School",
@@ -271,7 +271,7 @@
       "error": null,
       "ultima_publicacion": "2026-06-01T13:02:00+00:00",
       "notas_obtenidas": 0,
-      "ultima_lectura": "2026-06-07T18:32:14.385909+00:00"
+      "ultima_lectura": "2026-06-07T19:52:30.123725+00:00"
     },
     "ucema": {
       "nombre": "UCEMA",
@@ -279,7 +279,7 @@
       "error": "HTTP: 404 Client Error: Not Found for url: https://ucema.edu.ar/feed/",
       "ultima_publicacion": null,
       "notas_obtenidas": 0,
-      "ultima_lectura": "2026-06-07T18:32:15.596608+00:00"
+      "ultima_lectura": "2026-06-07T19:52:31.279052+00:00"
     },
     "utdt": {
       "nombre": "Universidad Di Tella",
@@ -287,15 +287,15 @@
       "error": "HTTP: 404 Client Error: Not Found for url: https://www.utdt.edu/feed/",
       "ultima_publicacion": null,
       "notas_obtenidas": 0,
-      "ultima_lectura": "2026-06-07T18:32:16.528573+00:00"
+      "ultima_lectura": "2026-06-07T19:52:32.271622+00:00"
     },
     "ambito": {
       "nombre": "Ámbito Financiero",
       "estado": "ok",
       "error": null,
-      "ultima_publicacion": "2026-06-07T18:02:00+00:00",
-      "notas_obtenidas": 35,
-      "ultima_lectura": "2026-06-07T18:32:16.813560+00:00"
+      "ultima_publicacion": "2026-06-07T19:32:00+00:00",
+      "notas_obtenidas": 20,
+      "ultima_lectura": "2026-06-07T19:52:32.607924+00:00"
     },
     "cronista": {
       "nombre": "El Cronista",
@@ -303,7 +303,7 @@
       "error": "HTTP: 404 Client Error: Not Found for url: https://www.cronista.com/rss/feed.xml",
       "ultima_publicacion": null,
       "notas_obtenidas": 0,
-      "ultima_lectura": "2026-06-07T18:32:17.109053+00:00"
+      "ultima_lectura": "2026-06-07T19:52:33.029455+00:00"
     },
     "eleconomista": {
       "nombre": "El Economista",
@@ -311,7 +311,7 @@
       "error": null,
       "ultima_publicacion": "2026-06-06T15:01:00+00:00",
       "notas_obtenidas": 0,
-      "ultima_lectura": "2026-06-07T18:32:17.338900+00:00"
+      "ultima_lectura": "2026-06-07T19:52:33.374602+00:00"
     },
     "iprofesional_economia": {
       "nombre": "iProfesional Economía",
@@ -319,7 +319,7 @@
       "error": null,
       "ultima_publicacion": "2026-06-07T12:00:00+00:00",
       "notas_obtenidas": 28,
-      "ultima_lectura": "2026-06-07T18:32:17.440831+00:00"
+      "ultima_lectura": "2026-06-07T19:52:33.565393+00:00"
     },
     "iprofesional_finanzas": {
       "nombre": "iProfesional Finanzas",
@@ -327,7 +327,7 @@
       "error": null,
       "ultima_publicacion": "2026-06-07T10:00:00+00:00",
       "notas_obtenidas": 24,
-      "ultima_lectura": "2026-06-07T18:32:17.514199+00:00"
+      "ultima_lectura": "2026-06-07T19:52:33.675779+00:00"
     },
     "econviews": {
       "nombre": "Econviews",
@@ -335,7 +335,7 @@
       "error": null,
       "ultima_publicacion": "2026-02-25T16:02:39+00:00",
       "notas_obtenidas": 0,
-      "ultima_lectura": "2026-06-07T18:32:17.747150+00:00"
+      "ultima_lectura": "2026-06-07T19:52:33.916397+00:00"
     },
     "ceso": {
       "nombre": "CESO",
@@ -343,7 +343,7 @@
       "error": null,
       "ultima_publicacion": "2026-05-20T21:29:07+00:00",
       "notas_obtenidas": 0,
-      "ultima_lectura": "2026-06-07T18:32:20.053001+00:00"
+      "ultima_lectura": "2026-06-07T19:52:36.197789+00:00"
     },
     "bcra_nitter": {
       "nombre": "BCRA (Twitter)",
@@ -351,7 +351,7 @@
       "error": null,
       "ultima_publicacion": "2026-06-05T20:44:15+00:00",
       "notas_obtenidas": 9,
-      "ultima_lectura": "2026-06-07T18:32:21.491835+00:00"
+      "ultima_lectura": "2026-06-07T19:52:37.354921+00:00"
     },
     "indec_nitter": {
       "nombre": "INDEC (Twitter)",
@@ -359,7 +359,7 @@
       "error": null,
       "ultima_publicacion": "2026-06-05T19:27:00+00:00",
       "notas_obtenidas": 3,
-      "ultima_lectura": "2026-06-07T18:32:22.616283+00:00"
+      "ultima_lectura": "2026-06-07T19:52:38.315645+00:00"
     },
     "clarin_economia": {
       "nombre": "Clarín Economía",
@@ -367,7 +367,7 @@
       "error": null,
       "ultima_publicacion": "2026-06-07T10:30:01+00:00",
       "notas_obtenidas": 10,
-      "ultima_lectura": "2026-06-07T18:32:22.716375+00:00"
+      "ultima_lectura": "2026-06-07T19:52:38.477371+00:00"
     },
     "clarin_autos": {
       "nombre": "Clarín Autos",
@@ -375,7 +375,7 @@
       "error": null,
       "ultima_publicacion": "2026-06-05T14:49:35+00:00",
       "notas_obtenidas": 2,
-      "ultima_lectura": "2026-06-07T18:32:22.788435+00:00"
+      "ultima_lectura": "2026-06-07T19:52:38.624855+00:00"
     },
     "perfil_economia": {
       "nombre": "Perfil Economía",
@@ -383,7 +383,7 @@
       "error": null,
       "ultima_publicacion": "2026-06-07T13:37:40+00:00",
       "notas_obtenidas": 70,
-      "ultima_lectura": "2026-06-07T18:32:22.930302+00:00"
+      "ultima_lectura": "2026-06-07T19:52:38.797124+00:00"
     },
     "cippec": {
       "nombre": "CIPPEC",
@@ -391,7 +391,7 @@
       "error": null,
       "ultima_publicacion": "2026-06-01T20:50:16+00:00",
       "notas_obtenidas": 1,
-      "ultima_lectura": "2026-06-07T18:32:24.329019+00:00"
+      "ultima_lectura": "2026-06-07T19:52:39.380200+00:00"
     },
     "synopsis": {
       "nombre": "Synopsis",
@@ -399,7 +399,7 @@
       "error": null,
       "ultima_publicacion": null,
       "notas_obtenidas": 0,
-      "ultima_lectura": "2026-06-07T18:32:24.329223+00:00"
+      "ultima_lectura": "2026-06-07T19:52:39.380239+00:00"
     },
     "nuevamayoria": {
       "nombre": "Nueva Mayoría",
@@ -407,7 +407,7 @@
       "error": null,
       "ultima_publicacion": null,
       "notas_obtenidas": 0,
-      "ultima_lectura": "2026-06-07T18:32:24.329240+00:00"
+      "ultima_lectura": "2026-06-07T19:52:39.380257+00:00"
     },
     "fundpensar": {
       "nombre": "Fundación Pensar",
@@ -415,15 +415,15 @@
       "error": "Feed vacío o malformado",
       "ultima_publicacion": null,
       "notas_obtenidas": 0,
-      "ultima_lectura": "2026-06-07T18:32:24.617065+00:00"
+      "ultima_lectura": "2026-06-07T19:52:39.602207+00:00"
     },
     "econojournal": {
       "nombre": "EconoJournal",
       "estado": "ok",
       "error": null,
-      "ultima_publicacion": "2026-06-07T14:09:10+00:00",
+      "ultima_publicacion": "2026-06-07T18:46:17+00:00",
       "notas_obtenidas": 10,
-      "ultima_lectura": "2026-06-07T18:32:25.613775+00:00"
+      "ultima_lectura": "2026-06-07T19:52:40.598121+00:00"
     },
     "secenergia": {
       "nombre": "Secretaría de Energía",
@@ -431,7 +431,7 @@
       "error": "HTTP: 404 Client Error: Not Found for url: https://www.argentina.gob.ar/economia/energ",
       "ultima_publicacion": null,
       "notas_obtenidas": 0,
-      "ultima_lectura": "2026-06-07T18:32:27.125921+00:00"
+      "ultima_lectura": "2026-06-07T19:52:42.454315+00:00"
     },
     "iea": {
       "nombre": "International Energy Agency",
@@ -439,7 +439,7 @@
       "error": "HTTP: 403 Client Error: Forbidden for url: https://www.iea.org/rss",
       "ultima_publicacion": null,
       "notas_obtenidas": 0,
-      "ultima_lectura": "2026-06-07T18:32:27.396255+00:00"
+      "ultima_lectura": "2026-06-07T19:52:47.565270+00:00"
     },
     "masenergia": {
       "nombre": "Más Energía",
@@ -447,7 +447,7 @@
       "error": "Feed vacío o malformado",
       "ultima_publicacion": null,
       "notas_obtenidas": 0,
-      "ultima_lectura": "2026-06-07T18:32:27.797570+00:00"
+      "ultima_lectura": "2026-06-07T19:52:48.171746+00:00"
     },
     "energiaestrategica": {
       "nombre": "Energía Estratégica",
@@ -455,7 +455,7 @@
       "error": "Feed vacío o malformado",
       "ultima_publicacion": null,
       "notas_obtenidas": 0,
-      "ultima_lectura": "2026-06-07T18:32:28.458229+00:00"
+      "ultima_lectura": "2026-06-07T19:52:48.926772+00:00"
     },
     "bcr": {
       "nombre": "Bolsa de Comercio de Rosario",
@@ -463,7 +463,7 @@
       "error": "HTTP: 404 Client Error: Not Found for url: https://www.bcr.com.ar/es/rss.xml",
       "ultima_publicacion": null,
       "notas_obtenidas": 0,
-      "ultima_lectura": "2026-06-07T18:32:32.615443+00:00"
+      "ultima_lectura": "2026-06-07T19:52:53.460825+00:00"
     },
     "bichos": {
       "nombre": "Bichos de Campo",
@@ -471,7 +471,7 @@
       "error": "HTTP: 403 Client Error: Forbidden for url: https://bichosdecampo.com/feed/",
       "ultima_publicacion": null,
       "notas_obtenidas": 0,
-      "ultima_lectura": "2026-06-07T18:32:32.670495+00:00"
+      "ultima_lectura": "2026-06-07T19:52:53.657511+00:00"
     },
     "agrositio": {
       "nombre": "Agrositio",
@@ -479,7 +479,7 @@
       "error": "HTTP: 404 Client Error: Not Found for url: https://www.agrositio.com.ar/rss/feed.xml",
       "ultima_publicacion": null,
       "notas_obtenidas": 0,
-      "ultima_lectura": "2026-06-07T18:32:32.932825+00:00"
+      "ultima_lectura": "2026-06-07T19:52:54.227593+00:00"
     },
     "valorsoja": {
       "nombre": "Valor Soja",
@@ -487,7 +487,7 @@
       "error": "HTTP: 403 Client Error: Forbidden for url: https://bichosdecampo.com/feed/",
       "ultima_publicacion": null,
       "notas_obtenidas": 0,
-      "ultima_lectura": "2026-06-07T18:32:33.290110+00:00"
+      "ultima_lectura": "2026-06-07T19:52:54.626175+00:00"
     },
     "rosgan": {
       "nombre": "Rosgan",
@@ -495,7 +495,7 @@
       "error": "HTTP: 404 Client Error: Not Found for url: https://rosgan.com.ar/feed",
       "ultima_publicacion": null,
       "notas_obtenidas": 0,
-      "ultima_lectura": "2026-06-07T18:32:33.807261+00:00"
+      "ultima_lectura": "2026-06-07T19:52:55.229728+00:00"
     },
     "magyp": {
       "nombre": "MAGyP",
@@ -503,7 +503,7 @@
       "error": "HTTP: 404 Client Error: Not Found for url: https://www.argentina.gob.ar/agricultura/fe",
       "ultima_publicacion": null,
       "notas_obtenidas": 0,
-      "ultima_lectura": "2026-06-07T18:32:35.700814+00:00"
+      "ultima_lectura": "2026-06-07T19:52:56.551790+00:00"
     },
     "sra": {
       "nombre": "Sociedad Rural Argentina",
@@ -511,7 +511,7 @@
       "error": "HTTP: 403 Client Error: Forbidden for url: https://www.sra.org.ar/feed/",
       "ultima_publicacion": null,
       "notas_obtenidas": 0,
-      "ultima_lectura": "2026-06-07T18:32:35.956273+00:00"
+      "ultima_lectura": "2026-06-07T19:52:57.135352+00:00"
     },
     "coninagro": {
       "nombre": "CONINAGRO",
@@ -519,7 +519,7 @@
       "error": "HTTP: HTTPSConnectionPool(host='www.coninagro.org.ar', port=443): Max retries exceeded",
       "ultima_publicacion": null,
       "notas_obtenidas": 0,
-      "ultima_lectura": "2026-06-07T18:32:37.180610+00:00"
+      "ultima_lectura": "2026-06-07T19:52:58.000695+00:00"
     },
     "panoraminer": {
       "nombre": "Panorama Minero",
@@ -527,7 +527,7 @@
       "error": "HTTP: 404 Client Error: Not Found for url: https://www.panorama-minero.com/en/feed",
       "ultima_publicacion": null,
       "notas_obtenidas": 0,
-      "ultima_lectura": "2026-06-07T18:32:37.597172+00:00"
+      "ultima_lectura": "2026-06-07T19:52:58.549781+00:00"
     },
     "miningpress": {
       "nombre": "Mining Press",
@@ -535,7 +535,7 @@
       "error": "HTTP: HTTPSConnectionPool(host='miningpress.com', port=443): Max retries exceeded with",
       "ultima_publicacion": null,
       "notas_obtenidas": 0,
-      "ultima_lectura": "2026-06-07T18:32:38.011925+00:00"
+      "ultima_lectura": "2026-06-07T19:52:59.140436+00:00"
     },
     "caem": {
       "nombre": "CAEM",
@@ -543,7 +543,7 @@
       "error": null,
       "ultima_publicacion": "2026-06-01T17:58:03+00:00",
       "notas_obtenidas": 0,
-      "ultima_lectura": "2026-06-07T18:32:41.993527+00:00"
+      "ultima_lectura": "2026-06-07T19:53:08.201607+00:00"
     },
     "abeceb": {
       "nombre": "Abeceb",
@@ -551,7 +551,7 @@
       "error": "HTTP: 404 Client Error: Not Found for url: https://abeceb.com/feed/",
       "ultima_publicacion": null,
       "notas_obtenidas": 0,
-      "ultima_lectura": "2026-06-07T18:32:42.224044+00:00"
+      "ultima_lectura": "2026-06-07T19:53:08.679115+00:00"
     },
     "cari": {
       "nombre": "CARI",
@@ -559,7 +559,7 @@
       "error": "HTTP: 404 Client Error: Not Found for url: https://cari.org.ar/feed/",
       "ultima_publicacion": null,
       "notas_obtenidas": 0,
-      "ultima_lectura": "2026-06-07T18:32:43.557098+00:00"
+      "ultima_lectura": "2026-06-07T19:53:10.216750+00:00"
     },
     "cei": {
       "nombre": "CEI / Cancillería",
@@ -567,7 +567,7 @@
       "error": "HTTP: 404 Client Error: Not Found for url: https://cancilleria.gob.ar/es/cei/feed",
       "ultima_publicacion": null,
       "notas_obtenidas": 0,
-      "ultima_lectura": "2026-06-07T18:32:44.874782+00:00"
+      "ultima_lectura": "2026-06-07T19:53:22.489715+00:00"
     },
     "iri": {
       "nombre": "IRI La Plata",
@@ -575,7 +575,7 @@
       "error": "HTTP: 404 Client Error: Not Found for url: https://www.iri.edu.ar/feed/",
       "ultima_publicacion": null,
       "notas_obtenidas": 0,
-      "ultima_lectura": "2026-06-07T18:32:46.222691+00:00"
+      "ultima_lectura": "2026-06-07T19:53:24.170046+00:00"
     },
     "cac": {
       "nombre": "CAC",
@@ -583,7 +583,7 @@
       "error": "HTTP: 404 Client Error: Not Found for url: https://www.cac.com.ar/feed",
       "ultima_publicacion": null,
       "notas_obtenidas": 0,
-      "ultima_lectura": "2026-06-07T18:32:46.604905+00:00"
+      "ultima_lectura": "2026-06-07T19:53:24.827526+00:00"
     },
     "elizondo": {
       "nombre": "Marcelo Elizondo",
@@ -591,7 +591,7 @@
       "error": null,
       "ultima_publicacion": "2026-06-03T23:30:54+00:00",
       "notas_obtenidas": 0,
-      "ultima_lectura": "2026-06-07T18:32:47.424403+00:00"
+      "ultima_lectura": "2026-06-07T19:53:26.251788+00:00"
     },
     "iprofesional_comex": {
       "nombre": "iProfesional Comex",
@@ -599,7 +599,7 @@
       "error": null,
       "ultima_publicacion": "2026-06-05T21:30:00+00:00",
       "notas_obtenidas": 4,
-      "ultima_lectura": "2026-06-07T18:32:47.517361+00:00"
+      "ultima_lectura": "2026-06-07T19:53:26.366971+00:00"
     },
     "acara": {
       "nombre": "ACARA",
@@ -607,7 +607,7 @@
       "error": "Feed vacío o malformado",
       "ultima_publicacion": null,
       "notas_obtenidas": 0,
-      "ultima_lectura": "2026-06-07T18:32:49.030253+00:00"
+      "ultima_lectura": "2026-06-07T19:53:27.581410+00:00"
     },
     "adefa": {
       "nombre": "ADEFA",
@@ -615,7 +615,7 @@
       "error": "HTTP: 404 Client Error: Not Found for url: https://www.adefa.org.ar/feed/",
       "ultima_publicacion": null,
       "notas_obtenidas": 0,
-      "ultima_lectura": "2026-06-07T18:32:50.121641+00:00"
+      "ultima_lectura": "2026-06-07T19:53:29.168649+00:00"
     },
     "arodarpost": {
       "nombre": "A Rodar Post",
@@ -623,7 +623,7 @@
       "error": null,
       "ultima_publicacion": "2026-06-07T13:22:22+00:00",
       "notas_obtenidas": 10,
-      "ultima_lectura": "2026-06-07T18:32:51.087323+00:00"
+      "ultima_lectura": "2026-06-07T19:53:30.441278+00:00"
     },
     "afac": {
       "nombre": "AFAC",
@@ -631,7 +631,7 @@
       "error": "Feed vacío o malformado",
       "ultima_publicacion": null,
       "notas_obtenidas": 0,
-      "ultima_lectura": "2026-06-07T18:32:51.958173+00:00"
+      "ultima_lectura": "2026-06-07T19:53:31.556424+00:00"
     },
     "iprofesional_autos": {
       "nombre": "iProfesional Autos",
@@ -639,7 +639,7 @@
       "error": null,
       "ultima_publicacion": "2026-06-07T13:37:00+00:00",
       "notas_obtenidas": 28,
-      "ultima_lectura": "2026-06-07T18:32:52.054964+00:00"
+      "ultima_lectura": "2026-06-07T19:53:31.738264+00:00"
     },
     "cedol": {
       "nombre": "CEDOL",
@@ -647,7 +647,7 @@
       "error": "Feed vacío o malformado",
       "ultima_publicacion": null,
       "notas_obtenidas": 0,
-      "ultima_lectura": "2026-06-07T18:32:53.164366+00:00"
+      "ultima_lectura": "2026-06-07T19:53:33.060672+00:00"
     },
     "fadeeac": {
       "nombre": "FADEEAC",
@@ -655,7 +655,7 @@
       "error": "HTTP: HTTPSConnectionPool(host='www.fadeeac.org.ar', port=443): Max retries exceeded w",
       "ultima_publicacion": null,
       "notas_obtenidas": 0,
-      "ultima_lectura": "2026-06-07T18:33:08.598079+00:00"
+      "ultima_lectura": "2026-06-07T19:53:48.513427+00:00"
     },
     "argenports": {
       "nombre": "Argenports",
@@ -663,7 +663,7 @@
       "error": null,
       "ultima_publicacion": "2026-06-06T18:52:48+00:00",
       "notas_obtenidas": 8,
-      "ultima_lectura": "2026-06-07T18:33:08.838628+00:00"
+      "ultima_lectura": "2026-06-07T19:53:49.172255+00:00"
     },
     "tradenews": {
       "nombre": "Trade News",
@@ -671,7 +671,7 @@
       "error": "HTTP: HTTPSConnectionPool(host='www.trade-news.com.ar', port=443): Max retries exceede",
       "ultima_publicacion": null,
       "notas_obtenidas": 0,
-      "ultima_lectura": "2026-06-07T18:33:09.263286+00:00"
+      "ultima_lectura": "2026-06-07T19:53:50.097309+00:00"
     },
     "webpicking": {
       "nombre": "Webpicking",
@@ -679,7 +679,7 @@
       "error": null,
       "ultima_publicacion": "2026-06-06T19:39:26+00:00",
       "notas_obtenidas": 10,
-      "ultima_lectura": "2026-06-07T18:33:11.266022+00:00"
+      "ultima_lectura": "2026-06-07T19:53:52.145656+00:00"
     },
     "fmi": {
       "nombre": "FMI",
@@ -687,7 +687,7 @@
       "error": "Feed vacío o malformado",
       "ultima_publicacion": null,
       "notas_obtenidas": 0,
-      "ultima_lectura": "2026-06-07T18:33:12.285399+00:00"
+      "ultima_lectura": "2026-06-07T19:53:53.489787+00:00"
     },
     "cepal": {
       "nombre": "CEPAL",
@@ -695,7 +695,7 @@
       "error": "HTTP: 404 Client Error: Not Found for url: https://www.cepal.org/es/rss/noticias.xml",
       "ultima_publicacion": null,
       "notas_obtenidas": 0,
-      "ultima_lectura": "2026-06-07T18:33:13.252792+00:00"
+      "ultima_lectura": "2026-06-07T19:53:54.711923+00:00"
     },
     "bloomberglinea": {
       "nombre": "Bloomberg Línea",
@@ -703,7 +703,7 @@
       "error": null,
       "ultima_publicacion": "2026-06-07T13:00:00+00:00",
       "notas_obtenidas": 100,
-      "ultima_lectura": "2026-06-07T18:33:13.644173+00:00"
+      "ultima_lectura": "2026-06-07T19:53:55.461858+00:00"
     },
     "bancomundial": {
       "nombre": "Banco Mundial",
@@ -711,7 +711,7 @@
       "error": "HTTP: 404 Client Error: Not Found for url: https://www.bancomundial.org/es/news/rss",
       "ultima_publicacion": null,
       "notas_obtenidas": 0,
-      "ultima_lectura": "2026-06-07T18:33:14.033142+00:00"
+      "ultima_lectura": "2026-06-07T19:53:55.837616+00:00"
     },
     "bid": {
       "nombre": "BID",
@@ -719,7 +719,7 @@
       "error": "HTTP: 403 Client Error: Forbidden for url: https://blogs.iadb.org/feed/",
       "ultima_publicacion": null,
       "notas_obtenidas": 0,
-      "ultima_lectura": "2026-06-07T18:33:14.251007+00:00"
+      "ultima_lectura": "2026-06-07T19:53:56.138352+00:00"
     },
     "ocde": {
       "nombre": "OCDE",
@@ -727,7 +727,7 @@
       "error": "HTTP: 403 Client Error: Forbidden for url: https://www.oecd.org/news/rss/",
       "ultima_publicacion": null,
       "notas_obtenidas": 0,
-      "ultima_lectura": "2026-06-07T18:33:14.478396+00:00"
+      "ultima_lectura": "2026-06-07T19:53:56.305713+00:00"
     }
   }
 }
