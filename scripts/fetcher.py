@@ -41,7 +41,11 @@ def _cache_path(fuente_id):
     return os.path.join(DIR_CACHE, f"{fuente_id}.json")
 
 
+FORZAR = "--forzar" in sys.argv  # si viene este flag, ignora el cache
+
 def _cache_fresco(fuente_id, horas):
+    if FORZAR:
+        return None  # ignorar cache, bajar siempre
     path = _cache_path(fuente_id)
     if not os.path.exists(path):
         return None
