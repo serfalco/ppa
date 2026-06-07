@@ -49,8 +49,8 @@ jobs:
           echo "icono=$ICONO" >> $GITHUB_OUTPUT
           echo "[PPA] Generando edición: $NOMBRE $ICONO"
 
-      - name: Fetcher - bajar RSS (con cache)
-        run: python scripts/fetcher.py
+      - name: Fetcher - bajar RSS (siempre fresco en edición)
+        run: python scripts/fetcher.py --forzar
 
       - name: Selector - elegir notas
         run: python scripts/selector.py
