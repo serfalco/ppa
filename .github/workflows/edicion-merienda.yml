@@ -66,8 +66,8 @@ jobs:
       - name: Datos económicos (completo, incluye mensuales)
         run: python scripts/datos_economicos.py
 
-      - name: Generador - Análisis (fusión Institucional + Expectativas)
-        run: python scripts/generador_analisis.py
+      - name: Generador - La Data del Día
+        run: python scripts/generador_la_data.py
 
       - name: Generador - REM
         run: python scripts/generador_rem.py
