@@ -190,3 +190,21 @@
   padding: 20px 0;
   font-size: 13px;
 }
+
+/* =================================================================
+   IMAGEN DE CABECERA POR CATEGORÍA
+   ================================================================= */
+.cat-imagen-header {
+  width: 100%;
+  height: 90px;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  opacity: 0.85;
+}
+
+@media (min-width: 768px) {
+  .cat-imagen-header { height: 110px; }
+}

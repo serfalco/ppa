@@ -215,6 +215,22 @@ def _leer_config_panel():
         return {}
 
 
+def _tuit_es_reciente(tuits, dias=90):
+    """True si el tuit más reciente tiene menos de N días."""
+    if not tuits:
+        return False
+    from datetime import datetime, timezone, timedelta
+    ultimo = tuits[0]
+    fecha_str = ultimo.get("fecha","")
+    if not fecha_str:
+        return True  # sin fecha, asumir activo
+    try:
+        dt = datetime.fromisoformat(fecha_str.replace('Z','+00:00'))
+        return (datetime.now(timezone.utc) - dt).days < dias
+    except:
+        return True
+
+
 def obtener_todos_los_tuits():
     """Para cada cuenta activa: intenta Nitter, si falla usa cache."""
     print("· EconoTuits (Nitter)")
@@ -223,7 +239,6 @@ def obtener_todos_los_tuits():
     resultado = {}
     for cuenta in CUENTAS:
         cid = cuenta["id"]
-        # Config del panel tiene prioridad sobre el default de CUENTAS
         activa = config_panel.get(cid, cuenta.get("activa", True))
         if not activa:
             continue

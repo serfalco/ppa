@@ -70,9 +70,36 @@ def _guardar_cache(fuente_id, notas):
         }, f, ensure_ascii=False)
 
 
+# Patrones de URLs a descartar (antes de procesar el entry)
+URLS_BLOQUEADAS = [
+    "cronista.com/espana/",
+    "cronista.com/lifestyle/",
+    "cronista.com/deportes/",
+]
+
+# Palabras que delatan títulos en inglés
+PALABRAS_INGLES = [
+    " the ", " and ", " for ", " with ", " this ", " that ",
+    " will ", " have ", " from ", " about ", " official",
+    "prohibit", "cancel", "government ", " benefits ",
+]
+
+def _url_bloqueada(url):
+    url = (url or "").lower()
+    return any(p in url for p in URLS_BLOQUEADAS)
+
+def _es_ingles(titulo):
+    t = " " + titulo.lower() + " "
+    matches = sum(1 for p in PALABRAS_INGLES if p in t)
+    return matches >= 2  # 2 o más palabras inglesas = descartado
+
 def _es_basura(titulo):
     t = titulo.lower()
-    return any(patron in t for patron in TITULOS_BASURA)
+    if any(patron in t for patron in TITULOS_BASURA):
+        return True
+    if _es_ingles(titulo):
+        return True
+    return False
 
 
 def _normalizar(titulo):
@@ -125,12 +152,14 @@ def bajar_fuente(fuente):
     notas = []
     for entry in feed.entries[:MAX_POR_FUENTE * 2]:  # tomar más para filtrar
         titulo = (entry.get('title') or '').strip()
+        link   = entry.get('link') or entry.get('id') or ''
+
         if not titulo or len(titulo) < 20:
+            continue
+        if _url_bloqueada(link):
             continue
         if _es_basura(titulo):
             continue
-
-        link = entry.get('link') or entry.get('id') or ''
         desc = entry.get('summary') or entry.get('description') or ''
         # Limpiar HTML de la descripción
         desc = re.sub(r'<[^>]+>', ' ', desc)
@@ -154,6 +183,9 @@ def bajar_fuente(fuente):
     return notas
 
 
+# Fuentes Nitter — solo van a EconoTuits, no a notas_raw
+FUENTES_NITTER = {"bcra", "indec", "mecon"}
+
 def main():
     print(f"[Fetcher] Inicio: {datetime.now(TZ_AR).strftime('%Y-%m-%d %H:%M')} ARG")
     os.makedirs(DIR_CACHE, exist_ok=True)
@@ -167,6 +199,9 @@ def main():
     for fuente in fuentes_activas:
         notas = bajar_fuente(fuente)
         for nota in notas:
+            # Fuentes Nitter solo van a EconoTuits, no a notas_raw
+            if nota.get("fuente_id","") in FUENTES_NITTER:
+                continue
             clave = _normalizar(nota["titulo"])
             if clave in titulos_vistos:
                 continue  # deduplicar

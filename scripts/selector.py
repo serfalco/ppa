@@ -49,6 +49,10 @@ PATRONES_LOCALES = [
     "qué pasó", "que paso hoy", "resumen del día",
     "horóscopo", "horoscopo", "clima hoy",
     "receta", "cocina", "gastronomía",
+    "ascenso remodelará", "estadio", "prepara para volver a primera",
+    "copa mundial fifa", "champions league", "liga española",
+    "lifestyle", "espectáculos", "farándula",
+    "plazo fijo por el piso", "cuánto rinde invertir",
 ]
 
 def _es_basura(titulo):

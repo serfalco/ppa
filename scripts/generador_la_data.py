@@ -107,8 +107,10 @@ def seccion_cat_html(cat, notas):
     icono_svg = ICONO.get(icono_key, "")
     cat_id = cat.lower().replace(" ","-").replace("é","e").replace("í","i").replace("ó","o")
     items = "".join(nota_html(n) for n in notas[:8])
+    img_src = f"/assets/cats/{icono_key}.webp"
     return f"""
 <section class="an-seccion" id="{cat_id}">
+  <img src="{img_src}" alt="{escapar(cat)}" class="cat-imagen-header" loading="lazy">
   <div class="an-seccion-header">
     <span class="an-ic">{icono_svg}</span>
     <h2 class="an-seccion-nombre">{escapar(cat)}</h2>
@@ -180,7 +182,7 @@ def generar_analisis():
 
     <div class="an-header">
       <h1 class="an-titulo-seccion">La Data del Día</h1>
-      <p class="an-sub">Consultoras · Institutos · Organismos · {fecha_legible(ahora)}</p>
+      <p class="an-sub">{fecha_legible(ahora)}</p>
       <p class="an-total">{total} notas en esta edición</p>
     </div>
 

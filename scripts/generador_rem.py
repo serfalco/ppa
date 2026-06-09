@@ -60,6 +60,33 @@ def mes_nombre(yyyy_mm):
 # SCRAPER — detectar y bajar el REM más reciente
 # ================================================================
 
+def _detectar_rem_via_nitter():
+    """Busca tuits de @BancoCentral_AR con #REMBCRA para detectar nuevo REM."""
+    import requests, re, urllib3
+    urllib3.disable_warnings()
+    try:
+        r = requests.get("https://nitter.net/BancoCentral_AR/rss",
+                        timeout=15, verify=False,
+                        headers={"User-Agent": "Mozilla/5.0"})
+        if r.status_code != 200:
+            return []
+        feed = feedparser.parse(r.text)
+        resultados = []
+        for entry in feed.entries:
+            texto = entry.get('title','') + entry.get('summary','')
+            if '#REMBCRA' in texto or 'rembcra' in texto.lower():
+                link_bcra = re.search(r'https://[^\s"<>]*bcra\.gob\.ar[^\s"<>]*', texto)
+                resultados.append({
+                    "titulo": entry.get('title',''),
+                    "link":   link_bcra.group(0) if link_bcra else "",
+                    "fecha":  entry.get('published',''),
+                })
+        return resultados
+    except Exception as e:
+        print(f"   ⚠ Nitter REMBCRA: {str(e)[:50]}")
+        return []
+
+
 def detectar_rem_disponibles():
     """Scraping de la página del BCRA para encontrar links al REM."""
     import requests, urllib3
@@ -250,7 +277,12 @@ def generar_pagina_rem(indice):
     <div class="rem-header">
       <h1 class="rem-titulo">REM</h1>
       <p class="rem-subtitulo">Relevamiento de Expectativas de Mercado</p>
-      <p class="rem-desc">Las proyecciones de ~40 consultoras y bancos para inflación, tipo de cambio y actividad, relevadas mensualmente por el BCRA.</p>
+      <div class="rem-explicacion">
+        <p>El REM es una encuesta mensual del <strong>Banco Central de la República Argentina</strong> a consultoras, centros de investigación y entidades financieras del país y el exterior.</p>
+        <p>Reúne proyecciones de los principales especialistas sobre inflación, tipo de cambio, actividad, tasas, empleo, exportaciones e importaciones.</p>
+        <p class="rem-aclaracion">Los pronósticos no constituyen proyecciones propias del BCRA — son las expectativas del mercado.</p>
+        <a href="https://www.bcra.gob.ar/relevamiento-expectativas-mercado-rem/" target="_blank" rel="noopener" class="rem-link-bcra">Ver informes oficiales en el BCRA →</a>
+      </div>
     </div>
 
     {cuerpo}

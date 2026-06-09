@@ -15,10 +15,12 @@ FUENTES = [
     # ================================================================
     # TIER 1 — Medios generales (cache 6hs)
     # ================================================================
-    {"id":"ambito",         "nombre":"Ámbito Financiero",      "web":"https://www.ambito.com/rss/economia.xml",                          "categoria":"Macro",       "tier":1, "activa":True},
+    {"id":"ambito_fin",     "nombre":"Ámbito Finanzas",        "web":"https://www.ambito.com/rss/finanzas.xml",                          "categoria":"Finanzas",    "tier":1, "activa":True},
+    {"id":"ambito_neg",     "nombre":"Ámbito Negocios",        "web":"https://www.ambito.com/rss/negocios.xml",                          "categoria":"Macro",       "tier":1, "activa":True},
+    {"id":"ambito_autos",   "nombre":"Ámbito Autos",           "web":"https://www.ambito.com/rss/autos.xml",                             "categoria":"Automotor",   "tier":1, "activa":True},
+    {"id":"ambito_fisc",    "nombre":"Ámbito Fiscal",          "web":"https://www.ambito.com/rss/novedades-fiscales.xml",                "categoria":"Fiscal",      "tier":1, "activa":True},
     {"id":"lanacion",       "nombre":"La Nación Economía",     "web":"https://www.lanacion.com.ar/arc/outboundfeeds/rss/category/economia/?outputType=xml", "categoria":"Macro", "tier":1, "activa":True},
     {"id":"clarin",         "nombre":"Clarín Economía",        "web":"https://www.clarin.com/rss/economia/",                             "categoria":"Macro",       "tier":1, "activa":True},
-    {"id":"cronista",       "nombre":"El Cronista",            "web":"https://www.cronista.com/arc/outboundfeeds/rss/",                  "categoria":"Macro",       "tier":1, "activa":True},
     {"id":"cronista_fin",   "nombre":"El Cronista Finanzas",   "web":"https://www.cronista.com/rss/finanzas-mercados.xml",               "categoria":"Mercados",    "tier":1, "activa":True},
     {"id":"pagina12",       "nombre":"Página 12 Economía",     "web":"https://www.pagina12.com.ar/rss/secciones/economia",               "categoria":"Macro",       "tier":1, "activa":True},
     {"id":"bae",            "nombre":"BAE Negocios",           "web":"https://www.baenegocios.com/rss",                                  "categoria":"Macro",       "tier":1, "activa":True},
@@ -36,6 +38,8 @@ FUENTES = [
     {"id":"dataenergia",    "nombre":"Data Energía",           "web":"https://dataenergia.ar/feed/",                                     "categoria":"Energía",     "tier":2, "activa":True},
     {"id":"rionegro_en",    "nombre":"Río Negro Energía",      "web":"https://www.rionegro.com.ar/energia/feed/",                        "categoria":"Energía",     "tier":2, "activa":True},
     {"id":"noticiasnet_en", "nombre":"NoticiasNet Energía",    "web":"https://www.noticiasnet.com.ar/rss/energia-hoy/",                  "categoria":"Energía",     "tier":2, "activa":True},
+    {"id":"shale24",       "nombre":"Shale24",                "web":"https://www.shale24.com/feed/",                                    "categoria":"Energía",     "tier":2, "activa":True},
+    {"id":"econojournal",  "nombre":"EconoJournal",           "web":"https://econojournal.com.ar/feed/",                                "categoria":"Energía",     "tier":2, "activa":True},
 
     # Agro
     {"id":"bcr",            "nombre":"Bolsa de Cereales Rosario","web":"https://www.bcr.com.ar/feed.xml",                               "categoria":"Agro",        "tier":2, "activa":True},
@@ -49,11 +53,14 @@ FUENTES = [
 
     # Automotor
     {"id":"motorweb",       "nombre":"Motorweb Argentina",     "web":"https://motorwebargentina.com/feed/",                              "categoria":"Automotor",   "tier":2, "activa":True},
-    {"id":"motor1",         "nombre":"Motor1 Argentina",       "web":"https://ar.motor1.com/rss/news/all/",                              "categoria":"Automotor",   "tier":2, "activa":True},
     {"id":"visionmotor",    "nombre":"Vision Motor",           "web":"https://visionmotor.com/feed/",                                    "categoria":"Automotor",   "tier":2, "activa":True},
+    {"id":"autoblog",       "nombre":"Autoblog Argentina",     "web":"https://autoblog.com.ar/feed/",                                    "categoria":"Automotor",   "tier":2, "activa":True},
+    {"id":"autoblog_nov",   "nombre":"Autoblog Novedades",     "web":"https://autoblog.com.ar/category/novedades/feed/",                 "categoria":"Automotor",   "tier":2, "activa":True},
+    {"id":"autoblog_lan",   "nombre":"Autoblog Lanzamientos",  "web":"https://autoblog.com.ar/category/lanzamientos/feed/",              "categoria":"Automotor",   "tier":2, "activa":True},
     {"id":"diariodeautos",  "nombre":"Diario de Autos",        "web":"https://www.diariodeautos.com.ar/index.php?format=feed&type=rss",  "categoria":"Automotor",   "tier":2, "activa":True},
     {"id":"ambito_acara",   "nombre":"Ámbito ACARA",           "web":"https://www.ambito.com/rss/tags/acara.xml",                        "categoria":"Automotor",   "tier":2, "activa":True},
     {"id":"autocosmos",     "nombre":"Autocosmos Argentina",   "web":"https://noticias.autocosmos.com.ar/rss",                           "categoria":"Automotor",   "tier":2, "activa":True},
+    {"id":"arodarpost",    "nombre":"A Rodar Post",           "web":"https://arodarpost.com.ar/feed/",                                  "categoria":"Automotor",   "tier":2, "activa":True},
 
     # Logística
     {"id":"webpicking",     "nombre":"Webpicking",             "web":"https://webpicking.com/feed/",                                     "categoria":"Logística",   "tier":2, "activa":True},
@@ -108,7 +115,7 @@ FUENTES = [
     {"id":"ceso",           "nombre":"CESO",                   "web":"https://ceso.com.ar/feed/",                                        "categoria":"Expectativas de mercado","tier":3,"activa":True},
     {"id":"cedlas",         "nombre":"CEDLAS UNLP",            "web":"https://cedlas.econo.unlp.edu.ar/wp/feed/",                        "categoria":"Expectativas de mercado","tier":3,"activa":True},
     {"id":"cippec",         "nombre":"CIPPEC",                 "web":"https://www.cippec.org/feed/",                                     "categoria":"Expectativas de mercado","tier":3,"activa":True},
-    {"id":"pxq",            "nombre":"PxQ",                    "web":"https://pxqconsultora.com/feed/",                                  "categoria":"Expectativas de mercado","tier":3,"activa":True},
+    {"id":"pxq",            "nombre":"PxQ",                    "web":"https://pxqconsultora.com/feed/",                                  "categoria":"Expectativas de mercado","tier":3,"activa":False},
 ]
 
 # Cache en horas por tier

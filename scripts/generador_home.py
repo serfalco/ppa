@@ -201,12 +201,10 @@ def html_la_data(portada):
         cat    = escapar(n.get("categoria",""))
         link   = escapar(n.get("link","#"))
         resumen = escapar(comp.limpiar_url(n.get("resumen","")))
-        cat_slug = cat.lower().replace(" ","-").replace("é","e").replace("í","i").replace("ó","o").replace("á","a")
-        href_nota = f"/la-data/#{cat_slug}"
         items.append(f"""
       <li class="data-item">
         <span class="data-cat">{cat}</span>
-        <a href="{href_nota}" class="data-titulo">{titulo}</a>
+        <a href="{link}" class="data-titulo" target="_blank" rel="noopener">{titulo}</a>
         {f'<span class="data-resumen">{resumen}</span>' if resumen else ''}
         <span class="data-fuente">{fuente}</span>
       </li>""")
