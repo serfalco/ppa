@@ -136,6 +136,8 @@ jobs:
           password: ${{ secrets.FTP_PASSWORD }}
           local-dir: ./site/
           server-dir: ./
+          timeout: 60000
+          dangerous-clean-slate: false
           exclude: |
             **/.git*
             **/.git*/**
