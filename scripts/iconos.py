@@ -15,11 +15,9 @@ _A = ('viewBox="0 0 32 32" class="ic" width="1em" height="1em" '
       'stroke-linecap="round" stroke-linejoin="round"')
 
 ICONO = {
-    "macro": f'<svg {_A}><line x1="5" y1="27" x2="27" y2="27"/><rect x="7" y="18" width="4" height="9"/><rect x="14" y="13" width="4" height="14"/><rect x="21" y="8" width="4" height="19"/></svg>',
 
     "expectativas": f'<svg {_A}><polyline points="5,22 12,16 17,19 26,8"/><polyline points="21,8 26,8 26,13"/></svg>',
 
-    "politica": f'<svg {_A}><polyline points="6,12 16,6 26,12"/><line x1="8" y1="12" x2="8" y2="24"/><line x1="13" y1="12" x2="13" y2="24"/><line x1="19" y1="12" x2="19" y2="24"/><line x1="24" y1="12" x2="24" y2="24"/><line x1="5" y1="24" x2="27" y2="24"/></svg>',
 
     "energia": f'<svg {_A}><polygon points="18,4 8,18 15,18 14,28 24,14 17,14"/></svg>',
 

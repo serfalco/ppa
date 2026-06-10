@@ -28,6 +28,9 @@ JSON_PORTADA = os.path.join(DIR_DATA, "portada.json")
 
 MAX_HOME_TOTAL   = 8   # notas en la home
 MAX_POR_CAT_HOME = 2   # máx por categoría en home
+CAP_ESPECIAL = {       # categorías con cap más bajo
+    "Mercados": 1,
+}
 MAX_POR_FUENTE   = 3   # máx por fuente en todo el portada
 MAX_POR_SECCION  = 8   # notas en cada sección de /la-data/
 
@@ -35,8 +38,8 @@ TZ_AR = timezone(timedelta(hours=-3))
 
 # Categorías en orden de prioridad para la home
 ORDEN_CATS = [
-    "Macro", "Mercados", "Finanzas", "Energía", "Internacional",
-    "Agro", "Comex", "Política", "Minería", "Laboral",
+    "Mercados", "Finanzas", "Energía", "Internacional",
+    "Agro", "Comex", "Minería", "Laboral",
     "Automotor", "Logística", "Fiscal", "Fulbito",
     "Expectativas de mercado",
 ]
@@ -53,6 +56,13 @@ PATRONES_LOCALES = [
     "copa mundial fifa", "champions league", "liga española",
     "lifestyle", "espectáculos", "farándula",
     "plazo fijo por el piso", "cuánto rinde invertir",
+    "cuánto cobran", "cuanto cobran", "cuánto gana", "cuanto gana",
+    "con el aguinaldo", "con aumento y el aguinaldo",
+    "bitcoin hoy", "ethereum hoy", "cotización y precio del btc",
+    "cotización y precio del eth", "cotización y precio",
+    "cuánto cobran los", "cuánto gana el personal",
+    "supervisores en junio", "policías de la argentina",
+    "gendarmería nacional argentina",
 ]
 
 def _es_basura(titulo):
@@ -134,7 +144,8 @@ def main():
         for nota in por_cat.get(cat, []):
             if nota in home_notas:
                 continue
-            if cat_home_count[cat] >= MAX_POR_CAT_HOME:
+            cap = CAP_ESPECIAL.get(cat, MAX_POR_CAT_HOME)
+            if cat_home_count[cat] >= cap:
                 break
             if fuente_home_count[nota.get("fuente_id","")] >= 2:
                 continue

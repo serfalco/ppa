@@ -36,8 +36,6 @@ DIR_INST      = os.path.join(DIR_SITE, "institucional")
 DIR_EXPECT    = os.path.join(DIR_SITE, "expectativas")
 
 ICONO = {
-    "macro":        '<svg viewBox="0 0 32 32" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="27" x2="27" y2="27"/><rect x="7" y="18" width="4" height="9"/><rect x="14" y="13" width="4" height="14"/><rect x="21" y="8" width="4" height="19"/></svg>',
-    "politica":     '<svg viewBox="0 0 32 32" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="6,12 16,6 26,12"/><line x1="8" y1="12" x2="8" y2="24"/><line x1="13" y1="12" x2="13" y2="24"/><line x1="19" y1="12" x2="19" y2="24"/><line x1="24" y1="12" x2="24" y2="24"/><line x1="5" y1="24" x2="27" y2="24"/></svg>',
     "energia":      '<svg viewBox="0 0 32 32" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polygon points="18,4 8,18 15,18 14,28 24,14 17,14"/></svg>',
     "agro":         '<svg viewBox="0 0 32 32" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><line x1="16" y1="29" x2="16" y2="13"/><path d="M16 14 q-5 -1 -5 -6 q5 1 5 6"/><path d="M16 14 q5 -1 5 -6 q-5 1 -5 6"/></svg>',
     "comex":        '<svg viewBox="0 0 32 32" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 20 L27 20 L24 26 L8 26 Z"/><rect x="11" y="13" width="5" height="7"/><rect x="16" y="13" width="5" height="7"/><line x1="16" y1="8" x2="16" y2="13"/></svg>',
@@ -50,7 +48,7 @@ ICONO = {
 }
 
 CATEGORIAS_ORDEN = [
-    "Macro","Política","Mercados","Finanzas","Energía","Agro",
+    "Finanzas","Finanzas","Mercados","Finanzas","Energía","Agro",
     "Minería","Comex","Laboral","Automotor","Logística","Internacional","Fiscal",
 ]
 

@@ -39,7 +39,7 @@ TUITS_POR_COL = 2
 
 # 14 categorías — orden de aparición en la grilla
 CATEGORIAS_GRILLA = [
-    "Macro", "Política", "Energía", "Agro",
+    "Finanzas", "Finanzas", "Energía", "Agro",
     "Mercados", "Finanzas", "Comex", "Minería",
     "Laboral", "Automotor", "Logística", "Internacional",
     "Fiscal", "Fulbito",

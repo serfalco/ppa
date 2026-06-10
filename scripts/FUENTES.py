@@ -16,18 +16,18 @@ FUENTES = [
     # TIER 1 — Medios generales (cache 6hs)
     # ================================================================
     {"id":"ambito_fin",     "nombre":"Ámbito Finanzas",        "web":"https://www.ambito.com/rss/finanzas.xml",                          "categoria":"Finanzas",    "tier":1, "activa":True},
-    {"id":"ambito_neg",     "nombre":"Ámbito Negocios",        "web":"https://www.ambito.com/rss/negocios.xml",                          "categoria":"Macro",       "tier":1, "activa":True},
+    {"id":"ambito_neg",     "nombre":"Ámbito Negocios",        "web":"https://www.ambito.com/rss/negocios.xml",                          "categoria":"Finanzas",       "tier":1, "activa":True},
     {"id":"ambito_autos",   "nombre":"Ámbito Autos",           "web":"https://www.ambito.com/rss/autos.xml",                             "categoria":"Automotor",   "tier":1, "activa":True},
     {"id":"ambito_fisc",    "nombre":"Ámbito Fiscal",          "web":"https://www.ambito.com/rss/novedades-fiscales.xml",                "categoria":"Fiscal",      "tier":1, "activa":True},
-    {"id":"lanacion",       "nombre":"La Nación Economía",     "web":"https://www.lanacion.com.ar/arc/outboundfeeds/rss/category/economia/?outputType=xml", "categoria":"Macro", "tier":1, "activa":True},
-    {"id":"clarin",         "nombre":"Clarín Economía",        "web":"https://www.clarin.com/rss/economia/",                             "categoria":"Macro",       "tier":1, "activa":True},
+    {"id":"lanacion",       "nombre":"La Nación Economía",     "web":"https://www.lanacion.com.ar/arc/outboundfeeds/rss/category/economia/?outputType=xml", "categoria":"Finanzas", "tier":1, "activa":True},
+    {"id":"clarin",         "nombre":"Clarín Economía",        "web":"https://www.clarin.com/rss/economia/",                             "categoria":"Finanzas",       "tier":1, "activa":True},
     {"id":"cronista_fin",   "nombre":"El Cronista Finanzas",   "web":"https://www.cronista.com/rss/finanzas-mercados.xml",               "categoria":"Mercados",    "tier":1, "activa":False},
-    {"id":"pagina12",       "nombre":"Página 12 Economía",     "web":"https://www.pagina12.com.ar/rss/secciones/economia",               "categoria":"Macro",       "tier":1, "activa":False},
-    {"id":"bae",            "nombre":"BAE Negocios",           "web":"https://www.baenegocios.com/rss",                                  "categoria":"Macro",       "tier":1, "activa":False},
-    {"id":"infobae",        "nombre":"Infobae Economía",       "web":"https://www.infobae.com/feeds/rss/economia/",                      "categoria":"Macro",       "tier":1, "activa":False},
+    {"id":"pagina12",       "nombre":"Página 12 Economía",     "web":"https://www.pagina12.com.ar/rss/secciones/economia",               "categoria":"Finanzas",       "tier":1, "activa":False},
+    {"id":"bae",            "nombre":"BAE Negocios",           "web":"https://www.baenegocios.com/rss",                                  "categoria":"Finanzas",       "tier":1, "activa":False},
+    {"id":"infobae",        "nombre":"Infobae Economía",       "web":"https://www.infobae.com/feeds/rss/economia/",                      "categoria":"Finanzas",       "tier":1, "activa":False},
     {"id":"eleconomista",   "nombre":"El Economista Finanzas", "web":"https://eleconomista.com.ar/finanzas/feed/",                       "categoria":"Finanzas",    "tier":1, "activa":True},
     {"id":"eleconomista_i", "nombre":"El Economista Internacional","web":"https://eleconomista.com.ar/internacional/feed/",              "categoria":"Internacional","tier":1, "activa":True},
-    {"id":"eleconomista_n", "nombre":"El Economista Negocios", "web":"https://eleconomista.com.ar/negocios/feed/",                       "categoria":"Macro",       "tier":1, "activa":True},
+    {"id":"eleconomista_n", "nombre":"El Economista Negocios", "web":"https://eleconomista.com.ar/negocios/feed/",                       "categoria":"Finanzas",       "tier":1, "activa":True},
 
     # ================================================================
     # TIER 2 — Sectoriales (cache 24hs)
@@ -99,7 +99,7 @@ FUENTES = [
     # ================================================================
     # iProfesional / iProUP (Tier 1 — cache 6hs)
     # ================================================================
-    {"id":"iprof_eco",    "nombre":"iProfesional Economía",    "web":"https://www.iprofesional.com/rss/economia",        "categoria":"Macro",       "tier":1, "activa":True},
+    {"id":"iprof_eco",    "nombre":"iProfesional Economía",    "web":"https://www.iprofesional.com/rss/economia",        "categoria":"Finanzas",       "tier":1, "activa":True},
     {"id":"iprof_fin",    "nombre":"iProfesional Finanzas",    "web":"https://www.iprofesional.com/rss/finanzas",        "categoria":"Finanzas",    "tier":1, "activa":True},
     {"id":"iprof_comex",  "nombre":"iProfesional Comex",       "web":"https://www.iprofesional.com/rss/comex",           "categoria":"Comex",       "tier":1, "activa":True},
     {"id":"iprof_imp",    "nombre":"iProfesional Impuestos",   "web":"https://www.iprofesional.com/rss/impuestos",       "categoria":"Fiscal",      "tier":1, "activa":True},
@@ -111,9 +111,9 @@ FUENTES = [
     # ================================================================
     # TIER 3 — Institucionales / Expectativas (cache 48hs)
     # ================================================================
-    {"id":"bcra",           "nombre":"BCRA",                   "web":"https://nitter.net/BancoCentral_AR/rss",                           "categoria":"Macro",       "tier":3, "activa":False},
-    {"id":"indec",          "nombre":"INDEC",                  "web":"https://nitter.net/INDECArgentina/rss",                            "categoria":"Macro",       "tier":3, "activa":False},
-    {"id":"mecon",          "nombre":"Ministerio de Economía", "web":"https://www.argentina.gob.ar/noticias/rss-ministerio-de-economia.xml","categoria":"Política",  "tier":3, "activa":False},
+    {"id":"bcra",           "nombre":"BCRA",                   "web":"https://nitter.net/BancoCentral_AR/rss",                           "categoria":"Finanzas",       "tier":3, "activa":False},
+    {"id":"indec",          "nombre":"INDEC",                  "web":"https://nitter.net/INDECArgentina/rss",                            "categoria":"Finanzas",       "tier":3, "activa":False},
+    {"id":"mecon",          "nombre":"Ministerio de Economía", "web":"https://www.argentina.gob.ar/noticias/rss-ministerio-de-economia.xml","categoria":"Finanzas",  "tier":3, "activa":False},
     {"id":"econviews",      "nombre":"Econviews",              "web":"https://econviews.com/feed/",                                      "categoria":"Expectativas de mercado","tier":3,"activa":True},
     {"id":"fiel",           "nombre":"FIEL",                   "web":"https://www.fiel.org.ar/publicaciones/feed/",                      "categoria":"Expectativas de mercado","tier":3,"activa":False},
     {"id":"ieral",          "nombre":"IERAL",                  "web":"https://www.ieral.org/feed.xml",                                   "categoria":"Expectativas de mercado","tier":3,"activa":False},

@@ -39,7 +39,6 @@ MESES = ["enero", "febrero", "marzo", "abril", "mayo", "junio",
 CATEGORIAS_STREAM = [
     "Economía",
     "Tecnología",
-    "Política",
     "Sociedad",
     "Comunicación",
     "Cultura",

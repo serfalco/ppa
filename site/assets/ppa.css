@@ -223,13 +223,13 @@ a:visited { color: inherit; }
    KICKER — patrón único para todas las secciones
    ================================================================= */
 .kicker {
-  font-size: 9px; font-weight: 700;
-  letter-spacing: 0.28em; text-transform: uppercase;
+  font-size: 12px; font-weight: 700;
+  letter-spacing: 0.22em; text-transform: uppercase;
   color: var(--rojo);
 }
 .kicker-linea {
-  height: 1.5px; background: var(--oliva);
-  margin: 6px 0 10px;
+  height: 2px; background: var(--oliva);
+  margin: 7px 0 12px;
 }
 
 /* =================================================================
