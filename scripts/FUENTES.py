@@ -16,7 +16,7 @@ FUENTES = [
     # ===== AGRO =====
     {"id":"bichos_campo", "nombre":"Bichos de Campo", "web":"https://bichosdecampo.com/feed/", "categoria":"Agro", "tier":2, "activa":True},
     {"id":"infocampo", "nombre":"Infocampo", "web":"https://www.infocampo.com.ar/feed/", "categoria":"Agro", "tier":2, "activa":True},
-    {"id":"investing_commodities", "nombre":"Investing Commodities", "web":"https://es.investing.com/rss/news_287.rss", "categoria":"Agro", "tier":2, "activa":True},
+    {"id":"investing_agro", "nombre":"Investing Agro", "web":"https://es.investing.com/rss/news_11.rss", "categoria":"Agro", "tier":2, "activa":True},
 
     # ===== ANÁLISIS CONSULTORAS =====
     {"id":"ceso", "nombre":"CESO", "web":"https://ceso.com.ar/feed/", "categoria":"Análisis Consultoras", "tier":3, "activa":True},
@@ -57,7 +57,10 @@ FUENTES = [
     {"id":"ambito_fisc", "nombre":"Ámbito Fiscal", "web":"https://www.ambito.com/rss/novedades-fiscales.xml", "categoria":"Fiscal", "tier":1, "activa":True},
 
     # ===== INTERNACIONAL =====
-    {"id":"investing_intl", "nombre":"Investing Internacional", "web":"https://es.investing.com/rss/news_11.rss", "categoria":"Internacional", "tier":1, "activa":True},
+    {"id":"investing_intl", "nombre":"Investing Internacional", "web":"https://es.investing.com/rss/news_287.rss", "categoria":"Internacional", "tier":1, "activa":True},
+
+    # ===== INTERNACIONAL (extra) =====
+    {"id":"investing_intl2", "nombre":"Investing Mundo", "web":"https://es.investing.com/rss/news_95.rss", "categoria":"Internacional", "tier":1, "activa":True},
 
     # ===== LABORAL =====
     {"id":"iprof_management", "nombre":"iProfesional Management", "web":"https://www.iprofesional.com/rss/management", "categoria":"Laboral", "tier":1, "activa":True},
