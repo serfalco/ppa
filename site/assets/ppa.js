@@ -57,11 +57,16 @@
   }
 
   function pintar(id, texto, stale, suffix) {
-    const el = document.getElementById(id);
-    if (!el || texto == null) return;
-    el.textContent = texto + (suffix || '') + (stale ? ' *' : '');
-    el.classList.toggle('dato-stale', !!stale);
-    if (stale) el.title = '* Ultimo valor conocido (dato desactualizado)';
+    if (texto == null) return;
+    // El ticker duplica sus items para el loop infinito, así que puede haber
+    // más de un elemento con el mismo id. getElementById solo agarra el primero
+    // (por eso quedaban "…"). Buscamos TODOS y los pintamos.
+    const els = document.querySelectorAll('[id="' + id + '"]');
+    els.forEach(function (el) {
+      el.textContent = texto + (suffix || '') + (stale ? ' *' : '');
+      el.classList.toggle('dato-stale', !!stale);
+      if (stale) el.title = '* Ultimo valor conocido (dato desactualizado)';
+    });
   }
 
   // ---------------- TICKER ----------------
