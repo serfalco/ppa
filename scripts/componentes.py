@@ -32,15 +32,15 @@ _SECCIONES = [
     ("Cómo trabajamos", "/como-trabajamos.html"),
 ]
 
-# Ticker: IDs que pinta ppa.js — deben coincidir exactamente
+# Ticker: IDs que pinta ppa.js — deben coincidir exactamente.
+# Solo van los datos que ppa.js realmente rellena con valor en vivo.
+# (reservas/ipc/tcrm existen en datos.json pero el JS no los conecta aún:
+#  si se quieren sumar, hay que pintarlos en ppa.js, no solo listarlos acá.)
 _TICKER_ITEMS = [
     ("OFICIAL",   "dolar-oficial"),
     ("MEP",       "dolar-mep"),
     ("BLUE",      "dolar-blue-ticker"),
     ("RIESGO",    "riesgo-pais-ticker"),
-    ("RESERVAS",  "reservas-ticker"),
-    ("IPC",       "ipc-ticker"),
-    ("TCRM",      "tcrm-ticker"),
 ]
 
 def _ticker_html():
