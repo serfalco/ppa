@@ -35,13 +35,13 @@
       "activa": true
     },
     {
-      "id": "investing_commodities",
-      "nombre": "Investing Commodities",
+      "id": "investing_agro",
+      "nombre": "Investing Agro",
       "categoria": "Agro",
       "tier": 2,
-      "rss": "https://es.investing.com/rss/news_287.rss",
-      "web": "https://es.investing.com/rss/news_287.rss",
-      "descripcion": "Cotizaciones y noticias de commodities agrícolas.",
+      "rss": "https://es.investing.com/rss/news_11.rss",
+      "web": "https://es.investing.com/rss/news_11.rss",
+      "descripcion": "Noticias económicas y de mercados de Investing.",
       "activa": true
     },
     {
@@ -309,9 +309,19 @@
       "nombre": "Investing Internacional",
       "categoria": "Internacional",
       "tier": 1,
-      "rss": "https://es.investing.com/rss/news_11.rss",
-      "web": "https://es.investing.com/rss/news_11.rss",
+      "rss": "https://es.investing.com/rss/news_287.rss",
+      "web": "https://es.investing.com/rss/news_287.rss",
       "descripcion": "Noticias económicas internacionales.",
+      "activa": true
+    },
+    {
+      "id": "investing_intl2",
+      "nombre": "Investing Mundo",
+      "categoria": "Internacional",
+      "tier": 1,
+      "rss": "https://es.investing.com/rss/news_95.rss",
+      "web": "https://es.investing.com/rss/news_95.rss",
+      "descripcion": "Noticias económicas globales de Investing.",
       "activa": true
     },
     {
