@@ -1,13 +1,13 @@
 {
-  "generado_en": "2026-06-22T17:40:45.556791+00:00",
-  "generado_ar": "22/06/2026 14:40",
+  "generado_en": "2026-06-22T20:50:35.143058+00:00",
+  "generado_ar": "22/06/2026 17:50",
   "datos": {
     "dolar_oficial": {
       "valor": {
-        "compra": 1428.09,
-        "venta": 1477.37
+        "compra": 1431.54,
+        "venta": 1481.79
       },
-      "actualizado": "2026-06-22T17:40:37.733567+00:00",
+      "actualizado": "2026-06-22T20:50:24.341973+00:00",
       "stale": false,
       "unidad": "ARS",
       "fuente": "dolarapi.com",
@@ -15,10 +15,10 @@
     },
     "dolar_mep": {
       "valor": {
-        "compra": 1480.7,
-        "venta": 1483.3
+        "compra": 1482.1,
+        "venta": 1485.8
       },
-      "actualizado": "2026-06-22T17:40:37.808764+00:00",
+      "actualizado": "2026-06-22T20:50:24.389633+00:00",
       "stale": false,
       "unidad": "ARS",
       "fuente": "dolarapi.com",
@@ -26,10 +26,10 @@
     },
     "dolar_ccl": {
       "valor": {
-        "compra": 1524.4,
-        "venta": 1524.8
+        "compra": 1524.8,
+        "venta": 1527
       },
-      "actualizado": "2026-06-22T17:40:37.912953+00:00",
+      "actualizado": "2026-06-22T20:50:24.485169+00:00",
       "stale": false,
       "unidad": "ARS",
       "fuente": "dolarapi.com",
@@ -40,7 +40,7 @@
         "compra": 1475,
         "venta": 1495
       },
-      "actualizado": "2026-06-22T17:40:37.979986+00:00",
+      "actualizado": "2026-06-22T20:50:24.549349+00:00",
       "stale": false,
       "unidad": "ARS",
       "fuente": "dolarapi.com",
@@ -48,10 +48,10 @@
     },
     "dolar_mayorista": {
       "valor": {
-        "compra": 1450,
-        "venta": 1459
+        "compra": 1452.5,
+        "venta": 1461.5
       },
-      "actualizado": "2026-06-22T17:40:38.065861+00:00",
+      "actualizado": "2026-06-22T20:50:24.622141+00:00",
       "stale": false,
       "unidad": "ARS",
       "fuente": "dolarapi.com",
@@ -59,10 +59,10 @@
     },
     "dolar_tarjeta": {
       "valor": {
-        "compra": 1856.52,
-        "venta": 1920.58
+        "compra": 1861,
+        "venta": 1926.33
       },
-      "actualizado": "2026-06-22T17:40:38.169822+00:00",
+      "actualizado": "2026-06-22T20:50:24.668463+00:00",
       "stale": false,
       "unidad": "ARS",
       "fuente": "dolarapi.com",
@@ -73,15 +73,15 @@
         "compra": 1511.6,
         "venta": 1511.7
       },
-      "actualizado": "2026-06-22T17:40:38.242223+00:00",
+      "actualizado": "2026-06-22T20:50:24.739084+00:00",
       "stale": false,
       "unidad": "ARS",
       "fuente": "dolarapi.com",
       "frecuencia": "intradia"
     },
     "brecha_mep": {
-      "valor": 0.4,
-      "actualizado": "2026-06-22T17:40:38.242270+00:00",
+      "valor": 0.3,
+      "actualizado": "2026-06-22T20:50:24.739122+00:00",
       "stale": false,
       "unidad": "%",
       "fuente": "cálculo PPA",
@@ -89,7 +89,7 @@
     },
     "riesgo_pais": {
       "valor": 429,
-      "actualizado": "2026-06-22T17:40:38.560499+00:00",
+      "actualizado": "2026-06-22T20:50:25.203467+00:00",
       "stale": false,
       "unidad": "pb",
       "fecha": "2026-06-19",
@@ -101,21 +101,21 @@
       "valor": {
         "piso": 775,
         "techo": 1796,
-        "dolar": 1459,
-        "posicion": 67.0
+        "dolar": 1462,
+        "posicion": 67.2
       },
-      "actualizado": "2026-06-22T17:40:45.556776+00:00",
+      "actualizado": "2026-06-22T20:50:35.143045+00:00",
       "stale": false,
       "fuente": "cálculo PPA (esquema BCRA)",
       "frecuencia": "diaria"
     },
     "reservas": {
-      "valor": 47503.0,
-      "actualizado": "2026-06-22T17:40:39.508516+00:00",
+      "valor": 47500.0,
+      "actualizado": "2026-06-22T20:50:26.322247+00:00",
       "stale": false,
       "unidad": "MM USD",
-      "fecha": "2026-06-17",
-      "variacion": -0.32,
+      "fecha": "2026-06-18",
+      "variacion": -0.01,
       "fuente": "BCRA API v4",
       "frecuencia": "diaria"
     },
@@ -160,28 +160,28 @@
       "frecuencia": "diaria"
     },
     "base_monetaria": {
-      "valor": 43736344.0,
-      "actualizado": "2026-06-22T17:40:42.083544+00:00",
+      "valor": 43235697.0,
+      "actualizado": "2026-06-22T20:50:30.161143+00:00",
       "stale": false,
       "unidad": "MM $",
-      "fecha": "2026-06-17",
-      "variacion": 0.19,
+      "fecha": "2026-06-18",
+      "variacion": -1.14,
       "fuente": "BCRA API v4",
       "frecuencia": "diaria"
     },
     "m2_privado": {
-      "valor": 24624679.0,
-      "actualizado": "2026-06-22T17:40:42.747452+00:00",
+      "valor": 24673282.0,
+      "actualizado": "2026-06-22T20:50:31.124005+00:00",
       "stale": false,
       "unidad": "MM $",
-      "fecha": "2026-06-17",
-      "variacion": -0.02,
+      "fecha": "2026-06-18",
+      "variacion": 0.2,
       "fuente": "BCRA API v4",
       "frecuencia": "diaria"
     },
     "call_baibar": {
       "valor": 2.0,
-      "actualizado": "2026-06-22T17:40:43.580589+00:00",
+      "actualizado": "2026-06-22T20:50:32.235990+00:00",
       "stale": false,
       "unidad": "% TNA",
       "fecha": "2026-05-31",
@@ -191,17 +191,17 @@
     },
     "circulacion": {
       "valor": 21.0,
-      "actualizado": "2026-06-22T17:40:44.246112+00:00",
+      "actualizado": "2026-06-22T20:50:33.682680+00:00",
       "stale": false,
       "unidad": "MM $",
-      "fecha": "2026-06-18",
-      "variacion": 1.2,
+      "fecha": "2026-06-19",
+      "variacion": 0.0,
       "fuente": "BCRA API v4",
       "frecuencia": "diaria"
     },
     "uva": {
       "valor": 23.0,
-      "actualizado": "2026-06-22T17:40:45.473038+00:00",
+      "actualizado": "2026-06-22T20:50:35.128204+00:00",
       "stale": false,
       "unidad": "índice",
       "fecha": "2026-05-31",
