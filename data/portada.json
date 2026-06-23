@@ -1,180 +1,510 @@
 {
-  "generado_en": "2026-06-23T11:59:45.735923+00:00",
+  "generado_en": "2026-06-23T20:04:49.650873+00:00",
   "destacados": [
     {
-      "id": "36d806c6202e",
-      "titulo": "Trezor advierte por el riesgo cuántico en Bitcoin y pide actuar cuanto antes para evitar una crisis",
-      "link": "https://www.iproup.com/economia-digital/69099-trezor-advierte-por-el-riesgo-cuantico-en-bitcoin-y-pide-actuar-cuanto-antes",
-      "descripcion": "En el sector advierten que ya existen desarrollos en criptografía post-cuántica, pero su adopción en Bitcoin no sería sencilla ni inmediata",
-      "fecha_publicacion": "2026-06-23T12:37:00+00:00",
-      "fuente_id": "iproup_eco",
-      "fuente_nombre": "iProUP Economía Digital",
+      "id": "79cc792b6ff1",
+      "titulo": "La economía de Argentina crece un 0,7% en el primer trimestre",
+      "link": "https://es.investing.com/news/economy-news/la-economia-de-argentina-crece-un-07-en-el-primer-trimestre-93CH-3713672",
+      "descripcion": "",
+      "fecha_publicacion": "2026-06-23T19:59:23+00:00",
+      "fuente_id": "investing_economia",
+      "fuente_nombre": "Investing Economía",
       "categoria": "Mercados"
     },
     {
-      "id": "ae24f58db996",
-      "titulo": "Plazos fijos vs billeteras: banco por banco y app por app, cuál paga más con las nuevas tasas",
-      "link": "https://www.iproup.com/finanzas/69129-plazos-fijos-vs-billeteras-donde-poner-los-pesos-tras-las-ultimas-bajas-de-tasas",
-      "descripcion": "Las tasas bajaron y el mapa del ahorro en pesos se reconfiguró. Plazo fijo o billetera remunerada: cuál rinde más y qué mirar antes de decidir invertir",
-      "fecha_publicacion": "2026-06-23T13:52:00+00:00",
-      "fuente_id": "iproup_fintech",
-      "fuente_nombre": "iProUP Fintech",
+      "id": "792fa46f32b1",
+      "titulo": "Los salarios de los trabajadores registrados le ganaron a la inflación en abril tras siete meses de caída",
+      "link": "https://www.lanacion.com.ar/economia/los-salarios-de-los-trabajadores-registrados-le-ganaron-a-la-inflacion-en-abril-nid23062026/",
+      "descripcion": "Aumentaron en promedio un 3,5%, frente a un IPC de 2,6% en igual período; el índice general, que incluye también a los informales, tuvo un alza de 3,7%",
+      "fecha_publicacion": "2026-06-23T19:27:57+00:00",
+      "fuente_id": "lanacion_eco",
+      "fuente_nombre": "La Nación Economía",
       "categoria": "Finanzas"
     },
     {
-      "id": "461d7725426e",
-      "titulo": "La inflación subyacente de Singapur en mayo queda por debajo de lo previsto, en el 1,4%",
-      "link": "https://es.investing.com/news/economic-indicators/la-inflacion-subyacente-de-singapur-en-mayo-queda-por-debajo-de-lo-previsto-en-el-14-93CH-3712573",
+      "id": "c26e69470572",
+      "titulo": "Se espera que Banxico mantenga los tipos de interés en 6,50%",
+      "link": "https://es.investing.com/news/world-news/se-espera-que-banxico-mantenga-los-tipos-de-interes-en-650-93CH-3713499",
       "descripcion": "",
-      "fecha_publicacion": "2026-06-23T10:07:51+00:00",
-      "fuente_id": "investing_intl2",
-      "fuente_nombre": "Investing Mundo",
+      "fecha_publicacion": "2026-06-23T16:06:41+00:00",
+      "fuente_id": "investing_intl",
+      "fuente_nombre": "Investing Internacional",
       "categoria": "Internacional"
     }
   ],
   "secciones": {
+    "Mercados": [
+      {
+        "id": "79cc792b6ff1",
+        "titulo": "La economía de Argentina crece un 0,7% en el primer trimestre",
+        "link": "https://es.investing.com/news/economy-news/la-economia-de-argentina-crece-un-07-en-el-primer-trimestre-93CH-3713672",
+        "descripcion": "",
+        "fecha_publicacion": "2026-06-23T19:59:23+00:00",
+        "fuente_id": "investing_economia",
+        "fuente_nombre": "Investing Economía",
+        "categoria": "Mercados"
+      },
+      {
+        "id": "2854c1923f95",
+        "titulo": "La IED en América Latina sube un 1,7% en 2025 por minería y tecnología",
+        "link": "https://es.investing.com/news/economy-news/la-ied-en-america-latina-sube-un-17-en-2025-por-mineria-y-tecnologia-93CH-3713645",
+        "descripcion": "",
+        "fecha_publicacion": "2026-06-23T19:25:18+00:00",
+        "fuente_id": "investing_economia",
+        "fuente_nombre": "Investing Economía",
+        "categoria": "Mercados"
+      },
+      {
+        "id": "57a6e520d0cf",
+        "titulo": "Una nueva ola de ataques cripto vacía contratos inteligentes por millones de dólares",
+        "link": "https://www.iproup.com/economia-digital/69132-error-en-contratos-inteligentes-permitio-robar-usd-17-millones-en-40-dias",
+        "descripcion": "Solo en el primer trimestre de 2026, los protocolos DeFi perdieron u$s169 millones en 34 exploits distintos, según datos de DefiLlama",
+        "fecha_publicacion": "2026-06-23T18:45:00+00:00",
+        "fuente_id": "iproup_eco",
+        "fuente_nombre": "iProUP Economía Digital",
+        "categoria": "Mercados"
+      },
+      {
+        "id": "a1d3e64e7703",
+        "titulo": "México emite 6.300 millones de dólares en bonos para refinanciar deuda",
+        "link": "https://es.investing.com/news/economy-news/mexico-emite-6300-millones-de-dolares-en-bonos-para-refinanciar-deuda-93CH-3713622",
+        "descripcion": "",
+        "fecha_publicacion": "2026-06-23T18:36:46+00:00",
+        "fuente_id": "investing_economia",
+        "fuente_nombre": "Investing Economía",
+        "categoria": "Mercados"
+      },
+      {
+        "id": "6cbe9037c7f3",
+        "titulo": "¿Bitcoin a u$s50.000?: por qué el precio de la criptomoneda podría bajar aún más",
+        "link": "https://www.iproup.com/economia-digital/69157-bitcoin-podria-llegar-a-los-us50-000-segun-expertos",
+        "descripcion": "Analistas advierten que la criptodivisa aún no habría tocado fondo y pronosticaron que podría caer todavía más antes de retomar una tendencia alcista",
+        "fecha_publicacion": "2026-06-23T18:30:00+00:00",
+        "fuente_id": "iproup_eco",
+        "fuente_nombre": "iProUP Economía Digital",
+        "categoria": "Mercados"
+      },
+      {
+        "id": "00ab41258f9e",
+        "titulo": "MSCI dejó a Argentina en standalone y los bancos \"pagan\" la factura",
+        "link": "https://www.iproup.com/economia-digital/69158-msci-dejo-a-argentina-en-standalone-y-los-bancos-pagan-la-factura",
+        "descripcion": "Sin reclasificación ni señal positiva: el MSCI dejó al país en la categoría más baja y los ADR de Supervielle, Galicia y Macro sufren las mayores pérdidas",
+        "fecha_publicacion": "2026-06-23T17:45:00+00:00",
+        "fuente_id": "iproup_eco",
+        "fuente_nombre": "iProUP Economía Digital",
+        "categoria": "Mercados"
+      }
+    ],
+    "Automotor": [
+      {
+        "id": "e8c1e2790eb2",
+        "titulo": "Defender Experience: se puso a prueba el vehículo  off road más lujoso",
+        "link": "https://www.iprofesional.com/autos/457683-defender-experience-como-anda-el-vehiculo-off-road-mas-lujoso",
+        "descripcion": "El Defender fue protagonista de una jornada de desafios en pista y barro, para que los clientes puedan conocer todas sus aptitudes",
+        "fecha_publicacion": "2026-06-23T19:52:00+00:00",
+        "fuente_id": "iprof_autos",
+        "fuente_nombre": "iProfesional Autos",
+        "categoria": "Automotor"
+      },
+      {
+        "id": "546fe8454735",
+        "titulo": "Marca china se mete en la pelea de las pick ups con una apuesta inédita: diésel e híbrida enchufable",
+        "link": "https://www.ambito.com/autos/marca-china-se-mete-la-pelea-las-pick-ups-una-apuesta-inedita-diesel-e-hibrida-enchufable-n6291920",
+        "descripcion": "La nueva camioneta busca desafiar a referentes del mercado con una fórmula poco explorada en el segmento: combinar un motor turbodiésel con tecnología híbrida enchufable para ganar eficiencia, autonomía y potencia.",
+        "fecha_publicacion": "2026-06-23T17:40:00+00:00",
+        "fuente_id": "ambito_autos",
+        "fuente_nombre": "Ámbito Autos",
+        "categoria": "Automotor"
+      },
+      {
+        "id": "cd0091d4064a",
+        "titulo": "Financiación para autos eléctricos: cómo acceder a préstamos de hasta $50 millones",
+        "link": "https://www.iprofesional.com/autos/458033-financiacion-para-autos-electricos-como-acceder-a-prestamos-de-hasta-50-millones",
+        "descripcion": "El Banco Ciudad lanzó una línea clave para financiar modelos híbridos y sustentables con tasa fija. Los requisitos de ingresos para calificar",
+        "fecha_publicacion": "2026-06-23T15:37:00+00:00",
+        "fuente_id": "iprof_autos",
+        "fuente_nombre": "iProfesional Autos",
+        "categoria": "Automotor"
+      },
+      {
+        "id": "bac09fd2f84d",
+        "titulo": "Préstamos para autos: requisitos, tasas y cómo acceder hasta $100 millones",
+        "link": "https://www.iprofesional.com/autos/458035-prestamos-para-autos-requisitos-tasas-y-como-acceder-hasta-100-millones",
+        "descripcion": "Están destinados a empleados, monotributistas y jubilados. No requieren firma de pagarés ni garantía prendaria y se acreditan en 24 horas",
+        "fecha_publicacion": "2026-06-23T15:37:00+00:00",
+        "fuente_id": "iprof_autos",
+        "fuente_nombre": "iProfesional Autos",
+        "categoria": "Automotor"
+      },
+      {
+        "id": "5d096ae7d74f",
+        "titulo": "Comprar un auto financiado en la Argentina: qué opciones hay, cómo funciona el crédito y qué conviene según el caso",
+        "link": "https://www.ambito.com/autos/comprar-un-auto-financiado-la-argentina-que-opciones-hay-como-funciona-el-credito-y-que-conviene-segun-el-caso-n6291840",
+        "descripcion": "Las distintas herramientas de crédito muestran un mercado dividido entre 0km y usados, con condiciones de acceso muy diferentes.",
+        "fecha_publicacion": "2026-06-23T15:01:00+00:00",
+        "fuente_id": "ambito_autos",
+        "fuente_nombre": "Ámbito Autos",
+        "categoria": "Automotor"
+      },
+      {
+        "id": "36c56593020e",
+        "titulo": "El impacto que genera una cámara de conducción en el seguro automotor",
+        "link": "https://www.ambito.com/autos/el-impacto-que-genera-una-camara-conduccion-el-seguro-automotor-n6291778",
+        "descripcion": "La tecnología a bordo suma protagonismo en los autos y redefine la manera de documentar lo que pasa en la calle.",
+        "fecha_publicacion": "2026-06-23T14:52:00+00:00",
+        "fuente_id": "ambito_autos",
+        "fuente_nombre": "Ámbito Autos",
+        "categoria": "Automotor"
+      },
+      {
+        "id": "d022f4e40423",
+        "titulo": "Lanzamiento: Royal Enfield Goan Classic 350",
+        "link": "https://motorwebargentina.com/lanzamiento-royal-enfield-goan-classic-350/",
+        "descripcion": "Royal Enfield presentó oficialmente en Argentina un nuevo modelo, que reúne características retro con un estilo único, se trata de la nueva Royal Enfield Goan Classic 350, que pasa a ser una nueva opción dentro de su gama Classic. La Goan Classic hace básicamente un homenaje a la cultura bobber, que inició un movimiento de [&#8230;] La entrada Lanzamiento: Royal Enfield Goan Classic 350 se publicó primero en Motorweb Argentina .",
+        "fecha_publicacion": "2026-06-23T10:07:59+00:00",
+        "fuente_id": "motorweb",
+        "fuente_nombre": "Motorweb Argentina",
+        "categoria": "Automotor"
+      },
+      {
+        "id": "3eda4e5ffcf4",
+        "titulo": "Royal Enfield presentó la nueva Goan Classic 350: cuesta $7.900.000",
+        "link": "https://arodarpost.com.ar/royal-enfield-presento-la-nueva-goan-classic-350-cuesta-7-900-000/",
+        "descripcion": "Royal Enfield presentó en Argentina la nueva Goan Classic 350, un modelo que incorpora una nueva expresión dentro de la familia Classic y amplía la oferta de la compañía para los motociclistas que buscan una moto con identidad propia, estilo personalizado y ADN clásico. La presentación se realizó en el marco de una nueva edición [&#8230;]",
+        "fecha_publicacion": "2026-06-22T18:05:42+00:00",
+        "fuente_id": "arodar",
+        "fuente_nombre": "A Rodar Post",
+        "categoria": "Automotor"
+      }
+    ],
     "Finanzas": [
       {
-        "id": "ae24f58db996",
-        "titulo": "Plazos fijos vs billeteras: banco por banco y app por app, cuál paga más con las nuevas tasas",
-        "link": "https://www.iproup.com/finanzas/69129-plazos-fijos-vs-billeteras-donde-poner-los-pesos-tras-las-ultimas-bajas-de-tasas",
-        "descripcion": "Las tasas bajaron y el mapa del ahorro en pesos se reconfiguró. Plazo fijo o billetera remunerada: cuál rinde más y qué mirar antes de decidir invertir",
-        "fecha_publicacion": "2026-06-23T13:52:00+00:00",
-        "fuente_id": "iproup_fintech",
-        "fuente_nombre": "iProUP Fintech",
-        "categoria": "Finanzas"
-      },
-      {
-        "id": "efbf7febcbe8",
-        "titulo": "La nueva Obligación Negociable en dólares que ofrece un flujo predecible a 24 meses",
-        "link": "https://www.iproup.com/finanzas/69110-la-nueva-on-que-promete-flujo-predecible-para-carteras-hartas-de-la-inestabilidad",
-        "descripcion": "La colocación busca atraer perfiles conservadores con flujo en moneda dura, en un contexto de mayor interés por instrumentos dolarizados alternativos",
-        "fecha_publicacion": "2026-06-23T11:13:00+00:00",
-        "fuente_id": "iproup_fintech",
-        "fuente_nombre": "iProUP Fintech",
-        "categoria": "Finanzas"
-      },
-      {
-        "id": "7c9858466171",
-        "titulo": "Cambian los límites en cajeros automáticos: cuánto podés extraer según tu banco y cómo subir el tope",
-        "link": "https://www.iproup.com/finanzas/68863-cuanto-efectivo-podes-sacar-cajeros-este-mes-aumentar-limite-banco-junio-2026",
-        "descripcion": "Los bancos actualizaron los límites de extracción en cajeros automáticos. Conocé cuánto efectivo podés sacar según tu cuenta y cómo aumentar el tope",
-        "fecha_publicacion": "2026-06-23T10:44:00+00:00",
-        "fuente_id": "iproup_fintech",
-        "fuente_nombre": "iProUP Fintech",
-        "categoria": "Finanzas"
-      },
-      {
-        "id": "91fa76abe62c",
-        "titulo": "PNC de la Anses: cuál es el monto de las Pensiones no Contributivas en julio de 2026, con el aumento confirmado",
-        "link": "https://www.lanacion.com.ar/economia/pnc-de-la-anses-cual-es-el-monto-de-las-pensiones-no-contributivas-en-julio-de-2026-con-el-aumento-nid22062026/",
-        "descripcion": "Los haberes se ajustan en un 2,15%, de acuerdo al último registro de inflación; cuáles son los valores con el bono previsional",
-        "fecha_publicacion": "2026-06-23T10:13:59+00:00",
+        "id": "792fa46f32b1",
+        "titulo": "Los salarios de los trabajadores registrados le ganaron a la inflación en abril tras siete meses de caída",
+        "link": "https://www.lanacion.com.ar/economia/los-salarios-de-los-trabajadores-registrados-le-ganaron-a-la-inflacion-en-abril-nid23062026/",
+        "descripcion": "Aumentaron en promedio un 3,5%, frente a un IPC de 2,6% en igual período; el índice general, que incluye también a los informales, tuvo un alza de 3,7%",
+        "fecha_publicacion": "2026-06-23T19:27:57+00:00",
         "fuente_id": "lanacion_eco",
         "fuente_nombre": "La Nación Economía",
         "categoria": "Finanzas"
       },
       {
-        "id": "295b2aaad0e1",
-        "titulo": "A cuánto llega la PUAM en julio de 2026 con el aumento confirmado",
-        "link": "https://www.lanacion.com.ar/economia/a-cuanto-llega-la-puam-en-julio-de-2026-con-el-aumento-confirmado-nid19062026/",
-        "descripcion": "La prestación se reajusta en un 2,15%; a cúanto llega la cifra total con el bono previsional",
-        "fecha_publicacion": "2026-06-23T10:13:55+00:00",
+        "id": "7c9ae3f541f6",
+        "titulo": "El dólar oficial subió por sexta jornada al hilo y quedó al borde de alcanzar su máximo anual",
+        "link": "https://www.ambito.com/finanzas/el-dolar-extiende-su-racha-alcista-y-el-mayorista-ya-acumula-una-suba-mas-del-4-junio-n6291807",
+        "descripcion": "Mientras el BCRA moderó de ritmo el compras, el tipo de cambio ya borró el retroceso experimentado durante los primeros meses del año.",
+        "fecha_publicacion": "2026-06-23T19:22:00+00:00",
+        "fuente_id": "ambito_fin",
+        "fuente_nombre": "Ámbito Finanzas",
+        "categoria": "Finanzas"
+      },
+      {
+        "id": "eea2539824f3",
+        "titulo": "“Sumamente significativo”: el nuevo dueño de Vicentin informó sobre un logro para el futuro de la cerealera",
+        "link": "https://www.lanacion.com.ar/economia/campo/sumamente-significativo-el-nuevo-dueno-de-vicentin-informo-sobre-un-logro-para-el-futuro-de-la-nid23062026/",
+        "descripcion": "Entre otros avances normalizó la situación crediticia de la compañía ante el Banco Central (BCRA), alcanzando la condición 1 como sujeto de crédito",
+        "fecha_publicacion": "2026-06-23T19:20:42+00:00",
         "fuente_id": "lanacion_eco",
         "fuente_nombre": "La Nación Economía",
         "categoria": "Finanzas"
       },
       {
-        "id": "7361c67342ec",
-        "titulo": "Deuda: antes de un posible giro de la Fed, la city ve margen para que la Argentina vuelva al mercado internacional",
-        "link": "https://www.ambito.com/finanzas/deuda-el-riesgo-un-giro-la-fed-la-city-ve-margen-que-argentina-vuelva-al-mercado-internacional-n6291592",
-        "descripcion": "La posibilidad de que la Reserva Federal vuelva a subir las tasas reabrió el debate sobre una emisión internacional. Analistas sostienen que el Gobierno podría aprovechar la ventana actual para financiarse antes de un eventual encarecimiento del crédito global.",
-        "fecha_publicacion": "2026-06-23T10:00:00+00:00",
-        "fuente_id": "ambito_fin",
-        "fuente_nombre": "Ámbito Finanzas",
+        "id": "40e6b814799e",
+        "titulo": "La economía creció 2,3% en el primer trimestre, impulsada por el agro, Vaca Muerta y la minería",
+        "link": "https://www.lanacion.com.ar/economia/la-economia-crecio-23-en-el-primer-trimestre-impulsada-por-el-agro-vaca-muerta-y-la-mineria-nid23062026/",
+        "descripcion": "El PBI avanzó 0,7% frente al trimestre previo; creció el consumo privado gracias a los bienes importados, pero cayó la inversión; la industria manufacturera volvió a retroceder, pero la construcción creció 2,5%",
+        "fecha_publicacion": "2026-06-23T19:17:16+00:00",
+        "fuente_id": "lanacion_eco",
+        "fuente_nombre": "La Nación Economía",
         "categoria": "Finanzas"
       },
       {
-        "id": "f816fcc927ed",
-        "titulo": "Real blue: a cuánto opera este martes 23 de junio",
-        "link": "https://www.ambito.com/finanzas/real-blue-cuanto-opera-este-martes-23-junio-n6291642",
-        "descripcion": "La cotización minuto a minuto para la compra y venta de la divisa brasileña en nuestro país.",
-        "fecha_publicacion": "2026-06-23T03:00:00+00:00",
-        "fuente_id": "ambito_fin",
-        "fuente_nombre": "Ámbito Finanzas",
-        "categoria": "Finanzas"
-      },
-      {
-        "id": "f9a171816c22",
-        "titulo": "ADR retrocedieron en Wall Street, pero el riesgo país cayó a un nuevo mínimo en ocho años",
-        "link": "https://www.iprofesional.com/finanzas/457950-senales-positivas-para-la-deuda-suben-los-bonos-y-el-riesgo-pais-sigue-en-descenso",
-        "descripcion": "Los bonos soberanos en dólares subieron este lunes y el riesgo país cayó a mínimos de 2018, mientras ADRs argentinos en Wall Street operaron en baja",
-        "fecha_publicacion": "2026-06-22T22:10:00+00:00",
+        "id": "e162c9438358",
+        "titulo": "El dólar volvió a subir y tocó máximos desde enero: el minorista se acerca a $1.500",
+        "link": "https://www.iprofesional.com/finanzas/458085-dolar-volvio-a-subir-y-toco-maximos-desde-enero-2026-minorista-se-acerca-1500-pesos",
+        "descripcion": "Subieron todas las cotizaciones del mercado de divisas y el Banco Central limitó sus intervenciones ante nuevas presiones internacionales",
+        "fecha_publicacion": "2026-06-23T19:17:00+00:00",
         "fuente_id": "iprof_finanzas",
         "fuente_nombre": "iProfesional Finanzas",
         "categoria": "Finanzas"
+      },
+      {
+        "id": "2f8d9c9077df",
+        "titulo": "Los activos argentinos no resisten: los ADRs en Wall Street se desploman 4,4%",
+        "link": "https://www.iprofesional.com/finanzas/458061-como-cotizan-hoy-23-de-junio-el-merval-adrs-bonos-y-riesgo-pais",
+        "descripcion": "Los activos argentinos cayeron y el riesgo país rebotó hasta los 434 puntos básicos, pese a la tendencia a la baja que registró en los últimos días",
+        "fecha_publicacion": "2026-06-23T19:02:00+00:00",
+        "fuente_id": "iprof_finanzas",
+        "fuente_nombre": "iProfesional Finanzas",
+        "categoria": "Finanzas"
+      },
+      {
+        "id": "2409394b9df5",
+        "titulo": "Estrecho de Magallanes: cómo es el megaproyecto submarino que promete revolucionar la Patagonia",
+        "link": "https://www.iprofesional.com/negocios/457209-estrecho-de-magallanes-como-es-el-megaproyecto-submarino-que-revolucionara-la-patagonia",
+        "descripcion": "Se trata de una iniciativa que promete expandir la producción industrial, el comercio y el turismo en el extremo austral del continente. Millones en danza",
+        "fecha_publicacion": "2026-06-23T19:00:00+00:00",
+        "fuente_id": "iprof_economia",
+        "fuente_nombre": "iProfesional Economía",
+        "categoria": "Finanzas"
+      },
+      {
+        "id": "2565636cbc7e",
+        "titulo": "Los ADRs caen hasta 4,4% y el riesgo país sube a 434 puntos",
+        "link": "https://www.ambito.com/finanzas/los-bonos-dolares-caen-y-el-riesgo-pais-opera-encima-los-430-puntos-n6291798",
+        "descripcion": "En esta jornada, además, el MSCI define si abre consulta para reclasificar a Argentina desde standalone, la peor categoría de su esquema.",
+        "fecha_publicacion": "2026-06-23T18:56:00+00:00",
+        "fuente_id": "ambito_fin",
+        "fuente_nombre": "Ámbito Finanzas",
+        "categoria": "Finanzas"
       }
     ],
-    "Mercados": [
+    "Energía y Minería": [
       {
-        "id": "36d806c6202e",
-        "titulo": "Trezor advierte por el riesgo cuántico en Bitcoin y pide actuar cuanto antes para evitar una crisis",
-        "link": "https://www.iproup.com/economia-digital/69099-trezor-advierte-por-el-riesgo-cuantico-en-bitcoin-y-pide-actuar-cuanto-antes",
-        "descripcion": "En el sector advierten que ya existen desarrollos en criptografía post-cuántica, pero su adopción en Bitcoin no sería sencilla ni inmediata",
-        "fecha_publicacion": "2026-06-23T12:37:00+00:00",
-        "fuente_id": "iproup_eco",
-        "fuente_nombre": "iProUP Economía Digital",
-        "categoria": "Mercados"
+        "id": "587a18ec65fa",
+        "titulo": "GNL: la Legislatura de Neuquén votará el acuerdo con YPF de noche y evitará la marcha de los gremios estatales",
+        "link": "https://econojournal.com.ar/2026/06/gnl-la-legislatura-de-neuquen-votara-el-acuerdo-con-ypf-de-noche-y-evitara-la-marcha-de-los-gremios-estatales/",
+        "descripcion": "La Legislatura de Neuquén votará este miércoles 24 el acuerdo que firmó el gobierno de Rolando Figueroa con YPF para otorgar estabilidad fiscal y un régimen de regalías diferenciales al proyecto para producir GNL con el gas de Vaca Muerta. El oficialismo cuenta con los votos para sancionar la ley, pero lo hará por la [&#8230;]",
+        "fecha_publicacion": "2026-06-23T18:27:46+00:00",
+        "fuente_id": "econojournal",
+        "fuente_nombre": "EconoJournal",
+        "categoria": "Energía y Minería"
       },
       {
-        "id": "25731ac93ee5",
-        "titulo": "A días del deadline por MiCA, Ripple consiguió una licencia clave que le abre las puertas de Europa",
-        "link": "https://www.iproup.com/economia-digital/69135-ripple-consiguio-permiso-europeo-ventaja-dominio-mercado-cripto",
-        "descripcion": "La empresa desarrolladora de XRP recibió la aprobación preliminar de su licencia CASP en Luxemburgo bajo MiCA y busca operar en 30 países europeos",
-        "fecha_publicacion": "2026-06-23T12:08:00+00:00",
-        "fuente_id": "iproup_eco",
-        "fuente_nombre": "iProUP Economía Digital",
-        "categoria": "Mercados"
+        "id": "3d0425a761c6",
+        "titulo": "El Gobierno dictó una nueva reglamentación de la Ley de Inversiones Mineras para acelerar proyectos y simplificar trámites",
+        "link": "https://econojournal.com.ar/2026/06/el-gobierno-dicto-una-nueva-reglamentacion-de-la-ley-de-inversiones-mineras-para-acelerar-proyectos-y-simplificar-tramites/",
+        "descripcion": "El Poder Ejecutivo Nacional oficializó la nueva reglamentación de la Ley de Inversiones Mineras 24.196, una medida altamente esperada por el sector extractivo, a más de 30 años de vigencia. La normativa introduce una serie de adecuaciones orientadas a actualizar la aplicación del régimen vigente a las nuevas realidades productivas, tecnológicas y administrativas del mercado [&#8230;]",
+        "fecha_publicacion": "2026-06-23T17:44:43+00:00",
+        "fuente_id": "econojournal",
+        "fuente_nombre": "EconoJournal",
+        "categoria": "Energía y Minería"
       },
       {
-        "id": "37b1a3b72467",
-        "titulo": "Trump anuncia un acuerdo nuclear con Irán y levanta el bloqueo del Estrecho de Ormuz",
-        "link": "https://es.investing.com/news/economy-news/trump-anuncia-un-acuerdo-nuclear-con-iran-y-levanta-el-bloqueo-del-estrecho-de-ormuz-3712854",
+        "id": "d404f4366576",
+        "titulo": "El caso Vicuña abrió el debate sobre el desarrollo de proveedores para la minería",
+        "link": "https://econojournal.com.ar/2026/06/el-caso-vicuna-abrio-el-debate-sobre-el-desarrollo-de-proveedores-para-la-mineria/",
+        "descripcion": "Flavia Royón, ex secretaria de Minería y Energía de la Nación; Leandro Seoane, secretario de la Cámara Argentina de Construcción Modular e Industrializada (CACMI); Juan Biset, socio de Nicholson y Cano Abogados; y Santiago Bulat, economista y jefe de IDEA y socio de consulta Invecq Consulting, debatieron en el cuarto episodio de Aguas Arriba sobre [&#8230;]",
+        "fecha_publicacion": "2026-06-23T12:40:12+00:00",
+        "fuente_id": "econojournal",
+        "fuente_nombre": "EconoJournal",
+        "categoria": "Energía y Minería"
+      },
+      {
+        "id": "ef04049b2378",
+        "titulo": "Apuesta estratégica del agro: la Bolsa de Cereales exige un nuevo marco regulatorio para biocombustibles con más corte, libre competencia y combustibles para aviones",
+        "link": "https://dataenergia.ar/renovables-y-de-transicion/apuesta-estrategica-del-agro-la-bolsa-de-cereales-exige-un-nuevo-marco-regulatorio-para-biocombustibles-con-mas-corte-libre-competencia-y-combustibles-para-aviones-20266221450",
+        "descripcion": "La Bolsa de Cereales de Buenos Aires reclamó de forma prioritaria un nuevo marco regulatorio para los biocombustibles en Argentina que eleve al 15% el corte obligatorio de biodiesel y bioetanol, introduciendo un esquema de libre competencia.",
+        "fecha_publicacion": "2026-06-22T17:05:00+00:00",
+        "fuente_id": "data_energia",
+        "fuente_nombre": "Data Energía",
+        "categoria": "Energía y Minería"
+      },
+      {
+        "id": "3d1f39bc9b40",
+        "titulo": "Vaca Muerta y la nueva era de integración en el Cono Sur: el gas argentino garantiza el abastecimiento regional por hasta 124 años",
+        "link": "https://dataenergia.ar/gas/vaca-muerta-y-la-nueva-era-de-integracion-en-el-cono-sur-el-gas-argentino-garantiza-el-abastecimiento-regional-por-hasta-124-anos-202662119400",
+        "descripcion": "Un informe conjunto de la International Gas Union, ARPEL y OLADE determinó que las reservas de Vaca Muerta garantizan el abastecimiento de gas del Cono Sur por un lapso de entre 45 y 124 años, impulsando una nueva era de integración regional.",
+        "fecha_publicacion": "2026-06-21T22:40:00+00:00",
+        "fuente_id": "data_energia",
+        "fuente_nombre": "Data Energía",
+        "categoria": "Energía y Minería"
+      },
+      {
+        "id": "dd8c1f86f692",
+        "titulo": "Paradoja energética: la Argentina avanzó en el ranking global de transición del Foro Económico Mundial, pero la falta de infraestructura y financiamiento frena su potencial",
+        "link": "https://dataenergia.ar/renovables-y-de-transicion/paradoja-energetica-la-argentina-avanzo-en-el-ranking-global-de-transicion-del-foro-economico-mundial-pero-la-falta-de-infraestructura-y-financiamiento-frena-su-potencial-202662119290",
+        "descripcion": "La Argentina avanzó al puesto 56 del ranking mundial de Transición Energética del Foro Económico Mundial (WEF) tras mejorar su calificación a 57,4 puntos en 2026, impulsada por sus sólidos indicadores de acceso, cobertura y seguridad de suministro.",
+        "fecha_publicacion": "2026-06-21T22:29:00+00:00",
+        "fuente_id": "data_energia",
+        "fuente_nombre": "Data Energía",
+        "categoria": "Energía y Minería"
+      }
+    ],
+    "Fiscal": [
+      {
+        "id": "e45af274b297",
+        "titulo": "El trámite que tenés que completar para no sufrir multas o quedar afuera del monotributo",
+        "link": "https://www.iprofesional.com/impuestos/458075-el-tramite-que-tenes-que-completar-para-no-sufrir-multas-o-quedar-afuera-del-monotributo",
+        "descripcion": "Los monotributistas deberán revisar su situación antes del 5 de agosto. Con las nuevas escalas, también aumentan las cuotas mensuales",
+        "fecha_publicacion": "2026-06-23T18:03:00+00:00",
+        "fuente_id": "iprof_impuestos",
+        "fuente_nombre": "iProfesional Impuestos",
+        "categoria": "Fiscal"
+      },
+      {
+        "id": "403e35d97714",
+        "titulo": "Blanqueo laboral: ARCA publica guía paso a paso para declarar los empleados en negro",
+        "link": "https://www.iprofesional.com/impuestos/458063-blanqueo-laboral-arca-paso-a-paso-como-declarar-los-empleados-en-negro",
+        "descripcion": "ARCA publicó nuevas guías del Libro de Sueldos Digital, en el marco del régimen de Promoción del Empleo Registrado. Como blanquear empleados",
+        "fecha_publicacion": "2026-06-23T16:05:00+00:00",
+        "fuente_id": "iprof_impuestos",
+        "fuente_nombre": "iProfesional Impuestos",
+        "categoria": "Fiscal"
+      },
+      {
+        "id": "0eb41dbd883b",
+        "titulo": "Cómo el \"Adornigate\" complicó las declaraciones anuales de Ganancias y Bienes Personales",
+        "link": "https://www.iprofesional.com/impuestos/458005-como-el-adornigate-complico-las-declaraciones-anuales-de-ganancias-y-bienes-personales",
+        "descripcion": "La explicación y la posterior presentación de la declaración jurada del jefe de Gabinete, Manuel Adorni, impactaron en el calendario de las anuales",
+        "fecha_publicacion": "2026-06-23T14:32:00+00:00",
+        "fuente_id": "iprof_impuestos",
+        "fuente_nombre": "iProfesional Impuestos",
+        "categoria": "Fiscal"
+      },
+      {
+        "id": "7ab69b7c19c4",
+        "titulo": "Los que no estaban obligados a facturar y a partir de julio lo están, esperan la prórroga",
+        "link": "https://www.ambito.com/novedades-fiscales/los-que-no-estaban-obligados-facturar-y-partir-julio-lo-estan-esperan-la-prorroga-n6291644",
+        "descripcion": "ARCA reformuló las normas de facturación, incorporando a la obligación de facturar sus operaciones a contribuyentes que antes no lo estaban, medida que entra en vigencia a la brevedad, en un período dominado por los vencimientos generales.",
+        "fecha_publicacion": "2026-06-22T23:45:00+00:00",
+        "fuente_id": "ambito_fisc",
+        "fuente_nombre": "Ámbito Fiscal",
+        "categoria": "Fiscal"
+      },
+      {
+        "id": "95143a3db0c7",
+        "titulo": "Bienes producidos con trabajo forzoso: EEUU propone aranceles y la Argentina quedaría alcanzada con el 10%",
+        "link": "https://www.ambito.com/novedades-fiscales/bienes-producidos-trabajo-forzoso-eeuu-propone-aranceles-y-la-argentina-quedaria-alcanzada-el-10-n6290810",
+        "descripcion": "La producción de bienes bajo tales condiciones de trabajo, será una restricción para comerciar con EEUU e impactará decididamente en el acceso al mercado norteamericano y, ahora también, en el nivel arancelario.",
+        "fecha_publicacion": "2026-06-19T22:29:00+00:00",
+        "fuente_id": "ambito_fisc",
+        "fuente_nombre": "Ámbito Fiscal",
+        "categoria": "Fiscal"
+      },
+      {
+        "id": "f18679c07cb7",
+        "titulo": "El RIMICABA va de la mano con el RIMI nacional",
+        "link": "https://www.ambito.com/novedades-fiscales/el-rimicaba-va-la-mano-el-rimi-nacional-n6289922",
+        "descripcion": "El régimen de incentivos porteño se encuentra íntimamente ligado al dispuesto por el gobierno nacional, aunque dispone sus propios requisitos y suma beneficios fiscales y crediticios.",
+        "fecha_publicacion": "2026-06-17T22:32:00+00:00",
+        "fuente_id": "ambito_fisc",
+        "fuente_nombre": "Ámbito Fiscal",
+        "categoria": "Fiscal"
+      }
+    ],
+    "Internacional": [
+      {
+        "id": "c26e69470572",
+        "titulo": "Se espera que Banxico mantenga los tipos de interés en 6,50%",
+        "link": "https://es.investing.com/news/world-news/se-espera-que-banxico-mantenga-los-tipos-de-interes-en-650-93CH-3713499",
         "descripcion": "",
-        "fecha_publicacion": "2026-06-23T11:41:30+00:00",
-        "fuente_id": "investing_economia",
-        "fuente_nombre": "Investing Economía",
-        "categoria": "Mercados"
+        "fecha_publicacion": "2026-06-23T16:06:41+00:00",
+        "fuente_id": "investing_intl",
+        "fuente_nombre": "Investing Internacional",
+        "categoria": "Internacional"
       },
       {
-        "id": "81d530bdb6c9",
-        "titulo": "Akasa Air apunta a un crecimiento de capacidad del 30% pese a retrasos de Boeing",
-        "link": "https://es.investing.com/news/economy-news/akasa-air-apunta-a-un-crecimiento-de-capacidad-del-30-pese-a-retrasos-de-boeing-93CH-3712822",
+        "id": "2a0476102235",
+        "titulo": "Omán e Irán acuerdan continuar las conversaciones sobre el Estrecho de Ormuz",
+        "link": "https://es.investing.com/news/world-news/oman-e-iran-acuerdan-continuar-las-conversaciones-sobre-el-estrecho-de-ormuz-93CH-3713265",
         "descripcion": "",
-        "fecha_publicacion": "2026-06-23T11:34:04+00:00",
-        "fuente_id": "investing_economia",
-        "fuente_nombre": "Investing Economía",
-        "categoria": "Mercados"
+        "fecha_publicacion": "2026-06-23T13:25:43+00:00",
+        "fuente_id": "investing_intl",
+        "fuente_nombre": "Investing Internacional",
+        "categoria": "Internacional"
       },
       {
-        "id": "a1ea91f53090",
-        "titulo": "Omán e Irán acuerdan trabajar en la gestión del Estrecho de Ormuz",
-        "link": "https://es.investing.com/news/economy-news/oman-e-iran-acuerdan-trabajar-en-la-gestion-del-estrecho-de-ormuz-93CH-3712768",
+        "id": "461d7725426e",
+        "titulo": "La inflación subyacente de Singapur en mayo queda por debajo de lo previsto, en el 1,4%",
+        "link": "https://es.investing.com/news/economic-indicators/la-inflacion-subyacente-de-singapur-en-mayo-queda-por-debajo-de-lo-previsto-en-el-14-93CH-3712573",
         "descripcion": "",
-        "fecha_publicacion": "2026-06-23T11:20:23+00:00",
-        "fuente_id": "investing_economia",
-        "fuente_nombre": "Investing Economía",
-        "categoria": "Mercados"
+        "fecha_publicacion": "2026-06-23T10:07:51+00:00",
+        "fuente_id": "investing_intl2",
+        "fuente_nombre": "Investing Mundo",
+        "categoria": "Internacional"
       },
       {
-        "id": "10e2df839081",
-        "titulo": "No es Bitcoin: el negocio cripto de u$s51.000 millones que está cambiando las bases de Wall Street",
-        "link": "https://www.iproup.com/economia-digital/69131-mercado-activos-tokenizados-crece-40-por-ciento-desafia-bitcoin",
-        "descripcion": "Inversores impulsan la tokenización de acciones, bonos y commodities con operaciones ininterrumpidas y sin bancos tradicionales",
-        "fecha_publicacion": "2026-06-23T09:21:00+00:00",
-        "fuente_id": "iproup_eco",
-        "fuente_nombre": "iProUP Economía Digital",
-        "categoria": "Mercados"
+        "id": "add7ff3581a8",
+        "titulo": "La inflación del IPC de Singapur defrauda las expectativas en mayo",
+        "link": "https://es.investing.com/news/economic-indicators/la-inflacion-del-ipc-de-singapur-defrauda-las-expectativas-en-mayo-3712255",
+        "descripcion": "",
+        "fecha_publicacion": "2026-06-23T05:11:20+00:00",
+        "fuente_id": "investing_intl2",
+        "fuente_nombre": "Investing Mundo",
+        "categoria": "Internacional"
+      },
+      {
+        "id": "bab83e6850df",
+        "titulo": "La actividad empresarial de Japón se acelera en junio según el PMI",
+        "link": "https://es.investing.com/news/economic-indicators/la-actividad-empresarial-de-japon-se-acelera-en-junio-segun-el-pmi-3712188",
+        "descripcion": "",
+        "fecha_publicacion": "2026-06-23T00:55:32+00:00",
+        "fuente_id": "investing_intl2",
+        "fuente_nombre": "Investing Mundo",
+        "categoria": "Internacional"
+      },
+      {
+        "id": "ea2966884b7a",
+        "titulo": "Países de la UE piden más fondos para energía limpia antes de reforma",
+        "link": "https://es.investing.com/news/world-news/paises-de-la-ue-piden-mas-fondos-para-energia-limpia-antes-de-reforma-93CH-3711666",
+        "descripcion": "",
+        "fecha_publicacion": "2026-06-22T14:53:24+00:00",
+        "fuente_id": "investing_intl",
+        "fuente_nombre": "Investing Internacional",
+        "categoria": "Internacional"
+      }
+    ],
+    "Laboral": [
+      {
+        "id": "de08d69d247c",
+        "titulo": "Empleados públicos cobrarán aumento y bono: los nuevos montos",
+        "link": "https://www.iprofesional.com/management/458024-empleados-publicos-cobraran-aumento-y-bono-como-quedan-los-salarios",
+        "descripcion": "El Gobierno acordó una suba salarial acumulativa para estatales y un bono de $50.000, mientras continúan las tensiones gremiales",
+        "fecha_publicacion": "2026-06-23T15:37:00+00:00",
+        "fuente_id": "iprof_management",
+        "fuente_nombre": "iProfesional Management",
+        "categoria": "Laboral"
+      },
+      {
+        "id": "c32219804083",
+        "titulo": "Tarifas de luz y gas junio 2026: nuevos topes de subsidios y cuánto vas a pagar",
+        "link": "https://www.iprofesional.com/management/456779-tarifas-de-luz-y-gas-junio-2026-nuevos-topes-de-subsidios-y-cuanto-vas-a-pagar",
+        "descripcion": "La Secretaría de Energía publicó en el Boletín Oficial los ajustes de precios a los servicios de gas y energía. Qué subsidios se mantienen y cómo pedirlos",
+        "fecha_publicacion": "2026-06-23T15:37:00+00:00",
+        "fuente_id": "iprof_management",
+        "fuente_nombre": "iProfesional Management",
+        "categoria": "Laboral"
+      },
+      {
+        "id": "94dbb86e01d5",
+        "titulo": "Cómo calcular el pago retroactivo para el servicio doméstico en Argentina y el aguinaldo de junio",
+        "link": "https://www.iprofesional.com/management/458037-servicio-domestico-en-argentina-como-calcular-el-pago-retroactivo-y-el-aguinaldo-de-junio",
+        "descripcion": "Los empleadores que no hayan liquidado los últimos aumentos para empleadas domésticas, deberán pagar en retroactivo por su homologación",
+        "fecha_publicacion": "2026-06-23T12:59:00+00:00",
+        "fuente_id": "iprof_management",
+        "fuente_nombre": "iProfesional Management",
+        "categoria": "Laboral"
+      },
+      {
+        "id": "07f564b6ffd7",
+        "titulo": "Riesgos psicosociales en el trabajo: la amenaza invisible para la salud de los trabajadores",
+        "link": "https://voices.ilo.org/es-es/podcast/riesgos-psicosociales-en-el-trabajo-la-amenaza-invisible-para-la-salud-de-los-trabajadores",
+        "descripcion": "En este episodio del pódcast “El futuro del trabajo de la OIT”, Dafne Papandrea y Lucía Risueño Navarro explican cómo los riesgos psicosociales —como las largas jornadas laborales, la inseguridad en el empleo y el acoso en el lugar de trabajo— afectan a la salud de los trabajadores, y qué medidas pueden adoptarse para crear entornos laborales más saludables en todo el mundo.",
+        "fecha_publicacion": "2026-04-28T00:00:00+00:00",
+        "fuente_id": "oit_podcast",
+        "fuente_nombre": "OIT Podcast",
+        "categoria": "Laboral"
+      },
+      {
+        "id": "ef1638f33032",
+        "titulo": "La inteligencia artificial generativa y las desigualdades de género en el trabajo",
+        "link": "https://voices.ilo.org/es-es/podcast/la-inteligencia-artificial-generativa-y-las-desigualdades-de-genero-en-el-trabajo",
+        "descripcion": "En este episodio del pódcast de la Organización Internacional del Trabajo, Janine Berg, Economista senior en la OIT, presenta un nuevo informe sobre el impacto de la inteligencia artificial generativa en el mundo del trabajo. La experta explica por qué las mujeres están más expuestas que los hombres a los riesgos asociados a esta tecnología y qué significa esto para la igualdad en el mercado laboral.",
+        "fecha_publicacion": "2026-03-09T00:00:00+00:00",
+        "fuente_id": "oit_podcast",
+        "fuente_nombre": "OIT Podcast",
+        "categoria": "Laboral"
+      },
+      {
+        "id": "a9cae82ea7a7",
+        "titulo": "Una mirada al estado del empleo mundial y sus principales desafíos",
+        "link": "https://voices.ilo.org/es-es/podcast/una-mirada-al-estado-del-empleo-mundial-y-sus-principales-desafios",
+        "descripcion": "En este episodio del pódcast Futuro del Trabajo de la OIT, analizamos el estado del empleo y los principales desafíos que enfrentan los mercados laborales a nivel mundial y en América Latina y el Caribe, junto a Miguel Sánchez Martínez, economista del Departamento de Investigación de la OIT, y Gerson Martínez, Especialista Regional Senior en Economía Laboral.",
+        "fecha_publicacion": "2026-01-22T00:00:00+00:00",
+        "fuente_id": "oit_podcast",
+        "fuente_nombre": "OIT Podcast",
+        "categoria": "Laboral"
       }
     ],
     "Comex": [
@@ -339,336 +669,6 @@
         "fuente_id": "infocampo",
         "fuente_nombre": "Infocampo",
         "categoria": "Agro"
-      }
-    ],
-    "Fiscal": [
-      {
-        "id": "0eb41dbd883b",
-        "titulo": "Cómo el \"Adornigate\" complicó las declaraciones anuales de Ganancias y Bienes Personales",
-        "link": "https://www.iprofesional.com/impuestos/458005-como-el-adornigate-complico-las-declaraciones-anuales-de-ganancias-y-bienes-personales",
-        "descripcion": "La explicación y la posterior presentación de la declaración jurada del jefe de Gabinete, Manuel Adorni, impactaron en el calendario de las anuales",
-        "fecha_publicacion": "2026-06-23T11:16:00+00:00",
-        "fuente_id": "iprof_impuestos",
-        "fuente_nombre": "iProfesional Impuestos",
-        "categoria": "Fiscal"
-      },
-      {
-        "id": "9b192beabf60",
-        "titulo": "Nuevo Monotributo: guía para entender los cambios que reclama el FMI",
-        "link": "https://www.iprofesional.com/impuestos/458008-nuevo-monotributo-guia-para-entender-los-cambios-que-reclama-el-fmi",
-        "descripcion": "El Fondo Monetario Internacional cuestiona el sistema impositivo argentino y advirtió que el esquema actual es \"complejo, distorsivo e inestable\"",
-        "fecha_publicacion": "2026-06-23T11:14:00+00:00",
-        "fuente_id": "iprof_impuestos",
-        "fuente_nombre": "iProfesional Impuestos",
-        "categoria": "Fiscal"
-      },
-      {
-        "id": "8a803733ea39",
-        "titulo": "Cómo dejar de pagar Ganancias sobre el aguinaldo y desde qué monto se pagará el impuesto en julio",
-        "link": "https://www.iprofesional.com/impuestos/458007-como-dejar-de-pagar-ganancias-sobre-el-aguinaldo-y-desde-que-monto-se-pagara-en-julio",
-        "descripcion": "Para no pagar el Impuesto a las Ganancias sobre el aguinaldo en junio, el mecanismo legal es solicitar al empleador que aplique el método de diferimiento",
-        "fecha_publicacion": "2026-06-23T11:12:00+00:00",
-        "fuente_id": "iprof_impuestos",
-        "fuente_nombre": "iProfesional Impuestos",
-        "categoria": "Fiscal"
-      },
-      {
-        "id": "7ab69b7c19c4",
-        "titulo": "Los que no estaban obligados a facturar y a partir de julio lo están, esperan la prórroga",
-        "link": "https://www.ambito.com/novedades-fiscales/los-que-no-estaban-obligados-facturar-y-partir-julio-lo-estan-esperan-la-prorroga-n6291644",
-        "descripcion": "ARCA reformuló las normas de facturación, incorporando a la obligación de facturar sus operaciones a contribuyentes que antes no lo estaban, medida que entra en vigencia a la brevedad, en un período dominado por los vencimientos generales.",
-        "fecha_publicacion": "2026-06-22T23:45:00+00:00",
-        "fuente_id": "ambito_fisc",
-        "fuente_nombre": "Ámbito Fiscal",
-        "categoria": "Fiscal"
-      },
-      {
-        "id": "95143a3db0c7",
-        "titulo": "Bienes producidos con trabajo forzoso: EEUU propone aranceles y la Argentina quedaría alcanzada con el 10%",
-        "link": "https://www.ambito.com/novedades-fiscales/bienes-producidos-trabajo-forzoso-eeuu-propone-aranceles-y-la-argentina-quedaria-alcanzada-el-10-n6290810",
-        "descripcion": "La producción de bienes bajo tales condiciones de trabajo, será una restricción para comerciar con EEUU e impactará decididamente en el acceso al mercado norteamericano y, ahora también, en el nivel arancelario.",
-        "fecha_publicacion": "2026-06-19T22:29:00+00:00",
-        "fuente_id": "ambito_fisc",
-        "fuente_nombre": "Ámbito Fiscal",
-        "categoria": "Fiscal"
-      },
-      {
-        "id": "f18679c07cb7",
-        "titulo": "El RIMICABA va de la mano con el RIMI nacional",
-        "link": "https://www.ambito.com/novedades-fiscales/el-rimicaba-va-la-mano-el-rimi-nacional-n6289922",
-        "descripcion": "El régimen de incentivos porteño se encuentra íntimamente ligado al dispuesto por el gobierno nacional, aunque dispone sus propios requisitos y suma beneficios fiscales y crediticios.",
-        "fecha_publicacion": "2026-06-17T22:32:00+00:00",
-        "fuente_id": "ambito_fisc",
-        "fuente_nombre": "Ámbito Fiscal",
-        "categoria": "Fiscal"
-      }
-    ],
-    "Laboral": [
-      {
-        "id": "2244025bd3fa",
-        "titulo": "Empleada doméstica: cuánto aumenta por hora, según la categoría, en julio 2026",
-        "link": "https://www.iprofesional.com/management/458015-empleada-domestica-cuanto-aumenta-por-hora-segun-la-categoria-en-julio-2026",
-        "descripcion": "Familias y empleadas del sector se ven afectadas por un ajuste salarial insuficiente que genera incertidumbre sobre el futuro laboral",
-        "fecha_publicacion": "2026-06-23T11:12:00+00:00",
-        "fuente_id": "iprof_management",
-        "fuente_nombre": "iProfesional Management",
-        "categoria": "Laboral"
-      },
-      {
-        "id": "e6d6cc1e9727",
-        "titulo": "Qué es el \"brain fry\", el nuevo peligro de la IA para la salud mental",
-        "link": "https://www.iprofesional.com/management/458014-que-es-el-brain-fry-el-nuevo-peligro-de-la-ia-para-la-salud-mental",
-        "descripcion": "Especialistas advierten sobre la aparición de una nueva forma de fatiga vinculada al uso intensivo de inteligencia artificial. Los perfiles con más riesgo",
-        "fecha_publicacion": "2026-06-23T10:40:00+00:00",
-        "fuente_id": "iprof_management",
-        "fuente_nombre": "iProfesional Management",
-        "categoria": "Laboral"
-      },
-      {
-        "id": "4fa56fc592b3",
-        "titulo": "El emprendedor tecnológico que Meta eligió como nuevo director de WhatsApp",
-        "link": "https://www.iprofesional.com/management/458012-cambio-historico-quien-es-el-emprendedor-que-meta-eligio-como-director-de-whatsapp",
-        "descripcion": "Reemplazará a Will Cathcart, quien lidera WhatsApp desde 2019 y pasará a ocupar un nuevo cargo en Meta para crear productos desde cero",
-        "fecha_publicacion": "2026-06-23T10:20:00+00:00",
-        "fuente_id": "iprof_management",
-        "fuente_nombre": "iProfesional Management",
-        "categoria": "Laboral"
-      },
-      {
-        "id": "07f564b6ffd7",
-        "titulo": "Riesgos psicosociales en el trabajo: la amenaza invisible para la salud de los trabajadores",
-        "link": "https://voices.ilo.org/es-es/podcast/riesgos-psicosociales-en-el-trabajo-la-amenaza-invisible-para-la-salud-de-los-trabajadores",
-        "descripcion": "En este episodio del pódcast “El futuro del trabajo de la OIT”, Dafne Papandrea y Lucía Risueño Navarro explican cómo los riesgos psicosociales —como las largas jornadas laborales, la inseguridad en el empleo y el acoso en el lugar de trabajo— afectan a la salud de los trabajadores, y qué medidas pueden adoptarse para crear entornos laborales más saludables en todo el mundo.",
-        "fecha_publicacion": "2026-04-28T00:00:00+00:00",
-        "fuente_id": "oit_podcast",
-        "fuente_nombre": "OIT Podcast",
-        "categoria": "Laboral"
-      },
-      {
-        "id": "ef1638f33032",
-        "titulo": "La inteligencia artificial generativa y las desigualdades de género en el trabajo",
-        "link": "https://voices.ilo.org/es-es/podcast/la-inteligencia-artificial-generativa-y-las-desigualdades-de-genero-en-el-trabajo",
-        "descripcion": "En este episodio del pódcast de la Organización Internacional del Trabajo, Janine Berg, Economista senior en la OIT, presenta un nuevo informe sobre el impacto de la inteligencia artificial generativa en el mundo del trabajo. La experta explica por qué las mujeres están más expuestas que los hombres a los riesgos asociados a esta tecnología y qué significa esto para la igualdad en el mercado laboral.",
-        "fecha_publicacion": "2026-03-09T00:00:00+00:00",
-        "fuente_id": "oit_podcast",
-        "fuente_nombre": "OIT Podcast",
-        "categoria": "Laboral"
-      },
-      {
-        "id": "a9cae82ea7a7",
-        "titulo": "Una mirada al estado del empleo mundial y sus principales desafíos",
-        "link": "https://voices.ilo.org/es-es/podcast/una-mirada-al-estado-del-empleo-mundial-y-sus-principales-desafios",
-        "descripcion": "En este episodio del pódcast Futuro del Trabajo de la OIT, analizamos el estado del empleo y los principales desafíos que enfrentan los mercados laborales a nivel mundial y en América Latina y el Caribe, junto a Miguel Sánchez Martínez, economista del Departamento de Investigación de la OIT, y Gerson Martínez, Especialista Regional Senior en Economía Laboral.",
-        "fecha_publicacion": "2026-01-22T00:00:00+00:00",
-        "fuente_id": "oit_podcast",
-        "fuente_nombre": "OIT Podcast",
-        "categoria": "Laboral"
-      }
-    ],
-    "Energía y Minería": [
-      {
-        "id": "f02ea62d2748",
-        "titulo": "Por primera vez desde el regreso del cepo en 2019, multinacionales del sector energético volvieron a girar dividendos al exterior",
-        "link": "https://econojournal.com.ar/2026/06/cepo-cambiario-vaca-muerta-dividendos/",
-        "descripcion": "Lo que empezó a observarse en junio es la materialización de la flexibilización cambiaria aprobada por el Banco Central.",
-        "fecha_publicacion": "2026-06-23T10:28:15+00:00",
-        "fuente_id": "econojournal",
-        "fuente_nombre": "EconoJournal",
-        "categoria": "Energía y Minería"
-      },
-      {
-        "id": "8e9b770e79f3",
-        "titulo": "Por el impulso de Vaca Muerta, Neuquén volvió a romper récords históricos en producción de petróleo y gas",
-        "link": "https://econojournal.com.ar/2026/06/por-el-impulso-de-vaca-muerta-neuquen-volvio-a-romper-records-historicos-en-produccion-de-petroleo-y-gas/",
-        "descripcion": "La actividad hidrocarburífera en la provincia de Neuquén volvió a marcar un hito histórico durante mayo de 2026, impulsada por el desarrollo de los hidrocarburos no convencionales de Vaca Muerta, que marcó un nuevo registro en la producción de petróleo y de gas natural con los mayores volúmenes nunca antes registrados en la provincia. Durante [&#8230;]",
-        "fecha_publicacion": "2026-06-23T05:32:00+00:00",
-        "fuente_id": "econojournal",
-        "fuente_nombre": "EconoJournal",
-        "categoria": "Energía y Minería"
-      },
-      {
-        "id": "ef04049b2378",
-        "titulo": "Apuesta estratégica del agro: la Bolsa de Cereales exige un nuevo marco regulatorio para biocombustibles con más corte, libre competencia y combustibles para aviones",
-        "link": "https://dataenergia.ar/renovables-y-de-transicion/apuesta-estrategica-del-agro-la-bolsa-de-cereales-exige-un-nuevo-marco-regulatorio-para-biocombustibles-con-mas-corte-libre-competencia-y-combustibles-para-aviones-20266221450",
-        "descripcion": "La Bolsa de Cereales de Buenos Aires reclamó de forma prioritaria un nuevo marco regulatorio para los biocombustibles en Argentina que eleve al 15% el corte obligatorio de biodiesel y bioetanol, introduciendo un esquema de libre competencia.",
-        "fecha_publicacion": "2026-06-22T17:05:00+00:00",
-        "fuente_id": "data_energia",
-        "fuente_nombre": "Data Energía",
-        "categoria": "Energía y Minería"
-      },
-      {
-        "id": "3eb37d2b0643",
-        "titulo": "Diez claves para tratar de superar la falsa dicotomía entre proteccionismo industrial y apertura comercial indiscriminada",
-        "link": "https://econojournal.com.ar/2026/06/diez-claves-para-tratar-de-superar-la-falsa-dicotomia-entre-proteccionismo-y-apertura/",
-        "descripcion": "Misión Productiva elaboró el “Manifiesto por el Industrialismo del Siglo XXI”, un decálogo que busca aportar una nueva mirada al debate sobre el desarrollo productivo argentino. La propuesta parte de la necesidad de superar la discusión pendular entre protección y apertura para construir una estrategia industrial moderna, sostenible en el tiempo y adaptada a los [&#8230;]",
-        "fecha_publicacion": "2026-06-22T13:34:21+00:00",
-        "fuente_id": "econojournal",
-        "fuente_nombre": "EconoJournal",
-        "categoria": "Energía y Minería"
-      },
-      {
-        "id": "3d1f39bc9b40",
-        "titulo": "Vaca Muerta y la nueva era de integración en el Cono Sur: el gas argentino garantiza el abastecimiento regional por hasta 124 años",
-        "link": "https://dataenergia.ar/gas/vaca-muerta-y-la-nueva-era-de-integracion-en-el-cono-sur-el-gas-argentino-garantiza-el-abastecimiento-regional-por-hasta-124-anos-202662119400",
-        "descripcion": "Un informe conjunto de la International Gas Union, ARPEL y OLADE determinó que las reservas de Vaca Muerta garantizan el abastecimiento de gas del Cono Sur por un lapso de entre 45 y 124 años, impulsando una nueva era de integración regional.",
-        "fecha_publicacion": "2026-06-21T22:40:00+00:00",
-        "fuente_id": "data_energia",
-        "fuente_nombre": "Data Energía",
-        "categoria": "Energía y Minería"
-      },
-      {
-        "id": "dd8c1f86f692",
-        "titulo": "Paradoja energética: la Argentina avanzó en el ranking global de transición del Foro Económico Mundial, pero la falta de infraestructura y financiamiento frena su potencial",
-        "link": "https://dataenergia.ar/renovables-y-de-transicion/paradoja-energetica-la-argentina-avanzo-en-el-ranking-global-de-transicion-del-foro-economico-mundial-pero-la-falta-de-infraestructura-y-financiamiento-frena-su-potencial-202662119290",
-        "descripcion": "La Argentina avanzó al puesto 56 del ranking mundial de Transición Energética del Foro Económico Mundial (WEF) tras mejorar su calificación a 57,4 puntos en 2026, impulsada por sus sólidos indicadores de acceso, cobertura y seguridad de suministro.",
-        "fecha_publicacion": "2026-06-21T22:29:00+00:00",
-        "fuente_id": "data_energia",
-        "fuente_nombre": "Data Energía",
-        "categoria": "Energía y Minería"
-      }
-    ],
-    "Automotor": [
-      {
-        "id": "d022f4e40423",
-        "titulo": "Lanzamiento: Royal Enfield Goan Classic 350",
-        "link": "https://motorwebargentina.com/lanzamiento-royal-enfield-goan-classic-350/",
-        "descripcion": "Royal Enfield presentó oficialmente en Argentina un nuevo modelo, que reúne características retro con un estilo único, se trata de la nueva Royal Enfield Goan Classic 350, que pasa a ser una nueva opción dentro de su gama Classic. La Goan Classic hace básicamente un homenaje a la cultura bobber, que inició un movimiento de [&#8230;] La entrada Lanzamiento: Royal Enfield Goan Classic 350 se publicó primero en Motorweb Argentina .",
-        "fecha_publicacion": "2026-06-23T10:07:59+00:00",
-        "fuente_id": "motorweb",
-        "fuente_nombre": "Motorweb Argentina",
-        "categoria": "Automotor"
-      },
-      {
-        "id": "bfcedd12ef8a",
-        "titulo": "SUV de marca clásica vs. novedad china: qué conviene comprar entre Ford Territory y BYD Song Pro",
-        "link": "https://www.iprofesional.com/autos/457962-suv-de-marca-clasica-vs-novedad-china-conviene-un-ford-territory-o-byd-song-pro",
-        "descripcion": "Dos SUV híbridos de tamaño mediano, se enfrentan como rivales en una compra inteligente por la eficiencia de combustible. ¿Cuál conviene más?",
-        "fecha_publicacion": "2026-06-22T21:17:00+00:00",
-        "fuente_id": "iprof_autos",
-        "fuente_nombre": "iProfesional Autos",
-        "categoria": "Automotor"
-      },
-      {
-        "id": "c3f933716fe6",
-        "titulo": "Tres señales que alimentan versiones sobre el desembarco de Tesla en Argentina con autos eléctricos",
-        "link": "https://www.iprofesional.com/autos/457505-3-senales-que-alimentan-versiones-sobre-arribo-de-tesla-con-autos-electricos-a-argentina",
-        "descripcion": "Movimientos recientes, inversión estratégica y cambios de gestión impulsan nuevas expectativas sobre un posible desembarco de la compañía de Musk",
-        "fecha_publicacion": "2026-06-22T20:45:00+00:00",
-        "fuente_id": "iprof_autos",
-        "fuente_nombre": "iProfesional Autos",
-        "categoria": "Automotor"
-      },
-      {
-        "id": "efde0891a70b",
-        "titulo": "Chevrolet apuesta al segmento de los SUV compactos con el nuevo Sonic: cuánto cuesta y qué ofrece",
-        "link": "https://www.iprofesional.com/autos/456420-cuanto-cuesta-y-que-ofrece-el-nuevo-autos-suv-compacto-chevrolet-sonic",
-        "descripcion": "Disponible en dos versiones, el modelo llega al país con tecnología de punta y planes de ahorro con adjudicación a tasa 0%. Más detalles en esta nota",
-        "fecha_publicacion": "2026-06-22T20:22:00+00:00",
-        "fuente_id": "iprof_autos",
-        "fuente_nombre": "iProfesional Autos",
-        "categoria": "Automotor"
-      },
-      {
-        "id": "3eda4e5ffcf4",
-        "titulo": "Royal Enfield presentó la nueva Goan Classic 350: cuesta $7.900.000",
-        "link": "https://arodarpost.com.ar/royal-enfield-presento-la-nueva-goan-classic-350-cuesta-7-900-000/",
-        "descripcion": "Royal Enfield presentó en Argentina la nueva Goan Classic 350, un modelo que incorpora una nueva expresión dentro de la familia Classic y amplía la oferta de la compañía para los motociclistas que buscan una moto con identidad propia, estilo personalizado y ADN clásico. La presentación se realizó en el marco de una nueva edición [&#8230;]",
-        "fecha_publicacion": "2026-06-22T18:05:42+00:00",
-        "fuente_id": "arodar",
-        "fuente_nombre": "A Rodar Post",
-        "categoria": "Automotor"
-      },
-      {
-        "id": "ad6356a1253f",
-        "titulo": "Automotriz china acelera su crecimiento y supera un nuevo récord mundial",
-        "link": "https://www.ambito.com/autos/automotriz-china-acelera-su-crecimiento-y-supera-un-nuevo-record-mundial-n6291503",
-        "descripcion": "La compañía alcanzó más de 1,5 millones de unidades entregadas en tiempo récord y consolida su presencia internacional impulsada por la demanda de vehículos eléctricos y su alianza con un grupo automotor global.",
-        "fecha_publicacion": "2026-06-22T16:46:00+00:00",
-        "fuente_id": "ambito_autos",
-        "fuente_nombre": "Ámbito Autos",
-        "categoria": "Automotor"
-      },
-      {
-        "id": "d8bd1e286348",
-        "titulo": "Autopartista multinacional entró en procedimiento de crisis, suspende personal y rebaja sueldos (incluido el directorio)",
-        "link": "https://arodarpost.com.ar/autopartista-multinacional-entro-en-procedimiento-de-crisis-suspende-personal-y-rebaja-sueldos-incluido-el-directorio/",
-        "descripcion": "La situación de la industria autopartista argentina sigue en estado crítico. Como vienen advirtiendo la asociación que agrupa a los fabricantes locales (AFAC), el panorama es sombrío ante la caída de la demanda, los nuevos proyectos automotrices con alta participación de piezas importadas y la pérdida de competitividad para exportar presenta un escenario con futuro [&#8230;]",
-        "fecha_publicacion": "2026-06-22T16:24:27+00:00",
-        "fuente_id": "arodar",
-        "fuente_nombre": "A Rodar Post",
-        "categoria": "Automotor"
-      },
-      {
-        "id": "87aeb66ed4a2",
-        "titulo": "El Dodge Charger Daytona quiere que no pienses más en el V8",
-        "link": "https://noticias.autocosmos.com.ar/2026/06/22/el-dodge-charger-daytona-quiere-que-no-pienses-mas-en-el-v8",
-        "descripcion": "La marca está probando una nueva batería de estado sólido promete más autonomía y recargas en minutos.",
-        "fecha_publicacion": "2026-06-22T15:00:01+00:00",
-        "fuente_id": "autocosmos",
-        "fuente_nombre": "Autocosmos Argentina",
-        "categoria": "Automotor"
-      }
-    ],
-    "Internacional": [
-      {
-        "id": "461d7725426e",
-        "titulo": "La inflación subyacente de Singapur en mayo queda por debajo de lo previsto, en el 1,4%",
-        "link": "https://es.investing.com/news/economic-indicators/la-inflacion-subyacente-de-singapur-en-mayo-queda-por-debajo-de-lo-previsto-en-el-14-93CH-3712573",
-        "descripcion": "",
-        "fecha_publicacion": "2026-06-23T10:07:51+00:00",
-        "fuente_id": "investing_intl2",
-        "fuente_nombre": "Investing Mundo",
-        "categoria": "Internacional"
-      },
-      {
-        "id": "add7ff3581a8",
-        "titulo": "La inflación del IPC de Singapur defrauda las expectativas en mayo",
-        "link": "https://es.investing.com/news/economic-indicators/la-inflacion-del-ipc-de-singapur-defrauda-las-expectativas-en-mayo-3712255",
-        "descripcion": "",
-        "fecha_publicacion": "2026-06-23T05:11:20+00:00",
-        "fuente_id": "investing_intl2",
-        "fuente_nombre": "Investing Mundo",
-        "categoria": "Internacional"
-      },
-      {
-        "id": "bab83e6850df",
-        "titulo": "La actividad empresarial de Japón se acelera en junio según el PMI",
-        "link": "https://es.investing.com/news/economic-indicators/la-actividad-empresarial-de-japon-se-acelera-en-junio-segun-el-pmi-3712188",
-        "descripcion": "",
-        "fecha_publicacion": "2026-06-23T00:55:32+00:00",
-        "fuente_id": "investing_intl2",
-        "fuente_nombre": "Investing Mundo",
-        "categoria": "Internacional"
-      },
-      {
-        "id": "ea2966884b7a",
-        "titulo": "Países de la UE piden más fondos para energía limpia antes de reforma",
-        "link": "https://es.investing.com/news/world-news/paises-de-la-ue-piden-mas-fondos-para-energia-limpia-antes-de-reforma-93CH-3711666",
-        "descripcion": "",
-        "fecha_publicacion": "2026-06-22T14:53:24+00:00",
-        "fuente_id": "investing_intl",
-        "fuente_nombre": "Investing Internacional",
-        "categoria": "Internacional"
-      },
-      {
-        "id": "0f0f03c33b3a",
-        "titulo": "Canadá y BC se asocian en un plan de infraestructuras de 5.000 millones de dólares para vivienda",
-        "link": "https://es.investing.com/news/world-news/canada-y-bc-se-asocian-en-un-plan-de-infraestructuras-de-5000-millones-de-dolares-para-vivienda-93CH-3709538",
-        "descripcion": "",
-        "fecha_publicacion": "2026-06-18T19:47:41+00:00",
-        "fuente_id": "investing_intl",
-        "fuente_nombre": "Investing Internacional",
-        "categoria": "Internacional"
-      },
-      {
-        "id": "22f1156cfdc7",
-        "titulo": "Kuwait Petroleum aumenta su producción de petróleo a 2 millones de barriles tras las reparaciones",
-        "link": "https://es.investing.com/news/world-news/kuwait-petroleum-aumenta-su-produccion-de-petroleo-a-2-millones-de-barriles-tras-las-reparaciones-93CH-3709223",
-        "descripcion": "",
-        "fecha_publicacion": "2026-06-18T13:39:18+00:00",
-        "fuente_id": "investing_intl",
-        "fuente_nombre": "Investing Internacional",
-        "categoria": "Internacional"
       }
     ],
     "Fulbito": [
