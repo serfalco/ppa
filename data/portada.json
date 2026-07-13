@@ -1,38 +1,502 @@
 {
-  "generado_en": "2026-07-13T11:59:32.937725+00:00",
+  "generado_en": "2026-07-13T19:22:24.986140+00:00",
   "destacados": [
     {
-      "id": "e4fe7c9e8ce1",
-      "titulo": "Macron pide más proyectos de defensa en la UE tras el fracaso del acuerdo de cazas",
-      "link": "https://es.investing.com/news/economy-news/macron-pide-mas-proyectos-de-defensa-en-la-ue-tras-el-fracaso-del-acuerdo-de-cazas-93CH-3739188",
-      "descripcion": "",
-      "fecha_publicacion": "2026-07-13T11:48:17+00:00",
-      "fuente_id": "investing_economia",
-      "fuente_nombre": "Investing Economía",
+      "id": "dcdb8f9921d2",
+      "titulo": "Strategy autorizó nuevas ventas de Bitcoin y puso en jaque el modelo de la tesorería cripto",
+      "link": "https://www.iproup.com/economia-digital/69805-por-que-strategy-volvio-autorizar-ventas-de-bitcoin",
+      "descripcion": "El mayor holder corporativo de Bitcoin del mundo autorizó ventas por unos $1.250 millones en BTC, por lo que puso en jaque su modelo de tesorería cripto",
+      "fecha_publicacion": "2026-07-13T18:45:00+00:00",
+      "fuente_id": "iproup_eco",
+      "fuente_nombre": "iProUP Economía Digital",
       "categoria": "Mercados"
     },
     {
-      "id": "3cda0799ebfc",
-      "titulo": "Cómo comprar un Smart TV Samsung de 55 pulgadas con hasta 32% de descuento",
-      "link": "https://www.iprofesional.com/economia/459802-supermercado-changomas-cuanto-cuesta-comprar-un-smart-tv-samsung-4k-de-55-pulgadas-con-rebaja-y-cuotas",
-      "descripcion": "Aprovechá una promoción exclusiva en electrónicos: podés llevar una pantalla 4K de 55 pulgadas con rebaja superior al 30% y plan en cuotas",
-      "fecha_publicacion": "2026-07-13T11:44:00+00:00",
-      "fuente_id": "iprof_economia",
-      "fuente_nombre": "iProfesional Economía",
+      "id": "bb0fb96a9dcf",
+      "titulo": "Sube el petróleo, caen acciones y rebota el riesgo país tras la nueva escalada en Medio Oriente",
+      "link": "https://www.iprofesional.com/finanzas/459823-sube-el-petroleo-caen-acciones-y-rebota-el-riesgo-pais-tras-escalada-en-medio-oriente",
+      "descripcion": "Wall Street arranca en rojo por la nueva tensión entre Estados Unidos e Irán, mientras el petróleo vuelve a subir por la crisis en Medio Oriente",
+      "fecha_publicacion": "2026-07-13T19:15:00+00:00",
+      "fuente_id": "iprof_finanzas",
+      "fuente_nombre": "iProfesional Finanzas",
       "categoria": "Finanzas"
     },
     {
-      "id": "ae338a4d7558",
-      "titulo": "El PIB de Kazajistán creció un 4,1% en el primer semestre del año",
-      "link": "https://es.investing.com/news/economic-indicators/el-pib-de-kazajistan-crecio-un-41-en-el-primer-semestre-del-ano-93CH-3738678",
+      "id": "f61b34c72c13",
+      "titulo": "California ofrece un reembolso de 3.500 dólares a compradores de vehículos eléctricos nuevos",
+      "link": "https://es.investing.com/news/world-news/california-ofrece-un-reembolso-de-3500-dolares-a-compradores-de-vehiculos-electricos-nuevos-93CH-3739845",
       "descripcion": "",
-      "fecha_publicacion": "2026-07-13T10:04:03+00:00",
-      "fuente_id": "investing_intl2",
-      "fuente_nombre": "Investing Mundo",
+      "fecha_publicacion": "2026-07-13T16:18:36+00:00",
+      "fuente_id": "investing_intl",
+      "fuente_nombre": "Investing Internacional",
       "categoria": "Internacional"
     }
   ],
   "secciones": {
+    "Finanzas": [
+      {
+        "id": "bb0fb96a9dcf",
+        "titulo": "Sube el petróleo, caen acciones y rebota el riesgo país tras la nueva escalada en Medio Oriente",
+        "link": "https://www.iprofesional.com/finanzas/459823-sube-el-petroleo-caen-acciones-y-rebota-el-riesgo-pais-tras-escalada-en-medio-oriente",
+        "descripcion": "Wall Street arranca en rojo por la nueva tensión entre Estados Unidos e Irán, mientras el petróleo vuelve a subir por la crisis en Medio Oriente",
+        "fecha_publicacion": "2026-07-13T19:15:00+00:00",
+        "fuente_id": "iprof_finanzas",
+        "fuente_nombre": "iProfesional Finanzas",
+        "categoria": "Finanzas"
+      },
+      {
+        "id": "1b0e746f1e20",
+        "titulo": "Mercados: sube el petróleo y caen los activos argentinos tras una nueva escalada en Medio Oriente",
+        "link": "https://www.lanacion.com.ar/economia/dolar/mercados-sube-el-petroleo-y-caen-los-activos-argentinos-tras-una-nueva-escalada-en-medio-oriente-nid13072026/",
+        "descripcion": "La tensión entre Estados Unidos e Irán impulsa el precio del crudo; el riesgo país sube ligeramente, mientras que los bonos y acciones operan en terreno negativo",
+        "fecha_publicacion": "2026-07-13T19:11:27+00:00",
+        "fuente_id": "lanacion_eco",
+        "fuente_nombre": "La Nación Economía",
+        "categoria": "Finanzas"
+      },
+      {
+        "id": "a29260050a60",
+        "titulo": "Esta inversión rápida y sencilla le gana por varios puntos al plazo fijo de grandes bancos",
+        "link": "https://www.iprofesional.com/finanzas/459677-esta-inversion-rapida-y-sencilla-le-gana-por-varios-puntos-al-plazo-fijo-de-grandes-bancos",
+        "descripcion": "La pelea por los pesos se recalienta, qué billetera virtual o plazo fijo paga más por dejar $500.000 en cuenta durante el mes de julio",
+        "fecha_publicacion": "2026-07-13T19:11:00+00:00",
+        "fuente_id": "iprof_economia",
+        "fuente_nombre": "iProfesional Economía",
+        "categoria": "Finanzas"
+      },
+      {
+        "id": "338439c68d84",
+        "titulo": "El Gobierno flexibiliza requisitos para otorgar licencias y certificados a empresas aéreas",
+        "link": "https://www.lanacion.com.ar/economia/el-gobierno-flexibiliza-requisitos-para-otorgar-licencias-y-certificados-a-empresas-aereas-nid13072026/",
+        "descripcion": "Una resolución de la ANAC habilita la emisión de certificaciones provisorias cuando solo queden pendientes requisitos administrativos o documentales",
+        "fecha_publicacion": "2026-07-13T19:09:56+00:00",
+        "fuente_id": "lanacion_eco",
+        "fuente_nombre": "La Nación Economía",
+        "categoria": "Finanzas"
+      },
+      {
+        "id": "ff81de0b00d8",
+        "titulo": "Este gigante de Wall Street reveló qué conviene hacer con el CEDEAR de Amazon",
+        "link": "https://www.iprofesional.com/finanzas/459741-este-gigante-de-wall-street-revelo-que-conviene-hacer-con-el-cedear-de-amazon",
+        "descripcion": "Goldman Sachs revisó las cuentas de Amazon, elevó su precio objetivo de acá en adelante y reveló por qué todavía recomienda comprar sus acciones",
+        "fecha_publicacion": "2026-07-13T19:01:00+00:00",
+        "fuente_id": "iprof_finanzas",
+        "fuente_nombre": "iProfesional Finanzas",
+        "categoria": "Finanzas"
+      },
+      {
+        "id": "2fbdf55792b2",
+        "titulo": "Dólar futuro: estiman que la posición vendida del BCRA aumentó casi u$s1.000 millones en poco más de un mes",
+        "link": "https://www.ambito.com/finanzas/dolar-futuro-estiman-que-la-posicion-vendida-del-bcra-aumento-casi-us1000-millones-poco-mas-un-mes-n6298968",
+        "descripcion": "La intervención para controlar el dólar se expandió, elevando el interés abierto en futuros a u$s3.879 millones. La búsqueda de cobertura se intensifica en invierno.",
+        "fecha_publicacion": "2026-07-13T18:50:00+00:00",
+        "fuente_id": "ambito_fin",
+        "fuente_nombre": "Ámbito Finanzas",
+        "categoria": "Finanzas"
+      },
+      {
+        "id": "5dbd6429097d",
+        "titulo": "Qué sueldo cobra un empleado de McDonald’s, Burger King y Starbucks en julio",
+        "link": "https://www.iprofesional.com/economia/459843-que-sueldo-cobra-empleado-mcdonalds-burger-king-y-starbucks-julio-2026",
+        "descripcion": "El gremio anunció el salario establecido y comienza a aplicarse una nueva suba para el trimestre agosto-octubre, con porcentajes y sumas no remunerativas",
+        "fecha_publicacion": "2026-07-13T18:47:00+00:00",
+        "fuente_id": "iprof_economia",
+        "fuente_nombre": "iProfesional Economía",
+        "categoria": "Finanzas"
+      },
+      {
+        "id": "cabd56ef8206",
+        "titulo": "Fue un peso pesado del BCRA y alerta que el resultado del plan Caputo por ahora es decepcionante",
+        "link": "https://www.iprofesional.com/economia/459438-un-ex-peso-pesado-del-bcra-alerta-que-el-resultado-del-plan-caputo-por-ahora-decepciona",
+        "descripcion": "Un reconocido economista alerta por falta de señales positivas en inversión y empleo pese a los avances en control de precios y dólar",
+        "fecha_publicacion": "2026-07-13T18:45:00+00:00",
+        "fuente_id": "iprof_economia",
+        "fuente_nombre": "iProfesional Economía",
+        "categoria": "Finanzas"
+      }
+    ],
+    "Energía y Minería": [
+      {
+        "id": "b9e66650a0a2",
+        "titulo": "Emergencia energética: el Gobierno prorroga hasta el fin de su mandato las facultades extraordinarias para desregular el sector eléctrico",
+        "link": "https://econojournal.com.ar/energia/emergencia-energetica-el-gobierno-prorroga-facultades-extraordinarias/",
+        "descripcion": "El Gobierno nacional prorrogó este lunes la Emergencia del Sector Energético en los segmentos de generación, transporte y distribución de energía eléctrica bajo jurisdicción federal hasta el 31 de diciembre de 2027. La medida le permitirá a la Secretaría de Energía mantener las facultades extraordinarias para intervenir en los cuadros tarifarios de transición, renegociar contratos [&#8230;]",
+        "fecha_publicacion": "2026-07-13T18:55:03+00:00",
+        "fuente_id": "econojournal",
+        "fuente_nombre": "EconoJournal",
+        "categoria": "Energía y Minería"
+      },
+      {
+        "id": "50828d5ce590",
+        "titulo": "La batalla de la arena en Vaca Muerta: el insumo estratégico que consume tres piletas olímpicas por pozo y desvela a la logística",
+        "link": "https://dataenergia.ar/petroleo-y-combustibles/la-batalla-de-la-arena-en-vaca-muerta-el-insumo-estrategico-que-consume-tres-piletas-olimpicas-por-pozo-y-desvela-a-la-logistica-202671220100",
+        "descripcion": "La provisión de arena de fractura se consolida como uno de los desafíos logísticos y económicos más complejos para Vaca Muerta, donde cada pozo promedio consume hasta 15.000 toneladas de material, equivalentes a rellenar ocho veces el Obelisco o movilizar una flota de 415 camiones en ruta.",
+        "fecha_publicacion": "2026-07-12T23:10:00+00:00",
+        "fuente_id": "data_energia",
+        "fuente_nombre": "Data Energía",
+        "categoria": "Energía y Minería"
+      },
+      {
+        "id": "862498d94764",
+        "titulo": "Vaca Muerta: empresa vinculada al dueño del Inter de Miami le ganó a Techint y construirá los gasoductos de Argentina LNG",
+        "link": "https://dataenergia.ar/gas/vaca-muerta-empresa-vinculada-al-dueno-del-inter-de-miami-le-gano-a-techint-y-construira-los-gasoductos-de-argentina-lng-20267122020",
+        "descripcion": "Un consorcio internacional liderado por Pumpco (subsidiaria de la norteamericana MasTec), junto a Bonatti y Contreras Hermanos, se impuso ante Techint-Sacde en la licitación para construir los dos ductos clave del proyecto Argentina LNG, una obra de infraestructura valuada en u$s1.200 millones.",
+        "fecha_publicacion": "2026-07-12T23:02:00+00:00",
+        "fuente_id": "data_energia",
+        "fuente_nombre": "Data Energía",
+        "categoria": "Energía y Minería"
+      },
+      {
+        "id": "03824774b97f",
+        "titulo": "El desafío de las empresas familiares: cómo trascender al fundador",
+        "link": "https://econojournal.com.ar/destacada/el-desafio-de-las-empresas-familiares-como-trascender-al-fundador/",
+        "descripcion": "Nacer hijo de inmigrantes en el sur del conurbano bonaerense; estudiar y convertirse en la primera generación universitaria de la familia; emprender junto a amigos, colegas o hermanos; fundar una empresa; atravesar crisis económicas, hiperinflación, devaluaciones y cambios de modelo; generar empleo y abrirse camino en una industria de alta complejidad. Cumplir 60 años y [&#8230;]",
+        "fecha_publicacion": "2026-07-12T15:28:16+00:00",
+        "fuente_id": "econojournal",
+        "fuente_nombre": "EconoJournal",
+        "categoria": "Energía y Minería"
+      },
+      {
+        "id": "9132393ff208",
+        "titulo": "Nueva cámara química y petroquímica para la cadena de valor de Vaca Muerta",
+        "link": "https://econojournal.com.ar/actualidad-mineria-energia/nueva-camara-quimica-y-petroquimica-para-la-cadena-de-valor-de-vaca-muerta/",
+        "descripcion": "Se conformó formalmente la Cámara de Empresas Químicas, Petroquímicas y Afines de Neuquén (QPQ), una nueva organización sectorial que funcionará bajo el paraguas de la Federación de Cámaras del Sector Energético de Neuquén (FECENE) y que tiene como objetivo acompañar el avance operativo de Vaca Muerta y al entramado empresarial en la Patagonia. La aparición [&#8230;]",
+        "fecha_publicacion": "2026-07-10T16:30:18+00:00",
+        "fuente_id": "econojournal",
+        "fuente_nombre": "EconoJournal",
+        "categoria": "Energía y Minería"
+      },
+      {
+        "id": "d452b560196c",
+        "titulo": "Noruega y el petróleo: un modelo para tener en cuenta",
+        "link": "https://dataenergia.ar/petroleo-y-combustibles/noruega-y-el-petroleo-un-modelo-para-tener-en-cuenta-2026781550",
+        "descripcion": "En 1969, Noruega descubrió petróleo en el Mar del Norte. Era un país cuya economía dependía principalmente de la pesca y la actividad marítima. En ese momento tomó una decisión que cambiaría su economía para siempre.",
+        "fecha_publicacion": "2026-07-08T18:05:00+00:00",
+        "fuente_id": "data_energia",
+        "fuente_nombre": "Data Energía",
+        "categoria": "Energía y Minería"
+      }
+    ],
+    "Mercados": [
+      {
+        "id": "dcdb8f9921d2",
+        "titulo": "Strategy autorizó nuevas ventas de Bitcoin y puso en jaque el modelo de la tesorería cripto",
+        "link": "https://www.iproup.com/economia-digital/69805-por-que-strategy-volvio-autorizar-ventas-de-bitcoin",
+        "descripcion": "El mayor holder corporativo de Bitcoin del mundo autorizó ventas por unos $1.250 millones en BTC, por lo que puso en jaque su modelo de tesorería cripto",
+        "fecha_publicacion": "2026-07-13T18:45:00+00:00",
+        "fuente_id": "iproup_eco",
+        "fuente_nombre": "iProUP Economía Digital",
+        "categoria": "Mercados"
+      },
+      {
+        "id": "f39e9cdc73f4",
+        "titulo": "Forbes eligió esta criptomoneda entre sus apuestas para 2026",
+        "link": "https://www.iproup.com/economia-digital/69803-zcash-se-dispara-y-forbes-la-incluye-entre-las-mejores-criptomonedas-para-comprar",
+        "descripcion": "La red alcanzó niveles récord de monedas protegidas y recibió respaldo de inversores conocidos, aunque mantiene desafíos de adopción y regulación",
+        "fecha_publicacion": "2026-07-13T18:30:00+00:00",
+        "fuente_id": "iproup_eco",
+        "fuente_nombre": "iProUP Economía Digital",
+        "categoria": "Mercados"
+      },
+      {
+        "id": "c85f0afc0b4f",
+        "titulo": "Moraes prohíbe a Flavio Bolsonaro visitar a su padre por 90 días",
+        "link": "https://es.investing.com/news/economy-news/moraes-prohibe-a-flavio-bolsonaro-visitar-a-su-padre-por-90-dias-93CH-3739922",
+        "descripcion": "",
+        "fecha_publicacion": "2026-07-13T18:24:22+00:00",
+        "fuente_id": "investing_economia",
+        "fuente_nombre": "Investing Economía",
+        "categoria": "Mercados"
+      },
+      {
+        "id": "2cbd2c9ae1d3",
+        "titulo": "Los bonistas de Senegal inician conversaciones para formar un grupo de acreedores",
+        "link": "https://es.investing.com/news/economy-news/los-bonistas-de-senegal-inician-conversaciones-para-formar-un-grupo-de-acreedores-93CH-3739915",
+        "descripcion": "",
+        "fecha_publicacion": "2026-07-13T18:05:11+00:00",
+        "fuente_id": "investing_economia",
+        "fuente_nombre": "Investing Economía",
+        "categoria": "Mercados"
+      },
+      {
+        "id": "ed35e95a7d9b",
+        "titulo": "Uruguay vuelve a la carga por los inversores argentinos para ampliar su desarrollo inmobiliario",
+        "link": "https://www.iproup.com/economia-digital/69773-uruguay-busca-volver-a-captar-al-inversor-argentino-para-ampliar-su-negocio-inmobiliario",
+        "descripcion": "Con un valor competitivo por metro cuadrado y estabilidad jurídica, esta firma busca tentar al inversor argentino mediante una preventa exclusiva en pozo.",
+        "fecha_publicacion": "2026-07-13T17:45:00+00:00",
+        "fuente_id": "iproup_eco",
+        "fuente_nombre": "iProUP Economía Digital",
+        "categoria": "Mercados"
+      },
+      {
+        "id": "73a0e7b6222b",
+        "titulo": "El tráfico de barcos por el Estrecho de Ormuz cae un 60%",
+        "link": "https://es.investing.com/news/economy-news/el-trafico-de-barcos-por-el-estrecho-de-ormuz-cae-un-60-3739903",
+        "descripcion": "",
+        "fecha_publicacion": "2026-07-13T17:37:09+00:00",
+        "fuente_id": "investing_economia",
+        "fuente_nombre": "Investing Economía",
+        "categoria": "Mercados"
+      }
+    ],
+    "Laboral": [
+      {
+        "id": "aa77621636ce",
+        "titulo": "La deuda detrás del delivery: por qué cada vez más repartidores piden créditos a las apps",
+        "link": "https://www.iprofesional.com/finanzas/459830-por-que-cada-vez-mas-repartidores-piden-creditos-a-las-apps-de-delivery",
+        "descripcion": "Los préstamos digitales crecieron entre repartidores que no acceden al banco, pero abren un debate por el nivel de endeudamiento",
+        "fecha_publicacion": "2026-07-13T17:00:00+00:00",
+        "fuente_id": "iprof_management",
+        "fuente_nombre": "iProfesional Management",
+        "categoria": "Laboral"
+      },
+      {
+        "id": "045317e1aac3",
+        "titulo": "Facebook y Zolvers, las plataformas clave para conseguir trabajo rápido de limpieza",
+        "link": "https://www.iprofesional.com/management/459796-las-claves-para-conseguir-trabajo-de-limpieza-por-hora-en-pocos-dias",
+        "descripcion": "Descubrí dónde encontrar trabajo de limpieza por hora, qué plataformas usar y los consejos clave para conseguir clientes de forma rápida",
+        "fecha_publicacion": "2026-07-13T14:17:00+00:00",
+        "fuente_id": "iprof_management",
+        "fuente_nombre": "iProfesional Management",
+        "categoria": "Laboral"
+      },
+      {
+        "id": "d72581205033",
+        "titulo": "Con Elon Musk a la cabeza, estas son las 10 personas más ricas del mundo",
+        "link": "https://www.iprofesional.com/actualidad/459747-con-elon-musk-a-la-cabeza-estas-son-las-10-personas-mas-ricas-del-mundo",
+        "descripcion": "La salida a bolsa de SpaceX catapultó la fortuna de su fundador a niveles nunca antes vistos. El ranking de los máximos magnates del planeta",
+        "fecha_publicacion": "2026-07-13T12:41:00+00:00",
+        "fuente_id": "iprof_management",
+        "fuente_nombre": "iProfesional Management",
+        "categoria": "Laboral"
+      },
+      {
+        "id": "07f564b6ffd7",
+        "titulo": "Riesgos psicosociales en el trabajo: la amenaza invisible para la salud de los trabajadores",
+        "link": "https://voices.ilo.org/es-es/podcast/riesgos-psicosociales-en-el-trabajo-la-amenaza-invisible-para-la-salud-de-los-trabajadores",
+        "descripcion": "En este episodio del pódcast “El futuro del trabajo de la OIT”, Dafne Papandrea y Lucía Risueño Navarro explican cómo los riesgos psicosociales —como las largas jornadas laborales, la inseguridad en el empleo y el acoso en el lugar de trabajo— afectan a la salud de los trabajadores, y qué medidas pueden adoptarse para crear entornos laborales más saludables en todo el mundo.",
+        "fecha_publicacion": "2026-04-28T00:00:00+00:00",
+        "fuente_id": "oit_podcast",
+        "fuente_nombre": "OIT Podcast",
+        "categoria": "Laboral"
+      },
+      {
+        "id": "ef1638f33032",
+        "titulo": "La inteligencia artificial generativa y las desigualdades de género en el trabajo",
+        "link": "https://voices.ilo.org/es-es/podcast/la-inteligencia-artificial-generativa-y-las-desigualdades-de-genero-en-el-trabajo",
+        "descripcion": "En este episodio del pódcast de la Organización Internacional del Trabajo, Janine Berg, Economista senior en la OIT, presenta un nuevo informe sobre el impacto de la inteligencia artificial generativa en el mundo del trabajo. La experta explica por qué las mujeres están más expuestas que los hombres a los riesgos asociados a esta tecnología y qué significa esto para la igualdad en el mercado laboral.",
+        "fecha_publicacion": "2026-03-09T00:00:00+00:00",
+        "fuente_id": "oit_podcast",
+        "fuente_nombre": "OIT Podcast",
+        "categoria": "Laboral"
+      },
+      {
+        "id": "a9cae82ea7a7",
+        "titulo": "Una mirada al estado del empleo mundial y sus principales desafíos",
+        "link": "https://voices.ilo.org/es-es/podcast/una-mirada-al-estado-del-empleo-mundial-y-sus-principales-desafios",
+        "descripcion": "En este episodio del pódcast Futuro del Trabajo de la OIT, analizamos el estado del empleo y los principales desafíos que enfrentan los mercados laborales a nivel mundial y en América Latina y el Caribe, junto a Miguel Sánchez Martínez, economista del Departamento de Investigación de la OIT, y Gerson Martínez, Especialista Regional Senior en Economía Laboral.",
+        "fecha_publicacion": "2026-01-22T00:00:00+00:00",
+        "fuente_id": "oit_podcast",
+        "fuente_nombre": "OIT Podcast",
+        "categoria": "Laboral"
+      }
+    ],
+    "Internacional": [
+      {
+        "id": "f61b34c72c13",
+        "titulo": "California ofrece un reembolso de 3.500 dólares a compradores de vehículos eléctricos nuevos",
+        "link": "https://es.investing.com/news/world-news/california-ofrece-un-reembolso-de-3500-dolares-a-compradores-de-vehiculos-electricos-nuevos-93CH-3739845",
+        "descripcion": "",
+        "fecha_publicacion": "2026-07-13T16:18:36+00:00",
+        "fuente_id": "investing_intl",
+        "fuente_nombre": "Investing Internacional",
+        "categoria": "Internacional"
+      },
+      {
+        "id": "c8d8f1e1f6c8",
+        "titulo": "Turquía anuncia préstamos por 21.280 millones de dólares para fabricantes",
+        "link": "https://es.investing.com/news/world-news/turquia-anuncia-prestamos-por-21280-millones-de-dolares-para-fabricantes-93CH-3739832",
+        "descripcion": "",
+        "fecha_publicacion": "2026-07-13T16:11:04+00:00",
+        "fuente_id": "investing_intl",
+        "fuente_nombre": "Investing Internacional",
+        "categoria": "Internacional"
+      },
+      {
+        "id": "39430be4d0fd",
+        "titulo": "Reino Unido se une al programa de préstamos de defensa de la UE para Ucrania",
+        "link": "https://es.investing.com/news/world-news/reino-unido-se-une-al-programa-de-prestamos-de-defensa-de-la-ue-para-ucrania-93CH-3739827",
+        "descripcion": "",
+        "fecha_publicacion": "2026-07-13T16:08:47+00:00",
+        "fuente_id": "investing_intl",
+        "fuente_nombre": "Investing Internacional",
+        "categoria": "Internacional"
+      },
+      {
+        "id": "ae338a4d7558",
+        "titulo": "El PIB de Kazajistán creció un 4,1% en el primer semestre del año",
+        "link": "https://es.investing.com/news/economic-indicators/el-pib-de-kazajistan-crecio-un-41-en-el-primer-semestre-del-ano-93CH-3738678",
+        "descripcion": "",
+        "fecha_publicacion": "2026-07-13T10:04:03+00:00",
+        "fuente_id": "investing_intl2",
+        "fuente_nombre": "Investing Mundo",
+        "categoria": "Internacional"
+      },
+      {
+        "id": "f0d10077dbee",
+        "titulo": "La inflación anual de Rumanía cae al 10,42% en junio",
+        "link": "https://es.investing.com/news/economic-indicators/la-inflacion-anual-de-rumania-cae-al-1042-en-junio-93CH-3738431",
+        "descripcion": "",
+        "fecha_publicacion": "2026-07-13T07:31:17+00:00",
+        "fuente_id": "investing_intl2",
+        "fuente_nombre": "Investing Mundo",
+        "categoria": "Internacional"
+      }
+    ],
+    "Fiscal": [
+      {
+        "id": "f519cef570a4",
+        "titulo": "ARCA analiza lanzar un nuevo plan de pagos de hasta 48 cuotas que permite reformular planes caducos",
+        "link": "https://www.iprofesional.com/impuestos/459785-arca-analiza-lanzar-un-nuevo-plan-de-pagos-de-hasta-48-cuotas-que-incluye-planes-caducos",
+        "descripcion": "El Gobierno analiza reflotar un plan de pagos especial para pymes similar al que estuvo vigente hasta marzo pasado. Cuáles son las características",
+        "fecha_publicacion": "2026-07-13T15:00:00+00:00",
+        "fuente_id": "iprof_impuestos",
+        "fuente_nombre": "iProfesional Impuestos",
+        "categoria": "Fiscal"
+      },
+      {
+        "id": "17025c4871f0",
+        "titulo": "Últimas dos semanas para Ganancias Simplificada y Bienes Personales sin reforma y sin nueva prórroga",
+        "link": "https://www.iprofesional.com/impuestos/459784-ganancias-simplificada-y-bienes-personales-ultimas-semanas-sin-reforma-y-sin-prorroga",
+        "descripcion": "El 27 de julio vencen las declaraciones juradas anuales del Impuesto a las Ganancias, Bienes Personales e Impuesto cedular. Qué sucederá",
+        "fecha_publicacion": "2026-07-13T14:58:00+00:00",
+        "fuente_id": "iprof_impuestos",
+        "fuente_nombre": "iProfesional Impuestos",
+        "categoria": "Fiscal"
+      },
+      {
+        "id": "e358aa9d1beb",
+        "titulo": "Trabajo aclaró la vigencia del aporte sindical solidario para empleados de comercio",
+        "link": "https://www.iprofesional.com/impuestos/459825-trabajo-aclaro-la-vigencia-del-aporte-sindical-solidario-para-empleados-de-comercio",
+        "descripcion": "Mientras se mantenga vigente la cautelar judicial, los empleadores deberán continuar observando los porcentajes previstos en el convenio colectivo",
+        "fecha_publicacion": "2026-07-13T14:47:00+00:00",
+        "fuente_id": "iprof_impuestos",
+        "fuente_nombre": "iProfesional Impuestos",
+        "categoria": "Fiscal"
+      },
+      {
+        "id": "9646c9dca1d1",
+        "titulo": "Reforma tributaria: preocupa el futuro del Monotributo por su eliminación o reducción, ¿puede volver el responsable no inscripto en IVA?",
+        "link": "https://www.ambito.com/novedades-fiscales/reforma-tributaria-preocupa-el-futuro-del-monotributo-su-eliminacion-o-reduccion-puede-volver-el-responsable-no-inscripto-iva-n6298658",
+        "descripcion": "El provenir del régimen simplificado para pequeños contribuyentes aparece como incierto a juzgar por las sugerencias tanto del FMI como del Consejo de Mayo que apuntan a su equiparación en términos de pago o a su reducción con una transición. ¿Y las provincias?",
+        "fecha_publicacion": "2026-07-12T21:44:00+00:00",
+        "fuente_id": "ambito_fisc",
+        "fuente_nombre": "Ámbito Fiscal",
+        "categoria": "Fiscal"
+      },
+      {
+        "id": "b858dafa4f84",
+        "titulo": "Impulsan convertir en permanentes los beneficios fiscales para el Área Patagónica y la Zona Austral bonaerense",
+        "link": "https://www.ambito.com/novedades-fiscales/impulsan-convertir-permanentes-los-beneficios-fiscales-el-area-patagonica-y-la-zona-austral-bonaerense-n6298035",
+        "descripcion": "La recurrencia de prórrogas de la vigencia de los beneficios de las Leyes 12.322 y 12.323, ante factores climáticos, que se reiterarán invariablemente, llevó a los diputados bonaerenses a otorgarle dictamen favorable a un proyecto para la permanencia de las medidas para zonas desfavorables",
+        "fecha_publicacion": "2026-07-09T21:58:00+00:00",
+        "fuente_id": "ambito_fisc",
+        "fuente_nombre": "Ámbito Fiscal",
+        "categoria": "Fiscal"
+      },
+      {
+        "id": "72b64a79ff55",
+        "titulo": "Reforma tributaria: esas cuestiones que no pueden pasar desapercibidas para su implementación",
+        "link": "https://www.ambito.com/novedades-fiscales/reforma-tributaria-esas-cuestiones-que-no-pueden-pasar-desapercibidas-su-implementacion-n6297276",
+        "descripcion": "Ante los anuncios del gobierno de impulsar una modificación integral del sistema tributario, abarcando la nación, las provincias y los municipios, parece necesario analizar ciertos objetivos en línea con la economía y las necesidades de cada uno se esos estados.",
+        "fecha_publicacion": "2026-07-07T23:40:00+00:00",
+        "fuente_id": "ambito_fisc",
+        "fuente_nombre": "Ámbito Fiscal",
+        "categoria": "Fiscal"
+      }
+    ],
+    "Automotor": [
+      {
+        "id": "c742d65eb207",
+        "titulo": "El SUV más vendido de Argentina es chino, lleva logo de Ford y ya es un fenómeno",
+        "link": "https://www.iprofesional.com/autos/459702-el-suv-mas-vendido-de-argentina-es-chino-lleva-logo-de-ford-y-ya-es-un-fenomeno",
+        "descripcion": "La Ford Territory, fabricada en China, lidera el ranking de los SUV más vendidos de Argentina y consolida su éxito durante 2026",
+        "fecha_publicacion": "2026-07-13T14:17:00+00:00",
+        "fuente_id": "iprof_autos",
+        "fuente_nombre": "iProfesional Autos",
+        "categoria": "Automotor"
+      },
+      {
+        "id": "8a15d92a456a",
+        "titulo": "El auto chino más barato que se vende en la Argentina es el JMEV Easy3",
+        "link": "https://www.iprofesional.com/autos/459799-cual-es-el-auto-chino-mas-barato-que-se-vende-en-la-argentina",
+        "descripcion": "En medio de la revolución de autos chinos que llegaron al país, este vehículo es el más accesible y tiene una ventaja frente a los rivales",
+        "fecha_publicacion": "2026-07-13T11:07:00+00:00",
+        "fuente_id": "iprof_autos",
+        "fuente_nombre": "iProfesional Autos",
+        "categoria": "Automotor"
+      },
+      {
+        "id": "71da231f5d20",
+        "titulo": "El Audi Nuvolari se lució en Goodwood junto a otros mitos de la marca",
+        "link": "https://motorwebargentina.com/audi-nuvolari-goodwood-2026/",
+        "descripcion": "En el marco del Festival de la Velocidad de Goodwood, se presentó un superdeportivo muy especial, el Audi Nuvolari. Con este modelo la marca demuestra todo su potencial y tecnología adelantando su visión de producción, junto a la presencia del Audi RS 5 que fue exhibido y participa de actividades dinámicas en el circuito de [&#8230;] La entrada El Audi Nuvolari se lució en Goodwood junto a otros mitos de la marca se publicó primero en Motorweb Argentina .",
+        "fecha_publicacion": "2026-07-13T10:19:32+00:00",
+        "fuente_id": "motorweb",
+        "fuente_nombre": "Motorweb Argentina",
+        "categoria": "Automotor"
+      },
+      {
+        "id": "40d3be20c26a",
+        "titulo": "Hay SUV desde $33 hasta 60 millones de pesos entre los más vendidos de 2026",
+        "link": "https://www.iprofesional.com/autos/459763-hay-suv-desde-33-hasta-60-millones-entre-los-mas-vendidos-de-2026",
+        "descripcion": "Son modelos del segmento mediano y chino, que se quedaron con los primeros cinco puestos entre los líderes. Solo uno del ranking ofrece opción híbrida",
+        "fecha_publicacion": "2026-07-12T11:30:00+00:00",
+        "fuente_id": "iprof_autos",
+        "fuente_nombre": "iProfesional Autos",
+        "categoria": "Automotor"
+      },
+      {
+        "id": "9129fc523461",
+        "titulo": "La CCA publica una caída en la marcha de las ventas de los vehículos usados en la Argentina",
+        "link": "https://www.diariodeautos.com.ar/index.php/noticias/nacionales/item/20376-cca",
+        "descripcion": "La Cámara del Comercio Automotor (CCA), informó que en junio último, se vendieron 155.492 vehículos usados, una suba del 8,59%, con respecto a igual mes del año pasado cuando se comercializaron 143.191 unidades. Con respecto a mayo (144.050 unidades), el mercado creció 7,94%.&nbsp;&nbsp; En los 6 primeros meses del año se vendieron 891.628 unidades, una baja del 2,92% comparado con igual período de 2025 (918.404 unidades). Declaraciones&nbsp; Alejandro Lamas, Secretario de la CCA, confirma: “Fin",
+        "fecha_publicacion": "2026-07-10T21:35:10+00:00",
+        "fuente_id": "diario_autos",
+        "fuente_nombre": "Diario de Autos",
+        "categoria": "Automotor"
+      },
+      {
+        "id": "060a643ec621",
+        "titulo": "Empezó julio con caída en los patentamientos de autos, mucha discusión sobre precios y concesionarias que quieren poner fin a los descuentos ´´salvajes´´",
+        "link": "https://arodarpost.com.ar/empezo-julio-con-caida-en-los-patentamientos-de-autos-mucha-discusion-sobre-precios-y-concesionarias-que-quieren-poner-fin-a-los-descuentos-salvajes/",
+        "descripcion": "El clima mundialista, en estos primeros días de julio, acapara la atención informativa y poco importa más allá de lo que suceda con la selección en Estados Unidos. Todas las noticias, sean políticas o económicas, pasaron a segundo plano. El mercado automotor no está ajeno a esta situación, aunque la actividad sigue su curso en [&#8230;]",
+        "fecha_publicacion": "2026-07-10T15:38:39+00:00",
+        "fuente_id": "arodar",
+        "fuente_nombre": "A Rodar Post",
+        "categoria": "Automotor"
+      },
+      {
+        "id": "6cc76ca977e9",
+        "titulo": "GM desarrolla baterías, pero no piensa en autos",
+        "link": "https://noticias.autocosmos.com.ar/2026/07/10/gm-desarrolla-baterias-pero-no-piensa-en-autos",
+        "descripcion": "Te contamos de qué se trata la tecnología de iones de sodio podría cambiar el futuro de la electricidad.",
+        "fecha_publicacion": "2026-07-10T13:00:00+00:00",
+        "fuente_id": "autocosmos",
+        "fuente_nombre": "Autocosmos Argentina",
+        "categoria": "Automotor"
+      },
+      {
+        "id": "c93f6a7d716d",
+        "titulo": "El BMW iX3 alcanza las cinco estrellas en Euro NCAP",
+        "link": "https://noticias.autocosmos.com.ar/2026/07/10/el-bmw-ix3-alcanza-las-cinco-estrellas-en-euro-ncap",
+        "descripcion": "El primer SUV 100% eléctrico de producción en serie de la firma bávara fue uno de los primeros modelos evaluados con el nuevo protocolo y así le fue.",
+        "fecha_publicacion": "2026-07-10T10:55:18+00:00",
+        "fuente_id": "autocosmos",
+        "fuente_nombre": "Autocosmos Argentina",
+        "categoria": "Automotor"
+      }
+    ],
     "Agro": [
       {
         "id": "7411f3101564",
@@ -113,450 +577,6 @@
         "fuente_id": "investing_agro",
         "fuente_nombre": "Investing Agro",
         "categoria": "Agro"
-      }
-    ],
-    "Mercados": [
-      {
-        "id": "e4fe7c9e8ce1",
-        "titulo": "Macron pide más proyectos de defensa en la UE tras el fracaso del acuerdo de cazas",
-        "link": "https://es.investing.com/news/economy-news/macron-pide-mas-proyectos-de-defensa-en-la-ue-tras-el-fracaso-del-acuerdo-de-cazas-93CH-3739188",
-        "descripcion": "",
-        "fecha_publicacion": "2026-07-13T11:48:17+00:00",
-        "fuente_id": "investing_economia",
-        "fuente_nombre": "Investing Economía",
-        "categoria": "Mercados"
-      },
-      {
-        "id": "659b659fd027",
-        "titulo": "Ucrania ataca más petroleros y cargueros rusos en el Mar de Azov",
-        "link": "https://es.investing.com/news/economy-news/ucrania-ataca-mas-petroleros-y-cargueros-rusos-en-el-mar-de-azov-93CH-3739183",
-        "descripcion": "",
-        "fecha_publicacion": "2026-07-13T11:46:29+00:00",
-        "fuente_id": "investing_economia",
-        "fuente_nombre": "Investing Economía",
-        "categoria": "Mercados"
-      },
-      {
-        "id": "eb3a80179245",
-        "titulo": "Tripulante indio desaparecido tras ataque a barco en el Estrecho de Ormuz",
-        "link": "https://es.investing.com/news/economy-news/tripulante-indio-desaparecido-tras-ataque-a-barco-en-el-estrecho-de-ormuz-93CH-3739123",
-        "descripcion": "",
-        "fecha_publicacion": "2026-07-13T11:35:06+00:00",
-        "fuente_id": "investing_economia",
-        "fuente_nombre": "Investing Economía",
-        "categoria": "Mercados"
-      },
-      {
-        "id": "7400aeeaca24",
-        "titulo": "Pese a la volatilidad, gigante de Wall Street redobla su objetivo de u$s150.000 para Bitcoin en 2026",
-        "link": "https://www.iproup.com/economia-digital/69578-bitcoin-caida-pronostico-precio-record-bernstein-julio-2026",
-        "descripcion": "Bernstein ratificó su pronóstico de u$s150.000 para Bitcoin pese al desplome del 54%. Los flujos y las compras corporativas sostienen la apuesta",
-        "fecha_publicacion": "2026-07-13T11:01:00+00:00",
-        "fuente_id": "iproup_eco",
-        "fuente_nombre": "iProUP Economía Digital",
-        "categoria": "Mercados"
-      }
-    ],
-    "Finanzas": [
-      {
-        "id": "3cda0799ebfc",
-        "titulo": "Cómo comprar un Smart TV Samsung de 55 pulgadas con hasta 32% de descuento",
-        "link": "https://www.iprofesional.com/economia/459802-supermercado-changomas-cuanto-cuesta-comprar-un-smart-tv-samsung-4k-de-55-pulgadas-con-rebaja-y-cuotas",
-        "descripcion": "Aprovechá una promoción exclusiva en electrónicos: podés llevar una pantalla 4K de 55 pulgadas con rebaja superior al 30% y plan en cuotas",
-        "fecha_publicacion": "2026-07-13T11:44:00+00:00",
-        "fuente_id": "iprof_economia",
-        "fuente_nombre": "iProfesional Economía",
-        "categoria": "Finanzas"
-      },
-      {
-        "id": "8c33c94e8afb",
-        "titulo": "Las fintech avanzan con fuerza y obligan a los bancos a cambiar el modelo de negocio",
-        "link": "https://www.iproup.com/finanzas/69794-las-fintech-avanzan-con-fuerza-y-obligan-a-los-bancos-a-cambiar-el-modelo-de-negocio",
-        "descripcion": "La irrupción de billeteras digitales, criptomonedas y préstamos online obliga a repensar estrategias frente al avance de modelos ágiles y sin fronteras",
-        "fecha_publicacion": "2026-07-13T11:29:00+00:00",
-        "fuente_id": "iproup_fintech",
-        "fuente_nombre": "iProUP Fintech",
-        "categoria": "Finanzas"
-      },
-      {
-        "id": "ff5e2cf284a4",
-        "titulo": "Outlet de Once inaugura un nuevo local con ropa desde $3.000 y amplía su oferta de descuentos",
-        "link": "https://www.iprofesional.com/economia/459795-inauguran-el-outlet-mas-barato-de-buenos-aires-con-ropa-importada-al-precio-de-un-alfajor",
-        "descripcion": "El desembarco del nuevo local de Puro Hilo en Once genera expectativa por la variedad de prendas económicas y las largas filas de compradores",
-        "fecha_publicacion": "2026-07-13T10:50:00+00:00",
-        "fuente_id": "iprof_economia",
-        "fuente_nombre": "iProfesional Economía",
-        "categoria": "Finanzas"
-      },
-      {
-        "id": "2d87449f17f3",
-        "titulo": "Las medidas cambiarias para contener al dólar en el año electoral",
-        "link": "https://www.iproup.com/finanzas/69793-las-medidas-cambiarias-para-contener-al-dolar-en-el-ano-electoral",
-        "descripcion": "Para reducir tensiones en el mercado, el equipo económico aplica regulaciones sobre instrumentos financieros y acceso a insumos importados clave",
-        "fecha_publicacion": "2026-07-13T10:33:00+00:00",
-        "fuente_id": "iproup_fintech",
-        "fuente_nombre": "iProUP Fintech",
-        "categoria": "Finanzas"
-      },
-      {
-        "id": "32403cef628f",
-        "titulo": "El Gobierno prepara su primera colocación de deuda internacional por la baja del riesgo país",
-        "link": "https://www.iproup.com/finanzas/69792-el-gobierno-prepara-colocacion-de-deuda-internacional-por-la-baja-del-riesgo-pais",
-        "descripcion": "Las proyecciones técnicas apuntan a convalidar tasas de un solo dígito que asimilen las reformas estructurales aplicadas en la plaza local",
-        "fecha_publicacion": "2026-07-13T10:03:00+00:00",
-        "fuente_id": "iproup_fintech",
-        "fuente_nombre": "iProUP Fintech",
-        "categoria": "Finanzas"
-      },
-      {
-        "id": "5ffd4f6580a3",
-        "titulo": "La City calcula fuerte ganancia en dólares para bonos argentinos tras caída del riesgo país",
-        "link": "https://www.iprofesional.com/finanzas/459408-la-city-preve-fuerte-ganancia-en-dolares-para-bonos-argentinos-tras-nueva-caida-del-riesgo-pais",
-        "descripcion": "Las valuaciones de los activos argentinos repuntan y analistas anticipan un ciclo de ganancias en títulos públicos si persiste la tendencia actual",
-        "fecha_publicacion": "2026-07-13T10:00:00+00:00",
-        "fuente_id": "iprof_economia",
-        "fuente_nombre": "iProfesional Economía",
-        "categoria": "Finanzas"
-      },
-      {
-        "id": "7793bf7299db",
-        "titulo": "Maíz: una oportunidad para capturar el máximo potencial de cada lote",
-        "link": "https://www.lanacion.com.ar/economia/campo/maiz-una-oportunidad-para-capturar-el-maximo-potencial-de-cada-lote-nid13072026/",
-        "descripcion": "La próxima campaña no garantiza cosechas récord, pero sí parece ofrecer algo que hacía tiempo no aparecía con tanta claridad: un contexto que vuelve a premiar las buenas decisiones agronómicas, poniendo el rendimiento en el centro de la estrategia",
-        "fecha_publicacion": "2026-07-13T09:30:00+00:00",
-        "fuente_id": "lanacion_eco",
-        "fuente_nombre": "La Nación Economía",
-        "categoria": "Finanzas"
-      },
-      {
-        "id": "3447e0dc88f2",
-        "titulo": "Aconsejan aprovechar las buenas relaciones insumo/producto para la campaña agrícola 2026/27",
-        "link": "https://www.lanacion.com.ar/economia/campo/aconsejan-aprovechar-las-buenas-relaciones-insumoproducto-para-la-campana-agricola-202627-nid13072026/",
-        "descripcion": "Según un informe, se abrió una ventana de menores precios de la urea, que invita a no demorar las decisiones de compra",
-        "fecha_publicacion": "2026-07-13T09:30:00+00:00",
-        "fuente_id": "lanacion_eco",
-        "fuente_nombre": "La Nación Economía",
-        "categoria": "Finanzas"
-      }
-    ],
-    "Fiscal": [
-      {
-        "id": "f519cef570a4",
-        "titulo": "ARCA analiza lanzar un nuevo plan de pagos de hasta 48 cuotas que permite reformular planes caducos",
-        "link": "https://www.iprofesional.com/impuestos/459785-arca-analiza-lanzar-un-nuevo-plan-de-pagos-de-hasta-48-cuotas-que-incluye-planes-caducos",
-        "descripcion": "El Gobierno analiza reflotar un plan de pagos especial para pymes similar al que estuvo vigente hasta marzo pasado. Cuáles son las características",
-        "fecha_publicacion": "2026-07-13T11:16:00+00:00",
-        "fuente_id": "iprof_impuestos",
-        "fuente_nombre": "iProfesional Impuestos",
-        "categoria": "Fiscal"
-      },
-      {
-        "id": "17025c4871f0",
-        "titulo": "Últimas dos semanas para Ganancias Simplificada y Bienes Personales sin reforma y sin nueva prórroga",
-        "link": "https://www.iprofesional.com/impuestos/459784-ganancias-simplificada-y-bienes-personales-ultimas-semanas-sin-reforma-y-sin-prorroga",
-        "descripcion": "El 27 de julio vencen las declaraciones juradas anuales del Impuesto a las Ganancias, Bienes Personales e Impuesto cedular. Qué sucederá",
-        "fecha_publicacion": "2026-07-13T11:15:00+00:00",
-        "fuente_id": "iprof_impuestos",
-        "fuente_nombre": "iProfesional Impuestos",
-        "categoria": "Fiscal"
-      },
-      {
-        "id": "ba36e9a04be9",
-        "titulo": "Arranca la feria fiscal de invierno y ya sabe qué pasa con los impuestos que vencen en esta fecha",
-        "link": "https://www.iprofesional.com/impuestos/459787-arranca-la-feria-fiscal-de-invierno-que-pasa-con-los-impuestos-que-vencen-en-esta-fecha",
-        "descripcion": "La Agencia de Recaudación y Control Aduanero ya oficializó las fechas y condiciones para la Feria Fiscal Invernal 2026.. Qué se suspende en esa fecha",
-        "fecha_publicacion": "2026-07-13T11:14:00+00:00",
-        "fuente_id": "iprof_impuestos",
-        "fuente_nombre": "iProfesional Impuestos",
-        "categoria": "Fiscal"
-      },
-      {
-        "id": "9646c9dca1d1",
-        "titulo": "Reforma tributaria: preocupa el futuro del Monotributo por su eliminación o reducción. ¿Puede volver el responsable no inscripto en IVA?",
-        "link": "https://www.ambito.com/novedades-fiscales/reforma-tributaria-preocupa-el-futuro-del-monotributo-su-eliminacion-o-reduccion-puede-volver-el-responsable-no-inscripto-iva-n6298658",
-        "descripcion": "El provenir del régimen simplificado para pequeños contribuyentes aparece como incierto a juzgar por las sugerencias tanto del FMI como del Consejo de Mayo que apuntan a su equiparación en términos de pago o a su reducción con una transición. ¿Y las provincias?",
-        "fecha_publicacion": "2026-07-12T21:44:00+00:00",
-        "fuente_id": "ambito_fisc",
-        "fuente_nombre": "Ámbito Fiscal",
-        "categoria": "Fiscal"
-      },
-      {
-        "id": "b858dafa4f84",
-        "titulo": "Impulsan convertir en permanentes los beneficios fiscales para el Área Patagónica y la Zona Austral bonaerense",
-        "link": "https://www.ambito.com/novedades-fiscales/impulsan-convertir-permanentes-los-beneficios-fiscales-el-area-patagonica-y-la-zona-austral-bonaerense-n6298035",
-        "descripcion": "La recurrencia de prórrogas de la vigencia de los beneficios de las Leyes 12.322 y 12.323, ante factores climáticos, que se reiterarán invariablemente, llevó a los diputados bonaerenses a otorgarle dictamen favorable a un proyecto para la permanencia de las medidas para zonas desfavorables",
-        "fecha_publicacion": "2026-07-09T21:58:00+00:00",
-        "fuente_id": "ambito_fisc",
-        "fuente_nombre": "Ámbito Fiscal",
-        "categoria": "Fiscal"
-      },
-      {
-        "id": "72b64a79ff55",
-        "titulo": "Reforma tributaria: esas cuestiones que no pueden pasar desapercibidas para su implementación",
-        "link": "https://www.ambito.com/novedades-fiscales/reforma-tributaria-esas-cuestiones-que-no-pueden-pasar-desapercibidas-su-implementacion-n6297276",
-        "descripcion": "Ante los anuncios del gobierno de impulsar una modificación integral del sistema tributario, abarcando la nación, las provincias y los municipios, parece necesario analizar ciertos objetivos en línea con la economía y las necesidades de cada uno se esos estados.",
-        "fecha_publicacion": "2026-07-07T23:40:00+00:00",
-        "fuente_id": "ambito_fisc",
-        "fuente_nombre": "Ámbito Fiscal",
-        "categoria": "Fiscal"
-      }
-    ],
-    "Laboral": [
-      {
-        "id": "5648b16f176b",
-        "titulo": "Grupo Gestión designa nuevo Gerente de Ventas para el interior del país",
-        "link": "https://www.iprofesional.com/management/459794-grupo-gestion-designa-nuevo-gerente-de-ventas-para-el-interior-del-pais",
-        "descripcion": "Su llegada es un nuevo impulso para fortalecer la presencia de Grupo Gestión en las provincias y consolidar una estrategia de crecimiento sustentable",
-        "fecha_publicacion": "2026-07-13T10:29:00+00:00",
-        "fuente_id": "iprof_management",
-        "fuente_nombre": "iProfesional Management",
-        "categoria": "Laboral"
-      },
-      {
-        "id": "d72581205033",
-        "titulo": "Con Elon Musk a la cabeza, estas son las 10 personas más ricas del mundo",
-        "link": "https://www.iprofesional.com/actualidad/459747-con-elon-musk-a-la-cabeza-estas-son-las-10-personas-mas-ricas-del-mundo",
-        "descripcion": "La salida a bolsa de SpaceX catapultó la fortuna de su fundador a niveles nunca antes vistos. El ranking de los máximos magnates del planeta",
-        "fecha_publicacion": "2026-07-12T13:41:00+00:00",
-        "fuente_id": "iprof_management",
-        "fuente_nombre": "iProfesional Management",
-        "categoria": "Laboral"
-      },
-      {
-        "id": "3d02aaa82b88",
-        "titulo": "Ránking de sueldos: los 5 rubros donde se pide ganar más dinero",
-        "link": "https://www.iprofesional.com/economia/459498-ranking-de-sueldos-los-5-rubros-donde-se-pide-ganar-mas-dinero",
-        "descripcion": "Un informe privado revela las pretensiones de los argentinos al buscar trabajo y expone una brecha que ya supera los $2.000.000",
-        "fecha_publicacion": "2026-07-12T12:49:00+00:00",
-        "fuente_id": "iprof_management",
-        "fuente_nombre": "iProfesional Management",
-        "categoria": "Laboral"
-      },
-      {
-        "id": "07f564b6ffd7",
-        "titulo": "Riesgos psicosociales en el trabajo: la amenaza invisible para la salud de los trabajadores",
-        "link": "https://voices.ilo.org/es-es/podcast/riesgos-psicosociales-en-el-trabajo-la-amenaza-invisible-para-la-salud-de-los-trabajadores",
-        "descripcion": "En este episodio del pódcast “El futuro del trabajo de la OIT”, Dafne Papandrea y Lucía Risueño Navarro explican cómo los riesgos psicosociales —como las largas jornadas laborales, la inseguridad en el empleo y el acoso en el lugar de trabajo— afectan a la salud de los trabajadores, y qué medidas pueden adoptarse para crear entornos laborales más saludables en todo el mundo.",
-        "fecha_publicacion": "2026-04-28T00:00:00+00:00",
-        "fuente_id": "oit_podcast",
-        "fuente_nombre": "OIT Podcast",
-        "categoria": "Laboral"
-      },
-      {
-        "id": "ef1638f33032",
-        "titulo": "La inteligencia artificial generativa y las desigualdades de género en el trabajo",
-        "link": "https://voices.ilo.org/es-es/podcast/la-inteligencia-artificial-generativa-y-las-desigualdades-de-genero-en-el-trabajo",
-        "descripcion": "En este episodio del pódcast de la Organización Internacional del Trabajo, Janine Berg, Economista senior en la OIT, presenta un nuevo informe sobre el impacto de la inteligencia artificial generativa en el mundo del trabajo. La experta explica por qué las mujeres están más expuestas que los hombres a los riesgos asociados a esta tecnología y qué significa esto para la igualdad en el mercado laboral.",
-        "fecha_publicacion": "2026-03-09T00:00:00+00:00",
-        "fuente_id": "oit_podcast",
-        "fuente_nombre": "OIT Podcast",
-        "categoria": "Laboral"
-      },
-      {
-        "id": "a9cae82ea7a7",
-        "titulo": "Una mirada al estado del empleo mundial y sus principales desafíos",
-        "link": "https://voices.ilo.org/es-es/podcast/una-mirada-al-estado-del-empleo-mundial-y-sus-principales-desafios",
-        "descripcion": "En este episodio del pódcast Futuro del Trabajo de la OIT, analizamos el estado del empleo y los principales desafíos que enfrentan los mercados laborales a nivel mundial y en América Latina y el Caribe, junto a Miguel Sánchez Martínez, economista del Departamento de Investigación de la OIT, y Gerson Martínez, Especialista Regional Senior en Economía Laboral.",
-        "fecha_publicacion": "2026-01-22T00:00:00+00:00",
-        "fuente_id": "oit_podcast",
-        "fuente_nombre": "OIT Podcast",
-        "categoria": "Laboral"
-      }
-    ],
-    "Automotor": [
-      {
-        "id": "71da231f5d20",
-        "titulo": "El Audi Nuvolari se lució en Goodwood junto a otros mitos de la marca",
-        "link": "https://motorwebargentina.com/audi-nuvolari-goodwood-2026/",
-        "descripcion": "En el marco del Festival de la Velocidad de Goodwood, se presentó un superdeportivo muy especial, el Audi Nuvolari. Con este modelo la marca demuestra todo su potencial y tecnología adelantando su visión de producción, junto a la presencia del Audi RS 5 que fue exhibido y participa de actividades dinámicas en el circuito de [&#8230;] La entrada El Audi Nuvolari se lució en Goodwood junto a otros mitos de la marca se publicó primero en Motorweb Argentina .",
-        "fecha_publicacion": "2026-07-13T10:19:32+00:00",
-        "fuente_id": "motorweb",
-        "fuente_nombre": "Motorweb Argentina",
-        "categoria": "Automotor"
-      },
-      {
-        "id": "40d3be20c26a",
-        "titulo": "Hay SUV desde $33 hasta 60 millones de pesos entre los más vendidos de 2026",
-        "link": "https://www.iprofesional.com/autos/459763-hay-suv-desde-33-hasta-60-millones-entre-los-mas-vendidos-de-2026",
-        "descripcion": "Son modelos del segmento mediano y chino, que se quedaron con los primeros cinco puestos entre los líderes. Solo uno del ranking ofrece opción híbrida",
-        "fecha_publicacion": "2026-07-12T11:30:00+00:00",
-        "fuente_id": "iprof_autos",
-        "fuente_nombre": "iProfesional Autos",
-        "categoria": "Automotor"
-      },
-      {
-        "id": "695ad54529da",
-        "titulo": "Cuáles son las motos de media cilindrada que más eligen los argentinos",
-        "link": "https://www.iprofesional.com/autos/459605-cuales-son-las-motos-de-media-cilindrada-que-mas-eligen-los-argentinos",
-        "descripcion": "En un mes donde el Mundial nos tiene frenéticos, te mostramos cuáles fueron los modelos que ganaron el mano a mano frente a sus clásicos rivales.",
-        "fecha_publicacion": "2026-07-12T10:24:00+00:00",
-        "fuente_id": "iprof_autos",
-        "fuente_nombre": "iProfesional Autos",
-        "categoria": "Automotor"
-      },
-      {
-        "id": "b62f2d79d529",
-        "titulo": "Lanzaron créditos para comprar motos en 72 cuotas",
-        "link": "https://www.iprofesional.com/autos/459178-lanzaron-creditos-para-comprar-motos-en-72-cuotas-como-comprar",
-        "descripcion": "Son opciones de diferentes bancos, pero se pueden tramitar directo en los concesionarios. Arrancan desde las 12 cuotas sin interés. Los detalles",
-        "fecha_publicacion": "2026-07-11T12:01:00+00:00",
-        "fuente_id": "iprof_autos",
-        "fuente_nombre": "iProfesional Autos",
-        "categoria": "Automotor"
-      },
-      {
-        "id": "9129fc523461",
-        "titulo": "La CCA publica una caída en la marcha de las ventas de los vehículos usados en la Argentina",
-        "link": "https://www.diariodeautos.com.ar/index.php/noticias/nacionales/item/20376-cca",
-        "descripcion": "La Cámara del Comercio Automotor (CCA), informó que en junio último, se vendieron 155.492 vehículos usados, una suba del 8,59%, con respecto a igual mes del año pasado cuando se comercializaron 143.191 unidades. Con respecto a mayo (144.050 unidades), el mercado creció 7,94%.&nbsp;&nbsp; En los 6 primeros meses del año se vendieron 891.628 unidades, una baja del 2,92% comparado con igual período de 2025 (918.404 unidades). Declaraciones&nbsp; Alejandro Lamas, Secretario de la CCA, confirma: “Fin",
-        "fecha_publicacion": "2026-07-10T21:35:10+00:00",
-        "fuente_id": "diario_autos",
-        "fuente_nombre": "Diario de Autos",
-        "categoria": "Automotor"
-      },
-      {
-        "id": "060a643ec621",
-        "titulo": "Empezó julio con caída en los patentamientos de autos, mucha discusión sobre precios y concesionarias que quieren poner fin a los descuentos ´´salvajes´´",
-        "link": "https://arodarpost.com.ar/empezo-julio-con-caida-en-los-patentamientos-de-autos-mucha-discusion-sobre-precios-y-concesionarias-que-quieren-poner-fin-a-los-descuentos-salvajes/",
-        "descripcion": "El clima mundialista, en estos primeros días de julio, acapara la atención informativa y poco importa más allá de lo que suceda con la selección en Estados Unidos. Todas las noticias, sean políticas o económicas, pasaron a segundo plano. El mercado automotor no está ajeno a esta situación, aunque la actividad sigue su curso en [&#8230;]",
-        "fecha_publicacion": "2026-07-10T15:38:39+00:00",
-        "fuente_id": "arodar",
-        "fuente_nombre": "A Rodar Post",
-        "categoria": "Automotor"
-      },
-      {
-        "id": "6cc76ca977e9",
-        "titulo": "GM desarrolla baterías, pero no piensa en autos",
-        "link": "https://noticias.autocosmos.com.ar/2026/07/10/gm-desarrolla-baterias-pero-no-piensa-en-autos",
-        "descripcion": "Te contamos de qué se trata la tecnología de iones de sodio podría cambiar el futuro de la electricidad.",
-        "fecha_publicacion": "2026-07-10T13:00:00+00:00",
-        "fuente_id": "autocosmos",
-        "fuente_nombre": "Autocosmos Argentina",
-        "categoria": "Automotor"
-      },
-      {
-        "id": "c93f6a7d716d",
-        "titulo": "El BMW iX3 alcanza las cinco estrellas en Euro NCAP",
-        "link": "https://noticias.autocosmos.com.ar/2026/07/10/el-bmw-ix3-alcanza-las-cinco-estrellas-en-euro-ncap",
-        "descripcion": "El primer SUV 100% eléctrico de producción en serie de la firma bávara fue uno de los primeros modelos evaluados con el nuevo protocolo y así le fue.",
-        "fecha_publicacion": "2026-07-10T10:55:18+00:00",
-        "fuente_id": "autocosmos",
-        "fuente_nombre": "Autocosmos Argentina",
-        "categoria": "Automotor"
-      }
-    ],
-    "Internacional": [
-      {
-        "id": "ae338a4d7558",
-        "titulo": "El PIB de Kazajistán creció un 4,1% en el primer semestre del año",
-        "link": "https://es.investing.com/news/economic-indicators/el-pib-de-kazajistan-crecio-un-41-en-el-primer-semestre-del-ano-93CH-3738678",
-        "descripcion": "",
-        "fecha_publicacion": "2026-07-13T10:04:03+00:00",
-        "fuente_id": "investing_intl2",
-        "fuente_nombre": "Investing Mundo",
-        "categoria": "Internacional"
-      },
-      {
-        "id": "f0d10077dbee",
-        "titulo": "La inflación anual de Rumanía cae al 10,42% en junio",
-        "link": "https://es.investing.com/news/economic-indicators/la-inflacion-anual-de-rumania-cae-al-1042-en-junio-93CH-3738431",
-        "descripcion": "",
-        "fecha_publicacion": "2026-07-13T07:31:17+00:00",
-        "fuente_id": "investing_intl2",
-        "fuente_nombre": "Investing Mundo",
-        "categoria": "Internacional"
-      },
-      {
-        "id": "3a640dc068ff",
-        "titulo": "El primer ministro de Irak visitará Washington el lunes para firmar acuerdos de petróleo y gas",
-        "link": "https://es.investing.com/news/world-news/el-primer-ministro-de-irak-visitara-washington-el-lunes-para-firmar-acuerdos-de-petroleo-y-gas-93CH-3738174",
-        "descripcion": "",
-        "fecha_publicacion": "2026-07-12T11:55:18+00:00",
-        "fuente_id": "investing_intl",
-        "fuente_nombre": "Investing Internacional",
-        "categoria": "Internacional"
-      },
-      {
-        "id": "fed9e7506284",
-        "titulo": "Ucrania afirma que drones dañaron 21 petroleros rusos en el mar de Azov",
-        "link": "https://es.investing.com/news/world-news/ucrania-afirma-que-drones-danaron-21-petroleros-rusos-en-el-mar-de-azov-3738109",
-        "descripcion": "",
-        "fecha_publicacion": "2026-07-11T19:11:40+00:00",
-        "fuente_id": "investing_intl",
-        "fuente_nombre": "Investing Internacional",
-        "categoria": "Internacional"
-      },
-      {
-        "id": "07027affe18e",
-        "titulo": "EE.UU. flexibiliza controles de exportación a Emiratos Árabes Unidos",
-        "link": "https://es.investing.com/news/world-news/eeuu-flexibiliza-controles-de-exportacion-a-emiratos-arabes-unidos-93CH-3737813",
-        "descripcion": "",
-        "fecha_publicacion": "2026-07-10T17:48:08+00:00",
-        "fuente_id": "investing_intl",
-        "fuente_nombre": "Investing Internacional",
-        "categoria": "Internacional"
-      }
-    ],
-    "Energía y Minería": [
-      {
-        "id": "50828d5ce590",
-        "titulo": "La batalla de la arena en Vaca Muerta: el insumo estratégico que consume tres piletas olímpicas por pozo y desvela a la logística",
-        "link": "https://dataenergia.ar/petroleo-y-combustibles/la-batalla-de-la-arena-en-vaca-muerta-el-insumo-estrategico-que-consume-tres-piletas-olimpicas-por-pozo-y-desvela-a-la-logistica-202671220100",
-        "descripcion": "La provisión de arena de fractura se consolida como uno de los desafíos logísticos y económicos más complejos para Vaca Muerta, donde cada pozo promedio consume hasta 15.000 toneladas de material, equivalentes a rellenar ocho veces el Obelisco o movilizar una flota de 415 camiones en ruta.",
-        "fecha_publicacion": "2026-07-12T23:10:00+00:00",
-        "fuente_id": "data_energia",
-        "fuente_nombre": "Data Energía",
-        "categoria": "Energía y Minería"
-      },
-      {
-        "id": "862498d94764",
-        "titulo": "Vaca Muerta: empresa vinculada al dueño del Inter de Miami le ganó a Techint y construirá los gasoductos de Argentina LNG",
-        "link": "https://dataenergia.ar/gas/vaca-muerta-empresa-vinculada-al-dueno-del-inter-de-miami-le-gano-a-techint-y-construira-los-gasoductos-de-argentina-lng-20267122020",
-        "descripcion": "Un consorcio internacional liderado por Pumpco (subsidiaria de la norteamericana MasTec), junto a Bonatti y Contreras Hermanos, se impuso ante Techint-Sacde en la licitación para construir los dos ductos clave del proyecto Argentina LNG, una obra de infraestructura valuada en u$s1.200 millones.",
-        "fecha_publicacion": "2026-07-12T23:02:00+00:00",
-        "fuente_id": "data_energia",
-        "fuente_nombre": "Data Energía",
-        "categoria": "Energía y Minería"
-      },
-      {
-        "id": "03824774b97f",
-        "titulo": "El desafío de las empresas familiares: cómo trascender al fundador",
-        "link": "https://econojournal.com.ar/destacada/el-desafio-de-las-empresas-familiares-como-trascender-al-fundador/",
-        "descripcion": "Nacer hijo de inmigrantes en el sur del conurbano bonaerense; estudiar y convertirse en la primera generación universitaria de la familia; emprender junto a amigos, colegas o hermanos; fundar una empresa; atravesar crisis económicas, hiperinflación, devaluaciones y cambios de modelo; generar empleo y abrirse camino en una industria de alta complejidad. Cumplir 60 años y [&#8230;]",
-        "fecha_publicacion": "2026-07-12T15:28:16+00:00",
-        "fuente_id": "econojournal",
-        "fuente_nombre": "EconoJournal",
-        "categoria": "Energía y Minería"
-      },
-      {
-        "id": "9132393ff208",
-        "titulo": "Nueva cámara química y petroquímica para la cadena de valor de Vaca Muerta",
-        "link": "https://econojournal.com.ar/actualidad-mineria-energia/nueva-camara-quimica-y-petroquimica-para-la-cadena-de-valor-de-vaca-muerta/",
-        "descripcion": "Se conformó formalmente la Cámara de Empresas Químicas, Petroquímicas y Afines de Neuquén (QPQ), una nueva organización sectorial que funcionará bajo el paraguas de la Federación de Cámaras del Sector Energético de Neuquén (FECENE) y que tiene como objetivo acompañar el avance operativo de Vaca Muerta y al entramado empresarial en la Patagonia. La aparición [&#8230;]",
-        "fecha_publicacion": "2026-07-10T16:30:18+00:00",
-        "fuente_id": "econojournal",
-        "fuente_nombre": "EconoJournal",
-        "categoria": "Energía y Minería"
-      },
-      {
-        "id": "1d983bcddf24",
-        "titulo": "Suiza es el principal comprador del oro y la plata que extrae la Argentina",
-        "link": "https://econojournal.com.ar/mineria/suiza-es-el-principal-comprador-del-oro-y-la-plata-que-extrae-la-argentina/",
-        "descripcion": "En la víspera del encuentro entre las selecciones de Argentina y Suiza por los cuartos de final de la Copa Mundial de la FIFA 2026 en Kansas City, el plano del comercio exterior minero expone una relación bilateral que se destaca por el flujo de minerales metalíferos. De acuerdo con el último informe de la [&#8230;]",
-        "fecha_publicacion": "2026-07-10T16:19:33+00:00",
-        "fuente_id": "econojournal",
-        "fuente_nombre": "EconoJournal",
-        "categoria": "Energía y Minería"
-      },
-      {
-        "id": "d452b560196c",
-        "titulo": "Noruega y el petróleo: un modelo para tener en cuenta",
-        "link": "https://dataenergia.ar/petroleo-y-combustibles/noruega-y-el-petroleo-un-modelo-para-tener-en-cuenta-2026781550",
-        "descripcion": "En 1969, Noruega descubrió petróleo en el Mar del Norte. Era un país cuya economía dependía principalmente de la pesca y la actividad marítima. En ese momento tomó una decisión que cambiaría su economía para siempre.",
-        "fecha_publicacion": "2026-07-08T18:05:00+00:00",
-        "fuente_id": "data_energia",
-        "fuente_nombre": "Data Energía",
-        "categoria": "Energía y Minería"
       }
     ],
     "Fulbito": [
