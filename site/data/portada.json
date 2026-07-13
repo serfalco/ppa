@@ -1,313 +1,539 @@
 {
-  "generado_en": "2026-07-13T11:59:32.937725+00:00",
+  "generado_en": "2026-07-13T21:13:28.788082+00:00",
   "destacados": [
     {
-      "id": "e4fe7c9e8ce1",
-      "titulo": "Macron pide más proyectos de defensa en la UE tras el fracaso del acuerdo de cazas",
-      "link": "https://es.investing.com/news/economy-news/macron-pide-mas-proyectos-de-defensa-en-la-ue-tras-el-fracaso-del-acuerdo-de-cazas-93CH-3739188",
-      "descripcion": "",
-      "fecha_publicacion": "2026-07-13T11:48:17+00:00",
-      "fuente_id": "investing_economia",
-      "fuente_nombre": "Investing Economía",
+      "id": "699c73e0afa4",
+      "titulo": "La transparencia financiera ya no es control, es velocidad de decisión",
+      "link": "https://www.iproup.com/economia-digital/69819-la-transparencia-financiera-ya-no-es-control-es-velocidad-de-decision",
+      "descripcion": "Gisela Belazio, CFO de Kuru, analiza la importancia de descubrir por qué el control de gastos en tiempo real define hoy la competitividad.",
+      "fecha_publicacion": "2026-07-13T20:45:00+00:00",
+      "fuente_id": "iproup_eco",
+      "fuente_nombre": "iProUP Economía Digital",
       "categoria": "Mercados"
     },
     {
-      "id": "3cda0799ebfc",
-      "titulo": "Cómo comprar un Smart TV Samsung de 55 pulgadas con hasta 32% de descuento",
-      "link": "https://www.iprofesional.com/economia/459802-supermercado-changomas-cuanto-cuesta-comprar-un-smart-tv-samsung-4k-de-55-pulgadas-con-rebaja-y-cuotas",
-      "descripcion": "Aprovechá una promoción exclusiva en electrónicos: podés llevar una pantalla 4K de 55 pulgadas con rebaja superior al 30% y plan en cuotas",
-      "fecha_publicacion": "2026-07-13T11:44:00+00:00",
-      "fuente_id": "iprof_economia",
-      "fuente_nombre": "iProfesional Economía",
+      "id": "f14300409f6f",
+      "titulo": "Preocupación en el mercado: una empresa del negocio de la carne acumula más de $3000 millones en cheques rechazados",
+      "link": "https://www.lanacion.com.ar/economia/campo/preocupacion-en-el-mercado-una-empresa-del-negocio-de-la-carne-acumula-mas-de-3000-millones-en-nid13072026/",
+      "descripcion": "Se trata de Argentine Young Bull, de Pilar; el frigorífico Tresnal, proveedor de esa firma, dice que ahora tiene todos los cheques rechazados, aunque en el sector indican que los endosó a clientes propios",
+      "fecha_publicacion": "2026-07-13T21:02:39+00:00",
+      "fuente_id": "lanacion_eco",
+      "fuente_nombre": "La Nación Economía",
       "categoria": "Finanzas"
     },
     {
-      "id": "ae338a4d7558",
-      "titulo": "El PIB de Kazajistán creció un 4,1% en el primer semestre del año",
-      "link": "https://es.investing.com/news/economic-indicators/el-pib-de-kazajistan-crecio-un-41-en-el-primer-semestre-del-ano-93CH-3738678",
+      "id": "f61b34c72c13",
+      "titulo": "California ofrece un reembolso de 3.500 dólares a compradores de vehículos eléctricos nuevos",
+      "link": "https://es.investing.com/news/world-news/california-ofrece-un-reembolso-de-3500-dolares-a-compradores-de-vehiculos-electricos-nuevos-93CH-3739845",
       "descripcion": "",
-      "fecha_publicacion": "2026-07-13T10:04:03+00:00",
-      "fuente_id": "investing_intl2",
-      "fuente_nombre": "Investing Mundo",
+      "fecha_publicacion": "2026-07-13T16:18:36+00:00",
+      "fuente_id": "investing_intl",
+      "fuente_nombre": "Investing Internacional",
       "categoria": "Internacional"
     }
   ],
   "secciones": {
+    "Finanzas": [
+      {
+        "id": "f14300409f6f",
+        "titulo": "Preocupación en el mercado: una empresa del negocio de la carne acumula más de $3000 millones en cheques rechazados",
+        "link": "https://www.lanacion.com.ar/economia/campo/preocupacion-en-el-mercado-una-empresa-del-negocio-de-la-carne-acumula-mas-de-3000-millones-en-nid13072026/",
+        "descripcion": "Se trata de Argentine Young Bull, de Pilar; el frigorífico Tresnal, proveedor de esa firma, dice que ahora tiene todos los cheques rechazados, aunque en el sector indican que los endosó a clientes propios",
+        "fecha_publicacion": "2026-07-13T21:02:39+00:00",
+        "fuente_id": "lanacion_eco",
+        "fuente_nombre": "La Nación Economía",
+        "categoria": "Finanzas"
+      },
+      {
+        "id": "cb67b8075b4f",
+        "titulo": "Skanska: un juicio icónico en el que el propio gerente sueco le puso un número a la coima",
+        "link": "https://www.lanacion.com.ar/economia/skanska-un-juicio-iconico-en-el-que-el-propio-gerente-sueco-le-puso-un-numero-a-la-coima-nid13072026/",
+        "descripcion": "Fue el primer gran escándalo de corrupción del kirchnerismo; más allá de la condena, el expediente entregó un mapa de cómo funcionó el negocio de la obra pública en la Argentina",
+        "fecha_publicacion": "2026-07-13T20:52:29+00:00",
+        "fuente_id": "lanacion_eco",
+        "fuente_nombre": "La Nación Economía",
+        "categoria": "Finanzas"
+      },
+      {
+        "id": "7bc37ef772d9",
+        "titulo": "Aportó más de US$1600 millones: pronostican que seguirá el auge de un cultivo que es sensación en el país y el mundo",
+        "link": "https://www.lanacion.com.ar/economia/campo/aporto-mas-de-us1600-millones-pronostican-que-seguira-el-auge-de-un-cultivo-que-es-sensacion-en-el-nid13072026/",
+        "descripcion": "El complejo girasol registró durante el período enero-mayo de 2026 una suba interanual del 126,1%",
+        "fecha_publicacion": "2026-07-13T20:46:39+00:00",
+        "fuente_id": "lanacion_eco",
+        "fuente_nombre": "La Nación Economía",
+        "categoria": "Finanzas"
+      },
+      {
+        "id": "e8b1d6b851db",
+        "titulo": "Experto de la City recomienda invertir en estos 2 CEDEARs",
+        "link": "https://www.iprofesional.com/finanzas/459540-experto-de-la-city-recomienda-invertir-en-estos-2-cedears",
+        "descripcion": "Analista de mercados recomienda dos Certificados de Depósitos Argentinos (CEDEARs), fracciones de acciones de empresas mundiales que se compran en pesos",
+        "fecha_publicacion": "2026-07-13T20:35:00+00:00",
+        "fuente_id": "iprof_economia",
+        "fuente_nombre": "iProfesional Economía",
+        "categoria": "Finanzas"
+      },
+      {
+        "id": "3d017e8994d5",
+        "titulo": "ARCA endurece los controles y estas cuatro razones pueden dejarte fuera del Monotributo",
+        "link": "https://www.iproup.com/finanzas/69814-arca-endurece-controles-y-estas-4-razones-pueden-dejarte-fuera-del-monotributo",
+        "descripcion": "La sanción más severa implica la incorporación directa al régimen general, con obligaciones fiscales más complejas como IVA y Ganancias",
+        "fecha_publicacion": "2026-07-13T20:35:00+00:00",
+        "fuente_id": "iproup_fintech",
+        "fuente_nombre": "iProUP Fintech",
+        "categoria": "Finanzas"
+      },
+      {
+        "id": "729e67ce0e41",
+        "titulo": "El dólar blue subió por primera vez en seis ruedas y la brecha tocó un pico de tres semanas",
+        "link": "https://www.ambito.com/finanzas/el-dolar-blue-subio-primera-vez-seis-ruedas-y-la-brecha-toco-un-pico-tres-semanas-n6299028",
+        "descripcion": "La cotización informal rebota hasta los $1.520, mientras el mayorista retrocede y se ubica en $1.482. Así, la diferencia entre ambos tipos de cambio se amplía hasta el 2,56%, frente al 1,48% previo.",
+        "fecha_publicacion": "2026-07-13T20:35:00+00:00",
+        "fuente_id": "ambito_fin",
+        "fuente_nombre": "Ámbito Finanzas",
+        "categoria": "Finanzas"
+      },
+      {
+        "id": "bb0fb96a9dcf",
+        "titulo": "Subió el petróleo, cayeron acciones y rebotó el riesgo país tras la nueva escalada en Medio Oriente",
+        "link": "https://www.iprofesional.com/finanzas/459823-sube-el-petroleo-caen-acciones-y-rebota-el-riesgo-pais-tras-escalada-en-medio-oriente",
+        "descripcion": "Wall Street arranca en rojo por la nueva tensión entre Estados Unidos e Irán, mientras el petróleo vuelve a subir por la crisis en Medio Oriente",
+        "fecha_publicacion": "2026-07-13T20:15:00+00:00",
+        "fuente_id": "iprof_finanzas",
+        "fuente_nombre": "iProfesional Finanzas",
+        "categoria": "Finanzas"
+      },
+      {
+        "id": "477ec3df476a",
+        "titulo": "Las billeteras venden el dólar oficial más barato que los bancos más grandes, según un ranking",
+        "link": "https://www.iproup.com/finanzas/69398-comprar-dolares-banco-nacion-caro-apps-motivo-preocupa-junio-2026",
+        "descripcion": "Las plataformas digitales para invertir ganan terreno y desplazan al ahorro convencional entre quienes buscan mejores valores cambiarios",
+        "fecha_publicacion": "2026-07-13T19:36:00+00:00",
+        "fuente_id": "iproup_fintech",
+        "fuente_nombre": "iProUP Fintech",
+        "categoria": "Finanzas"
+      }
+    ],
+    "Fulbito": [
+      {
+        "id": "0e0ffad3415e",
+        "titulo": "Fernando Muslera volvió a Estudiantes y se metió de lleno en la preparación para la Supercopa Argentina",
+        "link": "https://www.0221.com.ar/estudiantes/fernando-muslera-volvio-estudiantes-y-se-metio-lleno-la-preparacion-la-supercopa-argentina-n130962",
+        "descripcion": "Tras su participación en el Mundial 2026, Fernando Muslera se sumó al plantel de Estudiantes y retomó los entrenamientos de cara a la Supercopa Argentina.",
+        "fecha_publicacion": "2026-07-13T20:50:00+00:00",
+        "fuente_id": "est_0221",
+        "fuente_nombre": "0221 Estudiantes",
+        "categoria": "Fulbito"
+      },
+      {
+        "id": "0fccbf9fd2b0",
+        "titulo": "La buena noticia que recibió una promesa de Estudiantes que se ilusiona con jugar el Mundial 2030",
+        "link": "https://www.0221.com.ar/estudiantes/la-buena-noticia-que-recibio-una-promesa-estudiantes-que-se-ilusiona-jugar-el-mundial-2030-n130959",
+        "descripcion": "En medio de la pretemporada, un jugador de Estudiantes recibió una gran noticia que lo ilusiona con jugar el Mundial 2030.",
+        "fecha_publicacion": "2026-07-13T20:32:00+00:00",
+        "fuente_id": "est_0221",
+        "fuente_nombre": "0221 Estudiantes",
+        "categoria": "Fulbito"
+      },
+      {
+        "id": "426520ec59c7",
+        "titulo": "Se viene la oferta formal por Mikel Amondarain: Bologna y un equipo de la Premier League lo quieren",
+        "link": "https://www.0221.com.ar/estudiantes/se-viene-la-oferta-formal-mikel-amondarain-bologna-y-un-equipo-la-premier-league-lo-quieren-n130938",
+        "descripcion": "Bologna prepara una oferta por Mikel Amondarain, mientras un club de la Premier League también sigue al volante de Estudiantes, con contrato hasta 2028.",
+        "fecha_publicacion": "2026-07-13T13:52:00+00:00",
+        "fuente_id": "est_0221",
+        "fuente_nombre": "0221 Estudiantes",
+        "categoria": "Fulbito"
+      }
+    ],
     "Agro": [
       {
-        "id": "7411f3101564",
-        "titulo": "“Los insumos son el sol, la bosta y el agua que infiltra”: Julio Ratti incentiva a los productores de Punta Indio a iniciarse en la ganadería regenerativa y amigarse con sus vecinos",
-        "link": "https://bichosdecampo.com/los-insumos-son-el-sol-la-bosta-y-el-agua-que-infiltra-julio-ratti-incentiva-a-los-productores-de-punta-indio-a-iniciarse-en-la-ganaderia-regenerativa-y-amigarse-con-sus-vecinos/",
-        "descripcion": "En muchos pueblos, la conversación entre productores y vecinos por temas ambientales suele empezar torcida. De un lado, quienes viven de producir. Del otro, quienes sospechan que esa producción contamina y arruina el ambiente. Por eso en Punta Indio, a orillas del Río de la Plata y del Samborombón, hay una escena que llama la [&#8230;]",
-        "fecha_publicacion": "2026-07-13T11:50:27+00:00",
+        "id": "22773a7ba0f5",
+        "titulo": "La nueva frontera del agro: “Después de Vaca Muerta, viene Formosa”, se esperanza Diego Canalis desde El Colorado, en el sur provincial",
+        "link": "https://bichosdecampo.com/la-nueva-frontera-del-agro-despues-de-vaca-muerta-viene-formosa-se-esperanza-diego-canalis-desde-el-colorado-en-el-sur-provincial/",
+        "descripcion": "Para entender lo que está pasando en el campo formoseño hay una parada obligada. Nos lo advirtieron apenas llegamos: “si querés saber qué se cocina en el agro de esta provincia, tenés que hablar con Diego Canalis”. Así que fuimos a buscarlo hasta El Colorado, en el sureste formoseño que queda a apenas 200 metros [&#8230;]",
+        "fecha_publicacion": "2026-07-13T20:49:15+00:00",
         "fuente_id": "bichos_campo",
         "fuente_nombre": "Bichos de Campo",
         "categoria": "Agro"
       },
       {
-        "id": "2dbf0e3af7fb",
-        "titulo": "Proteínas alternativas y “salvajes”: Buscan habilitar la venta de carne de jabalí en Río Negro para terminar con los circuitos informales y dar garantías sanitarias a la población",
-        "link": "https://bichosdecampo.com/proteinas-alternativas-y-salvajes-buscan-habilitar-la-venta-de-carne-de-jabali-en-rio-negro-para-terminar-con-los-circuitos-informales-y-dar-garantias-sanitarias-a-la-poblacion/",
-        "descripcion": "El gobierno de Río Negro se prepara para enviar a la legislatura local un proyecto para modificar la ley provincial de Carnes, a través del cual busca habilitar la comercialización de las llamadas “carnes salvajes”. El foco está puesto principalmente en el jabalí, cuya caza y faena permanece limitada a los cazadores, así como también [&#8230;]",
-        "fecha_publicacion": "2026-07-13T11:49:35+00:00",
+        "id": "65fedc335960",
+        "titulo": "Radiografía exportadora: más de la mitad de las cadenas del agro crecen tanto en valor como en volumen",
+        "link": "https://www.infocampo.com.ar/radiografia-exportadora-mas-de-la-mitad-de-las-cadenas-del-agro-crecen-tanto-en-valor-como-en-volumen/",
+        "descripcion": "¿Las exportaciones agroindustriales están creciendo más por precios o por cantidades? ¿Se comercializan más productos primarios o con valor agregado? Las respuestas de un informe del IERAL de la Fundación Mediterránea.",
+        "fecha_publicacion": "2026-07-13T20:13:10+00:00",
+        "fuente_id": "infocampo",
+        "fuente_nombre": "Infocampo",
+        "categoria": "Agro"
+      },
+      {
+        "id": "344bb725d07c",
+        "titulo": "Los futuros del maíz suben por el clima en EE.UU. y tensiones en Oriente Medio",
+        "link": "https://es.investing.com/news/commodities-news/los-futuros-del-maiz-suben-por-el-clima-en-eeuu-y-tensiones-en-oriente-medio-93CH-3739972",
+        "descripcion": "",
+        "fecha_publicacion": "2026-07-13T20:05:11+00:00",
+        "fuente_id": "investing_agro",
+        "fuente_nombre": "Investing Agro",
+        "categoria": "Agro"
+      },
+      {
+        "id": "7001c5462a3b",
+        "titulo": "Yamila Farrell, la primera mujer en presidir la Sociedad Rural de Chivilcoy, busca mejorar la gestión de los caminos rurales: “Nos enfocamos en la tasa vial y la seguridad”, dice la joven de 29 años",
+        "link": "https://bichosdecampo.com/yamila-farrell-la-primera-mujer-en-presidir-la-sociedad-rural-de-chivilcoy-busca-mejorar-la-gestion-de-los-caminos-rurales-nos-enfocamos-en-la-tasa-vial-y-la-seguridad-dice-la-jo/",
+        "descripcion": "Con apenas 29 años, Yamila Farrell rompió una tradición de casi ocho décadas al convertirse en la primera mujer en presidir la Sociedad Rural de Chivilcoy. Pero además de ese hecho histórico, la joven dirigente, que representa a la quinta y sexta generación de una familia de productores agropecuarios, asumió el desafío de conducir la [&#8230;]",
+        "fecha_publicacion": "2026-07-13T19:45:40+00:00",
         "fuente_id": "bichos_campo",
         "fuente_nombre": "Bichos de Campo",
         "categoria": "Agro"
       },
       {
-        "id": "e845c9bea31d",
-        "titulo": "Los costes de la energía de gas natural en EE.UU. alcanzan máximos de 17 años",
-        "link": "https://es.investing.com/news/commodities-news/los-costes-de-la-energia-de-gas-natural-en-eeuu-alcanzan-maximos-de-17-anos-93CH-3739052",
+        "id": "19cecb87351c",
+        "titulo": "Futuros de la plata caen a $58 en tendencia bajista: Niveles en vivo",
+        "link": "https://es.investing.com/news/commodities-news/futuros-de-la-plata-caen-293-y-presionan-soporte-clave-niveles-en-vivo-93CH-3738371",
         "descripcion": "",
-        "fecha_publicacion": "2026-07-13T11:24:57+00:00",
+        "fecha_publicacion": "2026-07-13T19:07:46+00:00",
         "fuente_id": "investing_agro",
         "fuente_nombre": "Investing Agro",
         "categoria": "Agro"
       },
       {
-        "id": "a431262fafc7",
-        "titulo": "Goldman eleva su previsión del petróleo por una mayor prima de seguridad",
-        "link": "https://es.investing.com/news/commodities-news/goldman-eleva-su-prevision-del-petroleo-por-una-mayor-prima-de-seguridad-3738733",
+        "id": "f93239ced8be",
+        "titulo": "Futuros del oro caen -2,6% con RSI en sobreventa: Niveles en vivo",
+        "link": "https://es.investing.com/news/commodities-news/los-futuros-del-oro-testean-soporte-clave-en-4050-niveles-en-vivo-93CH-3738360",
         "descripcion": "",
-        "fecha_publicacion": "2026-07-13T10:22:11+00:00",
+        "fecha_publicacion": "2026-07-13T19:04:45+00:00",
         "fuente_id": "investing_agro",
         "fuente_nombre": "Investing Agro",
         "categoria": "Agro"
       },
       {
-        "id": "046412d204bc",
-        "titulo": "Clima en Buenos Aires hoy 13 julio 2026",
-        "link": "https://www.infocampo.com.ar/clima-en-buenos-aires-hoy-13-julio-2026/",
-        "descripcion": "El Servicio Meteorológico Nacional anticipa el clima para Buenos Aires, pronostico del tiempo Buenos Aires",
-        "fecha_publicacion": "2026-07-13T09:00:16+00:00",
-        "fuente_id": "infocampo",
-        "fuente_nombre": "Infocampo",
+        "id": "c204c64899f4",
+        "titulo": "Alto el fuego: Buscando combatir la inseguridad rural, un diputado propone prohibir la caza de animales en campos privados de Buenos Aires",
+        "link": "https://bichosdecampo.com/alto-el-fuego-buscando-combatir-la-inseguridad-rural-un-diputado-propone-prohibir-la-caza-de-animales-en-campos-privados-de-buenos-aires/",
+        "descripcion": "La inseguridad en los campos viene acentuándose en los últimos tiempos. En casi todas las regiones de Argentina, se reportan a diario hechos delictivos en establecimientos privados. A la cabeza de la lista se encuentra el abigeato, faena clandestina de animales, robo de herramientas e ingresos con personas armadas a los cascos de los campos. [&#8230;]",
+        "fecha_publicacion": "2026-07-13T18:57:07+00:00",
+        "fuente_id": "bichos_campo",
+        "fuente_nombre": "Bichos de Campo",
         "categoria": "Agro"
       },
       {
-        "id": "1a9650377837",
-        "titulo": "Clima en San Luis hoy 13 julio 2026",
-        "link": "https://www.infocampo.com.ar/clima-en-san-luis-hoy-13-julio-2026/",
-        "descripcion": "El Servicio Meteorológico Nacional anticipa el clima para San luis, pronostico del tiempo San luis",
-        "fecha_publicacion": "2026-07-13T09:00:14+00:00",
+        "id": "d8662a2a0a2f",
+        "titulo": "Heladas en trigo: por qué el daño visual engaña y cómo proteger el potencial con tecnología",
+        "link": "https://www.infocampo.com.ar/heladas-en-trigo-por-que-el-dano-visual-engana-y-como-proteger-el-potencial-con-tecnologia/",
+        "descripcion": "Desde Neogen aportan evidencia sobre el impacto de las recientes heladas en el cereal y explican las causas por las que el daño visible no siempre se traduce en pérdidas de rendimiento. Además, ofrecen recomendaciones de manejo.",
+        "fecha_publicacion": "2026-07-13T18:05:26+00:00",
         "fuente_id": "infocampo",
         "fuente_nombre": "Infocampo",
-        "categoria": "Agro"
-      },
-      {
-        "id": "31316c139909",
-        "titulo": "Clima en La Rioja: – Lluvia ligera el pronóstico para hoy, 13 de julio",
-        "link": "https://www.infocampo.com.ar/clima-en-la-rioja-lluvia-ligera-el-pronostico-para-hoy-13-de-julio/",
-        "descripcion": "El Servicio Meteorológico Nacional anticipa el clima para La Rioja, pronostico del tiempo en La Rioja",
-        "fecha_publicacion": "2026-07-13T09:00:13+00:00",
-        "fuente_id": "infocampo",
-        "fuente_nombre": "Infocampo",
-        "categoria": "Agro"
-      },
-      {
-        "id": "27ac3cd584b1",
-        "titulo": "Los precios del gas europeo suben a máximos de más de un mes por el cierre de Ormuz",
-        "link": "https://es.investing.com/news/commodities-news/los-precios-del-gas-europeo-suben-a-maximos-de-mas-de-un-mes-por-el-cierre-de-ormuz-3738496",
-        "descripcion": "",
-        "fecha_publicacion": "2026-07-13T08:26:27+00:00",
-        "fuente_id": "investing_agro",
-        "fuente_nombre": "Investing Agro",
         "categoria": "Agro"
       }
     ],
     "Mercados": [
       {
-        "id": "e4fe7c9e8ce1",
-        "titulo": "Macron pide más proyectos de defensa en la UE tras el fracaso del acuerdo de cazas",
-        "link": "https://es.investing.com/news/economy-news/macron-pide-mas-proyectos-de-defensa-en-la-ue-tras-el-fracaso-del-acuerdo-de-cazas-93CH-3739188",
-        "descripcion": "",
-        "fecha_publicacion": "2026-07-13T11:48:17+00:00",
-        "fuente_id": "investing_economia",
-        "fuente_nombre": "Investing Economía",
-        "categoria": "Mercados"
-      },
-      {
-        "id": "659b659fd027",
-        "titulo": "Ucrania ataca más petroleros y cargueros rusos en el Mar de Azov",
-        "link": "https://es.investing.com/news/economy-news/ucrania-ataca-mas-petroleros-y-cargueros-rusos-en-el-mar-de-azov-93CH-3739183",
-        "descripcion": "",
-        "fecha_publicacion": "2026-07-13T11:46:29+00:00",
-        "fuente_id": "investing_economia",
-        "fuente_nombre": "Investing Economía",
-        "categoria": "Mercados"
-      },
-      {
-        "id": "eb3a80179245",
-        "titulo": "Tripulante indio desaparecido tras ataque a barco en el Estrecho de Ormuz",
-        "link": "https://es.investing.com/news/economy-news/tripulante-indio-desaparecido-tras-ataque-a-barco-en-el-estrecho-de-ormuz-93CH-3739123",
-        "descripcion": "",
-        "fecha_publicacion": "2026-07-13T11:35:06+00:00",
-        "fuente_id": "investing_economia",
-        "fuente_nombre": "Investing Economía",
-        "categoria": "Mercados"
-      },
-      {
-        "id": "7400aeeaca24",
-        "titulo": "Pese a la volatilidad, gigante de Wall Street redobla su objetivo de u$s150.000 para Bitcoin en 2026",
-        "link": "https://www.iproup.com/economia-digital/69578-bitcoin-caida-pronostico-precio-record-bernstein-julio-2026",
-        "descripcion": "Bernstein ratificó su pronóstico de u$s150.000 para Bitcoin pese al desplome del 54%. Los flujos y las compras corporativas sostienen la apuesta",
-        "fecha_publicacion": "2026-07-13T11:01:00+00:00",
+        "id": "699c73e0afa4",
+        "titulo": "La transparencia financiera ya no es control, es velocidad de decisión",
+        "link": "https://www.iproup.com/economia-digital/69819-la-transparencia-financiera-ya-no-es-control-es-velocidad-de-decision",
+        "descripcion": "Gisela Belazio, CFO de Kuru, analiza la importancia de descubrir por qué el control de gastos en tiempo real define hoy la competitividad.",
+        "fecha_publicacion": "2026-07-13T20:45:00+00:00",
         "fuente_id": "iproup_eco",
         "fuente_nombre": "iProUP Economía Digital",
         "categoria": "Mercados"
+      },
+      {
+        "id": "0efb53e63b2d",
+        "titulo": "Irán, petróleo e IPC, el combo que puede sacudir a Bitcoin esta semana",
+        "link": "https://www.iproup.com/economia-digital/69815-por-que-sube-el-petroleo-y-que-pasa-con-bitcoin",
+        "descripcion": "Carolina Gama, country manager de Bitget en la Argentina, analiza cómo los mercados se debaten entre el riesgo geopolítico y el próximo dato de inflación",
+        "fecha_publicacion": "2026-07-13T20:20:00+00:00",
+        "fuente_id": "iproup_eco",
+        "fuente_nombre": "iProUP Economía Digital",
+        "categoria": "Mercados"
+      },
+      {
+        "id": "dcdb8f9921d2",
+        "titulo": "Strategy autorizó nuevas ventas de Bitcoin y puso en jaque el modelo de la tesorería cripto",
+        "link": "https://www.iproup.com/economia-digital/69805-por-que-strategy-volvio-autorizar-ventas-de-bitcoin",
+        "descripcion": "El mayor holder corporativo de Bitcoin del mundo autorizó ventas por unos $1.250 millones en BTC, por lo que puso en jaque su modelo de tesorería cripto",
+        "fecha_publicacion": "2026-07-13T18:45:00+00:00",
+        "fuente_id": "iproup_eco",
+        "fuente_nombre": "iProUP Economía Digital",
+        "categoria": "Mercados"
+      },
+      {
+        "id": "c85f0afc0b4f",
+        "titulo": "Moraes prohíbe a Flavio Bolsonaro visitar a su padre por 90 días",
+        "link": "https://es.investing.com/news/economy-news/moraes-prohibe-a-flavio-bolsonaro-visitar-a-su-padre-por-90-dias-93CH-3739922",
+        "descripcion": "",
+        "fecha_publicacion": "2026-07-13T18:24:22+00:00",
+        "fuente_id": "investing_economia",
+        "fuente_nombre": "Investing Economía",
+        "categoria": "Mercados"
+      },
+      {
+        "id": "2cbd2c9ae1d3",
+        "titulo": "Los bonistas de Senegal inician conversaciones para formar un grupo de acreedores",
+        "link": "https://es.investing.com/news/economy-news/los-bonistas-de-senegal-inician-conversaciones-para-formar-un-grupo-de-acreedores-93CH-3739915",
+        "descripcion": "",
+        "fecha_publicacion": "2026-07-13T18:05:11+00:00",
+        "fuente_id": "investing_economia",
+        "fuente_nombre": "Investing Economía",
+        "categoria": "Mercados"
+      },
+      {
+        "id": "73a0e7b6222b",
+        "titulo": "El tráfico de barcos por el Estrecho de Ormuz cae un 60%",
+        "link": "https://es.investing.com/news/economy-news/el-trafico-de-barcos-por-el-estrecho-de-ormuz-cae-un-60-3739903",
+        "descripcion": "",
+        "fecha_publicacion": "2026-07-13T17:37:09+00:00",
+        "fuente_id": "investing_economia",
+        "fuente_nombre": "Investing Economía",
+        "categoria": "Mercados"
       }
     ],
-    "Finanzas": [
+    "Automotor": [
       {
-        "id": "3cda0799ebfc",
-        "titulo": "Cómo comprar un Smart TV Samsung de 55 pulgadas con hasta 32% de descuento",
-        "link": "https://www.iprofesional.com/economia/459802-supermercado-changomas-cuanto-cuesta-comprar-un-smart-tv-samsung-4k-de-55-pulgadas-con-rebaja-y-cuotas",
-        "descripcion": "Aprovechá una promoción exclusiva en electrónicos: podés llevar una pantalla 4K de 55 pulgadas con rebaja superior al 30% y plan en cuotas",
-        "fecha_publicacion": "2026-07-13T11:44:00+00:00",
-        "fuente_id": "iprof_economia",
-        "fuente_nombre": "iProfesional Economía",
-        "categoria": "Finanzas"
+        "id": "4dc01cef1261",
+        "titulo": "La italiana Eni y BMW sellan una alianza para abastecer vehículos con biocombustible HVO",
+        "link": "https://www.ambito.com/energia/la-italiana-eni-y-bmw-sellan-una-alianza-abastecer-vehiculos-biocombustible-hvo-n6299036",
+        "descripcion": "El acuerdo permitirá que las flotas corporativas de BMW en Italia operen con HVO, un biocombustible renovable producido por Enilive que reduce, en promedio, un 79,5% las emisiones de CO equivalente respecto del diésel fósil.",
+        "fecha_publicacion": "2026-07-13T19:55:00+00:00",
+        "fuente_id": "ambito_autos",
+        "fuente_nombre": "Ámbito Autos",
+        "categoria": "Automotor"
       },
       {
-        "id": "8c33c94e8afb",
-        "titulo": "Las fintech avanzan con fuerza y obligan a los bancos a cambiar el modelo de negocio",
-        "link": "https://www.iproup.com/finanzas/69794-las-fintech-avanzan-con-fuerza-y-obligan-a-los-bancos-a-cambiar-el-modelo-de-negocio",
-        "descripcion": "La irrupción de billeteras digitales, criptomonedas y préstamos online obliga a repensar estrategias frente al avance de modelos ágiles y sin fronteras",
-        "fecha_publicacion": "2026-07-13T11:29:00+00:00",
-        "fuente_id": "iproup_fintech",
-        "fuente_nombre": "iProUP Fintech",
-        "categoria": "Finanzas"
+        "id": "794dae9ef571",
+        "titulo": "Sibilla: ´´no hay margen para bajar los precios de los autos si no se reducen los impuestos´´",
+        "link": "https://arodarpost.com.ar/sibilla-no-hay-margen-para-bajar-los-precios-de-los-autos-si-no-se-reducen-los-impuestos/",
+        "descripcion": "Los precios de los autos en la Argentina bajarán en la medida que se vaya reduciendo la carga tributaria que pesa sobre el sector, que hoy sigue representando más del 54% del valor de un vehículo vendido en el país. Así lo afirmó Pablo Sibilla, presidente de Renault Argentina, en una entrevista con Bloomberg Línea. [&#8230;]",
+        "fecha_publicacion": "2026-07-13T17:21:29+00:00",
+        "fuente_id": "arodar",
+        "fuente_nombre": "A Rodar Post",
+        "categoria": "Automotor"
       },
       {
-        "id": "ff5e2cf284a4",
-        "titulo": "Outlet de Once inaugura un nuevo local con ropa desde $3.000 y amplía su oferta de descuentos",
-        "link": "https://www.iprofesional.com/economia/459795-inauguran-el-outlet-mas-barato-de-buenos-aires-con-ropa-importada-al-precio-de-un-alfajor",
-        "descripcion": "El desembarco del nuevo local de Puro Hilo en Once genera expectativa por la variedad de prendas económicas y las largas filas de compradores",
-        "fecha_publicacion": "2026-07-13T10:50:00+00:00",
-        "fuente_id": "iprof_economia",
-        "fuente_nombre": "iProfesional Economía",
-        "categoria": "Finanzas"
+        "id": "dab5df431b88",
+        "titulo": "Honda WN7: la primera moto eléctrica de la marca",
+        "link": "https://noticias.autocosmos.com.ar/2026/07/13/honda-wn7-la-primera-moto-electrica-de-la-marca",
+        "descripcion": "La estrategia para lograr la neutralidad de carbono en todas sus actividades se anticipa a 2050 y llega al mundo de las dos ruedas.",
+        "fecha_publicacion": "2026-07-13T17:00:00+00:00",
+        "fuente_id": "autocosmos",
+        "fuente_nombre": "Autocosmos Argentina",
+        "categoria": "Automotor"
       },
       {
-        "id": "2d87449f17f3",
-        "titulo": "Las medidas cambiarias para contener al dólar en el año electoral",
-        "link": "https://www.iproup.com/finanzas/69793-las-medidas-cambiarias-para-contener-al-dolar-en-el-ano-electoral",
-        "descripcion": "Para reducir tensiones en el mercado, el equipo económico aplica regulaciones sobre instrumentos financieros y acceso a insumos importados clave",
-        "fecha_publicacion": "2026-07-13T10:33:00+00:00",
-        "fuente_id": "iproup_fintech",
-        "fuente_nombre": "iProUP Fintech",
-        "categoria": "Finanzas"
+        "id": "333a7f36f20e",
+        "titulo": "Las 10 claves del Chery Tiggo 7 Pro Hybrid",
+        "link": "https://arodarpost.com.ar/las-10-claves-del-chery-tiggo-7-pro-hybrid/",
+        "descripcion": "Bajo el control, ahora, del Grupo Corven, la marca Chery busca recuperar terreno perdido en los últimos años y reposicionarse dentro de un segmento altamente competitivo como el de los SUV medianos. Hay una renovación importante y se anticipan más novedades. El nuevo Tiggo 7 Pro Hybrid es uno de los modelos que apunta a [&#8230;]",
+        "fecha_publicacion": "2026-07-13T15:25:15+00:00",
+        "fuente_id": "arodar",
+        "fuente_nombre": "A Rodar Post",
+        "categoria": "Automotor"
       },
       {
-        "id": "32403cef628f",
-        "titulo": "El Gobierno prepara su primera colocación de deuda internacional por la baja del riesgo país",
-        "link": "https://www.iproup.com/finanzas/69792-el-gobierno-prepara-colocacion-de-deuda-internacional-por-la-baja-del-riesgo-pais",
-        "descripcion": "Las proyecciones técnicas apuntan a convalidar tasas de un solo dígito que asimilen las reformas estructurales aplicadas en la plaza local",
-        "fecha_publicacion": "2026-07-13T10:03:00+00:00",
-        "fuente_id": "iproup_fintech",
-        "fuente_nombre": "iProUP Fintech",
-        "categoria": "Finanzas"
+        "id": "cf9ac8de9d34",
+        "titulo": "Esta es la nueva solución china para embarcar autos",
+        "link": "https://noticias.autocosmos.com.ar/2026/07/13/esta-es-la-nueva-solucion-china-para-embarcar-autos",
+        "descripcion": "La alta demanda de autos chinos sumada a la escasez de buques especializados dio origen a esta peculiar solución.",
+        "fecha_publicacion": "2026-07-13T15:00:01+00:00",
+        "fuente_id": "autocosmos",
+        "fuente_nombre": "Autocosmos Argentina",
+        "categoria": "Automotor"
       },
       {
-        "id": "5ffd4f6580a3",
-        "titulo": "La City calcula fuerte ganancia en dólares para bonos argentinos tras caída del riesgo país",
-        "link": "https://www.iprofesional.com/finanzas/459408-la-city-preve-fuerte-ganancia-en-dolares-para-bonos-argentinos-tras-nueva-caida-del-riesgo-pais",
-        "descripcion": "Las valuaciones de los activos argentinos repuntan y analistas anticipan un ciclo de ganancias en títulos públicos si persiste la tendencia actual",
-        "fecha_publicacion": "2026-07-13T10:00:00+00:00",
-        "fuente_id": "iprof_economia",
-        "fuente_nombre": "iProfesional Economía",
-        "categoria": "Finanzas"
+        "id": "c742d65eb207",
+        "titulo": "El SUV más vendido de Argentina es chino, lleva logo de Ford y ya es un fenómeno",
+        "link": "https://www.iprofesional.com/autos/459702-el-suv-mas-vendido-de-argentina-es-chino-lleva-logo-de-ford-y-ya-es-un-fenomeno",
+        "descripcion": "La Ford Territory, fabricada en China, lidera el ranking de los SUV más vendidos de Argentina y consolida su éxito durante 2026",
+        "fecha_publicacion": "2026-07-13T14:17:00+00:00",
+        "fuente_id": "iprof_autos",
+        "fuente_nombre": "iProfesional Autos",
+        "categoria": "Automotor"
       },
       {
-        "id": "7793bf7299db",
-        "titulo": "Maíz: una oportunidad para capturar el máximo potencial de cada lote",
-        "link": "https://www.lanacion.com.ar/economia/campo/maiz-una-oportunidad-para-capturar-el-maximo-potencial-de-cada-lote-nid13072026/",
-        "descripcion": "La próxima campaña no garantiza cosechas récord, pero sí parece ofrecer algo que hacía tiempo no aparecía con tanta claridad: un contexto que vuelve a premiar las buenas decisiones agronómicas, poniendo el rendimiento en el centro de la estrategia",
-        "fecha_publicacion": "2026-07-13T09:30:00+00:00",
-        "fuente_id": "lanacion_eco",
-        "fuente_nombre": "La Nación Economía",
-        "categoria": "Finanzas"
+        "id": "59b29ccc9044",
+        "titulo": "Esí es el nuevo BYD Dolphin Mini que debería venir a Argentina",
+        "link": "https://noticias.autocosmos.com.ar/2026/07/13/esi-es-el-nuevo-byd-dolphin-mini-que-deberia-venir-a-argentina",
+        "descripcion": "El hatchback eléctrico chino, conocido como Seagull en China, evolucionará con mayor tamaño, potencia y velocidad máxima.",
+        "fecha_publicacion": "2026-07-13T13:30:00+00:00",
+        "fuente_id": "autocosmos",
+        "fuente_nombre": "Autocosmos Argentina",
+        "categoria": "Automotor"
       },
       {
-        "id": "3447e0dc88f2",
-        "titulo": "Aconsejan aprovechar las buenas relaciones insumo/producto para la campaña agrícola 2026/27",
-        "link": "https://www.lanacion.com.ar/economia/campo/aconsejan-aprovechar-las-buenas-relaciones-insumoproducto-para-la-campana-agricola-202627-nid13072026/",
-        "descripcion": "Según un informe, se abrió una ventana de menores precios de la urea, que invita a no demorar las decisiones de compra",
-        "fecha_publicacion": "2026-07-13T09:30:00+00:00",
-        "fuente_id": "lanacion_eco",
-        "fuente_nombre": "La Nación Economía",
-        "categoria": "Finanzas"
+        "id": "8a15d92a456a",
+        "titulo": "El auto chino más barato que se vende en la Argentina es el JMEV Easy3",
+        "link": "https://www.iprofesional.com/autos/459799-cual-es-el-auto-chino-mas-barato-que-se-vende-en-la-argentina",
+        "descripcion": "En medio de la revolución de autos chinos que llegaron al país, este vehículo es el más accesible y tiene una ventaja frente a los rivales",
+        "fecha_publicacion": "2026-07-13T11:07:00+00:00",
+        "fuente_id": "iprof_autos",
+        "fuente_nombre": "iProfesional Autos",
+        "categoria": "Automotor"
       }
     ],
-    "Fiscal": [
+    "Comex": [
       {
-        "id": "f519cef570a4",
-        "titulo": "ARCA analiza lanzar un nuevo plan de pagos de hasta 48 cuotas que permite reformular planes caducos",
-        "link": "https://www.iprofesional.com/impuestos/459785-arca-analiza-lanzar-un-nuevo-plan-de-pagos-de-hasta-48-cuotas-que-incluye-planes-caducos",
-        "descripcion": "El Gobierno analiza reflotar un plan de pagos especial para pymes similar al que estuvo vigente hasta marzo pasado. Cuáles son las características",
-        "fecha_publicacion": "2026-07-13T11:16:00+00:00",
-        "fuente_id": "iprof_impuestos",
-        "fuente_nombre": "iProfesional Impuestos",
-        "categoria": "Fiscal"
+        "id": "369fd980fc09",
+        "titulo": "Bunge es nuevo líder de exportaciones agrícolas argentinas",
+        "link": "https://www.iprofesional.com/comex/459523-exportaciones-agricolas-que-empresa-ahora-lidera-el-ranking",
+        "descripcion": "Tras la integración empresarial, la estructura exportadora del sector agro argentino cambia y pone foco en nuevos destinos y cultivos estratégicos",
+        "fecha_publicacion": "2026-07-13T19:53:00+00:00",
+        "fuente_id": "iprof_comex",
+        "fuente_nombre": "iProfesional Comex",
+        "categoria": "Comex"
       },
       {
-        "id": "17025c4871f0",
-        "titulo": "Últimas dos semanas para Ganancias Simplificada y Bienes Personales sin reforma y sin nueva prórroga",
-        "link": "https://www.iprofesional.com/impuestos/459784-ganancias-simplificada-y-bienes-personales-ultimas-semanas-sin-reforma-y-sin-prorroga",
-        "descripcion": "El 27 de julio vencen las declaraciones juradas anuales del Impuesto a las Ganancias, Bienes Personales e Impuesto cedular. Qué sucederá",
-        "fecha_publicacion": "2026-07-13T11:15:00+00:00",
-        "fuente_id": "iprof_impuestos",
-        "fuente_nombre": "iProfesional Impuestos",
-        "categoria": "Fiscal"
+        "id": "ce3a20a5dfa9",
+        "titulo": "Aduana de Uruguay incautó celulares y más de 670.000 cigarrillos en operativos contra el contrabando",
+        "link": "https://aduananews.com/aduana-de-uruguay-incauto-celulares-y-mas-de-670-000-cigarrillos-en-operativos-contra-el-contrabando/?utm_source=rss&utm_medium=rss&utm_campaign=aduana-de-uruguay-incauto-celulares-y-mas-de-670-000-cigarrillos-en-operativos-contra-el-contrabando",
+        "descripcion": "La Dirección Nacional de Aduanas (DNA) de Uruguay informó este lunes (13.07.2026) sobre una serie de procedimientos realizados en distintos puntos del país que permitieron detectar maniobras vinculadas al contrabando de mercaderías. Los operativos, desarrollados en forma coordinada con organismos de seguridad, incluyeron controles en el Puerto de Colonia —uno de los principales puntos de [&#8230;] The post Aduana de Uruguay incautó celulares y más de 670.000 cigarrillos en operativos contra el c",
+        "fecha_publicacion": "2026-07-13T18:31:53+00:00",
+        "fuente_id": "aduana_news",
+        "fuente_nombre": "Aduana News",
+        "categoria": "Comex"
       },
       {
-        "id": "ba36e9a04be9",
-        "titulo": "Arranca la feria fiscal de invierno y ya sabe qué pasa con los impuestos que vencen en esta fecha",
-        "link": "https://www.iprofesional.com/impuestos/459787-arranca-la-feria-fiscal-de-invierno-que-pasa-con-los-impuestos-que-vencen-en-esta-fecha",
-        "descripcion": "La Agencia de Recaudación y Control Aduanero ya oficializó las fechas y condiciones para la Feria Fiscal Invernal 2026.. Qué se suspende en esa fecha",
-        "fecha_publicacion": "2026-07-13T11:14:00+00:00",
-        "fuente_id": "iprof_impuestos",
-        "fuente_nombre": "iProfesional Impuestos",
-        "categoria": "Fiscal"
+        "id": "84ec477ccc2d",
+        "titulo": "MERCOSUR-UE: una nueva ventana comercial para las economías regionales argentinas",
+        "link": "https://aduananews.com/mercosur-ue-una-nueva-ventana-comercial-para-las-economias-regionales-argentinas/?utm_source=rss&utm_medium=rss&utm_campaign=mercosur-ue-una-nueva-ventana-comercial-para-las-economias-regionales-argentinas",
+        "descripcion": "Mientras la FAO ubica a la Argentina entre los mayores exportadores netos de alimentos del mundo, el Acuerdo Interino de Comercio entre el MERCOSUR y la Unión Europea, vigente desde el 1° de mayo de 2026, abre nuevas oportunidades para las economías regionales en un mercado que ya absorbe uno de cada cinco dólares exportados [&#8230;] The post MERCOSUR-UE: una nueva ventana comercial para las economías regionales argentinas appeared first on Aduana News .",
+        "fecha_publicacion": "2026-07-13T13:53:43+00:00",
+        "fuente_id": "aduana_news",
+        "fuente_nombre": "Aduana News",
+        "categoria": "Comex"
       },
       {
-        "id": "9646c9dca1d1",
-        "titulo": "Reforma tributaria: preocupa el futuro del Monotributo por su eliminación o reducción. ¿Puede volver el responsable no inscripto en IVA?",
-        "link": "https://www.ambito.com/novedades-fiscales/reforma-tributaria-preocupa-el-futuro-del-monotributo-su-eliminacion-o-reduccion-puede-volver-el-responsable-no-inscripto-iva-n6298658",
-        "descripcion": "El provenir del régimen simplificado para pequeños contribuyentes aparece como incierto a juzgar por las sugerencias tanto del FMI como del Consejo de Mayo que apuntan a su equiparación en términos de pago o a su reducción con una transición. ¿Y las provincias?",
-        "fecha_publicacion": "2026-07-12T21:44:00+00:00",
-        "fuente_id": "ambito_fisc",
-        "fuente_nombre": "Ámbito Fiscal",
-        "categoria": "Fiscal"
+        "id": "50c067b8bfaa",
+        "titulo": "DHL Global Forwarding designó nuevo CEO para Argentina, Chile, Perú y Ecuador",
+        "link": "https://tradenews.com.ar/dhl-global-forwarding-designo-nuevo-ceo-para-argentina-chile-peru-y-ecuador/",
+        "descripcion": "DHL Global Forwarding, el especialista en transporte aéreo y marítimo del Grupo DHL, anunció la designación de Eduardo Rodrigues como nuevo CEO PAC, que comprende los países Argentina, Chile, Perú...",
+        "fecha_publicacion": "2026-07-13T13:19:17+00:00",
+        "fuente_id": "trade_news",
+        "fuente_nombre": "Trade News",
+        "categoria": "Comex"
       },
       {
-        "id": "b858dafa4f84",
-        "titulo": "Impulsan convertir en permanentes los beneficios fiscales para el Área Patagónica y la Zona Austral bonaerense",
-        "link": "https://www.ambito.com/novedades-fiscales/impulsan-convertir-permanentes-los-beneficios-fiscales-el-area-patagonica-y-la-zona-austral-bonaerense-n6298035",
-        "descripcion": "La recurrencia de prórrogas de la vigencia de los beneficios de las Leyes 12.322 y 12.323, ante factores climáticos, que se reiterarán invariablemente, llevó a los diputados bonaerenses a otorgarle dictamen favorable a un proyecto para la permanencia de las medidas para zonas desfavorables",
-        "fecha_publicacion": "2026-07-09T21:58:00+00:00",
-        "fuente_id": "ambito_fisc",
-        "fuente_nombre": "Ámbito Fiscal",
-        "categoria": "Fiscal"
+        "id": "b9eb100d240b",
+        "titulo": "Cinco cambios esenciales del nuevo régimen sancionatorio aduanero en Colombia   – Dres. Juan David López y Juan Guillermo García (desde Colombia)",
+        "link": "https://mercojuris.com/cinco-cambios-esenciales-del-nuevo-regimen-sancionatorio-aduanero-en-colombia-dres-juan-david-lopez-y-juan-guillermo-garcia-desde-colombia/",
+        "descripcion": "El pasado 20 de junio se expidió la ley 2586 del 2026 que regula el nuevo régimen sancionatorio aduanero, y con él se generan cambios importantes al comercio exterior. La nueva ley se destaca por su enfoque orientado al cumplimiento voluntario, la proporcionalidad y la disminución de escenarios punitivos. Particularmente, figuras como la reducción sustancial del número de infracciones, así como la ampliación de mecanismos de corrección y allanamiento, evidencian una clara apuesta por facilitar l",
+        "fecha_publicacion": "2026-07-12T22:55:51+00:00",
+        "fuente_id": "mercojuris",
+        "fuente_nombre": "Mercojuris",
+        "categoria": "Comex"
       },
       {
-        "id": "72b64a79ff55",
-        "titulo": "Reforma tributaria: esas cuestiones que no pueden pasar desapercibidas para su implementación",
-        "link": "https://www.ambito.com/novedades-fiscales/reforma-tributaria-esas-cuestiones-que-no-pueden-pasar-desapercibidas-su-implementacion-n6297276",
-        "descripcion": "Ante los anuncios del gobierno de impulsar una modificación integral del sistema tributario, abarcando la nación, las provincias y los municipios, parece necesario analizar ciertos objetivos en línea con la economía y las necesidades de cada uno se esos estados.",
-        "fecha_publicacion": "2026-07-07T23:40:00+00:00",
-        "fuente_id": "ambito_fisc",
-        "fuente_nombre": "Ámbito Fiscal",
-        "categoria": "Fiscal"
+        "id": "b5aa6a1e8531",
+        "titulo": "La justicia pone límites al delito de lavado de bienes por falta de acreditación del ilícito precedente – Dr. Humberto Bertazza",
+        "link": "https://mercojuris.com/la-justicia-pone-limites-al-delito-de-lavado-de-bienes-por-falta-de-acreditacion-del-ilicito-precedente-dr-humberto-bertazza/",
+        "descripcion": "&#160; El tema Un interesante caso se planteó en la jurisprudencia, por el delito de lavado de bienes ante la orfandad probatoria del ilícito precedente ([1]). El tema se refería a que los imputados que se dedicaban a la actividad comercial de compra y venta de vehículos, con cuya producción habían introducido en el mercado financiero, a través de las cuentas bancarias de titularidad de ambos. Si bien el origen era ilícito, por corresponder a la actividad comercial, se puntualizó que no se había",
+        "fecha_publicacion": "2026-07-12T22:50:40+00:00",
+        "fuente_id": "mercojuris",
+        "fuente_nombre": "Mercojuris",
+        "categoria": "Comex"
+      },
+      {
+        "id": "529b7058205f",
+        "titulo": "Inspectores Fiscales Sin Fronteras fortalece los sistemas tributarios mediante una nueva cooperación",
+        "link": "https://mercojuris.com/inspectores-fiscales-sin-fronteras-fortalece-los-sistemas-tributarios-mediante-una-nueva-cooperacion/",
+        "descripcion": "La Organización para la Cooperación y el Desarrollo Económicos (OCDE) y el Programa de las Naciones Unidas para el Desarrollo (PNUD) publicaron hoy el Informe Anual 2026 de Inspectores Fiscales Sin Fronteras (ITF) , en el que destacan los continuos avances en el apoyo a los países en desarrollo para fortalecer sus sistemas tributarios y movilizar recursos nacionales para financiar servicios públicos esenciales y el desarrollo económico. Desde su lanzamiento en 2015, TIWB ha implementado 165 prog",
+        "fecha_publicacion": "2026-07-12T22:45:16+00:00",
+        "fuente_id": "mercojuris",
+        "fuente_nombre": "Mercojuris",
+        "categoria": "Comex"
+      },
+      {
+        "id": "971809aa1101",
+        "titulo": "Junio cerró con bajas en la producción y exportación de vehículos",
+        "link": "https://tradenews.com.ar/junio-cerro-con-bajas-en-la-produccion-y-exportacion-de-vehiculos/",
+        "descripcion": "En junio se produjeron 37.029 vehículos automotores en la Argentina, 1,9% menos respecto de mayo y 13,6% menos en su comparación con junio del año pasado. El último informe de...",
+        "fecha_publicacion": "2026-07-12T18:19:16+00:00",
+        "fuente_id": "trade_news",
+        "fuente_nombre": "Trade News",
+        "categoria": "Comex"
+      }
+    ],
+    "Energía y Minería": [
+      {
+        "id": "b9e66650a0a2",
+        "titulo": "Emergencia energética: el Gobierno prorroga hasta el fin de su mandato las facultades extraordinarias para desregular el sector eléctrico",
+        "link": "https://econojournal.com.ar/energia/emergencia-energetica-el-gobierno-prorroga-facultades-extraordinarias/",
+        "descripcion": "El Gobierno nacional prorrogó este lunes la Emergencia del Sector Energético en los segmentos de generación, transporte y distribución de energía eléctrica bajo jurisdicción federal hasta el 31 de diciembre de 2027. La medida le permitirá a la Secretaría de Energía mantener las facultades extraordinarias para intervenir en los cuadros tarifarios de transición, renegociar contratos [&#8230;]",
+        "fecha_publicacion": "2026-07-13T18:55:03+00:00",
+        "fuente_id": "econojournal",
+        "fuente_nombre": "EconoJournal",
+        "categoria": "Energía y Minería"
+      },
+      {
+        "id": "d1d5ee0ca245",
+        "titulo": "Argentina - Inglaterra: el otro partido",
+        "link": "https://dataenergia.ar/petroleo-y-combustibles/argentina-inglaterra-el-otro-partido-202671314510",
+        "descripcion": "¿Qué significan las licencias petroleras del Proyecto Sea Lion?El mayor proyecto offshore del Atlántico Sur fuera de Brasil vuelve a poner a Malvinas en el centro del debate estratégico argentino.",
+        "fecha_publicacion": "2026-07-13T17:51:00+00:00",
+        "fuente_id": "data_energia",
+        "fuente_nombre": "Data Energía",
+        "categoria": "Energía y Minería"
+      },
+      {
+        "id": "3c4950a4133e",
+        "titulo": "Hito de Techint en Chile: el agua de mar desalinizada ya llegó a la mina Radomiro Tomic a más de 3.000 metros de altura",
+        "link": "https://dataenergia.ar/mineria/hito-de-techint-en-chile-el-agua-de-mar-desalinizada-ya-llego-a-la-mina-radomiro-tomic-a-mas-de-3-000-metros-de-altura-202671314270",
+        "descripcion": "La empresa Techint E&amp;C completó con éxito el bombeo de agua desalinizada hasta el reservorio de la mina Radomiro Tomic en el norte de Chile, un hito clave para el proyecto hídrico SADDN que proveerá el insumo a yacimientos ubicados a más de 3.000 metros de altura.",
+        "fecha_publicacion": "2026-07-13T17:27:00+00:00",
+        "fuente_id": "data_energia",
+        "fuente_nombre": "Data Energía",
+        "categoria": "Energía y Minería"
+      },
+      {
+        "id": "f86b62546b92",
+        "titulo": "El Gobierno prorrogó la emergencia eléctrica hasta fines de 2027 y continúa el control sobre precios y subsidios",
+        "link": "https://dataenergia.ar/electricidad/el-gobierno-prorrogo-la-emergencia-electrica-hasta-fines-de-2027-y-continua-el-control-sobre-precios-y-subsidios-202671313540",
+        "descripcion": "El Gobierno nacional extendió mediante el DNU 585/2026 la emergencia eléctrica hasta el 31 de diciembre de 2027, con el objetivo de evitar un vacío normativo y mantener facultades extraordinarias para reestructurar las tarifas, los subsidios y los contratos del Mercado Mayorista.",
+        "fecha_publicacion": "2026-07-13T16:54:00+00:00",
+        "fuente_id": "data_energia",
+        "fuente_nombre": "Data Energía",
+        "categoria": "Energía y Minería"
+      },
+      {
+        "id": "03824774b97f",
+        "titulo": "El desafío de las empresas familiares: cómo trascender al fundador",
+        "link": "https://econojournal.com.ar/destacada/el-desafio-de-las-empresas-familiares-como-trascender-al-fundador/",
+        "descripcion": "Nacer hijo de inmigrantes en el sur del conurbano bonaerense; estudiar y convertirse en la primera generación universitaria de la familia; emprender junto a amigos, colegas o hermanos; fundar una empresa; atravesar crisis económicas, hiperinflación, devaluaciones y cambios de modelo; generar empleo y abrirse camino en una industria de alta complejidad. Cumplir 60 años y [&#8230;]",
+        "fecha_publicacion": "2026-07-12T15:28:16+00:00",
+        "fuente_id": "econojournal",
+        "fuente_nombre": "EconoJournal",
+        "categoria": "Energía y Minería"
+      },
+      {
+        "id": "9132393ff208",
+        "titulo": "Nueva cámara química y petroquímica para la cadena de valor de Vaca Muerta",
+        "link": "https://econojournal.com.ar/actualidad-mineria-energia/nueva-camara-quimica-y-petroquimica-para-la-cadena-de-valor-de-vaca-muerta/",
+        "descripcion": "Se conformó formalmente la Cámara de Empresas Químicas, Petroquímicas y Afines de Neuquén (QPQ), una nueva organización sectorial que funcionará bajo el paraguas de la Federación de Cámaras del Sector Energético de Neuquén (FECENE) y que tiene como objetivo acompañar el avance operativo de Vaca Muerta y al entramado empresarial en la Patagonia. La aparición [&#8230;]",
+        "fecha_publicacion": "2026-07-10T16:30:18+00:00",
+        "fuente_id": "econojournal",
+        "fuente_nombre": "EconoJournal",
+        "categoria": "Energía y Minería"
       }
     ],
     "Laboral": [
       {
-        "id": "5648b16f176b",
-        "titulo": "Grupo Gestión designa nuevo Gerente de Ventas para el interior del país",
-        "link": "https://www.iprofesional.com/management/459794-grupo-gestion-designa-nuevo-gerente-de-ventas-para-el-interior-del-pais",
-        "descripcion": "Su llegada es un nuevo impulso para fortalecer la presencia de Grupo Gestión en las provincias y consolidar una estrategia de crecimiento sustentable",
-        "fecha_publicacion": "2026-07-13T10:29:00+00:00",
+        "id": "aa77621636ce",
+        "titulo": "La deuda detrás del delivery: por qué cada vez más repartidores piden créditos a las apps",
+        "link": "https://www.iprofesional.com/finanzas/459830-por-que-cada-vez-mas-repartidores-piden-creditos-a-las-apps-de-delivery",
+        "descripcion": "Los préstamos digitales crecieron entre repartidores que no acceden al banco, pero abren un debate por el nivel de endeudamiento",
+        "fecha_publicacion": "2026-07-13T17:00:00+00:00",
+        "fuente_id": "iprof_management",
+        "fuente_nombre": "iProfesional Management",
+        "categoria": "Laboral"
+      },
+      {
+        "id": "045317e1aac3",
+        "titulo": "Facebook y Zolvers, las plataformas clave para conseguir trabajo rápido de limpieza",
+        "link": "https://www.iprofesional.com/management/459796-las-claves-para-conseguir-trabajo-de-limpieza-por-hora-en-pocos-dias",
+        "descripcion": "Descubrí dónde encontrar trabajo de limpieza por hora, qué plataformas usar y los consejos clave para conseguir clientes de forma rápida",
+        "fecha_publicacion": "2026-07-13T14:17:00+00:00",
         "fuente_id": "iprof_management",
         "fuente_nombre": "iProfesional Management",
         "categoria": "Laboral"
@@ -317,17 +543,7 @@
         "titulo": "Con Elon Musk a la cabeza, estas son las 10 personas más ricas del mundo",
         "link": "https://www.iprofesional.com/actualidad/459747-con-elon-musk-a-la-cabeza-estas-son-las-10-personas-mas-ricas-del-mundo",
         "descripcion": "La salida a bolsa de SpaceX catapultó la fortuna de su fundador a niveles nunca antes vistos. El ranking de los máximos magnates del planeta",
-        "fecha_publicacion": "2026-07-12T13:41:00+00:00",
-        "fuente_id": "iprof_management",
-        "fuente_nombre": "iProfesional Management",
-        "categoria": "Laboral"
-      },
-      {
-        "id": "3d02aaa82b88",
-        "titulo": "Ránking de sueldos: los 5 rubros donde se pide ganar más dinero",
-        "link": "https://www.iprofesional.com/economia/459498-ranking-de-sueldos-los-5-rubros-donde-se-pide-ganar-mas-dinero",
-        "descripcion": "Un informe privado revela las pretensiones de los argentinos al buscar trabajo y expone una brecha que ya supera los $2.000.000",
-        "fecha_publicacion": "2026-07-12T12:49:00+00:00",
+        "fecha_publicacion": "2026-07-13T12:41:00+00:00",
         "fuente_id": "iprof_management",
         "fuente_nombre": "iProfesional Management",
         "categoria": "Laboral"
@@ -363,89 +579,37 @@
         "categoria": "Laboral"
       }
     ],
-    "Automotor": [
-      {
-        "id": "71da231f5d20",
-        "titulo": "El Audi Nuvolari se lució en Goodwood junto a otros mitos de la marca",
-        "link": "https://motorwebargentina.com/audi-nuvolari-goodwood-2026/",
-        "descripcion": "En el marco del Festival de la Velocidad de Goodwood, se presentó un superdeportivo muy especial, el Audi Nuvolari. Con este modelo la marca demuestra todo su potencial y tecnología adelantando su visión de producción, junto a la presencia del Audi RS 5 que fue exhibido y participa de actividades dinámicas en el circuito de [&#8230;] La entrada El Audi Nuvolari se lució en Goodwood junto a otros mitos de la marca se publicó primero en Motorweb Argentina .",
-        "fecha_publicacion": "2026-07-13T10:19:32+00:00",
-        "fuente_id": "motorweb",
-        "fuente_nombre": "Motorweb Argentina",
-        "categoria": "Automotor"
-      },
-      {
-        "id": "40d3be20c26a",
-        "titulo": "Hay SUV desde $33 hasta 60 millones de pesos entre los más vendidos de 2026",
-        "link": "https://www.iprofesional.com/autos/459763-hay-suv-desde-33-hasta-60-millones-entre-los-mas-vendidos-de-2026",
-        "descripcion": "Son modelos del segmento mediano y chino, que se quedaron con los primeros cinco puestos entre los líderes. Solo uno del ranking ofrece opción híbrida",
-        "fecha_publicacion": "2026-07-12T11:30:00+00:00",
-        "fuente_id": "iprof_autos",
-        "fuente_nombre": "iProfesional Autos",
-        "categoria": "Automotor"
-      },
-      {
-        "id": "695ad54529da",
-        "titulo": "Cuáles son las motos de media cilindrada que más eligen los argentinos",
-        "link": "https://www.iprofesional.com/autos/459605-cuales-son-las-motos-de-media-cilindrada-que-mas-eligen-los-argentinos",
-        "descripcion": "En un mes donde el Mundial nos tiene frenéticos, te mostramos cuáles fueron los modelos que ganaron el mano a mano frente a sus clásicos rivales.",
-        "fecha_publicacion": "2026-07-12T10:24:00+00:00",
-        "fuente_id": "iprof_autos",
-        "fuente_nombre": "iProfesional Autos",
-        "categoria": "Automotor"
-      },
-      {
-        "id": "b62f2d79d529",
-        "titulo": "Lanzaron créditos para comprar motos en 72 cuotas",
-        "link": "https://www.iprofesional.com/autos/459178-lanzaron-creditos-para-comprar-motos-en-72-cuotas-como-comprar",
-        "descripcion": "Son opciones de diferentes bancos, pero se pueden tramitar directo en los concesionarios. Arrancan desde las 12 cuotas sin interés. Los detalles",
-        "fecha_publicacion": "2026-07-11T12:01:00+00:00",
-        "fuente_id": "iprof_autos",
-        "fuente_nombre": "iProfesional Autos",
-        "categoria": "Automotor"
-      },
-      {
-        "id": "9129fc523461",
-        "titulo": "La CCA publica una caída en la marcha de las ventas de los vehículos usados en la Argentina",
-        "link": "https://www.diariodeautos.com.ar/index.php/noticias/nacionales/item/20376-cca",
-        "descripcion": "La Cámara del Comercio Automotor (CCA), informó que en junio último, se vendieron 155.492 vehículos usados, una suba del 8,59%, con respecto a igual mes del año pasado cuando se comercializaron 143.191 unidades. Con respecto a mayo (144.050 unidades), el mercado creció 7,94%.&nbsp;&nbsp; En los 6 primeros meses del año se vendieron 891.628 unidades, una baja del 2,92% comparado con igual período de 2025 (918.404 unidades). Declaraciones&nbsp; Alejandro Lamas, Secretario de la CCA, confirma: “Fin",
-        "fecha_publicacion": "2026-07-10T21:35:10+00:00",
-        "fuente_id": "diario_autos",
-        "fuente_nombre": "Diario de Autos",
-        "categoria": "Automotor"
-      },
-      {
-        "id": "060a643ec621",
-        "titulo": "Empezó julio con caída en los patentamientos de autos, mucha discusión sobre precios y concesionarias que quieren poner fin a los descuentos ´´salvajes´´",
-        "link": "https://arodarpost.com.ar/empezo-julio-con-caida-en-los-patentamientos-de-autos-mucha-discusion-sobre-precios-y-concesionarias-que-quieren-poner-fin-a-los-descuentos-salvajes/",
-        "descripcion": "El clima mundialista, en estos primeros días de julio, acapara la atención informativa y poco importa más allá de lo que suceda con la selección en Estados Unidos. Todas las noticias, sean políticas o económicas, pasaron a segundo plano. El mercado automotor no está ajeno a esta situación, aunque la actividad sigue su curso en [&#8230;]",
-        "fecha_publicacion": "2026-07-10T15:38:39+00:00",
-        "fuente_id": "arodar",
-        "fuente_nombre": "A Rodar Post",
-        "categoria": "Automotor"
-      },
-      {
-        "id": "6cc76ca977e9",
-        "titulo": "GM desarrolla baterías, pero no piensa en autos",
-        "link": "https://noticias.autocosmos.com.ar/2026/07/10/gm-desarrolla-baterias-pero-no-piensa-en-autos",
-        "descripcion": "Te contamos de qué se trata la tecnología de iones de sodio podría cambiar el futuro de la electricidad.",
-        "fecha_publicacion": "2026-07-10T13:00:00+00:00",
-        "fuente_id": "autocosmos",
-        "fuente_nombre": "Autocosmos Argentina",
-        "categoria": "Automotor"
-      },
-      {
-        "id": "c93f6a7d716d",
-        "titulo": "El BMW iX3 alcanza las cinco estrellas en Euro NCAP",
-        "link": "https://noticias.autocosmos.com.ar/2026/07/10/el-bmw-ix3-alcanza-las-cinco-estrellas-en-euro-ncap",
-        "descripcion": "El primer SUV 100% eléctrico de producción en serie de la firma bávara fue uno de los primeros modelos evaluados con el nuevo protocolo y así le fue.",
-        "fecha_publicacion": "2026-07-10T10:55:18+00:00",
-        "fuente_id": "autocosmos",
-        "fuente_nombre": "Autocosmos Argentina",
-        "categoria": "Automotor"
-      }
-    ],
     "Internacional": [
+      {
+        "id": "f61b34c72c13",
+        "titulo": "California ofrece un reembolso de 3.500 dólares a compradores de vehículos eléctricos nuevos",
+        "link": "https://es.investing.com/news/world-news/california-ofrece-un-reembolso-de-3500-dolares-a-compradores-de-vehiculos-electricos-nuevos-93CH-3739845",
+        "descripcion": "",
+        "fecha_publicacion": "2026-07-13T16:18:36+00:00",
+        "fuente_id": "investing_intl",
+        "fuente_nombre": "Investing Internacional",
+        "categoria": "Internacional"
+      },
+      {
+        "id": "c8d8f1e1f6c8",
+        "titulo": "Turquía anuncia préstamos por 21.280 millones de dólares para fabricantes",
+        "link": "https://es.investing.com/news/world-news/turquia-anuncia-prestamos-por-21280-millones-de-dolares-para-fabricantes-93CH-3739832",
+        "descripcion": "",
+        "fecha_publicacion": "2026-07-13T16:11:04+00:00",
+        "fuente_id": "investing_intl",
+        "fuente_nombre": "Investing Internacional",
+        "categoria": "Internacional"
+      },
+      {
+        "id": "39430be4d0fd",
+        "titulo": "Reino Unido se une al programa de préstamos de defensa de la UE para Ucrania",
+        "link": "https://es.investing.com/news/world-news/reino-unido-se-une-al-programa-de-prestamos-de-defensa-de-la-ue-para-ucrania-93CH-3739827",
+        "descripcion": "",
+        "fecha_publicacion": "2026-07-13T16:08:47+00:00",
+        "fuente_id": "investing_intl",
+        "fuente_nombre": "Investing Internacional",
+        "categoria": "Internacional"
+      },
       {
         "id": "ae338a4d7558",
         "titulo": "El PIB de Kazajistán creció un 4,1% en el primer semestre del año",
@@ -465,212 +629,68 @@
         "fuente_id": "investing_intl2",
         "fuente_nombre": "Investing Mundo",
         "categoria": "Internacional"
-      },
-      {
-        "id": "3a640dc068ff",
-        "titulo": "El primer ministro de Irak visitará Washington el lunes para firmar acuerdos de petróleo y gas",
-        "link": "https://es.investing.com/news/world-news/el-primer-ministro-de-irak-visitara-washington-el-lunes-para-firmar-acuerdos-de-petroleo-y-gas-93CH-3738174",
-        "descripcion": "",
-        "fecha_publicacion": "2026-07-12T11:55:18+00:00",
-        "fuente_id": "investing_intl",
-        "fuente_nombre": "Investing Internacional",
-        "categoria": "Internacional"
-      },
-      {
-        "id": "fed9e7506284",
-        "titulo": "Ucrania afirma que drones dañaron 21 petroleros rusos en el mar de Azov",
-        "link": "https://es.investing.com/news/world-news/ucrania-afirma-que-drones-danaron-21-petroleros-rusos-en-el-mar-de-azov-3738109",
-        "descripcion": "",
-        "fecha_publicacion": "2026-07-11T19:11:40+00:00",
-        "fuente_id": "investing_intl",
-        "fuente_nombre": "Investing Internacional",
-        "categoria": "Internacional"
-      },
-      {
-        "id": "07027affe18e",
-        "titulo": "EE.UU. flexibiliza controles de exportación a Emiratos Árabes Unidos",
-        "link": "https://es.investing.com/news/world-news/eeuu-flexibiliza-controles-de-exportacion-a-emiratos-arabes-unidos-93CH-3737813",
-        "descripcion": "",
-        "fecha_publicacion": "2026-07-10T17:48:08+00:00",
-        "fuente_id": "investing_intl",
-        "fuente_nombre": "Investing Internacional",
-        "categoria": "Internacional"
       }
     ],
-    "Energía y Minería": [
+    "Fiscal": [
       {
-        "id": "50828d5ce590",
-        "titulo": "La batalla de la arena en Vaca Muerta: el insumo estratégico que consume tres piletas olímpicas por pozo y desvela a la logística",
-        "link": "https://dataenergia.ar/petroleo-y-combustibles/la-batalla-de-la-arena-en-vaca-muerta-el-insumo-estrategico-que-consume-tres-piletas-olimpicas-por-pozo-y-desvela-a-la-logistica-202671220100",
-        "descripcion": "La provisión de arena de fractura se consolida como uno de los desafíos logísticos y económicos más complejos para Vaca Muerta, donde cada pozo promedio consume hasta 15.000 toneladas de material, equivalentes a rellenar ocho veces el Obelisco o movilizar una flota de 415 camiones en ruta.",
-        "fecha_publicacion": "2026-07-12T23:10:00+00:00",
-        "fuente_id": "data_energia",
-        "fuente_nombre": "Data Energía",
-        "categoria": "Energía y Minería"
+        "id": "f519cef570a4",
+        "titulo": "ARCA analiza lanzar un nuevo plan de pagos de hasta 48 cuotas que permite reformular planes caducos",
+        "link": "https://www.iprofesional.com/impuestos/459785-arca-analiza-lanzar-un-nuevo-plan-de-pagos-de-hasta-48-cuotas-que-incluye-planes-caducos",
+        "descripcion": "El Gobierno analiza reflotar un plan de pagos especial para pymes similar al que estuvo vigente hasta marzo pasado. Cuáles son las características",
+        "fecha_publicacion": "2026-07-13T15:00:00+00:00",
+        "fuente_id": "iprof_impuestos",
+        "fuente_nombre": "iProfesional Impuestos",
+        "categoria": "Fiscal"
       },
       {
-        "id": "862498d94764",
-        "titulo": "Vaca Muerta: empresa vinculada al dueño del Inter de Miami le ganó a Techint y construirá los gasoductos de Argentina LNG",
-        "link": "https://dataenergia.ar/gas/vaca-muerta-empresa-vinculada-al-dueno-del-inter-de-miami-le-gano-a-techint-y-construira-los-gasoductos-de-argentina-lng-20267122020",
-        "descripcion": "Un consorcio internacional liderado por Pumpco (subsidiaria de la norteamericana MasTec), junto a Bonatti y Contreras Hermanos, se impuso ante Techint-Sacde en la licitación para construir los dos ductos clave del proyecto Argentina LNG, una obra de infraestructura valuada en u$s1.200 millones.",
-        "fecha_publicacion": "2026-07-12T23:02:00+00:00",
-        "fuente_id": "data_energia",
-        "fuente_nombre": "Data Energía",
-        "categoria": "Energía y Minería"
+        "id": "17025c4871f0",
+        "titulo": "Últimas dos semanas para Ganancias Simplificada y Bienes Personales sin reforma y sin nueva prórroga",
+        "link": "https://www.iprofesional.com/impuestos/459784-ganancias-simplificada-y-bienes-personales-ultimas-semanas-sin-reforma-y-sin-prorroga",
+        "descripcion": "El 27 de julio vencen las declaraciones juradas anuales del Impuesto a las Ganancias, Bienes Personales e Impuesto cedular. Qué sucederá",
+        "fecha_publicacion": "2026-07-13T14:58:00+00:00",
+        "fuente_id": "iprof_impuestos",
+        "fuente_nombre": "iProfesional Impuestos",
+        "categoria": "Fiscal"
       },
       {
-        "id": "03824774b97f",
-        "titulo": "El desafío de las empresas familiares: cómo trascender al fundador",
-        "link": "https://econojournal.com.ar/destacada/el-desafio-de-las-empresas-familiares-como-trascender-al-fundador/",
-        "descripcion": "Nacer hijo de inmigrantes en el sur del conurbano bonaerense; estudiar y convertirse en la primera generación universitaria de la familia; emprender junto a amigos, colegas o hermanos; fundar una empresa; atravesar crisis económicas, hiperinflación, devaluaciones y cambios de modelo; generar empleo y abrirse camino en una industria de alta complejidad. Cumplir 60 años y [&#8230;]",
-        "fecha_publicacion": "2026-07-12T15:28:16+00:00",
-        "fuente_id": "econojournal",
-        "fuente_nombre": "EconoJournal",
-        "categoria": "Energía y Minería"
+        "id": "e358aa9d1beb",
+        "titulo": "Trabajo aclaró la vigencia del aporte sindical solidario para empleados de comercio",
+        "link": "https://www.iprofesional.com/impuestos/459825-trabajo-aclaro-la-vigencia-del-aporte-sindical-solidario-para-empleados-de-comercio",
+        "descripcion": "Mientras se mantenga vigente la cautelar judicial, los empleadores deberán continuar observando los porcentajes previstos en el convenio colectivo",
+        "fecha_publicacion": "2026-07-13T14:47:00+00:00",
+        "fuente_id": "iprof_impuestos",
+        "fuente_nombre": "iProfesional Impuestos",
+        "categoria": "Fiscal"
       },
       {
-        "id": "9132393ff208",
-        "titulo": "Nueva cámara química y petroquímica para la cadena de valor de Vaca Muerta",
-        "link": "https://econojournal.com.ar/actualidad-mineria-energia/nueva-camara-quimica-y-petroquimica-para-la-cadena-de-valor-de-vaca-muerta/",
-        "descripcion": "Se conformó formalmente la Cámara de Empresas Químicas, Petroquímicas y Afines de Neuquén (QPQ), una nueva organización sectorial que funcionará bajo el paraguas de la Federación de Cámaras del Sector Energético de Neuquén (FECENE) y que tiene como objetivo acompañar el avance operativo de Vaca Muerta y al entramado empresarial en la Patagonia. La aparición [&#8230;]",
-        "fecha_publicacion": "2026-07-10T16:30:18+00:00",
-        "fuente_id": "econojournal",
-        "fuente_nombre": "EconoJournal",
-        "categoria": "Energía y Minería"
+        "id": "9646c9dca1d1",
+        "titulo": "Reforma tributaria: preocupa el futuro del Monotributo por su eliminación o reducción, ¿puede volver el responsable no inscripto en IVA?",
+        "link": "https://www.ambito.com/novedades-fiscales/reforma-tributaria-preocupa-el-futuro-del-monotributo-su-eliminacion-o-reduccion-puede-volver-el-responsable-no-inscripto-iva-n6298658",
+        "descripcion": "El provenir del régimen simplificado para pequeños contribuyentes aparece como incierto a juzgar por las sugerencias tanto del FMI como del Consejo de Mayo que apuntan a su equiparación en términos de pago o a su reducción con una transición. ¿Y las provincias?",
+        "fecha_publicacion": "2026-07-12T21:44:00+00:00",
+        "fuente_id": "ambito_fisc",
+        "fuente_nombre": "Ámbito Fiscal",
+        "categoria": "Fiscal"
       },
       {
-        "id": "1d983bcddf24",
-        "titulo": "Suiza es el principal comprador del oro y la plata que extrae la Argentina",
-        "link": "https://econojournal.com.ar/mineria/suiza-es-el-principal-comprador-del-oro-y-la-plata-que-extrae-la-argentina/",
-        "descripcion": "En la víspera del encuentro entre las selecciones de Argentina y Suiza por los cuartos de final de la Copa Mundial de la FIFA 2026 en Kansas City, el plano del comercio exterior minero expone una relación bilateral que se destaca por el flujo de minerales metalíferos. De acuerdo con el último informe de la [&#8230;]",
-        "fecha_publicacion": "2026-07-10T16:19:33+00:00",
-        "fuente_id": "econojournal",
-        "fuente_nombre": "EconoJournal",
-        "categoria": "Energía y Minería"
+        "id": "b858dafa4f84",
+        "titulo": "Impulsan convertir en permanentes los beneficios fiscales para el Área Patagónica y la Zona Austral bonaerense",
+        "link": "https://www.ambito.com/novedades-fiscales/impulsan-convertir-permanentes-los-beneficios-fiscales-el-area-patagonica-y-la-zona-austral-bonaerense-n6298035",
+        "descripcion": "La recurrencia de prórrogas de la vigencia de los beneficios de las Leyes 12.322 y 12.323, ante factores climáticos, que se reiterarán invariablemente, llevó a los diputados bonaerenses a otorgarle dictamen favorable a un proyecto para la permanencia de las medidas para zonas desfavorables",
+        "fecha_publicacion": "2026-07-09T21:58:00+00:00",
+        "fuente_id": "ambito_fisc",
+        "fuente_nombre": "Ámbito Fiscal",
+        "categoria": "Fiscal"
       },
       {
-        "id": "d452b560196c",
-        "titulo": "Noruega y el petróleo: un modelo para tener en cuenta",
-        "link": "https://dataenergia.ar/petroleo-y-combustibles/noruega-y-el-petroleo-un-modelo-para-tener-en-cuenta-2026781550",
-        "descripcion": "En 1969, Noruega descubrió petróleo en el Mar del Norte. Era un país cuya economía dependía principalmente de la pesca y la actividad marítima. En ese momento tomó una decisión que cambiaría su economía para siempre.",
-        "fecha_publicacion": "2026-07-08T18:05:00+00:00",
-        "fuente_id": "data_energia",
-        "fuente_nombre": "Data Energía",
-        "categoria": "Energía y Minería"
-      }
-    ],
-    "Fulbito": [
-      {
-        "id": "b1173d023604",
-        "titulo": "Independiente Rivadavia llega con una sonrisa al duelo con Estudiantes por la Supercopa Argentina",
-        "link": "https://www.0221.com.ar/estudiantes/independiente-rivadavia-llega-una-sonrisa-al-duelo-estudiantes-la-supercopa-argentina-n130920",
-        "descripcion": "Independiente Rivadavia derrotó 1-0 a Tigre en Córdoba y se metió en los octavos de final de la Copa Argentina. El martes 21 de julio se medirá ante el Pincha.",
-        "fecha_publicacion": "2026-07-12T22:07:00+00:00",
-        "fuente_id": "est_0221",
-        "fuente_nombre": "0221 Estudiantes",
-        "categoria": "Fulbito"
-      },
-      {
-        "id": "10b551a3dd75",
-        "titulo": "Un jugador formado en Estudiantes cambia de club y seguirá su carrera en un destino paradisíaco",
-        "link": "https://www.0221.com.ar/estudiantes/un-jugador-formado-estudiantes-cambia-club-y-seguira-su-carrera-un-destino-paradisiaco-n130910",
-        "descripcion": "Luego de rescindir su contrato en el fútbol argentino, un futbolista que se formó en Estudiantes seguirá su carrera en un destino paradisíaco.",
-        "fecha_publicacion": "2026-07-12T16:46:00+00:00",
-        "fuente_id": "est_0221",
-        "fuente_nombre": "0221 Estudiantes",
-        "categoria": "Fulbito"
-      },
-      {
-        "id": "65ac1356e721",
-        "titulo": "Independiente Rivadavia vuelve al ruedo y se prepara para la Supercopa Argentina con Estudiantes",
-        "link": "https://www.0221.com.ar/estudiantes/independiente-rivadavia-vuelve-al-ruedo-y-se-prepara-la-supercopa-argentina-estudiantes-n130906",
-        "descripcion": "Independiente Rivadavia enfrenta a Tigre en Córdoba por los 16avos de la Copa Argentina y llega con la mira puesta en la Supercopa Argentina ante Estudiantes.",
-        "fecha_publicacion": "2026-07-12T14:33:00+00:00",
-        "fuente_id": "est_0221",
-        "fuente_nombre": "0221 Estudiantes",
-        "categoria": "Fulbito"
-      }
-    ],
-    "Comex": [
-      {
-        "id": "b9eb100d240b",
-        "titulo": "Cinco cambios esenciales del nuevo régimen sancionatorio aduanero en Colombia   – Dres. Juan David López y Juan Guillermo García (desde Colombia)",
-        "link": "https://mercojuris.com/cinco-cambios-esenciales-del-nuevo-regimen-sancionatorio-aduanero-en-colombia-dres-juan-david-lopez-y-juan-guillermo-garcia-desde-colombia/",
-        "descripcion": "El pasado 20 de junio se expidió la ley 2586 del 2026 que regula el nuevo régimen sancionatorio aduanero, y con él se generan cambios importantes al comercio exterior. La nueva ley se destaca por su enfoque orientado al cumplimiento voluntario, la proporcionalidad y la disminución de escenarios punitivos. Particularmente, figuras como la reducción sustancial del número de infracciones, así como la ampliación de mecanismos de corrección y allanamiento, evidencian una clara apuesta por facilitar l",
-        "fecha_publicacion": "2026-07-12T20:55:51+00:00",
-        "fuente_id": "mercojuris",
-        "fuente_nombre": "Mercojuris",
-        "categoria": "Comex"
-      },
-      {
-        "id": "529b7058205f",
-        "titulo": "Inspectores Fiscales Sin Fronteras fortalece los sistemas tributarios mediante una nueva cooperación",
-        "link": "https://mercojuris.com/inspectores-fiscales-sin-fronteras-fortalece-los-sistemas-tributarios-mediante-una-nueva-cooperacion/",
-        "descripcion": "La Organización para la Cooperación y el Desarrollo Económicos (OCDE) y el Programa de las Naciones Unidas para el Desarrollo (PNUD) publicaron hoy el Informe Anual 2026 de Inspectores Fiscales Sin Fronteras (ITF) , en el que destacan los continuos avances en el apoyo a los países en desarrollo para fortalecer sus sistemas tributarios y movilizar recursos nacionales para financiar servicios públicos esenciales y el desarrollo económico. Desde su lanzamiento en 2015, TIWB ha implementado 165 prog",
-        "fecha_publicacion": "2026-07-12T20:20:16+00:00",
-        "fuente_id": "mercojuris",
-        "fuente_nombre": "Mercojuris",
-        "categoria": "Comex"
-      },
-      {
-        "id": "dc8233f2f06a",
-        "titulo": "El Gobierno simplifica el sistema de habilitación para exportar productos de origen animal",
-        "link": "https://mercojuris.com/el-gobierno-simplifica-el-sistema-de-habilitacion-para-exportar-productos-de-origen-animal/",
-        "descripcion": "El Servicio Nacional de Sanidad y Calidad Agroalimentaria (SENASA) aprobó un nuevo procedimiento para la habilitación de destinos de exportación de productos y subproductos de origen animal. La medida, oficializada mediante la Resolución 593/2026, reemplaza un régimen vigente desde 2010 con el objetivo de simplificar los trámites, unificar criterios y adecuar el sistema a las exigencias actuales de los mercados internacionales. La nueva normativa establece un procedimiento único para que los est",
-        "fecha_publicacion": "2026-07-12T20:01:02+00:00",
-        "fuente_id": "mercojuris",
-        "fuente_nombre": "Mercojuris",
-        "categoria": "Comex"
-      },
-      {
-        "id": "971809aa1101",
-        "titulo": "Junio cerró con bajas en la producción y exportación de vehículos",
-        "link": "https://tradenews.com.ar/junio-cerro-con-bajas-en-la-produccion-y-exportacion-de-vehiculos/",
-        "descripcion": "En junio se produjeron 37.029 vehículos automotores en la Argentina, 1,9% menos respecto de mayo y 13,6% menos en su comparación con junio del año pasado. El último informe de...",
-        "fecha_publicacion": "2026-07-12T18:19:16+00:00",
-        "fuente_id": "trade_news",
-        "fuente_nombre": "Trade News",
-        "categoria": "Comex"
-      },
-      {
-        "id": "bbc35062a2c7",
-        "titulo": "Milei defendió a rajatabla las importaciones: \"Comeríamos solo dulce de leche\"",
-        "link": "https://www.iprofesional.com/politica/459727-javier-milei-defendio-a-rajatabla-importaciones-comeriamos-solo-dulce-de-leche",
-        "descripcion": "El Presidente sostuvo que, sin apertura comercial, Argentina tendría una oferta de bienes muy limitada. También anticipó detalles de la reforma de del BCRA",
-        "fecha_publicacion": "2026-07-10T22:09:00+00:00",
-        "fuente_id": "iprof_comex",
-        "fuente_nombre": "iProfesional Comex",
-        "categoria": "Comex"
-      },
-      {
-        "id": "b9e4a22a8757",
-        "titulo": "La tasa de estadística y su hecho gravado",
-        "link": "https://aduananews.com/la-tasa-de-estadistica-y-su-hecho-gravado/?utm_source=rss&utm_medium=rss&utm_campaign=la-tasa-de-estadistica-y-su-hecho-gravado",
-        "descripcion": "I. Introducción: El interrogante La práctica aduanera determina la tasa de estadística en dólares estadounidenses, calculándose en cada caso concreto como un porcentaje del valor en aduana de la mercadería[1]. La costumbre es pacífica y rara vez se la discute. Sin embargo, cabe preguntarse si esa determinación en moneda extranjera es correcta o si, por [&#8230;] The post La tasa de estadística y su hecho gravado appeared first on Aduana News .",
-        "fecha_publicacion": "2026-07-10T08:00:00+00:00",
-        "fuente_id": "aduana_news",
-        "fuente_nombre": "Aduana News",
-        "categoria": "Comex"
-      },
-      {
-        "id": "f55e863033b6",
-        "titulo": "Molinos Agro se alía con una cooperativa histórica para levantar una megaplanta de soja",
-        "link": "https://www.iprofesional.com/negocios/459530-molinos-agro-se-une-con-una-cooperativa-historica-para-levantar-una-megaplanta-de-soja",
-        "descripcion": "Capital privado y cooperativismo avanzan con una obra estratégica para ampliar la capacidad exportadora y sumar empleo en la zona de Timbúes",
-        "fecha_publicacion": "2026-07-08T19:00:00+00:00",
-        "fuente_id": "iprof_comex",
-        "fuente_nombre": "iProfesional Comex",
-        "categoria": "Comex"
-      },
-      {
-        "id": "e466877e085f",
-        "titulo": "Crece el comercio ilícito vinculado al comercio electrónico: las Américas concentran el 68% de los casos, según la OMA",
-        "link": "https://aduananews.com/crece-el-comercio-ilicito-vinculado-al-comercio-electronico-y-las-americas-concentran-el-68-de-los-casos-segun-la-oma/?utm_source=rss&utm_medium=rss&utm_campaign=crece-el-comercio-ilicito-vinculado-al-comercio-electronico-y-las-americas-concentran-el-68-de-los-casos-segun-la-oma",
-        "descripcion": "El comercio electrónico se consolidó como un canal relevante para la distribución de mercancías ilícitas, según advierte el Informe sobre Comercio Ilícito 2025 de la Organización Mundial de Aduanas (OMA), difundido este miércoles (08.07. 2026). El reporte indica que, a nivel mundial, los casos asociados a canales electrónicos representaron el 44,8% del total registrado, mientras [&#8230;] The post Crece el comercio ilícito vinculado al comercio electrónico: las Américas concentran el 68% de los ",
-        "fecha_publicacion": "2026-07-08T18:10:39+00:00",
-        "fuente_id": "aduana_news",
-        "fuente_nombre": "Aduana News",
-        "categoria": "Comex"
+        "id": "72b64a79ff55",
+        "titulo": "Reforma tributaria: esas cuestiones que no pueden pasar desapercibidas para su implementación",
+        "link": "https://www.ambito.com/novedades-fiscales/reforma-tributaria-esas-cuestiones-que-no-pueden-pasar-desapercibidas-su-implementacion-n6297276",
+        "descripcion": "Ante los anuncios del gobierno de impulsar una modificación integral del sistema tributario, abarcando la nación, las provincias y los municipios, parece necesario analizar ciertos objetivos en línea con la economía y las necesidades de cada uno se esos estados.",
+        "fecha_publicacion": "2026-07-07T23:40:00+00:00",
+        "fuente_id": "ambito_fisc",
+        "fuente_nombre": "Ámbito Fiscal",
+        "categoria": "Fiscal"
       }
     ],
     "Logística": [
