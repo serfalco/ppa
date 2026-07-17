@@ -1,23 +1,373 @@
 {
-  "generado_en": "2026-07-16T21:17:00.556660+00:00",
-  "total": 102,
+  "generado_en": "2026-07-17T10:45:30.466183+00:00",
+  "total": 105,
   "notas": [
+    {
+      "id": "28d8105a6372",
+      "titulo": "Warren Buffett sorprende con su apuesta por Google y reaviva la moda de los CEDEARs en Argentina",
+      "link": "https://www.iproup.com/finanzas/69898-warren-buffett-google-como-replicar-inversion-millonaria-argentina-cedears-julio-2026",
+      "descripcion": "El histórico hombre de Wall Street impulsó una inversión millonaria de Berkshire en Alphabet y en Argentina crece el interés por los CEDEARs de Google",
+      "fecha_publicacion": "2026-07-17T10:54:00+00:00",
+      "fuente_id": "iproup_fintech",
+      "fuente_nombre": "iProUP Fintech",
+      "categoria": "Finanzas"
+    },
+    {
+      "id": "a5c898778c1c",
+      "titulo": "Tiendanube abre ChatGPT, Gemini y Claude a PyMEs y empresas argentinas para vender con IA",
+      "link": "https://www.iproup.com/innovacion/69897-tiendanube-inteligencia-artificial-permite-gestionar-tienda-online-voz",
+      "descripcion": "A través de su conector Admin MCP, los comercios presentes en la plataforma podrán administrar catálogo, pedidos y métricas usando los principales LLMs",
+      "fecha_publicacion": "2026-07-17T10:04:00+00:00",
+      "fuente_id": "iproup_eco",
+      "fuente_nombre": "iProUP Economía Digital",
+      "categoria": "Mercados"
+    },
+    {
+      "id": "7826ef0dc8c6",
+      "titulo": "Por decreto, se modifica el régimen de courier y cambian pautas para compras en Shein, Temu y Amazon",
+      "link": "https://www.iprofesional.com/impuestos/460177-se-modifica-el-regimen-de-courier-y-cambian-pautas-para-compras-en-shein-temu-y-amazon",
+      "descripcion": "El Decreto 604/2026, publicado el 17 de julio de 2026, establece una reforma integral al régimen de envíos postales en la República Argentina.",
+      "fecha_publicacion": "2026-07-17T09:48:00+00:00",
+      "fuente_id": "iprof_impuestos",
+      "fuente_nombre": "iProfesional Impuestos",
+      "categoria": "Fiscal"
+    },
+    {
+      "id": "33b2a2af7fb0",
+      "titulo": "La inflación de la eurozona se modera hasta el 2,8% anual en junio",
+      "link": "https://es.investing.com/news/economic-indicators/la-inflacion-de-la-eurozona-se-modera-hasta-el-28-anual-en-junio-3746958",
+      "descripcion": "",
+      "fecha_publicacion": "2026-07-17T09:18:38+00:00",
+      "fuente_id": "investing_intl2",
+      "fuente_nombre": "Investing Mundo",
+      "categoria": "Internacional"
+    },
+    {
+      "id": "42cf901ae754",
+      "titulo": "Mientras el mercado cripto cae, un rival de Bitcoin avanza y Wall Street sigue dos variables clave",
+      "link": "https://www.iproup.com/economia-digital/69906-ethereum-sube-mercado-cripto-cae-unico-comprador-julio-2026",
+      "descripcion": "La última suba del segundo mayor blockchain refleja una movida inusual: una sola fuente institucional inyectó casi el total del nuevo capital",
+      "fecha_publicacion": "2026-07-17T09:15:00+00:00",
+      "fuente_id": "iproup_eco",
+      "fuente_nombre": "iProUP Economía Digital",
+      "categoria": "Mercados"
+    },
+    {
+      "id": "20c0317a604a",
+      "titulo": "El \"dueño\" de Bitcoin renueva su estrategia, acumula otro activo y genera dudas en el mercado cripto",
+      "link": "https://www.iproup.com/finanzas/69878-el-dueno-de-bitcoin-cambia-su-jugada-y-genera-dudas-en-el-mercado",
+      "descripcion": "La estrategia mantiene a la criptomoneda líder como eje del negocio, pero incorpora una administración del riesgo más sofisticada",
+      "fecha_publicacion": "2026-07-17T09:07:00+00:00",
+      "fuente_id": "iproup_fintech",
+      "fuente_nombre": "iProUP Fintech",
+      "categoria": "Finanzas"
+    },
+    {
+      "id": "e0fc9ec4e90e",
+      "titulo": "Clima en Córdoba hoy 17 julio 2026",
+      "link": "https://www.infocampo.com.ar/clima-en-cordoba-hoy-17-julio-2026/",
+      "descripcion": "El Servicio Meteorológico Nacional anticipa el clima para Córdoba",
+      "fecha_publicacion": "2026-07-17T09:00:20+00:00",
+      "fuente_id": "infocampo",
+      "fuente_nombre": "Infocampo",
+      "categoria": "Agro"
+    },
+    {
+      "id": "f5dd3286c24a",
+      "titulo": "Clima en Rosario hoy 17 julio 2026",
+      "link": "https://www.infocampo.com.ar/clima-en-rosario-hoy-17-julio-2026/",
+      "descripcion": "El Servicio Meteorológico Nacional anticipa el clima para Rosario, pronostico del tiempo rosario",
+      "fecha_publicacion": "2026-07-17T09:00:20+00:00",
+      "fuente_id": "infocampo",
+      "fuente_nombre": "Infocampo",
+      "categoria": "Agro"
+    },
+    {
+      "id": "6010afb9ddaa",
+      "titulo": "Clima en Buenos Aires hoy 17 julio 2026",
+      "link": "https://www.infocampo.com.ar/clima-en-buenos-aires-hoy-17-julio-2026/",
+      "descripcion": "El Servicio Meteorológico Nacional anticipa el clima para Buenos Aires, pronostico del tiempo Buenos Aires",
+      "fecha_publicacion": "2026-07-17T09:00:19+00:00",
+      "fuente_id": "infocampo",
+      "fuente_nombre": "Infocampo",
+      "categoria": "Agro"
+    },
+    {
+      "id": "cecb232ce11b",
+      "titulo": "Análisis de la Orden Ejecutiva estadounidense de 2026 y su relación con SAFE y CTPAT (Parte I)",
+      "link": "https://aduananews.com/analisis-de-la-orden-ejecutiva-estadounidense-de-2026-y-su-relacion-con-safe-y-ctpat-parte-i/?utm_source=rss&utm_medium=rss&utm_campaign=analisis-de-la-orden-ejecutiva-estadounidense-de-2026-y-su-relacion-con-safe-y-ctpat-parte-i",
+      "descripcion": "Nota aclaratoria: Debido a la amplitud y profundidad del análisis, el presente artículo se publicará en dos entregas. Esta primera parte examina la Orden Ejecutiva estadounidense del 3 de junio de 2026, su impacto en la política aduanera de Estados Unidos y su relación con el Marco SAFE de la Organización Mundial de Aduanas (OMA) [&#8230;] The post Análisis de la Orden Ejecutiva estadounidense de 2026 y su relación con SAFE y CTPAT (Parte I) appeared first on Aduana News .",
+      "fecha_publicacion": "2026-07-17T08:00:00+00:00",
+      "fuente_id": "aduana_news",
+      "fuente_nombre": "Aduana News",
+      "categoria": "Comex"
+    },
+    {
+      "id": "35b53d8ec26a",
+      "titulo": "Previsiones frustrantes de Netflix, ataques EE.UU.-Irán: 5 claves en Wall Street",
+      "link": "https://es.investing.com/news/economy-news/las-previsiones-decepcionantes-de-netflix-y-los-ataques-entre-eeuu-e-iran-3746796",
+      "descripcion": "",
+      "fecha_publicacion": "2026-07-17T07:49:29+00:00",
+      "fuente_id": "investing_economia",
+      "fuente_nombre": "Investing Economía",
+      "categoria": "Mercados"
+    },
+    {
+      "id": "19cecb87351c",
+      "titulo": "Futuros de la plata en sobreventa bajista: niveles en vivo",
+      "link": "https://es.investing.com/news/commodities-news/futuros-de-la-plata-caen-293-y-presionan-soporte-clave-niveles-en-vivo-93CH-3738371",
+      "descripcion": "",
+      "fecha_publicacion": "2026-07-17T07:07:54+00:00",
+      "fuente_id": "investing_agro",
+      "fuente_nombre": "Investing Agro",
+      "categoria": "Agro"
+    },
+    {
+      "id": "f93239ced8be",
+      "titulo": "Futuros del oro en tendencia bajista con doble suelo: Niveles en vivo",
+      "link": "https://es.investing.com/news/commodities-news/los-futuros-del-oro-testean-soporte-clave-en-4050-niveles-en-vivo-93CH-3738360",
+      "descripcion": "",
+      "fecha_publicacion": "2026-07-17T07:05:00+00:00",
+      "fuente_id": "investing_agro",
+      "fuente_nombre": "Investing Agro",
+      "categoria": "Agro"
+    },
+    {
+      "id": "47b1c7bba4e4",
+      "titulo": "La bolsa hoy: IBEX 35, Euro Dólar, caídas en EEUU y estreno de Digi",
+      "link": "https://es.investing.com/news/economy-news/la-bolsa-hoy-ibex-35-euro-dolar-caidas-en-eeuu-y-estreno-de-digi-3746647",
+      "descripcion": "",
+      "fecha_publicacion": "2026-07-17T06:03:27+00:00",
+      "fuente_id": "investing_economia",
+      "fuente_nombre": "Investing Economía",
+      "categoria": "Mercados"
+    },
+    {
+      "id": "b522288af378",
+      "titulo": "EE.UU. concluye su sexta noche consecutiva de ataques contra Irán",
+      "link": "https://es.investing.com/news/economy-news/eeuu-concluye-su-sexta-noche-consecutiva-de-ataques-contra-iran-3746612",
+      "descripcion": "",
+      "fecha_publicacion": "2026-07-17T05:15:39+00:00",
+      "fuente_id": "investing_economia",
+      "fuente_nombre": "Investing Economía",
+      "categoria": "Mercados"
+    },
+    {
+      "id": "98b4cb108cca",
+      "titulo": "Real blue: a cuánto opera este viernes 17 de julio",
+      "link": "https://www.ambito.com/finanzas/real-blue-cuanto-opera-este-viernes-17-julio-n6300449",
+      "descripcion": "La cotización minuto a minuto para la compra y venta de la divisa brasileña en nuestro país.",
+      "fecha_publicacion": "2026-07-17T03:00:00+00:00",
+      "fuente_id": "ambito_fin",
+      "fuente_nombre": "Ámbito Finanzas",
+      "categoria": "Finanzas"
+    },
+    {
+      "id": "40f760ac525e",
+      "titulo": "El oro recorta pérdidas semanales ante compras oportunistas y tensiones en Oriente Próximo",
+      "link": "https://es.investing.com/news/commodities-news/el-oro-camino-de-su-mayor-perdida-semanal-desde-principios-de-junio-por-las-tensiones-con-iran-3746589",
+      "descripcion": "",
+      "fecha_publicacion": "2026-07-17T02:55:56+00:00",
+      "fuente_id": "investing_agro",
+      "fuente_nombre": "Investing Agro",
+      "categoria": "Agro"
+    },
+    {
+      "id": "00abc12f45d3",
+      "titulo": "Todo indica que la campaña regional de trigo 2026/27 estará marcada por problemas de calidad derivados de excesos hídricos",
+      "link": "https://bichosdecampo.com/todo-indica-que-la-campana-regional-de-trigo-2026-27-estara-marcada-por-problemas-de-calidad-derivados-de-excesos-hidricos/",
+      "descripcion": "El factor climático va camino a generar un escenario en el cual la calidad del trigo podría llegar a ser un problemón a nivel regional si se consolidan las lluvias torrenciales que están siendo proyectadas. El pronóstico de largo plazo elaborado por International Research Institute for Climate and Society (IRI), organismo dependiente de Columbia Climate [&#8230;]",
+      "fecha_publicacion": "2026-07-17T02:54:44+00:00",
+      "fuente_id": "bichos_campo",
+      "fuente_nombre": "Bichos de Campo",
+      "categoria": "Agro"
+    },
+    {
+      "id": "0b1435d42eba",
+      "titulo": "Anses: cuándo cobro la jubilación de julio 2026 si mi DNI termina en 3",
+      "link": "https://www.lanacion.com.ar/economia/anses-cuando-cobro-la-jubilacion-de-julio-2026-si-mi-dni-termina-en-3-nid16072026/",
+      "descripcion": "El organismo previsional abona las jubilaciones a los DNI terminados en 2en fechas diferentes, según cobren el haber mínimo, superior o una pensión",
+      "fecha_publicacion": "2026-07-17T02:24:00+00:00",
+      "fuente_id": "lanacion_eco",
+      "fuente_nombre": "La Nación Economía",
+      "categoria": "Finanzas"
+    },
+    {
+      "id": "121f12b924c5",
+      "titulo": "Milei recibió a la presidenta de LDC Margarita Louis-Dreyfus: Un gran paso para que pueda conocer el rol estratégico del agro argentino",
+      "link": "https://bichosdecampo.com/milei-recibio-a-la-presidenta-de-ldc-margarita-louis-dreyfus-un-gran-paso-para-que-pueda-conocer-el-rol-estrategico-del-agro-argentino/",
+      "descripcion": "Con el creciente nivel de conflictividad presente en el Mar Negro y Medio Oriente, además de los riesgos geopolíticos potenciales latentes en el Mar de China, la región del Mercosur pasa a tener un rol cada vez más relevante como proveedor de proveedor de productos agroindustriales. En ese marco, este jueves el presidente Javier Milei [&#8230;]",
+      "fecha_publicacion": "2026-07-17T02:10:33+00:00",
+      "fuente_id": "bichos_campo",
+      "fuente_nombre": "Bichos de Campo",
+      "categoria": "Agro"
+    },
+    {
+      "id": "2170af7e5031",
+      "titulo": "Banco Provincia lanzó un plan para refinanciar deudas de empresas: ofrece hasta 36 cuotas y una tasa del 25,7% para pymes",
+      "link": "https://www.ambito.com/finanzas/banco-provincia-lanzo-un-plan-refinanciar-deudas-empresas-ofrece-36-cuotas-y-una-tasa-del-257-pymes-n6300515",
+      "descripcion": "La entidad financiera bonaerense presentó una nueva línea de refinanciación de deudas comerciales destinada a empresas. El programa permite regularizar pasivos en hasta 36 meses y contempla una tasa preferencial para las pymes, que según el banco es la más baja del mercado para este tipo de operaciones.",
+      "fecha_publicacion": "2026-07-17T00:57:00+00:00",
+      "fuente_id": "ambito_fin",
+      "fuente_nombre": "Ámbito Finanzas",
+      "categoria": "Finanzas"
+    },
+    {
+      "id": "f3e8676f65aa",
+      "titulo": "Como EE.UU.: La Unión Europea elimina su franquicia de 150 euros en pequeñas importaciones",
+      "link": "https://tradenews.com.ar/como-ee-uu-la-union-europea-elimina-su-franquicia-de-150-euros-en-pequenas-importaciones/",
+      "descripcion": "La Unión Europea abolió la exención de derechos de aduana para mercaderías importadas de hasta 150 euros —el histórico umbral &#8220;de minimis&#8221;— y la reemplazó por un derecho transitorio de...",
+      "fecha_publicacion": "2026-07-17T00:09:09+00:00",
+      "fuente_id": "trade_news",
+      "fuente_nombre": "Trade News",
+      "categoria": "Comex"
+    },
+    {
+      "id": "3cc1fa455963",
+      "titulo": "Wall Street cayó hasta 1,5%: el mercado castigó a TSMC pese a un balance récord",
+      "link": "https://www.ambito.com/finanzas/las-bolsas-del-mundo-caen-la-nueva-escalada-eeuu-e-iran-y-dejan-segundo-plano-las-tecnologicas-n6300109",
+      "descripcion": "Wall Street cerró en baja, con el Nasdaq perdiendo casi 1,5%, luego de que el balance de TSMC no lograra entusiasmar al mercado. Pese a resultados récord, el fuerte aumento previsto en sus inversiones reavivó las dudas sobre el elevado gasto en inteligencia artificial.",
+      "fecha_publicacion": "2026-07-17T00:05:00+00:00",
+      "fuente_id": "ambito_fin",
+      "fuente_nombre": "Ámbito Finanzas",
+      "categoria": "Finanzas"
+    },
+    {
+      "id": "9bc32f707307",
+      "titulo": "Cómo es la colección de autos de lujo de Lionel Messi y cuánto cuestan sus modelos más famosos",
+      "link": "https://www.iprofesional.com/autos/460170-como-es-coleccion-autos-lujo-de-lionel-messi-cuanto-cuestan-sus-modelos-mas-famosos",
+      "descripcion": "Modelos premium que fue sumando a través de los años muestran gustos personales, preferencias familiares y el estilo de vida de la superestrella",
+      "fecha_publicacion": "2026-07-17T00:00:00+00:00",
+      "fuente_id": "iprof_autos",
+      "fuente_nombre": "iProfesional Autos",
+      "categoria": "Automotor"
+    },
+    {
+      "id": "dafae98c5b2b",
+      "titulo": "Supermercado vende electrodomésticos con hasta 40% de descuento y cuotas sin interés",
+      "link": "https://www.iprofesional.com/economia/460129-supermercado-carrefour-liquida-electrodomesticos-con-40-por-ciento-descuento",
+      "descripcion": "La cadena de supermercados renovó una serie de ofertas, con descuentos y la posibilidad de comprar en cuotas sin interés. Los mejores precios",
+      "fecha_publicacion": "2026-07-17T00:00:00+00:00",
+      "fuente_id": "iprof_economia",
+      "fuente_nombre": "iProfesional Economía",
+      "categoria": "Finanzas"
+    },
+    {
+      "id": "774a5c2a35b6",
+      "titulo": "Las zonas francas buscan convertirse en referentes globales de la recepción de inversiones",
+      "link": "https://tradenews.com.ar/las-zonas-francas-buscan-convertirse-en-referentes-globales-de-la-recepcion-de-inversiones/",
+      "descripcion": "Durante el Foro de Inversiones de las Américas celebrado en Santo Domingo días atrás, la dinámica de radicación de capitales volvió al centro del debate y Matthew Stephenson, director ejecutivo...",
+      "fecha_publicacion": "2026-07-16T23:52:11+00:00",
+      "fuente_id": "trade_news",
+      "fuente_nombre": "Trade News",
+      "categoria": "Comex"
+    },
+    {
+      "id": "00130bf045db",
+      "titulo": "¿Conviene invertir en Netflix luego de la presentación de su último balance?",
+      "link": "https://www.iproup.com/finanzas/69921-conviene-invertir-en-netflix-luego-de-la-presentacion-de-su-ultimo-balance",
+      "descripcion": "La plataforma reportó ingresos y ganancias por encima de lo esperado, pero un flujo de caja mucho más débil hundió a la acción más de 8% en el after hours",
+      "fecha_publicacion": "2026-07-16T23:45:00+00:00",
+      "fuente_id": "iproup_fintech",
+      "fuente_nombre": "iProUP Fintech",
+      "categoria": "Finanzas"
+    },
+    {
+      "id": "29fbe2ce45d0",
+      "titulo": "China inaugura el primer servicio regular de contenedores hacia Europa por la ruta del Ártico",
+      "link": "https://tradenews.com.ar/china-inaugura-el-primer-servicio-regular-de-contenedores-hacia-europa-por-la-ruta-del-artico/",
+      "descripcion": "La naviera china Sealegend Shipping lanzará el primer servicio regular semanal de transporte marítimo de contenedores entre China y Europa a través de la Ruta Marítima del Norte (RMN). Este...",
+      "fecha_publicacion": "2026-07-16T23:27:02+00:00",
+      "fuente_id": "trade_news",
+      "fuente_nombre": "Trade News",
+      "categoria": "Comex"
+    },
+    {
+      "id": "04cefc46d596",
+      "titulo": "Milei defendió la propiedad privada y se cruzó con un espectador: \"Si no te gusta, andate a Cuba\"",
+      "link": "https://www.iprofesional.com/politica/460168-milei-defendio-la-propiedad-privada-y-se-cruzo-con-un-espectador-andate-a-cuba",
+      "descripcion": "El Presidente defendió el proyecto que se encuentra trabado en el Congreso y cargó contra un hombre que le contestó durante su discurso",
+      "fecha_publicacion": "2026-07-16T23:18:00+00:00",
+      "fuente_id": "iprof_economia",
+      "fuente_nombre": "iProfesional Economía",
+      "categoria": "Finanzas"
+    },
+    {
+      "id": "28de7b67a78c",
+      "titulo": "Guatemala será el escenario estratégico de AAPA LATAM para debatir el futuro portuario",
+      "link": "https://webpicking.com/guatemala-sera-el-escenario-estrategico-de-aapa-latam-para-debatir-el-futuro-portuario/",
+      "descripcion": "AAPA LATAM 2026 reunirá del 1 al 4 de diciembre a más de 700 líderes de la industria marítima, portuaria y logística para analizar los desafíos de la región. La entrada Guatemala será el escenario estratégico de AAPA LATAM para debatir el futuro portuario se publicó primero en Webpicking .",
+      "fecha_publicacion": "2026-07-16T23:11:08+00:00",
+      "fuente_id": "webpicking",
+      "fuente_nombre": "Webpicking",
+      "categoria": "Logística"
+    },
+    {
+      "id": "3abbe42fadcc",
+      "titulo": "“Sin infraestructura no vamos a ser competitivos”: contundente posición de empresarios y gremios en la Rural",
+      "link": "https://www.lanacion.com.ar/economia/campo/sin-infraestructura-no-vamos-a-ser-competitivos-contundente-posicion-de-empresarios-y-gremios-en-la-nid16072026/",
+      "descripcion": "Durante una jornada del Consejo de Políticas de Infraestructura (CPI) en la Exposición Rural de Palermo coincidieron en que el atraso acumulado limita la competitividad; reconstruir el stock existente demandaría US$1,5 billones",
+      "fecha_publicacion": "2026-07-16T23:10:52+00:00",
+      "fuente_id": "lanacion_eco",
+      "fuente_nombre": "La Nación Economía",
+      "categoria": "Finanzas"
+    },
+    {
+      "id": "81b5376e5c4b",
+      "titulo": "Binance festeja 9 años con la mira puesta en 3.000 millones de usuarios",
+      "link": "https://www.iproup.com/economia-digital/69919-binance-festeja-9-anos-con-la-mira-puesta-en-3-000-millones-de-usuarios",
+      "descripcion": "De exchange de criptomonedas a plataforma financiera integral, celebra nueve años de crecimiento impulsada por su comunidad global",
+      "fecha_publicacion": "2026-07-16T23:05:00+00:00",
+      "fuente_id": "iproup_eco",
+      "fuente_nombre": "iProUP Economía Digital",
+      "categoria": "Mercados"
+    },
+    {
+      "id": "a25a6e64bfb9",
+      "titulo": "Murió Joaquín Cabrales: el emotivo posteo de Martín, el presidente de la empresa cafetera de Mar del Plata",
+      "link": "https://www.lanacion.com.ar/economia/murio-un-familiar-de-martin-cabrales-el-emotivo-posteo-del-ceo-de-la-empresa-cafetera-de-mar-del-nid16072026/",
+      "descripcion": "El hombre de 32 años era el más joven de la familia dedicada a la tradicional empresa de café en la Argentina",
+      "fecha_publicacion": "2026-07-16T23:04:50+00:00",
+      "fuente_id": "lanacion_eco",
+      "fuente_nombre": "La Nación Economía",
+      "categoria": "Finanzas"
+    },
+    {
+      "id": "2b7a285762ea",
+      "titulo": "La energía y la minería blindan a Neuquén, Río Negro y San Juan de la caída del empleo nacional",
+      "link": "https://www.iprofesional.com/energia/460143-vaca-muerta-el-litio-y-el-cobre-blindan-el-empleo-privado-de-las-provincias",
+      "descripcion": "Neuquén, Río Negro y San Juan se despegan de la caída laboral del país gracias al empuje de los proyetcos de gas y petróleo, y de la minería metalífera",
+      "fecha_publicacion": "2026-07-16T22:30:00+00:00",
+      "fuente_id": "iprof_economia",
+      "fuente_nombre": "iProfesional Economía",
+      "categoria": "Finanzas"
+    },
+    {
+      "id": "b407a9cbe451",
+      "titulo": "Caputo va a fondo contra la inflación y el control del dólar será la estrategia número uno",
+      "link": "https://www.iprofesional.com/economia/459977-cual-sera-la-estrategia-numero-1-de-caputo-para-pulverizar-la-inflacion",
+      "descripcion": "Los datos alimentan el optimismo del oficialismo pero especialistas advierten riesgos en precios, salarios y la economía real de cara al futuro",
+      "fecha_publicacion": "2026-07-16T21:45:00+00:00",
+      "fuente_id": "iprof_finanzas",
+      "fuente_nombre": "iProfesional Finanzas",
+      "categoria": "Finanzas"
+    },
+    {
+      "id": "64eb8306ae92",
+      "titulo": "Plan de pagos de ARCA permite refinanciar las deudas impositivas en hasta 18 cuotas con baja tasa",
+      "link": "https://www.iprofesional.com/impuestos/460154-arca-plan-pagos-permite-refinanciar-deuda-pymes-monotributistas-cuotas-fijas-tasa-baja",
+      "descripcion": "La iniciativa permite a microempresas y autónomos regularizar pasivos fiscales previos a julio de 2026 en cuotas fijas y con menores anticipos",
+      "fecha_publicacion": "2026-07-16T21:23:00+00:00",
+      "fuente_id": "iprof_impuestos",
+      "fuente_nombre": "iProfesional Impuestos",
+      "categoria": "Fiscal"
+    },
     {
       "id": "2bc60a67f420",
       "titulo": "¡Faltan recolectar 22 millones de toneladas de maíz y ya estamos en la segunda quincena de julio! (y los precios lo saben)",
       "link": "https://bichosdecampo.com/faltan-recolectar-22-millones-de-toneladas-de-maiz-y-ya-estamos-en-la-segunda-quincena-de-julio-y-los-precios-lo-saben/",
       "descripcion": "La cosecha argentina de maíz sigue muy atrasada y los exportadores siguen teniendo que trabajar “horas extras” para poder originar un volumen colosal de mercadería. Y esa dinámica se refleja en los precios negociados. La Bolsa de Cereales de Buenos Aires indicó hoy que la cosecha de maíz con destino grano comercial alcanza el 62,2% [&#8230;]",
       "fecha_publicacion": "2026-07-16T21:13:38+00:00",
-      "fuente_id": "bichos_campo",
-      "fuente_nombre": "Bichos de Campo",
-      "categoria": "Agro"
-    },
-    {
-      "id": "9f2611cda9fa",
-      "titulo": "Se recalienta la protesta yerbatera: Productores preparan cortes de ruta para impedir la salida de yerba de Misiones y avanzan con una ley para fijar un precio de referencia",
-      "link": "https://bichosdecampo.com/se-recalienta-la-protesta-yerbatera-productores-preparan-cortes-de-ruta-para-impedir-la-salida-de-yerba-de-misiones-y-avanzan-con-una-ley-para-fijar-un-precio-de-referencia/",
-      "descripcion": "La crisis yerbatera sumó en las últimas horas un nuevo capítulo y promete escalar. Luego de escuchar de boca de los directores del Instituto Nacional de la Yerba Mate (INYM) que el gobierno de Javier Milei no piensa devolverle al organismo la facultad de fijar precios para la hoja verde, los productores reunidos en el [&#8230;]",
-      "fecha_publicacion": "2026-07-16T21:09:13+00:00",
       "fuente_id": "bichos_campo",
       "fuente_nombre": "Bichos de Campo",
       "categoria": "Agro"
@@ -33,26 +383,6 @@
       "categoria": "Energía y Minería"
     },
     {
-      "id": "af1623d010f3",
-      "titulo": "Con un nuevo reclamo de Federación Agraria, volvió a fracasar el intento de reformar la Ley de Tierras",
-      "link": "https://www.infocampo.com.ar/con-un-nuevo-reclamo-de-federacion-agraria-volvio-a-fracasar-el-intento-de-reformar-la-ley-de-tierras/",
-      "descripcion": "El Senado, tal como ocurrió en anteriores oportunidades, no pudo avanzar con el debate en el recinto del proyecto de ley de inviolabilidad de la propiedad privada, que posibilitaría una mayor venta de tierras argentinas a extranjeros.",
-      "fecha_publicacion": "2026-07-16T21:01:59+00:00",
-      "fuente_id": "infocampo",
-      "fuente_nombre": "Infocampo",
-      "categoria": "Agro"
-    },
-    {
-      "id": "1dacfbbaed90",
-      "titulo": "Por qué Bitcoin cede ganancias pese al IPC favorable",
-      "link": "https://www.iproup.com/economia-digital/69910-bitcoin-cede-ganancias-pese-al-ipc-favorable",
-      "descripcion": "Carolina Gama, country manager de Bitget en la Argentina, analiza cómo la tensión entre Estados Unidos e Irán vuelve a presionar a los activos de riesgo",
-      "fecha_publicacion": "2026-07-16T20:55:00+00:00",
-      "fuente_id": "iproup_eco",
-      "fuente_nombre": "iProUP Economía Digital",
-      "categoria": "Mercados"
-    },
-    {
       "id": "18d908fec593",
       "titulo": "Estudiantes confirmó la venta de entradas para la Supercopa Argentina: ¿cuándo y dónde será?",
       "link": "https://www.0221.com.ar/estudiantes/estudiantes-confirmo-la-venta-entradas-la-supercopa-argentina-cuando-y-donde-sera-n131133",
@@ -61,46 +391,6 @@
       "fuente_id": "est_0221",
       "fuente_nombre": "0221 Estudiantes",
       "categoria": "Fulbito"
-    },
-    {
-      "id": "edce0f3b9c7b",
-      "titulo": "Qué pasó con la licitación del Tesoro en el día de la semifinal entre Argentina e Inglaterra",
-      "link": "https://www.iproup.com/finanzas/69905-como-impacta-en-el-mercado-argentino-los-partidos-de-la-seleccion",
-      "descripcion": "El mundial obligó al Tesoro a adelantar una licitación. El mercado también reaccionó a la inflación de junio y a las compras de dólares del BCRA",
-      "fecha_publicacion": "2026-07-16T20:45:00+00:00",
-      "fuente_id": "iproup_fintech",
-      "fuente_nombre": "iProUP Fintech",
-      "categoria": "Finanzas"
-    },
-    {
-      "id": "843f1630c33d",
-      "titulo": "El S&P Merval en dólares sufrió su peor caída en 3 semanas y el riesgo país rebotó a casi 410 puntos",
-      "link": "https://www.ambito.com/finanzas/bonos-argentinos-cortan-una-racha-positiva-y-el-riesgo-pais-sigue-encima-los-400-puntos-n6300182",
-      "descripcion": "Los títulos soberanos cerraron con pérdidas en una jornada marcada por el retroceso de los mercados internacionales. El mercado espera un nuevo catalizador para la deuda argentina, mientras el mercado sigue de cerca una posible mejora de la calificación crediticia por parte de Moody's.",
-      "fecha_publicacion": "2026-07-16T20:43:00+00:00",
-      "fuente_id": "ambito_fin",
-      "fuente_nombre": "Ámbito Finanzas",
-      "categoria": "Finanzas"
-    },
-    {
-      "id": "2ad368d1d395",
-      "titulo": "“Que sigan bajando, por supuesto”: el gobernador Zdero pidió profundizar la reducción de las retenciones",
-      "link": "https://www.lanacion.com.ar/economia/campo/que-sigan-bajando-por-supuesto-el-gobernador-zdero-pidio-profundizar-la-reduccion-de-las-retenciones-nid16072026/",
-      "descripcion": "El mandatario de Chaco, de visita en la Exposición Rural de Palermo, sostuvo que su gestión alivió la carga tributaria sobre el sector productivo, destacó el crecimiento de las exportaciones provinciales y aseguró que “cuando al campo le va bien, le va bien a toda la Argentina”",
-      "fecha_publicacion": "2026-07-16T20:36:56+00:00",
-      "fuente_id": "lanacion_eco",
-      "fuente_nombre": "La Nación Economía",
-      "categoria": "Finanzas"
-    },
-    {
-      "id": "8bdcc16f72e5",
-      "titulo": "Estafa cripto en Europa usa la Ley MiCA como anzuelo y ya tiene en vilo a todas las exchanges",
-      "link": "https://www.iproup.com/economia-digital/69745-estafa-cripto-europa-alerta-exchanges-panico-ley-mica",
-      "descripcion": "El organismo europeo ESMA detectó una campaña masiva de phishing que suplanta su identidad para exigir pagos urgentes a exchanges y usuarios cripto",
-      "fecha_publicacion": "2026-07-16T20:35:00+00:00",
-      "fuente_id": "iproup_eco",
-      "fuente_nombre": "iProUP Economía Digital",
-      "categoria": "Mercados"
     },
     {
       "id": "1476df3303db",
@@ -123,36 +413,6 @@
       "categoria": "Automotor"
     },
     {
-      "id": "8fdf08dea8e4",
-      "titulo": "La Rural: volvieron las aves, una raza bovina celebra seis décadas y las camionetas chinas se asoman con fuerza",
-      "link": "https://www.lanacion.com.ar/economia/campo/la-rural-volvieron-las-aves-una-raza-bovina-celebra-seis-decadas-y-las-camionetas-chinas-se-asoman-nid16072026/",
-      "descripcion": "La 138a. edición de la muestra de Palermo, que estará abierta hasta el 26 de julio, exhibe este año una mayor presencia de marcas, nuevos espacios de negocios con el protagonismo de los animales y su genética",
-      "fecha_publicacion": "2026-07-16T20:23:55+00:00",
-      "fuente_id": "lanacion_eco",
-      "fuente_nombre": "La Nación Economía",
-      "categoria": "Finanzas"
-    },
-    {
-      "id": "6e38e85174d2",
-      "titulo": "Crece la expectativa por una nueva prórroga de la iniciativa para captar los “dólares del colchón” y los contadores vuelven a reunirse con el Gobierno",
-      "link": "https://www.lanacion.com.ar/economia/dolares-del-colchon-crece-la-expectativa-por-una-nueva-prorroga-y-los-contadores-vuelven-a-reunirse-nid16072026/",
-      "descripcion": "A once días del vencimiento del Régimen Simplificado de Ganancias, los tributaristas insistirán con postergar la fecha de adhesión hasta fines de agosto",
-      "fecha_publicacion": "2026-07-16T20:11:05+00:00",
-      "fuente_id": "lanacion_eco",
-      "fuente_nombre": "La Nación Economía",
-      "categoria": "Finanzas"
-    },
-    {
-      "id": "3a578f251021",
-      "titulo": "Por qué crece la preocupación en Wall Street tras la caída de las acciones de SpaceX",
-      "link": "https://www.iproup.com/economia-digital/69900-por-que-wall-street-se-preocupa-por-la-caida-de-spacex",
-      "descripcion": "La empresa aeroespacial comandada por Elon Musk llegó a cotizar por debajo de los u$s135 fijados durante su oferta pública inicial (IPO)",
-      "fecha_publicacion": "2026-07-16T20:05:00+00:00",
-      "fuente_id": "iproup_eco",
-      "fuente_nombre": "iProUP Economía Digital",
-      "categoria": "Mercados"
-    },
-    {
       "id": "306b04807821",
       "titulo": "La marca china de autos Leapmotor lanza un nuevo SUV ultrahíbrido a un precio competitivo",
       "link": "https://www.iprofesional.com/autos/460076-marca-china-de-autos-leapmotor-lanza-un-nuevo-suv-ultrahibrido-a-un-precio-competitivo",
@@ -173,53 +433,13 @@
       "categoria": "Energía y Minería"
     },
     {
-      "id": "bcc6c73fe36e",
-      "titulo": "“Expo Rural 2026”: El Banco Nación presentó las mejores opciones de financiamiento para el campo",
-      "link": "https://bichosdecampo.com/expo-rural-2026-el-banco-nacion-presento-las-mejores-opciones-de-financiamiento-para-el-campo/",
-      "descripcion": "Con la presencia del jefe de Gabinete de la Nación, Diego Santilli; del secretario de Agricultura, Ganadería y Pesca, Sergio Iraeta, y del titular del Banco Nación, Darío Wasserman, la entidad inauguró su stand institucional en la “138° Expo Rural”, oportunidad en la que anunció una propuesta comercial muy competitiva para los productores, con líneas [&#8230;]",
-      "fecha_publicacion": "2026-07-16T19:56:52+00:00",
-      "fuente_id": "bichos_campo",
-      "fuente_nombre": "Bichos de Campo",
-      "categoria": "Agro"
-    },
-    {
-      "id": "a40306525640",
-      "titulo": "El dólar en el Banco Nación cerró debajo de los $1.500 por tercera rueda consecutiva",
-      "link": "https://www.ambito.com/finanzas/el-dolar-se-mantiene-mas-300-del-techo-la-banda-que-espera-el-mercado-agosto-n6300096",
-      "descripcion": "El tipo de cambio oficial mayorista subió por segunda jornada consecutiva, aunque en el acumulado del mes está en baja.",
-      "fecha_publicacion": "2026-07-16T19:39:00+00:00",
-      "fuente_id": "ambito_fin",
-      "fuente_nombre": "Ámbito Finanzas",
-      "categoria": "Finanzas"
-    },
-    {
-      "id": "30a48eadd49e",
-      "titulo": "La guía definitiva para entender el nuevo recibo de sueldo que rige con la modernización laboral",
-      "link": "https://www.iproup.com/finanzas/69888-guia-para-entender-el-nuevo-recibo-de-sueldo-que-rige-con-la-modernizacion-laboral",
-      "descripcion": "La nueva normativa obliga a que los recibos incluyan información clara y detallada sobre el costo laboral total, diferenciando aportes y contribuciones",
-      "fecha_publicacion": "2026-07-16T19:35:00+00:00",
-      "fuente_id": "iproup_fintech",
-      "fuente_nombre": "iProUP Fintech",
-      "categoria": "Finanzas"
-    },
-    {
       "id": "3d6f99b339e4",
       "titulo": "Caputo colocó su nuevo bono en dólares con alta demanda pero crece el temor por el riesgo electoral",
       "link": "https://www.iprofesional.com/finanzas/460147-bono-en-dolares-de-caputo-tuvo-alta-demanda-pero-crece-el-temor-por-riesgo-electoral",
       "descripcion": "El lanzamiento del título en dólares fue recibido con entusiasmo en la City, pero los especialistas advierten sobre una alta sensibilidad electoral",
       "fecha_publicacion": "2026-07-16T19:32:00+00:00",
-      "fuente_id": "iprof_economia",
-      "fuente_nombre": "iProfesional Economía",
-      "categoria": "Finanzas"
-    },
-    {
-      "id": "471b77355f8d",
-      "titulo": "Apple alcanzó un nuevo récord histórico en Wall Street, impulsada por la inteligencia artificial",
-      "link": "https://www.ambito.com/finanzas/apple-alcanzo-un-nuevo-record-historico-wall-street-impulsada-la-inteligencia-artificial-n6300292",
-      "descripcion": "El rally reforzó la percepción de que la firma está recuperando terreno. Sin embargo, advierten que un mal informe trimestral podría provocar una fuerte toma de ganancias.",
-      "fecha_publicacion": "2026-07-16T19:22:00+00:00",
-      "fuente_id": "ambito_fin",
-      "fuente_nombre": "Ámbito Finanzas",
+      "fuente_id": "iprof_finanzas",
+      "fuente_nombre": "iProfesional Finanzas",
       "categoria": "Finanzas"
     },
     {
@@ -243,36 +463,6 @@
       "categoria": "Automotor"
     },
     {
-      "id": "19cecb87351c",
-      "titulo": "Futuros de la plata caen -2,64% con RSI en sobreventa: Niveles en vivo",
-      "link": "https://es.investing.com/news/commodities-news/futuros-de-la-plata-caen-293-y-presionan-soporte-clave-niveles-en-vivo-93CH-3738371",
-      "descripcion": "",
-      "fecha_publicacion": "2026-07-16T19:09:32+00:00",
-      "fuente_id": "investing_agro",
-      "fuente_nombre": "Investing Agro",
-      "categoria": "Agro"
-    },
-    {
-      "id": "f93239ced8be",
-      "titulo": "Futuros del oro caen -1,66% con ruptura bajista: niveles en vivo",
-      "link": "https://es.investing.com/news/commodities-news/los-futuros-del-oro-testean-soporte-clave-en-4050-niveles-en-vivo-93CH-3738360",
-      "descripcion": "",
-      "fecha_publicacion": "2026-07-16T19:05:15+00:00",
-      "fuente_id": "investing_agro",
-      "fuente_nombre": "Investing Agro",
-      "categoria": "Agro"
-    },
-    {
-      "id": "1fa23a23f903",
-      "titulo": "Cuánta plata se puede ahorrar al año entre nafta y patente con un auto SUV híbrido",
-      "link": "https://www.iprofesional.com/autos/459739-cuanta-plata-se-puede-ahorrar-al-ano-entre-nafta-y-patente-con-un-auto-suv-hibrido",
-      "descripcion": "Hicimos las cuentas sobre los costos de mantenimiento con un vehículo naftero y uno híbrido. Además, qué diferencia hay que pagar por un modelo u otro",
-      "fecha_publicacion": "2026-07-16T19:00:00+00:00",
-      "fuente_id": "iprof_autos",
-      "fuente_nombre": "iProfesional Autos",
-      "categoria": "Automotor"
-    },
-    {
       "id": "afb6100650f5",
       "titulo": "Así es la Nueva Volkswagen Amarok V6 Unlimited",
       "link": "https://motorwebargentina.com/volkswagen-amarok-v6-unlimited/",
@@ -283,16 +473,6 @@
       "categoria": "Automotor"
     },
     {
-      "id": "b58e7f992698",
-      "titulo": "Las exportaciones de GNL de EE.UU. aportarán 1,4 billones de dólares al PIB hasta 2040",
-      "link": "https://es.investing.com/news/commodities-news/las-exportaciones-de-gnl-de-eeuu-aportaran-14-billones-de-dolares-al-pib-hasta-2040-93CH-3746278",
-      "descripcion": "",
-      "fecha_publicacion": "2026-07-16T18:41:43+00:00",
-      "fuente_id": "investing_agro",
-      "fuente_nombre": "Investing Agro",
-      "categoria": "Agro"
-    },
-    {
       "id": "e0050bd9b32c",
       "titulo": "La Casa Blanca vigila de cerca el brote alimentario de ciclospora",
       "link": "https://es.investing.com/news/world-news/la-casa-blanca-vigila-de-cerca-el-brote-alimentario-de-ciclospora-93CH-3746277",
@@ -301,26 +481,6 @@
       "fuente_id": "investing_intl",
       "fuente_nombre": "Investing Internacional",
       "categoria": "Internacional"
-    },
-    {
-      "id": "f42d11169b68",
-      "titulo": "El Gobierno tuvo déficit fiscal en junio por el aguinaldo, pero cerró el semestre con superávit",
-      "link": "https://www.iprofesional.com/economia/460138-el-gobierno-tuvo-deficit-en-junio-por-el-aguinaldo-pero-cerro-el-semestre-con-superavit",
-      "descripcion": "Luis Caputo difundió los datos del sexto mes del año, que estuvo influido por factores estacionales como el pago del SAC a empleados públicos",
-      "fecha_publicacion": "2026-07-16T18:23:00+00:00",
-      "fuente_id": "iprof_economia",
-      "fuente_nombre": "iProfesional Economía",
-      "categoria": "Finanzas"
-    },
-    {
-      "id": "c234c13360dd",
-      "titulo": "El dólar blue se consigue hoy a $1.525 en el microcentro porteño",
-      "link": "https://www.iproup.com/finanzas/69904-precio-dolar-hoy-a-cuanto-cerro-el-billete-este-jueves-16-de-julio",
-      "descripcion": "El dólar MEP y el dólar mayorista ajustaron posiciones, mientras que el dólar CCL experimentó una leve suba. El dólar tarjeta, en tanto, cerró sin cambios",
-      "fecha_publicacion": "2026-07-16T18:05:00+00:00",
-      "fuente_id": "iproup_fintech",
-      "fuente_nombre": "iProUP Fintech",
-      "categoria": "Finanzas"
     },
     {
       "id": "27cd643096db",
@@ -353,36 +513,6 @@
       "categoria": "Energía y Minería"
     },
     {
-      "id": "d41b778d25d2",
-      "titulo": "El campo crece, con financiamiento: el Banco Nación ya otorgó U$S 1.000 millones a productores en 2026",
-      "link": "https://www.infocampo.com.ar/el-campo-crece-con-financiamiento-el-banco-nacion-ya-otorgo-us-1-000-millones-a-productores-en-2026/",
-      "descripcion": "En el inicio de la Exposición Rural de Palermo, el Banco Nación presentó su amplia propuesta financiera para el agro, con créditos que parten de tasa 0% en dólares, y destacó los récords alcanzados en las otras grandes ferias del sector como Expoagro y Agroactiva.",
-      "fecha_publicacion": "2026-07-16T17:44:50+00:00",
-      "fuente_id": "infocampo",
-      "fuente_nombre": "Infocampo",
-      "categoria": "Agro"
-    },
-    {
-      "id": "47afe7525600",
-      "titulo": "El director ejecutivo de Marex advierte que los mercados subestiman los riesgos de El Niño",
-      "link": "https://es.investing.com/news/economy-news/el-director-ejecutivo-de-marex-advierte-que-los-mercados-subestiman-los-riesgos-de-el-nino-93CH-3746240",
-      "descripcion": "",
-      "fecha_publicacion": "2026-07-16T17:44:37+00:00",
-      "fuente_id": "investing_economia",
-      "fuente_nombre": "Investing Economía",
-      "categoria": "Mercados"
-    },
-    {
-      "id": "3033859881e2",
-      "titulo": "Bancarios cerraron un nuevo aumento salarial y llevaron el básico a casi $2.500.000",
-      "link": "https://www.iprofesional.com/economia/460131-bancarios-cerraron-un-nuevo-aumento-salarial-y-llevaron-el-basico-a-casi-2500000",
-      "descripcion": "Actualizaron el incremento según la suba de la inflación. La organización gremial retoma la paritaria en el marco de la revisión de los convenios.",
-      "fecha_publicacion": "2026-07-16T17:40:00+00:00",
-      "fuente_id": "iprof_economia",
-      "fuente_nombre": "iProfesional Economía",
-      "categoria": "Finanzas"
-    },
-    {
       "id": "7b93e0a10fc9",
       "titulo": "F1: Red Bull cambiará el alerón del RB22 para el GP de Bélgica 2026",
       "link": "https://noticias.autocosmos.com.ar/2026/07/16/f1-red-bull-cambiara-el-aleron-del-rb22-para-el-gp-de-belgica-2026",
@@ -393,26 +523,6 @@
       "categoria": "Automotor"
     },
     {
-      "id": "e06986adef41",
-      "titulo": "Trump asistirá a la final del Mundial en Nueva York el domingo",
-      "link": "https://es.investing.com/news/economy-news/trump-asistira-a-la-final-del-mundial-en-nueva-york-el-domingo-93CH-3746232",
-      "descripcion": "",
-      "fecha_publicacion": "2026-07-16T17:34:53+00:00",
-      "fuente_id": "investing_economia",
-      "fuente_nombre": "Investing Economía",
-      "categoria": "Mercados"
-    },
-    {
-      "id": "bd45f762ffdc",
-      "titulo": "Schmid, de la Fed, advierte contra asumir que la inflación es temporal",
-      "link": "https://es.investing.com/news/economy-news/schmid-de-la-fed-advierte-contra-asumir-que-la-inflacion-es-temporal-3746233",
-      "descripcion": "",
-      "fecha_publicacion": "2026-07-16T17:31:40+00:00",
-      "fuente_id": "investing_economia",
-      "fuente_nombre": "Investing Economía",
-      "categoria": "Mercados"
-    },
-    {
       "id": "d340b7a84a60",
       "titulo": "Vaca Muerta: un estudio del CFI confirmó la factibilidad técnica de una hidrovía de 720 km en los ríos Limay y Negro",
       "link": "https://dataenergia.ar/petroleo-y-combustibles/vaca-muerta-un-estudio-del-cfi-confirmo-la-factibilidad-tecnica-de-una-hidrovia-de-720-km-en-los-rios-limay-y-negro-202671614300",
@@ -421,6 +531,16 @@
       "fuente_id": "data_energia",
       "fuente_nombre": "Data Energía",
       "categoria": "Energía y Minería"
+    },
+    {
+      "id": "6c85bba450b9",
+      "titulo": "Cuánto cuestan los SUV más baratos en julio y quién lidera el ranking",
+      "link": "https://www.ambito.com/autos/cuanto-cuestan-los-suv-mas-baratos-julio-y-quien-lidera-el-ranking-n6300318",
+      "descripcion": "En un contexto de suba de precios y menor demanda, este segmento también se reacomoda y muestra cambios en sus posiciones.",
+      "fecha_publicacion": "2026-07-16T17:17:00+00:00",
+      "fuente_id": "ambito_autos",
+      "fuente_nombre": "Ámbito Autos",
+      "categoria": "Automotor"
     },
     {
       "id": "559ccda66e1a",
@@ -463,6 +583,16 @@
       "categoria": "Finanzas"
     },
     {
+      "id": "565741b560e5",
+      "titulo": "La Argentina cae en ventas de autos, pero se mantiene entre los principales mercados de la región",
+      "link": "https://www.ambito.com/autos/la-argentina-cae-ventas-pero-se-mantiene-los-principales-mercados-la-region-n6300272",
+      "descripcion": "En el primer semestre de 2026, los patentamientos bajaron casi un 10%, en un contexto de incertidumbre y cambios en el comportamiento del consumidor.",
+      "fecha_publicacion": "2026-07-16T16:14:00+00:00",
+      "fuente_id": "ambito_autos",
+      "fuente_nombre": "Ámbito Autos",
+      "categoria": "Automotor"
+    },
+    {
       "id": "5d755933bf98",
       "titulo": "Thiago Tirante ganó en Bastad y se metió en un podio argentino histórico",
       "link": "https://www.0221.com.ar/estudiantes/thiago-tirante-gano-bastad-y-se-metio-un-podio-argentino-historico-n131109",
@@ -471,16 +601,6 @@
       "fuente_id": "est_0221",
       "fuente_nombre": "0221 Estudiantes",
       "categoria": "Fulbito"
-    },
-    {
-      "id": "824feb82a4ce",
-      "titulo": "El dato que revela por qué la baja de impuestos de Milei todavía no se siente en los bolsillos",
-      "link": "https://www.iprofesional.com/impuestos/460111-carga-tributaria-argentina-sigue-devorando-mitad-sueldo-julio-2026",
-      "descripcion": "Un informe de los expertos del IARAF detectó que, en promedio, el \"día de la independencia\" tributaria recién llega para esta época del año",
-      "fecha_publicacion": "2026-07-16T15:20:00+00:00",
-      "fuente_id": "iprof_impuestos",
-      "fuente_nombre": "iProfesional Impuestos",
-      "categoria": "Fiscal"
     },
     {
       "id": "545365fc26c4",
@@ -493,14 +613,14 @@
       "categoria": "Automotor"
     },
     {
-      "id": "4438b601110b",
-      "titulo": "“El campo merece que se le saque la pata de la cabeza y eso es lo que viene haciendo el presidente”",
-      "link": "https://www.infocampo.com.ar/el-campo-merece-que-se-le-saque-la-pata-de-la-cabeza-y-eso-es-lo-que-viene-haciendo-el-presidente/",
-      "descripcion": "En la apertura de la 138° Exposición Rural de Palermo, el jefe de Gabinete, Diego Santilli, defendió las medidas del Gobierno para el campo y la agroindustria. El titular de la SRA, Nicolás Pino, destacó la “unión” actual con otros sectores para sacar el país adelante.",
-      "fecha_publicacion": "2026-07-16T14:51:25+00:00",
-      "fuente_id": "infocampo",
-      "fuente_nombre": "Infocampo",
-      "categoria": "Agro"
+      "id": "10849ea2dd0a",
+      "titulo": "La nueva pick up que rompe todos los límites llega al país",
+      "link": "https://www.ambito.com/autos/la-nueva-pick-up-que-rompe-todos-los-limites-llega-al-pais-n6300219",
+      "descripcion": "Con más potencia, torque récord y una actualización integral, esta full-size heavy duty inicia su preventa en la Argentina.",
+      "fecha_publicacion": "2026-07-16T14:36:00+00:00",
+      "fuente_id": "ambito_autos",
+      "fuente_nombre": "Ámbito Autos",
+      "categoria": "Automotor"
     },
     {
       "id": "bcf37cfbc290",
@@ -573,16 +693,6 @@
       "categoria": "Comex"
     },
     {
-      "id": "c7d5190ba63e",
-      "titulo": "La colección de autos de Lionel Messi: confort, potencia y diseño",
-      "link": "https://www.ambito.com/la-coleccion-autos-lionel-messi-confort-potencia-y-diseno-n6300127",
-      "descripcion": "El capitán argentino combina SUVs, deportivos y modelos urbanos en una lista que refleja su perfil fuera de la cancha.",
-      "fecha_publicacion": "2026-07-16T12:41:00+00:00",
-      "fuente_id": "ambito_autos",
-      "fuente_nombre": "Ámbito Autos",
-      "categoria": "Automotor"
-    },
-    {
       "id": "da1a2438df1a",
       "titulo": "Cómo se organizan las empresas para las vacaciones de invierno y qué cambió con la Reforma Laboral",
       "link": "https://www.iprofesional.com/management/460090-que-haran-empresas-vacaciones-de-invierno-reforma-laboral",
@@ -591,16 +701,6 @@
       "fuente_id": "iprof_management",
       "fuente_nombre": "iProfesional Management",
       "categoria": "Laboral"
-    },
-    {
-      "id": "837353d0ce00",
-      "titulo": "Los mejores outlets de ropa blanca, con descuentos de hasta 60% en sábanas, toallas y acolchados",
-      "link": "https://www.iprofesional.com/finanzas/460088-los-mejores-outlets-de-sabanas-toallas-y-acolchados-con-descuentos-de-hasta-60-por-ciento",
-      "descripcion": "Recurrir a estos comercios es una opción interesante para renovar el stock de sábanas o toallas sin que se altere el presupuesto",
-      "fecha_publicacion": "2026-07-16T12:09:00+00:00",
-      "fuente_id": "iprof_finanzas",
-      "fuente_nombre": "iProfesional Finanzas",
-      "categoria": "Finanzas"
     },
     {
       "id": "d6d7ad71e8bc",
@@ -673,14 +773,14 @@
       "categoria": "Comex"
     },
     {
-      "id": "d02856d6acc4",
-      "titulo": "La demanda de logística farmacéutica impulsa una nueva expansión de LOG-IN",
-      "link": "https://tradenews.com.ar/la-demanda-de-logistica-farmaceutica-impulsa-una-nueva-expansion-de-log-in/",
-      "descripcion": "El crecimiento de la demanda de servicios logísticos especializados para la industria de la salud llevó a LOG-IN a ampliar un tercio su capacidad operativa con la incorporación de una...",
-      "fecha_publicacion": "2026-07-15T18:35:05+00:00",
-      "fuente_id": "trade_news",
-      "fuente_nombre": "Trade News",
-      "categoria": "Comex"
+      "id": "d7a7b18c17de",
+      "titulo": "La demanda de logística farmacéutica impulsa una nueva expansión de Log-In",
+      "link": "https://webpicking.com/la-demanda-de-logistica-farmaceutica-impulsa-una-nueva-expansion-de-log-in/",
+      "descripcion": "La compañía amplió un tercio su capacidad operativa con una nueva nave de 25.000 m² en Tortuguitas. La entrada La demanda de logística farmacéutica impulsa una nueva expansión de Log-In se publicó primero en Webpicking .",
+      "fecha_publicacion": "2026-07-15T17:27:55+00:00",
+      "fuente_id": "webpicking",
+      "fuente_nombre": "Webpicking",
+      "categoria": "Logística"
     },
     {
       "id": "517122c03f9a",
@@ -691,26 +791,6 @@
       "fuente_id": "investing_intl2",
       "fuente_nombre": "Investing Mundo",
       "categoria": "Internacional"
-    },
-    {
-      "id": "2fa8f6d81c04",
-      "titulo": "La tasa de inflación de Polonia cae al 2,5% en junio",
-      "link": "https://es.investing.com/news/economic-indicators/la-tasa-de-inflacion-de-polonia-cae-al-25-en-junio-93CH-3742619",
-      "descripcion": "",
-      "fecha_publicacion": "2026-07-15T08:56:30+00:00",
-      "fuente_id": "investing_intl2",
-      "fuente_nombre": "Investing Mundo",
-      "categoria": "Internacional"
-    },
-    {
-      "id": "23d3ee63c624",
-      "titulo": "Reino Unido, un mercado estratégico para los alimentos orgánicos argentinos",
-      "link": "https://aduananews.com/reino-unido-un-mercado-estrategico-para-los-alimentos-organicos-argentinos/?utm_source=rss&utm_medium=rss&utm_campaign=reino-unido-un-mercado-estrategico-para-los-alimentos-organicos-argentinos",
-      "descripcion": "Mientras Argentina e Inglaterra protagonizan este miércoles (15.07.2026) un nuevo encuentro deportivo, también se fortalece una relación basada en el intercambio comercial de alimentos orgánicos certificados. Inglaterra integra el Reino Unido, un mercado de alta exigencia para los productos argentinos. Aunque representa una participación menor dentro del total exportado, el Reino Unido constituye un destino [&#8230;] The post Reino Unido, un mercado estratégico para los alimentos orgánicos argen",
-      "fecha_publicacion": "2026-07-15T08:44:01+00:00",
-      "fuente_id": "aduana_news",
-      "fuente_nombre": "Aduana News",
-      "categoria": "Comex"
     },
     {
       "id": "5d56815e5a75",
@@ -753,16 +833,6 @@
       "categoria": "Fiscal"
     },
     {
-      "id": "fda1edd05a83",
-      "titulo": "Ernesto Tentori de Zarcam: su fallecimiento",
-      "link": "https://webpicking.com/ernesto-tentori-de-zarcam-su-fallecimiento/",
-      "descripcion": "Como gerente de Sostenibilidad en Zarcam Logística fue un impulsor notable de la logística sustentable en la Argentina La entrada Ernesto Tentori de Zarcam: su fallecimiento se publicó primero en Webpicking .",
-      "fecha_publicacion": "2026-07-14T14:19:51+00:00",
-      "fuente_id": "webpicking",
-      "fuente_nombre": "Webpicking",
-      "categoria": "Logística"
-    },
-    {
       "id": "001fcba0c4b3",
       "titulo": "Mantenimiento del vehículo. Controles preventivos para hacerle al vehículo antes de las vacaciones de invierno",
       "link": "https://www.diariodeautos.com.ar/index.php/noticias/servicios/item/18735-mantenimiento",
@@ -771,26 +841,6 @@
       "fuente_id": "diario_autos",
       "fuente_nombre": "Diario de Autos",
       "categoria": "Automotor"
-    },
-    {
-      "id": "4dc01cef1261",
-      "titulo": "La italiana Eni y BMW sellan una alianza para abastecer vehículos con biocombustible HVO",
-      "link": "https://www.ambito.com/energia/la-italiana-eni-y-bmw-sellan-una-alianza-abastecer-vehiculos-biocombustible-hvo-n6299036",
-      "descripcion": "El acuerdo permitirá que las flotas corporativas de BMW en Italia operen con HVO, un biocombustible renovable producido por Enilive que reduce, en promedio, un 79,5% las emisiones de CO equivalente respecto del diésel fósil.",
-      "fecha_publicacion": "2026-07-13T19:55:00+00:00",
-      "fuente_id": "ambito_autos",
-      "fuente_nombre": "Ámbito Autos",
-      "categoria": "Automotor"
-    },
-    {
-      "id": "50c067b8bfaa",
-      "titulo": "DHL Global Forwarding designó nuevo CEO para Argentina, Chile, Perú y Ecuador",
-      "link": "https://tradenews.com.ar/dhl-global-forwarding-designo-nuevo-ceo-para-argentina-chile-peru-y-ecuador/",
-      "descripcion": "DHL Global Forwarding, el especialista en transporte aéreo y marítimo del Grupo DHL, anunció la designación de Eduardo Rodrigues como nuevo CEO PAC, que comprende los países Argentina, Chile, Perú...",
-      "fecha_publicacion": "2026-07-13T13:19:17+00:00",
-      "fuente_id": "trade_news",
-      "fuente_nombre": "Trade News",
-      "categoria": "Comex"
     },
     {
       "id": "b9eb100d240b",
@@ -823,16 +873,6 @@
       "categoria": "Comex"
     },
     {
-      "id": "971809aa1101",
-      "titulo": "Junio cerró con bajas en la producción y exportación de vehículos",
-      "link": "https://tradenews.com.ar/junio-cerro-con-bajas-en-la-produccion-y-exportacion-de-vehiculos/",
-      "descripcion": "En junio se produjeron 37.029 vehículos automotores en la Argentina, 1,9% menos respecto de mayo y 13,6% menos en su comparación con junio del año pasado. El último informe de...",
-      "fecha_publicacion": "2026-07-12T18:19:16+00:00",
-      "fuente_id": "trade_news",
-      "fuente_nombre": "Trade News",
-      "categoria": "Comex"
-    },
-    {
       "id": "37a90503733e",
       "titulo": "Gasto público de la administración nacional. En junio de 2026, mientras el gasto primario devengado tuvo una suba real interanual del 3,6%, el efectivamente pagado subió 0,4%",
       "link": "https://www.iaraf.org/index.php/informes-economicos/area-fiscal/737-informe-economico-2026-07-08",
@@ -841,16 +881,6 @@
       "fuente_id": "iaraf",
       "fuente_nombre": "IARAF",
       "categoria": "Análisis Consultoras"
-    },
-    {
-      "id": "52aae11b0da7",
-      "titulo": "La venta de vehículos 0km cerró junio con otro aumento, impulsado por las SUV",
-      "link": "https://www.ambito.com/uruguay/la-venta-vehiculos-0km-cerro-junio-otro-aumento-impulsado-las-suv-n6297165",
-      "descripcion": "Se vendieron 220 vehículos por día el mes pasado y el primer semestre acumuló la venta de 37.626 unidades, un 18% más que en enero-junio de 2025.",
-      "fecha_publicacion": "2026-07-07T21:09:00+00:00",
-      "fuente_id": "ambito_autos",
-      "fuente_nombre": "Ámbito Autos",
-      "categoria": "Automotor"
     },
     {
       "id": "304f623ea6b8",
