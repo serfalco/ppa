@@ -1,10 +1,13 @@
 name: PPA - Datos de mercado
+# El deploy ya NO usa FTP/Hostinger: al pushear a main, Cloudflare Pages
+# (conectado al repo, directorio de salida: site/) publica automáticamente.
 on:
   schedule:
     - cron: '0 13-21 * * 1-5'
   workflow_dispatch:
 permissions:
   contents: write
+  issues: write
 concurrency:
   group: ppa-datos
   cancel-in-progress: false
@@ -26,6 +29,8 @@ jobs:
           pip install requests
       - name: Actualizar datos de mercado
         run: python scripts/datos_economicos.py --solo-mercado
+      - name: Actualizar histórico acumulativo
+        run: python scripts/historico.py
       - name: Copiar JSON al site
         run: |
           mkdir -p site/data
@@ -34,23 +39,18 @@ jobs:
         run: |
           git config user.name "PPA Bot"
           git config user.email "bot@pulsoproductivo.com.ar"
-          git add data/datos.json site/data/datos.json
+          git add data/ site/data/
           if ! git diff --staged --quiet; then
             git commit -m "Datos de mercado — $(date -u '+%Y-%m-%d %H:%M UTC')"
             git pull --rebase -X theirs origin main
             git push
           fi
-      - name: Deploy datos a Hostinger
-        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
-        with:
-          server: ${{ secrets.FTP_SERVER }}
-          username: ${{ secrets.FTP_USERNAME }}
-          password: ${{ secrets.FTP_PASSWORD }}
-          local-dir: ./site/
-          server-dir: ./
-          timeout: 60000
-          exclude: |
-            **/.git*
-            **/.git*/**
-            **/node_modules/**
-            **/__pycache__/**
+      - name: Alerta si falló
+        if: failure()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh issue create \
+            --title "⚠ Falló Datos de mercado — $(date -u '+%Y-%m-%d %H:%M UTC')" \
+            --body "El workflow **Datos de mercado** falló. Ver corrida: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}" \
+            --label "alerta" || true
