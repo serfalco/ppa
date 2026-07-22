@@ -16,7 +16,11 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from config import DIR_DATA
 
 JSON_PORTADA = os.path.join(DIR_DATA, "portada.json")
-GEMINI_URL   = "https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent"
+# Modelo configurable por env var (el doc rector pide poder cambiar de
+# modelo sin reconstruir). gemini-1.5-flash fue discontinuado por Google;
+# el default actual es gemini-2.5-flash-lite (el más barato de la familia).
+GEMINI_MODEL = os.environ.get("GEMINI_MODEL", "gemini-2.5-flash-lite")
+GEMINI_URL   = f"https://generativelanguage.googleapis.com/v1beta/models/{GEMINI_MODEL}:generateContent"
 BATCH_SIZE   = 8
 MAX_NOTAS    = 16
 
