@@ -1,0 +1,17 @@
+# Cloudflare Pages — cabeceras HTTP
+# https://developers.cloudflare.com/pages/configuration/headers/
+
+/*
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: SAMEORIGIN
+  Referrer-Policy: strict-origin-when-cross-origin
+
+# El JSON de datos se refresca seguido: cache corto
+/data/*
+  Cache-Control: public, max-age=300
+
+# Paneles privados: nunca indexar (protegerlos además con Cloudflare Access)
+/panel69/*
+  X-Robots-Tag: noindex, nofollow
+/admin/*
+  X-Robots-Tag: noindex, nofollow
