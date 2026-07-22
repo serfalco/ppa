@@ -297,16 +297,10 @@ def _manual_fresco(manual, horas=30):
 
 
 def obtener_riesgo_pais(previo):
-    # 1) PRIORIDAD: dato manual del panel (lo que Checho vio en Rava y cargó).
-    manual = _leer_manual()
-    if manual and manual.get("riesgo_pais") and _manual_fresco(manual):
-        v = manual["riesgo_pais"]
-        print(f"· Riesgo País: MANUAL {v} pb (cargado en panel)")
-        return dato(v, unidad="pb", fuente="carga manual",
-                    fecha=manual.get("cargado_en"), frecuencia="manual")
-
-    # 2) Si no hay manual fresco, cadena automática (Rava primero)
-    print("· Riesgo País (fallback en cadena)")
+    # Fase A (documento rector): la cadena AUTOMÁTICA tiene prioridad.
+    # La carga manual del panel es solo RESPALDO cuando ninguna fuente
+    # responde, y queda marcada con huella visible (fuente + modo).
+    print("· Riesgo País (cadena automática primero)")
     for nombre, fn in FUENTES_RIESGO:
         try:
             res = fn()
@@ -316,31 +310,75 @@ def obtener_riesgo_pais(previo):
         if res and res.get("valor"):
             print(f"   ✓ {res['valor']} pb vía {res['fuente']}"
                   + (f" ({res['variacion']:+.2f}%)" if res.get('variacion') is not None else ""))
-            return dato(
+            d = dato(
                 res["valor"], unidad="pb",
                 variacion=res.get("variacion"),
                 fecha=res.get("fecha"),
                 fuente=res["fuente"],
                 frecuencia="intradia",
             )
+            d["modo"] = "automatico"
+            return d
+
+    # Respaldo 1: dato manual fresco del panel (con huella visible)
+    manual = _leer_manual()
+    if manual and manual.get("riesgo_pais") and _manual_fresco(manual):
+        v = manual["riesgo_pais"]
+        print(f"   ✓ RESPALDO manual: {v} pb (cargado en panel)")
+        d = dato(v, unidad="pb", fuente="carga manual (respaldo)",
+                 fecha=manual.get("cargado_en"), frecuencia="manual")
+        d["modo"] = "manual_respaldo"
+        return d
+
+    # Respaldo 2: último valor bueno conocido
     print("   ✗ Ninguna fuente respondió. Conservo último valor bueno.")
     return conservar(previo, "riesgo_pais")
 
 
+# ID de la variable BCRA v4 para compras netas de divisas (MULC).
+# None = todavía no verificado. Correr scripts/descubrir_bcra.py donde haya
+# internet libre, verificar contra el Informe Monetario Diario y setearlo.
+# Cuando tenga valor, el MULC sale de la API y el panel queda de respaldo.
+MULC_BCRA_ID = None
+
+
 def obtener_mulc(previo):
-    """Lee el dato de intervención del BCRA (compró/vendió) cargado en el panel.
-    Solo se muestra si es fresco; si no, conserva el anterior."""
+    """Intervención del BCRA en el MULC (compró/vendió).
+    1) API BCRA v4 si MULC_BCRA_ID está verificado (automático, Fase A).
+    2) Respaldo: carga manual fresca del panel.
+    3) Si no, conserva el anterior."""
+    if MULC_BCRA_ID:
+        j = _bcra_get(MULC_BCRA_ID)
+        try:
+            ultimo = j["results"][0]["detalle"][0]
+            valor = round(float(ultimo["valor"]))
+            print(f"· MULC: BCRA API {valor:+} MM USD ({ultimo.get('fecha')})")
+            d = dato(
+                {"operacion": "compró" if valor >= 0 else "vendió",
+                 "monto": abs(valor)},
+                unidad="MM USD",
+                fecha=ultimo.get("fecha"),
+                fuente="BCRA API v4",
+                frecuencia="diaria",
+            )
+            d["modo"] = "automatico"
+            return d
+        except Exception:
+            pass  # sigue al respaldo manual
+
     manual = _leer_manual()
     if manual and manual.get("mulc") and _manual_fresco(manual):
         m = manual["mulc"]
-        print(f"· MULC: BCRA {m.get('operacion')} {m.get('monto')} {m.get('unidad','MM USD')}")
-        return dato(
+        print(f"· MULC: BCRA {m.get('operacion')} {m.get('monto')} {m.get('unidad','MM USD')} (carga manual)")
+        d = dato(
             {"operacion": m.get("operacion"), "monto": m.get("monto")},
             unidad=m.get("unidad", "MM USD"),
             fecha=manual.get("cargado_en"),
             fuente="BCRA (carga manual)",
             frecuencia="diaria",
         )
+        d["modo"] = "manual_respaldo"
+        return d
     return conservar(previo, "mulc")
 
 
