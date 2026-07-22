@@ -13,6 +13,7 @@ on:
 
 permissions:
   contents: write
+  issues: write
 
 concurrency:
   group: ppa-fetcher
@@ -53,3 +54,13 @@ jobs:
             git pull --rebase -X theirs origin main
             git push
           fi
+
+      - name: Alerta si falló
+        if: failure()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh issue create \
+            --title "⚠ Falló el Fetcher RSS — $(date -u '+%Y-%m-%d %H:%M UTC')" \
+            --body "El workflow **Fetcher RSS** falló. Ver corrida: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}" \
+            --label "alerta" || true
