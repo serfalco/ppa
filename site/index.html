@@ -4,13 +4,14 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>PPA · Pulso Productivo Argentino</title>
-<meta name="description" content="Publicación económica argentina. La Data del Día, datos de mercado, columnas y más.">
+<meta name="description" content="Publicación económica argentina. El Pulso del Día, datos de mercado, columnas y más.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900&family=IBM+Plex+Sans:wght@400;500;600;700;900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/assets/ppa.css">
 <link rel="stylesheet" href="/assets/home.css">
 <link rel="stylesheet" href="/assets/carrusel-datos.css">
+<link rel="stylesheet" href="/assets/pulso.css">
 </head>
 <body class="body-home">
 
@@ -19,8 +20,8 @@
 <header class="cabecera-ppa expandida" id="cabecera-ppa">
 
   <div class="cab-top">
-    <span class="cab-fecha">Mar 21/07/2026</span>
-    <span class="cab-edicion">Edición Desayuno 🧉</span>
+    <span class="cab-fecha">Jue 23/07/2026</span>
+    <span class="cab-edicion">Edición Merienda ☕</span>
   </div>
 
   <div class="cab-logo-fila">
@@ -66,60 +67,72 @@
 <div class="contenedor">
 
 
-<section class="home-la-data">
-  <div class="kicker">La Data del Día</div>
-  <div class="kicker-linea"></div>
-  <ul class="data-lista">
+
+
+<section class="home-tarjetas">
+  <div class="tablero-scroll">
     
-      <li class="data-item">
-        <span class="data-cat">Mercados</span>
-        <a href="https://www.iproup.com/economia-digital/70012-por-que-carlos-maslaton-proyecta-una-suba-de-bitcoin-pese-al-escepticismo-de-inversores" class="data-titulo" target="_blank" rel="noopener">Por qué Carlos Maslatón proyecta una suba de Bitcoin pese al escepticismo de inversores</a>
-        
-        <span class="data-fuente">iProUP Economía Digital</span>
-      </li>
-      <li class="data-item">
-        <span class="data-cat">Finanzas</span>
-        <a href="https://www.lanacion.com.ar/economia/fecha-de-cobro-de-anses-el-cronograma-de-pagos-para-este-martes-21-de-julio-nid21072026/" class="data-titulo" target="_blank" rel="noopener">Fecha de cobro de Anses: el cronograma de pagos para este martes 21 de julio</a>
-        
-        <span class="data-fuente">La Nación Economía</span>
-      </li>
-      <li class="data-item">
-        <span class="data-cat">Internacional</span>
-        <a href="https://es.investing.com/news/economic-indicators/la-inflacion-en-la-alimentacion-del-reino-unido-cae-al-26-en-julio-93CH-3750565" class="data-titulo" target="_blank" rel="noopener">La inflación en la alimentación del Reino Unido cae al 2,6% en julio</a>
-        
-        <span class="data-fuente">Investing Mundo</span>
-      </li>
-      <li class="data-item">
-        <span class="data-cat">Finanzas</span>
-        <a href="https://www.iprofesional.com/economia/460408-aumento-del-65-por-ciento-para-empleados-del-congreso-y-nueva-pelea-entre-el-milei-y-villarruel" class="data-titulo" target="_blank" rel="noopener">Aumento salarial para el personal del Congreso: ¿Nueva disputa entre Milei y Villarruel?</a>
-        
-        <span class="data-fuente">iProfesional Economía</span>
-      </li>
-      <li class="data-item">
-        <span class="data-cat">Finanzas</span>
-        <a href="https://www.iproup.com/finanzas/70009-bancos-tradicionales-pierden-jovenes-argentinos-billeteras-digitales-ganan-confianza" class="data-titulo" target="_blank" rel="noopener">Solo el 6% de los jóvenes argentinos confía en los bancos y el resto migró a billeteras virtuales</a>
-        
-        <span class="data-fuente">iProUP Fintech</span>
-      </li>
-      <li class="data-item">
-        <span class="data-cat">Finanzas</span>
-        <a href="https://www.lanacion.com.ar/economia/salario-de-la-uatre-cuanto-cobra-un-trabajador-rural-en-julio-2026-nid15072026/" class="data-titulo" target="_blank" rel="noopener">Salario de la UATRE: cuánto cobra un trabajador rural en julio 2026</a>
-        
-        <span class="data-fuente">La Nación Economía</span>
-      </li>
-      <li class="data-item">
-        <span class="data-cat">Finanzas</span>
-        <a href="https://www.iprofesional.com/finanzas/460180-caputo-pone-un-paredon-de-9000-millones-de-dolares-para-frenar-al-dolar-en-1500-pesos" class="data-titulo" target="_blank" rel="noopener">Caputo pone un paredón de u$s9.000 millones en el mercado para frenar al dólar en $1.500</a>
-        
-        <span class="data-fuente">iProfesional Finanzas</span>
-      </li>
-      <li class="data-item">
-        <span class="data-cat">Finanzas</span>
-        <a href="https://www.iproup.com/finanzas/70005-mundial-de-las-finanzas-digitales-argentina-y-el-dolar-cripto" class="data-titulo" target="_blank" rel="noopener">La Argentina pasó de solo comprar dólar digital a ser clave para los planes de los gigantes cripto</a>
-        
-        <span class="data-fuente">iProUP Fintech</span>
-      </li>
+      <a href="/tablero/#dolares" class="t-card" id="tarjeta-dolar-oficial">
+        <span class="t-label">Oficial</span>
+        <span class="t-valor">…</span>
+        <span class="t-var"></span>
+      </a>
+      <a href="/tablero/#dolares" class="t-card" id="tarjeta-dolar-mep">
+        <span class="t-label">MEP</span>
+        <span class="t-valor">…</span>
+        <span class="t-var"></span>
+      </a>
+      <a href="/tablero/#dolares" class="t-card" id="tarjeta-dolar-ccl">
+        <span class="t-label">CCL</span>
+        <span class="t-valor">…</span>
+        <span class="t-var"></span>
+      </a>
+      <a href="/tablero/#dolares" class="t-card" id="tarjeta-dolar-blue">
+        <span class="t-label">Blue</span>
+        <span class="t-valor">…</span>
+        <span class="t-var"></span>
+      </a>
+      <a href="/tablero/#bcra" class="t-card" id="tarjeta-reservas">
+        <span class="t-label">Reservas</span>
+        <span class="t-valor">…</span>
+        <span class="t-var"></span>
+      </a>
+      <a href="/tablero/#dolares" class="t-card" id="tarjeta-brecha">
+        <span class="t-label">Brecha MEP</span>
+        <span class="t-valor">…</span>
+        <span class="t-var"></span>
+      </a>
+      <a href="/tablero/#dolares" class="t-card" id="tarjeta-banda">
+        <span class="t-label">Banda</span>
+        <span class="t-valor">…</span>
+        <span class="t-var"></span>
+      </a>
+      <a href="/tablero/#macro" class="t-card" id="tarjeta-ipc">
+        <span class="t-label">IPC</span>
+        <span class="t-valor">…</span>
+        <span class="t-var"></span>
+      </a>
+      <a href="/tcrm/" class="t-card" id="tarjeta-tcrm">
+        <span class="t-label">TCRM</span>
+        <span class="t-valor">…</span>
+        <span class="t-var"></span>
+      </a>
+  </div>
+</section>
+
+
+<section class="home-titulares">
+  <div class="tit-k">Titulares · lo que dicen las fuentes</div>
+  <ul>
+    
+      <li><span class="tit-c">Mercados</span><a href="https://www.iproup.com/economia-digital/70075-blockchain-un-poder-que-conlleva-una-gran-responsabilidad" target="_blank" rel="noopener">Blockchain: un poder que conlleva una gran responsabilidad</a> <span class="tit-f">— iProUP Economía Digital</span></li>
+      <li><span class="tit-c">Finanzas</span><a href="https://www.iproup.com/finanzas/70082-carlos-maslaton-advierte-por-que-no-hay-que-bancarizar-los-dolares-del-colchon" target="_blank" rel="noopener">Carlos Maslaton advierte por qué no hay que bancarizar los dólares del colchón</a> <span class="tit-f">— iProUP Fintech</span></li>
+      <li><span class="tit-c">Internacional</span><a href="https://es.investing.com/news/economic-indicators/las-solicitudes-semanales-de-subsidio-por-desempleo-en-eeuu-caen-a-187000-3756621" target="_blank" rel="noopener">Las solicitudes semanales de subsidio por desempleo en EE.UU. caen a 187.000</a> <span class="tit-f">— Investing Mundo</span></li>
+      <li><span class="tit-c">Mercados</span><a href="https://www.iproup.com/economia-digital/70081-bitmex-cierra-despues-de-11-anos-y-pone-fin-a-una-era-del-mercado-cripto" target="_blank" rel="noopener">BitMEX cierra y el mercado cripto pierde a uno de sus pioneros</a> <span class="tit-f">— iProUP Economía Digital</span></li>
+      <li><span class="tit-c">Mercados</span><a href="https://es.investing.com/news/economy-news/canada-promete-defender-sus-intereses-ante-las-amenazas-arancelarias-de-eeuu-93CH-3756878" target="_blank" rel="noopener">Canadá promete defender sus intereses ante las amenazas arancelarias de EE.UU.</a> <span class="tit-f">— Investing Economía</span></li>
+      <li><span class="tit-c">Mercados</span><a href="https://es.investing.com/news/economy-news/tanzania-explora-la-venta-de-un-eurobono-para-financiarse-con-1000-millones-de-dolares-93CH-3756865" target="_blank" rel="noopener">Tanzania explora la venta de un eurobono para financiarse con 1.000 millones de dólares</a> <span class="tit-f">— Investing Economía</span></li>
   </ul>
+  <a href="/la-data/" class="tit-ver">Ver todas las noticias →</a>
 </section>
 
 
@@ -186,58 +199,6 @@
 </section>
 
 
-<section class="home-tarjetas">
-  <div class="tablero-scroll">
-    
-      <a href="/tablero/#dolares" class="t-card" id="tarjeta-dolar-oficial">
-        <span class="t-label">Oficial</span>
-        <span class="t-valor">…</span>
-        <span class="t-var"></span>
-      </a>
-      <a href="/tablero/#dolares" class="t-card" id="tarjeta-dolar-mep">
-        <span class="t-label">MEP</span>
-        <span class="t-valor">…</span>
-        <span class="t-var"></span>
-      </a>
-      <a href="/tablero/#dolares" class="t-card" id="tarjeta-dolar-ccl">
-        <span class="t-label">CCL</span>
-        <span class="t-valor">…</span>
-        <span class="t-var"></span>
-      </a>
-      <a href="/tablero/#dolares" class="t-card" id="tarjeta-dolar-blue">
-        <span class="t-label">Blue</span>
-        <span class="t-valor">…</span>
-        <span class="t-var"></span>
-      </a>
-      <a href="/tablero/#bcra" class="t-card" id="tarjeta-reservas">
-        <span class="t-label">Reservas</span>
-        <span class="t-valor">…</span>
-        <span class="t-var"></span>
-      </a>
-      <a href="/tablero/#dolares" class="t-card" id="tarjeta-brecha">
-        <span class="t-label">Brecha MEP</span>
-        <span class="t-valor">…</span>
-        <span class="t-var"></span>
-      </a>
-      <a href="/tablero/#dolares" class="t-card" id="tarjeta-banda">
-        <span class="t-label">Banda</span>
-        <span class="t-valor">…</span>
-        <span class="t-var"></span>
-      </a>
-      <a href="/tablero/#macro" class="t-card" id="tarjeta-ipc">
-        <span class="t-label">IPC</span>
-        <span class="t-valor">…</span>
-        <span class="t-var"></span>
-      </a>
-      <a href="/tcrm/" class="t-card" id="tarjeta-tcrm">
-        <span class="t-label">TCRM</span>
-        <span class="t-valor">…</span>
-        <span class="t-var"></span>
-      </a>
-  </div>
-</section>
-
-
 
 
 <section class="home-stream">
@@ -266,12 +227,12 @@
           <div class="et-tuit">
             <span class="et-cuenta">@BancoCentral_AR</span>
             <p class="et-texto">#DataBCRA | Encontrá la lista de #PrincipalesVariables en: #ReservasBCRA</p>
-            <a href="https://twitter.com/BancoCentral_AR/status/2079291604876099918#m" target="_blank" rel="noopener" class="et-link">Ver →</a>
+            <a href="https://twitter.com/BancoCentral_AR/status/2080016198373159023#m" target="_blank" rel="noopener" class="et-link">Ver →</a>
           </div>
           <div class="et-tuit">
             <span class="et-cuenta">@BancoCentral_AR</span>
-            <p class="et-texto">#DataBCRA | Encontrá la lista de #PrincipalesVariables en: #ReservasBCRA</p>
-            <a href="https://twitter.com/BancoCentral_AR/status/2078204629150478383#m" target="_blank" rel="noopener" class="et-link">Ver →</a>
+            <p class="et-texto">Qué hacer si al recibir el resumen de tu tarjeta de crédito encontrás un consumo que no reconocés o que aparece duplicad</p>
+            <a href="https://twitter.com/BancoCentral_AR/status/2079669994393157776#m" target="_blank" rel="noopener" class="et-link">Ver →</a>
           </div>
       </div>
     
@@ -280,13 +241,13 @@
         
           <div class="et-tuit">
             <span class="et-cuenta">@CIPPEC</span>
-            <p class="et-texto">R to @CIPPEC: Podés ver el informe en este link:</p>
-            <a href="https://twitter.com/CIPPEC/status/2079277287082492068#m" target="_blank" rel="noopener" class="et-link">Ver →</a>
+            <p class="et-texto">RT by @CIPPEC: ¿QUÉ TAN TRANSPARENTE ES CADA PROVINCIA? El Índice de Transparencia Presupuestaria Provincial (ITPP) del </p>
+            <a href="https://twitter.com/arg_endatos/status/2079661532326035913#m" target="_blank" rel="noopener" class="et-link">Ver →</a>
           </div>
           <div class="et-tuit">
             <span class="et-cuenta">@CIPPEC</span>
-            <p class="et-texto">R to @CIPPEC: El dato también fue levantado por @OjoPrensa</p>
-            <a href="https://twitter.com/CIPPEC/status/2079277284851171393#m" target="_blank" rel="noopener" class="et-link">Ver →</a>
+            <p class="et-texto">¿Cómo se preparan las provincias argentinas para incorporar inteligencia artificial? A partir del informe de CIPPEC sobr</p>
+            <a href="https://twitter.com/CIPPEC/status/2079276897729437992#m" target="_blank" rel="noopener" class="et-link">Ver →</a>
           </div>
       </div>
     

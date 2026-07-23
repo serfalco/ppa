@@ -1,5 +1,5 @@
 {
-  "generado_en": "2026-06-07T19:53:56.314790+00:00",
+  "generado_en": "2026-07-23T15:13:29.493154+00:00",
   "fuentes": {
     "bcra": {
       "nombre": "BCRA",
@@ -21,9 +21,12 @@
       "nombre": "IARAF",
       "estado": "ok",
       "error": null,
-      "ultima_publicacion": "2026-06-05T19:48:00+00:00",
-      "notas_obtenidas": 1,
-      "ultima_lectura": "2026-06-07T19:52:00.879041+00:00"
+      "ultima_publicacion": "2026-07-17T16:26:57+00:00",
+      "notas_obtenidas": 3,
+      "ultima_lectura": "2026-07-23T15:13:15.465725+00:00",
+      "fallos_consecutivos": 0,
+      "exitos_consecutivos": 1,
+      "ultima_ok": "2026-07-23T15:13:15.465725+00:00"
     },
     "fiel": {
       "nombre": "FIEL",
@@ -35,11 +38,13 @@
     },
     "fundar": {
       "nombre": "Fundar",
-      "estado": "sin_datos",
+      "estado": "error",
       "error": "Feed vacío o malformado",
       "ultima_publicacion": null,
       "notas_obtenidas": 0,
-      "ultima_lectura": "2026-06-07T19:52:02.216651+00:00"
+      "ultima_lectura": "2026-07-23T15:13:14.870663+00:00",
+      "exitos_consecutivos": 0,
+      "fallos_consecutivos": 1
     },
     "ieral": {
       "nombre": "IERAL / Fundación Mediterránea",
@@ -331,19 +336,25 @@
     },
     "econviews": {
       "nombre": "Econviews",
-      "estado": "ok",
+      "estado": "sin_novedades",
       "error": null,
       "ultima_publicacion": "2026-02-25T16:02:39+00:00",
-      "notas_obtenidas": 0,
-      "ultima_lectura": "2026-06-07T19:52:33.916397+00:00"
+      "notas_obtenidas": 3,
+      "ultima_lectura": "2026-07-23T15:13:13.977026+00:00",
+      "fallos_consecutivos": 0,
+      "exitos_consecutivos": 1,
+      "ultima_ok": "2026-07-23T15:13:13.977026+00:00"
     },
     "ceso": {
       "nombre": "CESO",
       "estado": "ok",
       "error": null,
-      "ultima_publicacion": "2026-05-20T21:29:07+00:00",
-      "notas_obtenidas": 0,
-      "ultima_lectura": "2026-06-07T19:52:36.197789+00:00"
+      "ultima_publicacion": "2026-07-17T17:20:35+00:00",
+      "notas_obtenidas": 3,
+      "ultima_lectura": "2026-07-23T15:13:12.915346+00:00",
+      "fallos_consecutivos": 0,
+      "exitos_consecutivos": 1,
+      "ultima_ok": "2026-07-23T15:13:12.915346+00:00"
     },
     "bcra_nitter": {
       "nombre": "BCRA (Twitter)",
@@ -387,11 +398,14 @@
     },
     "cippec": {
       "nombre": "CIPPEC",
-      "estado": "ok",
+      "estado": "sin_novedades",
       "error": null,
       "ultima_publicacion": "2026-06-01T20:50:16+00:00",
-      "notas_obtenidas": 1,
-      "ultima_lectura": "2026-06-07T19:52:39.380200+00:00"
+      "notas_obtenidas": 3,
+      "ultima_lectura": "2026-07-23T15:13:13.628588+00:00",
+      "fallos_consecutivos": 0,
+      "exitos_consecutivos": 1,
+      "ultima_ok": "2026-07-23T15:13:13.628588+00:00"
     },
     "synopsis": {
       "nombre": "Synopsis",
@@ -421,9 +435,12 @@
       "nombre": "EconoJournal",
       "estado": "ok",
       "error": null,
-      "ultima_publicacion": "2026-06-07T18:46:17+00:00",
-      "notas_obtenidas": 10,
-      "ultima_lectura": "2026-06-07T19:52:40.598121+00:00"
+      "ultima_publicacion": "2026-07-23T14:25:17+00:00",
+      "notas_obtenidas": 3,
+      "ultima_lectura": "2026-07-23T15:13:23.402793+00:00",
+      "fallos_consecutivos": 0,
+      "exitos_consecutivos": 1,
+      "ultima_ok": "2026-07-23T15:13:23.402793+00:00"
     },
     "secenergia": {
       "nombre": "Secretaría de Energía",
@@ -677,9 +694,12 @@
       "nombre": "Webpicking",
       "estado": "ok",
       "error": null,
-      "ultima_publicacion": "2026-06-06T19:39:26+00:00",
-      "notas_obtenidas": 10,
-      "ultima_lectura": "2026-06-07T19:53:52.145656+00:00"
+      "ultima_publicacion": "2026-07-23T13:55:18+00:00",
+      "notas_obtenidas": 3,
+      "ultima_lectura": "2026-07-23T15:13:28.887963+00:00",
+      "fallos_consecutivos": 0,
+      "exitos_consecutivos": 1,
+      "ultima_ok": "2026-07-23T15:13:28.887963+00:00"
     },
     "fmi": {
       "nombre": "FMI",
@@ -728,6 +748,343 @@
       "ultima_publicacion": null,
       "notas_obtenidas": 0,
       "ultima_lectura": "2026-06-07T19:53:56.305713+00:00"
+    },
+    "bichos_campo": {
+      "nombre": "Bichos de Campo",
+      "ultima_lectura": "2026-07-23T15:13:08.881100+00:00",
+      "fallos_consecutivos": 0,
+      "exitos_consecutivos": 1,
+      "ultima_ok": "2026-07-23T15:13:08.881100+00:00",
+      "error": null,
+      "notas_obtenidas": 3,
+      "ultima_publicacion": "2026-07-23T14:28:28+00:00",
+      "estado": "ok"
+    },
+    "infocampo": {
+      "nombre": "Infocampo",
+      "ultima_lectura": "2026-07-23T15:13:10.849143+00:00",
+      "fallos_consecutivos": 0,
+      "exitos_consecutivos": 1,
+      "ultima_ok": "2026-07-23T15:13:10.849143+00:00",
+      "error": null,
+      "notas_obtenidas": 3,
+      "ultima_publicacion": "2026-07-23T14:55:18+00:00",
+      "estado": "ok"
+    },
+    "investing_agro": {
+      "nombre": "Investing Agro",
+      "ultima_lectura": "2026-07-23T15:13:10.959754+00:00",
+      "fallos_consecutivos": 0,
+      "exitos_consecutivos": 1,
+      "ultima_ok": "2026-07-23T15:13:10.959754+00:00",
+      "error": null,
+      "notas_obtenidas": 3,
+      "ultima_publicacion": "2026-07-23T13:37:09+00:00",
+      "estado": "ok"
+    },
+    "arodar": {
+      "nombre": "A Rodar Post",
+      "ultima_lectura": "2026-07-23T15:13:15.730260+00:00",
+      "fallos_consecutivos": 0,
+      "exitos_consecutivos": 1,
+      "ultima_ok": "2026-07-23T15:13:15.730260+00:00",
+      "error": null,
+      "notas_obtenidas": 3,
+      "ultima_publicacion": "2026-07-23T00:19:51+00:00",
+      "estado": "ok"
+    },
+    "autocosmos": {
+      "nombre": "Autocosmos Argentina",
+      "ultima_lectura": "2026-07-23T15:13:16.495157+00:00",
+      "fallos_consecutivos": 0,
+      "exitos_consecutivos": 1,
+      "ultima_ok": "2026-07-23T15:13:16.495157+00:00",
+      "error": null,
+      "notas_obtenidas": 3,
+      "ultima_publicacion": "2026-07-23T09:00:00+00:00",
+      "estado": "ok"
+    },
+    "diario_autos": {
+      "nombre": "Diario de Autos",
+      "ultima_lectura": "2026-07-23T15:13:18.066329+00:00",
+      "fallos_consecutivos": 0,
+      "exitos_consecutivos": 1,
+      "ultima_ok": "2026-07-23T15:13:18.066329+00:00",
+      "error": null,
+      "notas_obtenidas": 3,
+      "ultima_publicacion": "2026-07-22T20:23:13+00:00",
+      "estado": "ok"
+    },
+    "iprof_autos": {
+      "nombre": "iProfesional Autos",
+      "ultima_lectura": "2026-07-23T15:13:18.162357+00:00",
+      "fallos_consecutivos": 0,
+      "exitos_consecutivos": 1,
+      "ultima_ok": "2026-07-23T15:13:18.162357+00:00",
+      "error": null,
+      "notas_obtenidas": 3,
+      "ultima_publicacion": "2026-07-22T23:06:00+00:00",
+      "estado": "ok"
+    },
+    "motorweb": {
+      "nombre": "Motorweb Argentina",
+      "ultima_lectura": "2026-07-23T15:13:19.615230+00:00",
+      "fallos_consecutivos": 0,
+      "exitos_consecutivos": 1,
+      "ultima_ok": "2026-07-23T15:13:19.615230+00:00",
+      "error": null,
+      "notas_obtenidas": 3,
+      "ultima_publicacion": "2026-07-23T10:11:49+00:00",
+      "estado": "ok"
+    },
+    "vision_motor": {
+      "nombre": "Vision Motor",
+      "ultima_lectura": "2026-07-23T15:13:20.489249+00:00",
+      "fallos_consecutivos": 0,
+      "exitos_consecutivos": 1,
+      "ultima_ok": "2026-07-23T15:13:20.489249+00:00",
+      "error": null,
+      "notas_obtenidas": 3,
+      "ultima_publicacion": "2026-07-18T01:30:35+00:00",
+      "estado": "ok"
+    },
+    "ambito_autos": {
+      "nombre": "Ámbito Autos",
+      "ultima_lectura": "2026-07-23T15:13:20.884281+00:00",
+      "fallos_consecutivos": 0,
+      "exitos_consecutivos": 1,
+      "ultima_ok": "2026-07-23T15:13:20.884281+00:00",
+      "error": null,
+      "notas_obtenidas": 3,
+      "ultima_publicacion": "2026-07-22T19:29:00+00:00",
+      "estado": "ok"
+    },
+    "aduana_news": {
+      "nombre": "Aduana News",
+      "ultima_lectura": "2026-07-23T15:13:21.935893+00:00",
+      "fallos_consecutivos": 0,
+      "exitos_consecutivos": 1,
+      "ultima_ok": "2026-07-23T15:13:21.935893+00:00",
+      "error": null,
+      "notas_obtenidas": 3,
+      "ultima_publicacion": "2026-07-22T16:09:55+00:00",
+      "estado": "ok"
+    },
+    "iprof_comex": {
+      "nombre": "iProfesional Comex",
+      "ultima_lectura": "2026-07-23T15:13:22.020343+00:00",
+      "fallos_consecutivos": 0,
+      "exitos_consecutivos": 1,
+      "ultima_ok": "2026-07-23T15:13:22.020343+00:00",
+      "error": null,
+      "notas_obtenidas": 3,
+      "ultima_publicacion": "2026-07-22T23:06:00+00:00",
+      "estado": "ok"
+    },
+    "mercojuris": {
+      "nombre": "Mercojuris",
+      "ultima_lectura": "2026-07-23T15:13:22.263731+00:00",
+      "fallos_consecutivos": 0,
+      "exitos_consecutivos": 1,
+      "ultima_ok": "2026-07-23T15:13:22.263731+00:00",
+      "error": null,
+      "notas_obtenidas": 3,
+      "ultima_publicacion": "2026-07-19T22:34:58+00:00",
+      "estado": "ok"
+    },
+    "trade_news": {
+      "nombre": "Trade News",
+      "ultima_lectura": "2026-07-23T15:13:22.707166+00:00",
+      "fallos_consecutivos": 0,
+      "exitos_consecutivos": 1,
+      "ultima_ok": "2026-07-23T15:13:22.707166+00:00",
+      "error": null,
+      "notas_obtenidas": 3,
+      "ultima_publicacion": "2026-07-22T20:49:29+00:00",
+      "estado": "ok"
+    },
+    "data_energia": {
+      "nombre": "Data Energía",
+      "ultima_lectura": "2026-07-23T15:13:23.174194+00:00",
+      "fallos_consecutivos": 0,
+      "exitos_consecutivos": 1,
+      "ultima_ok": "2026-07-23T15:13:23.174194+00:00",
+      "error": null,
+      "notas_obtenidas": 3,
+      "ultima_publicacion": "2026-07-22T21:22:00+00:00",
+      "estado": "ok"
+    },
+    "noticiasnet_energia": {
+      "nombre": "NoticiasNet Energía",
+      "ultima_lectura": "2026-07-23T15:13:23.616029+00:00",
+      "exitos_consecutivos": 0,
+      "fallos_consecutivos": 1,
+      "error": "Feed vacío o malformado",
+      "notas_obtenidas": 0,
+      "estado": "error"
+    },
+    "iprof_economia": {
+      "nombre": "iProfesional Economía",
+      "ultima_lectura": "2026-07-23T15:13:23.692513+00:00",
+      "fallos_consecutivos": 0,
+      "exitos_consecutivos": 1,
+      "ultima_ok": "2026-07-23T15:13:23.692513+00:00",
+      "error": null,
+      "notas_obtenidas": 3,
+      "ultima_publicacion": "2026-07-23T14:04:00+00:00",
+      "estado": "ok"
+    },
+    "iprof_finanzas": {
+      "nombre": "iProfesional Finanzas",
+      "ultima_lectura": "2026-07-23T15:13:23.778662+00:00",
+      "fallos_consecutivos": 0,
+      "exitos_consecutivos": 1,
+      "ultima_ok": "2026-07-23T15:13:23.778662+00:00",
+      "error": null,
+      "notas_obtenidas": 3,
+      "ultima_publicacion": "2026-07-23T13:58:00+00:00",
+      "estado": "ok"
+    },
+    "iproup_fintech": {
+      "nombre": "iProUP Fintech",
+      "ultima_lectura": "2026-07-23T15:13:23.997996+00:00",
+      "fallos_consecutivos": 0,
+      "exitos_consecutivos": 1,
+      "ultima_ok": "2026-07-23T15:13:23.997996+00:00",
+      "error": null,
+      "notas_obtenidas": 3,
+      "ultima_publicacion": "2026-07-23T15:31:00+00:00",
+      "estado": "ok"
+    },
+    "lanacion_eco": {
+      "nombre": "La Nación Economía",
+      "ultima_lectura": "2026-07-23T15:13:24.667749+00:00",
+      "fallos_consecutivos": 0,
+      "exitos_consecutivos": 1,
+      "ultima_ok": "2026-07-23T15:13:24.667749+00:00",
+      "error": null,
+      "notas_obtenidas": 3,
+      "ultima_publicacion": "2026-07-23T15:10:58+00:00",
+      "estado": "ok"
+    },
+    "ambito_fin": {
+      "nombre": "Ámbito Finanzas",
+      "ultima_lectura": "2026-07-23T15:13:24.860791+00:00",
+      "fallos_consecutivos": 0,
+      "exitos_consecutivos": 1,
+      "ultima_ok": "2026-07-23T15:13:24.860791+00:00",
+      "error": null,
+      "notas_obtenidas": 3,
+      "ultima_publicacion": "2026-07-23T15:08:00+00:00",
+      "estado": "ok"
+    },
+    "iprof_impuestos": {
+      "nombre": "iProfesional Impuestos",
+      "ultima_lectura": "2026-07-23T15:13:24.933271+00:00",
+      "fallos_consecutivos": 0,
+      "exitos_consecutivos": 1,
+      "ultima_ok": "2026-07-23T15:13:24.933271+00:00",
+      "error": null,
+      "notas_obtenidas": 3,
+      "ultima_publicacion": "2026-07-23T14:30:00+00:00",
+      "estado": "ok"
+    },
+    "ambito_fisc": {
+      "nombre": "Ámbito Fiscal",
+      "ultima_lectura": "2026-07-23T15:13:25.139838+00:00",
+      "fallos_consecutivos": 0,
+      "exitos_consecutivos": 1,
+      "ultima_ok": "2026-07-23T15:13:25.139838+00:00",
+      "error": null,
+      "notas_obtenidas": 3,
+      "ultima_publicacion": "2026-07-22T23:50:00+00:00",
+      "estado": "ok"
+    },
+    "investing_intl": {
+      "nombre": "Investing Internacional",
+      "ultima_lectura": "2026-07-23T15:13:25.234295+00:00",
+      "fallos_consecutivos": 0,
+      "exitos_consecutivos": 1,
+      "ultima_ok": "2026-07-23T15:13:25.234295+00:00",
+      "error": null,
+      "notas_obtenidas": 3,
+      "ultima_publicacion": "2026-07-22T21:53:13+00:00",
+      "estado": "ok"
+    },
+    "investing_intl2": {
+      "nombre": "Investing Mundo",
+      "ultima_lectura": "2026-07-23T15:13:25.332355+00:00",
+      "fallos_consecutivos": 0,
+      "exitos_consecutivos": 1,
+      "ultima_ok": "2026-07-23T15:13:25.332355+00:00",
+      "error": null,
+      "notas_obtenidas": 3,
+      "ultima_publicacion": "2026-07-23T13:00:59+00:00",
+      "estado": "ok"
+    },
+    "iprof_management": {
+      "nombre": "iProfesional Management",
+      "ultima_lectura": "2026-07-23T15:13:25.436118+00:00",
+      "fallos_consecutivos": 0,
+      "exitos_consecutivos": 1,
+      "ultima_ok": "2026-07-23T15:13:25.436118+00:00",
+      "error": null,
+      "notas_obtenidas": 3,
+      "ultima_publicacion": "2026-07-23T13:17:00+00:00",
+      "estado": "ok"
+    },
+    "microjuris_laboral": {
+      "nombre": "Microjuris Laboral",
+      "ultima_lectura": "2026-07-23T15:13:26.397074+00:00",
+      "exitos_consecutivos": 0,
+      "fallos_consecutivos": 1,
+      "error": "Feed vacío o malformado",
+      "notas_obtenidas": 0,
+      "estado": "error"
+    },
+    "oit_podcast": {
+      "nombre": "OIT Podcast",
+      "ultima_lectura": "2026-07-23T15:13:26.771359+00:00",
+      "fallos_consecutivos": 0,
+      "exitos_consecutivos": 1,
+      "ultima_ok": "2026-07-23T15:13:26.771359+00:00",
+      "error": null,
+      "notas_obtenidas": 3,
+      "ultima_publicacion": "2026-04-28T00:00:00+00:00",
+      "estado": "sin_novedades"
+    },
+    "investing_economia": {
+      "nombre": "Investing Economía",
+      "ultima_lectura": "2026-07-23T15:13:28.973073+00:00",
+      "fallos_consecutivos": 0,
+      "exitos_consecutivos": 1,
+      "ultima_ok": "2026-07-23T15:13:28.973073+00:00",
+      "error": null,
+      "notas_obtenidas": 3,
+      "ultima_publicacion": "2026-07-23T14:39:03+00:00",
+      "estado": "ok"
+    },
+    "iproup_eco": {
+      "nombre": "iProUP Economía Digital",
+      "ultima_lectura": "2026-07-23T15:13:29.113086+00:00",
+      "fallos_consecutivos": 0,
+      "exitos_consecutivos": 1,
+      "ultima_ok": "2026-07-23T15:13:29.113086+00:00",
+      "error": null,
+      "notas_obtenidas": 3,
+      "ultima_publicacion": "2026-07-23T16:33:00+00:00",
+      "estado": "ok"
+    },
+    "est_0221": {
+      "nombre": "0221 Estudiantes",
+      "ultima_lectura": "2026-07-23T15:13:29.491562+00:00",
+      "fallos_consecutivos": 0,
+      "exitos_consecutivos": 1,
+      "ultima_ok": "2026-07-23T15:13:29.491562+00:00",
+      "error": null,
+      "notas_obtenidas": 3,
+      "ultima_publicacion": "2026-07-23T14:46:00+00:00",
+      "estado": "ok"
     }
   }
 }
