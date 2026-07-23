@@ -28,6 +28,7 @@ MESES = ["enero","febrero","marzo","abril","mayo","junio",
 DIAS_SEMANA = ["Lunes","Martes","Miércoles","Jueves","Viernes","Sábado","Domingo"]
 
 JSON_PORTADA       = os.path.join(DIR_DATA, "portada.json")
+JSON_PULSO         = os.path.join(DIR_DATA, "pulso.json")
 JSON_NOTAS_PROPIAS = os.path.join(DIR_DATA, "notas_propias.json")
 JSON_COLUMNAS      = os.path.join(DIR_DATA, "columnas_manual.json")
 JSON_TUITS         = os.path.join(DIR_DATA, "tuits_cache.json")
@@ -171,7 +172,82 @@ def cargar_tuits():
 
 
 # ================================================================
-# HTML — LA DATA DEL DÍA (8 notas planas)
+# HTML — EL PULSO DEL DÍA (lo que GENERA el sistema, arriba de todo)
+# ================================================================
+
+def cargar_pulso():
+    if not os.path.exists(JSON_PULSO):
+        return []
+    try:
+        with open(JSON_PULSO,'r',encoding='utf-8') as f:
+            return json.load(f).get("hechos", [])
+    except:
+        return []
+
+def html_pulso(hechos):
+    if not hechos:
+        return ""
+    cards = []
+    for h in hechos:
+        slug   = escapar(h.get("slug",""))
+        cat    = escapar(h.get("categoria",""))
+        titulo = escapar(h.get("titulo",""))
+        bajada = escapar(h.get("bajada",""))
+        cards.append(f"""
+      <a class="pulso-card" href="/pulso/{slug}.html">
+        <span class="pulso-cat">{cat}</span>
+        <h2 class="pulso-h">{titulo}</h2>
+        <p class="pulso-baj">{bajada}</p>
+        <span class="pulso-go">Leer en PPA →</span>
+      </a>""")
+    return f"""
+<section class="home-pulso">
+  <div class="pulso-kicker">
+    <span class="k">El Pulso del Día</span><span class="ln"></span>
+    <span class="tag">Generado por PPA</span>
+  </div>
+  <p class="pulso-sub">La lectura económica del día, generada por el sistema a partir de los datos oficiales.</p>
+  <div class="pulso-lista">
+    {''.join(cards)}
+  </div>
+</section>"""
+
+
+# ================================================================
+# HTML — TITULARES (RSS achicado, en segundo plano)
+# ================================================================
+
+def html_titulares(portada):
+    destacados = portada.get("destacados", [])
+    secciones  = portada.get("secciones", {})
+    todas = list(destacados)
+    for notas in secciones.values():
+        for n in notas:
+            if n not in todas:
+                todas.append(n)
+    todas = todas[:6]
+    if not todas:
+        return ""
+    items = []
+    for n in todas:
+        titulo = escapar(comp.limpiar_url(n.get("titulo","")))
+        fuente = escapar(n.get("fuente_nombre",""))
+        cat    = escapar(n.get("categoria",""))
+        link   = escapar(n.get("link","#"))
+        items.append(f"""
+      <li>{f'<span class="tit-c">{cat}</span>' if cat else ''}<a href="{link}" target="_blank" rel="noopener">{titulo}</a>{f' <span class="tit-f">— {fuente}</span>' if fuente else ''}</li>""")
+    return f"""
+<section class="home-titulares">
+  <div class="tit-k">Titulares · lo que dicen las fuentes</div>
+  <ul>
+    {''.join(items)}
+  </ul>
+  <a href="/la-data/" class="tit-ver">Ver todas las noticias →</a>
+</section>"""
+
+
+# ================================================================
+# HTML — LA DATA DEL DÍA (8 notas planas) [LEGADO — ya no se usa en portada]
 # ================================================================
 
 def html_la_data(portada):
@@ -389,6 +465,7 @@ def generar_home():
         edicion_icono  = "🧉" if edicion_nombre == "Desayuno" else "☕"
 
     portada = cargar_portada()
+    pulso   = cargar_pulso()
     columna = cargar_columna()
     stream  = cargar_stream()
     tuits   = cargar_tuits()
@@ -396,8 +473,8 @@ def generar_home():
     html = (
         comp.head_comun(
             "PPA · Pulso Productivo Argentino",
-            "Publicación económica argentina. La Data del Día, datos de mercado, columnas y más.",
-            css_extra='<link rel="stylesheet" href="/assets/home.css">\n<link rel="stylesheet" href="/assets/carrusel-datos.css">'
+            "Publicación económica argentina. El Pulso del Día, datos de mercado, columnas y más.",
+            css_extra='<link rel="stylesheet" href="/assets/home.css">\n<link rel="stylesheet" href="/assets/carrusel-datos.css">\n<link rel="stylesheet" href="/assets/pulso.css">'
         ) + f"""
 <body class="body-home">
 
@@ -406,11 +483,13 @@ def generar_home():
 <main class="home-main">
 <div class="contenedor">
 
-{html_la_data(portada)}
-
-{html_categorias()}
+{html_pulso(pulso)}
 
 {html_tarjetas_tablero()}
+
+{html_titulares(portada)}
+
+{html_categorias()}
 
 {html_columna(columna)}
 
