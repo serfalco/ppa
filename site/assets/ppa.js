@@ -130,9 +130,9 @@
     if (emae)tarjeta('tarjeta-emae',          fmtNumero(emae.valor), null, hora, emae.stale);
 
     // Oculta las tarjetas que no tienen dato (no quedan vacías en el carrusel)
-    document.querySelectorAll('.tarjeta-dato').forEach(function(el){
+    document.querySelectorAll('.t-card').forEach(function(el){
       if (el.id === 'tarjeta-banda') return; // la banda se maneja aparte
-      const v = el.querySelector('.tarjeta-valor');
+      const v = el.querySelector('.t-valor');
       if (v && (v.textContent === '\u2026' || v.textContent.trim() === '')) {
         el.style.display = 'none';
       } else {
@@ -171,8 +171,8 @@
   function tarjeta(id, valor, variacion, hora, stale) {
     const el = document.getElementById(id);
     if (!el) return;
-    const elValor = el.querySelector('.tarjeta-valor');
-    const elVar   = el.querySelector('.tarjeta-var');
+    const elValor = el.querySelector('.t-valor');
+    const elVar   = el.querySelector('.t-var');
     const elHora  = el.querySelector('.tarjeta-hora');
     if (elValor) {
       elValor.textContent = valor + (stale ? ' *' : '');
@@ -182,7 +182,7 @@
     if (elVar) {
       if (variacion != null) {
         const signo = variacion >= 0 ? '\u25b2' : '\u25bc';
-        elVar.className = 'tarjeta-var ' + (variacion >= 0 ? 'sube' : 'baja');
+        elVar.className = 't-var ' + (variacion >= 0 ? 'sube' : 'baja');
         elVar.textContent = signo + ' ' + Math.abs(variacion).toFixed(2) + '%';
       } else {
         elVar.textContent = '';
