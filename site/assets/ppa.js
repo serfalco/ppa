@@ -104,7 +104,7 @@
 
   // ---------------- 5 TARJETAS ----------------
   function pintarTarjetas(datos) {
-    if (!document.getElementById('tarjeta-riesgo')) return;
+    if (!document.getElementById('tarjeta-dolar-oficial')) return;
     const hora = datos && datos.generado_ar ? datos.generado_ar.split(' ')[1] : '';
 
     const rp  = d(datos, 'riesgo_pais');
