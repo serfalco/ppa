@@ -1,51 +1,51 @@
 {
-  "generado_en": "2026-07-24T01:08:49.070581+00:00",
-  "generado_ar": "23/07/2026 19:03",
+  "generado_en": "2026-07-24T10:52:57.277726+00:00",
+  "generado_ar": "24/07/2026 07:52",
   "hechos": [
     {
       "slug": "brecha-dolar",
       "categoria": "Cambiario",
-      "titulo": "La brecha del dólar quedó casi planchada: 0,3%",
-      "bajada": "El MEP ($1.519) frente al oficial ($1.515). Además, el CCL marca 4,4% y el blue, 3,0%.",
+      "titulo": "La brecha del dólar quedó casi planchada: 0,8%",
+      "bajada": "El MEP ($1.522) frente al oficial ($1.510). Además, el CCL marca 5,0% y el blue, 2,6%.",
       "dato": {
-        "n": "0,3%",
+        "n": "0,8%",
         "txt": "Brecha entre el dólar MEP y el oficial"
       },
       "cuerpo": [
-        "El dólar oficial cerró a $1.515 para la venta y el MEP a $1.519, dejando una brecha de 0,3% entre ambos.",
-        "Mirando el resto de las cotizaciones, el contado con liquidación ($1.581) marca 4,4% y el blue ($1.560) queda en 3,0% de brecha contra el oficial."
+        "El dólar oficial cerró a $1.510 para la venta y el MEP a $1.522, dejando una brecha de 0,8% entre ambos.",
+        "Mirando el resto de las cotizaciones, el contado con liquidación ($1.585) marca 5,0% y el blue ($1.550) queda en 2,6% de brecha contra el oficial."
       ],
       "tabla": [
         [
           "Oficial (venta)",
-          "$1.515"
+          "$1.510"
         ],
         [
           "Mayorista",
-          "$1.491"
+          "$1.490"
         ],
         [
           "MEP",
-          "$1.519"
+          "$1.522"
         ],
         [
           "CCL",
-          "$1.581"
+          "$1.585"
         ],
         [
           "Blue",
-          "$1.560"
+          "$1.550"
         ],
         [
           "Tarjeta",
-          "$1.970"
+          "$1.963"
         ]
       ],
-      "metodo": "Brecha = (MEP ÷ Oficial − 1) × 100 = (1.519 ÷ 1.515 − 1) × 100 = 0,3%.",
+      "metodo": "Brecha = (MEP ÷ Oficial − 1) × 100 = (1.522 ÷ 1.510 − 1) × 100 = 0,8%.",
       "criollo": "La brecha es cuánto más caro está el dólar financiero (el que se compra con bonos) que el oficial. Cuando es chica, los dos precios casi se tocan.",
       "fuente_nombre": "DolarApi · cálculo PPA",
       "fuente_url": "https://dolarapi.com",
-      "dato_fecha": "23/07/2026 19:03",
+      "dato_fecha": "24/07/2026 07:52",
       "prioridad": 90
     },
     {
@@ -63,21 +63,21 @@
       "criollo": "Son los dólares que tiene el Banco Central. El número bruto es el total; el neto (que descuenta deudas) suele ser bastante más bajo.",
       "fuente_nombre": "BCRA API v4",
       "fuente_url": "https://www.bcra.gob.ar",
-      "dato_fecha": "21/07/2026",
+      "dato_fecha": "20/07/2026",
       "prioridad": 88
     },
     {
       "slug": "riesgo-pais",
       "categoria": "Deuda",
-      "titulo": "El riesgo país subió a 421 puntos",
-      "bajada": "El indicador quedó en 421 puntos básicos, un alza del 1,2% frente al día previo.",
+      "titulo": "El riesgo país bajó a 410 puntos",
+      "bajada": "El indicador quedó en 410 puntos básicos, una baja del 2,6% frente al día previo.",
       "dato": {
-        "n": "421",
-        "txt": "puntos básicos · +1,2% en el día"
+        "n": "410",
+        "txt": "puntos básicos · -2,6% en el día"
       },
       "cuerpo": [
-        "El riesgo país cerró en 421 puntos básicos, un alza del 1,2% frente al día previo. El indicador mide la sobretasa que paga la deuda argentina por encima de los bonos del Tesoro de Estados Unidos.",
-        "En números redondos, 421 puntos equivalen a 4,2% de interés extra sobre lo que paga Estados Unidos por endeudarse."
+        "El riesgo país cerró en 410 puntos básicos, una baja del 2,6% frente al día previo. El indicador mide la sobretasa que paga la deuda argentina por encima de los bonos del Tesoro de Estados Unidos.",
+        "En números redondos, 410 puntos equivalen a 4,1% de interés extra sobre lo que paga Estados Unidos por endeudarse."
       ],
       "criollo": "Es como el puntaje crediticio del país. Si sube, pedir plata prestada afuera se encarece; si baja, se abarata.",
       "fuente_nombre": "argentinadatos.com",
@@ -101,26 +101,26 @@
       "criollo": "El IPC general mide todo. El núcleo saca lo que sube o baja por temporada o por decisión del Estado, para mostrar la inflación de fondo.",
       "fuente_nombre": "INDEC · datos.gob.ar",
       "fuente_url": "https://www.indec.gob.ar",
-      "dato_fecha": "01/06/2026",
+      "dato_fecha": "31/05/2026",
       "prioridad": 80
     },
     {
       "slug": "banda-cambiaria",
       "categoria": "Banda cambiaria",
-      "titulo": "El dólar mayorista corre al 68% de la banda",
-      "bajada": "Con piso en $755 y techo en $1.844, el mayorista ($1.491) se ubica en el canal.",
+      "titulo": "El dólar mayorista corre al 67% de la banda",
+      "bajada": "Con piso en $754 y techo en $1.846, el mayorista ($1.490) se ubica en el canal.",
       "dato": {
-        "n": "68%",
+        "n": "67%",
         "txt": "posición del mayorista dentro del canal piso–techo"
       },
       "cuerpo": [
-        "Bajo el esquema de bandas del Banco Central, el piso se desliza a $755 y el techo a $1.844. El dólar mayorista ($1.491) se ubica al 67,6% del recorrido entre ambos."
+        "Bajo el esquema de bandas del Banco Central, el piso se desliza a $754 y el techo a $1.846. El dólar mayorista ($1.490) se ubica al 67,3% del recorrido entre ambos."
       ],
-      "metodo": "Posición = (Mayorista − Piso) ÷ (Techo − Piso) × 100 = (1.491 − 755) ÷ (1.844 − 755) × 100 = 67,6%.",
+      "metodo": "Posición = (Mayorista − Piso) ÷ (Techo − Piso) × 100 = (1.490 − 754) ÷ (1.846 − 754) × 100 = 67,3%.",
       "criollo": "El BCRA deja flotar el dólar dentro de un pasillo. Si se pega al techo hay más presión de suba; si se va al piso, lo contrario.",
       "fuente_nombre": "cálculo PPA (esquema BCRA)",
       "fuente_url": "https://www.bcra.gob.ar",
-      "dato_fecha": "23/07/2026 19:03",
+      "dato_fecha": "24/07/2026 07:52",
       "prioridad": 75
     }
   ]
