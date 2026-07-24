@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>El Pulso del Día — PPA</title>
+<meta name="description" content="La lectura económica del día generada por PPA.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900&family=IBM+Plex+Sans:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/ppa.css">
+<link rel="stylesheet" href="/assets/pulso.css">
+</head>
+<body class="body-pulso-indice">
+
+<div id="cabecera-wrap">
+<header class="cabecera-ppa expandida" id="cabecera-ppa">
+
+  <div class="cab-top">
+    <span class="cab-fecha">Jue 23/07/2026</span>
+    <span class="cab-edicion">Edición Merienda ☕</span>
+  </div>
+
+  <div class="cab-logo-fila">
+    <div>
+      <a href="/" class="cab-logo">PPA</a>
+      <div class="cab-tagline">Pulso Productivo Argentino</div>
+    </div>
+    <button class="cab-hamburguesa" id="btn-menu" aria-label="Menú">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+
+  <div class="cab-ticker-wrap">
+    <div class="cab-ticker" id="cab-ticker">
+      <span>OFICIAL<b id="dolar-oficial">…</b></span><span>MEP<b id="dolar-mep">…</b></span><span>BLUE<b id="dolar-blue-ticker">…</b></span><span>RIESGO<b id="riesgo-pais-ticker">…</b></span><span>OFICIAL<b id="dolar-oficial">…</b></span><span>MEP<b id="dolar-mep">…</b></span><span>BLUE<b id="dolar-blue-ticker">…</b></span><span>RIESGO<b id="riesgo-pais-ticker">…</b></span>
+    </div>
+  </div>
+
+</header>
+<div class="cab-spacer" id="cab-spacer"></div>
+</div>
+
+<div class="menu-overlay" id="menu-overlay"></div>
+<nav class="menu-drawer" id="menu-drawer">
+  <div class="menu-drawer-header">
+    <span class="menu-drawer-logo">PPA</span>
+    <button class="menu-cerrar" id="btn-menu-cerrar">✕</button>
+  </div>
+  <div class="menu-nav">
+    <a href="/">Portada</a>
+    <a href="/la-data/" class="activo">La Data del Día</a>
+    <a href="/rem/">REM</a>
+    <a href="/columnas/">Columnas</a>
+    <a href="/stream/">TXT-Stream</a>
+    <a href="/tuits/">EconoTuits</a>
+    <a href="/tablero/">Tablero</a>
+    <a href="/informes/">Informes</a>
+    <a href="/como-trabajamos.html">Cómo trabajamos</a>
+  </div>
+</nav>
+<main class="pulso-main"><div class="contenedor">
+  <div class="pulso-kicker"><span class="k">El Pulso del Día</span><span class="ln"></span><span class="tag">Generado por PPA</span></div>
+  <p class="pulso-sub">Lectura automática de los movimientos económicos del día, generada a partir de los datos oficiales. Actualizado: 23/07/2026 19:03.</p>
+  <div class="pulso-lista">
+      <a class="pulso-card" href="/pulso/brecha-dolar.html">
+        <span class="pulso-cat">Cambiario</span>
+        <h2 class="pulso-h">La brecha del dólar quedó casi planchada: 0,3%</h2>
+        <p class="pulso-baj">El MEP ($1.519) frente al oficial ($1.515). Además, el CCL marca 4,4% y el blue, 3,0%.</p>
+        <span class="pulso-go">Leer en PPA →</span>
+      </a>
+      <a class="pulso-card" href="/pulso/reservas-bcra.html">
+        <span class="pulso-cat">Reservas</span>
+        <h2 class="pulso-h">Las reservas del BCRA quedaron en US$ 48.921 millones</h2>
+        <p class="pulso-baj">Stock bruto del Banco Central, una suba del 0,2% en el día.</p>
+        <span class="pulso-go">Leer en PPA →</span>
+      </a>
+      <a class="pulso-card" href="/pulso/riesgo-pais.html">
+        <span class="pulso-cat">Deuda</span>
+        <h2 class="pulso-h">El riesgo país subió a 421 puntos</h2>
+        <p class="pulso-baj">El indicador quedó en 421 puntos básicos, un alza del 1,2% frente al día previo.</p>
+        <span class="pulso-go">Leer en PPA →</span>
+      </a>
+      <a class="pulso-card" href="/pulso/inflacion-ipc.html">
+        <span class="pulso-cat">Inflación</span>
+        <h2 class="pulso-h">El IPC marcó 1,9% mensual, con el núcleo en 1,6%</h2>
+        <p class="pulso-baj">La inflación núcleo corrió por debajo del nivel general.</p>
+        <span class="pulso-go">Leer en PPA →</span>
+      </a>
+      <a class="pulso-card" href="/pulso/banda-cambiaria.html">
+        <span class="pulso-cat">Banda cambiaria</span>
+        <h2 class="pulso-h">El dólar mayorista corre al 68% de la banda</h2>
+        <p class="pulso-baj">Con piso en $755 y techo en $1.844, el mayorista ($1.491) se ubica en el canal.</p>
+        <span class="pulso-go">Leer en PPA →</span>
+      </a></div>
+</div></main>
+
+<footer class="pie">
+  <div class="contenedor">
+    <span class="pie-logo">PPA</span>
+    <span class="pie-bajada">Pulso Productivo Argentino · pulsoproductivo.com.ar</span>
+    <div class="pie-meta">
+      <a href="/">Portada</a> ·
+      <a href="/la-data/">La Data del Día</a> ·
+      <a href="/rem/">REM</a> ·
+      <a href="/columnas/">Columnas</a> ·
+      <a href="/stream/">TXT-Stream</a> ·
+      <a href="/tuits/">EconoTuits</a> ·
+      <a href="/tablero/">Tablero</a> ·
+      <a href="/informes/">Informes</a> ·
+      <a href="/como-trabajamos.html">Cómo trabajamos</a>
+    </div>
+    <span class="pie-legal">Editor responsable: Sergio Falco</span>
+  </div>
+</footer>
+<script src="/assets/ppa.js"></script>
+</body>
+</html>
