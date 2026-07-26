@@ -1,6 +1,6 @@
 {
-  "generado_en": "2026-07-25T21:07:16.766621+00:00",
-  "generado_ar": "25/07/2026 18:07",
+  "generado_en": "2026-07-26T10:27:51.236273+00:00",
+  "generado_ar": "26/07/2026 07:27",
   "hechos": [
     {
       "slug": "brecha-dolar",
@@ -45,7 +45,7 @@
       "criollo": "La brecha es cuánto más caro está el dólar financiero (el que se compra con bonos) que el oficial. Cuando es chica, los dos precios casi se tocan.",
       "fuente_nombre": "DolarApi · cálculo PPA",
       "fuente_url": "https://dolarapi.com",
-      "dato_fecha": "25/07/2026 18:07",
+      "dato_fecha": "26/07/2026 07:27",
       "prioridad": 90
     },
     {
@@ -69,20 +69,20 @@
     {
       "slug": "riesgo-pais",
       "categoria": "Deuda",
-      "titulo": "El riesgo país subió a 437 puntos",
-      "bajada": "El indicador quedó en 437 puntos básicos, un alza del 6,6% frente al día previo.",
+      "titulo": "El riesgo país cerró en 437 puntos",
+      "bajada": "El indicador quedó en 437 puntos básicos, sin cambios relevantes frente al día previo.",
       "dato": {
         "n": "437",
-        "txt": "puntos básicos · +6,6% en el día"
+        "txt": "puntos básicos · +0,0% en el día"
       },
       "cuerpo": [
-        "El riesgo país cerró en 437 puntos básicos, un alza del 6,6% frente al día previo. El indicador mide la sobretasa que paga la deuda argentina por encima de los bonos del Tesoro de Estados Unidos.",
+        "El riesgo país cerró en 437 puntos básicos, sin cambios relevantes frente al día previo. El indicador mide la sobretasa que paga la deuda argentina por encima de los bonos del Tesoro de Estados Unidos.",
         "En números redondos, 437 puntos equivalen a 4,4% de interés extra sobre lo que paga Estados Unidos por endeudarse."
       ],
       "criollo": "Es como el puntaje crediticio del país. Si sube, pedir plata prestada afuera se encarece; si baja, se abarata.",
       "fuente_nombre": "argentinadatos.com",
       "fuente_url": "https://argentinadatos.com",
-      "dato_fecha": "22/07/2026",
+      "dato_fecha": "23/07/2026",
       "prioridad": 85
     },
     {
@@ -108,19 +108,19 @@
       "slug": "banda-cambiaria",
       "categoria": "Banda cambiaria",
       "titulo": "El dólar mayorista corre al 68% de la banda",
-      "bajada": "Con piso en $754 y techo en $1.848, el mayorista ($1.497) se ubica en el canal.",
+      "bajada": "Con piso en $753 y techo en $1.849, el mayorista ($1.497) se ubica en el canal.",
       "dato": {
         "n": "68%",
         "txt": "posición del mayorista dentro del canal piso–techo"
       },
       "cuerpo": [
-        "Bajo el esquema de bandas del Banco Central, el piso se desliza a $754 y el techo a $1.848. El dólar mayorista ($1.497) se ubica al 67,9% del recorrido entre ambos."
+        "Bajo el esquema de bandas del Banco Central, el piso se desliza a $753 y el techo a $1.849. El dólar mayorista ($1.497) se ubica al 67,9% del recorrido entre ambos."
       ],
-      "metodo": "Posición = (Mayorista − Piso) ÷ (Techo − Piso) × 100 = (1.497 − 754) ÷ (1.848 − 754) × 100 = 67,9%.",
+      "metodo": "Posición = (Mayorista − Piso) ÷ (Techo − Piso) × 100 = (1.497 − 753) ÷ (1.849 − 753) × 100 = 67,9%.",
       "criollo": "El BCRA deja flotar el dólar dentro de un pasillo. Si se pega al techo hay más presión de suba; si se va al piso, lo contrario.",
       "fuente_nombre": "cálculo PPA (esquema BCRA)",
       "fuente_url": "https://www.bcra.gob.ar",
-      "dato_fecha": "25/07/2026 18:07",
+      "dato_fecha": "26/07/2026 07:27",
       "prioridad": 75
     }
   ]
