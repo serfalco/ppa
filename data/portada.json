@@ -1,98 +1,500 @@
 {
-  "generado_en": "2026-07-30T10:56:49.135010+00:00",
+  "generado_en": "2026-07-30T19:16:21.457400+00:00",
   "destacados": [
     {
-      "id": "5602732859a2",
-      "titulo": "Cuáles son las nuevas acciones tokenizadas que Binance sumó a bStocks y cómo invertir en ellas",
-      "link": "https://www.iproup.com/economia-digital/70237-acciones-tokenizadas-binance-como-invertir-apple-amazon-cripto-julio-2026",
-      "descripcion": "Binance habilitó 10 nuevos pares que incluyen Apple, Amazon y Goldman Sachs. Los bStocks ya superaron los u$s100 millones bajo gestión en solo dos semanas",
-      "fecha_publicacion": "2026-07-30T10:52:00+00:00",
+      "id": "01e0307beec3",
+      "titulo": "Una aerolínea ya acepta criptomonedas para pagar vuelos con un novedoso sistema",
+      "link": "https://www.iproup.com/economia-digital/70269-aerolinea-ya-acepta-criptomonedas-para-pagar-vuelos-con-un-novedoso-sistema",
+      "descripcion": "La integración es resultado de un memorando de entendimiento firmado en julio de 2025 entre la aerolínea y la empresa Crypto.com",
+      "fecha_publicacion": "2026-07-30T18:00:00+00:00",
       "fuente_id": "iproup_eco",
       "fuente_nombre": "iProUP Economía Digital",
       "categoria": "Mercados"
     },
     {
-      "id": "50500dda392a",
-      "titulo": "Las billeteras salieron a cuestionar los datos sobre la mora récord y los créditos irrecuperables",
-      "link": "https://www.iproup.com/finanzas/70265-morosidad-fintech-debate-billeteras-virtuales-responden-acusacion-record",
-      "descripcion": "La industria fintech cuestionó que se vincule a 2 de cada 3 \"irrecuperables\" con las billeteras y apunta a un error metodológico que generó confusión",
-      "fecha_publicacion": "2026-07-30T10:22:00+00:00",
-      "fuente_id": "iproup_fintech",
-      "fuente_nombre": "iProUP Fintech",
+      "id": "0b76200814fe",
+      "titulo": "Invertirán una cifra millonaria para poner en producción más de 50.000 hectáreas",
+      "link": "https://www.lanacion.com.ar/economia/campo/invertiran-una-cifra-millonaria-para-poner-en-produccion-mas-de-50000-hectareas-nid30072026/",
+      "descripcion": "Se trata de una iniciativa de Neuquén para distintas producciones bajo riego",
+      "fecha_publicacion": "2026-07-30T19:10:22+00:00",
+      "fuente_id": "lanacion_eco",
+      "fuente_nombre": "La Nación Economía",
       "categoria": "Finanzas"
     },
     {
-      "id": "5271422bd881",
-      "titulo": "La economía de la eurozona crece un 0,4% en el segundo trimestre, según Eurostat",
-      "link": "https://es.investing.com/news/economic-indicators/la-economia-de-la-eurozona-crece-un-04-en-el-segundo-trimestre-segun-eurostat-3767968",
+      "id": "9c001eac44f9",
+      "titulo": "EE.UU. impone nuevas sanciones a las redes de apoyo de Mahan Air",
+      "link": "https://es.investing.com/news/world-news/eeuu-impone-nuevas-sanciones-a-las-redes-de-apoyo-de-mahan-air-93CH-3770078",
       "descripcion": "",
-      "fecha_publicacion": "2026-07-30T09:07:41+00:00",
-      "fuente_id": "investing_intl2",
-      "fuente_nombre": "Investing Mundo",
+      "fecha_publicacion": "2026-07-30T19:11:39+00:00",
+      "fuente_id": "investing_intl",
+      "fuente_nombre": "Investing Internacional",
       "categoria": "Internacional"
     }
   ],
   "secciones": {
+    "Internacional": [
+      {
+        "id": "9c001eac44f9",
+        "titulo": "EE.UU. impone nuevas sanciones a las redes de apoyo de Mahan Air",
+        "link": "https://es.investing.com/news/world-news/eeuu-impone-nuevas-sanciones-a-las-redes-de-apoyo-de-mahan-air-93CH-3770078",
+        "descripcion": "",
+        "fecha_publicacion": "2026-07-30T19:11:39+00:00",
+        "fuente_id": "investing_intl",
+        "fuente_nombre": "Investing Internacional",
+        "categoria": "Internacional"
+      },
+      {
+        "id": "498713ab1b35",
+        "titulo": "El subdirector de la FAA, Chris Rocheleau, abandona la agencia",
+        "link": "https://es.investing.com/news/world-news/el-subdirector-de-la-faa-chris-rocheleau-abandona-la-agencia-93CH-3770075",
+        "descripcion": "",
+        "fecha_publicacion": "2026-07-30T19:03:58+00:00",
+        "fuente_id": "investing_intl",
+        "fuente_nombre": "Investing Internacional",
+        "categoria": "Internacional"
+      },
+      {
+        "id": "941129b95ac1",
+        "titulo": "El crecimiento económico de EE.UU. se modera al 1,5% en el segundo trimestre",
+        "link": "https://es.investing.com/news/economic-indicators/la-economia-de-eeuu-crece-un-15-en-el-segundo-trimestre-3769196",
+        "descripcion": "",
+        "fecha_publicacion": "2026-07-30T12:42:36+00:00",
+        "fuente_id": "investing_intl2",
+        "fuente_nombre": "Investing Mundo",
+        "categoria": "Internacional"
+      },
+      {
+        "id": "b3cfabe05139",
+        "titulo": "El banco central de Ucrania sube los tipos de interés ante presiones inflacionarias",
+        "link": "https://es.investing.com/news/world-news/el-banco-central-de-ucrania-sube-los-tipos-de-interes-ante-presiones-inflacionarias-93CH-3769098",
+        "descripcion": "",
+        "fecha_publicacion": "2026-07-30T12:34:24+00:00",
+        "fuente_id": "investing_intl",
+        "fuente_nombre": "Investing Internacional",
+        "categoria": "Internacional"
+      },
+      {
+        "id": "5271422bd881",
+        "titulo": "La economía de la eurozona crece un 0,4% en el segundo trimestre, según Eurostat",
+        "link": "https://es.investing.com/news/economic-indicators/la-economia-de-la-eurozona-crece-un-04-en-el-segundo-trimestre-segun-eurostat-3767968",
+        "descripcion": "",
+        "fecha_publicacion": "2026-07-30T09:07:41+00:00",
+        "fuente_id": "investing_intl2",
+        "fuente_nombre": "Investing Mundo",
+        "categoria": "Internacional"
+      },
+      {
+        "id": "2b66806bfa5f",
+        "titulo": "El PIB de Alemania crece un 0,2% en el segundo trimestre, superando las previsiones",
+        "link": "https://es.investing.com/news/economic-indicators/el-pib-de-alemania-crece-un-02-en-el-segundo-trimestre-superando-las-previsiones-93CH-3767920",
+        "descripcion": "",
+        "fecha_publicacion": "2026-07-30T09:00:19+00:00",
+        "fuente_id": "investing_intl2",
+        "fuente_nombre": "Investing Mundo",
+        "categoria": "Internacional"
+      }
+    ],
+    "Finanzas": [
+      {
+        "id": "0b76200814fe",
+        "titulo": "Invertirán una cifra millonaria para poner en producción más de 50.000 hectáreas",
+        "link": "https://www.lanacion.com.ar/economia/campo/invertiran-una-cifra-millonaria-para-poner-en-produccion-mas-de-50000-hectareas-nid30072026/",
+        "descripcion": "Se trata de una iniciativa de Neuquén para distintas producciones bajo riego",
+        "fecha_publicacion": "2026-07-30T19:10:22+00:00",
+        "fuente_id": "lanacion_eco",
+        "fuente_nombre": "La Nación Economía",
+        "categoria": "Finanzas"
+      },
+      {
+        "id": "7345df1200ed",
+        "titulo": "Inversión de US$70 millones: un gran jugador del negocio del bioetanol ampliará una planta",
+        "link": "https://www.lanacion.com.ar/economia/campo/inversion-de-us70-millones-una-empresa-cordobesa-ampliara-una-planta-de-bioetanol-y-se-entusiasma-nid29072026/",
+        "descripcion": "Bio4, ubicada en Río Cuarto, llevará de 500 a 900 metros cúbicos diarios la fabricación de bioetanol de maíz; el plazo de ejecución es de tres años",
+        "fecha_publicacion": "2026-07-30T19:09:32+00:00",
+        "fuente_id": "lanacion_eco",
+        "fuente_nombre": "La Nación Economía",
+        "categoria": "Finanzas"
+      },
+      {
+        "id": "0980b42b318e",
+        "titulo": "Con una inversión de US$55 millones, PCR amplió el parque eólico Mataco-San Jorge",
+        "link": "https://www.lanacion.com.ar/economia/con-una-inversion-de-us55-millones-pcr-amplio-el-parque-eolico-mataco-san-jorge-nid30072026/",
+        "descripcion": "Con seis nuevos aerogeneradores, se elevó la capacidad instalada del predio a 276,6 MW; se consolida como de mayor capacidad en la provincia de Buenos Aires",
+        "fecha_publicacion": "2026-07-30T18:59:33+00:00",
+        "fuente_id": "lanacion_eco",
+        "fuente_nombre": "La Nación Economía",
+        "categoria": "Finanzas"
+      },
+      {
+        "id": "2d17abb01a5b",
+        "titulo": "Gigante de financiero advierte que la recesión le está pasando factura al equilibrio fiscal de Milei",
+        "link": "https://www.iprofesional.com/economia/461182-superavit-fiscal-argentino-bajo-amenaza-recaudacion-cae-ajuste-peligro-julio-2026",
+        "descripcion": "Con la recaudación desplomándose por la recesión, analistas advierten sobre el impacto en la sostenibilidad fiscal y el clima político local",
+        "fecha_publicacion": "2026-07-30T18:28:00+00:00",
+        "fuente_id": "iprof_finanzas",
+        "fuente_nombre": "iProfesional Finanzas",
+        "categoria": "Finanzas"
+      },
+      {
+        "id": "a35392babe00",
+        "titulo": "Ex investigador de OpenAI cree que el verdadero negocio de la IA ya no está en Nvidia",
+        "link": "https://www.iproup.com/finanzas/70279-ex-investigador-de-openai-cree-que-el-verdadero-negocio-de-la-ia-ya-no-esta-en-nvidia",
+        "descripcion": "El fondo de este especialista mantiene inversiones en compañías relacionadas con infraestructura digital, energía y minería de Bitcoin",
+        "fecha_publicacion": "2026-07-30T18:20:00+00:00",
+        "fuente_id": "iproup_fintech",
+        "fuente_nombre": "iProUP Fintech",
+        "categoria": "Finanzas"
+      },
+      {
+        "id": "e8c48e83c414",
+        "titulo": "Las acciones de Nvidia suben, mientras se expande hacia la inversión en infraestructura global de IA",
+        "link": "https://www.ambito.com/finanzas/las-acciones-nvidia-suben-mientras-se-expande-la-inversion-infraestructura-global-ia-n6305366",
+        "descripcion": "Mientras sus acciones cotizan al alza, Nvidia usa su capital para acelerar infraestructura de IA mediante inversiones y apoyo crediticio. Los detalles, en la nota.",
+        "fecha_publicacion": "2026-07-30T18:06:00+00:00",
+        "fuente_id": "ambito_fin",
+        "fuente_nombre": "Ámbito Finanzas",
+        "categoria": "Finanzas"
+      },
+      {
+        "id": "a05a3b28c93e",
+        "titulo": "Wall Street avanza fuerte de la mano de las grandes tecnológicas y Microsoft vuela 17%",
+        "link": "https://www.ambito.com/finanzas/wall-street-rebota-los-resultados-microsoft-y-el-mercado-vuelve-apostar-las-tecnologicas-n6305145",
+        "descripcion": "La empresa estadounidense superó las previsiones del mercado con un fuerte crecimiento de su plataforma Azure. Los inversores aguardan ahora los balances de Apple y Amazon, mientras siguen de cerca los datos de actividad e inflación en EEUU.",
+        "fecha_publicacion": "2026-07-30T17:40:00+00:00",
+        "fuente_id": "ambito_fin",
+        "fuente_nombre": "Ámbito Finanzas",
+        "categoria": "Finanzas"
+      },
+      {
+        "id": "f739a14069cf",
+        "titulo": "Dólares del colchón: los FCI ganan terreno como opción de inversión tras la Ley de Inocencia Fiscal",
+        "link": "https://www.ambito.com/finanzas/dolares-del-colchon-los-fci-ganan-terreno-como-opcion-inversion-la-ley-inocencia-fiscal-n6303709",
+        "descripcion": "Los FCI permiten que el dinero de miles de inversores sea administrado por especialistas que invierten en distintos activos según el objetivo del fondo.",
+        "fecha_publicacion": "2026-07-30T17:32:00+00:00",
+        "fuente_id": "ambito_fin",
+        "fuente_nombre": "Ámbito Finanzas",
+        "categoria": "Finanzas"
+      }
+    ],
     "Mercados": [
       {
-        "id": "5602732859a2",
-        "titulo": "Cuáles son las nuevas acciones tokenizadas que Binance sumó a bStocks y cómo invertir en ellas",
-        "link": "https://www.iproup.com/economia-digital/70237-acciones-tokenizadas-binance-como-invertir-apple-amazon-cripto-julio-2026",
-        "descripcion": "Binance habilitó 10 nuevos pares que incluyen Apple, Amazon y Goldman Sachs. Los bStocks ya superaron los u$s100 millones bajo gestión en solo dos semanas",
-        "fecha_publicacion": "2026-07-30T10:52:00+00:00",
+        "id": "01e0307beec3",
+        "titulo": "Una aerolínea ya acepta criptomonedas para pagar vuelos con un novedoso sistema",
+        "link": "https://www.iproup.com/economia-digital/70269-aerolinea-ya-acepta-criptomonedas-para-pagar-vuelos-con-un-novedoso-sistema",
+        "descripcion": "La integración es resultado de un memorando de entendimiento firmado en julio de 2025 entre la aerolínea y la empresa Crypto.com",
+        "fecha_publicacion": "2026-07-30T18:00:00+00:00",
         "fuente_id": "iproup_eco",
         "fuente_nombre": "iProUP Economía Digital",
         "categoria": "Mercados"
       },
       {
-        "id": "58e6f4d5b6b1",
-        "titulo": "Refinerías de Corea del Sur buscan crudo venezolano ante tensiones en Ormuz",
-        "link": "https://es.investing.com/news/economy-news/refinerias-de-corea-del-sur-buscan-crudo-venezolano-ante-tensiones-en-ormuz-93CH-3768203",
+        "id": "b75a56875c16",
+        "titulo": "Portugal aprueba un impuesto del 33% sobre los beneficios extraordinarios petroleros",
+        "link": "https://es.investing.com/news/economy-news/portugal-aprueba-un-impuesto-del-33-sobre-los-beneficios-extraordinarios-petroleros-93CH-3770033",
         "descripcion": "",
-        "fecha_publicacion": "2026-07-30T10:09:48+00:00",
+        "fecha_publicacion": "2026-07-30T17:58:48+00:00",
         "fuente_id": "investing_economia",
         "fuente_nombre": "Investing Economía",
         "categoria": "Mercados"
       },
       {
-        "id": "cd7e798bf7e8",
-        "titulo": "La tasa de desempleo de Italia sube al 5,7% en junio",
-        "link": "https://es.investing.com/news/economy-news/la-tasa-de-desempleo-de-italia-sube-al-57-en-junio-93CH-3768152",
+        "id": "554e6d031bfc",
+        "titulo": "El viceprimer ministro chino expresa preocupación por las medidas de EE.UU. en una llamada",
+        "link": "https://es.investing.com/news/economy-news/el-viceprimer-ministro-chino-expresa-preocupacion-por-las-medidas-de-eeuu-en-una-llamada-3770030",
         "descripcion": "",
-        "fecha_publicacion": "2026-07-30T09:59:13+00:00",
+        "fecha_publicacion": "2026-07-30T17:55:16+00:00",
         "fuente_id": "investing_economia",
         "fuente_nombre": "Investing Economía",
         "categoria": "Mercados"
       },
       {
-        "id": "b87f9e759c87",
-        "titulo": "El dólar cripto marca un récord histórico según Binance y desafía a bancos y tarjetas",
-        "link": "https://www.iproup.com/economia-digital/70271-el-dolar-cripto-desafia-a-visa-tras-romper-un-record-historico-segun-binance",
-        "descripcion": "El crecimiento de las stablecoins redefine el dinero digital con operaciones las 24 horas y un volumen que ya compite diariamente con las tarjetas",
-        "fecha_publicacion": "2026-07-30T09:15:00+00:00",
+        "id": "f0507228bd75",
+        "titulo": "Precio de XRP: cuánto vale en Argentina y a nivel global hoy, 29 de julio de 2026",
+        "link": "https://www.iproup.com/economia-digital/70290-precio-de-criptomonedas-en-argentina-cuanto-valen-hoy-29-de-julio-de-2026",
+        "descripcion": "En las últimas 24 horas, la criptomoneda principal avanzó 1,60%. Cómo evolucionaron las otras monedas digitales y dólares cripto",
+        "fecha_publicacion": "2026-07-30T17:55:00+00:00",
         "fuente_id": "iproup_eco",
         "fuente_nombre": "iProUP Economía Digital",
         "categoria": "Mercados"
       },
       {
-        "id": "e37dc4e88a7a",
-        "titulo": "Milei anuncia la reforma del Banco Central, con alto impacto en billeteras y criptomonedas",
-        "link": "https://www.iproup.com/economia-digital/70258-reforma-bcra-cambia-reglas-cripto-genera-alerta-ahorristas-argentinos-julio-2026",
-        "descripcion": "Especialistas del mundo blockchain y finanzas digitales analizan cómo el nuevo marco regulatorio puede impactar la actividad cripto nacional",
-        "fecha_publicacion": "2026-07-30T09:07:00+00:00",
+        "id": "808e8c5848eb",
+        "titulo": "Precio de Bitcoin: cuánto vale en Argentina y a nivel global hoy, 30 de julio de 2026",
+        "link": "https://www.iproup.com/economia-digital/70291-precio-de-criptomonedas-en-argentina-cuanto-valen-hoy-29-de-julio-de-2026",
+        "descripcion": "En las últimas 24 horas, la criptomoneda número uno subió 1,59%. Ccómo evolucionaron otras divisas digitales y el mercado de dólares cripto",
+        "fecha_publicacion": "2026-07-30T17:55:00+00:00",
         "fuente_id": "iproup_eco",
         "fuente_nombre": "iProUP Economía Digital",
         "categoria": "Mercados"
       },
       {
-        "id": "fe85612c9e96",
-        "titulo": "Una Fed dividida mantiene los tipos sin cambios: así reaccionó Wall Street",
-        "link": "https://es.investing.com/news/economy-news/una-fed-dividida-mantiene-los-tipos-sin-cambios-asi-reacciono-wall-street-3767918",
+        "id": "025230b5ebf3",
+        "titulo": "Las hipotecas a 30 años en EE.UU. suben al 6,66%, su nivel más alto en un año",
+        "link": "https://es.investing.com/news/economy-news/las-hipotecas-a-30-anos-en-eeuu-suben-al-666-su-nivel-mas-alto-en-un-ano-93CH-3769901",
         "descripcion": "",
-        "fecha_publicacion": "2026-07-30T08:57:39+00:00",
+        "fecha_publicacion": "2026-07-30T16:04:46+00:00",
         "fuente_id": "investing_economia",
         "fuente_nombre": "Investing Economía",
         "categoria": "Mercados"
+      }
+    ],
+    "Comex": [
+      {
+        "id": "698fc8f8be3a",
+        "titulo": "Cómo consultar en ARCA de forma rápida cuántos envíos courier te quedan disponibles este año",
+        "link": "https://www.iprofesional.com/comex/461167-como-consultar-en-arca-de-forma-rapida-cuantos-envios-courier-te-quedan-disponibles",
+        "descripcion": "ARCA permite consultar cuántos envíos courier utilizaste en el año. Cómo hacerlo y qué límites rigen para comprar en Shein, Temu o Amazon",
+        "fecha_publicacion": "2026-07-30T16:14:00+00:00",
+        "fuente_id": "iprof_comex",
+        "fuente_nombre": "iProfesional Comex",
+        "categoria": "Comex"
+      },
+      {
+        "id": "9d27c6889f50",
+        "titulo": "ARCA aumentó el límite para comprar en Shein, Temu, Amazon y otras tiendas del exterior",
+        "link": "https://www.iprofesional.com/impuestos/461115-arca-cambio-el-regimen-de-compras-internacionales-y-elevo-el-tope-a-3000-dolares-para-comprar-en-shein-temu-o-amazon",
+        "descripcion": "ARCA reemplazó el régimen de envíos postales, fijó nuevas reglas para compras internacionales y actualizó el sistema puerta a puerta.",
+        "fecha_publicacion": "2026-07-30T10:20:00+00:00",
+        "fuente_id": "iprof_comex",
+        "fuente_nombre": "iProfesional Comex",
+        "categoria": "Comex"
+      },
+      {
+        "id": "057f3d81fb68",
+        "titulo": "El presidente surcoreano visita Argentina, última escala de su gira por Sudamérica",
+        "link": "https://aduananews.com/el-presidente-surcoreano-visita-argentina-ultima-escala-de-su-gira-por-sudamerica/?utm_source=rss&utm_medium=rss&utm_campaign=el-presidente-surcoreano-visita-argentina-ultima-escala-de-su-gira-por-sudamerica",
+        "descripcion": "El presidente surcoreano, Lee Jae-myung, llegará este jueves (30.07.2026) a la Argentina, tercera y última escala de una gira por Sudamérica que incluyó Brasil y Chile. La visita busca fortalecer los vínculos e impulsar una agenda de cooperación en áreas estratégicas como los recursos minerales, la tecnología y el comercio. A tal efecto, el viernes [&#8230;] The post El presidente surcoreano visita Argentina, última escala de su gira por Sudamérica appeared first on Aduana News .",
+        "fecha_publicacion": "2026-07-30T09:22:30+00:00",
+        "fuente_id": "aduana_news",
+        "fuente_nombre": "Aduana News",
+        "categoria": "Comex"
+      },
+      {
+        "id": "a72678c3b0c6",
+        "titulo": "ARCA publicó las nuevas normas para envíos internacionales por courier en Argentina",
+        "link": "https://www.iprofesional.com/impuestos/461022-arca-actualizo-el-regimen-de-courier-con-nuevos-topes-de-peso-valor-y-frecuencia",
+        "descripcion": "La nueva regulación flexibiliza el ingreso y envío por courier, abriendo el acceso a productos globales con topes ajustados para particulares",
+        "fecha_publicacion": "2026-07-30T09:22:00+00:00",
+        "fuente_id": "iprof_comex",
+        "fuente_nombre": "iProfesional Comex",
+        "categoria": "Comex"
+      },
+      {
+        "id": "66de717d35f1",
+        "titulo": "ARCA modifica el régimen de importación y exportación simplificada mediante PSP/Courier",
+        "link": "https://aduananews.com/arca-actualiza-el-regimen-de-importacion-y-exportacion-simplificada-mediante-psp-courier/?utm_source=rss&utm_medium=rss&utm_campaign=arca-actualiza-el-regimen-de-importacion-y-exportacion-simplificada-mediante-psp-courier",
+        "descripcion": "La Agencia de Recaudación y Control Aduanero (ARCA) modificó el régimen de importación y exportación simplificada de mercaderías mediante Prestadores de Servicios Postales (PSP/Courier), una modalidad utilizada para canalizar envíos internacionales a través de operadores postales y empresas de courier habilitadas. La medida fue establecida por la Resolución General ARCA N° 5883/2026 —que modifica la [&#8230;] The post ARCA modifica el régimen de importación y exportación simplificada mediante PS",
+        "fecha_publicacion": "2026-07-29T15:41:55+00:00",
+        "fuente_id": "aduana_news",
+        "fuente_nombre": "Aduana News",
+        "categoria": "Comex"
+      },
+      {
+        "id": "eeaa35f26033",
+        "titulo": "Brasil: la ABEAD reflexionó sobre los ejes de la modernización aduanera a 60 años del Decreto-Ley 37/66",
+        "link": "https://aduananews.com/brasil-la-abead-reflexiono-sobre-los-ejes-de-la-modernizacion-aduanera-a-60-anos-del-decreto-ley-37-66/?utm_source=rss&utm_medium=rss&utm_campaign=brasil-la-abead-reflexiono-sobre-los-ejes-de-la-modernizacion-aduanera-a-60-anos-del-decreto-ley-37-66",
+        "descripcion": "En los últimos días de junio, la Asociación Brasileña de Estudios Aduaneros (ABEAD) organizó un importante evento. Concretamente, el XVIII Congreso Internacional de Estudios Aduaneros (*), realizado en Belo Horizonte, capital del estado de Minas Gerais, en la región Sudeste de Brasil, brindó un espacio para reflexionar sobre el Decreto-Ley N.º 37/1966, considerado la piedra [&#8230;] The post Brasil: la ABEAD reflexionó sobre los ejes de la modernización aduanera a 60 años del Decreto-Ley 37/66 ",
+        "fecha_publicacion": "2026-07-29T08:00:00+00:00",
+        "fuente_id": "aduana_news",
+        "fuente_nombre": "Aduana News",
+        "categoria": "Comex"
+      },
+      {
+        "id": "902f079183ba",
+        "titulo": "Lo que enseña el nuevo sistema aduanero europeo – Mgter. Gustavo Scarpetta",
+        "link": "https://mercojuris.com/lo-que-ensena-el-nuevo-sistema-aduanero-europeo-mgter-gustavo-scarpetta/",
+        "descripcion": "El mundo en el que se basan la mayoría de las aduanas cambió. Algunos afirman que Ese mundo dejó de existir. En un Taller con especialistas aduaneros de todo el mundo dictado en Canadá, el Secretario General Adjunto de la OMA; Ricardo Treviño destacaba el gran crecimiento del e-commerce a nivel global, mostrando cifras de los pronósticos de aumento y de la importancia de prepararse para eso. Especialistas europeos hablaron de que el e-commerce era un tsunami sobre otro tsunami, para mostrar el c",
+        "fecha_publicacion": "2026-07-26T21:30:31+00:00",
+        "fuente_id": "mercojuris",
+        "fuente_nombre": "Mercojuris",
+        "categoria": "Comex"
+      },
+      {
+        "id": "87dc053a148a",
+        "titulo": "Alternativas para aplicar preferencias arancelarias en las importaciones de México – Dr. Ricardo Méndez Castro (desde México)",
+        "link": "https://mercojuris.com/alternativas-para-aplicar-preferencias-arancelarias-en-las-importaciones-de-mexico-dr-ricardo-mendez-castro-desde-mexico/",
+        "descripcion": "En este espacio, conoceremos algunas alternativas que tienen los importadores para aplicar las preferencias arancelarias con respecto del pago del impuesto general de importación de las mercancías que son objeto de las operaciones de importación en México. De manera general, el importador debe conocer la clasificación arancelaria de las mercancías, establecer si serán destinadas al territorio nacional bajo el régimen de importación definitiva o temporal, incluyendo los programas de diferimiento ",
+        "fecha_publicacion": "2026-07-26T21:24:41+00:00",
+        "fuente_id": "mercojuris",
+        "fuente_nombre": "Mercojuris",
+        "categoria": "Comex"
+      }
+    ],
+    "Laboral": [
+      {
+        "id": "197cefefcc91",
+        "titulo": "Las 5 startups argentinas elegidas por Endeavor para escalar en 2026",
+        "link": "https://www.iprofesional.com/management/461157-las-5-startups-argentinas-elegidas-por-endeavor-para-escalar-en-2026",
+        "descripcion": "Cinco compañías referentes en sus industrias se suman a ScaleUp, el programa que impulsó empresas que levantaron más de u$s355 millones de inversión",
+        "fecha_publicacion": "2026-07-30T15:16:00+00:00",
+        "fuente_id": "iprof_management",
+        "fuente_nombre": "iProfesional Management",
+        "categoria": "Laboral"
+      },
+      {
+        "id": "07f564b6ffd7",
+        "titulo": "Riesgos psicosociales en el trabajo: la amenaza invisible para la salud de los trabajadores",
+        "link": "https://voices.ilo.org/es-es/podcast/riesgos-psicosociales-en-el-trabajo-la-amenaza-invisible-para-la-salud-de-los-trabajadores",
+        "descripcion": "En este episodio del pódcast “El futuro del trabajo de la OIT”, Dafne Papandrea y Lucía Risueño Navarro explican cómo los riesgos psicosociales —como las largas jornadas laborales, la inseguridad en el empleo y el acoso en el lugar de trabajo— afectan a la salud de los trabajadores, y qué medidas pueden adoptarse para crear entornos laborales más saludables en todo el mundo.",
+        "fecha_publicacion": "2026-04-28T00:00:00+00:00",
+        "fuente_id": "oit_podcast",
+        "fuente_nombre": "OIT Podcast",
+        "categoria": "Laboral"
+      },
+      {
+        "id": "ef1638f33032",
+        "titulo": "La inteligencia artificial generativa y las desigualdades de género en el trabajo",
+        "link": "https://voices.ilo.org/es-es/podcast/la-inteligencia-artificial-generativa-y-las-desigualdades-de-genero-en-el-trabajo",
+        "descripcion": "En este episodio del pódcast de la Organización Internacional del Trabajo, Janine Berg, Economista senior en la OIT, presenta un nuevo informe sobre el impacto de la inteligencia artificial generativa en el mundo del trabajo. La experta explica por qué las mujeres están más expuestas que los hombres a los riesgos asociados a esta tecnología y qué significa esto para la igualdad en el mercado laboral.",
+        "fecha_publicacion": "2026-03-09T00:00:00+00:00",
+        "fuente_id": "oit_podcast",
+        "fuente_nombre": "OIT Podcast",
+        "categoria": "Laboral"
+      },
+      {
+        "id": "a9cae82ea7a7",
+        "titulo": "Una mirada al estado del empleo mundial y sus principales desafíos",
+        "link": "https://voices.ilo.org/es-es/podcast/una-mirada-al-estado-del-empleo-mundial-y-sus-principales-desafios",
+        "descripcion": "En este episodio del pódcast Futuro del Trabajo de la OIT, analizamos el estado del empleo y los principales desafíos que enfrentan los mercados laborales a nivel mundial y en América Latina y el Caribe, junto a Miguel Sánchez Martínez, economista del Departamento de Investigación de la OIT, y Gerson Martínez, Especialista Regional Senior en Economía Laboral.",
+        "fecha_publicacion": "2026-01-22T00:00:00+00:00",
+        "fuente_id": "oit_podcast",
+        "fuente_nombre": "OIT Podcast",
+        "categoria": "Laboral"
+      }
+    ],
+    "Fiscal": [
+      {
+        "id": "6a4d2fe298ec",
+        "titulo": "La Aduana abrirá paquetes de Shein, Temu y Amazon de  manera selectiva",
+        "link": "https://www.iprofesional.com/impuestos/461145-aduana-podra-abrir-paquetes-shein-temu-amazon",
+        "descripcion": "ARCA estableció el procedimiento para el control aduanero de las compras internacionales por courier que prevé la apertura de paquetes",
+        "fecha_publicacion": "2026-07-30T14:30:00+00:00",
+        "fuente_id": "iprof_impuestos",
+        "fuente_nombre": "iProfesional Impuestos",
+        "categoria": "Fiscal"
+      },
+      {
+        "id": "522a55e18d59",
+        "titulo": "Con el fin de la rúbrica laboral en CABA, qué cambia para los empleadores con el nuevo sistema",
+        "link": "https://www.iprofesional.com/legales/461123-fin-de-la-rubrica-laboral-en-caba-que-cambia-para-los-empleadores-con-el-nuevo-sistema-arca",
+        "descripcion": "La medida rige desde el 1° de junio de 2026 y adecua la normativa porteña al nuevo esquema nacional que centraliza la registración en ARCA",
+        "fecha_publicacion": "2026-07-30T12:25:00+00:00",
+        "fuente_id": "iprof_impuestos",
+        "fuente_nombre": "iProfesional Impuestos",
+        "categoria": "Fiscal"
+      },
+      {
+        "id": "0b9cf28b821b",
+        "titulo": "Petroleros de Vaca Muerta firman el primer acuerdo de salarios dinámicos",
+        "link": "https://www.iprofesional.com/impuestos/461119-petroleros-vaca-muerta-firman-primer-acuerdo-salario-dinamico",
+        "descripcion": "La reforma laboral habilitó los salarios dinámicos que no serán derechos adquiridos, y el gremio petrolero da el primer paso para su implementación",
+        "fecha_publicacion": "2026-07-30T11:33:00+00:00",
+        "fuente_id": "iprof_impuestos",
+        "fuente_nombre": "iProfesional Impuestos",
+        "categoria": "Fiscal"
+      },
+      {
+        "id": "e4877871f5c8",
+        "titulo": "RIMI: en breve ARCA lanzará un sistema para registrar las inversiones acumuladas para habilitar beneficios",
+        "link": "https://www.ambito.com/novedades-fiscales/rimi-breve-arca-lanzara-un-sistema-registrar-las-inversiones-acumuladas-habilitar-beneficios-n6305008",
+        "descripcion": "El Régimen de Incentivos para Medianas Inversiones (RIMI) requiere de un umbral mínimo de inversión, según la categoría Mipyme, pero la misma puede concretarse a través de varias adquisiciones. ARCA crea un sistema de registro hasta llegar al monto exigido.",
+        "fecha_publicacion": "2026-07-29T22:52:00+00:00",
+        "fuente_id": "ambito_fisc",
+        "fuente_nombre": "Ámbito Fiscal",
+        "categoria": "Fiscal"
+      },
+      {
+        "id": "a789107d7f52",
+        "titulo": "Deducciones por compras a monotributistas: la veracidad de las operaciones frente a lo meramente formal",
+        "link": "https://www.ambito.com/novedades-fiscales/deducciones-compras-monotributistas-la-veracidad-las-operaciones-frente-lo-meramente-formal-n6303763",
+        "descripcion": "La posibilidad de deducir las adquisiciones a proveedores monotributistas se encuentra condicionada por determinados requisitos y topes regulados por el ente recaudador, pero tales condicionamientos no pueden invalidar la existencia de la operación",
+        "fecha_publicacion": "2026-07-26T22:48:00+00:00",
+        "fuente_id": "ambito_fisc",
+        "fuente_nombre": "Ámbito Fiscal",
+        "categoria": "Fiscal"
+      },
+      {
+        "id": "471829f76ebc",
+        "titulo": "ATE obtuvo el reconocimiento de ANSES para el descuento de la cuota social de los haberes previsionales",
+        "link": "https://www.ambito.com/novedades-fiscales/ate-obtuvo-el-reconocimiento-anses-el-descuento-la-cuota-social-los-haberes-previsionales-n6303760",
+        "descripcion": "La Administración Nacional de la Seguridad Social (ANSES) acordó con la Asociación Trabajadores del Estado (ATE) la detracción de su cuota social de las jubilaciones y pensiones,",
+        "fecha_publicacion": "2026-07-26T21:55:00+00:00",
+        "fuente_id": "ambito_fisc",
+        "fuente_nombre": "Ámbito Fiscal",
+        "categoria": "Fiscal"
+      }
+    ],
+    "Energía y Minería": [
+      {
+        "id": "9c2154e025a6",
+        "titulo": "Crisis de la fundición: el “primer eslabón” de la cadena energética enfrenta una caída sostenida de su producción",
+        "link": "https://econojournal.com.ar/destacada/crisis-de-la-fundicion-caida-sostenida-de-su-produccion/",
+        "descripcion": "La actividad de la fundición es poco conocida fuera del ámbito industrial, pero fundamental para el desarrollo de sectores como el petróleo, el gas, la minería, la generación eléctrica, la industria naval, automotriz y ferroviaria, entre otras. La fundición es el punto de partida de la mayoría de los componentes metálicos que luego se transforman [&#8230;]",
+        "fecha_publicacion": "2026-07-30T13:44:59+00:00",
+        "fuente_id": "econojournal",
+        "fuente_nombre": "EconoJournal",
+        "categoria": "Energía y Minería"
+      },
+      {
+        "id": "4dcb7544dee8",
+        "titulo": "El Gobierno aprobó el ingreso del proyecto Vicuña al RIGI tras el aval en la disputa por la capacidad de transporte eléctrico",
+        "link": "https://econojournal.com.ar/destacada/el-gobierno-aprobo-el-ingreso-del-proyecto-vicuna-al-rigi/",
+        "descripcion": "El Gobierno nacional formalizó este jueves la incorporación del proyecto minero Vicuña al Régimen de Incentivo para Grandes Inversiones (RIGI) bajo la categoría de Proyecto de Exportación Estratégica de Largo Plazo (PEELP). La aprobación establece un compromiso de inversión de US$ 9.700 millones hasta 2031 para el complejo controlado por la alianza entre BHP y [&#8230;]",
+        "fecha_publicacion": "2026-07-30T12:00:00+00:00",
+        "fuente_id": "econojournal",
+        "fuente_nombre": "EconoJournal",
+        "categoria": "Energía y Minería"
+      },
+      {
+        "id": "94208aaf06eb",
+        "titulo": "Energía firmó la resolución que convoca a concurso para designar a un nuevo presidente del Enrege",
+        "link": "https://econojournal.com.ar/destacada/energia-firmo-la-resolucion-que-convoca-a-concurso-para-designar-a-un-nuevo-presidente-del-enrege/",
+        "descripcion": "La Secretaría de Energía publicará en las próximas horas la resolución 185 que convoca a concurso abierto para la designación de un nuevo presidente del Ente Nacional Regulador del Gas y la Electricidad (Enrege). El organismo que reemplazó a Enargas y ENRE comenzó a funcionar a comienzos de mayo luego de la designación de su [&#8230;]",
+        "fecha_publicacion": "2026-07-30T02:39:39+00:00",
+        "fuente_id": "econojournal",
+        "fuente_nombre": "EconoJournal",
+        "categoria": "Energía y Minería"
+      },
+      {
+        "id": "83a6b3058569",
+        "titulo": "Minería y RIGI: aprobaron el proyecto de U$S 709 millones de la firma de origen chino Liex en Catamarca",
+        "link": "https://dataenergia.ar/mineria/mineria-y-rigi-aprobaron-el-proyecto-de-u-s-709-millones-de-la-firma-de-origen-chino-liex-en-catamarca-202672915110",
+        "descripcion": "Economía aprobó el proyecto de U$S 709 millones de la firma Liex en Catamarca y se convirtió en la primera minera china en ingresar al RIGI.",
+        "fecha_publicacion": "2026-07-29T18:11:00+00:00",
+        "fuente_id": "data_energia",
+        "fuente_nombre": "Data Energía",
+        "categoria": "Energía y Minería"
+      },
+      {
+        "id": "48232339ae01",
+        "titulo": "Minería de gran escala: la Nación aprobó la obra eléctrica para Josemaría y avanza la inversión inicial de U$S 9.700 millones en San Juan",
+        "link": "https://dataenergia.ar/mineria/mineria-de-gran-escala-la-nacion-aprobo-la-obra-electrica-para-josemaria-y-avanza-la-inversion-inicial-de-u-s-9-700-millones-en-san-juan-202672914510",
+        "descripcion": "El ENREGE aprobó la obra de infraestructura eléctrica para el yacimiento Josemaría y destrabó el proyecto minero Vicuña en San Juan.",
+        "fecha_publicacion": "2026-07-29T17:51:00+00:00",
+        "fuente_id": "data_energia",
+        "fuente_nombre": "Data Energía",
+        "categoria": "Energía y Minería"
+      },
+      {
+        "id": "a6f56eae3d0c",
+        "titulo": "Infraestructura energética: la obra del oleoducto Vaca Muerta Oil Sur superó el 70% de avance y proyecta sus primeras exportaciones para fin de año",
+        "link": "https://dataenergia.ar/petroleo-y-combustibles/infraestructura-energetica-la-obra-del-oleoducto-vaca-muerta-oil-sur-supero-el-70-de-avance-y-proyecta-sus-primeras-exportaciones-para-fin-de-ano-202672913540",
+        "descripcion": "El proyecto Vaca Muerta Oil Sur (VMOS) superó el 70% de ejecución y prevé iniciar sus exportaciones a fines de este año o inicios de 2027.",
+        "fecha_publicacion": "2026-07-29T16:54:00+00:00",
+        "fuente_id": "data_energia",
+        "fuente_nombre": "Data Energía",
+        "categoria": "Energía y Minería"
+      },
+      {
+        "id": "80214cac46ac",
+        "titulo": "La minería argentina proyecta hasta un millón de empleos y US$ 40.000 millones en inversiones",
+        "link": "https://www.noticiasnet.com.ar/noticias/2026/07/27/214840-la-mineria-argentina-proyecta-hasta-un-millon-de-empleos-y-us-40000-millones-en-inversiones",
+        "descripcion": "La Cámara Argentina de Empresas Mineras anticipó una fuerte expansión de la actividad durante la próxima década, impulsada principalmente por los proyectos de cobre y litio.",
+        "fecha_publicacion": "2026-07-27T11:46:24+00:00",
+        "fuente_id": "noticiasnet_energia",
+        "fuente_nombre": "NoticiasNet Energía",
+        "categoria": "Energía y Minería"
       }
     ],
     "Automotor": [
@@ -177,294 +579,6 @@
         "categoria": "Automotor"
       }
     ],
-    "Laboral": [
-      {
-        "id": "7d5708bf4cd8",
-        "titulo": "BASF Argentina anuncia nueva gerente de Legales, Compliance y Seguros",
-        "link": "https://www.iprofesional.com/management/461114-basf-argentina-anuncia-nueva-gerente-de-legales-compliance-y-seguros",
-        "descripcion": "Camila Gaviño cuenta con 10 años de trayectoria profesional y tendrá a su cargo la gerencia de Legales, Compliance y Seguros para Argentina.",
-        "fecha_publicacion": "2026-07-30T10:24:00+00:00",
-        "fuente_id": "iprof_management",
-        "fuente_nombre": "iProfesional Management",
-        "categoria": "Laboral"
-      },
-      {
-        "id": "9d03b6dbd3b3",
-        "titulo": "Experto argentino revela cómo pasar a ser un empleado que las empresas quieran contratar",
-        "link": "https://www.iprofesional.com/management/460845-experto-argentino-revela-como-ser-un-empleado-que-las-empresas-quieran-contratar",
-        "descripcion": "Gustavo Dos Santos, el autor de \"El talento no tiene edad\", explica por qué la empleabilidad depende de aprender, desaprender y reinventarse",
-        "fecha_publicacion": "2026-07-29T19:30:00+00:00",
-        "fuente_id": "iprof_management",
-        "fuente_nombre": "iProfesional Management",
-        "categoria": "Laboral"
-      },
-      {
-        "id": "06a03a331006",
-        "titulo": "Así funciona el negocio del alquiler de cuentas de delivery que no deja de crecer",
-        "link": "https://www.iprofesional.com/management/461068-asi-funciona-el-negocio-del-alquiler-de-cuentas-de-delivery-que-no-deja-de-crecer",
-        "descripcion": "El alquiler de cuentas de delivery crece entre repartidores bloqueados y genera dudas sobre la identidad de quienes entregan pedidos",
-        "fecha_publicacion": "2026-07-29T17:25:00+00:00",
-        "fuente_id": "iprof_management",
-        "fuente_nombre": "iProfesional Management",
-        "categoria": "Laboral"
-      },
-      {
-        "id": "07f564b6ffd7",
-        "titulo": "Riesgos psicosociales en el trabajo: la amenaza invisible para la salud de los trabajadores",
-        "link": "https://voices.ilo.org/es-es/podcast/riesgos-psicosociales-en-el-trabajo-la-amenaza-invisible-para-la-salud-de-los-trabajadores",
-        "descripcion": "En este episodio del pódcast “El futuro del trabajo de la OIT”, Dafne Papandrea y Lucía Risueño Navarro explican cómo los riesgos psicosociales —como las largas jornadas laborales, la inseguridad en el empleo y el acoso en el lugar de trabajo— afectan a la salud de los trabajadores, y qué medidas pueden adoptarse para crear entornos laborales más saludables en todo el mundo.",
-        "fecha_publicacion": "2026-04-28T00:00:00+00:00",
-        "fuente_id": "oit_podcast",
-        "fuente_nombre": "OIT Podcast",
-        "categoria": "Laboral"
-      },
-      {
-        "id": "ef1638f33032",
-        "titulo": "La inteligencia artificial generativa y las desigualdades de género en el trabajo",
-        "link": "https://voices.ilo.org/es-es/podcast/la-inteligencia-artificial-generativa-y-las-desigualdades-de-genero-en-el-trabajo",
-        "descripcion": "En este episodio del pódcast de la Organización Internacional del Trabajo, Janine Berg, Economista senior en la OIT, presenta un nuevo informe sobre el impacto de la inteligencia artificial generativa en el mundo del trabajo. La experta explica por qué las mujeres están más expuestas que los hombres a los riesgos asociados a esta tecnología y qué significa esto para la igualdad en el mercado laboral.",
-        "fecha_publicacion": "2026-03-09T00:00:00+00:00",
-        "fuente_id": "oit_podcast",
-        "fuente_nombre": "OIT Podcast",
-        "categoria": "Laboral"
-      },
-      {
-        "id": "a9cae82ea7a7",
-        "titulo": "Una mirada al estado del empleo mundial y sus principales desafíos",
-        "link": "https://voices.ilo.org/es-es/podcast/una-mirada-al-estado-del-empleo-mundial-y-sus-principales-desafios",
-        "descripcion": "En este episodio del pódcast Futuro del Trabajo de la OIT, analizamos el estado del empleo y los principales desafíos que enfrentan los mercados laborales a nivel mundial y en América Latina y el Caribe, junto a Miguel Sánchez Martínez, economista del Departamento de Investigación de la OIT, y Gerson Martínez, Especialista Regional Senior en Economía Laboral.",
-        "fecha_publicacion": "2026-01-22T00:00:00+00:00",
-        "fuente_id": "oit_podcast",
-        "fuente_nombre": "OIT Podcast",
-        "categoria": "Laboral"
-      }
-    ],
-    "Finanzas": [
-      {
-        "id": "50500dda392a",
-        "titulo": "Las billeteras salieron a cuestionar los datos sobre la mora récord y los créditos irrecuperables",
-        "link": "https://www.iproup.com/finanzas/70265-morosidad-fintech-debate-billeteras-virtuales-responden-acusacion-record",
-        "descripcion": "La industria fintech cuestionó que se vincule a 2 de cada 3 \"irrecuperables\" con las billeteras y apunta a un error metodológico que generó confusión",
-        "fecha_publicacion": "2026-07-30T10:22:00+00:00",
-        "fuente_id": "iproup_fintech",
-        "fuente_nombre": "iProUP Fintech",
-        "categoria": "Finanzas"
-      },
-      {
-        "id": "cb4baffc4178",
-        "titulo": "El Gobierno confirmó el bono previsional de agosto y fijó un aumento para jubilados y pensionados",
-        "link": "https://www.lanacion.com.ar/economia/el-gobierno-confirmo-el-bono-previsional-de-agosto-y-fijo-un-aumento-para-jubilados-y-pensionados-nid30072026/",
-        "descripcion": "El haber mínimo quedó en $419.775 y el máximo en $2.824.694; el refuerzo será no remunerativo, no estará sujeto a descuentos y no se computará para ningún otro concepto",
-        "fecha_publicacion": "2026-07-30T10:15:26+00:00",
-        "fuente_id": "lanacion_eco",
-        "fuente_nombre": "La Nación Economía",
-        "categoria": "Finanzas"
-      },
-      {
-        "id": "90e0026ccd85",
-        "titulo": "El mercado se entusiasma con la reforma del BCRA de Milei y anticipan el impacto sobre el dólar",
-        "link": "https://www.iprofesional.com/finanzas/460992-que-impacto-tendra-sobre-el-dolar-la-reforma-del-banco-central-de-javier-milei",
-        "descripcion": "Expertos destacan que las modificaciones sobre la entidad monetaria tendrían consecuencias inmediatas en la evolución del dólar y la inflación",
-        "fecha_publicacion": "2026-07-30T10:00:00+00:00",
-        "fuente_id": "iprof_economia",
-        "fuente_nombre": "iProfesional Economía",
-        "categoria": "Finanzas"
-      },
-      {
-        "id": "85957860ea9d",
-        "titulo": "Tras el escándalo, el Gobierno busca nuevo presidente para el ente regulador de gas y luz",
-        "link": "https://www.iprofesional.com/energia/461111-tras-el-escandalo-el-gobierno-busca-nuevo-presidente-para-el-ente-regulador-de-gas-y-luz",
-        "descripcion": "El Ejecutivo busca cerrar la crisis institucional en el superente regulador y normalizar la conducción del organismo tras la salida de Néstor Lamboglia",
-        "fecha_publicacion": "2026-07-30T09:29:00+00:00",
-        "fuente_id": "iprof_economia",
-        "fuente_nombre": "iProfesional Economía",
-        "categoria": "Finanzas"
-      },
-      {
-        "id": "15655f9ab66e",
-        "titulo": "“Somos una isla”: la Unión Europea avaló un importante desarrollo de Santa Fe para certificar la producción libre de deforestación",
-        "link": "https://www.lanacion.com.ar/economia/campo/somos-una-isla-la-union-europea-avalo-un-importante-desarrollo-de-santa-fe-para-certificar-la-nid30072026/",
-        "descripcion": "El bloque europeo destacó una plataforma gratuita que acredita la trazabilidad de establecimientos rurales y busca facilitar el acceso al mercado",
-        "fecha_publicacion": "2026-07-30T09:00:00+00:00",
-        "fuente_id": "lanacion_eco",
-        "fuente_nombre": "La Nación Economía",
-        "categoria": "Finanzas"
-      },
-      {
-        "id": "c2a9ffaf8246",
-        "titulo": "Real blue: a cuánto opera este jueves 30 de julio",
-        "link": "https://www.ambito.com/finanzas/real-blue-cuanto-opera-este-jueves-30-julio-n6305052",
-        "descripcion": "La cotización minuto a minuto para la compra y venta de la divisa brasileña en nuestro país.",
-        "fecha_publicacion": "2026-07-30T03:00:00+00:00",
-        "fuente_id": "ambito_fin",
-        "fuente_nombre": "Ámbito Finanzas",
-        "categoria": "Finanzas"
-      },
-      {
-        "id": "7345df1200ed",
-        "titulo": "Inversión de US$70 millones: una empresa ampliará una planta de bioetanol y se entusiasma por una futura ley",
-        "link": "https://www.lanacion.com.ar/economia/campo/inversion-de-us70-millones-una-empresa-cordobesa-ampliara-una-planta-de-bioetanol-y-se-entusiasma-nid29072026/",
-        "descripcion": "Bio4, ubicada en Río Cuarto, llevará de 500 a 900 metros cúbicos diarios la fabricación de bioetanol de maíz; el plazo de ejecución es de tres años",
-        "fecha_publicacion": "2026-07-30T02:10:57+00:00",
-        "fuente_id": "lanacion_eco",
-        "fuente_nombre": "La Nación Economía",
-        "categoria": "Finanzas"
-      },
-      {
-        "id": "15ac1dd6d28f",
-        "titulo": "Las anclas antes que la deuda: por qué el Gobierno deja pasar otra ventana para regresar a los mercados",
-        "link": "https://www.ambito.com/finanzas/las-anclas-antes-que-la-deuda-que-el-gobierno-deja-pasar-otra-ventana-regresar-los-mercados-n6304503",
-        "descripcion": "Aunque el riesgo país se sostiene cerca de mínimos en casi una década, desde Economía consideran que aún no es el momento de salir a buscar financiamiento externo.",
-        "fecha_publicacion": "2026-07-30T00:40:00+00:00",
-        "fuente_id": "ambito_fin",
-        "fuente_nombre": "Ámbito Finanzas",
-        "categoria": "Finanzas"
-      }
-    ],
-    "Comex": [
-      {
-        "id": "9d27c6889f50",
-        "titulo": "ARCA aumentó el límite para comprar en Shein, Temu, Amazon y otras tiendas del exterior",
-        "link": "https://www.iprofesional.com/impuestos/461115-arca-cambio-el-regimen-de-compras-internacionales-y-elevo-el-tope-a-3000-dolares-para-comprar-en-shein-temu-o-amazon",
-        "descripcion": "ARCA reemplazó el régimen de envíos postales, fijó nuevas reglas para compras internacionales y actualizó el sistema puerta a puerta.",
-        "fecha_publicacion": "2026-07-30T10:19:00+00:00",
-        "fuente_id": "iprof_comex",
-        "fuente_nombre": "iProfesional Comex",
-        "categoria": "Comex"
-      },
-      {
-        "id": "057f3d81fb68",
-        "titulo": "El presidente surcoreano visita Argentina, última escala de su gira por Sudamérica",
-        "link": "https://aduananews.com/el-presidente-surcoreano-visita-argentina-ultima-escala-de-su-gira-por-sudamerica/?utm_source=rss&utm_medium=rss&utm_campaign=el-presidente-surcoreano-visita-argentina-ultima-escala-de-su-gira-por-sudamerica",
-        "descripcion": "El presidente surcoreano, Lee Jae-myung, llegará este jueves (30.07.2026) a la Argentina, tercera y última escala de una gira por Sudamérica que incluyó Brasil y Chile. La visita busca fortalecer los vínculos e impulsar una agenda de cooperación en áreas estratégicas como los recursos minerales, la tecnología y el comercio. A tal efecto, el viernes [&#8230;] The post El presidente surcoreano visita Argentina, última escala de su gira por Sudamérica appeared first on Aduana News .",
-        "fecha_publicacion": "2026-07-30T09:22:30+00:00",
-        "fuente_id": "aduana_news",
-        "fuente_nombre": "Aduana News",
-        "categoria": "Comex"
-      },
-      {
-        "id": "a72678c3b0c6",
-        "titulo": "ARCA publicó las nuevas normas para envíos internacionales por courier en Argentina",
-        "link": "https://www.iprofesional.com/impuestos/461022-arca-actualizo-el-regimen-de-courier-con-nuevos-topes-de-peso-valor-y-frecuencia",
-        "descripcion": "La nueva regulación flexibiliza el ingreso y envío por courier, abriendo el acceso a productos globales con topes ajustados para particulares",
-        "fecha_publicacion": "2026-07-30T09:22:00+00:00",
-        "fuente_id": "iprof_comex",
-        "fuente_nombre": "iProfesional Comex",
-        "categoria": "Comex"
-      },
-      {
-        "id": "a457330a3ab4",
-        "titulo": "Courier o régimen general, con qué opción conviene importar tras los cambios de ARCA",
-        "link": "https://www.iprofesional.com/comex/461101-courier-o-regimen-general-con-que-opcion-conviene-importar-tras-cambios-arca",
-        "descripcion": "La actualización de la Agencia de Recaudación y Control Aduanero volvió a poner en agenda una duda frecuente para quienes compran productos en el exterior",
-        "fecha_publicacion": "2026-07-29T22:18:00+00:00",
-        "fuente_id": "iprof_comex",
-        "fuente_nombre": "iProfesional Comex",
-        "categoria": "Comex"
-      },
-      {
-        "id": "66de717d35f1",
-        "titulo": "ARCA modifica el régimen de importación y exportación simplificada mediante PSP/Courier",
-        "link": "https://aduananews.com/arca-actualiza-el-regimen-de-importacion-y-exportacion-simplificada-mediante-psp-courier/?utm_source=rss&utm_medium=rss&utm_campaign=arca-actualiza-el-regimen-de-importacion-y-exportacion-simplificada-mediante-psp-courier",
-        "descripcion": "La Agencia de Recaudación y Control Aduanero (ARCA) modificó el régimen de importación y exportación simplificada de mercaderías mediante Prestadores de Servicios Postales (PSP/Courier), una modalidad utilizada para canalizar envíos internacionales a través de operadores postales y empresas de courier habilitadas. La medida fue establecida por la Resolución General ARCA N° 5883/2026 —que modifica la [&#8230;] The post ARCA modifica el régimen de importación y exportación simplificada mediante PS",
-        "fecha_publicacion": "2026-07-29T15:41:55+00:00",
-        "fuente_id": "aduana_news",
-        "fuente_nombre": "Aduana News",
-        "categoria": "Comex"
-      },
-      {
-        "id": "eeaa35f26033",
-        "titulo": "Brasil: la ABEAD reflexionó sobre los ejes de la modernización aduanera a 60 años del Decreto-Ley 37/66",
-        "link": "https://aduananews.com/brasil-la-abead-reflexiono-sobre-los-ejes-de-la-modernizacion-aduanera-a-60-anos-del-decreto-ley-37-66/?utm_source=rss&utm_medium=rss&utm_campaign=brasil-la-abead-reflexiono-sobre-los-ejes-de-la-modernizacion-aduanera-a-60-anos-del-decreto-ley-37-66",
-        "descripcion": "En los últimos días de junio, la Asociación Brasileña de Estudios Aduaneros (ABEAD) organizó un importante evento. Concretamente, el XVIII Congreso Internacional de Estudios Aduaneros (*), realizado en Belo Horizonte, capital del estado de Minas Gerais, en la región Sudeste de Brasil, brindó un espacio para reflexionar sobre el Decreto-Ley N.º 37/1966, considerado la piedra [&#8230;] The post Brasil: la ABEAD reflexionó sobre los ejes de la modernización aduanera a 60 años del Decreto-Ley 37/66 ",
-        "fecha_publicacion": "2026-07-29T08:00:00+00:00",
-        "fuente_id": "aduana_news",
-        "fuente_nombre": "Aduana News",
-        "categoria": "Comex"
-      },
-      {
-        "id": "902f079183ba",
-        "titulo": "Lo que enseña el nuevo sistema aduanero europeo – Mgter. Gustavo Scarpetta",
-        "link": "https://mercojuris.com/lo-que-ensena-el-nuevo-sistema-aduanero-europeo-mgter-gustavo-scarpetta/",
-        "descripcion": "El mundo en el que se basan la mayoría de las aduanas cambió. Algunos afirman que Ese mundo dejó de existir. En un Taller con especialistas aduaneros de todo el mundo dictado en Canadá, el Secretario General Adjunto de la OMA; Ricardo Treviño destacaba el gran crecimiento del e-commerce a nivel global, mostrando cifras de los pronósticos de aumento y de la importancia de prepararse para eso. Especialistas europeos hablaron de que el e-commerce era un tsunami sobre otro tsunami, para mostrar el c",
-        "fecha_publicacion": "2026-07-26T21:30:31+00:00",
-        "fuente_id": "mercojuris",
-        "fuente_nombre": "Mercojuris",
-        "categoria": "Comex"
-      },
-      {
-        "id": "87dc053a148a",
-        "titulo": "Alternativas para aplicar preferencias arancelarias en las importaciones de México – Dr. Ricardo Méndez Castro (desde México)",
-        "link": "https://mercojuris.com/alternativas-para-aplicar-preferencias-arancelarias-en-las-importaciones-de-mexico-dr-ricardo-mendez-castro-desde-mexico/",
-        "descripcion": "En este espacio, conoceremos algunas alternativas que tienen los importadores para aplicar las preferencias arancelarias con respecto del pago del impuesto general de importación de las mercancías que son objeto de las operaciones de importación en México. De manera general, el importador debe conocer la clasificación arancelaria de las mercancías, establecer si serán destinadas al territorio nacional bajo el régimen de importación definitiva o temporal, incluyendo los programas de diferimiento ",
-        "fecha_publicacion": "2026-07-26T21:24:41+00:00",
-        "fuente_id": "mercojuris",
-        "fuente_nombre": "Mercojuris",
-        "categoria": "Comex"
-      }
-    ],
-    "Internacional": [
-      {
-        "id": "5271422bd881",
-        "titulo": "La economía de la eurozona crece un 0,4% en el segundo trimestre, según Eurostat",
-        "link": "https://es.investing.com/news/economic-indicators/la-economia-de-la-eurozona-crece-un-04-en-el-segundo-trimestre-segun-eurostat-3767968",
-        "descripcion": "",
-        "fecha_publicacion": "2026-07-30T09:07:41+00:00",
-        "fuente_id": "investing_intl2",
-        "fuente_nombre": "Investing Mundo",
-        "categoria": "Internacional"
-      },
-      {
-        "id": "2b66806bfa5f",
-        "titulo": "El PIB de Alemania crece un 0,2% en el segundo trimestre, superando las previsiones",
-        "link": "https://es.investing.com/news/economic-indicators/el-pib-de-alemania-crece-un-02-en-el-segundo-trimestre-superando-las-previsiones-93CH-3767920",
-        "descripcion": "",
-        "fecha_publicacion": "2026-07-30T09:00:19+00:00",
-        "fuente_id": "investing_intl2",
-        "fuente_nombre": "Investing Mundo",
-        "categoria": "Internacional"
-      },
-      {
-        "id": "0c33e285736b",
-        "titulo": "EE.UU. impone sanciones a 18 entidades y petroleros vinculados a Irán",
-        "link": "https://es.investing.com/news/world-news/eeuu-impone-sanciones-a-18-entidades-y-petroleros-vinculados-a-iran-93CH-3766434",
-        "descripcion": "",
-        "fecha_publicacion": "2026-07-29T15:02:35+00:00",
-        "fuente_id": "investing_intl",
-        "fuente_nombre": "Investing Internacional",
-        "categoria": "Internacional"
-      },
-      {
-        "id": "20d882246b83",
-        "titulo": "El Parlamento de Rumanía aprueba leyes para desbloquear 3.000 millones de euros en fondos de la UE",
-        "link": "https://es.investing.com/news/world-news/el-parlamento-de-rumania-aprueba-leyes-para-desbloquear-3000-millones-de-euros-en-fondos-de-la-ue-93CH-3766225",
-        "descripcion": "",
-        "fecha_publicacion": "2026-07-29T13:46:29+00:00",
-        "fuente_id": "investing_intl",
-        "fuente_nombre": "Investing Internacional",
-        "categoria": "Internacional"
-      },
-      {
-        "id": "0ecab7d3669e",
-        "titulo": "El PIB de Irlanda crece un 3,9% en el segundo trimestre tras caer en el primero",
-        "link": "https://es.investing.com/news/economic-indicators/el-pib-de-irlanda-crece-un-39-en-el-segundo-trimestre-tras-caer-en-el-primero-93CH-3765289",
-        "descripcion": "",
-        "fecha_publicacion": "2026-07-29T10:43:32+00:00",
-        "fuente_id": "investing_intl2",
-        "fuente_nombre": "Investing Mundo",
-        "categoria": "Internacional"
-      },
-      {
-        "id": "2a7b5ffc95d5",
-        "titulo": "Banco Central de Chile mantiene los tipos de interés en el 4,5%",
-        "link": "https://es.investing.com/news/world-news/banco-central-de-chile-mantiene-los-tipos-de-interes-en-el-45-93CH-3764316",
-        "descripcion": "",
-        "fecha_publicacion": "2026-07-28T22:08:04+00:00",
-        "fuente_id": "investing_intl",
-        "fuente_nombre": "Investing Internacional",
-        "categoria": "Internacional"
-      }
-    ],
     "Agro": [
       {
         "id": "7682cb37c53c",
@@ -545,120 +659,6 @@
         "fuente_id": "bichos_campo",
         "fuente_nombre": "Bichos de Campo",
         "categoria": "Agro"
-      }
-    ],
-    "Energía y Minería": [
-      {
-        "id": "94208aaf06eb",
-        "titulo": "Energía firmó la resolución que convoca a concurso para designar a un nuevo presidente del Enrege",
-        "link": "https://econojournal.com.ar/destacada/energia-firmo-la-resolucion-que-convoca-a-concurso-para-designar-a-un-nuevo-presidente-del-enrege/",
-        "descripcion": "La Secretaría de Energía publicará en las próximas horas la resolución 185 que convoca a concurso abierto para la designación de un nuevo presidente del Ente Nacional Regulador del Gas y la Electricidad (Enrege). El organismo que reemplazó a Enargas y ENRE comenzó a funcionar a comienzos de mayo luego de la designación de su [&#8230;]",
-        "fecha_publicacion": "2026-07-30T02:39:39+00:00",
-        "fuente_id": "econojournal",
-        "fuente_nombre": "EconoJournal",
-        "categoria": "Energía y Minería"
-      },
-      {
-        "id": "95d67e9253cc",
-        "titulo": "Luego del fallo a favor de Vicuña, Los Azules activa una alternativa de contingencia para garantizar el desarrollo de su proyecto de cobre en San Juan",
-        "link": "https://econojournal.com.ar/mineria/luego-del-fallo-a-favor-de-vicuna-los-azules-activa-una-alternativa-de-contingencia-para-su-proyecto-de-cobre-en-san-juan/",
-        "descripcion": "El proyecto de cobre Los Azules avanzará con una nueva estrategia en su planificación de infraestructura de provisión energética mediante la implementación de un esquema alternativo de abastecimiento, activado como respuesta a la reciente decisión del Ente Nacional Regulador del Gas y la Electricidad (Enrege) que favoreció al proyecto Vicuña en la asignación de capacidad [&#8230;]",
-        "fecha_publicacion": "2026-07-29T21:51:51+00:00",
-        "fuente_id": "econojournal",
-        "fuente_nombre": "EconoJournal",
-        "categoria": "Energía y Minería"
-      },
-      {
-        "id": "04ea364f83c9",
-        "titulo": "Argentina LNG: convocan a una audiencia pública en Plaza Huincul por la construcción de la mega planta de separación de gas en Vaca Muerta",
-        "link": "https://econojournal.com.ar/enclave/argentina-lng-audiencia-publica-plaza-huincul-mega-planta-de-separacion-de-gas-en-vaca-muerta/",
-        "descripcion": "La secretaría de Ambiente de Neuquén realizará en septiembre una audiencia pública en Plaza Huincul para presentar el estudio de impacto ambiental de la mega planta de separación de gas natural que forma parte del proyecto Argentina LNG para exportar GNL por puerto rionegrino. Se trata de un paso clave para YPF, que espera cerrar [&#8230;]",
-        "fecha_publicacion": "2026-07-29T19:03:29+00:00",
-        "fuente_id": "econojournal",
-        "fuente_nombre": "EconoJournal",
-        "categoria": "Energía y Minería"
-      },
-      {
-        "id": "83a6b3058569",
-        "titulo": "Minería y RIGI: aprobaron el proyecto de U$S 709 millones de la firma de origen chino Liex en Catamarca",
-        "link": "https://dataenergia.ar/mineria/mineria-y-rigi-aprobaron-el-proyecto-de-u-s-709-millones-de-la-firma-de-origen-chino-liex-en-catamarca-202672915110",
-        "descripcion": "Economía aprobó el proyecto de U$S 709 millones de la firma Liex en Catamarca y se convirtió en la primera minera china en ingresar al RIGI.",
-        "fecha_publicacion": "2026-07-29T18:11:00+00:00",
-        "fuente_id": "data_energia",
-        "fuente_nombre": "Data Energía",
-        "categoria": "Energía y Minería"
-      },
-      {
-        "id": "48232339ae01",
-        "titulo": "Minería de gran escala: la Nación aprobó la obra eléctrica para Josemaría y avanza la inversión inicial de U$S 9.700 millones en San Juan",
-        "link": "https://dataenergia.ar/mineria/mineria-de-gran-escala-la-nacion-aprobo-la-obra-electrica-para-josemaria-y-avanza-la-inversion-inicial-de-u-s-9-700-millones-en-san-juan-202672914510",
-        "descripcion": "El ENREGE aprobó la obra de infraestructura eléctrica para el yacimiento Josemaría y destrabó el proyecto minero Vicuña en San Juan.",
-        "fecha_publicacion": "2026-07-29T17:51:00+00:00",
-        "fuente_id": "data_energia",
-        "fuente_nombre": "Data Energía",
-        "categoria": "Energía y Minería"
-      },
-      {
-        "id": "a6f56eae3d0c",
-        "titulo": "Infraestructura energética: la obra del oleoducto Vaca Muerta Oil Sur superó el 70% de avance y proyecta sus primeras exportaciones para fin de año",
-        "link": "https://dataenergia.ar/petroleo-y-combustibles/infraestructura-energetica-la-obra-del-oleoducto-vaca-muerta-oil-sur-supero-el-70-de-avance-y-proyecta-sus-primeras-exportaciones-para-fin-de-ano-202672913540",
-        "descripcion": "El proyecto Vaca Muerta Oil Sur (VMOS) superó el 70% de ejecución y prevé iniciar sus exportaciones a fines de este año o inicios de 2027.",
-        "fecha_publicacion": "2026-07-29T16:54:00+00:00",
-        "fuente_id": "data_energia",
-        "fuente_nombre": "Data Energía",
-        "categoria": "Energía y Minería"
-      },
-      {
-        "id": "80214cac46ac",
-        "titulo": "La minería argentina proyecta hasta un millón de empleos y US$ 40.000 millones en inversiones",
-        "link": "https://www.noticiasnet.com.ar/noticias/2026/07/27/214840-la-mineria-argentina-proyecta-hasta-un-millon-de-empleos-y-us-40000-millones-en-inversiones",
-        "descripcion": "La Cámara Argentina de Empresas Mineras anticipó una fuerte expansión de la actividad durante la próxima década, impulsada principalmente por los proyectos de cobre y litio.",
-        "fecha_publicacion": "2026-07-27T11:46:24+00:00",
-        "fuente_id": "noticiasnet_energia",
-        "fuente_nombre": "NoticiasNet Energía",
-        "categoria": "Energía y Minería"
-      }
-    ],
-    "Fiscal": [
-      {
-        "id": "e4877871f5c8",
-        "titulo": "RIMI: en breve ARCA lanzará un sistema para registrar las inversiones acumuladas para habilitar beneficios",
-        "link": "https://www.ambito.com/novedades-fiscales/rimi-breve-arca-lanzara-un-sistema-registrar-las-inversiones-acumuladas-habilitar-beneficios-n6305008",
-        "descripcion": "El Régimen de Incentivos para Medianas Inversiones (RIMI) requiere de un umbral mínimo de inversión, según la categoría Mipyme, pero la misma puede concretarse a través de varias adquisiciones. ARCA crea un sistema de registro hasta llegar al monto exigido.",
-        "fecha_publicacion": "2026-07-29T22:52:00+00:00",
-        "fuente_id": "ambito_fisc",
-        "fuente_nombre": "Ámbito Fiscal",
-        "categoria": "Fiscal"
-      },
-      {
-        "id": "0626251b4a63",
-        "titulo": "Cambian las escalas y cuotas en monotributo y estos usuarios deben recategorizarse",
-        "link": "https://www.iprofesional.com/impuestos/461048-monotributo-recategorizacion-agosto-2026-nuevas-cuotas",
-        "descripcion": "Las nuevas escalas impactan directo en tu economía. Enterate cuándo recategorizar, por qué y qué reglas cambian según tu nivel de ingresos",
-        "fecha_publicacion": "2026-07-29T13:48:00+00:00",
-        "fuente_id": "iprof_impuestos",
-        "fuente_nombre": "iProfesional Impuestos",
-        "categoria": "Fiscal"
-      },
-      {
-        "id": "a789107d7f52",
-        "titulo": "Deducciones por compras a monotributistas: la veracidad de las operaciones frente a lo meramente formal",
-        "link": "https://www.ambito.com/novedades-fiscales/deducciones-compras-monotributistas-la-veracidad-las-operaciones-frente-lo-meramente-formal-n6303763",
-        "descripcion": "La posibilidad de deducir las adquisiciones a proveedores monotributistas se encuentra condicionada por determinados requisitos y topes regulados por el ente recaudador, pero tales condicionamientos no pueden invalidar la existencia de la operación",
-        "fecha_publicacion": "2026-07-26T22:48:00+00:00",
-        "fuente_id": "ambito_fisc",
-        "fuente_nombre": "Ámbito Fiscal",
-        "categoria": "Fiscal"
-      },
-      {
-        "id": "471829f76ebc",
-        "titulo": "ATE obtuvo el reconocimiento de ANSES para el descuento de la cuota social de los haberes previsionales",
-        "link": "https://www.ambito.com/novedades-fiscales/ate-obtuvo-el-reconocimiento-anses-el-descuento-la-cuota-social-los-haberes-previsionales-n6303760",
-        "descripcion": "La Administración Nacional de la Seguridad Social (ANSES) acordó con la Asociación Trabajadores del Estado (ATE) la detracción de su cuota social de las jubilaciones y pensiones,",
-        "fecha_publicacion": "2026-07-26T21:55:00+00:00",
-        "fuente_id": "ambito_fisc",
-        "fuente_nombre": "Ámbito Fiscal",
-        "categoria": "Fiscal"
       }
     ],
     "Fulbito": [
