@@ -25,6 +25,7 @@ La salida incluye la línea lista para pegar en FUENTES.py.
 
 import sys
 import re
+from concurrent.futures import ThreadPoolExecutor
 from urllib.parse import urljoin, urlparse
 
 import requests
@@ -44,14 +45,20 @@ HDRS = {
     "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
     "Accept-Language": "es-AR,es;q=0.9,en;q=0.8",
 }
-TIMEOUT = 20
+# 8s y no 20: un sitio que tarda más que eso en dar un feed tampoco sirve
+# para el fetcher, que usa el mismo criterio. Con 15 instituciones × varias
+# rutas cada una, la diferencia es entre terminar y comerse el timeout del job.
+TIMEOUT = 8
 
 # Rutas que usan la mayoría de los CMS, por si el sitio no declara su feed.
+# Lista corta a propósito: cada una es un pedido más por institución.
 RUTAS = [
-    "/feed/", "/rss", "/rss.xml", "/feed.xml", "/atom.xml", "/index.xml",
-    "/es/rss", "/es/feed/", "/noticias/feed/", "/novedades/feed/",
-    "/blog/feed/", "/?feed=rss2",
+    "/feed/", "/rss.xml", "/rss", "/index.xml", "/es/rss", "/noticias/feed/",
 ]
+
+# Cuántas instituciones se prueban a la vez. El trabajo es puro esperar red,
+# así que el paralelismo es lo que hace que esto termine en un minuto.
+PARALELAS = 8
 
 # Instituciones que Documentos necesita y hoy no tiene.
 # El id es el que va a FUENTES.py; la home es desde donde arranca la búsqueda.
@@ -158,31 +165,40 @@ def main():
         print("Usá 'todas' para probarlas todas.")
         sys.exit(1)
 
-    hallazgos, sin_suerte = [], []
+    print(f"Probando {len(objetivo)} instituciones "
+          f"({PARALELAS} en paralelo, {TIMEOUT}s por pedido)…\n")
 
-    for fid, nombre, home, categoria, tier in objetivo:
-        print(f"\n=== {nombre} ({fid}) — {home}")
+    def procesar(candidata):
+        """Busca el feed de UNA institución. Devuelve (líneas, hallazgo)."""
+        fid, nombre, home, categoria, tier = candidata
+        log = [f"=== {nombre} ({fid}) — {home}"]
+
         declarados, candidatos = candidatos_de(home)
-        if declarados:
-            print(f"    el sitio declara {len(declarados)} feed(s)")
-        else:
-            print("    no declara feed; pruebo rutas habituales")
+        log.append(f"    el sitio declara {len(declarados)} feed(s)"
+                   if declarados else
+                   "    no declara feed; pruebo rutas habituales")
 
-        ganador = None
         for url in candidatos:
             r = evaluar(url)
             if r["ok"]:
-                print(f"    ✓ {url}")
-                print(f"      {r['entradas']} entradas · última: {r['ultima']}")
-                print(f"      ej: {r['muestra']}")
-                ganador = r
-                break
+                log.append(f"    ✓ {url}")
+                log.append(f"      {r['entradas']} entradas · última: {r['ultima']}")
+                log.append(f"      ej: {r['muestra']}")
+                return log, (fid, nombre, r["url"], categoria, tier)
+            log.append(f"      · {url[:70]} → {r['motivo'][:45]}")
 
-        if ganador:
-            hallazgos.append((fid, nombre, ganador["url"], categoria, tier))
-        else:
-            print("    ✗ ningún candidato sirvió")
-            sin_suerte.append((fid, nombre))
+        log.append("    ✗ ningún candidato sirvió")
+        return log, None
+
+    hallazgos, sin_suerte = [], []
+    with ThreadPoolExecutor(max_workers=PARALELAS) as pool:
+        for candidata, (log, hallazgo) in zip(
+                objetivo, pool.map(procesar, objetivo)):
+            print("\n".join(log) + "\n", flush=True)
+            if hallazgo:
+                hallazgos.append(hallazgo)
+            else:
+                sin_suerte.append((candidata[0], candidata[1]))
 
     print("\n" + "=" * 70)
     print(f"RESULTADO: {len(hallazgos)} con feed vivo · {len(sin_suerte)} sin encontrar")
