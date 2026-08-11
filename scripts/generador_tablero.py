@@ -11,7 +11,7 @@ from datetime import datetime, timezone, timedelta
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from config import DIR_SITE
-from iconos import ICONO
+from iconos import icono
 import componentes as comp
 
 TZ_AR = timezone(timedelta(hours=-3))
@@ -473,17 +473,17 @@ def generar_tablero():
     # Insertar íconos en los títulos de sección
     titulos_iconos = {
         '<h2 class="bloque-titulo">Dólares</h2>':
-            f'<h2 class="bloque-titulo">{ICONO["dolares"]}Dólares</h2>',
+            f'<h2 class="bloque-titulo">{icono("dolares")}Dólares</h2>',
         '<h2 class="bloque-titulo">Mercado</h2>':
-            f'<h2 class="bloque-titulo">{ICONO["mercado"]}Mercado</h2>',
+            f'<h2 class="bloque-titulo">{icono("mercado")}Mercado</h2>',
         '<h2 class="bloque-titulo">Macro</h2>':
-            f'<h2 class="bloque-titulo">{ICONO["macro"]}Macro</h2>',
+            f'<h2 class="bloque-titulo">{icono("macro")}Macro</h2>',
         '<h2 class="bloque-titulo">Sector externo</h2>':
-            f'<h2 class="bloque-titulo">{ICONO["comex"]}Sector externo</h2>',
+            f'<h2 class="bloque-titulo">{icono("comex")}Sector externo</h2>',
         '<h2 class="bloque-titulo">Empleo y salarios</h2>':
-            f'<h2 class="bloque-titulo">{ICONO["empleo"]}Empleo y salarios</h2>',
+            f'<h2 class="bloque-titulo">{icono("empleo")}Empleo y salarios</h2>',
         '<h2 class="bloque-titulo">Fiscal</h2>':
-            f'<h2 class="bloque-titulo">{ICONO["fiscal"]}Fiscal</h2>',
+            f'<h2 class="bloque-titulo">{icono("fiscal")}Fiscal</h2>',
     }
     for viejo, nuevo in titulos_iconos.items():
         html = html.replace(viejo, nuevo)

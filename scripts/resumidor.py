@@ -7,6 +7,7 @@ Solo procesa notas sin resumen previo.
 
 import json
 import os
+import re
 import sys
 import time
 import requests
@@ -16,13 +17,70 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from config import DIR_DATA
 
 JSON_PORTADA = os.path.join(DIR_DATA, "portada.json")
-# Modelo configurable por env var (el doc rector pide poder cambiar de
-# modelo sin reconstruir). gemini-1.5-flash fue discontinuado por Google;
-# el default actual es gemini-2.5-flash-lite (el más barato de la familia).
-GEMINI_MODEL = os.environ.get("GEMINI_MODEL", "gemini-2.5-flash-lite")
-GEMINI_URL   = f"https://generativelanguage.googleapis.com/v1beta/models/{GEMINI_MODEL}:generateContent"
+
+API_BASE = "https://generativelanguage.googleapis.com/v1beta"
+
+# Cadena de modelos, igual criterio que la cadena de fuentes de riesgo país:
+# se prueba en orden y gana el primero que responda. Google va retirando
+# modelos sin aviso —gemini-1.5-flash ya murió así, y el sucesor que quedó
+# configurado devolvía 404 en todas las corridas— y un solo nombre fijo deja
+# la publicación sin resúmenes en silencio.
+# GEMINI_MODEL fuerza uno solo y saltea la cadena.
+MODELOS_CANDIDATOS = [
+    "gemini-2.5-flash-lite",
+    "gemini-2.0-flash-lite",
+    "gemini-2.5-flash",
+    "gemini-2.0-flash",
+    "gemini-flash-latest",
+]
+
+_forzado = os.environ.get("GEMINI_MODEL", "").strip()
+MODELOS = [_forzado] if _forzado else list(MODELOS_CANDIDATOS)
+
 BATCH_SIZE   = 8
 MAX_NOTAS    = 16
+
+# Modelo que respondió en esta corrida; se fija en el primer éxito.
+MODELO_ACTIVO = None
+
+
+def url_modelo(modelo):
+    return f"{API_BASE}/models/{modelo}:generateContent"
+
+
+def modelos_disponibles(api_key):
+    """Pregunta a la API qué modelos hay. Solo para diagnóstico: si la cadena
+    entera falla, el log dice qué se podía usar en vez de dejarnos adivinar."""
+    try:
+        r = requests.get(f"{API_BASE}/models?key={api_key}", timeout=15)
+        r.raise_for_status()
+        nombres = []
+        for m in r.json().get("models", []):
+            if "generateContent" in (m.get("supportedGenerationMethods") or []):
+                nombres.append((m.get("name") or "").replace("models/", ""))
+        return nombres
+    except Exception as e:
+        return [f"(no pude listar modelos: {str(e)[:60]})"]
+
+
+def _parsear_respuesta(texto, cantidad):
+    """Extrae los resúmenes de la respuesta "1. ... 2. ...".
+
+    Descarta los índices fuera del batch: si el modelo numera de más, un
+    índice suelto reventaba el llamador con IndexError.
+    """
+    resultados = {}
+    for linea in texto.strip().split("\n"):
+        m = re.match(r'^(\d+)\.\s+(.+)', linea.strip())
+        if not m:
+            continue
+        idx = int(m.group(1)) - 1
+        if not (0 <= idx < cantidad):
+            continue
+        resumen = m.group(2).strip().replace('"', '')
+        if 10 < len(resumen) < 300:
+            resultados[idx] = resumen
+    return resultados
 
 
 def gemini_batch(notas_sin_resumen, api_key):
@@ -51,24 +109,31 @@ def gemini_batch(notas_sin_resumen, api_key):
         "generationConfig": {"maxOutputTokens": 600, "temperature": 0.2}
     }
 
-    try:
-        r = requests.post(f"{GEMINI_URL}?key={api_key}", json=payload, timeout=20)
-        r.raise_for_status()
-        texto = r.json()["candidates"][0]["content"]["parts"][0]["text"]
+    global MODELO_ACTIVO
 
-        # Parsear respuesta "1. resumen\n2. resumen..."
-        resultados = {}
-        for linea in texto.strip().split("\n"):
-            m = __import__('re').match(r'^(\d+)\.\s+(.+)', linea.strip())
-            if m:
-                idx = int(m.group(1)) - 1
-                resumen = m.group(2).strip().replace('"','')
-                if 10 < len(resumen) < 300:
-                    resultados[idx] = resumen
-        return resultados
-    except Exception as e:
-        print(f"   ⚠ Gemini batch error: {str(e)[:60]}")
-        return {}
+    # Si ya hay un modelo que funcionó en esta corrida, no se reintentan los
+    # que fallaron: se prueba ese solo.
+    candidatos = [MODELO_ACTIVO] if MODELO_ACTIVO else MODELOS
+
+    ultimo_error = None
+    for modelo in candidatos:
+        try:
+            r = requests.post(f"{url_modelo(modelo)}?key={api_key}",
+                              json=payload, timeout=20)
+            r.raise_for_status()
+            texto = r.json()["candidates"][0]["content"]["parts"][0]["text"]
+        except Exception as e:
+            ultimo_error = f"{modelo}: {str(e)[:70]}"
+            print(f"   ⚠ {ultimo_error}")
+            continue
+
+        if MODELO_ACTIVO != modelo:
+            print(f"   ✓ modelo en uso: {modelo}")
+            MODELO_ACTIVO = modelo
+        return _parsear_respuesta(texto, len(notas_sin_resumen))
+
+    print(f"   ✗ ningún modelo respondió (último: {ultimo_error})")
+    return {}
 
 
 def main():
@@ -126,9 +191,20 @@ def main():
     if total > 0:
         with open(JSON_PORTADA, 'w', encoding='utf-8') as f:
             json.dump(portada, f, ensure_ascii=False, indent=2)
-        print(f"[Resumidor] {total} resúmenes generados y guardados")
+        print(f"[Resumidor] {total} resúmenes generados y guardados "
+              f"(modelo: {MODELO_ACTIVO})")
     else:
-        print("[Resumidor] Sin resúmenes nuevos")
+        # Cero resúmenes con notas para resumir es una falla, no un "sin
+        # novedades": la portada sale sin resúmenes. Dejamos en el log qué
+        # modelos aceptaba la API para no tener que adivinar el nombre.
+        print("[Resumidor] ✗ NINGÚN resumen generado — la portada sale sin resúmenes")
+        print(f"[Resumidor]   modelos probados: {', '.join(MODELOS)}")
+        disponibles = modelos_disponibles(api_key)
+        print(f"[Resumidor]   modelos que acepta la API ({len(disponibles)}):")
+        for n in disponibles[:25]:
+            print(f"[Resumidor]     · {n}")
+        print("[Resumidor]   → si hay uno servible, setealo en GEMINI_MODEL "
+              "o agregalo a MODELOS_CANDIDATOS")
 
 
 if __name__ == "__main__":

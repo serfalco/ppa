@@ -39,6 +39,10 @@ ICONO = {
 
     "empleo": f'<svg {_A}><circle cx="16" cy="11" r="5"/><path d="M6 27 C 6 20, 11 18, 16 18 C 21 18, 26 20, 26 27"/></svg>',
 
+    # Barras crecientes: el agregado de la economía. Se distingue a propósito
+    # de "mercado", que es la línea con flecha (una serie que se mueve).
+    "macro": f'<svg {_A}><line x1="4" y1="26" x2="28" y2="26"/><rect x="7" y="18" width="5" height="8"/><rect x="14" y="12" width="5" height="14"/><rect x="21" y="7" width="5" height="19"/></svg>',
+
     "fiscal": f'<svg {_A}><rect x="7" y="5" width="18" height="22" rx="2"/><line x1="11" y1="11" x2="21" y2="11"/><line x1="11" y1="16" x2="21" y2="16"/><line x1="11" y1="21" x2="17" y2="21"/></svg>',
 
     "banda": f'<svg {_A}><line x1="6" y1="16" x2="26" y2="16"/><line x1="6" y1="11" x2="6" y2="21"/><line x1="26" y1="11" x2="26" y2="21"/><circle cx="16" cy="16" r="3"/></svg>',
