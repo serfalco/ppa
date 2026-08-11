@@ -144,7 +144,19 @@ def candidatos_de(home):
 
 def main():
     filtro = {a.lower() for a in sys.argv[1:]}
+    # "todas" es explícito: pasar argumentos que no matchean ningún id dejaba
+    # la lista vacía y el script terminaba con un "0 y 0" que parecía un
+    # resultado real en vez de un filtro mal escrito.
+    if "todas" in filtro:
+        filtro = set()
     objetivo = [c for c in CANDIDATAS if not filtro or c[0] in filtro]
+
+    if not objetivo:
+        conocidos = ", ".join(c[0] for c in CANDIDATAS)
+        print(f"Ningún id coincide con {sorted(filtro)}.")
+        print(f"Ids disponibles: {conocidos}")
+        print("Usá 'todas' para probarlas todas.")
+        sys.exit(1)
 
     hallazgos, sin_suerte = [], []
 
