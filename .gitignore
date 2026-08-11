@@ -5,3 +5,6 @@ Thumbs.db
 *.tmp
 *.log
 
+# Bytecode de Python: se regenera solo al correr los scripts
+__pycache__/
+*.py[cod]
