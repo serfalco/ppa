@@ -37,7 +37,10 @@ MODELOS_CANDIDATOS = [
 _forzado = os.environ.get("GEMINI_MODEL", "").strip()
 MODELOS = [_forzado] if _forzado else list(MODELOS_CANDIDATOS)
 
-BATCH_SIZE   = 8
+# 4 y no 8: cuantos más resúmenes se piden en una sola respuesta, más chance
+# de que se corte a mitad y se pierda el resto del batch. Son más llamadas,
+# pero cada una rinde entera.
+BATCH_SIZE   = 4
 MAX_NOTAS    = 16
 
 # Modelo que respondió en esta corrida; se fija en el primer éxito.
@@ -106,7 +109,10 @@ def gemini_batch(notas_sin_resumen, api_key):
 
     payload = {
         "contents": [{"parts": [{"text": prompt}]}],
-        "generationConfig": {"maxOutputTokens": 600, "temperature": 0.2}
+        # MAX_TOKENS holgado: los modelos nuevos de la familia razonan antes de
+        # responder y ese razonamiento come del mismo presupuesto. Con 600 la
+        # respuesta salía cortada y de 16 notas se rescataba una sola.
+        "generationConfig": {"maxOutputTokens": 4096, "temperature": 0.2},
     }
 
     global MODELO_ACTIVO
@@ -119,9 +125,10 @@ def gemini_batch(notas_sin_resumen, api_key):
     for modelo in candidatos:
         try:
             r = requests.post(f"{url_modelo(modelo)}?key={api_key}",
-                              json=payload, timeout=20)
+                              json=payload, timeout=40)
             r.raise_for_status()
-            texto = r.json()["candidates"][0]["content"]["parts"][0]["text"]
+            cuerpo = r.json()
+            texto = cuerpo["candidates"][0]["content"]["parts"][0]["text"]
         except Exception as e:
             ultimo_error = f"{modelo}: {str(e)[:70]}"
             print(f"   ⚠ {ultimo_error}")
@@ -130,7 +137,24 @@ def gemini_batch(notas_sin_resumen, api_key):
         if MODELO_ACTIVO != modelo:
             print(f"   ✓ modelo en uso: {modelo}")
             MODELO_ACTIVO = modelo
-        return _parsear_respuesta(texto, len(notas_sin_resumen))
+
+        resultados = _parsear_respuesta(texto, len(notas_sin_resumen))
+
+        # Un batch que devuelve menos resúmenes que notas es una falla parcial
+        # silenciosa: la portada sale incompleta y nada lo dice. Se registra el
+        # motivo de corte que informa la API para saber si fue truncado.
+        if len(resultados) < len(notas_sin_resumen):
+            razon = ""
+            try:
+                razon = cuerpo["candidates"][0].get("finishReason") or ""
+            except Exception:
+                pass
+            print(f"   ⚠ batch parcial: {len(resultados)}/{len(notas_sin_resumen)} "
+                  f"resúmenes" + (f" · finishReason={razon}" if razon else ""))
+            if razon == "MAX_TOKENS":
+                print("     (la respuesta se cortó por presupuesto de tokens)")
+
+        return resultados
 
     print(f"   ✗ ningún modelo respondió (último: {ultimo_error})")
     return {}
