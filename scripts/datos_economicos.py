@@ -397,11 +397,22 @@ def obtener_riesgo_pais(previo):
     return conservar(previo, "riesgo_pais")
 
 
-# ID de la variable BCRA v4 para compras netas de divisas (MULC).
-# None = todavía no verificado. Correr scripts/descubrir_bcra.py donde haya
-# internet libre, verificar contra el Informe Monetario Diario y setearlo.
-# Cuando tenga valor, el MULC sale de la API y el panel queda de respaldo.
-MULC_BCRA_ID = None
+# ID de la variable BCRA v4 para compras netas de divisas (MULC):
+# 78 = "Variación de reservas internacionales por compra de divisas".
+#
+# Cómo se verificó que es esta y no otra. La API tiene tres variables que
+# hablan de compras de divisas: la 47 (efecto monetario, sector privado),
+# la 48 (efecto monetario, tesoro — viene en cero) y la 78. Dividiendo la 47
+# por la 78 en cada fecha:
+#
+#     05/08   11.968 /   8 = 1496        30/07  174.358,5 / 117 = 1490
+#     04/08   41.915 /  28 = 1497        29/07   53.867,5 /  36 = 1496
+#
+# El cociente da constante en ~1490-1497, que es el dólar mayorista de esos
+# días: son el mismo dato, la 47 en pesos y la 78 en dólares. El sitio muestra
+# el MULC en millones de USD, así que corresponde la 78. Signo positivo =
+# el BCRA compró.
+MULC_BCRA_ID = 78
 
 
 def obtener_mulc(previo):

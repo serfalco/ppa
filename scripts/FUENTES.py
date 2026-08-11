@@ -44,6 +44,7 @@ FUENTES = [
     {"id":"data_energia", "nombre":"Data Energía", "web":"https://dataenergia.ar/feed/", "categoria":"Energía y Minería", "tier":2, "activa":True},
     {"id":"econojournal", "nombre":"EconoJournal", "web":"https://econojournal.com.ar/feed/", "categoria":"Energía y Minería", "tier":1, "activa":True},
     {"id":"noticiasnet_energia", "nombre":"NoticiasNet Energía", "web":"https://www.noticiasnet.com.ar/rss/energia-hoy/", "categoria":"Energía y Minería", "tier":2, "activa":True},
+    {"id":"caem", "nombre":"CAEM", "web":"https://caem.com.ar/feed/", "categoria":"Energía y Minería", "tier":3, "activa":True},
 
     # ===== FINANZAS =====
     {"id":"iprof_economia", "nombre":"iProfesional Economía", "web":"https://www.iprofesional.com/rss/economia", "categoria":"Finanzas", "tier":1, "activa":True},
@@ -69,6 +70,7 @@ FUENTES = [
 
     # ===== LOGÍSTICA =====
     {"id":"webpicking", "nombre":"Webpicking", "web":"https://webpicking.com/feed/", "categoria":"Logística", "tier":2, "activa":True},
+    {"id":"cedol", "nombre":"CEDOL", "web":"https://www.cedol.org.ar/logistica/feed/", "categoria":"Logística", "tier":3, "activa":True},
 
     # ===== MERCADOS =====
     {"id":"investing_economia", "nombre":"Investing Economía", "web":"https://es.investing.com/rss/news_14.rss", "categoria":"Mercados", "tier":1, "activa":True},
