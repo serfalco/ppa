@@ -46,24 +46,32 @@ DIAS_SEMANA = ["Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado", 
 # Los medios y consultoras-firma NO van acá (alimentan otras secciones).
 FUENTES_INSTITUCIONALES = {
     # Macro institucional
-    "bcra", "indec", "iaraf", "fiel", "fundar", "ieral", "cedlas",
+    "iaraf", "fundar",
     # Política
     "cippec",
-    # Comercio Exterior
-    "cari", "cei",
-    # Automotor (cámaras oficiales)
-    "acara", "adefa",
     # Logística (cámaras oficiales)
-    "cedol", "fadeeac",
+    "cedol",
     # Minería
     "caem",
-    # Agro institucional
-    "bcr", "magyp", "rosgan",
-    # Internacional
-    "fmi", "cepal", "bancomundial", "bid", "ocde",
-    # Universidad / observatorios
-    "miradoruca",
 }
+
+# Las que estaban acá y se sacaron: bcra, indec, bcr, fiel, ieral, cedlas,
+# cari, cei, acara, adefa, fadeeac, magyp, rosgan, fmi, cepal, bancomundial,
+# bid, ocde, miradoruca. Ninguna estaba en el catálogo de fuentes, así que
+# solo inflaban el "0 de 24 fuentes institucionales" del log.
+#
+# Se les buscó feed con scripts/descubrir_feeds.py (autodiscovery + rutas
+# habituales, con User-Agent de navegador) y no tienen: dan 404, 403 aun
+# pareciendo navegador, o devuelven HTML en vez de XML.
+#
+# No es un problema a resolver buscando mejor. El documento integral §13
+# clasifica las fuentes por método de ingesta y estas no son de RSS:
+#   · BCRA, INDEC, FMI y datos.gob.ar son Capa 1, APIs estructuradas.
+#   · Los informes oficiales son Capa 2: PDFs, boletines, calendarios.
+#   · El RSS es Capa 3 y es periodístico — medios y consultoras.
+# Llenar Documentos con material institucional de verdad es el trabajo de
+# la Fase C (calendario INDEC, Boletín Oficial, licitaciones), no el de
+# sumar feeds que no existen.
 
 
 # =============================================================

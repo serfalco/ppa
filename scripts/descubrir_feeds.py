@@ -60,8 +60,25 @@ RUTAS = [
 # así que el paralelismo es lo que hace que esto termine en un minuto.
 PARALELAS = 8
 
-# Instituciones que Documentos necesita y hoy no tiene.
+# Instituciones que Documentos necesita.
 # El id es el que va a FUENTES.py; la home es desde donde arranca la búsqueda.
+#
+# Resultado de la corrida del 11/08/2026 (15 probadas, 3 con feed vivo):
+#
+#   ✓ CEDOL  https://www.cedol.org.ar/logistica/feed/   declarado por el sitio
+#   ✓ CAEM   https://caem.com.ar/feed/                  por ruta habitual
+#   ✗ MAGyP  el único candidato que respondió fue https://www.argentina.gob.ar/rss.xml,
+#            que es el feed de TODO el portal del Estado, no el de Agricultura.
+#            Rotularlo "MAGyP" sería atribuir mal la fuente, así que se descarta.
+#   ✗ BCRA, INDEC, BCR, FIEL, IERAL, CEPAL, FMI, Banco Mundial, OCDE, ACARA,
+#     ADEFA, CARI — sin feed detectable: 404, 403 aun con User-Agent de
+#     navegador (OCDE), o HTML donde debería haber XML (ACARA).
+#
+# Que no aparezcan no es un problema de búsqueda. Según §13 del documento
+# integral estas instituciones no son fuentes de RSS: BCRA, INDEC y FMI son
+# Capa 1 (APIs estructuradas) y sus informes son Capa 2 (PDFs, boletines,
+# calendarios). El RSS es Capa 3 y es periodístico. La vía correcta para
+# traerlas es la Fase C, no seguir buscándoles feed.
 CANDIDATAS = [
     ("bcra",         "BCRA",                  "https://www.bcra.gob.ar",        "Macro", 3),
     ("indec",        "INDEC",                 "https://www.indec.gob.ar",       "Macro", 3),
