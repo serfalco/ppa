@@ -20,11 +20,13 @@ Cómo se corre (donde haya internet — tu compu o el workflow):
     python scripts/descubrir_feeds.py                 # todas las candidatas
     python scripts/descubrir_feeds.py bcra indec      # solo algunas
     python scripts/descubrir_feeds.py fundar          # una fuente de FUENTES.py
+    python scripts/descubrir_feeds.py https://x.ar/blog/feed/   # una URL puntual
 
-El último caso es el diagnóstico de una fuente caída: cualquier id del
-catálogo sirve como argumento, no hace falta agregarlo a CANDIDATAS. Prueba
-primero la URL configurada — así el log dice por qué dejó de andar — y
-después busca reemplazo.
+Cualquier id del catálogo sirve como argumento para diagnosticar una fuente
+caída, sin agregarla a CANDIDATAS: prueba primero la URL configurada — así
+el log dice por qué dejó de andar — y después busca reemplazo. Si las rutas
+habituales no dan con nada, pasar una URL directa prueba esa sola y, cuando
+no es un feed, lista los feeds que esa página declara o enlaza.
 
 La salida incluye la línea lista para pegar en FUENTES.py.
 """
@@ -203,8 +205,68 @@ def desde_catalogo(fid):
     }
 
 
+def enlaces_a_feeds(html, base):
+    """Enlaces de la página que parecen feeds, más allá del <link alternate>.
+
+    Varios sitios no declaran nada pero tienen una página índice que lista
+    sus canales. Ahí el feed está en un <a href>, no en el <head>.
+    """
+    encontrados = []
+    for href in re.findall(r'<a\b[^>]*href\s*=\s*["\']([^"\']+)["\']',
+                           html or "", re.I):
+        if re.search(r"(rss|feed|\.xml)", href, re.I):
+            encontrados.append(urljoin(base, href.strip()))
+    vistos, orden = set(), []
+    for u in encontrados:
+        if u not in vistos:
+            vistos.add(u)
+            orden.append(u)
+    return orden
+
+
+def probar_urls(urls):
+    """Evalúa URLs sueltas y, si no son feeds, dice qué feeds ofrece la página.
+
+    Es el segundo paso del diagnóstico: cuando las rutas habituales fallan,
+    uno ya tiene una sospecha concreta (otra categoría, otro post type, la
+    página que lista los canales) y quiere probarla sin tocar el catálogo.
+    """
+    for url in urls:
+        print(f"=== {url}")
+        r = evaluar(url)
+        if r["ok"]:
+            print(f"    ✓ {r['entradas']} entradas · última: {r['ultima']}")
+            print(f"      ej: {r['muestra']}")
+            print()
+            continue
+
+        print(f"    ✗ {r['motivo']}")
+        estado, cuerpo = bajar(url)
+        if estado and estado < 400:
+            declarados = links_declarados(cuerpo, url)
+            enlazados = [u for u in enlaces_a_feeds(cuerpo, url)
+                         if u not in declarados and u != url]
+            for u in declarados:
+                print(f"      declara: {u}")
+            for u in enlazados[:12]:
+                print(f"      enlaza:  {u}")
+            if not declarados and not enlazados:
+                print("      la página no ofrece ningún feed")
+        print()
+
+
 def main():
-    filtro = {a.lower() for a in sys.argv[1:]}
+    argumentos = sys.argv[1:]
+
+    # Una URL como argumento se prueba tal cual. Los ids buscan; una URL ya
+    # es la sospecha concreta y lo único que falta es el veredicto.
+    urls = [a for a in argumentos if a.lower().startswith("http")]
+    if urls:
+        probar_urls(urls)
+        if len(urls) == len(argumentos):
+            return
+
+    filtro = {a.lower() for a in argumentos if a not in urls}
     # "todas" es explícito: pasar argumentos que no matchean ningún id dejaba
     # la lista vacía y el script terminaba con un "0 y 0" que parecía un
     # resultado real en vez de un filtro mal escrito.
