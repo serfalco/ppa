@@ -24,8 +24,44 @@ HDRS = {"User-Agent": "Mozilla/5.0 (compatible; PPA-Bot/1.0)"}
 URL = "https://api.bcra.gob.ar/estadisticas/v4.0/monetarias"
 
 
+def detallar(ids):
+    """Muestra las últimas observaciones de cada ID.
+
+    Elegir la variable por el nombre no alcanza: "compras netas de divisas"
+    aparece tanto como efecto monetario (en pesos) como variación de reservas
+    (en dólares), y el MULC que consume el sitio va en millones de USD. Con
+    los valores a la vista se distingue cuál es cuál por orden de magnitud.
+    """
+    for idv in ids:
+        url = f"{URL}/{idv}"
+        print(f"\n=== ID {idv} · {url}")
+        try:
+            r = requests.get(url, headers=HDRS, timeout=20)
+            r.raise_for_status()
+            j = r.json()
+        except Exception as e:
+            print(f"    ✗ {str(e)[:90]}")
+            continue
+
+        for bloque in (j.get("results") or [])[:1]:
+            print(f"    descripción: {bloque.get('descripcion')}")
+            if bloque.get("unidad"):
+                print(f"    unidad declarada: {bloque.get('unidad')}")
+            for obs in (bloque.get("detalle") or [])[:6]:
+                print(f"      {obs.get('fecha')}  {obs.get('valor')}")
+
+
 def main():
-    filtros = [p.lower() for p in sys.argv[1:]]
+    args = sys.argv[1:]
+    if args and args[0] == "--detalle":
+        ids = [a for a in args[1:] if a.isdigit()]
+        if not ids:
+            print("Uso: descubrir_bcra.py --detalle 47 48 78")
+            sys.exit(1)
+        detallar(ids)
+        return
+
+    filtros = [p.lower() for p in args]
     try:
         r = requests.get(URL, headers=HDRS, timeout=20)
         r.raise_for_status()
