@@ -1,7 +1,14 @@
 # Documento rector de PPA
 
+> **Superado por la v2.0.** El documento que gobierna el proyecto es
+> [Documento integral v2.0](00-documento-integral-v2.md) (10-jul-2026), que amplía
+> este borrador con el modelo de "cerebro PPA", el grafo económico, la
+> verificación automática y el plan de fases A–E.
+> Esta v0.1 se conserva como registro de las definiciones fundacionales:
+> los 9 principios no negociables de §6 siguen vigentes tal cual.
+
 Versión: 0.1  
-Estado: borrador para aprobación  
+Estado: superado por la v2.0 — se conserva como referencia histórica  
 Proyecto: refundación 2026
 
 ## 1. Qué es PPA
