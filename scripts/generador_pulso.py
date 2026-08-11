@@ -95,6 +95,12 @@ def fecha_dato(item, fallback):
     f = item.get("fecha") or ""
     if f and len(f) >= 10:
         try:
+            if len(f) == 10:
+                # Fecha pura ("AAAA-MM-DD"), sin hora: no tiene huso horario
+                # que convertir. Convertirla igual restaba un día de más
+                # (medianoche UTC cae en el día previo en ART).
+                dt = datetime.strptime(f, "%Y-%m-%d")
+                return dt.strftime("%d/%m/%Y")
             dt = datetime.fromisoformat(f.replace("Z", "+00:00"))
             return dt.astimezone(TZ_AR).strftime("%d/%m/%Y")
         except Exception:
