@@ -25,7 +25,11 @@ try:
 except ImportError:
     VENTANA_DOCUMENTOS_HORAS = 72  # default: ventana de 72hs
 
-JSON_NOTAS = os.path.join(DIR_DATA, "notas.json")
+# El fetcher escribe notas_raw.json. notas.json es un archivo huérfano que
+# quedó congelado en junio de 2026: leerlo hacía que la ventana de la sección
+# no alcanzara ninguna nota y Documentos saliera siempre vacío.
+# generador_informes.py ya usaba el archivo correcto.
+JSON_NOTAS = os.path.join(DIR_DATA, "notas_raw.json")
 DIR_DOCUMENTOS = os.path.join(DIR_SITE, "documentos")
 
 TZ_AR = timezone(timedelta(hours=-3))
