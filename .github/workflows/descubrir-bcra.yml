@@ -1,0 +1,77 @@
+name: PPA - Descubrir variables BCRA
+
+# Herramienta de diagnóstico, a mano. No toca el repo ni publica nada:
+# solo consulta la API del BCRA y escribe el resultado en el resumen del job.
+#
+# Para qué: encontrar el ID de una variable de la API BCRA v4 — en particular
+# el de COMPRAS NETAS DE DIVISAS (MULC), que hoy se carga a mano desde el panel
+# y es lo último que traba la puerta de salida de la Fase A.
+#
+# Cómo usarlo:
+#   Actions → "PPA - Descubrir variables BCRA" → Run workflow → Run.
+#   Leer el resumen del job, verificar el valor contra el Informe Monetario
+#   Diario y setear MULC_BCRA_ID en scripts/datos_economicos.py.
+
+on:
+  workflow_dispatch:
+    inputs:
+      filtros:
+        description: 'Palabras a buscar en la descripción (separadas por espacio). Vacío = listar todas.'
+        required: false
+        default: 'mulc compra divisas'
+        type: string
+
+permissions:
+  contents: read
+
+jobs:
+  descubrir:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install requests
+
+      - name: Consultar la API del BCRA
+        id: consulta
+        env:
+          # Por env y no interpolado en el script: una entrada de
+          # workflow_dispatch metida directo en un run es inyección de shell.
+          FILTROS: ${{ inputs.filtros }}
+        run: |
+          echo "Buscando: $FILTROS"
+          # shellcheck disable=SC2086 — se quiere el split en palabras
+          python scripts/descubrir_bcra.py $FILTROS | tee salida.txt
+
+      - name: Escribir el resumen del job
+        if: always()
+        env:
+          FILTROS: ${{ inputs.filtros }}
+        run: |
+          {
+            echo "## Variables de la API BCRA v4"
+            echo
+            echo "Filtro aplicado: \`$FILTROS\`"
+            echo
+            echo '```'
+            cat salida.txt 2>/dev/null || echo "(sin salida — ver el log del paso anterior)"
+            echo '```'
+            echo
+            echo "### Si encontraste el ID del MULC"
+            echo
+            echo "1. Verificá que el valor coincida con el Informe Monetario Diario del BCRA."
+            echo "2. En \`scripts/datos_economicos.py\`, seteá \`MULC_BCRA_ID = <id>\`."
+            echo "3. Desde ahí el MULC sale de la API y la carga del panel queda de respaldo."
+          } >> "$GITHUB_STEP_SUMMARY"
