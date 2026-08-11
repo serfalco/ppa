@@ -93,6 +93,56 @@ def valor_previo(previo, clave):
         return None
 
 
+# Antigüedad tolerada por frecuencia, en días: (hasta_vigente, hasta_demorado).
+# Más allá del segundo umbral el dato está desactualizado.
+#
+# Los mensuales se fechan por INICIO DE PERÍODO y se publican con rezago: el
+# IPC de junio sale a mediados de julio, el EMAE de mayo a fines de julio. Por
+# eso 71 días de IPC es normal y no puede tratarse igual que 71 días de un
+# indicador diario.
+UMBRALES_VIGENCIA = {
+    "intradia": (4, 10),     # tolera fin de semana largo
+    "diaria":   (7, 20),
+    "mensual":  (75, 110),
+    "manual":   (7, 20),
+}
+
+
+def vigencia(fecha, frecuencia):
+    """Estado de vigencia del dato según su propia fecha y su frecuencia.
+
+    Distinto de "stale", que dice si falló la BAJADA. Acá se mira la
+    antigüedad de la OBSERVACIÓN: una serie que se descarga perfecto puede
+    traer un último valor de hace dos meses. El documento rector pide que un
+    dato viejo no se disfrace de actual (§6.3) y que cada indicador muestre
+    su estado de vigencia (§6).
+
+    Devuelve None si no hay con qué evaluar.
+    """
+    if not fecha or len(str(fecha)) < 10:
+        return None
+    try:
+        t = datetime.fromisoformat(str(fecha).replace("Z", "+00:00"))
+    except Exception:
+        return None
+    if t.tzinfo is None:
+        t = t.replace(tzinfo=timezone.utc)
+
+    dias = (datetime.now(timezone.utc) - t).days
+    if dias < 0:
+        dias = 0
+    limite_ok, limite_demora = UMBRALES_VIGENCIA.get(
+        frecuencia or "diaria", UMBRALES_VIGENCIA["diaria"])
+
+    if dias <= limite_ok:
+        estado = "vigente"
+    elif dias <= limite_demora:
+        estado = "demorado"
+    else:
+        estado = "desactualizado"
+    return {"estado": estado, "dias": dias}
+
+
 def dato(valor, *, unidad=None, fecha=None, variacion=None,
          periodo=None, fuente=None, frecuencia=None):
     """Construye un dato normalizado y consistente."""
@@ -107,6 +157,10 @@ def dato(valor, *, unidad=None, fecha=None, variacion=None,
     if periodo is not None:    d["periodo"] = periodo
     if fuente is not None:     d["fuente"] = fuente
     if frecuencia is not None: d["frecuencia"] = frecuencia
+
+    v = vigencia(fecha, frecuencia)
+    if v is not None:
+        d["vigencia"] = v
     return d
 
 
@@ -117,6 +171,14 @@ def conservar(previo, clave):
         return None
     prev = dict(prev)
     prev["stale"] = True
+    # La vigencia venía calculada en la corrida que sí trajo el dato: si no se
+    # recalcula, el contador de días queda congelado y un dato que envejece
+    # mientras la fuente no responde sigue diciendo que está vigente.
+    v = vigencia(prev.get("fecha"), prev.get("frecuencia"))
+    if v is not None:
+        prev["vigencia"] = v
+    else:
+        prev.pop("vigencia", None)
     return prev
 
 

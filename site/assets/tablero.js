@@ -20,6 +20,13 @@
   function pct(n){ return Number(n).toFixed(1) + '%'; }
   function millones(n){ return 'USD ' + (n/1000).toFixed(1) + ' MM'; }
 
+  /* Los agregados monetarios del BCRA vienen en millones de PESOS. Pasarlos
+     por millones() los rotulaba "USD 46321.7 MM M$": dolares y pesos en la
+     misma etiqueta, y ademas dividido por mil sin motivo. */
+  function millonesPesos(n){
+    return '$' + Math.round(n).toLocaleString('es-AR') + ' M';
+  }
+
   async function fetchJSON(url){
     const c = new AbortController();
     const t = setTimeout(function(){ c.abort(); }, 12000);
@@ -48,15 +55,39 @@
     return (typeof item.valor === 'object') ? item.valor.compra : item.valor;
   }
 
-  // set: pinta texto en un id; si valor null deja s/d; marca stale
+  /* Un dato se marca por dos motivos distintos:
+     - stale: fallo la bajada y se muestra el ultimo valor conocido.
+     - vigencia desactualizada: la bajada anduvo, pero la ultima observacion
+       de la serie quedo vieja (TCRM con dos meses, por ejemplo).
+     El documento rector pide que un dato viejo no se disfrace de actual,
+     asi que los dos casos se avisan igual. */
+  function marca(item, stale){
+    if (stale) return 'ultimo valor conocido: la fuente no respondio';
+    const v = item && item.vigencia;
+    if (v && v.estado === 'desactualizado') {
+      return 'la fuente no actualiza este dato hace ' + v.dias + ' dias';
+    }
+    return null;
+  }
+
+  // set: pinta texto en un id; si valor null deja s/d; avisa dato no vigente.
+  // El tercer argumento acepta el booleano stale de siempre o el item entero,
+  // que ademas permite mirar su vigencia.
   function set(id, texto, stale){
     const el = $(id);
     if (!el) return;
-    if (texto != null) {
-      el.textContent = texto + (stale ? ' *' : '');
-      el.classList.toggle('dato-stale', !!stale);
-      if (stale) el.title = '* Ultimo valor conocido (dato desactualizado)';
+    if (texto == null) return;
+
+    let aviso;
+    if (stale && typeof stale === 'object') {
+      aviso = marca(stale, stale.stale);
+    } else {
+      aviso = stale ? marca(null, true) : null;
     }
+    el.textContent = texto + (aviso ? ' *' : '');
+    el.classList.toggle('dato-stale', !!aviso);
+    if (aviso) el.title = '* ' + aviso;
+    else el.removeAttribute('title');
   }
 
   // variacion con flecha
@@ -89,9 +120,9 @@
     // ---- MERCADO ----
     const mer = d(datos,'merval'), rp = d(datos,'riesgo_pais'), res = d(datos,'reservas');
     if (mer) { set('t-merval', num(mer.valor), mer.stale); setVar('t-merval-var', mer.variacion); }
-    if (rp)  set('t-riesgo', num(rp.valor) + ' pb', rp.stale);
-    if (res) { set('t-reservas', millones(res.valor), res.stale);
-               set('t-reservas-macro', millones(res.valor), res.stale); }
+    if (rp)  set('t-riesgo', num(rp.valor) + ' pb', rp);
+    if (res) { set('t-reservas', millones(res.valor), res);
+               set('t-reservas-macro', millones(res.valor), res); }
 
     // ---- MULC (BCRA compró/vendió en el mercado) ----
     const mulc = d(datos, 'mulc');
@@ -130,8 +161,9 @@
     // Riesgo contexto
     if (rp && rp.variacion != null) ctx('t-riesgo-var-dia', rp.variacion, 'pb');
 
-    // TCRM contexto
-    if (tcrm && tcrm.variacion != null) ctx('t-tcrm-var-dia', tcrm.variacion, 'pct');
+    // El contexto de TCRM va mas abajo, junto a donde se declara la variable:
+    // aca arriba rompia con "Cannot access 'tcrm' before initialization" y
+    // cortaba el pintado de todo el resto del tablero.
 
     // IPC contexto interanual (si viene en el dato)
     const ipcAnual = d(datos, 'ipc_interanual');
@@ -150,9 +182,9 @@
           badl = d(datos,'badlar'),
           baib = d(datos,'call_baibar');
 
-    if (bm)   set('t-base-monetaria', millones(bm.valor)   + ' M$', bm.stale);
-    if (m2)   set('t-m2-privado',     millones(m2.valor)   + ' M$', m2.stale);
-    if (circ) set('t-circulacion',    millones(circ.valor) + ' M$', circ.stale);
+    if (bm)   set('t-base-monetaria', millonesPesos(bm.valor), bm);
+    if (m2)   set('t-m2-privado',     millonesPesos(m2.valor), m2);
+    if (circ) set('t-circulacion',    millonesPesos(circ.valor), circ);
 
     // BADLAR: aparece en el bloque BCRA (t-badlar) y en Macro (t-badlar-macro)
     if (badl) {
@@ -163,10 +195,10 @@
     if (baib) set('t-baibar', num(baib.valor, 2) + '%', baib.stale);
     if (ipc) { set('t-ipc-mensual', pct(ipc.valor), ipc.stale);
                if (ipc.periodo) set('t-ipc-mensual-fecha', ipc.periodo); }
-    if (emae) set('t-emae', num(emae.valor,1), emae.stale);
+    if (emae) set('t-emae', num(emae.valor,1), emae);
 
     const uva = d(datos,'uva');
-    if (uva) set('t-uva', num(uva.valor, 2), uva.stale);
+    if (uva) set('t-uva', num(uva.valor, 2), uva);
 
     // ---- SECTOR EXTERNO ----
     const exp = d(datos,'exportaciones'), imp = d(datos,'importaciones'),
@@ -180,7 +212,8 @@
         el.className = 'dato-valor dato-grande ' + (saldo.valor >= 0 ? 'sube' : 'baja');
       }
     }
-    if (tcrm) set('t-tcrm', num(tcrm.valor,2), tcrm.stale);
+    if (tcrm) set('t-tcrm', num(tcrm.valor,2), tcrm);
+    if (tcrm && tcrm.variacion != null) ctx('t-tcrm-var-dia', tcrm.variacion, 'pct');
 
     // ---- EMPLEO ----
     const des = d(datos,'desocupacion');

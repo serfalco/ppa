@@ -96,7 +96,11 @@
       "variacion": 1.12,
       "fuente": "argentinadatos.com",
       "frecuencia": "intradia",
-      "modo": "automatico"
+      "modo": "automatico",
+      "vigencia": {
+        "estado": "vigente",
+        "dias": 4
+      }
     },
     "banda": {
       "valor": {
@@ -118,7 +122,11 @@
       "fecha": "2026-08-06",
       "variacion": -2.45,
       "fuente": "BCRA API v4",
-      "frecuencia": "diaria"
+      "frecuencia": "diaria",
+      "vigencia": {
+        "estado": "vigente",
+        "dias": 5
+      }
     },
     "ipc_mensual": {
       "valor": 1.9,
@@ -128,7 +136,11 @@
       "fecha": "2026-06-01",
       "periodo": "2026-06",
       "fuente": "datos.gob.ar",
-      "frecuencia": "mensual"
+      "frecuencia": "mensual",
+      "vigencia": {
+        "estado": "vigente",
+        "dias": 71
+      }
     },
     "ipc_nucleo": {
       "valor": 1.6,
@@ -138,7 +150,11 @@
       "fecha": "2026-06-01",
       "periodo": "2026-06",
       "fuente": "datos.gob.ar",
-      "frecuencia": "mensual"
+      "frecuencia": "mensual",
+      "vigencia": {
+        "estado": "vigente",
+        "dias": 71
+      }
     },
     "emae": {
       "valor": 165.47,
@@ -148,7 +164,11 @@
       "fecha": "2026-05-01",
       "periodo": "2026-05",
       "fuente": "datos.gob.ar",
-      "frecuencia": "mensual"
+      "frecuencia": "mensual",
+      "vigencia": {
+        "estado": "demorado",
+        "dias": 102
+      }
     },
     "tcrm": {
       "valor": 1460.0,
@@ -158,7 +178,11 @@
       "fecha": "2026-06-17",
       "periodo": "2026-06",
       "fuente": "datos.gob.ar",
-      "frecuencia": "diaria"
+      "frecuencia": "diaria",
+      "vigencia": {
+        "estado": "desactualizado",
+        "dias": 55
+      }
     },
     "base_monetaria": {
       "valor": 46321735.0,
@@ -168,7 +192,11 @@
       "fecha": "2026-08-06",
       "variacion": -0.45,
       "fuente": "BCRA API v4",
-      "frecuencia": "diaria"
+      "frecuencia": "diaria",
+      "vigencia": {
+        "estado": "vigente",
+        "dias": 5
+      }
     },
     "m2_privado": {
       "valor": 26427884.0,
@@ -178,7 +206,11 @@
       "fecha": "2026-08-06",
       "variacion": -0.16,
       "fuente": "BCRA API v4",
-      "frecuencia": "diaria"
+      "frecuencia": "diaria",
+      "vigencia": {
+        "estado": "vigente",
+        "dias": 5
+      }
     },
     "call_baibar": {
       "valor": 2.0,
@@ -188,7 +220,11 @@
       "fecha": "2026-06-30",
       "variacion": -4.76,
       "fuente": "BCRA API v4",
-      "frecuencia": "diaria"
+      "frecuencia": "diaria",
+      "vigencia": {
+        "estado": "desactualizado",
+        "dias": 42
+      }
     },
     "circulacion": {
       "valor": 22.0,
@@ -198,7 +234,11 @@
       "fecha": "2026-08-07",
       "variacion": 0.0,
       "fuente": "BCRA API v4",
-      "frecuencia": "diaria"
+      "frecuencia": "diaria",
+      "vigencia": {
+        "estado": "vigente",
+        "dias": 4
+      }
     },
     "uva": {
       "valor": 22.0,
@@ -208,7 +248,11 @@
       "fecha": "2026-07-31",
       "variacion": -1.35,
       "fuente": "BCRA API v4",
-      "frecuencia": "diaria"
+      "frecuencia": "diaria",
+      "vigencia": {
+        "estado": "demorado",
+        "dias": 11
+      }
     }
   }
 }
