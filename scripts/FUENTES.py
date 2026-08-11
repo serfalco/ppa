@@ -22,7 +22,12 @@ FUENTES = [
     {"id":"ceso", "nombre":"CESO", "web":"https://ceso.com.ar/feed/", "categoria":"Análisis Consultoras", "tier":3, "activa":True},
     {"id":"cippec", "nombre":"CIPPEC", "web":"https://www.cippec.org/feed/", "categoria":"Análisis Consultoras", "tier":3, "activa":True},
     {"id":"econviews", "nombre":"Econviews", "web":"https://econviews.com/feed/", "categoria":"Análisis Consultoras", "tier":3, "activa":True},
-    {"id":"fundar", "nombre":"Fundar", "web":"https://fund.ar/feed/", "categoria":"Análisis Consultoras", "tier":3, "activa":True},
+    # Baja 11/08/2026: fund.ar declara /feed/ y /comments/feed/ y nada más;
+    # el primero responde 200 y viene sin una sola entrada. Las rutas
+    # alternativas (/publicaciones/, /blog/, /novedades/, /rss.xml) dan 404.
+    # No hay feed que leer, así que pedirlo cada edición es ruido en el panel
+    # de salud. Se deja la línea para reactivarla si el sitio vuelve a publicar.
+    {"id":"fundar", "nombre":"Fundar", "web":"https://fund.ar/feed/", "categoria":"Análisis Consultoras", "tier":3, "activa":False},
     {"id":"iaraf", "nombre":"IARAF", "web":"https://www.iaraf.org/index.php/informes-economicos/area-fiscal?format=feed&type=rss", "categoria":"Análisis Consultoras", "tier":3, "activa":True},
 
     # ===== AUTOMOTOR =====
@@ -43,7 +48,14 @@ FUENTES = [
     # ===== ENERGÍA Y MINERÍA =====
     {"id":"data_energia", "nombre":"Data Energía", "web":"https://dataenergia.ar/feed/", "categoria":"Energía y Minería", "tier":2, "activa":True},
     {"id":"econojournal", "nombre":"EconoJournal", "web":"https://econojournal.com.ar/feed/", "categoria":"Energía y Minería", "tier":1, "activa":True},
-    {"id":"noticiasnet_energia", "nombre":"NoticiasNet Energía", "web":"https://www.noticiasnet.com.ar/rss/energia-hoy/", "categoria":"Energía y Minería", "tier":2, "activa":True},
+    # Baja 11/08/2026: el índice de canales del sitio
+    # (https://www.noticiasnet.com.ar/rss) lista 12 feeds — política, locales,
+    # provincia, país, deportes, cultura, judiciales, entretenimiento, mundo,
+    # necrológicas, actualidad, tecnología — y ninguno es de energía: el canal
+    # se discontinuó. Los que quedan andan (actualidad trae 36 notas frescas)
+    # pero son de interés general de Río Negro, no de Energía y Minería:
+    # ponerlos acá con este nombre sería atribuir mal la fuente.
+    {"id":"noticiasnet_energia", "nombre":"NoticiasNet Energía", "web":"https://www.noticiasnet.com.ar/rss/energia-hoy/", "categoria":"Energía y Minería", "tier":2, "activa":False},
     {"id":"caem", "nombre":"CAEM", "web":"https://caem.com.ar/feed/", "categoria":"Energía y Minería", "tier":3, "activa":True},
 
     # ===== FINANZAS =====
@@ -65,6 +77,13 @@ FUENTES = [
 
     # ===== LABORAL =====
     {"id":"iprof_management", "nombre":"iProfesional Management", "web":"https://www.iprofesional.com/rss/management", "categoria":"Laboral", "tier":1, "activa":True},
+    # 11/08/2026: la categoría responde 200 y viene vacía. El feed general del
+    # sitio (https://aldia.microjuris.com/feed/) sí trae 25 notas, pero es todo
+    # Microjuris — derecho comercial, penal, familia — no solo laboral, y la
+    # sección de acá es Laboral. Queda como está hasta decidir si se cambia el
+    # rótulo a "Microjuris Al Día" o se descarta: el sitio empezó a devolver
+    # 429 al tercer pedido, así que confirmar si existe otra categoría laboral
+    # requiere volver más tarde y con menos pedidos.
     {"id":"microjuris_laboral", "nombre":"Microjuris Laboral", "web":"https://aldia.microjuris.com/category/derecho-laboral/feed/", "categoria":"Laboral", "tier":2, "activa":True},
     {"id":"oit_podcast", "nombre":"OIT Podcast", "web":"https://voices.ilo.org/rss/podcast/fow-es-es.xml", "categoria":"Laboral", "tier":3, "activa":True},
 
