@@ -19,6 +19,12 @@ un UA de navegador destraba.
 Cómo se corre (donde haya internet — tu compu o el workflow):
     python scripts/descubrir_feeds.py                 # todas las candidatas
     python scripts/descubrir_feeds.py bcra indec      # solo algunas
+    python scripts/descubrir_feeds.py fundar          # una fuente de FUENTES.py
+
+El último caso es el diagnóstico de una fuente caída: cualquier id del
+catálogo sirve como argumento, no hace falta agregarlo a CANDIDATAS. Prueba
+primero la URL configurada — así el log dice por qué dejó de andar — y
+después busca reemplazo.
 
 La salida incluye la línea lista para pegar en FUENTES.py.
 """
@@ -29,6 +35,8 @@ from concurrent.futures import ThreadPoolExecutor
 from urllib.parse import urljoin, urlparse
 
 import requests
+
+from FUENTES import FUENTES_POR_ID
 
 try:
     import feedparser
@@ -147,8 +155,15 @@ def evaluar(url):
             "muestra": titulo}
 
 
-def candidatos_de(home):
-    """Feeds a probar: los que el sitio declara, después las rutas típicas."""
+def candidatos_de(home, actual=None):
+    """Feeds a probar: el que ya está configurado (si lo hay), después los
+    que el sitio declara, después las rutas típicas.
+
+    El configurado va primero a propósito: cuando la fuente ya existe en el
+    catálogo, lo primero que hay que saber es por qué la URL que tenemos
+    dejó de servir — 404, bloqueo o XML vacío. Eso sale en el log aunque
+    después se encuentre un reemplazo.
+    """
     estado, cuerpo = bajar(home)
     declarados = []
     if estado and estado < 400:
@@ -159,11 +174,33 @@ def candidatos_de(home):
     porRuta += [raiz + r for r in RUTAS]
 
     vistos, orden = set(), []
-    for u in declarados + porRuta:
+    for u in ([actual] if actual else []) + declarados + porRuta:
         if u not in vistos:
             vistos.add(u)
             orden.append(u)
     return declarados, orden
+
+
+def desde_catalogo(fid):
+    """Arma una candidata a partir de una fuente que ya está en FUENTES.py.
+
+    Sirve para diagnosticar las fuentes que el fetcher reporta caídas: no
+    hay que agregarlas a mano a CANDIDATAS, alcanza con pasar su id. La
+    búsqueda arranca desde la raíz del sitio, que es donde vive el
+    autodiscovery, y prueba primero la URL que hoy tiene el catálogo.
+    """
+    f = FUENTES_POR_ID.get(fid)
+    if not f:
+        return None
+    partes = urlparse(f["web"])
+    return {
+        "id": fid,
+        "nombre": f["nombre"],
+        "home": f"{partes.scheme}://{partes.netloc}",
+        "categoria": f["categoria"],
+        "tier": f["tier"],
+        "actual": f["web"],
+    }
 
 
 def main():
@@ -173,24 +210,45 @@ def main():
     # resultado real en vez de un filtro mal escrito.
     if "todas" in filtro:
         filtro = set()
-    objetivo = [c for c in CANDIDATAS if not filtro or c[0] in filtro]
+    objetivo = [
+        {"id": c[0], "nombre": c[1], "home": c[2], "categoria": c[3],
+         "tier": c[4], "actual": None}
+        for c in CANDIDATAS if not filtro or c[0] in filtro
+    ]
+
+    # Un id que no está entre las institucionales puede ser una fuente que ya
+    # vive en FUENTES.py y el fetcher reporta caída. Ese es el caso de uso
+    # frecuente: el registro de salud dice "fundar, microjuris_laboral,
+    # noticiasnet_energia" y uno quiere saber qué les pasó sin editar nada.
+    ya_estan = {c["id"] for c in objetivo}
+    for fid in sorted(filtro - ya_estan):
+        del_catalogo = desde_catalogo(fid)
+        if del_catalogo:
+            objetivo.append(del_catalogo)
 
     if not objetivo:
         conocidos = ", ".join(c[0] for c in CANDIDATAS)
         print(f"Ningún id coincide con {sorted(filtro)}.")
-        print(f"Ids disponibles: {conocidos}")
-        print("Usá 'todas' para probarlas todas.")
+        print(f"Institucionales: {conocidos}")
+        print("También sirve cualquier id de FUENTES.py "
+              "(ej: fundar, microjuris_laboral).")
+        print("Usá 'todas' para probar todas las institucionales.")
         sys.exit(1)
 
-    print(f"Probando {len(objetivo)} instituciones "
+    plural = "fuente" if len(objetivo) == 1 else "fuentes"
+    print(f"Probando {len(objetivo)} {plural} "
           f"({PARALELAS} en paralelo, {TIMEOUT}s por pedido)…\n")
 
     def procesar(candidata):
         """Busca el feed de UNA institución. Devuelve (líneas, hallazgo)."""
-        fid, nombre, home, categoria, tier = candidata
+        fid, nombre = candidata["id"], candidata["nombre"]
+        home, actual = candidata["home"], candidata["actual"]
+        categoria, tier = candidata["categoria"], candidata["tier"]
         log = [f"=== {nombre} ({fid}) — {home}"]
+        if actual:
+            log.append(f"    en catálogo: {actual}")
 
-        declarados, candidatos = candidatos_de(home)
+        declarados, candidatos = candidatos_de(home, actual)
         log.append(f"    el sitio declara {len(declarados)} feed(s)"
                    if declarados else
                    "    no declara feed; pruebo rutas habituales")
@@ -199,6 +257,9 @@ def main():
             r = evaluar(url)
             if r["ok"]:
                 log.append(f"    ✓ {url}")
+                if url == actual:
+                    log.append("      es la URL que ya tiene el catálogo: "
+                               "la caída fue pasajera, no hay que cambiar nada")
                 log.append(f"      {r['entradas']} entradas · última: {r['ultima']}")
                 log.append(f"      ej: {r['muestra']}")
                 return log, (fid, nombre, r["url"], categoria, tier)
@@ -215,7 +276,7 @@ def main():
             if hallazgo:
                 hallazgos.append(hallazgo)
             else:
-                sin_suerte.append((candidata[0], candidata[1]))
+                sin_suerte.append((candidata["id"], candidata["nombre"]))
 
     print("\n" + "=" * 70)
     print(f"RESULTADO: {len(hallazgos)} con feed vivo · {len(sin_suerte)} sin encontrar")

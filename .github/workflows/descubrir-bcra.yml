@@ -22,7 +22,7 @@ on:
         type: choice
         options: [bcra, feeds]
       filtros:
-        description: 'BCRA: palabras a buscar, o "--detalle 47 78" para ver valores. FEEDS: ids a probar, vacío = todas.'
+        description: 'BCRA: palabras a buscar, o "--detalle 47 78" para ver valores. FEEDS: ids a probar (institucionales o de FUENTES.py, ej "fundar"), vacío = todas las institucionales.'
         required: false
         default: 'mulc compra divisas'
         type: string
@@ -89,9 +89,9 @@ jobs:
             if [ "$HERRAMIENTA" = "feeds" ]; then
               echo "### Qué hacer con esto"
               echo
-              echo "1. Pegar las líneas sugeridas en \`scripts/FUENTES.py\`."
-              echo "2. Sumar los ids a \`FUENTES_INSTITUCIONALES\` en \`scripts/generador_documentos.py\`."
-              echo "3. La próxima corrida del fetcher los levanta y Documentos empieza a llenarse."
+              echo "1. Pegar las líneas sugeridas en \`scripts/FUENTES.py\` — si la fuente ya estaba, es reemplazo de su \`web\`."
+              echo "2. Si es institucional y alimenta Documentos, sumar el id a \`FUENTES_INSTITUCIONALES\` en \`scripts/generador_documentos.py\`."
+              echo "3. La próxima corrida del fetcher las levanta."
             else
               echo "### Si encontraste el ID del MULC"
               echo
