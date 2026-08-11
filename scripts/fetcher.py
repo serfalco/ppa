@@ -57,6 +57,21 @@ def cargar_salud():
         return {}
 
 
+def podar_salud(registro, fuentes):
+    """Saca del registro las fuentes que ya no están en el catálogo.
+
+    Sin esto el archivo acumula para siempre las fuentes que se dieron de
+    baja de FUENTES.py: el panel las sigue mostrando como rotas y el
+    conteo de salud queda inflado con fuentes que ya nadie lee.
+    Devuelve los ids descartados.
+    """
+    vigentes = {f["id"] for f in fuentes}
+    huerfanas = [fid for fid in registro if fid not in vigentes]
+    for fid in huerfanas:
+        del registro[fid]
+    return huerfanas
+
+
 def guardar_salud(registro):
     with open(JSON_SALUD, "w", encoding="utf-8") as f:
         json.dump({
@@ -213,6 +228,41 @@ def _fecha_iso(entry):
     return datetime.now(timezone.utc).isoformat()
 
 
+def _diagnostico_sin_entries(feed):
+    """Explica por qué un feed vino sin entradas.
+
+    feedparser no levanta excepción ante un 404 o un bloqueo: devuelve un
+    objeto sin entries igual que si el feed estuviera legítimamente vacío.
+    Sin distinguirlos, todo termina como "Feed vacío o malformado" y no hay
+    forma de saber si la URL murió o si simplemente no hay novedades.
+
+    Devuelve (motivo, resultado) donde resultado es "error" o "vacio".
+    """
+    estado = getattr(feed, "status", None)
+    if estado and estado >= 400:
+        etiquetas = {
+            403: "bloqueado (403) — el sitio rechaza el lector",
+            404: "no existe (404) — la URL del feed cambió",
+            410: "dado de baja (410)",
+            429: "demasiados pedidos (429)",
+        }
+        return f"HTTP {estado}: {etiquetas.get(estado, 'respuesta de error')}", "error"
+
+    # Redirección permanente a otra URL: el feed sigue vivo pero se mudó.
+    destino = getattr(feed, "href", None)
+    if estado == 301 and destino:
+        return f"movido permanentemente a {destino[:80]}", "error"
+
+    # bozo=1 con excepción: el cuerpo no era XML válido (típico: llegó HTML,
+    # una página de error o un muro anti-bot en lugar del feed).
+    if getattr(feed, "bozo", 0):
+        exc = getattr(feed, "bozo_exception", None)
+        detalle = str(exc)[:80] if exc else "contenido no reconocido"
+        return f"XML inválido: {detalle}", "error"
+
+    return "feed válido pero sin entradas", "vacio"
+
+
 def bajar_fuente(fuente):
     """Baja una fuente respetando cache.
     Devuelve (notas, resultado, error_msg) donde resultado es
@@ -241,9 +291,14 @@ def bajar_fuente(fuente):
         return [], "error", str(e)[:120]
 
     if not feed.entries:
-        print(f"   ✗ {fid}: sin entries")
-        _guardar_cache(fid, [])
-        return [], "vacio", "Feed vacío o malformado"
+        motivo, resultado = _diagnostico_sin_entries(feed)
+        print(f"   ✗ {fid}: {motivo}")
+        # Un feed que respondió bien pero vino vacío se cachea (no hay nada
+        # que traer). Uno que falló —404, bloqueo, XML roto— no: cachear el
+        # vacío taparía el problema hasta que expire el cache.
+        if resultado == "vacio":
+            _guardar_cache(fid, [])
+        return [], resultado, motivo
 
     notas = []
     for entry in feed.entries[:MAX_POR_FUENTE * 2]:  # tomar más para filtrar
@@ -320,6 +375,11 @@ def main():
             "total":       len(todas_notas),
             "notas":       todas_notas
         }, f, ensure_ascii=False, indent=2)
+
+    huerfanas = podar_salud(salud, FUENTES)
+    if huerfanas:
+        print(f"[Fetcher] Podadas {len(huerfanas)} fuentes fuera del catálogo: "
+              f"{', '.join(huerfanas[:10])}" + (" …" if len(huerfanas) > 10 else ""))
 
     guardar_salud(salud)
     degradadas = [fid for fid, s in salud.items()
