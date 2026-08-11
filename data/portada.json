@@ -1,38 +1,450 @@
 {
-  "generado_en": "2026-08-10T20:59:06.956281+00:00",
+  "generado_en": "2026-08-11T08:02:18.979440+00:00",
   "destacados": [
     {
-      "id": "39a64e77ffc6",
-      "titulo": "Bitcoin resiste pese al freno en el Senado de EE. UU. y observa la zona que puede destrabar todo",
-      "link": "https://www.iproup.com/economia-digital/70577-bitcoin-resiste-pese-al-freno-en-el-senado-de-ee-uu",
-      "descripcion": "Carolina Gama, country manager de Bitget en la Argentina, analiza la marcha de la criptomoneda más importante en el arranque de la semana",
-      "fecha_publicacion": "2026-08-10T19:55:00+00:00",
+      "id": "c206524554f2",
+      "titulo": "El plan del Gobierno para llevar la tecnología de Bitcoin a la Bolsa y ampliar el crédito",
+      "link": "https://www.iproup.com/economia-digital/70340-el-gobierno-lleva-tecnologia-cripto-a-la-bolsa-para-ampliar-el-credito",
+      "descripcion": "La adopción de activos digitales empieza a superar la etapa dominada por el trading. La próxima fase es incursionar en el mercado financiero",
+      "fecha_publicacion": "2026-08-11T09:07:00+00:00",
       "fuente_id": "iproup_eco",
       "fuente_nombre": "iProUP Economía Digital",
       "categoria": "Mercados"
     },
     {
-      "id": "b5378d410d66",
-      "titulo": "El riesgo país subió y alcanzó el valor más alto en dos meses",
-      "link": "https://www.lanacion.com.ar/economia/dolar/el-riesgo-pais-subio-y-alcanzo-el-valor-mas-alto-en-dos-meses-nid10082026/",
-      "descripcion": "El indicador elaborado por JP Morgan avanzó hasta los 463 puntos; las acciones argentinas operaron en alza y el dólar mayorista se mantuvo cerca de los $1500",
-      "fecha_publicacion": "2026-08-10T20:46:18+00:00",
-      "fuente_id": "lanacion_eco",
-      "fuente_nombre": "La Nación Economía",
+      "id": "d9e9407a81f4",
+      "titulo": "Por la morosidad récord, la IA gana poder para otorgar créditos y una palabra define todo",
+      "link": "https://www.iproup.com/finanzas/70575-inteligencia-artificial-credito-bancario-permite-acceder-prestamos-mora-record-agosto-2026",
+      "descripcion": "La inteligencia artificial agiliza la adaptación de parámetros crediticios, permitiendo respuestas inmediatas ante el aumento de la mora en el sector",
+      "fecha_publicacion": "2026-08-11T09:15:00+00:00",
+      "fuente_id": "iproup_fintech",
+      "fuente_nombre": "iProUP Fintech",
       "categoria": "Finanzas"
     },
     {
-      "id": "73331dee77d9",
-      "titulo": "Airbus envía expertos a India tras pérdida de altitud en vuelo",
-      "link": "https://es.investing.com/news/world-news/airbus-envia-expertos-a-india-tras-perdida-de-altitud-en-vuelo-93CH-3789077",
+      "id": "46d6db6d1ce9",
+      "titulo": "El superávit comercial de Holanda se amplía a 10.432 millones de euros en junio",
+      "link": "https://es.investing.com/news/economic-indicators/el-superavit-comercial-de-holanda-se-amplia-a-10432-millones-de-euros-en-junio-93CH-3789723",
       "descripcion": "",
-      "fecha_publicacion": "2026-08-10T17:21:55+00:00",
-      "fuente_id": "investing_intl",
-      "fuente_nombre": "Investing Internacional",
+      "fecha_publicacion": "2026-08-11T07:47:33+00:00",
+      "fuente_id": "investing_intl2",
+      "fuente_nombre": "Investing Mundo",
       "categoria": "Internacional"
     }
   ],
   "secciones": {
+    "Finanzas": [
+      {
+        "id": "d9e9407a81f4",
+        "titulo": "Por la morosidad récord, la IA gana poder para otorgar créditos y una palabra define todo",
+        "link": "https://www.iproup.com/finanzas/70575-inteligencia-artificial-credito-bancario-permite-acceder-prestamos-mora-record-agosto-2026",
+        "descripcion": "La inteligencia artificial agiliza la adaptación de parámetros crediticios, permitiendo respuestas inmediatas ante el aumento de la mora en el sector",
+        "fecha_publicacion": "2026-08-11T09:15:00+00:00",
+        "fuente_id": "iproup_fintech",
+        "fuente_nombre": "iProUP Fintech",
+        "categoria": "Finanzas"
+      },
+      {
+        "id": "9bca45eafa88",
+        "titulo": "Su padre plantó manzanos y ahora los arranca porque los números no cierran: producirá otra fruta que se exporta a China",
+        "link": "https://www.lanacion.com.ar/economia/campo/su-padre-planto-manzanos-y-ahora-los-arranca-porque-los-numeros-no-cierran-producira-otra-fruta-que-nid11082026/",
+        "descripcion": "En Mendoza, Claudio Giusti tomó esa decisión luego de años de esperar una mejora en una actividad que no cubre los costos; ya sacó casi dos hectáreas y plantará ciruelos",
+        "fecha_publicacion": "2026-08-11T06:00:00+00:00",
+        "fuente_id": "lanacion_eco",
+        "fuente_nombre": "La Nación Economía",
+        "categoria": "Finanzas"
+      },
+      {
+        "id": "32b171892903",
+        "titulo": "Real blue: a cuánto opera este martes 11 de agosto",
+        "link": "https://www.ambito.com/finanzas/real-blue-cuanto-opera-este-martes-11-agosto-n6309251",
+        "descripcion": "La cotización minuto a minuto para la compra y venta de la divisa brasileña en nuestro país.",
+        "fecha_publicacion": "2026-08-11T03:00:00+00:00",
+        "fuente_id": "ambito_fin",
+        "fuente_nombre": "Ámbito Finanzas",
+        "categoria": "Finanzas"
+      },
+      {
+        "id": "df6c8a19d915",
+        "titulo": "Anses: cuándo cobro la jubilación de agosto si mi DNI termina en 5",
+        "link": "https://www.lanacion.com.ar/economia/anses-cuando-cobro-la-jubilacion-de-agosto-si-mi-dni-termina-en-5-nid10082026/",
+        "descripcion": "El organismo previsional paga las jubilaciones a los DNI terminados en 5 en fechas diferentes, según cobren el haber mínimo, superior o una pensión",
+        "fecha_publicacion": "2026-08-11T01:58:00+00:00",
+        "fuente_id": "lanacion_eco",
+        "fuente_nombre": "La Nación Economía",
+        "categoria": "Finanzas"
+      },
+      {
+        "id": "1c70535c0eec",
+        "titulo": "El sucesor de Warren Buffett redobla la apuesta por el sector inmobiliario",
+        "link": "https://www.ambito.com/finanzas/el-sucesor-warren-buffett-redobla-la-apuesta-el-sector-inmobiliario-n6308324",
+        "descripcion": "La empresa de Warren Buffett considera que la vivienda continúa siendo un negocio con gran potencial a largo plazo.",
+        "fecha_publicacion": "2026-08-11T00:55:00+00:00",
+        "fuente_id": "ambito_fin",
+        "fuente_nombre": "Ámbito Finanzas",
+        "categoria": "Finanzas"
+      },
+      {
+        "id": "c6ea0815bee9",
+        "titulo": "Granja Tres Arroyos despidió a 255 empleados",
+        "link": "https://www.lanacion.com.ar/economia/campo/la-avicola-granja-tres-arroyos-despidio-a-255-empleados-nid10082026/",
+        "descripcion": "Se trata de operarios de la planta avícola de Concepción del Uruguay, Entre Ríos; la firma atribuyó la decisión a una caída de las exportaciones y el aumento de los costos",
+        "fecha_publicacion": "2026-08-11T00:22:00+00:00",
+        "fuente_id": "lanacion_eco",
+        "fuente_nombre": "La Nación Economía",
+        "categoria": "Finanzas"
+      },
+      {
+        "id": "d8765916d669",
+        "titulo": "Wall Street frenó su rally por la tensión con Irán y ahora todas las miradas apuntan a la inflación de EEUU",
+        "link": "https://www.ambito.com/finanzas/wall-street-comienza-la-semana-optimismo-avances-negociaciones-medio-oriente-n6308904",
+        "descripcion": "Los principales índices de Wall Street cerraron con leves bajas, presionados por la renovada tensión entre Irán y EEUU y el repunte del petróleo. Los inversores aguardan ahora un dato clave que podría condicionar los próximos pasos de la Reserva Federal.",
+        "fecha_publicacion": "2026-08-10T23:48:00+00:00",
+        "fuente_id": "ambito_fin",
+        "fuente_nombre": "Ámbito Finanzas",
+        "categoria": "Finanzas"
+      },
+      {
+        "id": "8351413128f6",
+        "titulo": "El debate que empezó como chiste de Bausili y puede terminar con un juicio entre Caputo y Pagano",
+        "link": "https://www.iprofesional.com/finanzas/461992-el-chiste-de-bausili-que-puede-terminar-en-juicio-entre-luis-caputo-y-marcela-pagano",
+        "descripcion": "El destino de $3,7 billones que absorbió el Tesoro en la última licitación y que \"se perdieron\" dio lugar a un debate tragicómico sobre el dinero público",
+        "fecha_publicacion": "2026-08-10T23:25:00+00:00",
+        "fuente_id": "iprof_economia",
+        "fuente_nombre": "iProfesional Economía",
+        "categoria": "Finanzas"
+      }
+    ],
+    "Mercados": [
+      {
+        "id": "c206524554f2",
+        "titulo": "El plan del Gobierno para llevar la tecnología de Bitcoin a la Bolsa y ampliar el crédito",
+        "link": "https://www.iproup.com/economia-digital/70340-el-gobierno-lleva-tecnologia-cripto-a-la-bolsa-para-ampliar-el-credito",
+        "descripcion": "La adopción de activos digitales empieza a superar la etapa dominada por el trading. La próxima fase es incursionar en el mercado financiero",
+        "fecha_publicacion": "2026-08-11T09:07:00+00:00",
+        "fuente_id": "iproup_eco",
+        "fuente_nombre": "iProUP Economía Digital",
+        "categoria": "Mercados"
+      },
+      {
+        "id": "72e0c45106df",
+        "titulo": "El Banco de la Reserva de Australia mantiene los tipos en el 4,35% y advierte de posibles subidas",
+        "link": "https://es.investing.com/news/economy-news/el-banco-de-la-reserva-de-australia-mantiene-los-tipos-en-el-435-y-advierte-de-posibles-subidas-3789613",
+        "descripcion": "",
+        "fecha_publicacion": "2026-08-11T04:43:27+00:00",
+        "fuente_id": "investing_economia",
+        "fuente_nombre": "Investing Economía",
+        "categoria": "Mercados"
+      },
+      {
+        "id": "6b007507469b",
+        "titulo": "Cuáles son los diferenciales de Alcancías, la nueva propuesta de ahorro por objetivos de Belo",
+        "link": "https://www.iproup.com/economia-digital/70586-como-es-alcancias-la-nueva-propuesta-de-ahorro-de-belo",
+        "descripcion": "La nueva funcionalidad permite ahorrar por objetivos vía depósitos automáticos y rendimientos variables sobre distintas monedas digitales",
+        "fecha_publicacion": "2026-08-10T23:20:00+00:00",
+        "fuente_id": "iproup_eco",
+        "fuente_nombre": "iProUP Economía Digital",
+        "categoria": "Mercados"
+      },
+      {
+        "id": "d97c4e3113a1",
+        "titulo": "Cuál es la pelea millonaria que Mercado Libre enfrenta en Brasil",
+        "link": "https://www.iproup.com/economia-digital/70583-mercado-libre-enfrenta-una-millonaria-pelea-en-brasil",
+        "descripcion": "La plataforma pudo aprovechar el regimen de Economía del Conocimiento en Argentina y obtener beneficios fiscales por u$s42 millones",
+        "fecha_publicacion": "2026-08-10T22:30:00+00:00",
+        "fuente_id": "iproup_eco",
+        "fuente_nombre": "iProUP Economía Digital",
+        "categoria": "Mercados"
+      },
+      {
+        "id": "68f4be7a8cc8",
+        "titulo": "Trump dice que habló con Warsh, de la Fed, la semana pasada",
+        "link": "https://es.investing.com/news/economy-news/trump-dice-que-hablo-con-warsh-de-la-fed-la-semana-pasada-93CH-3789143",
+        "descripcion": "",
+        "fecha_publicacion": "2026-08-10T19:52:51+00:00",
+        "fuente_id": "investing_economia",
+        "fuente_nombre": "Investing Economía",
+        "categoria": "Mercados"
+      },
+      {
+        "id": "6a8915ccdf79",
+        "titulo": "Trump afirma que la Marina de EE.UU. controla el estrecho de Ormuz",
+        "link": "https://es.investing.com/news/economy-news/trump-afirma-que-la-marina-de-eeuu-controla-el-estrecho-de-ormuz-93CH-3789142",
+        "descripcion": "",
+        "fecha_publicacion": "2026-08-10T19:51:29+00:00",
+        "fuente_id": "investing_economia",
+        "fuente_nombre": "Investing Economía",
+        "categoria": "Mercados"
+      }
+    ],
+    "Internacional": [
+      {
+        "id": "46d6db6d1ce9",
+        "titulo": "El superávit comercial de Holanda se amplía a 10.432 millones de euros en junio",
+        "link": "https://es.investing.com/news/economic-indicators/el-superavit-comercial-de-holanda-se-amplia-a-10432-millones-de-euros-en-junio-93CH-3789723",
+        "descripcion": "",
+        "fecha_publicacion": "2026-08-11T07:47:33+00:00",
+        "fuente_id": "investing_intl2",
+        "fuente_nombre": "Investing Mundo",
+        "categoria": "Internacional"
+      },
+      {
+        "id": "d280dba0cf53",
+        "titulo": "Singapur eleva su previsión de PIB para 2026 tras superar expectativas en el segundo trimestre",
+        "link": "https://es.investing.com/news/economic-indicators/singapur-eleva-su-prevision-de-pib-para-2026-tras-superar-expectativas-en-el-segundo-trimestre-3789536",
+        "descripcion": "",
+        "fecha_publicacion": "2026-08-11T00:29:35+00:00",
+        "fuente_id": "investing_intl2",
+        "fuente_nombre": "Investing Mundo",
+        "categoria": "Internacional"
+      },
+      {
+        "id": "73331dee77d9",
+        "titulo": "Airbus envía expertos a India tras pérdida de altitud en vuelo",
+        "link": "https://es.investing.com/news/world-news/airbus-envia-expertos-a-india-tras-perdida-de-altitud-en-vuelo-93CH-3789077",
+        "descripcion": "",
+        "fecha_publicacion": "2026-08-10T17:21:55+00:00",
+        "fuente_id": "investing_intl",
+        "fuente_nombre": "Investing Internacional",
+        "categoria": "Internacional"
+      },
+      {
+        "id": "d06c25719e16",
+        "titulo": "La sequía en Inglaterra ya afecta al 71% del país, según el Gobierno",
+        "link": "https://es.investing.com/news/world-news/la-sequia-en-inglaterra-ya-afecta-al-71-del-pais-segun-el-gobierno-93CH-3789041",
+        "descripcion": "",
+        "fecha_publicacion": "2026-08-10T16:36:53+00:00",
+        "fuente_id": "investing_intl",
+        "fuente_nombre": "Investing Internacional",
+        "categoria": "Internacional"
+      },
+      {
+        "id": "747a1442d42b",
+        "titulo": "La producción industrial griega sube un 1,1% en junio",
+        "link": "https://es.investing.com/news/economic-indicators/la-produccion-industrial-griega-sube-un-11-en-junio-93CH-3788024",
+        "descripcion": "",
+        "fecha_publicacion": "2026-08-10T11:24:52+00:00",
+        "fuente_id": "investing_intl2",
+        "fuente_nombre": "Investing Mundo",
+        "categoria": "Internacional"
+      },
+      {
+        "id": "e8276a171e63",
+        "titulo": "Fitch confirma la calificación ’AA-’ de Kuwait por sus sólidos activos",
+        "link": "https://es.investing.com/news/world-news/fitch-confirma-la-calificacion-aa-de-kuwait-por-sus-solidos-activos-93CH-3786803",
+        "descripcion": "",
+        "fecha_publicacion": "2026-08-07T21:16:44+00:00",
+        "fuente_id": "investing_intl",
+        "fuente_nombre": "Investing Internacional",
+        "categoria": "Internacional"
+      }
+    ],
+    "Energía y Minería": [
+      {
+        "id": "79f2a3a5bf02",
+        "titulo": "YPF registró un EBITDA récord de US$ 2.804 millones en el segundo trimestre",
+        "link": "https://econojournal.com.ar/oilgas/ypf-registro-un-ebitda-record-de-us-2-804-millones-en-el-segundo-trimestre/",
+        "descripcion": "YPF alcanzó un EBITDA ajustado de US$ 2.804 millones en el segundo trimestre de 2026, lo que representó un incremento del 76% respecto del trimestre anterior y un marcado crecimiento del 149% en la comparación interanual. Esa cifra es ña más alta de toda su historia. Además, el indicador reflejó un margen del 43% sobre [&#8230;]",
+        "fecha_publicacion": "2026-08-11T01:53:11+00:00",
+        "fuente_id": "econojournal",
+        "fuente_nombre": "EconoJournal",
+        "categoria": "Energía y Minería"
+      },
+      {
+        "id": "39c042801795",
+        "titulo": "Cuál es el cambio regulatorio aprobado en 2024 que permitió que Edenor pueda comprar Metrogas",
+        "link": "https://econojournal.com.ar/energia/cambio-estatuto-edenor-metrogas/",
+        "descripcion": "“Eventualmente, el Enrege (Ente Regulador de Gas y Electricidad) tendrá que analizar si es compatible que Edenor controle Metrogas, pero no veo una inconsistencia manifiesta”, explicó un experto legal que pasó por la Secretaría de Energía al analizar si la mayor distribuidora de energía eléctrica del país está habilitada, según la normativa vigente, a quedarse [&#8230;]",
+        "fecha_publicacion": "2026-08-11T01:47:23+00:00",
+        "fuente_id": "econojournal",
+        "fuente_nombre": "EconoJournal",
+        "categoria": "Energía y Minería"
+      },
+      {
+        "id": "ddcfb5f8d4e3",
+        "titulo": "YPF le vende Metrogas a Edenor, de los empresarios Manzano, Vila y Filiberti, por US$ 780 millones",
+        "link": "https://econojournal.com.ar/energia/ypf-le-vende-metrogas-a-edenor/",
+        "descripcion": "YPF informó este lunes que aceptó la oferta presentada por la distribuidora eléctrica Edenor para adquirir la totalidad de su participación accionaria en Metrogas y su comercializadora MetroEnergía, por un monto de US$ 780 millones. Edenor es controlada mayoritariamente por el grupo Edelcos (Empresa de Energía Cono Sur S.A.), liderado por los empresarios José Luis [&#8230;]",
+        "fecha_publicacion": "2026-08-10T23:00:00+00:00",
+        "fuente_id": "econojournal",
+        "fuente_nombre": "EconoJournal",
+        "categoria": "Energía y Minería"
+      },
+      {
+        "id": "a323414bd764",
+        "titulo": "Expansión en Vaca Muerta: Phoenix Global Resources presentará un proyecto de US$ 6.000 millones bajo el RIGI para triplicar su producción",
+        "link": "https://dataenergia.ar/petroleo-y-combustibles/expansion-en-vaca-muerta-phoenix-global-resources-presentara-un-proyecto-de-us-6-000-millones-bajo-el-rigi-para-triplicar-su-produccion-20268101560",
+        "descripcion": "Phoenix Global Resources formalizará la presentación de un plan por US$ 6.000 millones bajo el RIGI con la meta de llevar su producción no convencional en Vaca Muerta de 25.000 a 60.000 barriles diarios en los próximos dos años.",
+        "fecha_publicacion": "2026-08-10T18:06:00+00:00",
+        "fuente_id": "data_energia",
+        "fuente_nombre": "Data Energía",
+        "categoria": "Energía y Minería"
+      },
+      {
+        "id": "317665b274e5",
+        "titulo": "Vaca Muerta: Río Negro proyecta la construcción de la \"Ruta de las Arenas\" para transportar el insumo clave de la cuenca neuquina",
+        "link": "https://dataenergia.ar/petroleo-y-combustibles/vaca-muerta-rio-negro-proyecta-la-construccion-de-la-ruta-de-las-arenas-para-transportar-el-insumo-clave-de-la-cuenca-neuquina-202681014430",
+        "descripcion": "El gobierno de Río Negro planifica la ejecución de la «Ruta de las Arenas», un corredor vial exclusivo entre General Roca y el norte de Cinco Saltos diseñado para absorber el incremento en el transporte de arenas de fractura —que alcanzará hasta 8 millones de toneladas hacia 2027— sin saturar los ejidos urbanos.",
+        "fecha_publicacion": "2026-08-10T17:43:00+00:00",
+        "fuente_id": "data_energia",
+        "fuente_nombre": "Data Energía",
+        "categoria": "Energía y Minería"
+      },
+      {
+        "id": "e65df2f935b1",
+        "titulo": "Inversión en Vaca Muerta: La estadounidense Helmerich & Payne sumará cinco nuevos equipos de perforación en la Argentina",
+        "link": "https://dataenergia.ar/petroleo-y-combustibles/inversion-en-vaca-muerta-la-estadounidense-helmerich-payne-sumara-cinco-nuevos-equipos-de-perforacion-en-la-argentina-202681014210",
+        "descripcion": "La proveedora de servicios petroleros Helmerich & Payne confirmó la incorporación de cinco equipos de perforación para la cuenca neuquina, de los cuales tres serán importados desde Estados Unidos antes de fin de año para abastecer la demanda no convencional en Vaca Muerta.",
+        "fecha_publicacion": "2026-08-10T17:21:00+00:00",
+        "fuente_id": "data_energia",
+        "fuente_nombre": "Data Energía",
+        "categoria": "Energía y Minería"
+      }
+    ],
+    "Laboral": [
+      {
+        "id": "fc3f0aeb472c",
+        "titulo": "La búsqueda laboral de la ONU en Argentina para un alto cargo en Buenos Aires",
+        "link": "https://www.iprofesional.com/management/461996-la-busqueda-laboral-de-la-onu-en-argentina-para-ampliar-su-oficina-en-buenos-aires",
+        "descripcion": "La entidad mundial abrió una posición y hasta la semana que viene recibirá postulaciones de profesionales argentinos que quieran tomar el desafío",
+        "fecha_publicacion": "2026-08-10T23:15:00+00:00",
+        "fuente_id": "iprof_management",
+        "fuente_nombre": "iProfesional Management",
+        "categoria": "Laboral"
+      },
+      {
+        "id": "0db60f2fb0e6",
+        "titulo": "La empresa Barbieri lanza una academia de Steel Frame para construcción en seco",
+        "link": "https://www.iprofesional.com/management/461615-empresa-barbieri-lanza-academia-de-steel-frame-para-formar-especialistas-construccion-en-seco",
+        "descripcion": "Con el desempleo en 7,8%, Barbieri apuesta por la capacitación con Academia consulsteel para formar profesionales en construcción en seco",
+        "fecha_publicacion": "2026-08-10T20:00:00+00:00",
+        "fuente_id": "iprof_management",
+        "fuente_nombre": "iProfesional Management",
+        "categoria": "Laboral"
+      },
+      {
+        "id": "40d186dc8ac5",
+        "titulo": "El Gobierno dará un bono de $50.000 en agosto a militares y fuerzas de seguridad",
+        "link": "https://www.iprofesional.com/management/461960-el-gobierno-dara-un-bono-de-50-000-en-agosto-a-militares-y-fuerzas-de-seguridad",
+        "descripcion": "El pago será por única vez y alcanza a distintas categorías de personal de Defensa y Seguridad, según lo establecido por dos decretos",
+        "fecha_publicacion": "2026-08-10T17:45:00+00:00",
+        "fuente_id": "iprof_management",
+        "fuente_nombre": "iProfesional Management",
+        "categoria": "Laboral"
+      },
+      {
+        "id": "07f564b6ffd7",
+        "titulo": "Riesgos psicosociales en el trabajo: la amenaza invisible para la salud de los trabajadores",
+        "link": "https://voices.ilo.org/es-es/podcast/riesgos-psicosociales-en-el-trabajo-la-amenaza-invisible-para-la-salud-de-los-trabajadores",
+        "descripcion": "En este episodio del pódcast “El futuro del trabajo de la OIT”, Dafne Papandrea y Lucía Risueño Navarro explican cómo los riesgos psicosociales —como las largas jornadas laborales, la inseguridad en el empleo y el acoso en el lugar de trabajo— afectan a la salud de los trabajadores, y qué medidas pueden adoptarse para crear entornos laborales más saludables en todo el mundo.",
+        "fecha_publicacion": "2026-04-28T00:00:00+00:00",
+        "fuente_id": "oit_podcast",
+        "fuente_nombre": "OIT Podcast",
+        "categoria": "Laboral"
+      },
+      {
+        "id": "ef1638f33032",
+        "titulo": "La inteligencia artificial generativa y las desigualdades de género en el trabajo",
+        "link": "https://voices.ilo.org/es-es/podcast/la-inteligencia-artificial-generativa-y-las-desigualdades-de-genero-en-el-trabajo",
+        "descripcion": "En este episodio del pódcast de la Organización Internacional del Trabajo, Janine Berg, Economista senior en la OIT, presenta un nuevo informe sobre el impacto de la inteligencia artificial generativa en el mundo del trabajo. La experta explica por qué las mujeres están más expuestas que los hombres a los riesgos asociados a esta tecnología y qué significa esto para la igualdad en el mercado laboral.",
+        "fecha_publicacion": "2026-03-09T00:00:00+00:00",
+        "fuente_id": "oit_podcast",
+        "fuente_nombre": "OIT Podcast",
+        "categoria": "Laboral"
+      },
+      {
+        "id": "a9cae82ea7a7",
+        "titulo": "Una mirada al estado del empleo mundial y sus principales desafíos",
+        "link": "https://voices.ilo.org/es-es/podcast/una-mirada-al-estado-del-empleo-mundial-y-sus-principales-desafios",
+        "descripcion": "En este episodio del pódcast Futuro del Trabajo de la OIT, analizamos el estado del empleo y los principales desafíos que enfrentan los mercados laborales a nivel mundial y en América Latina y el Caribe, junto a Miguel Sánchez Martínez, economista del Departamento de Investigación de la OIT, y Gerson Martínez, Especialista Regional Senior en Economía Laboral.",
+        "fecha_publicacion": "2026-01-22T00:00:00+00:00",
+        "fuente_id": "oit_podcast",
+        "fuente_nombre": "OIT Podcast",
+        "categoria": "Laboral"
+      }
+    ],
+    "Automotor": [
+      {
+        "id": "8e8b4b421918",
+        "titulo": "Scoring en CABA: en qué consiste el proyecto de La Libertad Avanza para cambiar el sistema de puntos de las licencias",
+        "link": "https://www.ambito.com/informacion-general/scoring-caba-que-consiste-el-proyecto-la-libertad-avanza-cambiar-el-sistema-puntos-las-licencias-n6309237",
+        "descripcion": "La iniciativa, impulsada por la jefa del bloque libertario Pilar Ramírez, busca modificar el sistema para simplificar la recuperación de puntos. El proyecto propone capacitaciones gratuitas, recuperar el 100% de los puntos descontados y reducir los plazos de caducidad e inhabilitación de las licencias.",
+        "fecha_publicacion": "2026-08-10T22:51:00+00:00",
+        "fuente_id": "ambito_autos",
+        "fuente_nombre": "Ámbito Autos",
+        "categoria": "Automotor"
+      },
+      {
+        "id": "97e9a9f61a8c",
+        "titulo": "Audi A2 e-tron: asñi es el EV más chico de los cuatro anillos",
+        "link": "https://noticias.autocosmos.com.ar/2026/08/10/audi-a2-e-tron-asni-es-el-ev-mas-chico-de-los-cuatro-anillos",
+        "descripcion": "Antes de su lanzamiento mundial, la firma alemana mostró el trabajo realizado para hacer del modelo un campeón del rendimiento.",
+        "fecha_publicacion": "2026-08-10T17:00:01+00:00",
+        "fuente_id": "autocosmos",
+        "fuente_nombre": "Autocosmos Argentina",
+        "categoria": "Automotor"
+      },
+      {
+        "id": "92cf031acff9",
+        "titulo": "El BMW i3 inicia la producción en Alemania",
+        "link": "https://noticias.autocosmos.com.ar/2026/08/10/el-bmw-i3-inicia-la-produccion-en-alemania",
+        "descripcion": "El segundo modelo de la Neue Klasse también se producirá en México y seguramente lo veamos en Argentina en el corto plazo, pero no inmediatamente.",
+        "fecha_publicacion": "2026-08-10T15:00:00+00:00",
+        "fuente_id": "autocosmos",
+        "fuente_nombre": "Autocosmos Argentina",
+        "categoria": "Automotor"
+      },
+      {
+        "id": "fe669d4514b7",
+        "titulo": "GM renueva su alianza con SAIC",
+        "link": "https://noticias.autocosmos.com.ar/2026/08/10/gm-renueva-su-alianza-con-saic",
+        "descripcion": "General Motors utilizará ese país para desarrollar y exportar nuevos vehículos.",
+        "fecha_publicacion": "2026-08-10T13:00:00+00:00",
+        "fuente_id": "autocosmos",
+        "fuente_nombre": "Autocosmos Argentina",
+        "categoria": "Automotor"
+      },
+      {
+        "id": "72768ed90e7b",
+        "titulo": "No alcanza con mirar el dibujo: las tres señales que indican que llegó el momento de cambiar las cubiertas",
+        "link": "https://www.ambito.com/autos/no-alcanza-mirar-el-dibujo-las-tres-senales-que-indican-que-llego-el-momento-cambiar-las-cubiertas-n6308299",
+        "descripcion": "Los fabricantes recomiendan revisar periódicamente el estado de las llantas, para mantener el nivel de seguridad del auto.",
+        "fecha_publicacion": "2026-08-10T13:00:00+00:00",
+        "fuente_id": "ambito_autos",
+        "fuente_nombre": "Ámbito Autos",
+        "categoria": "Automotor"
+      },
+      {
+        "id": "b38f838488cf",
+        "titulo": "Rematan autos, SUV y camionetas de Toyota, Subaru y Ford desde $4,9 millones",
+        "link": "https://www.iprofesional.com/autos/461923-rematan-autos-suv-y-camionetas-de-toyota-subaru-y-ford-desde-casi-5-millones-de-pesos",
+        "descripcion": "Monasterio Tattersall Activos subastará vehículos de diferentes empresas con precios de base muy accesibles. Cómo participar y requisitos",
+        "fecha_publicacion": "2026-08-10T12:40:00+00:00",
+        "fuente_id": "iprof_autos",
+        "fuente_nombre": "iProfesional Autos",
+        "categoria": "Automotor"
+      },
+      {
+        "id": "56f0ef2c0a1e",
+        "titulo": "Una nueva marca china desembarca en el país con tres SUV de lujo",
+        "link": "https://www.iprofesional.com/autos/461916-una-nueva-marca-china-desembarca-en-el-pais-con-tres-suv-de-lujo",
+        "descripcion": "Se presenta el jueves. Son modelos híbridos enchufables, y a pesar de tener detalles de alta gama, los precios arrancan en valores competitivos",
+        "fecha_publicacion": "2026-08-10T10:34:00+00:00",
+        "fuente_id": "iprof_autos",
+        "fuente_nombre": "iProfesional Autos",
+        "categoria": "Automotor"
+      },
+      {
+        "id": "eee9389d0e19",
+        "titulo": "Así es el nuevo SUV chino para 7 personas que está entre los más baratos del segmento",
+        "link": "https://www.iprofesional.com/autos/461833-como-es-el-auto-suv-chino-para-7-personas-que-esta-entre-los-mas-baratos-del-segmento",
+        "descripcion": "Un nuevo modelo con motor naftero llega para ampliar la gama de SUV pensando en las familias numerosas a un precio muy accesible",
+        "fecha_publicacion": "2026-08-10T10:10:00+00:00",
+        "fuente_id": "iprof_autos",
+        "fuente_nombre": "iProfesional Autos",
+        "categoria": "Automotor"
+      }
+    ],
     "Agro": [
       {
         "id": "c44f2c4da58f",
@@ -113,88 +525,6 @@
         "fuente_id": "infocampo",
         "fuente_nombre": "Infocampo",
         "categoria": "Agro"
-      }
-    ],
-    "Finanzas": [
-      {
-        "id": "b5378d410d66",
-        "titulo": "El riesgo país subió y alcanzó el valor más alto en dos meses",
-        "link": "https://www.lanacion.com.ar/economia/dolar/el-riesgo-pais-subio-y-alcanzo-el-valor-mas-alto-en-dos-meses-nid10082026/",
-        "descripcion": "El indicador elaborado por JP Morgan avanzó hasta los 463 puntos; las acciones argentinas operaron en alza y el dólar mayorista se mantuvo cerca de los $1500",
-        "fecha_publicacion": "2026-08-10T20:46:18+00:00",
-        "fuente_id": "lanacion_eco",
-        "fuente_nombre": "La Nación Economía",
-        "categoria": "Finanzas"
-      },
-      {
-        "id": "160937627604",
-        "titulo": "Mercado Libre desembolsa casi 100 millones de dólares para abrir un nuevo centro",
-        "link": "https://www.iprofesional.com/negocios/461972-mercado-libre-desembolsa-casi-100-millones-dolares-para-abrir-nuevo-centro-almacenamiento-cordoba-argentina",
-        "descripcion": "El complejo, ubicado en Córdoba, tendrá capacidad para almacenar hasta seis millones de productos y abastecerá a las regiones Centro, NOA y NEA",
-        "fecha_publicacion": "2026-08-10T20:21:00+00:00",
-        "fuente_id": "iprof_economia",
-        "fuente_nombre": "iProfesional Economía",
-        "categoria": "Finanzas"
-      },
-      {
-        "id": "3218f8597bcf",
-        "titulo": "El maní salió de la terapia intensiva por un sorpresivo cambio en un indicador",
-        "link": "https://www.lanacion.com.ar/economia/campo/el-mani-salio-de-la-terapia-intensiva-por-un-sorpresivo-cambio-en-un-indicador-nid10082026/",
-        "descripcion": "En el Semáforo de Coninagro dejó la zona crítica y pasó a una situación intermedia por una mejora de los precios",
-        "fecha_publicacion": "2026-08-10T20:19:40+00:00",
-        "fuente_id": "lanacion_eco",
-        "fuente_nombre": "La Nación Economía",
-        "categoria": "Finanzas"
-      },
-      {
-        "id": "eb71b8c531c7",
-        "titulo": "Los pequeños gastos que son la trampa del presupuesto y se llevan hasta el 20% del sueldo",
-        "link": "https://www.iprofesional.com/finanzas/461970-cuales-son-pequenos-gastos-presupuesto-se-llevan-hasta-20-por-siento-sueldo-como-controlarlos",
-        "descripcion": "Si bien los grandes rubros del presupuesto son los más importantes, hay otros que generan una fuga constante que pocas veces se tiene en cuenta",
-        "fecha_publicacion": "2026-08-10T20:19:00+00:00",
-        "fuente_id": "iprof_economia",
-        "fuente_nombre": "iProfesional Economía",
-        "categoria": "Finanzas"
-      },
-      {
-        "id": "1fc9cc2ccecc",
-        "titulo": "Mercado Libre desarrollará en Córdoba su primer centro de almacenamiento en el interior",
-        "link": "https://www.lanacion.com.ar/economia/negocios/mercado-libre-desarrollara-en-cordoba-su-primer-centro-de-almacenamiento-en-el-interior-nid10082026/",
-        "descripcion": "Estará en Estación Juárez Celman; se inaugurará en un año, generará 2000 empleos directos y demandará una inversión millonaria",
-        "fecha_publicacion": "2026-08-10T20:07:10+00:00",
-        "fuente_id": "lanacion_eco",
-        "fuente_nombre": "La Nación Economía",
-        "categoria": "Finanzas"
-      },
-      {
-        "id": "4859acc908eb",
-        "titulo": "Mercado Pago ofrece descuentos de hasta 30% y cuotas sin interés en agosto",
-        "link": "https://www.iproup.com/finanzas/70568-mercado-pago-ofrece-descuentos-de-hasta-30-y-hasta-24-cuotas-sin-interes-en-agosto",
-        "descripcion": "La billetera digital renovó sus promociones para este mes con beneficios en distintos rubros. Además, con la tarjeta de crédito podrán acceder a cuotas",
-        "fecha_publicacion": "2026-08-10T18:55:00+00:00",
-        "fuente_id": "iproup_fintech",
-        "fuente_nombre": "iProUP Fintech",
-        "categoria": "Finanzas"
-      },
-      {
-        "id": "b803f94f2647",
-        "titulo": "El dólar mayorista tocó los $1.500, pero volvió a cerrar por debajo de ese umbral: ¿volvió la intervención oficial?",
-        "link": "https://www.ambito.com/finanzas/el-dolar-se-mantiene-debajo-los-1500-y-la-city-anticipa-una-mayor-demanda-cobertura-2027-n6308881",
-        "descripcion": "El mayorista abrió la última semana en $1.495 pero todavía se mantiene lejos del techo de la banda cambiaria. La city ya empiezan a mirar el calendario electoral de 2027 como un factor que podría volver a elevar la dolarización de carteras.",
-        "fecha_publicacion": "2026-08-10T18:50:00+00:00",
-        "fuente_id": "ambito_fin",
-        "fuente_nombre": "Ámbito Finanzas",
-        "categoria": "Finanzas"
-      },
-      {
-        "id": "38e94ccee797",
-        "titulo": "Cuánto se gana con el plazo fijo del Banco Provincia si se invierten $2 millones",
-        "link": "https://www.iprofesional.com/finanzas/461968-plazo-fijo-banco-provincia-ofrece-tasa-mas-alta-cuanto-se-gana-con-2-millones-pesos",
-        "descripcion": "Las colocaciones en pesos le dan pelea como inversión al dólar, y también siguen de cerca a la inflación. Cuánto se puede ganar con $2 millones en 30 días",
-        "fecha_publicacion": "2026-08-10T18:27:00+00:00",
-        "fuente_id": "iprof_economia",
-        "fuente_nombre": "iProfesional Economía",
-        "categoria": "Finanzas"
       }
     ],
     "Comex": [
@@ -289,192 +619,6 @@
         "fuente_id": "est_0221",
         "fuente_nombre": "0221 Estudiantes",
         "categoria": "Fulbito"
-      }
-    ],
-    "Laboral": [
-      {
-        "id": "0db60f2fb0e6",
-        "titulo": "La empresa Barbieri lanza una academia de Steel Frame para construcción en seco",
-        "link": "https://www.iprofesional.com/management/461615-empresa-barbieri-lanza-academia-de-steel-frame-para-formar-especialistas-construccion-en-seco",
-        "descripcion": "Con el desempleo en 7,8%, Barbieri apuesta por la capacitación con Academia consulsteel para formar profesionales en construcción en seco",
-        "fecha_publicacion": "2026-08-10T20:00:00+00:00",
-        "fuente_id": "iprof_management",
-        "fuente_nombre": "iProfesional Management",
-        "categoria": "Laboral"
-      },
-      {
-        "id": "40d186dc8ac5",
-        "titulo": "El Gobierno dará un bono de $50.000 en agosto a militares y fuerzas de seguridad",
-        "link": "https://www.iprofesional.com/management/461960-el-gobierno-dara-un-bono-de-50-000-en-agosto-a-militares-y-fuerzas-de-seguridad",
-        "descripcion": "El pago será por única vez y alcanza a distintas categorías de personal de Defensa y Seguridad, según lo establecido por dos decretos",
-        "fecha_publicacion": "2026-08-10T17:45:00+00:00",
-        "fuente_id": "iprof_management",
-        "fuente_nombre": "iProfesional Management",
-        "categoria": "Laboral"
-      },
-      {
-        "id": "a29e7e1e6185",
-        "titulo": "El nuevo perfil de los argentinos que trabajan para el exterior y reciben pagos en dólares",
-        "link": "https://www.iprofesional.com/management/461920-trabajo-remoto-para-el-exterior-cuanto-ganan-los-argentinos-que-cobran-en-dolares",
-        "descripcion": "Crecen quienes reciben ingresos del exterior y el envío de divisas, con predominio de software y fuerte actividad en múltiples sectores",
-        "fecha_publicacion": "2026-08-10T11:58:00+00:00",
-        "fuente_id": "iprof_management",
-        "fuente_nombre": "iProfesional Management",
-        "categoria": "Laboral"
-      },
-      {
-        "id": "07f564b6ffd7",
-        "titulo": "Riesgos psicosociales en el trabajo: la amenaza invisible para la salud de los trabajadores",
-        "link": "https://voices.ilo.org/es-es/podcast/riesgos-psicosociales-en-el-trabajo-la-amenaza-invisible-para-la-salud-de-los-trabajadores",
-        "descripcion": "En este episodio del pódcast “El futuro del trabajo de la OIT”, Dafne Papandrea y Lucía Risueño Navarro explican cómo los riesgos psicosociales —como las largas jornadas laborales, la inseguridad en el empleo y el acoso en el lugar de trabajo— afectan a la salud de los trabajadores, y qué medidas pueden adoptarse para crear entornos laborales más saludables en todo el mundo.",
-        "fecha_publicacion": "2026-04-28T00:00:00+00:00",
-        "fuente_id": "oit_podcast",
-        "fuente_nombre": "OIT Podcast",
-        "categoria": "Laboral"
-      },
-      {
-        "id": "ef1638f33032",
-        "titulo": "La inteligencia artificial generativa y las desigualdades de género en el trabajo",
-        "link": "https://voices.ilo.org/es-es/podcast/la-inteligencia-artificial-generativa-y-las-desigualdades-de-genero-en-el-trabajo",
-        "descripcion": "En este episodio del pódcast de la Organización Internacional del Trabajo, Janine Berg, Economista senior en la OIT, presenta un nuevo informe sobre el impacto de la inteligencia artificial generativa en el mundo del trabajo. La experta explica por qué las mujeres están más expuestas que los hombres a los riesgos asociados a esta tecnología y qué significa esto para la igualdad en el mercado laboral.",
-        "fecha_publicacion": "2026-03-09T00:00:00+00:00",
-        "fuente_id": "oit_podcast",
-        "fuente_nombre": "OIT Podcast",
-        "categoria": "Laboral"
-      },
-      {
-        "id": "a9cae82ea7a7",
-        "titulo": "Una mirada al estado del empleo mundial y sus principales desafíos",
-        "link": "https://voices.ilo.org/es-es/podcast/una-mirada-al-estado-del-empleo-mundial-y-sus-principales-desafios",
-        "descripcion": "En este episodio del pódcast Futuro del Trabajo de la OIT, analizamos el estado del empleo y los principales desafíos que enfrentan los mercados laborales a nivel mundial y en América Latina y el Caribe, junto a Miguel Sánchez Martínez, economista del Departamento de Investigación de la OIT, y Gerson Martínez, Especialista Regional Senior en Economía Laboral.",
-        "fecha_publicacion": "2026-01-22T00:00:00+00:00",
-        "fuente_id": "oit_podcast",
-        "fuente_nombre": "OIT Podcast",
-        "categoria": "Laboral"
-      }
-    ],
-    "Mercados": [
-      {
-        "id": "39a64e77ffc6",
-        "titulo": "Bitcoin resiste pese al freno en el Senado de EE. UU. y observa la zona que puede destrabar todo",
-        "link": "https://www.iproup.com/economia-digital/70577-bitcoin-resiste-pese-al-freno-en-el-senado-de-ee-uu",
-        "descripcion": "Carolina Gama, country manager de Bitget en la Argentina, analiza la marcha de la criptomoneda más importante en el arranque de la semana",
-        "fecha_publicacion": "2026-08-10T19:55:00+00:00",
-        "fuente_id": "iproup_eco",
-        "fuente_nombre": "iProUP Economía Digital",
-        "categoria": "Mercados"
-      },
-      {
-        "id": "68f4be7a8cc8",
-        "titulo": "Trump dice que habló con Warsh, de la Fed, la semana pasada",
-        "link": "https://es.investing.com/news/economy-news/trump-dice-que-hablo-con-warsh-de-la-fed-la-semana-pasada-93CH-3789143",
-        "descripcion": "",
-        "fecha_publicacion": "2026-08-10T19:52:51+00:00",
-        "fuente_id": "investing_economia",
-        "fuente_nombre": "Investing Economía",
-        "categoria": "Mercados"
-      },
-      {
-        "id": "6a8915ccdf79",
-        "titulo": "Trump afirma que la Marina de EE.UU. controla el estrecho de Ormuz",
-        "link": "https://es.investing.com/news/economy-news/trump-afirma-que-la-marina-de-eeuu-controla-el-estrecho-de-ormuz-93CH-3789142",
-        "descripcion": "",
-        "fecha_publicacion": "2026-08-10T19:51:29+00:00",
-        "fuente_id": "investing_economia",
-        "fuente_nombre": "Investing Economía",
-        "categoria": "Mercados"
-      },
-      {
-        "id": "83c5db24c9eb",
-        "titulo": "Los ETF de criptomonedas se mueven en el mercado y Bitcoin reacciona favorablemente",
-        "link": "https://www.iproup.com/economia-digital/70572-etf-de-criptomonedas-se-mueven-y-bitcoin-reacciona-favorablemente",
-        "descripcion": "Grayscale retiró tres ETF cripto y el movimiento coincide con el peor momento de las altcoins. En paralelo, otra gestora busca incluír a DOGE en un fondo",
-        "fecha_publicacion": "2026-08-10T19:16:00+00:00",
-        "fuente_id": "iproup_eco",
-        "fuente_nombre": "iProUP Economía Digital",
-        "categoria": "Mercados"
-      },
-      {
-        "id": "e0c024063e71",
-        "titulo": "Por qué las direcciones activas retroceden de Bitcoin más de 30%",
-        "link": "https://www.iproup.com/economia-digital/70561-por-que-bitcoin-pierde-actividad-y-un-retroceso-de-direcciones-activas",
-        "descripcion": "Bitcoin registra una caída histórica en la actividad de su red, con niveles de direcciones activas similares a los del mercado bajista antes de la pandemia",
-        "fecha_publicacion": "2026-08-10T18:45:00+00:00",
-        "fuente_id": "iproup_eco",
-        "fuente_nombre": "iProUP Economía Digital",
-        "categoria": "Mercados"
-      },
-      {
-        "id": "a7a301948e79",
-        "titulo": "El plan de Gaza de Trump sigue adelante pese al rechazo de Netanyahu",
-        "link": "https://es.investing.com/news/economy-news/el-plan-de-gaza-de-trump-sigue-adelante-pese-al-rechazo-de-netanyahu-93CH-3789110",
-        "descripcion": "",
-        "fecha_publicacion": "2026-08-10T18:26:40+00:00",
-        "fuente_id": "investing_economia",
-        "fuente_nombre": "Investing Economía",
-        "categoria": "Mercados"
-      }
-    ],
-    "Energía y Minería": [
-      {
-        "id": "c3c9d2890df4",
-        "titulo": "La presión de EE.UU a CALF por el acuerdo con Huawei se debatirá en la Legislatura y el bloque de Rolando Figueroa busca «bajar la espuma»",
-        "link": "https://econojournal.com.ar/enclave/presion-ee-uu-calf-huawei-legislatura-rolando-figueroa/",
-        "descripcion": "El oficialismo de Rolando Figueroa buscará bajarle el tono en la Legislatura de Neuquén al escándalo diplomático por la presión de Estados Unidos para que la cooperativa CALF cancele un contrato con la firma china Huawei para la provisión de fibra óptica en la provincia. Este miércoles tomarán estado parlamentario dos proyectos que buscan repudiar [&#8230;]",
-        "fecha_publicacion": "2026-08-10T19:49:00+00:00",
-        "fuente_id": "econojournal",
-        "fuente_nombre": "EconoJournal",
-        "categoria": "Energía y Minería"
-      },
-      {
-        "id": "a323414bd764",
-        "titulo": "Expansión en Vaca Muerta: Phoenix Global Resources presentará un proyecto de US$ 6.000 millones bajo el RIGI para triplicar su producción",
-        "link": "https://dataenergia.ar/petroleo-y-combustibles/expansion-en-vaca-muerta-phoenix-global-resources-presentara-un-proyecto-de-us-6-000-millones-bajo-el-rigi-para-triplicar-su-produccion-20268101560",
-        "descripcion": "Phoenix Global Resources formalizará la presentación de un plan por US$ 6.000 millones bajo el RIGI con la meta de llevar su producción no convencional en Vaca Muerta de 25.000 a 60.000 barriles diarios en los próximos dos años.",
-        "fecha_publicacion": "2026-08-10T18:06:00+00:00",
-        "fuente_id": "data_energia",
-        "fuente_nombre": "Data Energía",
-        "categoria": "Energía y Minería"
-      },
-      {
-        "id": "317665b274e5",
-        "titulo": "Vaca Muerta: Río Negro proyecta la construcción de la \"Ruta de las Arenas\" para transportar el insumo clave de la cuenca neuquina",
-        "link": "https://dataenergia.ar/petroleo-y-combustibles/vaca-muerta-rio-negro-proyecta-la-construccion-de-la-ruta-de-las-arenas-para-transportar-el-insumo-clave-de-la-cuenca-neuquina-202681014430",
-        "descripcion": "El gobierno de Río Negro planifica la ejecución de la «Ruta de las Arenas», un corredor vial exclusivo entre General Roca y el norte de Cinco Saltos diseñado para absorber el incremento en el transporte de arenas de fractura —que alcanzará hasta 8 millones de toneladas hacia 2027— sin saturar los ejidos urbanos.",
-        "fecha_publicacion": "2026-08-10T17:43:00+00:00",
-        "fuente_id": "data_energia",
-        "fuente_nombre": "Data Energía",
-        "categoria": "Energía y Minería"
-      },
-      {
-        "id": "e65df2f935b1",
-        "titulo": "Inversión en Vaca Muerta: La estadounidense Helmerich & Payne sumará cinco nuevos equipos de perforación en la Argentina",
-        "link": "https://dataenergia.ar/petroleo-y-combustibles/inversion-en-vaca-muerta-la-estadounidense-helmerich-payne-sumara-cinco-nuevos-equipos-de-perforacion-en-la-argentina-202681014210",
-        "descripcion": "La proveedora de servicios petroleros Helmerich & Payne confirmó la incorporación de cinco equipos de perforación para la cuenca neuquina, de los cuales tres serán importados desde Estados Unidos antes de fin de año para abastecer la demanda no convencional en Vaca Muerta.",
-        "fecha_publicacion": "2026-08-10T17:21:00+00:00",
-        "fuente_id": "data_energia",
-        "fuente_nombre": "Data Energía",
-        "categoria": "Energía y Minería"
-      },
-      {
-        "id": "c44f7439051a",
-        "titulo": "Argentina LNG: Río Negro proyecta un corredor exclusivo para el traslado de arena y acelera la formación técnica con el Instituto Vaca Muerta",
-        "link": "https://econojournal.com.ar/oilgas/argentina-lng-rio-negro-corredor-exclusivo-para-el-traslado-de-arena/",
-        "descripcion": "La provincia de Río Negro avanza en la consolidación de la infraestructura logística y técnica necesaria para dar soporte al proyecto Argentina LNG. La secretaria de Energía y Ambiente provincial, Andrea Confini, confirmó que el Ejecutivo local planifica la ejecución de la «Ruta de las Arenas», un corredor vial clave para agilizar el traslado de [&#8230;]",
-        "fecha_publicacion": "2026-08-10T15:17:08+00:00",
-        "fuente_id": "econojournal",
-        "fuente_nombre": "EconoJournal",
-        "categoria": "Energía y Minería"
-      },
-      {
-        "id": "1137cd49c741",
-        "titulo": "La producción de la industria química y petroquímica registró un incremento del 8%",
-        "link": "https://econojournal.com.ar/actualidad-mineria-energia/la-produccion-de-la-industria-quimica-y-petroquimica-registro-un-incremento-del-8/",
-        "descripcion": "El informe mensual desarrollado por la Cámara de la Industria Química y Petroquímica (CIQyP®), sobre el panorama sectorial en relación a junio de 2026, presentó una recuperación en la producción y en las ventas locales respecto al mes anterior, impulsada por la reanudación de actividades tras paradas de mantenimiento e incrementos programados, mientras que las [&#8230;]",
-        "fecha_publicacion": "2026-08-10T14:33:00+00:00",
-        "fuente_id": "econojournal",
-        "fuente_nombre": "EconoJournal",
-        "categoria": "Energía y Minería"
       }
     ],
     "Análisis Consultoras": [
@@ -619,150 +763,6 @@
         "fuente_id": "ambito_fisc",
         "fuente_nombre": "Ámbito Fiscal",
         "categoria": "Fiscal"
-      }
-    ],
-    "Internacional": [
-      {
-        "id": "73331dee77d9",
-        "titulo": "Airbus envía expertos a India tras pérdida de altitud en vuelo",
-        "link": "https://es.investing.com/news/world-news/airbus-envia-expertos-a-india-tras-perdida-de-altitud-en-vuelo-93CH-3789077",
-        "descripcion": "",
-        "fecha_publicacion": "2026-08-10T17:21:55+00:00",
-        "fuente_id": "investing_intl",
-        "fuente_nombre": "Investing Internacional",
-        "categoria": "Internacional"
-      },
-      {
-        "id": "d06c25719e16",
-        "titulo": "La sequía en Inglaterra ya afecta al 71% del país, según el Gobierno",
-        "link": "https://es.investing.com/news/world-news/la-sequia-en-inglaterra-ya-afecta-al-71-del-pais-segun-el-gobierno-93CH-3789041",
-        "descripcion": "",
-        "fecha_publicacion": "2026-08-10T16:36:53+00:00",
-        "fuente_id": "investing_intl",
-        "fuente_nombre": "Investing Internacional",
-        "categoria": "Internacional"
-      },
-      {
-        "id": "747a1442d42b",
-        "titulo": "La producción industrial griega sube un 1,1% en junio",
-        "link": "https://es.investing.com/news/economic-indicators/la-produccion-industrial-griega-sube-un-11-en-junio-93CH-3788024",
-        "descripcion": "",
-        "fecha_publicacion": "2026-08-10T11:24:52+00:00",
-        "fuente_id": "investing_intl2",
-        "fuente_nombre": "Investing Mundo",
-        "categoria": "Internacional"
-      },
-      {
-        "id": "9cdcbe8d3ac6",
-        "titulo": "La confianza de los inversores de la eurozona vuelve a positivo en agosto",
-        "link": "https://es.investing.com/news/economic-indicators/la-confianza-de-los-inversores-de-la-eurozona-vuelve-a-positivo-en-agosto-93CH-3788014",
-        "descripcion": "",
-        "fecha_publicacion": "2026-08-10T11:20:36+00:00",
-        "fuente_id": "investing_intl2",
-        "fuente_nombre": "Investing Mundo",
-        "categoria": "Internacional"
-      },
-      {
-        "id": "fe8f49f7626d",
-        "titulo": "La inflación subyacente de Noruega se mantiene en el 2,7% en julio",
-        "link": "https://es.investing.com/news/economic-indicators/la-inflacion-subyacente-de-noruega-se-mantiene-en-el-27-en-julio-93CH-3787150",
-        "descripcion": "",
-        "fecha_publicacion": "2026-08-10T06:11:35+00:00",
-        "fuente_id": "investing_intl2",
-        "fuente_nombre": "Investing Mundo",
-        "categoria": "Internacional"
-      },
-      {
-        "id": "e8276a171e63",
-        "titulo": "Fitch confirma la calificación ’AA-’ de Kuwait por sus sólidos activos",
-        "link": "https://es.investing.com/news/world-news/fitch-confirma-la-calificacion-aa-de-kuwait-por-sus-solidos-activos-93CH-3786803",
-        "descripcion": "",
-        "fecha_publicacion": "2026-08-07T21:16:44+00:00",
-        "fuente_id": "investing_intl",
-        "fuente_nombre": "Investing Internacional",
-        "categoria": "Internacional"
-      }
-    ],
-    "Automotor": [
-      {
-        "id": "97e9a9f61a8c",
-        "titulo": "Audi A2 e-tron: asñi es el EV más chico de los cuatro anillos",
-        "link": "https://noticias.autocosmos.com.ar/2026/08/10/audi-a2-e-tron-asni-es-el-ev-mas-chico-de-los-cuatro-anillos",
-        "descripcion": "Antes de su lanzamiento mundial, la firma alemana mostró el trabajo realizado para hacer del modelo un campeón del rendimiento.",
-        "fecha_publicacion": "2026-08-10T17:00:01+00:00",
-        "fuente_id": "autocosmos",
-        "fuente_nombre": "Autocosmos Argentina",
-        "categoria": "Automotor"
-      },
-      {
-        "id": "f13abacc70db",
-        "titulo": "Marca china desembarca en el país: ingeniería europea y tecnología híbrida para competir en el segmento de SUV",
-        "link": "https://www.ambito.com/autos/marca-china-desembarca-el-pais-ingenieria-europea-y-tecnologia-hibrida-competir-el-segmento-suv-n6309088",
-        "descripcion": "Respaldada por el gigante asiático Geely y con desarrollo técnico firmado por Volvo, la firma hace su debut local con tres camionetas electrificadas que promete autonomías superiores a los 1.000 kilómetros.",
-        "fecha_publicacion": "2026-08-10T16:59:00+00:00",
-        "fuente_id": "ambito_autos",
-        "fuente_nombre": "Ámbito Autos",
-        "categoria": "Automotor"
-      },
-      {
-        "id": "919ebefb622c",
-        "titulo": "Donald Trump vuelve al ataque contra los autos eléctricos y tilda de \"enfermos\" a sus usuarios",
-        "link": "https://www.ambito.com/autos/donald-trump-vuelve-al-ataque-contra-los-electricos-y-tilda-enfermos-sus-usuarios-n6309059",
-        "descripcion": "El jefe de Estado estadounidense arremete nuevamente contra la electrificación vehicular y se atribuye la anulación del denominado \"mandato\" ecológico durante un acto público.",
-        "fecha_publicacion": "2026-08-10T16:08:00+00:00",
-        "fuente_id": "ambito_autos",
-        "fuente_nombre": "Ámbito Autos",
-        "categoria": "Automotor"
-      },
-      {
-        "id": "d4b1955115f3",
-        "titulo": "Opciones sin embrague: la lista de los 10 autos automáticos más accesibles tras un importante descuento",
-        "link": "https://www.ambito.com/autos/opciones-embrague-la-lista-los-10-automaticos-mas-accesibles-un-importante-descuento-n6309021",
-        "descripcion": "Con ajustes en pesos que oscilaron entre el 0,6% y el 2%, más un modelo eléctrico que redujo su cotización en moneda extranjera, el mapa de precios sufrió modificaciones. Los detalles del ranking.",
-        "fecha_publicacion": "2026-08-10T15:18:00+00:00",
-        "fuente_id": "ambito_autos",
-        "fuente_nombre": "Ámbito Autos",
-        "categoria": "Automotor"
-      },
-      {
-        "id": "92cf031acff9",
-        "titulo": "El BMW i3 inicia la producción en Alemania",
-        "link": "https://noticias.autocosmos.com.ar/2026/08/10/el-bmw-i3-inicia-la-produccion-en-alemania",
-        "descripcion": "El segundo modelo de la Neue Klasse también se producirá en México y seguramente lo veamos en Argentina en el corto plazo, pero no inmediatamente.",
-        "fecha_publicacion": "2026-08-10T15:00:00+00:00",
-        "fuente_id": "autocosmos",
-        "fuente_nombre": "Autocosmos Argentina",
-        "categoria": "Automotor"
-      },
-      {
-        "id": "fe669d4514b7",
-        "titulo": "GM renueva su alianza con SAIC",
-        "link": "https://noticias.autocosmos.com.ar/2026/08/10/gm-renueva-su-alianza-con-saic",
-        "descripcion": "General Motors utilizará ese país para desarrollar y exportar nuevos vehículos.",
-        "fecha_publicacion": "2026-08-10T13:00:00+00:00",
-        "fuente_id": "autocosmos",
-        "fuente_nombre": "Autocosmos Argentina",
-        "categoria": "Automotor"
-      },
-      {
-        "id": "b38f838488cf",
-        "titulo": "Rematan autos, SUV y camionetas de Toyota, Subaru y Ford desde $4,9 millones",
-        "link": "https://www.iprofesional.com/autos/461923-rematan-autos-suv-y-camionetas-de-toyota-subaru-y-ford-desde-casi-5-millones-de-pesos",
-        "descripcion": "Monasterio Tattersall Activos subastará vehículos de diferentes empresas con precios de base muy accesibles. Cómo participar y requisitos",
-        "fecha_publicacion": "2026-08-10T12:40:00+00:00",
-        "fuente_id": "iprof_autos",
-        "fuente_nombre": "iProfesional Autos",
-        "categoria": "Automotor"
-      },
-      {
-        "id": "56f0ef2c0a1e",
-        "titulo": "Una nueva marca china desembarca en el país con tres SUV de lujo",
-        "link": "https://www.iprofesional.com/autos/461916-una-nueva-marca-china-desembarca-en-el-pais-con-tres-suv-de-lujo",
-        "descripcion": "Se presenta el jueves. Son modelos híbridos enchufables, y a pesar de tener detalles de alta gama, los precios arrancan en valores competitivos",
-        "fecha_publicacion": "2026-08-10T10:34:00+00:00",
-        "fuente_id": "iprof_autos",
-        "fuente_nombre": "iProfesional Autos",
-        "categoria": "Automotor"
       }
     ],
     "Logística": [
