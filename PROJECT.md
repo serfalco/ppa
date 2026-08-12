@@ -38,13 +38,14 @@ hechos y datos.
 
 Ordenados por impacto, según la prioridad recomendada del documento integral (§42).
 
-1. **EconoTuits vive de cache** — nueve cuentas de Nitter devuelven 404. Salen
-   31 tuits, pero la mayoría no se refrescan.
-2. **REM y Columnas vacías** — REM en 0 ediciones. Columnas no genera nada
+1. **REM y Columnas vacías** — REM en 0 ediciones. Columnas no genera nada
    porque lee `columnas_manual.json`, que solo podía producir el panel dado de
    baja: no es un generador roto, es una sección sin flujo de carga. Igual que
    TXT-Stream con `stream_manual.json`. Reponerlos es rediseñar el flujo
    editorial, que el documento integral pone en la Fase D.
+2. **Diecisiete cuentas de EconoTuits sin verificar** — quedaron activas y
+   traen tuits, pero solo se comprobó una por una las que fallaban. Las once
+   dadas de baja esperan que alguien confirme el handle nuevo, si existe.
 
 Cerrados el 11 y 12 de agosto de 2026: el MULC quedó automático
 (`MULC_BCRA_ID = 78`); los resúmenes con IA se verificaron generando en
@@ -58,6 +59,13 @@ endpoint. Y el cron salteado dejó de ser un punto ciego: un vigía revisa
 después de cada edición que haya salido y abre un aviso si falta. Y las
 acciones de los workflows subieron a las versiones sobre Node 24, así que se
 terminó el warning en cada corrida.
+
+EconoTuits resultó ser otra cosa que lo anotado: no vivía de cache por
+fuentes muertas, sino porque Nitter limita por ritmo y la corrida disparaba
+veintiocho pedidos seguidos. Con pausa, sesión reusada y reintento, las
+cuentas vivas vuelven a traer en el momento. Se corrigió el handle de la CNV,
+se dieron de baja once que dan 404 y se cableó el corte por antigüedad que
+estaba escrito sin usarse: @laspina venía publicando un tuit de 2011.
 
 También se dieron de baja `/panel69/` y `/admin/`. Eran el mismo archivo
 servido en dos rutas y figuraban como riesgo de seguridad desde la auditoría
