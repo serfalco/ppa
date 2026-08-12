@@ -1,0 +1,106 @@
+name: PPA - Canario de datos
+
+# Revisa que los datos publicados sigan siendo lo que dicen ser.
+#
+# Las otras tres alarmas detectan ausencia: un paso que revienta, una edición
+# que no arranca, un feed que no responde. Ninguna ve que una API conteste
+# 200 OK y devuelva otra cosa — que es como el TCRM publicó 1460 con unidad
+# "índice" durante meses, todo en verde.
+#
+# Corre aparte de la edición y sin red: lee el datos.json que quedó
+# commiteado. Si encuentra algo, abre un aviso; no toca la publicación.
+
+on:
+  schedule:
+    - cron: '40 11 * * *'  # tras el Desayuno
+    - cron: '0 23 * * *'   # tras la Merienda
+  workflow_dispatch:
+
+permissions:
+  issues: write
+  contents: read
+
+jobs:
+  revisar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+
+      - name: Setup Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: '3.11'
+
+      # Antes de creerle al canario, se lo prueba. Un canario con un bug no
+      # se nota nunca, y uno que canta siempre se ignora a la semana: el
+      # primer caso del test es justamente que con datos sanos se calle.
+      - name: Probar el canario
+        run: python -u scripts/probar_canario.py
+
+      - name: Revisar los datos publicados
+        id: canario
+        run: python -u scripts/canario.py
+
+      - name: Avisar si algo no cierra
+        if: failure() && steps.canario.outputs.cantidad != ''
+        env:
+          GH_TOKEN: ${{ github.token }}
+          CANTIDAD: ${{ steps.canario.outputs.cantidad }}
+          DETALLE: ${{ steps.canario.outputs.detalle }}
+        run: |
+          TITULO="⚠ Datos que no cierran — $(date -u '+%Y-%m-%d')"
+          # Dos corridas por día avisarían dos veces de lo mismo. El título
+          # lleva la fecha, así que un día nuevo sí vuelve a avisar.
+          YA=$(gh issue list --state open --label alerta \
+                 --json title --jq '.[].title' | grep -Fx "$TITULO" || true)
+          if [ -n "$YA" ]; then
+            echo "Ya hay un aviso abierto para hoy."
+            exit 0
+          fi
+          # La etiqueta tiene que existir o gh issue create aborta entero y no
+          # crea nada. Pasó: las cinco vías de alerta del repo la usaban y
+          # ninguna había podido avisar nunca.
+          gh label create alerta --color d73a4a \
+            --description "Avisos automáticos del pipeline" 2>/dev/null || true
+          gh issue create \
+            --title "$TITULO" \
+            --body "El canario encontró **$CANTIDAD** dato(s) que no cierran:
+
+          $DETALLE
+
+          Ninguna otra alarma ve esto: las fuentes responden y los pasos terminan bien. Lo que falla es el contenido — un valor fuera de la magnitud que le corresponde suele ser una fuente que cambió de variable o de unidad, y una serie clavada es una fuente que devuelve siempre el último valor que supo.
+
+          Corrida: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}" \
+            --label alerta \
+            || echo "::warning::No pude crear el issue de alerta"
+
+      - name: Avisar si el canario mismo se rompió
+        # Misma lógica que el vigía: si el script se cae por un bug sale sin
+        # escribir `cantidad`, el aviso de arriba no corre y el único rastro
+        # queda en rojo en Actions, que es lo que nadie mira. Un centinela
+        # que puede morir en silencio no cubre nada.
+        if: failure() && steps.canario.outputs.cantidad == ''
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          TITULO="⚠ El canario de datos se rompió — $(date -u '+%Y-%m-%d')"
+          YA=$(gh issue list --state open --label alerta \
+                 --json title --jq '.[].title' | grep -Fx "$TITULO" || true)
+          if [ -n "$YA" ]; then
+            echo "Ya hay un aviso abierto para hoy."
+            exit 0
+          fi
+          gh label create alerta --color d73a4a \
+            --description "Avisos automáticos del pipeline" 2>/dev/null || true
+          gh issue create \
+            --title "$TITULO" \
+            --body "El canario falló sin llegar a decir qué encontró: se cayó el chequeo, o se cayó su propio test.
+
+          No dice nada sobre los datos de hoy. Lo que quedó sin cubrir es el control: mientras el canario esté roto, una fuente que cambie de contenido vuelve a pasar desapercibida.
+
+          El detalle está en el log: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}" \
+            --label alerta \
+            || echo "::warning::No pude crear el issue de alerta"

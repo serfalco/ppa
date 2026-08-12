@@ -28,7 +28,7 @@ hechos y datos.
 
 | Fase | Estado | Falta |
 |---|---|---|
-| A · Autonomía y memoria | Casi cerrada | Solo falta la puerta: 14 días corridos sin carga manual |
+| A · Autonomía y memoria | Casi cerrada | Test canario ✅; solo falta la puerta: 14 días corridos sin carga manual |
 | B · Cerebro editorial | Pendiente | Texto completo, clustering, jerarquización, apertura |
 | C · Documentos oficiales | Pendiente | Calendario INDEC, Boletín Oficial, licitaciones |
 | D · Salud y transparencia | Parcial | Salud de fuentes ✅, vigía ✅ (se avisa a sí mismo si se rompe), alarma de pasos caídos ✅ — las dos probadas con simulacro; tablero público ✅ en `/salud/`; falta el reporte semanal |
@@ -97,6 +97,25 @@ cada indicador ya tiene cadena de fuentes y valor conservado, así que ninguna
 API caída lo mata; lo único que lo tumbaba era un bug propio, y eso tapaba la
 edición entera por una sección. La corrida del 12/08 18:49 UTC pasó los 28
 pasos en verde con el criterio nuevo.
+
+Se sumó el test canario, que era el ítem que faltaba de la Fase A. Las tres
+alarmas que había detectan ausencia: un paso que revienta, una edición que no
+arranca, un feed que no responde. Ninguna ve que una API conteste 200 OK y
+devuelva otra cosa, que es el modo de falla más caro que tuvo el proyecto: el
+TCRM publicó 1460 con unidad "índice" durante meses, con todo en verde. El
+canario mira el contenido de `datos.json` y le pregunta a cada dato si tiene
+la magnitud de lo que dice ser y si es de hace poco para su frecuencia. Los
+rangos describen qué es cada indicador, no cuánto vale hoy, así que no hay que
+tocarlos cuando el dólar sube. Corre aparte de la edición, con su propio cron,
+y antes de creerle se lo prueba: el primer caso del test es que con datos
+sanos se calle, porque un canario que canta todos los días se ignora a la
+semana.
+
+En su primera corrida encontró tres datos que no cierran, todos del BCRA:
+la UVA en 22 cuando el propio comentario del código dice que ronda 1956, la
+circulación monetaria en 23 cuando debería estar en millones de pesos, y el
+call clavado hace 44 días en una serie diaria. Es el mismo cuadro que la
+BADLAR, que salía de la variable 6 hasta que el BCRA la renumeró.
 
 La salud de las fuentes salió a la calle. El fetcher venía midiendo en cada
 corrida si cada una responde, cuándo publicó por última vez y cuántos fallos
