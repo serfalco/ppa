@@ -56,6 +56,12 @@ jobs:
           echo "icono=$ICONO" >> $GITHUB_OUTPUT
           echo "[PPA] Generando edición: $NOMBRE $ICONO"
 
+      # Estos dos no llevan continue-on-error a propósito, y son los únicos
+      # generadores que no lo llevan. Todo lo de abajo produce una sección: si
+      # falla, esa sección queda con lo del día anterior y el resto sale. Estos
+      # dos producen las notas del día. Si el fetcher no baja nada o el selector
+      # no elige, la edición se publicaría con la portada de ayer fechada hoy,
+      # que es justo lo que el proyecto no hace: preferimos no salir.
       - name: Fetcher - bajar RSS (siempre fresco en edición)
         run: python scripts/fetcher.py --forzar
 
@@ -63,7 +69,16 @@ jobs:
         run: python scripts/selector.py
 
       - name: Datos económicos
+        # Tolerado, igual que los generadores. Adentro cada indicador ya tiene
+        # su cadena de fuentes y su conservar(previo): que se caiga el BCRA o
+        # Yahoo no lo mata, solo deja ese dato marcado stale. Lo único que lo
+        # tumba es un bug en el código — y eso ya pasó una vez, con el REM.
+        # datos.json se escribe recién al final, así que un crash a mitad de
+        # camino no deja el archivo a medias: queda intacto el del día anterior
+        # y los generadores de abajo lo leen sin problema.
+        id: datos
         run: python scripts/datos_economicos.py
+        continue-on-error: true
 
       - name: Histórico acumulativo
         id: historico
@@ -83,7 +98,9 @@ jobs:
         continue-on-error: true
 
       - name: Generador - La Data del Día
+        id: la_data
         run: python scripts/generador_la_data.py
+        continue-on-error: true
 
       - name: Generador - REM
         id: rem
@@ -96,13 +113,19 @@ jobs:
         continue-on-error: true
 
       - name: Generador - Documentos
+        id: documentos
         run: python scripts/generador_documentos.py
+        continue-on-error: true
 
       - name: Generador - Columnas
+        id: columnas
         run: python scripts/generador_columnas.py
+        continue-on-error: true
 
       - name: Generador - TXT-Stream
+        id: stream
         run: python scripts/generador_stream.py
+        continue-on-error: true
 
       - name: Generador - EconoTuits
         id: tuits
@@ -125,10 +148,12 @@ jobs:
         continue-on-error: true
 
       - name: Generador - Home portal
+        id: home
         env:
           PPA_EDICION_NOMBRE: ${{ steps.edicion.outputs.nombre }}
           PPA_EDICION_ICONO: ${{ steps.edicion.outputs.icono }}
         run: python scripts/generador_home.py
+        continue-on-error: true
 
       - name: Exportar config de fuentes
         id: config
@@ -164,15 +189,21 @@ jobs:
         run: |
           CAIDOS=""
           if [ "${{ steps.simulacro.outcome }}" = "failure" ]; then CAIDOS="$CAIDOS Simulacro de fallo"; fi
+          if [ "${{ steps.datos.outcome }}" = "failure" ]; then CAIDOS="$CAIDOS Datos económicos"; fi
           if [ "${{ steps.historico.outcome }}" = "failure" ]; then CAIDOS="$CAIDOS Histórico acumulativo"; fi
           if [ "${{ steps.pulso.outcome }}" = "failure" ]; then CAIDOS="$CAIDOS Generador - Pulso del Día"; fi
           if [ "${{ steps.resumidor.outcome }}" = "failure" ]; then CAIDOS="$CAIDOS Resumidor - resúmenes con Gemini"; fi
+          if [ "${{ steps.la_data.outcome }}" = "failure" ]; then CAIDOS="$CAIDOS Generador - La Data del Día"; fi
           if [ "${{ steps.rem.outcome }}" = "failure" ]; then CAIDOS="$CAIDOS Generador - REM"; fi
           if [ "${{ steps.informes.outcome }}" = "failure" ]; then CAIDOS="$CAIDOS Generador - Informes"; fi
+          if [ "${{ steps.documentos.outcome }}" = "failure" ]; then CAIDOS="$CAIDOS Generador - Documentos"; fi
+          if [ "${{ steps.columnas.outcome }}" = "failure" ]; then CAIDOS="$CAIDOS Generador - Columnas"; fi
+          if [ "${{ steps.stream.outcome }}" = "failure" ]; then CAIDOS="$CAIDOS Generador - TXT-Stream"; fi
           if [ "${{ steps.tuits.outcome }}" = "failure" ]; then CAIDOS="$CAIDOS Generador - EconoTuits"; fi
           if [ "${{ steps.tablero.outcome }}" = "failure" ]; then CAIDOS="$CAIDOS Generador - Tablero PPA"; fi
           if [ "${{ steps.tcrm.outcome }}" = "failure" ]; then CAIDOS="$CAIDOS Generador - TCRM histórico"; fi
           if [ "${{ steps.acerca.outcome }}" = "failure" ]; then CAIDOS="$CAIDOS Generador - Acerca de"; fi
+          if [ "${{ steps.home.outcome }}" = "failure" ]; then CAIDOS="$CAIDOS Generador - Home portal"; fi
           if [ "${{ steps.config.outcome }}" = "failure" ]; then CAIDOS="$CAIDOS Exportar config de fuentes"; fi
           if [ -z "$CAIDOS" ]; then
             echo "Todos los pasos tolerados terminaron bien."

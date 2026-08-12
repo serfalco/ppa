@@ -86,6 +86,17 @@ encontró el simulacro en su primer uso. Ahora la etiqueta existe, cada
 workflow la crea por las dudas, y un fallo al avisar deja un `::warning::` en
 vez de desaparecer.
 
+Con la alarma andando se pudo emparejar el criterio de la edición, que hasta
+ahora era arbitrario: diez pasos toleraban fallar y seis no, sin que la
+diferencia respondiera a nada. La regla quedó explícita: todo lo que produce
+una sección puede caerse —esa sección se queda con lo del día anterior, el
+resto sale y la alarma lo dice—, y solo el fetcher y el selector cortan la
+edición, porque producen las notas del día y publicar la portada de ayer con
+la fecha de hoy sería mentir. Datos económicos pasó al primer grupo: adentro
+cada indicador ya tiene cadena de fuentes y valor conservado, así que ninguna
+API caída lo mata; lo único que lo tumbaba era un bug propio, y eso tapaba la
+edición entera por una sección.
+
 Sobre el TCRM conviene recordar qué pasó, porque es el caso que más se puede
 repetir: no había página. El generador bajaba la serie de datos.gob.ar en cada
 corrida y armaba `/tcrm/` con eso, y como esa API dejó de responder abortaba
