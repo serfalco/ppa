@@ -1,6 +1,6 @@
 {
-  "generado_en": "2026-08-12T21:00:24.135863+00:00",
-  "generado_ar": "12/08/2026 18:00",
+  "generado_en": "2026-08-12T22:41:16.545935+00:00",
+  "generado_ar": "12/08/2026 19:41",
   "hechos": [
     {
       "slug": "brecha-dolar",
@@ -45,25 +45,25 @@
       "criollo": "La brecha es cuánto más caro está el dólar financiero (el que se compra con bonos) que el oficial. Cuando es chica, los dos precios casi se tocan.",
       "fuente_nombre": "DolarApi · cálculo PPA",
       "fuente_url": "https://dolarapi.com",
-      "dato_fecha": "12/08/2026 18:00",
+      "dato_fecha": "12/08/2026 19:41",
       "prioridad": 90
     },
     {
       "slug": "reservas-bcra",
       "categoria": "Reservas",
-      "titulo": "Las reservas del BCRA quedaron en US$ 49.457 millones",
-      "bajada": "Stock bruto del Banco Central, una suba del 1,3% en el día.",
+      "titulo": "Las reservas del BCRA quedaron en US$ 49.564 millones",
+      "bajada": "Stock bruto del Banco Central, una suba del 0,2% en el día.",
       "dato": {
-        "n": "49.457",
-        "txt": "millones de USD · reservas brutas · +1,3%"
+        "n": "49.564",
+        "txt": "millones de USD · reservas brutas · +0,2%"
       },
       "cuerpo": [
-        "Las reservas internacionales brutas del Banco Central cerraron en US$ 49.457 millones, una suba del 1,3% en el día. Es el stock bruto, antes de descontar swaps, encajes y otras obligaciones."
+        "Las reservas internacionales brutas del Banco Central cerraron en US$ 49.564 millones, una suba del 0,2% en el día. Es el stock bruto, antes de descontar swaps, encajes y otras obligaciones."
       ],
       "criollo": "Son los dólares que tiene el Banco Central. El número bruto es el total; el neto (que descuenta deudas) suele ser bastante más bajo.",
       "fuente_nombre": "BCRA API v4",
       "fuente_url": "https://www.bcra.gob.ar",
-      "dato_fecha": "07/08/2026",
+      "dato_fecha": "10/08/2026",
       "prioridad": 88
     },
     {
@@ -120,7 +120,7 @@
       "criollo": "El BCRA deja flotar el dólar dentro de un pasillo. Si se pega al techo hay más presión de suba; si se va al piso, lo contrario.",
       "fuente_nombre": "cálculo PPA (esquema BCRA)",
       "fuente_url": "https://www.bcra.gob.ar",
-      "dato_fecha": "12/08/2026 18:00",
+      "dato_fecha": "12/08/2026 19:41",
       "prioridad": 75
     }
   ]
