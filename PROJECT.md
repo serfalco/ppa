@@ -31,7 +31,7 @@ hechos y datos.
 | A · Autonomía y memoria | Casi cerrada | Solo falta la puerta: 14 días corridos sin carga manual |
 | B · Cerebro editorial | Pendiente | Texto completo, clustering, jerarquización, apertura |
 | C · Documentos oficiales | Pendiente | Calendario INDEC, Boletín Oficial, licitaciones |
-| D · Salud y transparencia | Parcial | Salud de fuentes ✅; falta tablero público y reporte semanal |
+| D · Salud y transparencia | Parcial | Salud de fuentes ✅, vigía de ediciones ✅; falta tablero público y reporte semanal |
 | E · Expansión | Pendiente | La Data narrada, REM avanzado, FCI, ON, nuevas salidas |
 
 ## Pendientes conocidos
@@ -46,14 +46,10 @@ Ordenados por impacto, según la prioridad recomendada del documento integral (�
    es la herramienta, no los datos. Igual hay que cerrarlo antes de darle
    capacidad de escritura. La solución prevista es Cloudflare Access (gratis),
    paso 11 de `docs/09`: son clics en el dashboard, no código.
-2. **Un cron salteado** — la Merienda del 6 de agosto de 2026 no corrió (no
-   existe la ejecución, no es que no hubo cambios). Los crons de GitHub
-   Actions no garantizan puntualidad ni ejecución bajo carga, y hoy nada avisa
-   cuando una edición no sale.
-3. **EconoTuits vive de cache** — nueve cuentas de Nitter devuelven 404. Salen
+2. **EconoTuits vive de cache** — nueve cuentas de Nitter devuelven 404. Salen
    31 tuits, pero la mayoría no se refrescan.
-4. **REM y Columnas vacías** — REM en 0 ediciones, Columnas no genera nada.
-5. **Node 20 deprecado** — `actions/checkout@v4` y `actions/setup-python@v5`
+3. **REM y Columnas vacías** — REM en 0 ediciones, Columnas no genera nada.
+4. **Node 20 deprecado** — `actions/checkout@v4` y `actions/setup-python@v5`
    lo usan; GitHub ya los fuerza a Node 24 y avisa en cada corrida.
 
 Cerrados el 11 y 12 de agosto de 2026: el MULC quedó automático
@@ -64,7 +60,8 @@ diagnosticaron y se dieron de baja por no tener ya un feed que corresponda a lo
 que dicen ser; el TCRM pasó a salir del ITCRM oficial del BCRA; y Merval y BADLAR
 volvieron a publicarse — la BADLAR con el ID vigente del BCRA (140 en vez de
 6) y el Merval desde Yahoo Finance, porque argentinadatos discontinuó ese
-endpoint.
+endpoint. Y el cron salteado dejó de ser un punto ciego: un vigía revisa
+después de cada edición que haya salido y abre un aviso si falta.
 
 Sobre el TCRM conviene recordar qué pasó, porque es el caso que más se puede
 repetir: no había página. El generador bajaba la serie de datos.gob.ar en cada
