@@ -220,6 +220,14 @@ def generar_acerca():
 
   <p class="totales">PPA agrega contenido de {activas} fuentes activas, distribuidas por categoría:</p>
 
+  <p>
+    Este listado es el catálogo: qué fuentes elegimos. Cómo viene andando cada
+    una —cuáles responden, cuáles dejaron de publicar y cuáles dimos de baja,
+    con el motivo— está en
+    <a href="/salud/"><strong>Salud de las fuentes</strong></a>, que se
+    actualiza sola en cada edición.
+  </p>
+
   {lista_html}
 
 </article>
@@ -231,7 +239,8 @@ def generar_acerca():
     <div class="pie-meta">
       <a href="/">Portada</a> ·
       <a href="/como-trabajamos.html">Cómo trabajamos</a> ·
-      <a href="/acerca.html">Acerca de</a>
+      <a href="/acerca.html">Acerca de</a> ·
+      <a href="/salud/">Salud de las fuentes</a>
     </div>
   </div>
 </footer>

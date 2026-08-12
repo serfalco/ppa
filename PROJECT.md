@@ -31,7 +31,7 @@ hechos y datos.
 | A · Autonomía y memoria | Casi cerrada | Solo falta la puerta: 14 días corridos sin carga manual |
 | B · Cerebro editorial | Pendiente | Texto completo, clustering, jerarquización, apertura |
 | C · Documentos oficiales | Pendiente | Calendario INDEC, Boletín Oficial, licitaciones |
-| D · Salud y transparencia | Parcial | Salud de fuentes ✅, vigía ✅ (se avisa a sí mismo si se rompe), alarma de pasos caídos ✅ — las dos probadas con simulacro; falta tablero público y reporte semanal |
+| D · Salud y transparencia | Parcial | Salud de fuentes ✅, vigía ✅ (se avisa a sí mismo si se rompe), alarma de pasos caídos ✅ — las dos probadas con simulacro; tablero público ✅ en `/salud/`; falta el reporte semanal |
 | E · Expansión | Pendiente | La Data narrada, REM avanzado, FCI, ON, nuevas salidas |
 
 ## Pendientes conocidos
@@ -97,6 +97,18 @@ cada indicador ya tiene cadena de fuentes y valor conservado, así que ninguna
 API caída lo mata; lo único que lo tumbaba era un bug propio, y eso tapaba la
 edición entera por una sección. La corrida del 12/08 18:49 UTC pasó los 28
 pasos en verde con el criterio nuevo.
+
+La salud de las fuentes salió a la calle. El fetcher venía midiendo en cada
+corrida si cada una responde, cuándo publicó por última vez y cuántos fallos
+seguidos lleva, y todo eso moría en `fuentes_runtime.json`. Ahora está en
+`/salud/`, generada en cada edición: las que fallan van arriba y no escondidas
+al final, las dadas de baja aparecen con el motivo —una fuente que se saca en
+silencio es un agujero que nadie puede auditar— y cada estado se explica con
+la misma definición que aplica el código. El motivo de baja dejó de ser un
+comentario en `FUENTES.py` y pasó a ser un campo, así que la página lo lee en
+vez de que haya que copiarlo a mano. Si falta el archivo de salud el generador
+corta en vez de publicar una tabla vacía. Queda linkeada desde Acerca de y
+Cómo trabajamos, sin tocar el menú principal, que está cerrado.
 
 Al vigía le faltaba lo mismo que él vino a resolver. Si el script se caía por
 un bug salía sin escribir `faltantes`, el aviso quedaba sin correr y el único
