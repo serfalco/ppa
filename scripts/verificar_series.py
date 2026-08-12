@@ -95,7 +95,8 @@ def buscar(texto, limite=10):
         return []
 
     salida = []
-    for f in filas:
+    for cruda in filas:
+        f = _aplanar(cruda)
         salida.append((
             _primero(f, ("field_title", "title", "field_description",
                          "description")) or "(sin título)",
@@ -112,9 +113,26 @@ def buscar(texto, limite=10):
     # mismo error que tener un ID viejo hardcodeado, un nivel más arriba.
     if filas and not any(s[1] for s in salida):
         print("   no reconocí el campo del ID. La API devolvió estas claves:")
-        for k in sorted(filas[0].keys()):
-            print(f"     {k} = {str(filas[0][k])[:60]}")
+        for k, v in sorted(_aplanar(filas[0]).items()):
+            print(f"     {k} = {str(v)[:60]}")
     return salida
+
+
+def _aplanar(fila):
+    """Deja la fila en un solo nivel: {"field": {"id": x}} → {"field_id": x}.
+
+    El buscador agrupa por objeto (dataset, distribution, field) y el ID vive
+    en field.id. Aplanar con el prefijo deja los nombres iguales a los que la
+    API usaba plano, así los dos formatos entran por el mismo lugar.
+    """
+    plana = {}
+    for k, v in fila.items():
+        if isinstance(v, dict):
+            for k2, v2 in v.items():
+                plana[f"{k}_{k2}"] = v2
+        else:
+            plana[k] = v
+    return plana
 
 
 def _primero(fila, claves):
