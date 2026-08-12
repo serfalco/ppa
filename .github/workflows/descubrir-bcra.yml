@@ -20,9 +20,9 @@ on:
         required: true
         default: 'bcra'
         type: choice
-        options: [bcra, feeds]
+        options: [bcra, feeds, series]
       filtros:
-        description: 'BCRA: palabras a buscar, o "--detalle 47 78" para ver valores. FEEDS: ids a probar (institucionales o de FUENTES.py, ej "fundar"), vacío = todas las institucionales.'
+        description: 'BCRA: palabras a buscar, o "--detalle 47 78" para ver valores. FEEDS: ids de FUENTES.py o URLs sueltas, vacío = las institucionales. SERIES: --buscar "texto" o --ids a,b, vacío = la lista de candidatos.'
         required: false
         default: 'mulc compra divisas'
         type: string
@@ -61,11 +61,11 @@ jobs:
         run: |
           echo "Herramienta: $HERRAMIENTA · argumentos: $FILTROS"
           # shellcheck disable=SC2086 — se quiere el split en palabras
-          if [ "$HERRAMIENTA" = "feeds" ]; then
-            python -u scripts/descubrir_feeds.py $FILTROS | tee salida.txt
-          else
-            python -u scripts/descubrir_bcra.py $FILTROS | tee salida.txt
-          fi
+          case "$HERRAMIENTA" in
+            feeds)  python -u scripts/descubrir_feeds.py  $FILTROS | tee salida.txt ;;
+            series) python -u scripts/verificar_series.py $FILTROS | tee salida.txt ;;
+            *)      python -u scripts/descubrir_bcra.py   $FILTROS | tee salida.txt ;;
+          esac
 
       - name: Escribir el resumen del job
         if: always()
@@ -74,11 +74,11 @@ jobs:
           HERRAMIENTA: ${{ inputs.herramienta }}
         run: |
           {
-            if [ "$HERRAMIENTA" = "feeds" ]; then
-              echo "## Feeds institucionales vigentes"
-            else
-              echo "## Variables de la API BCRA v4"
-            fi
+            case "$HERRAMIENTA" in
+              feeds)  echo "## Feeds vigentes" ;;
+              series) echo "## Series de datos.gob.ar" ;;
+              *)      echo "## Variables de la API BCRA v4" ;;
+            esac
             echo
             echo "Argumentos: \`$FILTROS\`"
             echo
@@ -86,17 +86,23 @@ jobs:
             cat salida.txt 2>/dev/null || echo "(sin salida — ver el log del paso anterior)"
             echo '```'
             echo
-            if [ "$HERRAMIENTA" = "feeds" ]; then
-              echo "### Qué hacer con esto"
-              echo
-              echo "1. Pegar las líneas sugeridas en \`scripts/FUENTES.py\` — si la fuente ya estaba, es reemplazo de su \`web\`."
-              echo "2. Si es institucional y alimenta Documentos, sumar el id a \`FUENTES_INSTITUCIONALES\` en \`scripts/generador_documentos.py\`."
-              echo "3. La próxima corrida del fetcher las levanta."
-            else
-              echo "### Si encontraste el ID del MULC"
-              echo
-              echo "1. Verificá que el valor coincida con el Informe Monetario Diario del BCRA."
-              echo "2. En \`scripts/datos_economicos.py\`, seteá \`MULC_BCRA_ID = <id>\`."
-              echo "3. Desde ahí el MULC sale de la API y la carga del panel queda de respaldo."
-            fi
+            echo "### Qué hacer con esto"
+            echo
+            case "$HERRAMIENTA" in
+              feeds)
+                echo "1. Pegar las líneas sugeridas en \`scripts/FUENTES.py\` — si la fuente ya estaba, es reemplazo de su \`web\`."
+                echo "2. Si es institucional y alimenta Documentos, sumar el id a \`FUENTES_INSTITUCIONALES\` en \`scripts/generador_documentos.py\`."
+                echo "3. La próxima corrida del fetcher las levanta."
+                ;;
+              series)
+                echo "1. Elegir el ID cuyo último dato sea el más reciente y la frecuencia la esperada."
+                echo "2. Verificar el valor contra la publicación oficial del organismo."
+                echo "3. Reemplazarlo en la tabla \`SERIES\` de \`scripts/datos_economicos.py\` (y en \`scripts/generador_tcrm.py\` si es el TCRM)."
+                ;;
+              *)
+                echo "1. Verificá que el valor coincida con el Informe Monetario Diario del BCRA."
+                echo "2. En \`scripts/datos_economicos.py\`, seteá \`MULC_BCRA_ID = <id>\`."
+                echo "3. Desde ahí el MULC sale de la API y la carga del panel queda de respaldo."
+                ;;
+            esac
           } >> "$GITHUB_STEP_SUMMARY"
