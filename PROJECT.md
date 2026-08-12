@@ -19,7 +19,7 @@ hechos y datos.
 |---|---|---|
 | 0. Definición | ✅ Terminada | 18 documentos en `docs/`, rector v2.0 |
 | 1. Prototipo editorial | ✅ Terminada | Sitio completo en producción |
-| 2. Agregador | ✅ Terminada | Ambas ediciones a diario; 34 de 38 fuentes sanas |
+| 2. Agregador | ✅ Terminada | Ambas ediciones a diario; 37 fuentes activas, todas sanas |
 | 3. Administración | ⚠️ Parcial | Panel funciona, pero sigue accesible por URL |
 | 4. Datos PPA | ✅ En producción | 20 indicadores vivos; Tablero en el menú |
 | 5. Migración | ✅ Terminada | Cloudflare Pages conectado; sin FTP ni Hostinger |
@@ -28,7 +28,7 @@ hechos y datos.
 
 | Fase | Estado | Falta |
 |---|---|---|
-| A · Autonomía y memoria | Casi cerrada | MULC automático; puerta de 14 días sin carga manual |
+| A · Autonomía y memoria | Casi cerrada | Solo falta la puerta: 14 días corridos sin carga manual |
 | B · Cerebro editorial | Pendiente | Texto completo, clustering, jerarquización, apertura |
 | C · Documentos oficiales | Pendiente | Calendario INDEC, Boletín Oficial, licitaciones |
 | D · Salud y transparencia | Parcial | Salud de fuentes ✅; falta tablero público y reporte semanal |
@@ -38,23 +38,40 @@ hechos y datos.
 
 Ordenados por impacto, según la prioridad recomendada del documento integral (§42).
 
-1. **MULC sin automatizar** — `MULC_BCRA_ID = None` en `datos_economicos.py`.
-   Correr `scripts/descubrir_bcra.py mulc compra divisas` donde haya internet,
-   verificar contra el Informe Monetario Diario y setear el ID. Es lo último
-   que bloquea la puerta de salida de la Fase A.
-2. **Panel sin autenticación** — `/panel69/` y `/admin/` son HTML accesible por
-   URL. `site/_headers` los marca `noindex`, pero eso no es protección.
-   La solución prevista es Cloudflare Access (gratis), en `docs/09`.
-3. **Resúmenes de Gemini sin verificar** — el paso corre con
-   `continue-on-error`, así que si la key falla, falla en silencio. Confirmar
-   que `gemini-2.5-flash-lite` está generando resúmenes de verdad.
+1. **Panel sin autenticación** — `/panel69/` y `/admin/` son HTML accesible por
+   URL (el mismo archivo servido en dos rutas). `site/_headers` los marca
+   `noindex`, pero eso no es protección. Alcance real, verificado el 12/08: no
+   hay credenciales embebidas y el panel solo lee tres JSON que ya son
+   públicos, así que hoy no filtra nada que no esté publicado — lo que expone
+   es la herramienta, no los datos. Igual hay que cerrarlo antes de darle
+   capacidad de escritura. La solución prevista es Cloudflare Access (gratis),
+   paso 11 de `docs/09`: son clics en el dashboard, no código.
+2. **El TCRM está congelado y no hay fuente de reemplazo** — desde el 17/06.
+   `datos.gob.ar` devuelve 400 para `168.1_T_CAMBIOR_D_0_0_26`, y las series de
+   tipo de cambio real que sí existen ahí son **bilaterales** (Canadá, China,
+   México, Uruguay, Vietnam, Chile) y **cortaron todas el 28/01/2026**. La API
+   del BCRA tampoco lo tiene: solo minorista, mayorista y contable. La vía que
+   queda es la planilla oficial `ITCRMSerie.xlsx` del BCRA, que es otra forma
+   de bajada (Excel, no JSON) y hay que construirla.
+3. **Merval y BADLAR conservan el valor previo** — Merval da 404 en
+   argentinadatos y BADLAR da 400 en la variable 6 de la API BCRA v4. Ninguno
+   rompe nada, pero los dos muestran un dato viejo sin decirlo.
 4. **Un cron salteado** — la Merienda del 6 de agosto de 2026 no corrió (no
    existe la ejecución, no es que no hubo cambios). Los crons de GitHub
-   Actions no garantizan puntualidad ni ejecución bajo carga.
-5. **Tres fuentes caídas** — `fundar`, `microjuris_laboral` y
-   `noticiasnet_energia`. Desde el fix del diagnóstico, el registro de salud
-   informa el motivo real (404, bloqueo, XML inválido) en vez de un mensaje
-   genérico: mirar `data/fuentes_runtime.json` tras la próxima corrida.
+   Actions no garantizan puntualidad ni ejecución bajo carga, y hoy nada avisa
+   cuando una edición no sale.
+5. **EconoTuits vive de cache** — nueve cuentas de Nitter devuelven 404. Salen
+   31 tuits, pero la mayoría no se refrescan.
+6. **REM y Columnas vacías** — REM en 0 ediciones, Columnas no genera nada.
+7. **Node 20 deprecado** — `actions/checkout@v4` y `actions/setup-python@v5`
+   lo usan; GitHub ya los fuerza a Node 24 y avisa en cada corrida.
+
+Cerrados el 11 y 12 de agosto de 2026: el MULC quedó automático
+(`MULC_BCRA_ID = 78`); los resúmenes con IA se verificaron generando en
+producción con `gemini-flash-latest`; el crash del Tablero, Documentos en cero
+y la salud de fuentes inflada quedaron arreglados; y las tres fuentes caídas se
+diagnosticaron y se dieron de baja por no tener ya un feed que corresponda a lo
+que dicen ser.
 
 ## Regla de trabajo
 
