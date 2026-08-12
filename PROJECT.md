@@ -20,7 +20,7 @@ hechos y datos.
 | 0. Definición | ✅ Terminada | 18 documentos en `docs/`, rector v2.0 |
 | 1. Prototipo editorial | ✅ Terminada | Sitio completo en producción |
 | 2. Agregador | ✅ Terminada | Ambas ediciones a diario; 37 fuentes activas, todas sanas |
-| 3. Administración | ⚠️ Parcial | Panel funciona, pero sigue accesible por URL |
+| 3. Administración | ⏸️ Sin empezar | El panel se dio de baja: no escribía nada. El flujo editorial es Fase D |
 | 4. Datos PPA | ✅ En producción | 20 indicadores vivos; Tablero en el menú |
 | 5. Migración | ✅ Terminada | Cloudflare Pages conectado; sin FTP ni Hostinger |
 
@@ -38,17 +38,13 @@ hechos y datos.
 
 Ordenados por impacto, según la prioridad recomendada del documento integral (§42).
 
-1. **Panel sin autenticación** — `/panel69/` y `/admin/` son HTML accesible por
-   URL (el mismo archivo servido en dos rutas). `site/_headers` los marca
-   `noindex`, pero eso no es protección. Alcance real, verificado el 12/08: no
-   hay credenciales embebidas y el panel solo lee tres JSON que ya son
-   públicos, así que hoy no filtra nada que no esté publicado — lo que expone
-   es la herramienta, no los datos. Igual hay que cerrarlo antes de darle
-   capacidad de escritura. La solución prevista es Cloudflare Access (gratis),
-   paso 11 de `docs/09`: son clics en el dashboard, no código.
-2. **EconoTuits vive de cache** — nueve cuentas de Nitter devuelven 404. Salen
+1. **EconoTuits vive de cache** — nueve cuentas de Nitter devuelven 404. Salen
    31 tuits, pero la mayoría no se refrescan.
-3. **REM y Columnas vacías** — REM en 0 ediciones, Columnas no genera nada.
+2. **REM y Columnas vacías** — REM en 0 ediciones. Columnas no genera nada
+   porque lee `columnas_manual.json`, que solo podía producir el panel dado de
+   baja: no es un generador roto, es una sección sin flujo de carga. Igual que
+   TXT-Stream con `stream_manual.json`. Reponerlos es rediseñar el flujo
+   editorial, que el documento integral pone en la Fase D.
 
 Cerrados el 11 y 12 de agosto de 2026: el MULC quedó automático
 (`MULC_BCRA_ID = 78`); los resúmenes con IA se verificaron generando en
@@ -62,6 +58,14 @@ endpoint. Y el cron salteado dejó de ser un punto ciego: un vigía revisa
 después de cada edición que haya salido y abre un aviso si falta. Y las
 acciones de los workflows subieron a las versiones sobre Node 24, así que se
 terminó el warning en cada corrida.
+
+También se dieron de baja `/panel69/` y `/admin/`. Eran el mismo archivo
+servido en dos rutas y figuraban como riesgo de seguridad desde la auditoría
+de julio, pero el problema real era otro: no hacían nada. Sin login, sin
+escribir —solo `localStorage` y copiar al portapapeles— y los tres archivos
+que los generadores esperaban de ellos nunca existieron en el repo. No estaban
+linkeados desde ninguna página viva. Quedan en el historial de git si algún
+día hace falta mirarlos.
 
 Sobre el TCRM conviene recordar qué pasó, porque es el caso que más se puede
 repetir: no había página. El generador bajaba la serie de datos.gob.ar en cada
