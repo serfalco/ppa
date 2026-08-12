@@ -32,23 +32,32 @@ JSON_TUITS = os.path.join(DIR_DATA, "tuits_cache.json")
 DIR_TUITS  = os.path.join(DIR_SITE, "tuits")
 
 # Cuentas a monitorear — orden = orden de aparición
+# Bajas del 12/08/2026: once handles devuelven 404 en Nitter. No es Nitter
+# caído —las cuentas vivas del listado responden bien— sino cuentas que
+# cambiaron de nombre o dejaron de existir; algunos organismos directamente ya
+# no existen. Buscar reemplazo a mano salió mal: @ARCA_Argentina responde pero
+# su último tuit es de 2023, @EnergiaArg de 2016 y @MRECIC_ARG de 2015. Un
+# handle que resuelve no es un handle vigente, así que se dan de baja hasta
+# verificar el reemplazo real, y la línea queda para reactivarla.
 CUENTAS = [
     {"id": "bcra",   "usuario": "BancoCentral_AR",  "nombre": "BCRA",                 "activa": True},
     {"id": "indec",  "usuario": "INDECArgentina",    "nombre": "INDEC",                "activa": True},
-    {"id": "mecon",    "usuario": "MinEconomiaAR",    "nombre": "Ministerio de Economía",  "activa": True},
+    {"id": "mecon",    "usuario": "MinEconomiaAR",    "nombre": "Ministerio de Economía",  "activa": False},
     {"id": "hacienda",  "usuario": "SecHacienda",       "nombre": "Secretaría de Hacienda",   "activa": True},
-    {"id": "finanzas",  "usuario": "SecFinanzasAR",     "nombre": "Secretaría de Finanzas",   "activa": True},
-    {"id": "energia",   "usuario": "EnergiaAR",         "nombre": "Secretaría de Energía",    "activa": True},
-    {"id": "magyp",     "usuario": "magyp_ar",          "nombre": "Ministerio de Agricultura","activa": True},
-    {"id": "comercio",  "usuario": "SecComercioAR",     "nombre": "Secretaría de Comercio",   "activa": True},
-    {"id": "afip",      "usuario": "AFIP_Argentina",    "nombre": "AFIP",                     "activa": True},
-    {"id": "cnv",       "usuario": "CNV_Argentina",     "nombre": "CNV",                      "activa": True},
-    {"id": "canciller", "usuario": "CancilleriaARG",    "nombre": "Cancillería",              "activa": True},
-    {"id": "opublica",  "usuario": "ObraPublicaAR",     "nombre": "Obras Públicas",           "activa": True},
+    {"id": "finanzas",  "usuario": "SecFinanzasAR",     "nombre": "Secretaría de Finanzas",   "activa": False},
+    {"id": "energia",   "usuario": "EnergiaAR",         "nombre": "Secretaría de Energía",    "activa": False},
+    {"id": "magyp",     "usuario": "magyp_ar",          "nombre": "Ministerio de Agricultura","activa": False},
+    {"id": "comercio",  "usuario": "SecComercioAR",     "nombre": "Secretaría de Comercio",   "activa": False},
+    {"id": "afip",      "usuario": "AFIP_Argentina",    "nombre": "AFIP",                     "activa": False},
+    # CNV_Argentina daba 404: el handle correcto es sin guión bajo.
+    # Verificado el 12/08/2026 — 20 entradas, la última del 29/07.
+    {"id": "cnv",       "usuario": "CNVArgentina",       "nombre": "CNV",                      "activa": True},
+    {"id": "canciller", "usuario": "CancilleriaARG",    "nombre": "Cancillería",              "activa": False},
+    {"id": "opublica",  "usuario": "ObraPublicaAR",     "nombre": "Obras Públicas",           "activa": False},
     # ── Institucionales ──
-    {"id":"fiel",       "usuario":"FIEL_arg",         "nombre":"FIEL",                   "activa":True},
-    {"id":"ieral",      "usuario":"ieralprovincia",   "nombre":"IERAL",                  "activa":True},
-    {"id":"fundar",     "usuario":"FundAr",           "nombre":"Fundar",                 "activa":True},
+    {"id":"fiel",       "usuario":"FIEL_arg",         "nombre":"FIEL",                   "activa": False},
+    {"id":"ieral",      "usuario":"ieralprovincia",   "nombre":"IERAL",                  "activa": False},
+    {"id":"fundar",     "usuario":"FundAr",           "nombre":"Fundar",                 "activa": False},
     {"id":"cippec",     "usuario":"CIPPEC",           "nombre":"CIPPEC",                 "activa":True},
     {"id":"cedlas",     "usuario":"CEDLAS_UNLP",      "nombre":"CEDLAS",                 "activa":True},
     {"id":"econviews",  "usuario":"econviews",        "nombre":"Econviews",              "activa":True},
@@ -146,15 +155,55 @@ def _fecha_iso(pubdate_str):
         return pubdate_str
 
 
+# Nitter limita por ritmo, no por volumen: la corrida del 11/08 trajo bien las
+# primeras dieciséis cuentas y desde ahí todas cortaron con "Max retries". No
+# estaban caídas — las estábamos golpeando demasiado rápido. Una pausa entre
+# pedidos y una sesión que reusa la conexión alcanzan para que entren todas.
+PAUSA_ENTRE_CUENTAS = 1.5   # segundos
+REINTENTOS = 2              # ante corte de conexión, no ante 404
+ESPERA_REINTENTO = 5        # segundos, y el doble en el segundo intento
+
+# Un tuit más viejo que esto no se publica aunque esté en el cache. Sin este
+# corte, una cuenta que dejó de existir se queda para siempre mostrando su
+# último tuit conocido: @laspina venía publicando uno de 2011.
+DIAS_FRESCURA = 90
+
+_sesion = None
+
+
+def _obtener_sesion():
+    """Una sola sesión para toda la corrida: reusa la conexión TCP."""
+    global _sesion
+    if _sesion is None:
+        import requests, urllib3
+        urllib3.disable_warnings()
+        _sesion = requests.Session()
+        _sesion.headers.update({"User-Agent": "PPA/4.0 RSS Reader"})
+    return _sesion
+
+
 def fetch_tuits_cuenta(cuenta):
     """Baja el RSS de Nitter para una cuenta. Devuelve lista de tuits o None si falla."""
-    import requests, urllib3
-    urllib3.disable_warnings()
+    import time
     usuario = cuenta["usuario"]
     url = f"https://nitter.net/{usuario}/rss"
+    sesion = _obtener_sesion()
+
+    r = None
+    for intento in range(REINTENTOS + 1):
+        try:
+            r = sesion.get(url, timeout=12, verify=False)
+            break
+        except Exception as e:
+            # Un corte de conexión es el síntoma del límite de ritmo: esperar
+            # y reintentar. Un 404 no llega acá — ese sale abajo, y no se
+            # reintenta porque la cuenta no va a aparecer por insistir.
+            if intento == REINTENTOS:
+                print(f"   ⚠  {usuario}: {str(e)[:70]}")
+                return None
+            time.sleep(ESPERA_REINTENTO * (intento + 1))
+
     try:
-        r = requests.get(url, timeout=12, verify=False,
-                         headers={"User-Agent": "PPA/4.0 RSS Reader"})
         if r.status_code != 200:
             print(f"   ⚠  {usuario}: HTTP {r.status_code}")
             return None
@@ -237,13 +286,16 @@ def obtener_todos_los_tuits():
     cache = cargar_cache()
     config_panel = _leer_config_panel()
     resultado = {}
-    for cuenta in CUENTAS:
+    import time
+    activas = [c for c in CUENTAS
+               if config_panel.get(c["id"], c.get("activa", True))]
+
+    for i, cuenta in enumerate(activas):
         cid = cuenta["id"]
-        activa = config_panel.get(cid, cuenta.get("activa", True))
-        if not activa:
-            continue
-        cid = cuenta["id"]
+        if i:
+            time.sleep(PAUSA_ENTRE_CUENTAS)
         tuits = fetch_tuits_cuenta(cuenta)
+
         if tuits:
             resultado[cid] = {
                 "nombre":       cuenta["nombre"],
@@ -252,7 +304,7 @@ def obtener_todos_los_tuits():
                 "actualizado":  datetime.now(timezone.utc).isoformat(),
                 "fuente":       "nitter",
             }
-        elif cid in cache:
+        elif cid in cache and cache[cid].get("tuits"):
             resultado[cid] = cache[cid]
             resultado[cid]["fuente"] = "cache"
             print(f"   ↩  {cuenta['usuario']}: usando cache")
@@ -263,6 +315,18 @@ def obtener_todos_los_tuits():
                 "tuits":    [],
                 "fuente":   "sin_datos",
             }
+
+        # El corte por antigüedad va acá y no en el render: una cuenta cuyo
+        # último tuit es de hace años no es contenido, y dejarla en el cache
+        # la revive en la corrida siguiente.
+        vigentes = resultado[cid].get("tuits") or []
+        if vigentes and not _tuit_es_reciente(vigentes, DIAS_FRESCURA):
+            f = (vigentes[0].get("fecha") or "")[:10]
+            print(f"   ⏳ {cuenta['usuario']}: último tuit {f}, más de "
+                  f"{DIAS_FRESCURA} días — no se publica")
+            resultado[cid]["tuits"] = []
+            resultado[cid]["fuente"] = "vencido"
+
     guardar_cache(resultado)
     return resultado
 
