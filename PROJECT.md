@@ -31,7 +31,7 @@ hechos y datos.
 | A · Autonomía y memoria | Casi cerrada | Solo falta la puerta: 14 días corridos sin carga manual |
 | B · Cerebro editorial | Pendiente | Texto completo, clustering, jerarquización, apertura |
 | C · Documentos oficiales | Pendiente | Calendario INDEC, Boletín Oficial, licitaciones |
-| D · Salud y transparencia | Parcial | Salud de fuentes ✅, vigía ✅, alarma de pasos caídos ✅ (probada con simulacro); falta tablero público y reporte semanal |
+| D · Salud y transparencia | Parcial | Salud de fuentes ✅, vigía ✅ (se avisa a sí mismo si se rompe), alarma de pasos caídos ✅ — las dos probadas con simulacro; falta tablero público y reporte semanal |
 | E · Expansión | Pendiente | La Data narrada, REM avanzado, FCI, ON, nuevas salidas |
 
 ## Pendientes conocidos
@@ -95,7 +95,16 @@ edición, porque producen las notas del día y publicar la portada de ayer con
 la fecha de hoy sería mentir. Datos económicos pasó al primer grupo: adentro
 cada indicador ya tiene cadena de fuentes y valor conservado, así que ninguna
 API caída lo mata; lo único que lo tumbaba era un bug propio, y eso tapaba la
-edición entera por una sección.
+edición entera por una sección. La corrida del 12/08 18:49 UTC pasó los 28
+pasos en verde con el criterio nuevo.
+
+Al vigía le faltaba lo mismo que él vino a resolver. Si el script se caía por
+un bug salía sin escribir `faltantes`, el aviso quedaba sin correr y el único
+rastro era el rojo en Actions: un centinela que podía morir en silencio. Ahora
+hay un segundo aviso para ese caso, que no afirma que faltó una edición sino
+que el control quedó sin cubrir, y un simulacro para probarlo. Los dos
+simulacros —el de pasos caídos y el del vigía roto— abrieron su issue: son los
+únicos avisos que el repo emitió en su historia, y los dos salieron a pedido.
 
 Sobre el TCRM conviene recordar qué pasó, porque es el caso que más se puede
 repetir: no había página. El generador bajaba la serie de datos.gob.ar en cada
