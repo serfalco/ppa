@@ -43,9 +43,6 @@ Ordenados por impacto, según la prioridad recomendada del documento integral (�
    baja: no es un generador roto, es una sección sin flujo de carga. Igual que
    TXT-Stream con `stream_manual.json`. Reponerlos es rediseñar el flujo
    editorial, que el documento integral pone en la Fase D.
-2. **Diecisiete cuentas de EconoTuits sin verificar** — quedaron activas y
-   traen tuits, pero solo se comprobó una por una las que fallaban. Las once
-   dadas de baja esperan que alguien confirme el handle nuevo, si existe.
 
 Cerrados el 11 y 12 de agosto de 2026: el MULC quedó automático
 (`MULC_BCRA_ID = 78`); los resúmenes con IA se verificaron generando en
@@ -64,8 +61,13 @@ EconoTuits resultó ser otra cosa que lo anotado: no vivía de cache por
 fuentes muertas, sino porque Nitter limita por ritmo y la corrida disparaba
 veintiocho pedidos seguidos. Con pausa, sesión reusada y reintento, las
 cuentas vivas vuelven a traer en el momento. Se corrigió el handle de la CNV,
-se dieron de baja once que dan 404 y se cableó el corte por antigüedad que
-estaba escrito sin usarse: @laspina venía publicando un tuit de 2011.
+se cableó el corte por antigüedad que estaba escrito sin usarse, y se
+probaron las veintiocho cuentas una por una contra Nitter: diecisiete dan 404
+y @laspina responde con un tuit de 2011. Quedan once activas, todas con
+contenido verificado ese día — seis de ellas con tuits de la misma semana.
+@SecHacienda sigue activa aunque su tuit más nuevo sea de marzo de 2025: el
+corte no la publica mientras siga así, y si Nitter vuelve a ver tuits nuevos
+entra sola.
 
 También se dieron de baja `/panel69/` y `/admin/`. Eran el mismo archivo
 servido en dos rutas y figuraban como riesgo de seguridad desde la auditoría

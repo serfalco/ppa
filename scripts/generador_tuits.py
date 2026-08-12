@@ -32,7 +32,9 @@ JSON_TUITS = os.path.join(DIR_DATA, "tuits_cache.json")
 DIR_TUITS  = os.path.join(DIR_SITE, "tuits")
 
 # Cuentas a monitorear — orden = orden de aparición
-# Bajas del 12/08/2026: once handles devuelven 404 en Nitter. No es Nitter
+# Bajas del 12/08/2026: diecisiete handles devuelven 404 en Nitter, y uno
+# —@laspina— responde con un tuit de 2011. Se probaron las veintiocho una por
+# una contra Nitter ese día; las que quedan activas trajeron contenido. No es Nitter
 # caído —las cuentas vivas del listado responden bien— sino cuentas que
 # cambiaron de nombre o dejaron de existir; algunos organismos directamente ya
 # no existen. Buscar reemplazo a mano salió mal: @ARCA_Argentina responde pero
@@ -43,6 +45,9 @@ CUENTAS = [
     {"id": "bcra",   "usuario": "BancoCentral_AR",  "nombre": "BCRA",                 "activa": True},
     {"id": "indec",  "usuario": "INDECArgentina",    "nombre": "INDEC",                "activa": True},
     {"id": "mecon",    "usuario": "MinEconomiaAR",    "nombre": "Ministerio de Economía",  "activa": False},
+    # Responde, pero el tuit más nuevo que da Nitter es de marzo de 2025.
+    # Queda activa: el corte por antigüedad no la publica mientras siga
+    # así, y si Nitter vuelve a ver tuits nuevos entra sola.
     {"id": "hacienda",  "usuario": "SecHacienda",       "nombre": "Secretaría de Hacienda",   "activa": True},
     {"id": "finanzas",  "usuario": "SecFinanzasAR",     "nombre": "Secretaría de Finanzas",   "activa": False},
     {"id": "energia",   "usuario": "EnergiaAR",         "nombre": "Secretaría de Energía",    "activa": False},
@@ -59,19 +64,19 @@ CUENTAS = [
     {"id":"ieral",      "usuario":"ieralprovincia",   "nombre":"IERAL",                  "activa": False},
     {"id":"fundar",     "usuario":"FundAr",           "nombre":"Fundar",                 "activa": False},
     {"id":"cippec",     "usuario":"CIPPEC",           "nombre":"CIPPEC",                 "activa":True},
-    {"id":"cedlas",     "usuario":"CEDLAS_UNLP",      "nombre":"CEDLAS",                 "activa":True},
+    {"id":"cedlas",     "usuario":"CEDLAS_UNLP",      "nombre":"CEDLAS",                 "activa":False},
     {"id":"econviews",  "usuario":"econviews",        "nombre":"Econviews",              "activa":True},
     {"id":"acde",       "usuario":"ACDEArgentina",    "nombre":"ACDE",                   "activa":True},
-    {"id":"abeceb",     "usuario":"AbecebConsult",    "nombre":"Abeceb",                 "activa":True},
+    {"id":"abeceb",     "usuario":"AbecebConsult",    "nombre":"Abeceb",                 "activa":False},
     {"id":"ecogo",      "usuario":"EcoGoConsultor1",  "nombre":"EcoGo Consultores",      "activa":True},
     # ── Personales ──
     {"id":"vitelli",    "usuario":"SalvadorVitell1",  "nombre":"Salvador Vitelli",       "activa":True},
-    {"id":"kiguel",     "usuario":"KiguelMiguel",     "nombre":"Miguel Kiguel",          "activa":True},
-    {"id":"laspina",    "usuario":"laspina",          "nombre":"Luciano Laspina",        "activa":True},
+    {"id":"kiguel",     "usuario":"KiguelMiguel",     "nombre":"Miguel Kiguel",          "activa":False},
+    {"id":"laspina",    "usuario":"laspina",          "nombre":"Luciano Laspina",        "activa":False},
     {"id":"spotorno",   "usuario":"fspotorno",        "nombre":"Fausto Spotorno",        "activa":True},
     {"id":"sica",       "usuario":"DanteSica",        "nombre":"Dante Sica",             "activa":True},
-    {"id":"melconian",  "usuario":"mcarlosmelconian", "nombre":"Carlos Melconian",       "activa":True},
-    {"id":"dalpoggetto","usuario":"DalPoggettoM",     "nombre":"Marina Dal Poggetto",    "activa":True},
+    {"id":"melconian",  "usuario":"mcarlosmelconian", "nombre":"Carlos Melconian",       "activa":False},
+    {"id":"dalpoggetto","usuario":"DalPoggettoM",     "nombre":"Marina Dal Poggetto",    "activa":False},
 ]
 
 # Clasificación por tipo
