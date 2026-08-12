@@ -13,6 +13,13 @@ on:
     - cron: '25 11 * * *'  # tras el Desayuno (cron 09:00 UTC + gracia)
     - cron: '40 22 * * *'  # tras la Merienda (cron 20:15 UTC + gracia)
   workflow_dispatch:
+    inputs:
+      simulacro_bug:
+        description: 'Simular que el vigía se rompe (para probar el aviso)'
+        required: false
+        default: ''
+        type: choice
+        options: ['', 'si']
 
 permissions:
   actions: read     # listar las corridas del workflow de ediciones
@@ -40,7 +47,17 @@ jobs:
         id: vigia
         env:
           GH_TOKEN: ${{ github.token }}
-        run: python -u scripts/vigia_ediciones.py
+          SIMULACRO_BUG: ${{ inputs.simulacro_bug }}
+        run: |
+          # El simulacro solo se puede pedir a mano; en el cron el input viene
+          # vacío. Imita el modo de falla que importa —morir sin escribir
+          # `faltantes`— para poder probar el aviso de vigía roto sin esperar
+          # a que aparezca un bug de verdad.
+          if [ "$SIMULACRO_BUG" = "si" ]; then
+            echo "Simulacro: el vigía se cae sin alcanzar a escribir faltantes."
+            exit 1
+          fi
+          python -u scripts/vigia_ediciones.py
 
       - name: Avisar si faltó alguna
         if: failure() && steps.vigia.outputs.faltantes != ''
@@ -72,5 +89,38 @@ jobs:
           Para publicarla a mano: Actions → *PPA - Ediciones Diarias* → Run workflow, eligiendo la edición.
 
           Corrida del vigía: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}" \
+            --label alerta \
+            || echo "::warning::No pude crear el issue de alerta"
+
+      - name: Avisar si el vigía mismo se rompió
+        # El vigía existe porque una corrida que no arranca no avisa a nadie.
+        # Le pasaba lo mismo a él: si el script se cae por un bug, sale sin
+        # `faltantes`, el paso de arriba no corre y el único rastro queda en
+        # rojo en la pestaña de Actions, que es justo lo que nadie mira. Un
+        # centinela que puede morir en silencio no cubre nada.
+        #
+        # El script ya distingue los dos casos: si la API de GitHub no
+        # responde, avisa y sale con 0 a propósito, para no inventar una
+        # alerta por un 500 ajeno. Así que llegar acá significa un bug nuestro.
+        if: failure() && steps.vigia.outputs.faltantes == ''
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          TITULO="⚠ El vigía de ediciones se rompió — $(date -u '+%Y-%m-%d')"
+          YA=$(gh issue list --state open --label alerta \
+                 --json title --jq '.[].title' | grep -Fx "$TITULO" || true)
+          if [ -n "$YA" ]; then
+            echo "Ya hay un aviso abierto para hoy."
+            exit 0
+          fi
+          gh label create alerta --color d73a4a \
+            --description "Avisos automáticos del pipeline" 2>/dev/null || true
+          gh issue create \
+            --title "$TITULO" \
+            --body "\`vigia_ediciones.py\` falló sin llegar a decir qué ediciones faltaban.
+
+          No dice nada sobre las ediciones de hoy: puede que hayan salido las dos. Lo que quedó sin cubrir es el control — mientras el vigía esté roto, una edición que no arranque vuelve a pasar desapercibida.
+
+          El traceback está en el log de la corrida: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}" \
             --label alerta \
             || echo "::warning::No pude crear el issue de alerta"
