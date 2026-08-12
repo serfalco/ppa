@@ -77,14 +77,11 @@ FUENTES = [
 
     # ===== LABORAL =====
     {"id":"iprof_management", "nombre":"iProfesional Management", "web":"https://www.iprofesional.com/rss/management", "categoria":"Laboral", "tier":1, "activa":True},
-    # 11/08/2026: la categoría responde 200 y viene vacía. El feed general del
-    # sitio (https://aldia.microjuris.com/feed/) sí trae 25 notas, pero es todo
-    # Microjuris — derecho comercial, penal, familia — no solo laboral, y la
-    # sección de acá es Laboral. Queda como está hasta decidir si se cambia el
-    # rótulo a "Microjuris Al Día" o se descarta: el sitio empezó a devolver
-    # 429 al tercer pedido, así que confirmar si existe otra categoría laboral
-    # requiere volver más tarde y con menos pedidos.
-    {"id":"microjuris_laboral", "nombre":"Microjuris Laboral", "web":"https://aldia.microjuris.com/category/derecho-laboral/feed/", "categoria":"Laboral", "tier":2, "activa":True},
+    # Baja 11/08/2026: la categoría responde 200 y viene vacía. El feed general
+    # del sitio (https://aldia.microjuris.com/feed/) sí trae 25 notas, pero es
+    # todo Microjuris — comercial, penal, familia — y la sección de acá es
+    # Laboral: usarlo con este rótulo sería atribuir mal la fuente. Se descarta.
+    {"id":"microjuris_laboral", "nombre":"Microjuris Laboral", "web":"https://aldia.microjuris.com/category/derecho-laboral/feed/", "categoria":"Laboral", "tier":2, "activa":False},
     {"id":"oit_podcast", "nombre":"OIT Podcast", "web":"https://voices.ilo.org/rss/podcast/fow-es-es.xml", "categoria":"Laboral", "tier":3, "activa":True},
 
     # ===== LOGÍSTICA =====
