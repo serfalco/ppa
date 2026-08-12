@@ -20,7 +20,7 @@ on:
         required: true
         default: 'bcra'
         type: choice
-        options: [bcra, feeds, series]
+        options: [bcra, feeds, series, itcrm]
       filtros:
         description: 'BCRA: palabras a buscar, o "--detalle 47 78" para ver valores. FEEDS: ids de FUENTES.py o URLs sueltas, vacío = las institucionales. SERIES: --buscar "texto" o --ids a,b, vacío = la lista de candidatos.'
         required: false
@@ -49,7 +49,7 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install requests feedparser
+          pip install requests feedparser openpyxl
 
       - name: Descubrir
         id: consulta
@@ -64,6 +64,7 @@ jobs:
           case "$HERRAMIENTA" in
             feeds)  python -u scripts/descubrir_feeds.py  $FILTROS | tee salida.txt ;;
             series) python -u scripts/verificar_series.py $FILTROS | tee salida.txt ;;
+            itcrm)  python -u scripts/itcrm_bcra.py       $FILTROS | tee salida.txt ;;
             *)      python -u scripts/descubrir_bcra.py   $FILTROS | tee salida.txt ;;
           esac
 
@@ -77,6 +78,7 @@ jobs:
             case "$HERRAMIENTA" in
               feeds)  echo "## Feeds vigentes" ;;
               series) echo "## Series de datos.gob.ar" ;;
+              itcrm)  echo "## ITCRM — planilla del BCRA" ;;
               *)      echo "## Variables de la API BCRA v4" ;;
             esac
             echo
@@ -98,6 +100,10 @@ jobs:
                 echo "1. Elegir el ID cuyo último dato sea el más reciente y la frecuencia la esperada."
                 echo "2. Verificar el valor contra la publicación oficial del organismo."
                 echo "3. Reemplazarlo en la tabla \`SERIES\` de \`scripts/datos_economicos.py\` (y en \`scripts/generador_tcrm.py\` si es el TCRM)."
+                ;;
+              itcrm)
+                echo "Sin argumentos baja la planilla y resume la serie; con \`--diagnostico\` muestra la forma del archivo."
+                echo "Si el parseo falla, el diagnóstico dice en qué hoja y fila quedó el encabezado."
                 ;;
               *)
                 echo "1. Verificá que el valor coincida con el Informe Monetario Diario del BCRA."
