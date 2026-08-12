@@ -185,43 +185,97 @@ def bajar_rem(info):
         return None
 
 
+# Secciones de la planilla que van a la ficha, por palabra en el título.
+# El resto —núcleo, exportaciones, importaciones, resultado primario,
+# desocupación— está en el Excel y podría sumarse; estas cuatro son las que
+# la ficha venía mostrando.
+SECCIONES = [
+    ("ipc",  ("ipc nivel general", "precios minoristas (ipc nivel")),
+    ("tasa", ("tamar", "tasa de interés")),
+    ("tcn",  ("tipo de cambio nominal",)),
+    ("pbi",  ("pib a precios constantes", "pib")),
+]
+
+
+def _texto(v):
+    return "" if v is None or str(v) == "nan" else str(v).strip()
+
+
+def _es_titulo(celdas):
+    """Una sola celda con texto: así marca el BCRA cada sección."""
+    return len(celdas) == 1 and not celdas[0][:1].isdigit()
+
+
 def parsear_rem(fpath, periodo):
-    """Extrae variables clave del Excel del REM."""
+    """Extrae, por sección, la mediana del período más cercano.
+
+    La planilla viene por secciones: un título, una fila de encabezados
+    (Período | Referencia | Mediana | Promedio | Desvío) y las filas de datos.
+    Se lee la columna Mediana por su nombre y se guarda junto con la
+    Referencia que trae la propia planilla — "var. % mensual", "en $/USD" —
+    en vez de rotular el número por nuestra cuenta.
+
+    Eso importa: la versión anterior buscaba palabras clave por fila y se
+    quedaba con el primer número que encontrara, sin saber si era mediana,
+    promedio o desvío. Con la planilla de julio devolvía un solo valor,
+    1512.38, rotulado "Dólar fin de año" sin que nada lo respaldara.
+    """
     try:
         import pandas as pd
-        # El REM tiene estructura variable entre versiones; intentar leer
         engine = "xlrd" if fpath.endswith(".xls") else "openpyxl"
         try:
             df = pd.read_excel(fpath, engine=engine, header=None)
         except Exception:
-            # Fallback: intentar con el otro engine
-            alt_engine = "openpyxl" if engine == "xlrd" else "xlrd"
-            df = pd.read_excel(fpath, engine=alt_engine, header=None)
+            alt = "openpyxl" if engine == "xlrd" else "xlrd"
+            df = pd.read_excel(fpath, engine=alt, header=None)
 
-        # Buscar filas que contengan palabras clave
-        vars_encontradas = {}
-        keywords = {
-            "inflacion_12m": ["inflación", "inflacion", "IPC", "CPI", "precios"],
-            "tcn_fin_anio":  ["tipo de cambio", "dólar", "dollar", "USD", "TCN"],
-            "pbi":           ["PBI", "PIB", "GDP", "producto bruto"],
-            "tasa":          ["tasa", "rate", "política monetaria"],
-        }
-        for idx, row in df.iterrows():
-            row_str = " ".join([str(v).lower() for v in row if v and str(v) != "nan"])
-            for clave, kws in keywords.items():
-                if clave not in vars_encontradas:
-                    for kw in kws:
-                        if kw.lower() in row_str:
-                            # Tomar el primer número numérico de la fila
-                            nums = [v for v in row if isinstance(v, (int, float)) and not pd.isna(v)]
-                            if nums:
-                                vars_encontradas[clave] = round(float(nums[0]), 2)
-                            break
+        filas = [[_texto(v) for v in fila] for _, fila in df.iterrows()]
+        crudas = [list(fila) for _, fila in df.iterrows()]
+
+        encontradas = {}
+        seccion = None
+        col_mediana = None
+        for i, fila in enumerate(filas):
+            celdas = [c for c in fila if c]
+            if not celdas:
+                continue
+
+            if _es_titulo(celdas):
+                titulo = celdas[0].lower()
+                seccion, col_mediana = None, None
+                for clave, marcas in SECCIONES:
+                    if clave in encontradas:
+                        continue
+                    if any(m in titulo for m in marcas):
+                        seccion = clave
+                        break
+                continue
+
+            if not seccion:
+                continue
+
+            # La fila de encabezados dice dónde está Mediana.
+            if col_mediana is None:
+                bajas = [c.lower() for c in fila]
+                if "mediana" in bajas:
+                    col_mediana = bajas.index("mediana")
+                continue
+
+            # Primera fila de datos de la sección: el período más cercano.
+            valor = crudas[i][col_mediana] if col_mediana < len(crudas[i]) else None
+            if not isinstance(valor, (int, float)) or pd.isna(valor):
+                continue
+            encontradas[seccion] = {
+                "valor":      round(float(valor), 2),
+                "referencia": fila[1] if len(fila) > 1 else "",
+                "periodo":    fila[0][:10],
+            }
+            seccion, col_mediana = None, None
 
         return {
             "periodo":       periodo,
             "mes_nombre":    mes_nombre(periodo),
-            "datos":         vars_encontradas,
+            "datos":         encontradas,
             "parseado_en":   datetime.now(timezone.utc).isoformat(),
         }
     except Exception as e:
@@ -231,24 +285,6 @@ def parsear_rem(fpath, periodo):
             "mes_nombre": mes_nombre(periodo),
             "datos":      {},
         }
-
-
-# ================================================================
-# CARGAR ÍNDICE LOCAL
-# ================================================================
-
-def cargar_indice():
-    if not os.path.exists(JSON_REM):
-        return []
-    try:
-        with open(JSON_REM,'r',encoding='utf-8') as f:
-            return json.load(f)
-    except:
-        return []
-
-def guardar_indice(indice):
-    with open(JSON_REM,'w',encoding='utf-8') as f:
-        json.dump(indice, f, ensure_ascii=False, indent=2)
 
 
 # ================================================================
@@ -262,15 +298,36 @@ def card_rem_html(item, es_ultimo=False):
     clase     = "rem-card rem-card-ultimo" if es_ultimo else "rem-card"
 
     def fmt_dato(clave, label, sufijo=""):
+        """Rotula con lo que dice la planilla, no con lo que suponemos.
+
+        Las fichas viejas guardaban un número suelto; las nuevas guardan
+        valor, referencia y período. Se aceptan las dos formas para no
+        romper el índice ya guardado.
+        """
         v = datos.get(clave)
-        if v is None: return ""
+        if v is None:
+            return ""
+        if isinstance(v, dict):
+            valor = v.get("valor")
+            if valor is None:
+                return ""
+            detalle = " · ".join(x for x in (v.get("referencia"),
+                                             v.get("periodo")) if x)
+            aclaracion = (f'<span class="rem-dato-ref">{escapar(detalle)}</span>'
+                          if detalle else "")
+            return (f'<div class="rem-dato"><span class="rem-dato-label">{label}</span>'
+                    f'<span class="rem-dato-valor">{valor}</span>{aclaracion}</div>')
         return f'<div class="rem-dato"><span class="rem-dato-label">{label}</span><span class="rem-dato-valor">{v}{sufijo}</span></div>'
 
     datos_html = (
+        fmt_dato("ipc",  "Inflación (mediana)", "%") +
+        fmt_dato("tcn",  "Tipo de cambio nominal (mediana)", " $/USD") +
+        fmt_dato("tasa", "Tasa TAMAR (mediana)", "% TNA") +
+        fmt_dato("pbi",  "PIB (mediana)", "%") +
+        # Fichas anteriores al 12/08/2026, con las claves y rótulos viejos.
         fmt_dato("inflacion_12m", "Inflación esperada 12m", "%") +
         fmt_dato("tcn_fin_anio",  "Dólar fin de año", " $/USD") +
-        fmt_dato("pbi",           "PBI variación anual", "%") +
-        fmt_dato("tasa",          "Tasa esperada", "% TNA")
+        fmt_dato("pbi_viejo",     "PBI variación anual", "%")
     )
 
     return f"""
