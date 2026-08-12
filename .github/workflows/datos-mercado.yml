@@ -52,7 +52,14 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
+          # La etiqueta tiene que existir o gh issue create aborta entero y no
+          # crea nada. Pasó: las cinco vías de alerta del repo la usaban y
+          # ninguna había podido avisar nunca. Crearla acá es idempotente y
+          # deja el workflow andando en un clon nuevo.
+          gh label create alerta --color d73a4a \
+            --description "Avisos automáticos del pipeline" 2>/dev/null || true
           gh issue create \
             --title "⚠ Falló Datos de mercado — $(date -u '+%Y-%m-%d %H:%M UTC')" \
             --body "El workflow **Datos de mercado** falló. Ver corrida: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}" \
-            --label "alerta" || true
+            --label alerta \
+            || echo "::warning::No pude crear el issue de alerta"
