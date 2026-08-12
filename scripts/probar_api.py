@@ -19,7 +19,9 @@ Cómo se corre (donde haya internet):
 """
 
 import json
+import re
 import sys
+from urllib.parse import urljoin
 
 import requests
 
@@ -34,6 +36,13 @@ TIMEOUT = 20
 # Cuánto se muestra de una respuesta que no es JSON. Lo justo para reconocer
 # si es una página de error, un HTML de login o un XML.
 CHARS_CRUDO = 300
+
+# Documentos que interesan cuando la respuesta es una página: los organismos
+# publican sus series y sus informes como archivos colgados de un índice, y
+# encontrar el enlace es la mitad del trabajo. Le pasó al ITCRM y le está
+# pasando al REM, que busca "rem_AAAAMM.xls" en una página que cambió.
+EXT_DOCUMENTOS = (".xlsx", ".xls", ".csv", ".pdf", ".zip")
+MAX_ENLACES = 25
 
 
 def resumir(valor, sangria=1, max_claves=12):
@@ -63,6 +72,20 @@ def resumir(valor, sangria=1, max_claves=12):
         print(f"{pre}{str(valor)[:70]}")
 
 
+def enlaces_a_documentos(html, base):
+    """Enlaces de la página que apuntan a archivos descargables."""
+    encontrados, vistos = [], set()
+    for href in re.findall(r'href\s*=\s*["\']([^"\']+)["\']', html or "", re.I):
+        limpio = href.strip()
+        if not limpio.lower().split("?")[0].endswith(EXT_DOCUMENTOS):
+            continue
+        completo = urljoin(base, limpio)
+        if completo not in vistos:
+            vistos.add(completo)
+            encontrados.append(completo)
+    return encontrados
+
+
 def probar(url):
     print(f"=== {url}")
     try:
@@ -85,7 +108,15 @@ def probar(url):
     try:
         datos = r.json()
     except Exception:
-        print(f"    no es JSON: {r.text.strip()[:CHARS_CRUDO]}")
+        docs = enlaces_a_documentos(r.text, url)
+        if docs:
+            print(f"    no es JSON; la página enlaza {len(docs)} documento(s):")
+            for u in docs[:MAX_ENLACES]:
+                print(f"      {u}")
+            if len(docs) > MAX_ENLACES:
+                print(f"      … y {len(docs) - MAX_ENLACES} más")
+        else:
+            print(f"    no es JSON: {r.text.strip()[:CHARS_CRUDO]}")
         print()
         return
 
