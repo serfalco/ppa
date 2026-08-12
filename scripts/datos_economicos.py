@@ -33,6 +33,8 @@ from config import DIR_DATA
 
 TZ_AR = timezone(timedelta(hours=-3))
 JSON_DATOS = os.path.join(DIR_DATA, "datos.json")
+# Serie del ITCRM que deja el generador de la página /tcrm/.
+JSON_ITCRM = os.path.join(DIR_DATA, "tcrm_historico.json")
 
 # User-Agent de navegador real: varias fuentes filtran bots básicos
 HDRS = {
@@ -530,8 +532,10 @@ SERIES = [
     ("ipc_nucleo",    "103.1_I2N_2016_M_15",       "%",      "mensual", "var_men"),
     # EMAE desestacionalizado (verificado OK)
     ("emae",          "143.3_NO_PR_2004_A_21",     "puntos", "mensual", "nivel"),
-    # TCRM diario (verificado 30/05: dato fresco, mejor que el anterior)
-    ("tcrm",          "168.1_T_CAMBIOR_D_0_0_26",  "índice", "diaria",  "nivel"),
+    # TCRM: ya no sale de acá. La serie 168.1_T_CAMBIOR_D_0_0_26 devuelve 400
+    # desde junio, y las de tipo de cambio real que datos.gob.ar sí publica
+    # son bilaterales y cortaron el 28/01/2026. Ahora viene de la planilla
+    # del BCRA — ver obtener_itcrm().
     # PENDIENTES (IDs muertos, a reemplazar tras 2ª verificación):
     # exportaciones, importaciones, saldo comercial, desocupación
 ]
@@ -636,6 +640,60 @@ def _bcra_get(id_variable):
         except Exception:
             return None
     return j
+
+def obtener_itcrm(previo):
+    """ITCRM del BCRA. Usa el cache que deja el generador; si no, lo baja.
+
+    El cache existe porque la página /tcrm/ guarda la serie entera cada
+    edición. Leerlo evita bajar varios megas de planilla dos veces por
+    corrida, y en la corrida de datos de mercado —que no genera la página—
+    es la única vía que no agrega trabajo.
+    """
+    print("· ITCRM (planilla BCRA)")
+    serie = None
+
+    try:
+        with open(JSON_ITCRM, "r", encoding="utf-8") as f:
+            cache = json.load(f)
+        if cache.get("data"):
+            serie = cache["data"]
+            print(f"   ✓ cache con {len(serie)} puntos")
+    except Exception:
+        pass
+
+    # Sin cache, o con uno que quedó viejo: bajar. El índice es diario, así
+    # que más de una semana sin moverse es cache vencido, no feriado largo.
+    if not serie or _dias_desde(serie[-1][0]) > 7:
+        try:
+            sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+            import itcrm_bcra
+            serie, meta = itcrm_bcra.obtener()
+            print(f"   ✓ bajado: {meta['puntos']} puntos hasta {meta['hasta']}")
+        except Exception as e:
+            print(f"   ⚠  no pude bajar la planilla: {str(e)[:70]}")
+
+    if not serie:
+        print("   ✗ sin dato, conservo previo")
+        return conservar(previo, "tcrm")
+
+    fecha, valor = serie[-1][0], serie[-1][1]
+    variacion = None
+    if len(serie) >= 2 and serie[-2][1]:
+        variacion = round((valor / serie[-2][1] - 1) * 100, 2)
+    print(f"   ✓ {valor} ({fecha})")
+    return dato(round(valor, 2), unidad="índice", fecha=fecha,
+                variacion=variacion, periodo=fecha[:7],
+                fuente="BCRA · ITCRMSerie.xlsx", frecuencia="diaria")
+
+
+def _dias_desde(fecha_iso):
+    """Días entre una fecha ISO y hoy. Muy grande si no se puede leer."""
+    try:
+        d = datetime.fromisoformat(fecha_iso).date()
+        return (datetime.now(TZ_AR).date() - d).days
+    except Exception:
+        return 10 ** 6
+
 
 def obtener_bcra(previo):
     """API oficial BCRA v4. Trae reservas, tasa política y base monetaria."""
@@ -743,6 +801,7 @@ def main():
         for k, v in bcra.items():
             datos[k] = v or datos.get(k)
         datos["banda"] = obtener_banda(previo, datos) or datos.get("banda")
+        datos["tcrm"] = obtener_itcrm(previo) or datos.get("tcrm")
 
     if hacer_mensual:
         datos.update(obtener_series(previo))

@@ -2,10 +2,14 @@
 PPA — generador_tcrm.py
 Genera la página "El peso en perspectiva" (/tcrm/).
 
-Fuente: API de series datos.gob.ar
-  Serie: 168.1_T_CAMBIOR_D_0_0_26
-  ITCRM diario, base 17/12/2015=100, desde 01/01/1997
-  Una llamada descarga toda la historia (~7000 puntos).
+Fuente: planilla oficial del BCRA (ITCRMSerie.xlsx, ver itcrm_bcra.py)
+  ITCRM diario, base 17/12/2015=100, desde 01/01/1997 (~7500 puntos).
+
+Antes salía de la serie 168.1_T_CAMBIOR_D_0_0_26 de datos.gob.ar, que dejó
+de responder y nunca llegó a escribir el cache: la página no existía. Ese ID
+además devolvía valores del orden de 1460 — la magnitud de un tipo de cambio
+nominal en pesos, no la de un índice base 100 — así que lo que se mostraba
+hasta el 17/06/2026 probablemente tampoco era el ITCRM.
 
 El gráfico es SVG + JS inline: línea histórica con hitos marcados.
 Sin dependencias externas — compatible con el sitio estático.
@@ -77,25 +81,19 @@ def obtener_tcrm():
         except Exception:
             pass
 
-    # Bajar de la API
-    print("[TCRM] Descargando serie histórica de datos.gob.ar...")
-    import requests, urllib3
-    urllib3.disable_warnings()
-
-    url = ("https://apis.datos.gob.ar/series/api/series/"
-           "?ids=168.1_T_CAMBIOR_D_0_0_26"
-           "&format=json&limit=10000&sort=asc")
+    # Bajar la planilla del BCRA
+    print("[TCRM] Descargando ITCRM de la planilla del BCRA...")
     try:
-        r = requests.get(url, timeout=30, verify=False)
-        r.raise_for_status()
-        j = r.json()
-        data = [[row[0], row[1]] for row in j["data"] if row[1] is not None]
-        if not data:
-            raise ValueError("Sin datos en la respuesta")
-        print(f"[TCRM] Descargados {len(data)} puntos ({data[0][0]} → {data[-1][0]})")
-        # Guardar cache
+        import itcrm_bcra
+        data, meta = itcrm_bcra.obtener()
+        print(f"[TCRM] {meta['puntos']} puntos ({meta['desde']} → {meta['hasta']})"
+              f" · hoja {meta['hoja']!r}")
+        # Guardar cache. Va la meta también: si mañana el valor sale raro,
+        # el cache dice de qué hoja y columna salió.
         cache = {
             "descargado_en": datetime.now(timezone.utc).isoformat(),
+            "fuente": itcrm_bcra.URL_ITCRM,
+            "meta": meta,
             "data": data,
         }
         os.makedirs(DIR_DATA, exist_ok=True)
@@ -103,7 +101,7 @@ def obtener_tcrm():
             json.dump(cache, f, ensure_ascii=False)
         return data
     except Exception as e:
-        print(f"[TCRM] ⚠ Error descargando serie: {e}")
+        print(f"[TCRM] ⚠ Error bajando la planilla: {e}")
         # Si hay cache viejo, usarlo igual
         if os.path.exists(JSON_TCRM):
             try:

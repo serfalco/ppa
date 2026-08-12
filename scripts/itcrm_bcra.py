@@ -141,8 +141,14 @@ def ubicar_columnas(hoja):
 
 
 def parsear(contenido):
-    """Devuelve (serie, meta). serie = [[fecha_iso, valor], ...] ascendente."""
+    """Devuelve (serie, meta). serie = [[fecha_iso, valor], ...] ascendente.
+
+    La planilla trae la serie diaria y también el promedio mensual, las dos
+    con el mismo encabezado. Se elige la que tenga más puntos: es la diaria,
+    y eso no depende del orden de las hojas ni de cómo se llamen.
+    """
     libro = _abrir(contenido)
+    mejor = None
     for nombre in libro.sheetnames:
         hoja = libro[nombre]
         fila_enc, col_fecha, col_itcrm = ubicar_columnas(hoja)
@@ -157,15 +163,16 @@ def parsear(contenido):
             if _es_fecha(f) and v is not None:
                 serie.append([_a_iso(f), round(v, 4)])
 
-        if serie:
+        if serie and (mejor is None or len(serie) > len(mejor[0])):
             serie.sort(key=lambda p: p[0])
-            meta = {"hoja": nombre, "fila_encabezado": fila_enc,
-                    "col_fecha": col_fecha, "col_itcrm": col_itcrm,
-                    "puntos": len(serie),
-                    "desde": serie[0][0], "hasta": serie[-1][0]}
-            return serie, meta
+            mejor = (serie, {"hoja": nombre, "fila_encabezado": fila_enc,
+                             "col_fecha": col_fecha, "col_itcrm": col_itcrm,
+                             "puntos": len(serie),
+                             "desde": serie[0][0], "hasta": serie[-1][0]})
 
-    raise ValueError("no encontré la columna del ITCRM en ninguna hoja")
+    if mejor is None:
+        raise ValueError("no encontré la columna del ITCRM en ninguna hoja")
+    return mejor
 
 
 def obtener(url=URL_ITCRM):

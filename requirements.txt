@@ -1,2 +1,4 @@
 feedparser>=6.0
 requests>=2.28
+# El ITCRM del BCRA se publica solo como planilla, no hay API.
+openpyxl>=3.1
