@@ -8,8 +8,16 @@ mirá qué IDs ganan, y esos van al motor (datos_economicos.py).
 
 Cómo se corre (en tu compu o en el Action, donde haya internet libre):
     python scripts/verificar_series.py
+    python scripts/verificar_series.py --buscar "tipo de cambio real multilateral"
+    python scripts/verificar_series.py --ids 168.1_T_CAMBIOR_D_0_0_26
+
+`--buscar` le pregunta a datos.gob.ar qué series existen para un texto y
+prueba cada una. Es la salida cuando un ID deja de andar: la lista de
+CANDIDATOS es de IDs que alguien tipeó alguna vez, y cuando el organismo
+retira una serie el ID viejo devuelve 400 sin decir cuál lo reemplaza.
 """
 
+import sys
 import requests
 from datetime import datetime
 
@@ -67,6 +75,141 @@ def probar(serie_id):
         return ("ERROR: " + str(e)[:40], None, None)
 
 
+def buscar(texto, limite=10):
+    """Le pregunta a datos.gob.ar qué series existen para un texto.
+
+    Devuelve [(titulo, id, unidades, frecuencia, desde, hasta)]. El buscador
+    es el que sabe qué IDs están vigentes; probarlos después es lo que
+    distingue una serie viva de una que quedó publicada pero congelada.
+    """
+    url = ("https://apis.datos.gob.ar/series/api/search/"
+           f"?q={requests.utils.quote(texto)}&limit={limite}")
+    try:
+        r = requests.get(url, headers=HDRS, timeout=20)
+        if r.status_code != 200:
+            print(f"   el buscador respondió HTTP {r.status_code}")
+            return []
+        filas = r.json().get("data", [])
+    except Exception as e:
+        print(f"   no pude consultar el buscador: {str(e)[:60]}")
+        return []
+
+    salida = []
+    for cruda in filas:
+        f = _aplanar(cruda)
+        salida.append((
+            _primero(f, ("field_title", "title", "field_description",
+                         "description")) or "(sin título)",
+            _id_de(f),
+            _primero(f, ("field_units", "units")),
+            _primero(f, ("field_frequency", "frequency",
+                         "distribution_index_frequency")),
+            _primero(f, ("serie_tiempo_indice_inicio", "time_index_start")),
+            _primero(f, ("serie_tiempo_indice_final", "time_index_end")),
+        ))
+
+    # Si no se pudo sacar ningún ID, el problema es que la API cambió los
+    # nombres de los campos. Mostrarlos evita otra ronda a ciegas: es el
+    # mismo error que tener un ID viejo hardcodeado, un nivel más arriba.
+    if filas and not any(s[1] for s in salida):
+        print("   no reconocí el campo del ID. La API devolvió estas claves:")
+        for k, v in sorted(_aplanar(filas[0]).items()):
+            print(f"     {k} = {str(v)[:60]}")
+    return salida
+
+
+def _aplanar(fila):
+    """Deja la fila en un solo nivel: {"field": {"id": x}} → {"field_id": x}.
+
+    El buscador agrupa por objeto (dataset, distribution, field) y el ID vive
+    en field.id. Aplanar con el prefijo deja los nombres iguales a los que la
+    API usaba plano, así los dos formatos entran por el mismo lugar.
+    """
+    plana = {}
+    for k, v in fila.items():
+        if isinstance(v, dict):
+            for k2, v2 in v.items():
+                plana[f"{k}_{k2}"] = v2
+        else:
+            plana[k] = v
+    return plana
+
+
+def _primero(fila, claves):
+    """Primer valor no vacío entre varios nombres posibles de campo."""
+    for k in claves:
+        v = fila.get(k)
+        if v:
+            return str(v)
+    return ""
+
+
+def _id_de(fila):
+    """El ID de la serie, sin depender de cómo se llame el campo hoy.
+
+    La API ya renombró campos antes. Se prueban los nombres conocidos y, si
+    ninguno está, cualquier clave que termine en "id" cuyo valor tenga la
+    forma de un ID de serie (`168.1_T_CAMBIOR_D_0_0_26`).
+    """
+    for k in ("field_id", "serie_id", "id"):
+        if fila.get(k):
+            return str(fila[k])
+    for k, v in fila.items():
+        if k.lower().endswith("id") and isinstance(v, str) and "_" in v:
+            return v
+    return ""
+
+
+def modo_buscar(texto):
+    """Busca por texto, prueba cada candidato y ordena por dato más reciente."""
+    print("=" * 72)
+    print(f"Buscando series para: {texto!r}")
+    print("=" * 72)
+    print()
+
+    encontradas = buscar(texto)
+    if not encontradas:
+        print("Sin resultados.")
+        return
+
+    vivas = []
+    for titulo, sid, unidades, frecuencia, desde, hasta in encontradas:
+        if not sid:
+            continue
+        estado, valor, fecha = probar(sid)
+        icono = "✓" if estado == "OK" else "✗"
+        print(f"{icono} {titulo[:60]}")
+        print(f"     {sid}  [{unidades} · {frecuencia} · {desde}→{hasta}]")
+        if estado == "OK":
+            print(f"     -> último: {valor} ({fecha})")
+            vivas.append((fecha, sid, titulo, valor, frecuencia))
+        else:
+            print(f"     -> {estado}")
+        print()
+
+    print("=" * 72)
+    print(f"RESUMEN: {len(vivas)} de {len(encontradas)} responden con dato")
+    print("=" * 72)
+    # Más reciente primero: cuando hay varias vigentes, la que trae el dato de
+    # ayer es la que sirve, no la que cortó hace dos años.
+    for fecha, sid, titulo, valor, frecuencia in sorted(vivas, reverse=True):
+        print(f"  {fecha}  {sid:32s} {valor:>14}  {frecuencia:10s} {titulo[:40]}")
+
+
+def modo_ids(ids):
+    """Prueba IDs puntuales pasados por línea de comandos."""
+    print("=" * 72)
+    print(f"Probando {len(ids)} ID(s)")
+    print("=" * 72)
+    print()
+    for sid in ids:
+        estado, valor, fecha = probar(sid)
+        icono = "✓" if estado == "OK" else "✗"
+        print(f"{icono} {sid}")
+        print(f"     -> {valor} ({fecha})" if estado == "OK" else f"     -> {estado}")
+        print()
+
+
 def probar_bcra():
     """Prueba la API oficial del BCRA (reservas, monetarias, tasas).
     Esta API usa HTTPS y a veces requiere ignorar verificación SSL."""
@@ -103,6 +246,22 @@ def probar_bcra():
 
 
 def main():
+    args = sys.argv[1:]
+    if args and args[0] == "--buscar":
+        texto = " ".join(args[1:]).strip()
+        if not texto:
+            print('Falta el texto: --buscar "tipo de cambio real multilateral"')
+            sys.exit(1)
+        modo_buscar(texto)
+        return
+    if args and args[0] == "--ids":
+        ids = [i for a in args[1:] for i in a.split(",") if i]
+        if not ids:
+            print("Falta al menos un ID: --ids 168.1_T_CAMBIOR_D_0_0_26")
+            sys.exit(1)
+        modo_ids(ids)
+        return
+
     print("=" * 72)
     print("PPA — Verificador de IDs de series datos.gob.ar")
     print("Fecha:", datetime.now().strftime("%Y-%m-%d %H:%M"))

@@ -20,9 +20,9 @@ on:
         required: true
         default: 'bcra'
         type: choice
-        options: [bcra, feeds]
+        options: [bcra, feeds, series, itcrm, api, rem]
       filtros:
-        description: 'BCRA: palabras a buscar, o "--detalle 47 78" para ver valores. FEEDS: ids a probar, vacío = todas.'
+        description: 'BCRA: palabras a buscar, o "--detalle 47 78" para ver valores. FEEDS: ids de FUENTES.py o URLs sueltas, vacío = las institucionales. SERIES: --buscar "texto" o --ids a,b. ITCRM: vacío o --diagnostico. API: una o más URLs.'
         required: false
         default: 'mulc compra divisas'
         type: string
@@ -38,10 +38,10 @@ jobs:
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: Setup Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v6
         with:
           python-version: '3.11'
           cache: 'pip'
@@ -49,7 +49,7 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install requests feedparser
+          pip install requests feedparser openpyxl pandas
 
       - name: Descubrir
         id: consulta
@@ -61,11 +61,14 @@ jobs:
         run: |
           echo "Herramienta: $HERRAMIENTA · argumentos: $FILTROS"
           # shellcheck disable=SC2086 — se quiere el split en palabras
-          if [ "$HERRAMIENTA" = "feeds" ]; then
-            python -u scripts/descubrir_feeds.py $FILTROS | tee salida.txt
-          else
-            python -u scripts/descubrir_bcra.py $FILTROS | tee salida.txt
-          fi
+          case "$HERRAMIENTA" in
+            feeds)  python -u scripts/descubrir_feeds.py  $FILTROS | tee salida.txt ;;
+            series) python -u scripts/verificar_series.py $FILTROS | tee salida.txt ;;
+            itcrm)  python -u scripts/itcrm_bcra.py       $FILTROS | tee salida.txt ;;
+            api)    python -u scripts/probar_api.py       $FILTROS | tee salida.txt ;;
+            rem)    python -u scripts/generador_rem.py --diagnostico | tee salida.txt ;;
+            *)      python -u scripts/descubrir_bcra.py   $FILTROS | tee salida.txt ;;
+          esac
 
       - name: Escribir el resumen del job
         if: always()
@@ -74,11 +77,14 @@ jobs:
           HERRAMIENTA: ${{ inputs.herramienta }}
         run: |
           {
-            if [ "$HERRAMIENTA" = "feeds" ]; then
-              echo "## Feeds institucionales vigentes"
-            else
-              echo "## Variables de la API BCRA v4"
-            fi
+            case "$HERRAMIENTA" in
+              feeds)  echo "## Feeds vigentes" ;;
+              series) echo "## Series de datos.gob.ar" ;;
+              itcrm)  echo "## ITCRM — planilla del BCRA" ;;
+              api)    echo "## Endpoints probados" ;;
+              rem)    echo "## REM — detección y parseo" ;;
+              *)      echo "## Variables de la API BCRA v4" ;;
+            esac
             echo
             echo "Argumentos: \`$FILTROS\`"
             echo
@@ -86,17 +92,35 @@ jobs:
             cat salida.txt 2>/dev/null || echo "(sin salida — ver el log del paso anterior)"
             echo '```'
             echo
-            if [ "$HERRAMIENTA" = "feeds" ]; then
-              echo "### Qué hacer con esto"
-              echo
-              echo "1. Pegar las líneas sugeridas en \`scripts/FUENTES.py\`."
-              echo "2. Sumar los ids a \`FUENTES_INSTITUCIONALES\` en \`scripts/generador_documentos.py\`."
-              echo "3. La próxima corrida del fetcher los levanta y Documentos empieza a llenarse."
-            else
-              echo "### Si encontraste el ID del MULC"
-              echo
-              echo "1. Verificá que el valor coincida con el Informe Monetario Diario del BCRA."
-              echo "2. En \`scripts/datos_economicos.py\`, seteá \`MULC_BCRA_ID = <id>\`."
-              echo "3. Desde ahí el MULC sale de la API y la carga del panel queda de respaldo."
-            fi
+            echo "### Qué hacer con esto"
+            echo
+            case "$HERRAMIENTA" in
+              feeds)
+                echo "1. Pegar las líneas sugeridas en \`scripts/FUENTES.py\` — si la fuente ya estaba, es reemplazo de su \`web\`."
+                echo "2. Si es institucional y alimenta Documentos, sumar el id a \`FUENTES_INSTITUCIONALES\` en \`scripts/generador_documentos.py\`."
+                echo "3. La próxima corrida del fetcher las levanta."
+                ;;
+              series)
+                echo "1. Elegir el ID cuyo último dato sea el más reciente y la frecuencia la esperada."
+                echo "2. Verificar el valor contra la publicación oficial del organismo."
+                echo "3. Reemplazarlo en la tabla \`SERIES\` de \`scripts/datos_economicos.py\` (y en \`scripts/generador_tcrm.py\` si es el TCRM)."
+                ;;
+              itcrm)
+                echo "Sin argumentos baja la planilla y resume la serie; con \`--diagnostico\` muestra la forma del archivo."
+                echo "Si el parseo falla, el diagnóstico dice en qué hoja y fila quedó el encabezado."
+                ;;
+              api)
+                echo "Pasar una o más URLs separadas por espacio. Muestra código HTTP, tipo y la forma del JSON."
+                echo "Sirve para encontrar por dónde sale el valor cuando un endpoint cambió de ruta o de formato."
+                ;;
+              rem)
+                echo "No toca el sitio ni \`data/\`: baja la planilla a un temporal y muestra qué extrae el parser."
+                echo "Si extrae vacío, la planilla cambió de forma y hay que ajustar \`parsear_rem\`."
+                ;;
+              *)
+                echo "1. Verificá que el valor coincida con el Informe Monetario Diario del BCRA."
+                echo "2. En \`scripts/datos_economicos.py\`, seteá \`MULC_BCRA_ID = <id>\`."
+                echo "3. Desde ahí el MULC sale de la API y la carga del panel queda de respaldo."
+                ;;
+            esac
           } >> "$GITHUB_STEP_SUMMARY"

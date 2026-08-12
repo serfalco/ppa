@@ -9,9 +9,3 @@
 # El JSON de datos se refresca seguido: cache corto
 /data/*
   Cache-Control: public, max-age=300
-
-# Paneles privados: nunca indexar (protegerlos además con Cloudflare Access)
-/panel69/*
-  X-Robots-Tag: noindex, nofollow
-/admin/*
-  X-Robots-Tag: noindex, nofollow

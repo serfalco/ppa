@@ -35,7 +35,7 @@ No hay build: `site/` ya contiene HTML estático generado por Python. Cada push 
 
 9. **Reactivar los crons**: en GitHub → Actions → habilitar los tres workflows (quedaron deshabilitados durante la pausa). También se pueden probar a mano con *Run workflow*.
 10. **Borrar los secrets FTP** en GitHub (Settings → Secrets): `FTP_SERVER`, `FTP_USERNAME`, `FTP_PASSWORD`. Ya no se usan.
-11. **Proteger el panel**: en Cloudflare → **Zero Trust → Access → Applications** → crear una aplicación para `pulsoproductivo.com.ar/panel69/*` y `/admin/*` con política "solo el mail de Sergio". Es gratis hasta 50 usuarios. Hoy el panel es HTML público sin contraseña: esto lo cierra sin tocar código.
+11. ~~**Proteger el panel**~~ — sin efecto desde el 12/08/2026: el panel se dio de baja. No hacía falta protegerlo porque no hacía nada: no tenía login, no escribía nada (solo `localStorage` y copiar al portapapeles) y los tres archivos que los generadores esperaban de él nunca existieron. Si alguna vez vuelve un flujo de carga manual, va a necesitar un panel nuevo que sí escriba, y ahí sí Cloudflare Access.
 12. Cuando todo funcione unos días: dar de baja Hostinger.
 
 ## Límites del plan gratuito (holgados para PPA)

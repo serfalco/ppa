@@ -33,6 +33,8 @@ from config import DIR_DATA
 
 TZ_AR = timezone(timedelta(hours=-3))
 JSON_DATOS = os.path.join(DIR_DATA, "datos.json")
+# Serie del ITCRM que deja el generador de la página /tcrm/.
+JSON_ITCRM = os.path.join(DIR_DATA, "tcrm_historico.json")
 
 # User-Agent de navegador real: varias fuentes filtran bots básicos
 HDRS = {
@@ -504,14 +506,83 @@ def obtener_dolares(previo):
 # MERVAL
 # =============================================================
 
+# Merval: cadena de fuentes, mismo criterio que riesgo país.
+# argentinadatos dejó de publicarlo — /v1/finanzas/indices/merval devuelve
+# {"error":"Not found"}, mientras riesgo-pais/ultimo en esa misma rama sigue
+# andando, así que no es la API caída sino el endpoint que ya no existe.
+
+def _merval_yahoo():
+    """Serie diaria del ^MERV.
+
+    Verificado el 12/08/2026 contra la respuesta real: meta trae
+    regularMarketPrice = 3022484.5 y exchangeTimezoneName
+    America/Argentina/Buenos_Aires, y el cierre de la rueda coincide
+    (3022485.0). Ese orden de magnitud es el del Merval en pesos.
+    """
+    j = get_json("https://query1.finance.yahoo.com/v8/finance/chart/%5EMERV"
+                 "?interval=1d&range=5d")
+    try:
+        r = j["chart"]["result"][0]
+    except Exception:
+        return None
+
+    # El cierre de la rueda anterior sirve para la variación; el precio de
+    # mercado del meta es el más fresco cuando la rueda está abierta.
+    cierres = []
+    try:
+        cierres = [c for c in r["indicators"]["quote"][0]["close"]
+                   if c is not None]
+    except Exception:
+        pass
+
+    meta = r.get("meta") or {}
+    valor = meta.get("regularMarketPrice")
+    if valor is None:
+        valor = cierres[-1] if cierres else None
+    if valor is None:
+        return None
+
+    variacion = None
+    anterior = meta.get("chartPreviousClose") or meta.get("previousClose")
+    if anterior is None and len(cierres) >= 2:
+        anterior = cierres[-2]
+    if anterior:
+        variacion = round((valor / anterior - 1) * 100, 2)
+
+    fecha = None
+    ts = meta.get("regularMarketTime")
+    if ts:
+        try:
+            fecha = datetime.fromtimestamp(ts, TZ_AR).date().isoformat()
+        except Exception:
+            pass
+
+    return {"valor": int(round(valor)), "variacion": variacion,
+            "fecha": fecha, "fuente": "Yahoo Finance (^MERV)"}
+
+
+FUENTES_MERVAL = [
+    ("yahoo", _merval_yahoo),
+]
+
+
 def obtener_merval(previo):
     print("· Merval")
-    j = get_json("https://api.argentinadatos.com/v1/finanzas/indices/merval/ultimo")
-    if j and j.get("valor") is not None:
-        print(f"   ✓ {j['valor']}")
-        return dato(round(j["valor"]), unidad="puntos",
-                    variacion=j.get("variacion"),
-                    fuente="argentinadatos.com", frecuencia="intradia")
+    for nombre, fn in FUENTES_MERVAL:
+        try:
+            r = fn()
+        except Exception as e:
+            print(f"   ⚠  {nombre}: {str(e)[:60]}")
+            continue
+        # Un índice de una rueda no vale cero ni un millardo: si el número
+        # no es plausible, es que la fuente cambió de formato.
+        if r and r.get("valor") and 1000 < r["valor"] < 100_000_000:
+            print(f"   ✓ {r['valor']} vía {nombre}"
+                  + (f" ({r['variacion']:+.2f}%)" if r.get("variacion") is not None else ""))
+            return dato(r["valor"], unidad="puntos", fecha=r.get("fecha"),
+                        variacion=r.get("variacion"),
+                        fuente=r["fuente"], frecuencia="diaria")
+        print(f"   ✗ {nombre}: sin dato plausible")
     print("   ✗ sin dato, conservo previo")
     return conservar(previo, "merval")
 
@@ -530,8 +601,10 @@ SERIES = [
     ("ipc_nucleo",    "103.1_I2N_2016_M_15",       "%",      "mensual", "var_men"),
     # EMAE desestacionalizado (verificado OK)
     ("emae",          "143.3_NO_PR_2004_A_21",     "puntos", "mensual", "nivel"),
-    # TCRM diario (verificado 30/05: dato fresco, mejor que el anterior)
-    ("tcrm",          "168.1_T_CAMBIOR_D_0_0_26",  "índice", "diaria",  "nivel"),
+    # TCRM: ya no sale de acá. La serie 168.1_T_CAMBIOR_D_0_0_26 devuelve 400
+    # desde junio, y las de tipo de cambio real que datos.gob.ar sí publica
+    # son bilaterales y cortaron el 28/01/2026. Ahora viene de la planilla
+    # del BCRA — ver obtener_itcrm().
     # PENDIENTES (IDs muertos, a reemplazar tras 2ª verificación):
     # exportaciones, importaciones, saldo comercial, desocupación
 ]
@@ -612,7 +685,9 @@ BANDA_ANCLA = {
 _BCRA_VARS = [
     # clave interna     ID   unidad     descripción visible
     ("reservas",         1,  "MM USD",  "Reservas BCRA (millones USD)"),
-    ("badlar",           6,  "% TNA",   "BADLAR bancos privados"),
+    # La 6 devolvía 400: el ID cambió. La 140 es "Tasa de interés BADLAR de
+    # bancos privados", verificada el 12/08/2026 (23,89% TNA al 10/08).
+    ("badlar",         140,  "% TNA",   "BADLAR bancos privados"),
     ("base_monetaria",  15,  "MM $",    "Base monetaria (millones $)"),
     ("m2_privado",      17,  "MM $",    "M2 privado transaccional (millones $)"),
     ("call_baibar",     27,  "% TNA",   "BAIBAR call bancos privados"),
@@ -636,6 +711,60 @@ def _bcra_get(id_variable):
         except Exception:
             return None
     return j
+
+def obtener_itcrm(previo):
+    """ITCRM del BCRA. Usa el cache que deja el generador; si no, lo baja.
+
+    El cache existe porque la página /tcrm/ guarda la serie entera cada
+    edición. Leerlo evita bajar varios megas de planilla dos veces por
+    corrida, y en la corrida de datos de mercado —que no genera la página—
+    es la única vía que no agrega trabajo.
+    """
+    print("· ITCRM (planilla BCRA)")
+    serie = None
+
+    try:
+        with open(JSON_ITCRM, "r", encoding="utf-8") as f:
+            cache = json.load(f)
+        if cache.get("data"):
+            serie = cache["data"]
+            print(f"   ✓ cache con {len(serie)} puntos")
+    except Exception:
+        pass
+
+    # Sin cache, o con uno que quedó viejo: bajar. El índice es diario, así
+    # que más de una semana sin moverse es cache vencido, no feriado largo.
+    if not serie or _dias_desde(serie[-1][0]) > 7:
+        try:
+            sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+            import itcrm_bcra
+            serie, meta = itcrm_bcra.obtener()
+            print(f"   ✓ bajado: {meta['puntos']} puntos hasta {meta['hasta']}")
+        except Exception as e:
+            print(f"   ⚠  no pude bajar la planilla: {str(e)[:70]}")
+
+    if not serie:
+        print("   ✗ sin dato, conservo previo")
+        return conservar(previo, "tcrm")
+
+    fecha, valor = serie[-1][0], serie[-1][1]
+    variacion = None
+    if len(serie) >= 2 and serie[-2][1]:
+        variacion = round((valor / serie[-2][1] - 1) * 100, 2)
+    print(f"   ✓ {valor} ({fecha})")
+    return dato(round(valor, 2), unidad="índice", fecha=fecha,
+                variacion=variacion, periodo=fecha[:7],
+                fuente="BCRA · ITCRMSerie.xlsx", frecuencia="diaria")
+
+
+def _dias_desde(fecha_iso):
+    """Días entre una fecha ISO y hoy. Muy grande si no se puede leer."""
+    try:
+        d = datetime.fromisoformat(fecha_iso).date()
+        return (datetime.now(TZ_AR).date() - d).days
+    except Exception:
+        return 10 ** 6
+
 
 def obtener_bcra(previo):
     """API oficial BCRA v4. Trae reservas, tasa política y base monetaria."""
@@ -743,6 +872,7 @@ def main():
         for k, v in bcra.items():
             datos[k] = v or datos.get(k)
         datos["banda"] = obtener_banda(previo, datos) or datos.get("banda")
+        datos["tcrm"] = obtener_itcrm(previo) or datos.get("tcrm")
 
     if hacer_mensual:
         datos.update(obtener_series(previo))

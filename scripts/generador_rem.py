@@ -87,6 +87,54 @@ def _detectar_rem_via_nitter():
         return []
 
 
+# Meses como los abrevia el BCRA en el nombre del archivo.
+MESES = {"ene": "01", "feb": "02", "mar": "03", "abr": "04", "may": "05",
+         "jun": "06", "jul": "07", "ago": "08", "sep": "09", "set": "09",
+         "oct": "10", "nov": "11", "dic": "12"}
+
+# Cómo se llaman hoy los archivos del REM, verificado el 12/08/2026 en la
+# página del BCRA:
+#   tablas-relevamiento-expectativas-mercado-jul-2026.xlsx
+# Antes eran rem_202607.xls. El patrón viejo queda como segunda opción por si
+# vuelve, pero el que encuentra algo hoy es el primero.
+PATRON_ACTUAL = re.compile(
+    r'href=["\']([^"\']*relevamiento-expectativas-mercado-'
+    r'([a-z]{3})-(\d{4})\.(xlsx?))["\']', re.IGNORECASE)
+PATRON_VIEJO = re.compile(
+    r'href=["\']([^"\']*rem[_\-]?(\d{4})[-_]?(\d{2})[^"\']*\.(xlsx?))["\']',
+    re.IGNORECASE)
+
+
+def _links_rem(html):
+    """Links a las tablas del REM, del nombre nuevo y del viejo.
+
+    Solo interesan los que tienen mes y año en el nombre: los otros archivos
+    de la página —metodología, listado, ranking, histórico— no son una
+    edición del REM. El histórico es una serie aparte y merecería su propio
+    tratamiento, no entrar como si fuera el informe del mes.
+    """
+    resultados = []
+    for href, mes, anio, ext in PATRON_ACTUAL.findall(html):
+        mm = MESES.get(mes.lower())
+        if not mm:
+            continue
+        resultados.append({"url": _absoluta(href), "periodo": f"{anio}-{mm}",
+                           "ext": ext.lower()})
+    for href, anio, mes, ext in PATRON_VIEJO.findall(html):
+        resultados.append({"url": _absoluta(href), "periodo": f"{anio}-{mes}",
+                           "ext": ext.lower()})
+    # Con "tablas-" primero: el archivo de datos gana sobre cualquier otro
+    # que comparta período.
+    resultados.sort(key=lambda x: "tablas-" not in x["url"].lower())
+    return resultados
+
+
+def _absoluta(href):
+    if href.startswith("http"):
+        return href
+    return "https://www.bcra.gob.ar" + ("" if href.startswith("/") else "/") + href
+
+
 def detectar_rem_disponibles():
     """Scraping de la página del BCRA para encontrar links al REM."""
     import requests, urllib3
@@ -97,17 +145,7 @@ def detectar_rem_disponibles():
         if r.status_code != 200:
             print(f"   ⚠ BCRA página REM: HTTP {r.status_code}")
             return []
-        # Buscar links a archivos rem_YYYYMM
-        links = re.findall(
-            r'href=["\']([^"\']*rem[_\-]?(\d{4})[-_]?(\d{2})[^"\']*\.(xls[x]?))["\']',
-            r.text, re.IGNORECASE
-        )
-        resultados = []
-        for href, anio, mes, ext in links:
-            if not href.startswith("http"):
-                href = "https://www.bcra.gob.ar" + href
-            yyyy_mm = f"{anio}-{mes}"
-            resultados.append({"url": href, "periodo": yyyy_mm, "ext": ext})
+        resultados = _links_rem(r.text)
         # Deduplicar y ordenar desc
         seen = set()
         unicos = []
@@ -147,43 +185,122 @@ def bajar_rem(info):
         return None
 
 
+# Secciones de la planilla que van a la ficha, por palabra en el título.
+# El resto —núcleo, exportaciones, importaciones, resultado primario,
+# desocupación— está en el Excel y podría sumarse; estas cuatro son las que
+# la ficha venía mostrando.
+SECCIONES = [
+    ("ipc",  ("ipc nivel general", "precios minoristas (ipc nivel")),
+    ("tasa", ("tamar", "tasa de interés")),
+    ("tcn",  ("tipo de cambio nominal",)),
+    ("pbi",  ("pib a precios constantes", "pib")),
+]
+
+
+def _texto(v):
+    return "" if v is None or str(v) == "nan" else str(v).strip()
+
+
+def _es_titulo(celdas):
+    """Una sola celda con texto: así marca el BCRA cada sección."""
+    return len(celdas) == 1 and not celdas[0][:1].isdigit()
+
+
 def parsear_rem(fpath, periodo):
-    """Extrae variables clave del Excel del REM."""
+    """Extrae, por sección, la mediana del período más cercano.
+
+    La planilla viene por secciones: un título, una fila de encabezados
+    (Período | Referencia | Mediana | Promedio | Desvío) y las filas de datos.
+    Se lee la columna Mediana por su nombre y se guarda junto con la
+    Referencia que trae la propia planilla — "var. % mensual", "en $/USD" —
+    en vez de rotular el número por nuestra cuenta.
+
+    Eso importa: la versión anterior buscaba palabras clave por fila y se
+    quedaba con el primer número que encontrara, sin saber si era mediana,
+    promedio o desvío. Con la planilla de julio devolvía un solo valor,
+    1512.38, rotulado "Dólar fin de año" sin que nada lo respaldara.
+    """
     try:
         import pandas as pd
-        # El REM tiene estructura variable entre versiones; intentar leer
         engine = "xlrd" if fpath.endswith(".xls") else "openpyxl"
         try:
             df = pd.read_excel(fpath, engine=engine, header=None)
         except Exception:
-            # Fallback: intentar con el otro engine
-            alt_engine = "openpyxl" if engine == "xlrd" else "xlrd"
-            df = pd.read_excel(fpath, engine=alt_engine, header=None)
+            alt = "openpyxl" if engine == "xlrd" else "xlrd"
+            df = pd.read_excel(fpath, engine=alt, header=None)
 
-        # Buscar filas que contengan palabras clave
-        vars_encontradas = {}
-        keywords = {
-            "inflacion_12m": ["inflación", "inflacion", "IPC", "CPI", "precios"],
-            "tcn_fin_anio":  ["tipo de cambio", "dólar", "dollar", "USD", "TCN"],
-            "pbi":           ["PBI", "PIB", "GDP", "producto bruto"],
-            "tasa":          ["tasa", "rate", "política monetaria"],
-        }
-        for idx, row in df.iterrows():
-            row_str = " ".join([str(v).lower() for v in row if v and str(v) != "nan"])
-            for clave, kws in keywords.items():
-                if clave not in vars_encontradas:
-                    for kw in kws:
-                        if kw.lower() in row_str:
-                            # Tomar el primer número numérico de la fila
-                            nums = [v for v in row if isinstance(v, (int, float)) and not pd.isna(v)]
-                            if nums:
-                                vars_encontradas[clave] = round(float(nums[0]), 2)
-                            break
+        filas = [[_texto(v) for v in fila] for _, fila in df.iterrows()]
+        crudas = [list(fila) for _, fila in df.iterrows()]
+
+        encontradas = {}
+        seccion = None
+        cols = None
+        for i, fila in enumerate(filas):
+            celdas = [c for c in fila if c]
+            if not celdas:
+                continue
+
+            if _es_titulo(celdas):
+                titulo = celdas[0].lower()
+                seccion, cols = None, None
+                for clave, marcas in SECCIONES:
+                    if clave in encontradas:
+                        continue
+                    if any(m in titulo for m in marcas):
+                        seccion = clave
+                        break
+                continue
+
+            if not seccion:
+                continue
+
+            # La fila de encabezados dice dónde está cada columna. Se leen
+            # por nombre y no por posición: la planilla arranca con una
+            # columna vacía, y ese corrimiento ya desalineó los rótulos una vez.
+            if cols is None:
+                bajas = [c.lower() for c in fila]
+                if "mediana" in bajas:
+                    cols = {
+                        "mediana":    bajas.index("mediana"),
+                        "periodo":    bajas.index("período") if "período" in bajas
+                                      else (bajas.index("periodo") if "periodo" in bajas else None),
+                        "referencia": bajas.index("referencia") if "referencia" in bajas else None,
+                    }
+                continue
+
+            # Primera fila de datos de la sección: el período más cercano.
+            cruda = crudas[i]
+            valor = cruda[cols["mediana"]] if cols["mediana"] < len(cruda) else None
+            if not isinstance(valor, (int, float)) or pd.isna(valor):
+                continue
+
+            def _celda(nombre):
+                """El texto de la celda; las fechas como AAAA-MM-DD.
+
+                El período no siempre es una fecha: el PIB lo rotula
+                "Trim. II-26". Recortar a diez caracteres servía para las
+                fechas y le comía el año a los trimestres, así que se
+                distingue por tipo y no por largo.
+                """
+                j = cols.get(nombre)
+                if j is None or j >= len(cruda):
+                    return ""
+                v = cruda[j]
+                if isinstance(v, datetime):
+                    return v.date().isoformat()
+                return _texto(v)
+
+            encontradas[seccion] = {
+                "valor":      round(float(valor), 2),
+                "referencia": _celda("referencia"),
+                "periodo":    _celda("periodo"),
+            }
+            seccion, cols = None, None
 
         return {
             "periodo":       periodo,
             "mes_nombre":    mes_nombre(periodo),
-            "datos":         vars_encontradas,
+            "datos":         encontradas,
             "parseado_en":   datetime.now(timezone.utc).isoformat(),
         }
     except Exception as e:
@@ -193,24 +310,6 @@ def parsear_rem(fpath, periodo):
             "mes_nombre": mes_nombre(periodo),
             "datos":      {},
         }
-
-
-# ================================================================
-# CARGAR ÍNDICE LOCAL
-# ================================================================
-
-def cargar_indice():
-    if not os.path.exists(JSON_REM):
-        return []
-    try:
-        with open(JSON_REM,'r',encoding='utf-8') as f:
-            return json.load(f)
-    except:
-        return []
-
-def guardar_indice(indice):
-    with open(JSON_REM,'w',encoding='utf-8') as f:
-        json.dump(indice, f, ensure_ascii=False, indent=2)
 
 
 # ================================================================
@@ -224,15 +323,36 @@ def card_rem_html(item, es_ultimo=False):
     clase     = "rem-card rem-card-ultimo" if es_ultimo else "rem-card"
 
     def fmt_dato(clave, label, sufijo=""):
+        """Rotula con lo que dice la planilla, no con lo que suponemos.
+
+        Las fichas viejas guardaban un número suelto; las nuevas guardan
+        valor, referencia y período. Se aceptan las dos formas para no
+        romper el índice ya guardado.
+        """
         v = datos.get(clave)
-        if v is None: return ""
+        if v is None:
+            return ""
+        if isinstance(v, dict):
+            valor = v.get("valor")
+            if valor is None:
+                return ""
+            detalle = " · ".join(x for x in (v.get("referencia"),
+                                             v.get("periodo")) if x)
+            aclaracion = (f'<span class="rem-dato-ref">{escapar(detalle)}</span>'
+                          if detalle else "")
+            return (f'<div class="rem-dato"><span class="rem-dato-label">{label}</span>'
+                    f'<span class="rem-dato-valor">{valor}</span>{aclaracion}</div>')
         return f'<div class="rem-dato"><span class="rem-dato-label">{label}</span><span class="rem-dato-valor">{v}{sufijo}</span></div>'
 
     datos_html = (
+        fmt_dato("ipc",  "Inflación (mediana)", "%") +
+        fmt_dato("tcn",  "Tipo de cambio nominal (mediana)", " $/USD") +
+        fmt_dato("tasa", "Tasa TAMAR (mediana)", "% TNA") +
+        fmt_dato("pbi",  "PIB (mediana)", "%") +
+        # Fichas anteriores al 12/08/2026, con las claves y rótulos viejos.
         fmt_dato("inflacion_12m", "Inflación esperada 12m", "%") +
         fmt_dato("tcn_fin_anio",  "Dólar fin de año", " $/USD") +
-        fmt_dato("pbi",           "PBI variación anual", "%") +
-        fmt_dato("tasa",          "Tasa esperada", "% TNA")
+        fmt_dato("pbi_viejo",     "PBI variación anual", "%")
     )
 
     return f"""
@@ -306,7 +426,67 @@ def generar_pagina_rem(indice):
 # MAIN
 # ================================================================
 
+def _diagnostico():
+    """Detecta, baja y parsea sin tocar el sitio ni data/.
+
+    Sirve para ver si el parser entiende la planilla del mes antes de que la
+    edición dependa de eso. El parser busca palabras clave por fila y se
+    queda con el primer número: si la planilla cambió de forma, lo que sale
+    es un número equivocado y no un error, así que hay que mirarlo.
+    """
+    import tempfile
+    global DIR_REM_DATA
+
+    print("Buscando ediciones del REM en el BCRA…")
+    disponibles = detectar_rem_disponibles()
+    if not disponibles:
+        print("No se detectó ninguna. La página cambió de nuevo: revisar el patrón.")
+        return
+
+    for info in disponibles[:2]:
+        print(f"\n=== {info['periodo']} · {info['url']}")
+        DIR_REM_DATA = tempfile.mkdtemp()
+        fpath = bajar_rem(info)
+        if not fpath:
+            continue
+
+        try:
+            import pandas as pd
+            hojas = pd.read_excel(fpath, sheet_name=None, header=None,
+                                  engine="openpyxl")
+            print(f"    hojas: {list(hojas)}")
+            primera = list(hojas.values())[0]
+            print(f"    la primera mide {primera.shape[0]}x{primera.shape[1]}")
+            print("    secciones y una fila de muestra de cada una:")
+            anterior_fue_titulo = False
+            for i, fila in primera.iterrows():
+                celdas = [str(v)[:34] for v in list(fila)[:6]
+                          if str(v) != "nan"]
+                if not celdas:
+                    anterior_fue_titulo = False
+                    continue
+                # Un título de sección es una fila con una sola celda de texto;
+                # las filas de datos traen período, referencia y números.
+                es_titulo = len(celdas) == 1 and not celdas[0][0].isdigit()
+                if es_titulo:
+                    print(f"      {i:3d} § " + celdas[0])
+                    anterior_fue_titulo = True
+                elif anterior_fue_titulo:
+                    print(f"      {i:3d}   " + " | ".join(celdas))
+                    anterior_fue_titulo = False
+        except Exception as e:
+            print(f"    no pude abrir la planilla: {str(e)[:80]}")
+
+        datos = parsear_rem(fpath, info["periodo"])
+        print(f"    el parser extrajo: {datos.get('datos')}")
+        if not datos.get("datos"):
+            print("    ← vacío: el parser no reconoce esta planilla")
+
+
 def main():
+    if "--diagnostico" in sys.argv[1:]:
+        _diagnostico()
+        return
     print(f"[REM] Inicio: {datetime.now(timezone.utc).isoformat()}")
     indice = cargar_indice()
     periodos_conocidos = {item["periodo"] for item in indice}

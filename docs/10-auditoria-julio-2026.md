@@ -14,7 +14,7 @@ Hallazgos principales, del más al menos importante:
 4. **Muchas fuentes RSS rotas**: el último registro de salud muestra ~40 fuentes en error/404/403 de ~90 configuradas. Hay que depurar el catálogo (URLs de feeds que cambiaron).
 5. **Riesgo país: el manual pisaba al automático**: la carga del panel tenía prioridad sobre la cadena de fuentes, al revés de lo que pide la Fase A.
 6. **Gemini 1.5 Flash discontinuado**: el resumidor apuntaba a `gemini-1.5-flash`, retirado por Google. Con la key actual probablemente fallaba en silencio (el paso tiene `continue-on-error`).
-7. **Paneles públicos sin auth**: `/panel69/` y `/admin/` (idénticos) son HTML accesible por URL; la cola editorial vive en localStorage del navegador. Mitigación inmediata: Cloudflare Access (gratis) — está en la guía de migración.
+7. ~~**Paneles públicos sin auth**~~ — resuelto el 12/08/2026 dándolos de baja. La auditoría acertó el diagnóstico pero se quedó corta en el alcance: además de no tener auth, no servían. No escribían nada —solo `localStorage` y portapapeles— y `riesgo_manual.json`, `columnas_manual.json` y `stream_manual.json`, los tres archivos que los generadores leen de ellos, nunca existieron en el repo.
 8. **Restos**: workflows duplicados viejos fuera de `.github/workflows/` (eliminados), `infomondia.xls` de 4.8 MB en la raíz que ningún script referencia (candidato a borrar), `generador_home_backup.py`.
 
 ## Qué cambié
@@ -32,7 +32,7 @@ Hallazgos principales, del más al menos importante:
 
 - Los generadores de HTML y el diseño del sitio.
 - El catálogo de fuentes (hay que depurarlo, pero es trabajo editorial con internet).
-- panel69/admin (la solución correcta es Cloudflare Access + rediseño del flujo editorial, Fase D).
+- ~~panel69/admin~~ — dados de baja el 12/08/2026. Si vuelve la carga manual, es rediseño del flujo editorial (Fase D) y un panel que escriba de verdad.
 
 ## Pendientes inmediatos (en orden)
 
