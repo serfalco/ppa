@@ -312,6 +312,21 @@ def parsear_rem(fpath, periodo):
         }
 
 
+def cargar_indice():
+    if not os.path.exists(JSON_REM):
+        return []
+    try:
+        with open(JSON_REM, "r", encoding="utf-8") as f:
+            return json.load(f)
+    except Exception:
+        return []
+
+
+def guardar_indice(indice):
+    with open(JSON_REM, "w", encoding="utf-8") as f:
+        json.dump(indice, f, ensure_ascii=False, indent=2)
+
+
 # ================================================================
 # HTML
 # ================================================================
