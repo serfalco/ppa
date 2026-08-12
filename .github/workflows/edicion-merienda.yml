@@ -12,6 +12,12 @@ on:
         default: 'auto'
         type: choice
         options: [auto, desayuno, merienda]
+      simulacro_fallo:
+        description: 'Simulacro: hacer fallar un paso tolerado para probar la alarma'
+        required: false
+        default: 'no'
+        type: choice
+        options: ['no', 'si']
 
 permissions:
   contents: write
@@ -129,6 +135,21 @@ jobs:
         run: python scripts/exportar_config.py
         continue-on-error: true
 
+      - name: Simulacro de fallo
+        # No corre nunca sola: solo con el input en "si", que únicamente se
+        # puede pasar a mano. En el cron el input viene vacío y el paso queda
+        # skipped, que no cuenta como caída.
+        #
+        # Existe porque una alarma que nunca se probó no es una alarma. Con
+        # esto se puede verificar el aviso entero —outcome, issue, dedupe— sin
+        # editar el workflow ni esperar a que algo se rompa de verdad.
+        id: simulacro
+        if: inputs.simulacro_fallo == 'si'
+        continue-on-error: true
+        run: |
+          echo "Simulacro: fallando a propósito para probar la alarma."
+          exit 1
+
       - name: Avisar si algún paso tolerado se cayó
         # Los pasos de arriba llevan continue-on-error para que una pieza rota
         # no impida publicar la edición. El costo es que GitHub reporta el paso
@@ -142,6 +163,7 @@ jobs:
           GH_TOKEN: ${{ github.token }}
         run: |
           CAIDOS=""
+          if [ "${{ steps.simulacro.outcome }}" = "failure" ]; then CAIDOS="$CAIDOS Simulacro de fallo"; fi
           if [ "${{ steps.historico.outcome }}" = "failure" ]; then CAIDOS="$CAIDOS Histórico acumulativo"; fi
           if [ "${{ steps.pulso.outcome }}" = "failure" ]; then CAIDOS="$CAIDOS Generador - Pulso del Día"; fi
           if [ "${{ steps.resumidor.outcome }}" = "failure" ]; then CAIDOS="$CAIDOS Resumidor - resúmenes con Gemini"; fi
