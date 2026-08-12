@@ -46,32 +46,33 @@ Ordenados por impacto, según la prioridad recomendada del documento integral (�
    es la herramienta, no los datos. Igual hay que cerrarlo antes de darle
    capacidad de escritura. La solución prevista es Cloudflare Access (gratis),
    paso 11 de `docs/09`: son clics en el dashboard, no código.
-2. **El TCRM está congelado y no hay fuente de reemplazo** — desde el 17/06.
-   `datos.gob.ar` devuelve 400 para `168.1_T_CAMBIOR_D_0_0_26`, y las series de
-   tipo de cambio real que sí existen ahí son **bilaterales** (Canadá, China,
-   México, Uruguay, Vietnam, Chile) y **cortaron todas el 28/01/2026**. La API
-   del BCRA tampoco lo tiene: solo minorista, mayorista y contable. La vía que
-   queda es la planilla oficial `ITCRMSerie.xlsx` del BCRA, que es otra forma
-   de bajada (Excel, no JSON) y hay que construirla.
-3. **Merval y BADLAR conservan el valor previo** — Merval da 404 en
+2. **Merval y BADLAR conservan el valor previo** — Merval da 404 en
    argentinadatos y BADLAR da 400 en la variable 6 de la API BCRA v4. Ninguno
    rompe nada, pero los dos muestran un dato viejo sin decirlo.
-4. **Un cron salteado** — la Merienda del 6 de agosto de 2026 no corrió (no
+3. **Un cron salteado** — la Merienda del 6 de agosto de 2026 no corrió (no
    existe la ejecución, no es que no hubo cambios). Los crons de GitHub
    Actions no garantizan puntualidad ni ejecución bajo carga, y hoy nada avisa
    cuando una edición no sale.
-5. **EconoTuits vive de cache** — nueve cuentas de Nitter devuelven 404. Salen
+4. **EconoTuits vive de cache** — nueve cuentas de Nitter devuelven 404. Salen
    31 tuits, pero la mayoría no se refrescan.
-6. **REM y Columnas vacías** — REM en 0 ediciones, Columnas no genera nada.
-7. **Node 20 deprecado** — `actions/checkout@v4` y `actions/setup-python@v5`
+5. **REM y Columnas vacías** — REM en 0 ediciones, Columnas no genera nada.
+6. **Node 20 deprecado** — `actions/checkout@v4` y `actions/setup-python@v5`
    lo usan; GitHub ya los fuerza a Node 24 y avisa en cada corrida.
 
 Cerrados el 11 y 12 de agosto de 2026: el MULC quedó automático
 (`MULC_BCRA_ID = 78`); los resúmenes con IA se verificaron generando en
 producción con `gemini-flash-latest`; el crash del Tablero, Documentos en cero
-y la salud de fuentes inflada quedaron arreglados; y las tres fuentes caídas se
+y la salud de fuentes inflada quedaron arreglados; las tres fuentes caídas se
 diagnosticaron y se dieron de baja por no tener ya un feed que corresponda a lo
-que dicen ser.
+que dicen ser; y el TCRM pasó a salir del ITCRM oficial del BCRA.
+
+Sobre el TCRM conviene recordar qué pasó, porque es el caso que más se puede
+repetir: no había página. El generador bajaba la serie de datos.gob.ar en cada
+corrida y armaba `/tcrm/` con eso, y como esa API dejó de responder abortaba
+antes de escribir el cache, así que el fallback no tenía nada que usar. El
+número que se mostraba era 1460 con unidad "índice", casi igual al dólar
+mayorista: no era el ITCRM. La planilla oficial da 85,41 al 11/08, que es la
+magnitud correcta para un índice base 17/12/2015=100.
 
 ## Regla de trabajo
 
