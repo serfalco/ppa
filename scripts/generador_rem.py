@@ -344,7 +344,56 @@ def generar_pagina_rem(indice):
 # MAIN
 # ================================================================
 
+def _diagnostico():
+    """Detecta, baja y parsea sin tocar el sitio ni data/.
+
+    Sirve para ver si el parser entiende la planilla del mes antes de que la
+    edición dependa de eso. El parser busca palabras clave por fila y se
+    queda con el primer número: si la planilla cambió de forma, lo que sale
+    es un número equivocado y no un error, así que hay que mirarlo.
+    """
+    import tempfile
+    global DIR_REM_DATA
+
+    print("Buscando ediciones del REM en el BCRA…")
+    disponibles = detectar_rem_disponibles()
+    if not disponibles:
+        print("No se detectó ninguna. La página cambió de nuevo: revisar el patrón.")
+        return
+
+    for info in disponibles[:2]:
+        print(f"\n=== {info['periodo']} · {info['url']}")
+        DIR_REM_DATA = tempfile.mkdtemp()
+        fpath = bajar_rem(info)
+        if not fpath:
+            continue
+
+        try:
+            import pandas as pd
+            hojas = pd.read_excel(fpath, sheet_name=None, header=None,
+                                  engine="openpyxl")
+            print(f"    hojas: {list(hojas)}")
+            primera = list(hojas.values())[0]
+            print(f"    la primera mide {primera.shape[0]}x{primera.shape[1]}")
+            print("    primeras filas:")
+            for i, fila in primera.head(8).iterrows():
+                celdas = [str(v)[:20] for v in list(fila)[:6]
+                          if str(v) != "nan"]
+                if celdas:
+                    print(f"      {i:3d} | " + " | ".join(celdas))
+        except Exception as e:
+            print(f"    no pude abrir la planilla: {str(e)[:80]}")
+
+        datos = parsear_rem(fpath, info["periodo"])
+        print(f"    el parser extrajo: {datos.get('datos')}")
+        if not datos.get("datos"):
+            print("    ← vacío: el parser no reconoce esta planilla")
+
+
 def main():
+    if "--diagnostico" in sys.argv[1:]:
+        _diagnostico()
+        return
     print(f"[REM] Inicio: {datetime.now(timezone.utc).isoformat()}")
     indice = cargar_indice()
     periodos_conocidos = {item["periodo"] for item in indice}

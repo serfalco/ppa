@@ -20,7 +20,7 @@ on:
         required: true
         default: 'bcra'
         type: choice
-        options: [bcra, feeds, series, itcrm, api]
+        options: [bcra, feeds, series, itcrm, api, rem]
       filtros:
         description: 'BCRA: palabras a buscar, o "--detalle 47 78" para ver valores. FEEDS: ids de FUENTES.py o URLs sueltas, vacío = las institucionales. SERIES: --buscar "texto" o --ids a,b. ITCRM: vacío o --diagnostico. API: una o más URLs.'
         required: false
@@ -49,7 +49,7 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install requests feedparser openpyxl
+          pip install requests feedparser openpyxl pandas
 
       - name: Descubrir
         id: consulta
@@ -66,6 +66,7 @@ jobs:
             series) python -u scripts/verificar_series.py $FILTROS | tee salida.txt ;;
             itcrm)  python -u scripts/itcrm_bcra.py       $FILTROS | tee salida.txt ;;
             api)    python -u scripts/probar_api.py       $FILTROS | tee salida.txt ;;
+            rem)    python -u scripts/generador_rem.py --diagnostico | tee salida.txt ;;
             *)      python -u scripts/descubrir_bcra.py   $FILTROS | tee salida.txt ;;
           esac
 
@@ -81,6 +82,7 @@ jobs:
               series) echo "## Series de datos.gob.ar" ;;
               itcrm)  echo "## ITCRM — planilla del BCRA" ;;
               api)    echo "## Endpoints probados" ;;
+              rem)    echo "## REM — detección y parseo" ;;
               *)      echo "## Variables de la API BCRA v4" ;;
             esac
             echo
@@ -110,6 +112,10 @@ jobs:
               api)
                 echo "Pasar una o más URLs separadas por espacio. Muestra código HTTP, tipo y la forma del JSON."
                 echo "Sirve para encontrar por dónde sale el valor cuando un endpoint cambió de ruta o de formato."
+                ;;
+              rem)
+                echo "No toca el sitio ni \`data/\`: baja la planilla a un temporal y muestra qué extrae el parser."
+                echo "Si extrae vacío, la planilla cambió de forma y hay que ajustar \`parsear_rem\`."
                 ;;
               *)
                 echo "1. Verificá que el valor coincida con el Informe Monetario Diario del BCRA."
