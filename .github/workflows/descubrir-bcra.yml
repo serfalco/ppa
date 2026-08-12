@@ -20,9 +20,9 @@ on:
         required: true
         default: 'bcra'
         type: choice
-        options: [bcra, feeds, series, itcrm]
+        options: [bcra, feeds, series, itcrm, api]
       filtros:
-        description: 'BCRA: palabras a buscar, o "--detalle 47 78" para ver valores. FEEDS: ids de FUENTES.py o URLs sueltas, vacío = las institucionales. SERIES: --buscar "texto" o --ids a,b, vacío = la lista de candidatos.'
+        description: 'BCRA: palabras a buscar, o "--detalle 47 78" para ver valores. FEEDS: ids de FUENTES.py o URLs sueltas, vacío = las institucionales. SERIES: --buscar "texto" o --ids a,b. ITCRM: vacío o --diagnostico. API: una o más URLs.'
         required: false
         default: 'mulc compra divisas'
         type: string
@@ -65,6 +65,7 @@ jobs:
             feeds)  python -u scripts/descubrir_feeds.py  $FILTROS | tee salida.txt ;;
             series) python -u scripts/verificar_series.py $FILTROS | tee salida.txt ;;
             itcrm)  python -u scripts/itcrm_bcra.py       $FILTROS | tee salida.txt ;;
+            api)    python -u scripts/probar_api.py       $FILTROS | tee salida.txt ;;
             *)      python -u scripts/descubrir_bcra.py   $FILTROS | tee salida.txt ;;
           esac
 
@@ -79,6 +80,7 @@ jobs:
               feeds)  echo "## Feeds vigentes" ;;
               series) echo "## Series de datos.gob.ar" ;;
               itcrm)  echo "## ITCRM — planilla del BCRA" ;;
+              api)    echo "## Endpoints probados" ;;
               *)      echo "## Variables de la API BCRA v4" ;;
             esac
             echo
@@ -104,6 +106,10 @@ jobs:
               itcrm)
                 echo "Sin argumentos baja la planilla y resume la serie; con \`--diagnostico\` muestra la forma del archivo."
                 echo "Si el parseo falla, el diagnóstico dice en qué hoja y fila quedó el encabezado."
+                ;;
+              api)
+                echo "Pasar una o más URLs separadas por espacio. Muestra código HTTP, tipo y la forma del JSON."
+                echo "Sirve para encontrar por dónde sale el valor cuando un endpoint cambió de ruta o de formato."
                 ;;
               *)
                 echo "1. Verificá que el valor coincida con el Informe Monetario Diario del BCRA."
