@@ -3,7 +3,8 @@ PPA — generador_tcrm.py
 Genera la página "El peso en perspectiva" (/tcrm/).
 
 Fuente: planilla oficial del BCRA (ITCRMSerie.xlsx, ver itcrm_bcra.py)
-  ITCRM diario, base 17/12/2015=100, desde 01/01/1997 (~7500 puntos).
+  ITCRM diario, base 17/12/2015=100, desde 01/01/1997.
+  Verificado el 12/08/2026: 10.815 puntos, último 85,41 al 11/08.
 
 Antes salía de la serie 168.1_T_CAMBIOR_D_0_0_26 de datos.gob.ar, que dejó
 de responder y nunca llegó a escribir el cache: la página no existía. Ese ID

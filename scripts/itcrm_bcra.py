@@ -19,6 +19,12 @@ Si la planilla cambia de forma, el modo diagnóstico muestra qué vino.
 Cómo se corre a mano (donde haya internet):
     python scripts/itcrm_bcra.py                # baja, parsea y resume
     python scripts/itcrm_bcra.py --diagnostico  # muestra la forma del archivo
+
+Verificado el 12/08/2026 contra la planilla publicada: 10.815 puntos,
+01/01/1997 → 11/08/2026, hoja "ITCRM y bilaterales", encabezado en la fila 2
+("Período | ITCRM | ITCRB Brasil | …"). Los últimos valores fueron 86,35 el
+07/08 y 85,41 el 11/08 — el orden de magnitud de un índice base 100, no los
+1460 que traía la serie vieja de datos.gob.ar.
 """
 
 import io
