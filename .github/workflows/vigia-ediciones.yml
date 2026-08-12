@@ -1,0 +1,69 @@
+name: PPA - Vigía de ediciones
+
+# Controla que las ediciones del día hayan salido y abre un aviso si falta
+# alguna. Cubre el punto ciego: "Alerta si falló" en el workflow de ediciones
+# solo avisa cuando el workflow corre y algo revienta, así que una corrida que
+# nunca arranca no dispara nada. Es lo que pasó con la Merienda del 6/8/2026.
+#
+# Corre después de cada edición, ya vencida la gracia de dos horas que el
+# script le da a los crons de GitHub.
+
+on:
+  schedule:
+    - cron: '25 11 * * *'  # tras el Desayuno (cron 09:00 UTC + gracia)
+    - cron: '40 22 * * *'  # tras la Merienda (cron 20:15 UTC + gracia)
+  workflow_dispatch:
+
+permissions:
+  actions: read     # listar las corridas del workflow de ediciones
+  issues: write     # abrir el aviso
+  contents: read
+
+jobs:
+  vigilar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install requests
+
+      - name: Revisar las ediciones del día
+        id: vigia
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python -u scripts/vigia_ediciones.py
+
+      - name: Avisar si faltó alguna
+        if: failure() && steps.vigia.outputs.faltantes != ''
+        env:
+          GH_TOKEN: ${{ github.token }}
+          FALTANTES: ${{ steps.vigia.outputs.faltantes }}
+        run: |
+          TITULO="⚠ No salió la edición $FALTANTES — $(date -u '+%Y-%m-%d')"
+          # Sin este chequeo, las dos corridas diarias abrirían dos issues por
+          # lo mismo. El título lleva la fecha, así que un día nuevo sí avisa.
+          YA=$(gh issue list --state open --label alerta \
+                 --json title --jq '.[].title' | grep -Fx "$TITULO" || true)
+          if [ -n "$YA" ]; then
+            echo "Ya hay un aviso abierto para hoy."
+            exit 0
+          fi
+          gh issue create \
+            --title "$TITULO" \
+            --body "El vigía no encontró una corrida exitosa de **$FALTANTES** hoy.
+
+          No es que el workflow de ediciones falló: no hay ejecución. Los crons de GitHub Actions no garantizan puntualidad ni ejecución bajo carga.
+
+          Para publicarla a mano: Actions → *PPA - Ediciones Diarias* → Run workflow, eligiendo la edición.
+
+          Corrida del vigía: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}" \
+            --label "alerta" || true
