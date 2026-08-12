@@ -375,12 +375,23 @@ def _diagnostico():
             print(f"    hojas: {list(hojas)}")
             primera = list(hojas.values())[0]
             print(f"    la primera mide {primera.shape[0]}x{primera.shape[1]}")
-            print("    primeras filas:")
-            for i, fila in primera.head(8).iterrows():
-                celdas = [str(v)[:20] for v in list(fila)[:6]
+            print("    secciones y una fila de muestra de cada una:")
+            anterior_fue_titulo = False
+            for i, fila in primera.iterrows():
+                celdas = [str(v)[:34] for v in list(fila)[:6]
                           if str(v) != "nan"]
-                if celdas:
-                    print(f"      {i:3d} | " + " | ".join(celdas))
+                if not celdas:
+                    anterior_fue_titulo = False
+                    continue
+                # Un título de sección es una fila con una sola celda de texto;
+                # las filas de datos traen período, referencia y números.
+                es_titulo = len(celdas) == 1 and not celdas[0][0].isdigit()
+                if es_titulo:
+                    print(f"      {i:3d} § " + celdas[0])
+                    anterior_fue_titulo = True
+                elif anterior_fue_titulo:
+                    print(f"      {i:3d}   " + " | ".join(celdas))
+                    anterior_fue_titulo = False
         except Exception as e:
             print(f"    no pude abrir la planilla: {str(e)[:80]}")
 
