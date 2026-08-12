@@ -97,14 +97,49 @@ def buscar(texto, limite=10):
     salida = []
     for f in filas:
         salida.append((
-            f.get("field_title") or f.get("title") or "(sin título)",
-            f.get("field_id") or f.get("id") or "",
-            f.get("field_units") or f.get("units") or "",
-            f.get("field_frequency") or f.get("frequency") or "",
-            f.get("serie_tiempo_indice_inicio") or "",
-            f.get("serie_tiempo_indice_final") or "",
+            _primero(f, ("field_title", "title", "field_description",
+                         "description")) or "(sin título)",
+            _id_de(f),
+            _primero(f, ("field_units", "units")),
+            _primero(f, ("field_frequency", "frequency",
+                         "distribution_index_frequency")),
+            _primero(f, ("serie_tiempo_indice_inicio", "time_index_start")),
+            _primero(f, ("serie_tiempo_indice_final", "time_index_end")),
         ))
+
+    # Si no se pudo sacar ningún ID, el problema es que la API cambió los
+    # nombres de los campos. Mostrarlos evita otra ronda a ciegas: es el
+    # mismo error que tener un ID viejo hardcodeado, un nivel más arriba.
+    if filas and not any(s[1] for s in salida):
+        print("   no reconocí el campo del ID. La API devolvió estas claves:")
+        for k in sorted(filas[0].keys()):
+            print(f"     {k} = {str(filas[0][k])[:60]}")
     return salida
+
+
+def _primero(fila, claves):
+    """Primer valor no vacío entre varios nombres posibles de campo."""
+    for k in claves:
+        v = fila.get(k)
+        if v:
+            return str(v)
+    return ""
+
+
+def _id_de(fila):
+    """El ID de la serie, sin depender de cómo se llame el campo hoy.
+
+    La API ya renombró campos antes. Se prueban los nombres conocidos y, si
+    ninguno está, cualquier clave que termine en "id" cuyo valor tenga la
+    forma de un ID de serie (`168.1_T_CAMBIOR_D_0_0_26`).
+    """
+    for k in ("field_id", "serie_id", "id"):
+        if fila.get(k):
+            return str(fila[k])
+    for k, v in fila.items():
+        if k.lower().endswith("id") and isinstance(v, str) and "_" in v:
+            return v
+    return ""
 
 
 def modo_buscar(texto):
