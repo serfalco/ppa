@@ -512,7 +512,13 @@ def obtener_dolares(previo):
 # andando, así que no es la API caída sino el endpoint que ya no existe.
 
 def _merval_yahoo():
-    """Serie diaria del ^MERV. Verificado el 12/08/2026."""
+    """Serie diaria del ^MERV.
+
+    Verificado el 12/08/2026 contra la respuesta real: meta trae
+    regularMarketPrice = 3022484.5 y exchangeTimezoneName
+    America/Argentina/Buenos_Aires, y el cierre de la rueda coincide
+    (3022485.0). Ese orden de magnitud es el del Merval en pesos.
+    """
     j = get_json("https://query1.finance.yahoo.com/v8/finance/chart/%5EMERV"
                  "?interval=1d&range=5d")
     try:

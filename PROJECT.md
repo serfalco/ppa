@@ -46,17 +46,14 @@ Ordenados por impacto, según la prioridad recomendada del documento integral (�
    es la herramienta, no los datos. Igual hay que cerrarlo antes de darle
    capacidad de escritura. La solución prevista es Cloudflare Access (gratis),
    paso 11 de `docs/09`: son clics en el dashboard, no código.
-2. **Merval y BADLAR conservan el valor previo** — Merval da 404 en
-   argentinadatos y BADLAR da 400 en la variable 6 de la API BCRA v4. Ninguno
-   rompe nada, pero los dos muestran un dato viejo sin decirlo.
-3. **Un cron salteado** — la Merienda del 6 de agosto de 2026 no corrió (no
+2. **Un cron salteado** — la Merienda del 6 de agosto de 2026 no corrió (no
    existe la ejecución, no es que no hubo cambios). Los crons de GitHub
    Actions no garantizan puntualidad ni ejecución bajo carga, y hoy nada avisa
    cuando una edición no sale.
-4. **EconoTuits vive de cache** — nueve cuentas de Nitter devuelven 404. Salen
+3. **EconoTuits vive de cache** — nueve cuentas de Nitter devuelven 404. Salen
    31 tuits, pero la mayoría no se refrescan.
-5. **REM y Columnas vacías** — REM en 0 ediciones, Columnas no genera nada.
-6. **Node 20 deprecado** — `actions/checkout@v4` y `actions/setup-python@v5`
+4. **REM y Columnas vacías** — REM en 0 ediciones, Columnas no genera nada.
+5. **Node 20 deprecado** — `actions/checkout@v4` y `actions/setup-python@v5`
    lo usan; GitHub ya los fuerza a Node 24 y avisa en cada corrida.
 
 Cerrados el 11 y 12 de agosto de 2026: el MULC quedó automático
@@ -64,7 +61,10 @@ Cerrados el 11 y 12 de agosto de 2026: el MULC quedó automático
 producción con `gemini-flash-latest`; el crash del Tablero, Documentos en cero
 y la salud de fuentes inflada quedaron arreglados; las tres fuentes caídas se
 diagnosticaron y se dieron de baja por no tener ya un feed que corresponda a lo
-que dicen ser; y el TCRM pasó a salir del ITCRM oficial del BCRA.
+que dicen ser; el TCRM pasó a salir del ITCRM oficial del BCRA; y Merval y BADLAR
+volvieron a publicarse — la BADLAR con el ID vigente del BCRA (140 en vez de
+6) y el Merval desde Yahoo Finance, porque argentinadatos discontinuó ese
+endpoint.
 
 Sobre el TCRM conviene recordar qué pasó, porque es el caso que más se puede
 repetir: no había página. El generador bajaba la serie de datos.gob.ar en cada
