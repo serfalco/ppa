@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Salud de las fuentes · Pulso Productivo Argentino</title>
+<meta name="description" content="Estado real de cada fuente que lee PPA: cuáles responden, cuáles dejaron de publicar y cuáles se dieron de baja, con el motivo.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900&family=IBM+Plex+Sans:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/ppa.css">
+<link rel="stylesheet" href="/assets/interior.css">
+<link rel="stylesheet" href="/assets/salud.css">
+</head>
+<body class="body-salud">
+
+
+<div id="cabecera-wrap">
+<header class="cabecera-ppa expandida" id="cabecera-ppa">
+
+  <div class="cab-top">
+    <span class="cab-fecha">Mié 12/08/2026</span>
+    <span class="cab-edicion">Edición Merienda ☕</span>
+  </div>
+
+  <div class="cab-logo-fila">
+    <div>
+      <a href="/" class="cab-logo">PPA</a>
+      <div class="cab-tagline">Pulso Productivo Argentino</div>
+    </div>
+    <button class="cab-hamburguesa" id="btn-menu" aria-label="Menú">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+
+  <div class="cab-ticker-wrap">
+    <div class="cab-ticker" id="cab-ticker">
+      <span>OFICIAL<b id="dolar-oficial">…</b></span><span>MEP<b id="dolar-mep">…</b></span><span>BLUE<b id="dolar-blue-ticker">…</b></span><span>RIESGO<b id="riesgo-pais-ticker">…</b></span><span>OFICIAL<b id="dolar-oficial">…</b></span><span>MEP<b id="dolar-mep">…</b></span><span>BLUE<b id="dolar-blue-ticker">…</b></span><span>RIESGO<b id="riesgo-pais-ticker">…</b></span>
+    </div>
+  </div>
+
+</header>
+<div class="cab-spacer" id="cab-spacer"></div>
+</div>
+
+<div class="menu-overlay" id="menu-overlay"></div>
+<nav class="menu-drawer" id="menu-drawer">
+  <div class="menu-drawer-header">
+    <span class="menu-drawer-logo">PPA</span>
+    <button class="menu-cerrar" id="btn-menu-cerrar">✕</button>
+  </div>
+  <div class="menu-nav">
+    <a href="/">Portada</a>
+    <a href="/la-data/">La Data del Día</a>
+    <a href="/rem/">REM</a>
+    <a href="/columnas/">Columnas</a>
+    <a href="/stream/">TXT-Stream</a>
+    <a href="/tuits/">EconoTuits</a>
+    <a href="/tablero/">Tablero</a>
+    <a href="/informes/">Informes</a>
+    <a href="/como-trabajamos.html">Cómo trabajamos</a>
+  </div>
+</nav>
+
+<header class="salud-cabecera">
+  <div class="contenedor">
+    <h1 class="salud-titulo">Salud de las fuentes</h1>
+    <p class="salud-sub">Última medición: 12/08/2026 18:00</p>
+  </div>
+</header>
+
+<main class="contenedor salud-main">
+
+  <p class="salud-intro">
+    PPA no escribe noticias: lee 40 fuentes y arma
+    con eso la portada. Si una deja de responder o deja de publicar, la
+    sección que alimenta se ve más flaca y desde afuera no hay manera de
+    saber por qué. Esta página es eso: lo que el sistema mide en cada
+    corrida, sin filtrar. Hoy hay <strong>31 de 37</strong>
+    fuentes activas al día.
+  </p>
+
+  <section class="salud-bloque">
+    <div class="salud-totales">
+      <div class="salud-total salud-media">
+        <span class="salud-total-num">6</span>
+        <span class="salud-total-lbl">Sin novedades</span>
+      </div>
+      <div class="salud-total salud-bien">
+        <span class="salud-total-num">31</span>
+        <span class="salud-total-lbl">Al día</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="salud-bloque">
+    <h2>Fuentes activas</h2>
+    <p class="salud-nota">
+      Ordenadas por estado: primero las que tienen algún problema. Los
+      horarios están en hora argentina.
+    </p>
+    <table class="salud-tabla">
+      <tbody>
+      <tr>
+        <td class="salud-nombre"><a href="https://www.cedol.org.ar/logistica/feed/" target="_blank" rel="noopener">CEDOL</a>
+          <span class="salud-cat">Logística</span>
+        </td>
+        <td class="salud-estado">
+          <span class="salud-badge salud-media">Sin novedades</span>
+        </td>
+        <td class="salud-detalle"><span title="04/08/2026 19:27">Publicó hace 8 días</span> · <span title="12/08/2026 18:00">Leída hace 1 hora</span></td>
+      </tr>
+      <tr>
+        <td class="salud-nombre"><a href="https://www.cippec.org/feed/" target="_blank" rel="noopener">CIPPEC</a>
+          <span class="salud-cat">Análisis Consultoras</span>
+        </td>
+        <td class="salud-estado">
+          <span class="salud-badge salud-media">Sin novedades</span>
+        </td>
+        <td class="salud-detalle"><span title="30/07/2026 12:49">Publicó hace 13 días</span> · <span title="12/08/2026 17:59">Leída hace 1 hora</span></td>
+      </tr>
+      <tr>
+        <td class="salud-nombre"><a href="https://econviews.com/feed/" target="_blank" rel="noopener">Econviews</a>
+          <span class="salud-cat">Análisis Consultoras</span>
+        </td>
+        <td class="salud-estado">
+          <span class="salud-badge salud-media">Sin novedades</span>
+        </td>
+        <td class="salud-detalle"><span title="25/02/2026 13:02">Publicó hace 5 meses</span> · <span title="12/08/2026 17:59">Leída hace 1 hora</span></td>
+      </tr>
+      <tr>
+        <td class="salud-nombre"><a href="https://www.iaraf.org/index.php/informes-economicos/area-fiscal?format=feed&amp;type=rss" target="_blank" rel="noopener">IARAF</a>
+          <span class="salud-cat">Análisis Consultoras</span>
+        </td>
+        <td class="salud-estado">
+          <span class="salud-badge salud-media">Sin novedades</span>
+        </td>
+        <td class="salud-detalle"><span title="31/07/2026 10:37">Publicó hace 12 días</span> · <span title="12/08/2026 17:59">Leída hace 1 hora</span></td>
+      </tr>
+      <tr>
+        <td class="salud-nombre"><a href="https://voices.ilo.org/rss/podcast/fow-es-es.xml" target="_blank" rel="noopener">OIT Podcast</a>
+          <span class="salud-cat">Laboral</span>
+        </td>
+        <td class="salud-estado">
+          <span class="salud-badge salud-media">Sin novedades</span>
+        </td>
+        <td class="salud-detalle"><span title="27/04/2026 21:00">Publicó hace 3 meses</span> · <span title="12/08/2026 18:00">Leída hace 1 hora</span></td>
+      </tr>
+      <tr>
+        <td class="salud-nombre"><a href="https://visionmotor.com/feed/" target="_blank" rel="noopener">Vision Motor</a>
+          <span class="salud-cat">Automotor</span>
+        </td>
+        <td class="salud-estado">
+          <span class="salud-badge salud-media">Sin novedades</span>
+        </td>
+        <td class="salud-detalle"><span title="24/07/2026 19:36">Publicó hace 19 días</span> · <span title="12/08/2026 17:59">Leída hace 1 hora</span></td>
+      </tr>
+      <tr>
+        <td class="salud-nombre"><a href="https://www.0221.com.ar/rss/pages/estudiantes.xml" target="_blank" rel="noopener">0221 Estudiantes</a>
+          <span class="salud-cat">Fulbito</span>
+        </td>
+        <td class="salud-estado">
+          <span class="salud-badge salud-bien">Al día</span>
+        </td>
+        <td class="salud-detalle"><span title="12/08/2026 17:44">Publicó hace 1 hora</span> · <span title="12/08/2026 18:00">Leída hace 1 hora</span></td>
+      </tr>
+      <tr>
+        <td class="salud-nombre"><a href="https://arodarpost.com.ar/feed/" target="_blank" rel="noopener">A Rodar Post</a>
+          <span class="salud-cat">Automotor</span>
+        </td>
+        <td class="salud-estado">
+          <span class="salud-badge salud-bien">Al día</span>
+        </td>
+        <td class="salud-detalle"><span title="12/08/2026 14:21">Publicó hace 5 horas</span> · <span title="12/08/2026 17:59">Leída hace 1 hora</span></td>
+      </tr>
+      <tr>
+        <td class="salud-nombre"><a href="https://aduananews.com/feed/" target="_blank" rel="noopener">Aduana News</a>
+          <span class="salud-cat">Comex</span>
+        </td>
+        <td class="salud-estado">
+          <span class="salud-badge salud-bien">Al día</span>
+        </td>
+        <td class="salud-detalle"><span title="12/08/2026 00:13">Publicó hace 19 horas</span> · <span title="12/08/2026 17:59">Leída hace 1 hora</span></td>
+      </tr>
+      <tr>
+        <td class="salud-nombre"><a href="https://noticias.autocosmos.com.ar/rss" target="_blank" rel="noopener">Autocosmos Argentina</a>
+          <span class="salud-cat">Automotor</span>
+        </td>
+        <td class="salud-estado">
+          <span class="salud-badge salud-bien">Al día</span>
+        </td>
+        <td class="salud-detalle"><span title="12/08/2026 12:00">Publicó hace 7 horas</span> · <span title="12/08/2026 17:59">Leída hace 1 hora</span></td>
+      </tr>
+      <tr>
+        <td class="salud-nombre"><a href="https://bichosdecampo.com/feed/" target="_blank" rel="noopener">Bichos de Campo</a>
+          <span class="salud-cat">Agro</span>
+        </td>
+        <td class="salud-estado">
+          <span class="salud-badge salud-bien">Al día</span>
+        </td>
+        <td class="salud-detalle"><span title="12/08/2026 16:48">Publicó hace 2 horas</span> · <span title="12/08/2026 17:59">Leída hace 1 hora</span></td>
+      </tr>
+      <tr>
+        <td class="salud-nombre"><a href="https://caem.com.ar/feed/" target="_blank" rel="noopener">CAEM</a>
+          <span class="salud-cat">Energía y Minería</span>
+        </td>
+        <td class="salud-estado">
+          <span class="salud-badge salud-bien">Al día</span>
+        </td>
+        <td class="salud-detalle"><span title="11/08/2026 17:11">Publicó hace 1 día</span> · <span title="12/08/2026 17:59">Leída hace 1 hora</span></td>
+      </tr>
+      <tr>
+        <td class="salud-nombre"><a href="https://ceso.com.ar/feed/" target="_blank" rel="noopener">CESO</a>
+          <span class="salud-cat">Análisis Consultoras</span>
+        </td>
+        <td class="salud-estado">
+          <span class="salud-badge salud-bien">Al día</span>
+        </td>
+        <td class="salud-detalle"><span title="10/08/2026 16:34">Publicó hace 2 días</span> · <span title="12/08/2026 17:59">Leída hace 1 hora</span></td>
+      </tr>
+      <tr>
+        <td class="salud-nombre"><a href="https://dataenergia.ar/feed/" target="_blank" rel="noopener">Data Energía</a>
+          <span class="salud-cat">Energía y Minería</span>
+        </td>
+        <td class="salud-estado">
+          <span class="salud-badge salud-bien">Al día</span>
+        </td>
+        <td class="salud-detalle"><span title="12/08/2026 17:28">Publicó hace 2 horas</span> · <span title="12/08/2026 17:59">Leída hace 1 hora</span></td>
+      </tr>
+      <tr>
+        <td class="salud-nombre"><a href="https://www.diariodeautos.com.ar/index.php?format=feed&amp;type=rss" target="_blank" rel="noopener">Diario de Autos</a>
+          <span class="salud-cat">Automotor</span>
+        </td>
+        <td class="salud-estado">
+          <span class="salud-badge salud-bien">Al día</span>
+        </td>
+        <td class="salud-detalle"><span title="11/08/2026 17:15">Publicó hace 1 día</span> · <span title="12/08/2026 17:59">Leída hace 1 hora</span></td>
+      </tr>
+      <tr>
+        <td class="salud-nombre"><a href="https://econojournal.com.ar/feed/" target="_blank" rel="noopener">EconoJournal</a>
+          <span class="salud-cat">Energía y Minería</span>
+        </td>
+        <td class="salud-estado">
+          <span class="salud-badge salud-bien">Al día</span>
+        </td>
+        <td class="salud-detalle"><span title="12/08/2026 13:20">Publicó hace 6 horas</span> · <span title="12/08/2026 17:59">Leída hace 1 hora</span></td>
+      </tr>
+      <tr>
+        <td class="salud-nombre"><a href="https://www.infocampo.com.ar/feed/" target="_blank" rel="noopener">Infocampo</a>
+          <span class="salud-cat">Agro</span>
+        </td>
+        <td class="salud-estado">
+          <span class="salud-badge salud-bien">Al día</span>
+        </td>
+        <td class="salud-detalle"><span title="12/08/2026 16:13">Publicó hace 3 horas</span> · <span title="12/08/2026 17:59">Leída hace 1 hora</span></td>
+      </tr>
+      <tr>
+        <td class="salud-nombre"><a href="https://es.investing.com/rss/news_11.rss" target="_blank" rel="noopener">Investing Agro</a>
+          <span class="salud-cat">Agro</span>
+        </td>
+        <td class="salud-estado">
+          <span class="salud-badge salud-bien">Al día</span>
+        </td>
+        <td class="salud-detalle"><span title="12/08/2026 16:08">Publicó hace 3 horas</span> · <span title="12/08/2026 17:59">Leída hace 1 hora</span></td>
+      </tr>
+      <tr>
+        <td class="salud-nombre"><a href="https://es.investing.com/rss/news_14.rss" target="_blank" rel="noopener">Investing Economía</a>
+          <span class="salud-cat">Mercados</span>
+        </td>
+        <td class="salud-estado">
+          <span class="salud-badge salud-bien">Al día</span>
+        </td>
+        <td class="salud-detalle"><span title="12/08/2026 15:58">Publicó hace 3 horas</span> · <span title="12/08/2026 18:00">Leída hace 1 hora</span></td>
+      </tr>
+      <tr>
+        <td class="salud-nombre"><a href="https://es.investing.com/rss/news_287.rss" target="_blank" rel="noopener">Investing Internacional</a>
+          <span class="salud-cat">Internacional</span>
+        </td>
+        <td class="salud-estado">
+          <span class="salud-badge salud-bien">Al día</span>
+        </td>
+        <td class="salud-detalle"><span title="12/08/2026 10:59">Publicó hace 8 horas</span> · <span title="12/08/2026 18:00">Leída hace 1 hora</span></td>
+      </tr>
+      <tr>
+        <td class="salud-nombre"><a href="https://es.investing.com/rss/news_95.rss" target="_blank" rel="noopener">Investing Mundo</a>
+          <span class="salud-cat">Internacional</span>
+        </td>
+        <td class="salud-estado">
+          <span class="salud-badge salud-bien">Al día</span>
+        </td>
+        <td class="salud-detalle"><span title="12/08/2026 09:35">Publicó hace 10 horas</span> · <span title="12/08/2026 18:00">Leída hace 1 hora</span></td>
+      </tr>
+      <tr>
+        <td class="salud-nombre"><a href="https://www.iprofesional.com/rss/autos" target="_blank" rel="noopener">iProfesional Autos</a>
+          <span class="salud-cat">Automotor</span>
+        </td>
+        <td class="salud-estado">
+          <span class="salud-badge salud-bien">Al día</span>
+        </td>
+        <td class="salud-detalle"><span title="12/08/2026 16:30">Publicó hace 3 horas</span> · <span title="12/08/2026 17:59">Leída hace 1 hora</span></td>
+      </tr>
+      <tr>
+        <td class="salud-nombre"><a href="https://www.iprofesional.com/rss/comex" target="_blank" rel="noopener">iProfesional Comex</a>
+          <span class="salud-cat">Comex</span>
+        </td>
+        <td class="salud-estado">
+          <span class="salud-badge salud-bien">Al día</span>
+        </td>
+        <td class="salud-detalle"><span title="10/08/2026 15:15">Publicó hace 2 días</span> · <span title="12/08/2026 17:59">Leída hace 1 hora</span></td>
+      </tr>
+      <tr>
+        <td class="salud-nombre"><a href="https://www.iprofesional.com/rss/economia" target="_blank" rel="noopener">iProfesional Economía</a>
+          <span class="salud-cat">Finanzas</span>
+        </td>
+        <td class="salud-estado">
+          <span class="salud-badge salud-bien">Al día</span>
+        </td>
+        <td class="salud-detalle"><span title="12/08/2026 17:40">Publicó hace 1 hora</span> · <span title="12/08/2026 17:59">Leída hace 1 hora</span></td>
+      </tr>
+      <tr>
+        <td class="salud-nombre"><a href="https://www.iprofesional.com/rss/finanzas" target="_blank" rel="noopener">iProfesional Finanzas</a>
+          <span class="salud-cat">Finanzas</span>
+        </td>
+        <td class="salud-estado">
+          <span class="salud-badge salud-bien">Al día</span>
+        </td>
+        <td class="salud-detalle"><span title="12/08/2026 17:40">Publicó hace 1 hora</span> · <span title="12/08/2026 17:59">Leída hace 1 hora</span></td>
+      </tr>
+      <tr>
+        <td class="salud-nombre"><a href="https://www.iprofesional.com/rss/impuestos" target="_blank" rel="noopener">iProfesional Impuestos</a>
+          <span class="salud-cat">Fiscal</span>
+        </td>
+        <td class="salud-estado">
+          <span class="salud-badge salud-bien">Al día</span>
+        </td>
+        <td class="salud-detalle"><span title="12/08/2026 15:55">Publicó hace 3 horas</span> · <span title="12/08/2026 18:00">Leída hace 1 hora</span></td>
+      </tr>
+      <tr>
+        <td class="salud-nombre"><a href="https://www.iprofesional.com/rss/management" target="_blank" rel="noopener">iProfesional Management</a>
+          <span class="salud-cat">Laboral</span>
+        </td>
+        <td class="salud-estado">
+          <span class="salud-badge salud-bien">Al día</span>
+        </td>
+        <td class="salud-detalle"><span title="12/08/2026 11:46">Publicó hace 7 horas</span> · <span title="12/08/2026 18:00">Leída hace 1 hora</span></td>
+      </tr>
+      <tr>
+        <td class="salud-nombre"><a href="https://www.iproup.com/rss/economia-digital" target="_blank" rel="noopener">iProUP Economía Digital</a>
+          <span class="salud-cat">Mercados</span>
+        </td>
+        <td class="salud-estado">
+          <span class="salud-badge salud-bien">Al día</span>
+        </td>
+        <td class="salud-detalle"><span title="12/08/2026 18:00">Publicó hace 1 hora</span> · <span title="12/08/2026 18:00">Leída hace 1 hora</span></td>
+      </tr>
+      <tr>
+        <td class="salud-nombre"><a href="https://www.iproup.com/rss/finanzas" target="_blank" rel="noopener">iProUP Fintech</a>
+          <span class="salud-cat">Finanzas</span>
+        </td>
+        <td class="salud-estado">
+          <span class="salud-badge salud-bien">Al día</span>
+        </td>
+        <td class="salud-detalle"><span title="12/08/2026 18:15">Publicó hace 1 hora</span> · <span title="12/08/2026 18:00">Leída hace 1 hora</span></td>
+      </tr>
+      <tr>
+        <td class="salud-nombre"><a href="https://www.lanacion.com.ar/arc/outboundfeeds/rss/category/economia/?outputType=xml" target="_blank" rel="noopener">La Nación Economía</a>
+          <span class="salud-cat">Finanzas</span>
+        </td>
+        <td class="salud-estado">
+          <span class="salud-badge salud-bien">Al día</span>
+        </td>
+        <td class="salud-detalle"><span title="12/08/2026 17:52">Publicó hace 1 hora</span> · <span title="12/08/2026 18:00">Leída hace 1 hora</span></td>
+      </tr>
+      <tr>
+        <td class="salud-nombre"><a href="https://mercojuris.com/feed/" target="_blank" rel="noopener">Mercojuris</a>
+          <span class="salud-cat">Comex</span>
+        </td>
+        <td class="salud-estado">
+          <span class="salud-badge salud-bien">Al día</span>
+        </td>
+        <td class="salud-detalle"><span title="09/08/2026 19:30">Publicó hace 3 días</span> · <span title="12/08/2026 17:59">Leída hace 1 hora</span></td>
+      </tr>
+      <tr>
+        <td class="salud-nombre"><a href="https://motorwebargentina.com/feed/" target="_blank" rel="noopener">Motorweb Argentina</a>
+          <span class="salud-cat">Automotor</span>
+        </td>
+        <td class="salud-estado">
+          <span class="salud-badge salud-bien">Al día</span>
+        </td>
+        <td class="salud-detalle"><span title="12/08/2026 05:53">Publicó hace 13 horas</span> · <span title="12/08/2026 17:59">Leída hace 1 hora</span></td>
+      </tr>
+      <tr>
+        <td class="salud-nombre"><a href="https://tradenews.com.ar/feed/" target="_blank" rel="noopener">Trade News</a>
+          <span class="salud-cat">Comex</span>
+        </td>
+        <td class="salud-estado">
+          <span class="salud-badge salud-bien">Al día</span>
+        </td>
+        <td class="salud-detalle"><span title="11/08/2026 11:30">Publicó hace 1 día</span> · <span title="12/08/2026 17:59">Leída hace 1 hora</span></td>
+      </tr>
+      <tr>
+        <td class="salud-nombre"><a href="https://webpicking.com/feed/" target="_blank" rel="noopener">Webpicking</a>
+          <span class="salud-cat">Logística</span>
+        </td>
+        <td class="salud-estado">
+          <span class="salud-badge salud-bien">Al día</span>
+        </td>
+        <td class="salud-detalle"><span title="11/08/2026 20:52">Publicó hace 22 horas</span> · <span title="12/08/2026 18:00">Leída hace 1 hora</span></td>
+      </tr>
+      <tr>
+        <td class="salud-nombre"><a href="https://www.ambito.com/rss/autos.xml" target="_blank" rel="noopener">Ámbito Autos</a>
+          <span class="salud-cat">Automotor</span>
+        </td>
+        <td class="salud-estado">
+          <span class="salud-badge salud-bien">Al día</span>
+        </td>
+        <td class="salud-detalle"><span title="10/08/2026 19:51">Publicó hace 1 día</span> · <span title="12/08/2026 17:59">Leída hace 1 hora</span></td>
+      </tr>
+      <tr>
+        <td class="salud-nombre"><a href="https://www.ambito.com/rss/finanzas.xml" target="_blank" rel="noopener">Ámbito Finanzas</a>
+          <span class="salud-cat">Finanzas</span>
+        </td>
+        <td class="salud-estado">
+          <span class="salud-badge salud-bien">Al día</span>
+        </td>
+        <td class="salud-detalle"><span title="12/08/2026 17:54">Publicó hace 1 hora</span> · <span title="12/08/2026 18:00">Leída hace 1 hora</span></td>
+      </tr>
+      <tr>
+        <td class="salud-nombre"><a href="https://www.ambito.com/rss/novedades-fiscales.xml" target="_blank" rel="noopener">Ámbito Fiscal</a>
+          <span class="salud-cat">Fiscal</span>
+        </td>
+        <td class="salud-estado">
+          <span class="salud-badge salud-bien">Al día</span>
+        </td>
+        <td class="salud-detalle"><span title="11/08/2026 20:01">Publicó hace 23 horas</span> · <span title="12/08/2026 18:00">Leída hace 1 hora</span></td>
+      </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section class="salud-bloque">
+    <h2>Dadas de baja</h2>
+    <p class="salud-nota">
+      No las leemos más. Van acá con el motivo porque una fuente que se saca
+      en silencio es un agujero que nadie puede auditar: la sección queda más
+      flaca y desde afuera no se entiende por qué. Si el sitio vuelve a
+      publicar algo que corresponda al rótulo, se reactivan.
+    </p>
+    <ul class="salud-bajas">
+      <li>
+        <strong>Fundar</strong>
+        <span class="salud-cat">Análisis Consultoras</span>
+        <p>11/08/2026 — el feed del sitio responde pero viene sin una sola entrada, y no hay ninguna ruta alternativa que publique. Queda anotada para reactivarla si vuelve a publicar.</p>
+      </li>
+      <li>
+        <strong>Microjuris Laboral</strong>
+        <span class="salud-cat">Laboral</span>
+        <p>11/08/2026 — la sección de derecho laboral quedó vacía. El feed general del sitio sí publica, pero mezcla comercial, penal y familia: usarlo acá sería atribuir mal la fuente.</p>
+      </li>
+      <li>
+        <strong>NoticiasNet Energía</strong>
+        <span class="salud-cat">Energía y Minería</span>
+        <p>11/08/2026 — el sitio discontinuó su canal de energía. Los canales que le quedan funcionan, pero son de interés general de Río Negro: publicarlos bajo este nombre sería atribuir mal la fuente.</p>
+      </li>
+    </ul>
+  </section>
+
+  <section class="salud-bloque">
+    <h2>Qué quiere decir cada estado</h2>
+    <div class="salud-glosario">
+      <div class="salud-glosario-item">
+        <span class="salud-badge salud-mal">Suspendida</span>
+        <p>Catorce fallos seguidos, o más de siete días sin una lectura buena. Se reintenta una vez por día en vez de en cada corrida.</p>
+      </div>
+      <div class="salud-glosario-item">
+        <span class="salud-badge salud-mal">Degradada</span>
+        <p>Tres o más lecturas fallidas seguidas. Ya no parece un problema pasajero.</p>
+      </div>
+      <div class="salud-glosario-item">
+        <span class="salud-badge salud-mal">Con error</span>
+        <p>Falló la última lectura. Todavía puede ser algo puntual: uno o dos fallos seguidos.</p>
+      </div>
+      <div class="salud-glosario-item">
+        <span class="salud-badge salud-media">Recuperándose</span>
+        <p>Volvió a responder después de fallar, pero todavía no acumula tres lecturas buenas seguidas.</p>
+      </div>
+      <div class="salud-glosario-item">
+        <span class="salud-badge salud-media">Sin novedades</span>
+        <p>Responde bien, pero no publica nada nuevo hace más de siete días. No está rota: está quieta.</p>
+      </div>
+      <div class="salud-glosario-item">
+        <span class="salud-badge salud-bien">Al día</span>
+        <p>Responde y publicó algo en los últimos siete días.</p>
+      </div>
+      <div class="salud-glosario-item">
+        <span class="salud-badge salud-media">Sin lecturas</span>
+        <p>Está en el catálogo pero el fetcher todavía no la leyó ni una vez. No hay nada medido sobre ella.</p>
+      </div>
+    </div>
+  </section>
+
+  <p class="salud-pie-nota">
+    Esta página se regenera en cada edición a partir de
+    <code>fuentes_runtime.json</code>, que escribe el propio lector de feeds.
+    No hay carga a mano: lo que dice acá es lo que midió el sistema.
+    Más sobre el criterio editorial en
+    <a href="/como-trabajamos.html">Cómo trabajamos</a> y el catálogo completo
+    en <a href="/acerca.html">Acerca de</a>.
+  </p>
+
+</main>
+
+
+<footer class="pie">
+  <div class="contenedor">
+    <span class="pie-logo">PPA</span>
+    <span class="pie-bajada">Pulso Productivo Argentino · pulsoproductivo.com.ar</span>
+    <div class="pie-meta">
+      <a href="/">Portada</a> ·
+      <a href="/la-data/">La Data del Día</a> ·
+      <a href="/rem/">REM</a> ·
+      <a href="/columnas/">Columnas</a> ·
+      <a href="/stream/">TXT-Stream</a> ·
+      <a href="/tuits/">EconoTuits</a> ·
+      <a href="/tablero/">Tablero</a> ·
+      <a href="/informes/">Informes</a> ·
+      <a href="/como-trabajamos.html">Cómo trabajamos</a>
+    </div>
+    <span class="pie-legal">Editor responsable: Sergio Falco</span>
+  </div>
+</footer>
+
+<script src="/assets/ppa.js"></script>
+</body>
+</html>

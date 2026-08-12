@@ -27,7 +27,8 @@ FUENTES = [
     # alternativas (/publicaciones/, /blog/, /novedades/, /rss.xml) dan 404.
     # No hay feed que leer, así que pedirlo cada edición es ruido en el panel
     # de salud. Se deja la línea para reactivarla si el sitio vuelve a publicar.
-    {"id":"fundar", "nombre":"Fundar", "web":"https://fund.ar/feed/", "categoria":"Análisis Consultoras", "tier":3, "activa":False},
+    {"id":"fundar", "nombre":"Fundar", "web":"https://fund.ar/feed/", "categoria":"Análisis Consultoras", "tier":3, "activa":False,
+     "baja":"11/08/2026 — el feed del sitio responde pero viene sin una sola entrada, y no hay ninguna ruta alternativa que publique. Queda anotada para reactivarla si vuelve a publicar."},
     {"id":"iaraf", "nombre":"IARAF", "web":"https://www.iaraf.org/index.php/informes-economicos/area-fiscal?format=feed&type=rss", "categoria":"Análisis Consultoras", "tier":3, "activa":True},
 
     # ===== AUTOMOTOR =====
@@ -55,7 +56,8 @@ FUENTES = [
     # se discontinuó. Los que quedan andan (actualidad trae 36 notas frescas)
     # pero son de interés general de Río Negro, no de Energía y Minería:
     # ponerlos acá con este nombre sería atribuir mal la fuente.
-    {"id":"noticiasnet_energia", "nombre":"NoticiasNet Energía", "web":"https://www.noticiasnet.com.ar/rss/energia-hoy/", "categoria":"Energía y Minería", "tier":2, "activa":False},
+    {"id":"noticiasnet_energia", "nombre":"NoticiasNet Energía", "web":"https://www.noticiasnet.com.ar/rss/energia-hoy/", "categoria":"Energía y Minería", "tier":2, "activa":False,
+     "baja":"11/08/2026 — el sitio discontinuó su canal de energía. Los canales que le quedan funcionan, pero son de interés general de Río Negro: publicarlos bajo este nombre sería atribuir mal la fuente."},
     {"id":"caem", "nombre":"CAEM", "web":"https://caem.com.ar/feed/", "categoria":"Energía y Minería", "tier":3, "activa":True},
 
     # ===== FINANZAS =====
@@ -81,7 +83,8 @@ FUENTES = [
     # del sitio (https://aldia.microjuris.com/feed/) sí trae 25 notas, pero es
     # todo Microjuris — comercial, penal, familia — y la sección de acá es
     # Laboral: usarlo con este rótulo sería atribuir mal la fuente. Se descarta.
-    {"id":"microjuris_laboral", "nombre":"Microjuris Laboral", "web":"https://aldia.microjuris.com/category/derecho-laboral/feed/", "categoria":"Laboral", "tier":2, "activa":False},
+    {"id":"microjuris_laboral", "nombre":"Microjuris Laboral", "web":"https://aldia.microjuris.com/category/derecho-laboral/feed/", "categoria":"Laboral", "tier":2, "activa":False,
+     "baja":"11/08/2026 — la sección de derecho laboral quedó vacía. El feed general del sitio sí publica, pero mezcla comercial, penal y familia: usarlo acá sería atribuir mal la fuente."},
     {"id":"oit_podcast", "nombre":"OIT Podcast", "web":"https://voices.ilo.org/rss/podcast/fow-es-es.xml", "categoria":"Laboral", "tier":3, "activa":True},
 
     # ===== LOGÍSTICA =====

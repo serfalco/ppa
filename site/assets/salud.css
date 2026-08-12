@@ -1,0 +1,217 @@
+/* =================================================================
+   PPA — Salud de las fuentes
+   Tabla de estado real de cada fuente. Mismos colores que el resto:
+   rojo bordo para lo que falla, oliva para lo que anda, gris para lo
+   que está quieto. Sin verde semáforo: acá no hay nada que festejar.
+   ================================================================= */
+
+.body-salud { background: var(--papel); }
+
+.salud-cabecera {
+  border-bottom: 3px double var(--tinta);
+  padding: 24px 0 20px;
+  text-align: center;
+}
+
+.salud-titulo {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: clamp(26px, 5vw, 44px);
+  font-weight: 900;
+  color: var(--tinta);
+}
+
+.salud-sub {
+  font-size: 11px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--gris);
+  margin-top: 8px;
+}
+
+.salud-main { padding-bottom: 56px; max-width: 900px; }
+
+.salud-intro {
+  font-size: 15px;
+  line-height: 1.7;
+  color: var(--tinta);
+  margin: 26px 0 6px;
+}
+
+.salud-bloque { margin-top: 32px; }
+
+.salud-bloque h2 {
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--gris);
+  border-bottom: 1px solid var(--linea);
+  padding-bottom: 6px;
+  margin-bottom: 12px;
+}
+
+.salud-nota {
+  font-size: 13px;
+  line-height: 1.6;
+  color: var(--gris);
+  margin-bottom: 14px;
+}
+
+/* ---------- Totales ---------- */
+.salud-totales {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.salud-total {
+  flex: 1 1 120px;
+  border: 1px solid var(--linea);
+  border-left-width: 4px;
+  background: var(--papel2);
+  padding: 12px 14px;
+}
+
+.salud-total-num {
+  display: block;
+  font-size: 26px;
+  font-weight: 900;
+  line-height: 1;
+  color: var(--tinta);
+}
+
+.salud-total-lbl {
+  display: block;
+  margin-top: 4px;
+  font-size: 10px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--gris);
+}
+
+.salud-total.salud-bien  { border-left-color: var(--oliva); }
+.salud-total.salud-media { border-left-color: var(--grisclaro); }
+.salud-total.salud-mal   { border-left-color: var(--rojo); }
+
+/* ---------- Tabla ---------- */
+.salud-tabla {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.salud-tabla td {
+  border-bottom: 1px solid var(--linea);
+  padding: 11px 8px;
+  vertical-align: top;
+}
+
+.salud-tabla tr:last-child td { border-bottom: none; }
+
+.salud-nombre {
+  font-weight: 700;
+  font-size: 14px;
+  width: 34%;
+}
+
+.salud-nombre a { text-decoration: none; }
+.salud-nombre a:hover { color: var(--rojo); text-decoration: underline; }
+
+.salud-cat {
+  display: block;
+  font-weight: 400;
+  font-size: 10px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--grisclaro);
+  margin-top: 2px;
+}
+
+.salud-estado { width: 130px; }
+
+.salud-badge {
+  display: inline-block;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 3px 8px;
+  border: 1px solid currentColor;
+  white-space: nowrap;
+}
+
+.salud-badge.salud-bien  { color: var(--oliva); }
+.salud-badge.salud-media { color: var(--gris); }
+.salud-badge.salud-mal   { color: var(--rojo); }
+
+.salud-detalle {
+  font-size: 12px;
+  line-height: 1.6;
+  color: var(--gris);
+}
+
+.salud-error {
+  color: var(--rojo);
+  font-family: 'IBM Plex Mono', ui-monospace, monospace;
+  font-size: 11px;
+}
+
+/* ---------- Bajas ---------- */
+.salud-bajas { list-style: none; }
+
+.salud-bajas li {
+  border-left: 4px solid var(--linea);
+  padding: 10px 0 10px 14px;
+  margin-bottom: 14px;
+}
+
+.salud-bajas strong { font-size: 14px; }
+
+.salud-bajas p {
+  font-size: 13px;
+  line-height: 1.6;
+  color: var(--gris);
+  margin-top: 5px;
+}
+
+/* ---------- Glosario ---------- */
+.salud-glosario {
+  display: grid;
+  gap: 12px;
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 700px) {
+  .salud-glosario { grid-template-columns: 1fr 1fr; }
+}
+
+.salud-glosario-item p {
+  font-size: 12.5px;
+  line-height: 1.6;
+  color: var(--gris);
+  margin-top: 5px;
+}
+
+.salud-pie-nota {
+  margin-top: 36px;
+  padding-top: 16px;
+  border-top: 1px solid var(--linea);
+  font-size: 12px;
+  line-height: 1.7;
+  color: var(--gris);
+}
+
+.salud-pie-nota a { text-decoration: underline; }
+.salud-pie-nota code { font-size: 11.5px; }
+
+/* ---------- Angosto ---------- */
+@media (max-width: 600px) {
+  .salud-tabla td { padding: 9px 4px; }
+  .salud-nombre { width: auto; }
+  .salud-estado { width: auto; }
+  .salud-tabla, .salud-tabla tbody, .salud-tabla tr { display: block; }
+  .salud-tabla td { display: block; border-bottom: none; padding: 2px 0; }
+  .salud-tabla tr {
+    border-bottom: 1px solid var(--linea);
+    padding: 12px 0;
+  }
+}

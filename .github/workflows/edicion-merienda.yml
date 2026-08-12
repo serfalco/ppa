@@ -147,6 +147,13 @@ jobs:
         run: python scripts/generador_acerca.py
         continue-on-error: true
 
+      # Va después del fetcher a propósito: la página sale de lo que el
+      # fetcher acaba de medir en esta misma corrida, no de la corrida previa.
+      - name: Generador - Salud de fuentes
+        id: salud
+        run: python scripts/generador_salud.py
+        continue-on-error: true
+
       - name: Generador - Home portal
         id: home
         env:
@@ -203,6 +210,7 @@ jobs:
           if [ "${{ steps.tablero.outcome }}" = "failure" ]; then CAIDOS="$CAIDOS Generador - Tablero PPA"; fi
           if [ "${{ steps.tcrm.outcome }}" = "failure" ]; then CAIDOS="$CAIDOS Generador - TCRM histórico"; fi
           if [ "${{ steps.acerca.outcome }}" = "failure" ]; then CAIDOS="$CAIDOS Generador - Acerca de"; fi
+          if [ "${{ steps.salud.outcome }}" = "failure" ]; then CAIDOS="$CAIDOS Generador - Salud de fuentes"; fi
           if [ "${{ steps.home.outcome }}" = "failure" ]; then CAIDOS="$CAIDOS Generador - Home portal"; fi
           if [ "${{ steps.config.outcome }}" = "failure" ]; then CAIDOS="$CAIDOS Exportar config de fuentes"; fi
           if [ -z "$CAIDOS" ]; then
