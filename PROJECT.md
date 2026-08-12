@@ -49,8 +49,6 @@ Ordenados por impacto, según la prioridad recomendada del documento integral (�
 2. **EconoTuits vive de cache** — nueve cuentas de Nitter devuelven 404. Salen
    31 tuits, pero la mayoría no se refrescan.
 3. **REM y Columnas vacías** — REM en 0 ediciones, Columnas no genera nada.
-4. **Node 20 deprecado** — `actions/checkout@v4` y `actions/setup-python@v5`
-   lo usan; GitHub ya los fuerza a Node 24 y avisa en cada corrida.
 
 Cerrados el 11 y 12 de agosto de 2026: el MULC quedó automático
 (`MULC_BCRA_ID = 78`); los resúmenes con IA se verificaron generando en
@@ -61,7 +59,9 @@ que dicen ser; el TCRM pasó a salir del ITCRM oficial del BCRA; y Merval y BADL
 volvieron a publicarse — la BADLAR con el ID vigente del BCRA (140 en vez de
 6) y el Merval desde Yahoo Finance, porque argentinadatos discontinuó ese
 endpoint. Y el cron salteado dejó de ser un punto ciego: un vigía revisa
-después de cada edición que haya salido y abre un aviso si falta.
+después de cada edición que haya salido y abre un aviso si falta. Y las
+acciones de los workflows subieron a las versiones sobre Node 24, así que se
+terminó el warning en cada corrida.
 
 Sobre el TCRM conviene recordar qué pasó, porque es el caso que más se puede
 repetir: no había página. El generador bajaba la serie de datos.gob.ar en cada
