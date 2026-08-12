@@ -87,6 +87,54 @@ def _detectar_rem_via_nitter():
         return []
 
 
+# Meses como los abrevia el BCRA en el nombre del archivo.
+MESES = {"ene": "01", "feb": "02", "mar": "03", "abr": "04", "may": "05",
+         "jun": "06", "jul": "07", "ago": "08", "sep": "09", "set": "09",
+         "oct": "10", "nov": "11", "dic": "12"}
+
+# Cómo se llaman hoy los archivos del REM, verificado el 12/08/2026 en la
+# página del BCRA:
+#   tablas-relevamiento-expectativas-mercado-jul-2026.xlsx
+# Antes eran rem_202607.xls. El patrón viejo queda como segunda opción por si
+# vuelve, pero el que encuentra algo hoy es el primero.
+PATRON_ACTUAL = re.compile(
+    r'href=["\']([^"\']*relevamiento-expectativas-mercado-'
+    r'([a-z]{3})-(\d{4})\.(xlsx?))["\']', re.IGNORECASE)
+PATRON_VIEJO = re.compile(
+    r'href=["\']([^"\']*rem[_\-]?(\d{4})[-_]?(\d{2})[^"\']*\.(xlsx?))["\']',
+    re.IGNORECASE)
+
+
+def _links_rem(html):
+    """Links a las tablas del REM, del nombre nuevo y del viejo.
+
+    Solo interesan los que tienen mes y año en el nombre: los otros archivos
+    de la página —metodología, listado, ranking, histórico— no son una
+    edición del REM. El histórico es una serie aparte y merecería su propio
+    tratamiento, no entrar como si fuera el informe del mes.
+    """
+    resultados = []
+    for href, mes, anio, ext in PATRON_ACTUAL.findall(html):
+        mm = MESES.get(mes.lower())
+        if not mm:
+            continue
+        resultados.append({"url": _absoluta(href), "periodo": f"{anio}-{mm}",
+                           "ext": ext.lower()})
+    for href, anio, mes, ext in PATRON_VIEJO.findall(html):
+        resultados.append({"url": _absoluta(href), "periodo": f"{anio}-{mes}",
+                           "ext": ext.lower()})
+    # Con "tablas-" primero: el archivo de datos gana sobre cualquier otro
+    # que comparta período.
+    resultados.sort(key=lambda x: "tablas-" not in x["url"].lower())
+    return resultados
+
+
+def _absoluta(href):
+    if href.startswith("http"):
+        return href
+    return "https://www.bcra.gob.ar" + ("" if href.startswith("/") else "/") + href
+
+
 def detectar_rem_disponibles():
     """Scraping de la página del BCRA para encontrar links al REM."""
     import requests, urllib3
@@ -97,17 +145,7 @@ def detectar_rem_disponibles():
         if r.status_code != 200:
             print(f"   ⚠ BCRA página REM: HTTP {r.status_code}")
             return []
-        # Buscar links a archivos rem_YYYYMM
-        links = re.findall(
-            r'href=["\']([^"\']*rem[_\-]?(\d{4})[-_]?(\d{2})[^"\']*\.(xls[x]?))["\']',
-            r.text, re.IGNORECASE
-        )
-        resultados = []
-        for href, anio, mes, ext in links:
-            if not href.startswith("http"):
-                href = "https://www.bcra.gob.ar" + href
-            yyyy_mm = f"{anio}-{mes}"
-            resultados.append({"url": href, "periodo": yyyy_mm, "ext": ext})
+        resultados = _links_rem(r.text)
         # Deduplicar y ordenar desc
         seen = set()
         unicos = []
