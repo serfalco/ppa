@@ -506,14 +506,77 @@ def obtener_dolares(previo):
 # MERVAL
 # =============================================================
 
+# Merval: cadena de fuentes, mismo criterio que riesgo país.
+# argentinadatos dejó de publicarlo — /v1/finanzas/indices/merval devuelve
+# {"error":"Not found"}, mientras riesgo-pais/ultimo en esa misma rama sigue
+# andando, así que no es la API caída sino el endpoint que ya no existe.
+
+def _merval_yahoo():
+    """Serie diaria del ^MERV. Verificado el 12/08/2026."""
+    j = get_json("https://query1.finance.yahoo.com/v8/finance/chart/%5EMERV"
+                 "?interval=1d&range=5d")
+    try:
+        r = j["chart"]["result"][0]
+    except Exception:
+        return None
+
+    # El cierre de la rueda anterior sirve para la variación; el precio de
+    # mercado del meta es el más fresco cuando la rueda está abierta.
+    cierres = []
+    try:
+        cierres = [c for c in r["indicators"]["quote"][0]["close"]
+                   if c is not None]
+    except Exception:
+        pass
+
+    meta = r.get("meta") or {}
+    valor = meta.get("regularMarketPrice")
+    if valor is None:
+        valor = cierres[-1] if cierres else None
+    if valor is None:
+        return None
+
+    variacion = None
+    anterior = meta.get("chartPreviousClose") or meta.get("previousClose")
+    if anterior is None and len(cierres) >= 2:
+        anterior = cierres[-2]
+    if anterior:
+        variacion = round((valor / anterior - 1) * 100, 2)
+
+    fecha = None
+    ts = meta.get("regularMarketTime")
+    if ts:
+        try:
+            fecha = datetime.fromtimestamp(ts, TZ_AR).date().isoformat()
+        except Exception:
+            pass
+
+    return {"valor": int(round(valor)), "variacion": variacion,
+            "fecha": fecha, "fuente": "Yahoo Finance (^MERV)"}
+
+
+FUENTES_MERVAL = [
+    ("yahoo", _merval_yahoo),
+]
+
+
 def obtener_merval(previo):
     print("· Merval")
-    j = get_json("https://api.argentinadatos.com/v1/finanzas/indices/merval/ultimo")
-    if j and j.get("valor") is not None:
-        print(f"   ✓ {j['valor']}")
-        return dato(round(j["valor"]), unidad="puntos",
-                    variacion=j.get("variacion"),
-                    fuente="argentinadatos.com", frecuencia="intradia")
+    for nombre, fn in FUENTES_MERVAL:
+        try:
+            r = fn()
+        except Exception as e:
+            print(f"   ⚠  {nombre}: {str(e)[:60]}")
+            continue
+        # Un índice de una rueda no vale cero ni un millardo: si el número
+        # no es plausible, es que la fuente cambió de formato.
+        if r and r.get("valor") and 1000 < r["valor"] < 100_000_000:
+            print(f"   ✓ {r['valor']} vía {nombre}"
+                  + (f" ({r['variacion']:+.2f}%)" if r.get("variacion") is not None else ""))
+            return dato(r["valor"], unidad="puntos", fecha=r.get("fecha"),
+                        variacion=r.get("variacion"),
+                        fuente=r["fuente"], frecuencia="diaria")
+        print(f"   ✗ {nombre}: sin dato plausible")
     print("   ✗ sin dato, conservo previo")
     return conservar(previo, "merval")
 
@@ -616,7 +679,9 @@ BANDA_ANCLA = {
 _BCRA_VARS = [
     # clave interna     ID   unidad     descripción visible
     ("reservas",         1,  "MM USD",  "Reservas BCRA (millones USD)"),
-    ("badlar",           6,  "% TNA",   "BADLAR bancos privados"),
+    # La 6 devolvía 400: el ID cambió. La 140 es "Tasa de interés BADLAR de
+    # bancos privados", verificada el 12/08/2026 (23,89% TNA al 10/08).
+    ("badlar",         140,  "% TNA",   "BADLAR bancos privados"),
     ("base_monetaria",  15,  "MM $",    "Base monetaria (millones $)"),
     ("m2_privado",      17,  "MM $",    "M2 privado transaccional (millones $)"),
     ("call_baibar",     27,  "% TNA",   "BAIBAR call bancos privados"),
