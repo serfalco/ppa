@@ -234,7 +234,7 @@ def parsear_rem(fpath, periodo):
 
         encontradas = {}
         seccion = None
-        col_mediana = None
+        cols = None
         for i, fila in enumerate(filas):
             celdas = [c for c in fila if c]
             if not celdas:
@@ -242,7 +242,7 @@ def parsear_rem(fpath, periodo):
 
             if _es_titulo(celdas):
                 titulo = celdas[0].lower()
-                seccion, col_mediana = None, None
+                seccion, cols = None, None
                 for clave, marcas in SECCIONES:
                     if clave in encontradas:
                         continue
@@ -254,23 +254,48 @@ def parsear_rem(fpath, periodo):
             if not seccion:
                 continue
 
-            # La fila de encabezados dice dónde está Mediana.
-            if col_mediana is None:
+            # La fila de encabezados dice dónde está cada columna. Se leen
+            # por nombre y no por posición: la planilla arranca con una
+            # columna vacía, y ese corrimiento ya desalineó los rótulos una vez.
+            if cols is None:
                 bajas = [c.lower() for c in fila]
                 if "mediana" in bajas:
-                    col_mediana = bajas.index("mediana")
+                    cols = {
+                        "mediana":    bajas.index("mediana"),
+                        "periodo":    bajas.index("período") if "período" in bajas
+                                      else (bajas.index("periodo") if "periodo" in bajas else None),
+                        "referencia": bajas.index("referencia") if "referencia" in bajas else None,
+                    }
                 continue
 
             # Primera fila de datos de la sección: el período más cercano.
-            valor = crudas[i][col_mediana] if col_mediana < len(crudas[i]) else None
+            cruda = crudas[i]
+            valor = cruda[cols["mediana"]] if cols["mediana"] < len(cruda) else None
             if not isinstance(valor, (int, float)) or pd.isna(valor):
                 continue
+
+            def _celda(nombre):
+                """El texto de la celda; las fechas como AAAA-MM-DD.
+
+                El período no siempre es una fecha: el PIB lo rotula
+                "Trim. II-26". Recortar a diez caracteres servía para las
+                fechas y le comía el año a los trimestres, así que se
+                distingue por tipo y no por largo.
+                """
+                j = cols.get(nombre)
+                if j is None or j >= len(cruda):
+                    return ""
+                v = cruda[j]
+                if isinstance(v, datetime):
+                    return v.date().isoformat()
+                return _texto(v)
+
             encontradas[seccion] = {
                 "valor":      round(float(valor), 2),
-                "referencia": fila[1] if len(fila) > 1 else "",
-                "periodo":    fila[0][:10],
+                "referencia": _celda("referencia"),
+                "periodo":    _celda("periodo"),
             }
-            seccion, col_mediana = None, None
+            seccion, cols = None, None
 
         return {
             "periodo":       periodo,
