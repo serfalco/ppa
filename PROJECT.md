@@ -31,7 +31,7 @@ hechos y datos.
 | A · Autonomía y memoria | Casi cerrada | Solo falta la puerta: 14 días corridos sin carga manual |
 | B · Cerebro editorial | Pendiente | Texto completo, clustering, jerarquización, apertura |
 | C · Documentos oficiales | Pendiente | Calendario INDEC, Boletín Oficial, licitaciones |
-| D · Salud y transparencia | Parcial | Salud de fuentes ✅, vigía de ediciones ✅; falta tablero público y reporte semanal |
+| D · Salud y transparencia | Parcial | Salud de fuentes ✅, vigía ✅, alarma de pasos caídos ✅ (probada con simulacro); falta tablero público y reporte semanal |
 | E · Expansión | Pendiente | La Data narrada, REM avanzado, FCI, ON, nuevas salidas |
 
 ## Pendientes conocidos
@@ -76,6 +76,15 @@ escribir —solo `localStorage` y copiar al portapapeles— y los tres archivos
 que los generadores esperaban de ellos nunca existieron en el repo. No estaban
 linkeados desde ninguna página viva. Quedan en el historial de git si algún
 día hace falta mirarlos.
+
+Las alertas del repo no funcionaban, y hacía meses. Las cinco vías —"Alerta si
+falló" de la edición, la del fetcher, la de datos de mercado, el vigía y el
+aviso de pasos caídos— etiquetaban el issue como `alerta`, una etiqueta que no
+existía en el repo. `gh issue create` aborta entero cuando falta, y el
+`|| true` del final se comía el error: ninguna emitió un solo aviso. Lo
+encontró el simulacro en su primer uso. Ahora la etiqueta existe, cada
+workflow la crea por las dudas, y un fallo al avisar deja un `::warning::` en
+vez de desaparecer.
 
 Sobre el TCRM conviene recordar qué pasó, porque es el caso que más se puede
 repetir: no había página. El generador bajaba la serie de datos.gob.ar en cada
