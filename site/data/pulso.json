@@ -1,19 +1,19 @@
 {
-  "generado_en": "2026-08-13T09:52:40.688180+00:00",
-  "generado_ar": "13/08/2026 06:52",
+  "generado_en": "2026-08-13T20:59:31.158246+00:00",
+  "generado_ar": "13/08/2026 17:59",
   "hechos": [
     {
       "slug": "brecha-dolar",
       "categoria": "Cambiario",
-      "titulo": "La brecha del dólar quedó casi planchada: 0,9%",
-      "bajada": "El MEP ($1.529) frente al oficial ($1.515). Además, el CCL marca 4,8% y el blue, 1,7%.",
+      "titulo": "La brecha del dólar quedó casi planchada: 0,8%",
+      "bajada": "El MEP ($1.526) frente al oficial ($1.515). Además, el CCL marca 4,4% y el blue, 1,7%.",
       "dato": {
-        "n": "0,9%",
+        "n": "0,8%",
         "txt": "Brecha entre el dólar MEP y el oficial"
       },
       "cuerpo": [
-        "El dólar oficial cerró a $1.515 para la venta y el MEP a $1.529, dejando una brecha de 0,9% entre ambos.",
-        "Mirando el resto de las cotizaciones, el contado con liquidación ($1.587) marca 4,8% y el blue ($1.540) queda en 1,7% de brecha contra el oficial."
+        "El dólar oficial cerró a $1.515 para la venta y el MEP a $1.526, dejando una brecha de 0,8% entre ambos.",
+        "Mirando el resto de las cotizaciones, el contado con liquidación ($1.581) marca 4,4% y el blue ($1.540) queda en 1,7% de brecha contra el oficial."
       ],
       "tabla": [
         [
@@ -26,11 +26,11 @@
         ],
         [
           "MEP",
-          "$1.529"
+          "$1.526"
         ],
         [
           "CCL",
-          "$1.587"
+          "$1.581"
         ],
         [
           "Blue",
@@ -41,11 +41,11 @@
           "$1.970"
         ]
       ],
-      "metodo": "Brecha = (MEP ÷ Oficial − 1) × 100 = (1.529 ÷ 1.515 − 1) × 100 = 0,9%.",
+      "metodo": "Brecha = (MEP ÷ Oficial − 1) × 100 = (1.526 ÷ 1.515 − 1) × 100 = 0,8%.",
       "criollo": "La brecha es cuánto más caro está el dólar financiero (el que se compra con bonos) que el oficial. Cuando es chica, los dos precios casi se tocan.",
       "fuente_nombre": "DolarApi · cálculo PPA",
       "fuente_url": "https://dolarapi.com",
-      "dato_fecha": "13/08/2026 06:52",
+      "dato_fecha": "13/08/2026 17:59",
       "prioridad": 90
     },
     {
@@ -120,7 +120,7 @@
       "criollo": "El BCRA deja flotar el dólar dentro de un pasillo. Si se pega al techo hay más presión de suba; si se va al piso, lo contrario.",
       "fuente_nombre": "cálculo PPA (esquema BCRA)",
       "fuente_url": "https://www.bcra.gob.ar",
-      "dato_fecha": "13/08/2026 06:52",
+      "dato_fecha": "13/08/2026 17:59",
       "prioridad": 75
     }
   ]
