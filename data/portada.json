@@ -1,39 +1,285 @@
 {
-  "generado_en": "2026-08-13T09:52:28.493804+00:00",
+  "generado_en": "2026-08-13T18:54:49.109687+00:00",
   "destacados": [
     {
-      "id": "5d77341e5482",
-      "titulo": "El Estrecho de Ormuz está bajo control iraní, según el jefe de los Basij",
-      "link": "https://es.investing.com/news/economy-news/el-estrecho-de-ormuz-esta-bajo-control-irani-segun-el-jefe-de-los-basij-3794428",
-      "descripcion": "",
-      "fecha_publicacion": "2026-08-13T09:10:58+00:00",
-      "fuente_id": "investing_economia",
-      "fuente_nombre": "Investing Economía",
+      "id": "3f6c856bfa7d",
+      "titulo": "Precio de las criptomonedas top: cuánto valen en Argentina y a nivel global hoy, 13 de agosto de 2026",
+      "link": "https://www.iproup.com/economia-digital/70664-precio-de-criptomonedas-en-argentina-cuanto-valen-hoy-13-de-agosto-de-2026",
+      "descripcion": "La criptomoneda número uno por capitalización tuvo un baja del 0,43% en las últimas 24 horas. Mira cómo avanzan otras divisas digitales y dólares cripto",
+      "fecha_publicacion": "2026-08-13T18:30:00+00:00",
+      "fuente_id": "iproup_eco",
+      "fuente_nombre": "iProUP Economía Digital",
       "categoria": "Mercados"
     },
     {
-      "id": "a46d5cfb0f9f",
-      "titulo": "Mercado Pago va más allá del QR y apuesta fuerte a los comercios para aprovechar un negocio en alza",
-      "link": "https://www.iproup.com/finanzas/70644-mercado-pago-va-mas-alla-del-qr-y-apuesta-a-una-oportunidad-en-los-comercios",
-      "descripcion": "Cinco firmas listadas están marcando tendencia en finanzas digitales y una sobresale como la elección de grandes fondos institucionales",
-      "fecha_publicacion": "2026-08-13T09:07:00+00:00",
-      "fuente_id": "iproup_fintech",
-      "fuente_nombre": "iProUP Fintech",
+      "id": "114b1b4ca3fb",
+      "titulo": "El dólar mayorista subió por segunda rueda al hilo, pero la brecha se ubicó en máximos de dos meses",
+      "link": "https://www.ambito.com/finanzas/el-dolar-se-aleja-los-1500-y-la-city-mantiene-las-expectativas-ancladas-el-tipo-cambio-n6310270",
+      "descripcion": "El tipo de cambio oficial volvió a operar debajo del nivel que el mercado identifica como un \"techo\" informal para la cotización. Qué esperan los analistas para los próximos meses.",
+      "fecha_publicacion": "2026-08-13T18:42:00+00:00",
+      "fuente_id": "ambito_fin",
+      "fuente_nombre": "Ámbito Finanzas",
       "categoria": "Finanzas"
     },
     {
-      "id": "6a3af5d128af",
-      "titulo": "La economía de Polonia creció un 0,9% en el segundo trimestre",
-      "link": "https://es.investing.com/news/economic-indicators/la-economia-de-polonia-crecio-un-09-en-el-segundo-trimestre-93CH-3794414",
+      "id": "8891f4674487",
+      "titulo": "El índice de precios de producción de EE.UU. se mantiene sin cambios en julio",
+      "link": "https://es.investing.com/news/economic-indicators/precios-de-produccion-en-eeuu-inalterados-en-julio-3795132",
       "descripcion": "",
-      "fecha_publicacion": "2026-08-13T08:58:40+00:00",
+      "fecha_publicacion": "2026-08-13T12:35:32+00:00",
       "fuente_id": "investing_intl2",
       "fuente_nombre": "Investing Mundo",
       "categoria": "Internacional"
     }
   ],
   "secciones": {
+    "Finanzas": [
+      {
+        "id": "114b1b4ca3fb",
+        "titulo": "El dólar mayorista subió por segunda rueda al hilo, pero la brecha se ubicó en máximos de dos meses",
+        "link": "https://www.ambito.com/finanzas/el-dolar-se-aleja-los-1500-y-la-city-mantiene-las-expectativas-ancladas-el-tipo-cambio-n6310270",
+        "descripcion": "El tipo de cambio oficial volvió a operar debajo del nivel que el mercado identifica como un \"techo\" informal para la cotización. Qué esperan los analistas para los próximos meses.",
+        "fecha_publicacion": "2026-08-13T18:42:00+00:00",
+        "fuente_id": "ambito_fin",
+        "fuente_nombre": "Ámbito Finanzas",
+        "categoria": "Finanzas"
+      },
+      {
+        "id": "3b46d1a88c62",
+        "titulo": "Los ADRs cambian de tendencia y suben pero el riesgo país supera los 470 puntos",
+        "link": "https://www.ambito.com/finanzas/el-riesgo-pais-vuelve-subir-y-se-encamina-tocar-los-480-puntos-basicos-n6310356",
+        "descripcion": "En la jornada previa, las acciones argentinas y los bonos soberanos volvieron a arrojar mayoría de pérdidas, mientras que el riesgo país sigue bajo presión.",
+        "fecha_publicacion": "2026-08-13T18:39:00+00:00",
+        "fuente_id": "ambito_fin",
+        "fuente_nombre": "Ámbito Finanzas",
+        "categoria": "Finanzas"
+      },
+      {
+        "id": "1287ee870000",
+        "titulo": "Bodega Norton: imputaron a tres integrantes de la firma por una presunta defraudación millonaria",
+        "link": "https://www.lanacion.com.ar/economia/campo/bodega-norton-imputaron-a-tres-integrantes-de-la-firma-por-una-presunta-defraudacion-millonaria-nid13082026/",
+        "descripcion": "El Ministerio Público Fiscal de Mendoza investiga una operatoria con seis cheques por $955 millones que fueron endosados por una cooperativa vitivinícola; ante una consulta de LA NACION la bodega rechazó cualquier irregularidad",
+        "fecha_publicacion": "2026-08-13T18:37:05+00:00",
+        "fuente_id": "lanacion_eco",
+        "fuente_nombre": "La Nación Economía",
+        "categoria": "Finanzas"
+      },
+      {
+        "id": "325ea5d7fa47",
+        "titulo": "Caputo habilitó los créditos en dólares para todas las empresas",
+        "link": "https://www.iprofesional.com/politica/462231-caputo-habilito-los-creditos-en-dolares-para-todas-las-empresas",
+        "descripcion": "El ministro de Economía dijo que la medida podrá ayudar a captar más dólares del colchón ante una posible mejora en las tasas que pagan los bancos",
+        "fecha_publicacion": "2026-08-13T18:30:00+00:00",
+        "fuente_id": "iprof_finanzas",
+        "fuente_nombre": "iProfesional Finanzas",
+        "categoria": "Finanzas"
+      },
+      {
+        "id": "4847358a8d42",
+        "titulo": "Andrés Hatum, profesor de negocios de Di Tella: “Llegar a los 50 años no representa necesariamente el final del recorrido profesional”",
+        "link": "https://www.lanacion.com.ar/economia/andres-hatum-profesor-de-negocios-de-di-tella-llegar-a-los-50-anos-no-representa-necesariamente-el-nid11082026/",
+        "descripcion": "El especialista sostuvo que la experiencia, la resiliencia y la red de contactos representan activos valiosos para iniciar una nueva etapa profesional; cuáles son los tres pasos que recomienda para transformar una trayectoria laboral",
+        "fecha_publicacion": "2026-08-13T18:19:02+00:00",
+        "fuente_id": "lanacion_eco",
+        "fuente_nombre": "La Nación Economía",
+        "categoria": "Finanzas"
+      },
+      {
+        "id": "5bae03fcbee6",
+        "titulo": "Tiene 700.000 vacas: en una región aumenta el traslado de hacienda por El Niño y hay ventas de urgencia",
+        "link": "https://www.lanacion.com.ar/economia/campo/tiene-700000-vacas-en-una-region-aumenta-el-traslado-de-hacienda-por-el-nino-y-hay-ventas-de-nid12082026/",
+        "descripcion": "En el departamento de Vera, entre otros lugares del norte de Santa Fe, llovió más de lo habitual y ante las perspectivas de más precipitaciones los productores buscan llevar los animales a otros lugares",
+        "fecha_publicacion": "2026-08-13T18:18:40+00:00",
+        "fuente_id": "lanacion_eco",
+        "fuente_nombre": "La Nación Economía",
+        "categoria": "Finanzas"
+      },
+      {
+        "id": "eec10be58db0",
+        "titulo": "Dólar: advierten que el \"techo\" en $1.500 altera la performance de los bonos soberanos",
+        "link": "https://www.ambito.com/finanzas/dolar-advierten-que-el-techo-1500-altera-la-performance-los-bonos-soberanos-n6310418",
+        "descripcion": "Si bien hay factores internacionales que también pesan, a nivel local afecta la política intervencionista en el mercado de cambios.",
+        "fecha_publicacion": "2026-08-13T17:59:00+00:00",
+        "fuente_id": "ambito_fin",
+        "fuente_nombre": "Ámbito Finanzas",
+        "categoria": "Finanzas"
+      },
+      {
+        "id": "944a83f4f1d5",
+        "titulo": "El BCRA desacelera la compra de reservas y la City analiza qué puede pasar con el dólar",
+        "link": "https://www.iprofesional.com/finanzas/462184-el-bcra-compra-menos-reservas-y-la-city-anticipa-que-pasara-con-el-dolar",
+        "descripcion": "El Banco Central compró en los primeros 12 días de agosto la menor cantidad de dólares respecto a igual lapso de meses previos. Qué pasará con el precio",
+        "fecha_publicacion": "2026-08-13T17:30:00+00:00",
+        "fuente_id": "iprof_economia",
+        "fuente_nombre": "iProfesional Economía",
+        "categoria": "Finanzas"
+      }
+    ],
+    "Mercados": [
+      {
+        "id": "3f6c856bfa7d",
+        "titulo": "Precio de las criptomonedas top: cuánto valen en Argentina y a nivel global hoy, 13 de agosto de 2026",
+        "link": "https://www.iproup.com/economia-digital/70664-precio-de-criptomonedas-en-argentina-cuanto-valen-hoy-13-de-agosto-de-2026",
+        "descripcion": "La criptomoneda número uno por capitalización tuvo un baja del 0,43% en las últimas 24 horas. Mira cómo avanzan otras divisas digitales y dólares cripto",
+        "fecha_publicacion": "2026-08-13T18:30:00+00:00",
+        "fuente_id": "iproup_eco",
+        "fuente_nombre": "iProUP Economía Digital",
+        "categoria": "Mercados"
+      },
+      {
+        "id": "9ea9f5f7d1ac",
+        "titulo": "Precio de Bitcoin: cuánto vale en Argentina y a nivel global hoy, 13 de agosto de 2026",
+        "link": "https://www.iproup.com/economia-digital/70665-precio-de-criptomonedas-en-argentina-cuanto-valen-hoy-13-de-agosto-de-2026",
+        "descripcion": "En las últimas 24 horas, la criptomoneda principal bajó 0,61%. Los valores actuales de otras monedas virtuales y dólares cripto",
+        "fecha_publicacion": "2026-08-13T18:30:00+00:00",
+        "fuente_id": "iproup_eco",
+        "fuente_nombre": "iProUP Economía Digital",
+        "categoria": "Mercados"
+      },
+      {
+        "id": "5108be123760",
+        "titulo": "Precio de Solana: cuánto vale en Argentina y a nivel global hoy, 13 de agosto de 2026",
+        "link": "https://www.iproup.com/economia-digital/70666-precio-de-criptomonedas-en-argentina-cuanto-valen-hoy-13-de-agosto-de-2026",
+        "descripcion": "En las últimas 24 horas, la sexta cripto más popular se mantuvo estable. Cómo variaron de otras monedas digitales y dólares cripto",
+        "fecha_publicacion": "2026-08-13T18:30:00+00:00",
+        "fuente_id": "iproup_eco",
+        "fuente_nombre": "iProUP Economía Digital",
+        "categoria": "Mercados"
+      },
+      {
+        "id": "a079fdfd222c",
+        "titulo": "El primer ministro de Saskatchewan califica de alentadoras las conversaciones comerciales entre Canadá y EE.UU.",
+        "link": "https://es.investing.com/news/economy-news/el-primer-ministro-de-saskatchewan-califica-de-alentadoras-las-conversaciones-comerciales-entre-canada-y-eeuu-93CH-3795750",
+        "descripcion": "",
+        "fecha_publicacion": "2026-08-13T17:03:17+00:00",
+        "fuente_id": "investing_economia",
+        "fuente_nombre": "Investing Economía",
+        "categoria": "Mercados"
+      },
+      {
+        "id": "ee86cdbba3ee",
+        "titulo": "Los rendimientos de los bonos de la zona euro bajan con los datos de inflación de EE.UU.",
+        "link": "https://es.investing.com/news/economy-news/los-rendimientos-de-los-bonos-de-la-zona-euro-bajan-con-los-datos-de-inflacion-de-eeuu-93CH-3795648",
+        "descripcion": "",
+        "fecha_publicacion": "2026-08-13T15:54:53+00:00",
+        "fuente_id": "investing_economia",
+        "fuente_nombre": "Investing Economía",
+        "categoria": "Mercados"
+      },
+      {
+        "id": "f51a189dcbe0",
+        "titulo": "El banco central de Perú descarta subir los tipos de interés",
+        "link": "https://es.investing.com/news/economy-news/el-banco-central-de-peru-descarta-subir-los-tipos-de-interes-93CH-3795647",
+        "descripcion": "",
+        "fecha_publicacion": "2026-08-13T15:54:41+00:00",
+        "fuente_id": "investing_economia",
+        "fuente_nombre": "Investing Economía",
+        "categoria": "Mercados"
+      }
+    ],
+    "Laboral": [
+      {
+        "id": "3177346faa0c",
+        "titulo": "El Gobierno suspendió una regla de los Vouchers Educativos sobre cuotas impagas",
+        "link": "https://www.iprofesional.com/actualidad/462236-vouchers-educativos-medida-familias-evitar-perder-beneficio-agosto-2026",
+        "descripcion": "La medida alcanza a las familias que reciben esta asistencia y fue establecida por la Secretaría de Educación mediante la Resolución 505/2026",
+        "fecha_publicacion": "2026-08-13T17:00:00+00:00",
+        "fuente_id": "iprof_management",
+        "fuente_nombre": "iProfesional Management",
+        "categoria": "Laboral"
+      },
+      {
+        "id": "7042c5f8a2dc",
+        "titulo": "El costo de una empleada doméstica por mes en 2026 según cada categoría",
+        "link": "https://www.iprofesional.com/economia/462143-cuanto-cuesta-tener-una-empleada-domestica-por-mes-en-2026",
+        "descripcion": "Los salarios de las empleadas domésticas acumularon cuatro aumentos durante 2026. Cuánto se paga según la categoría, las horas trabajadas y los adicionales",
+        "fecha_publicacion": "2026-08-13T12:40:00+00:00",
+        "fuente_id": "iprof_management",
+        "fuente_nombre": "iProfesional Management",
+        "categoria": "Laboral"
+      },
+      {
+        "id": "07f564b6ffd7",
+        "titulo": "Riesgos psicosociales en el trabajo: la amenaza invisible para la salud de los trabajadores",
+        "link": "https://voices.ilo.org/es-es/podcast/riesgos-psicosociales-en-el-trabajo-la-amenaza-invisible-para-la-salud-de-los-trabajadores",
+        "descripcion": "En este episodio del pódcast “El futuro del trabajo de la OIT”, Dafne Papandrea y Lucía Risueño Navarro explican cómo los riesgos psicosociales —como las largas jornadas laborales, la inseguridad en el empleo y el acoso en el lugar de trabajo— afectan a la salud de los trabajadores, y qué medidas pueden adoptarse para crear entornos laborales más saludables en todo el mundo.",
+        "fecha_publicacion": "2026-04-28T00:00:00+00:00",
+        "fuente_id": "oit_podcast",
+        "fuente_nombre": "OIT Podcast",
+        "categoria": "Laboral"
+      },
+      {
+        "id": "ef1638f33032",
+        "titulo": "La inteligencia artificial generativa y las desigualdades de género en el trabajo",
+        "link": "https://voices.ilo.org/es-es/podcast/la-inteligencia-artificial-generativa-y-las-desigualdades-de-genero-en-el-trabajo",
+        "descripcion": "En este episodio del pódcast de la Organización Internacional del Trabajo, Janine Berg, Economista senior en la OIT, presenta un nuevo informe sobre el impacto de la inteligencia artificial generativa en el mundo del trabajo. La experta explica por qué las mujeres están más expuestas que los hombres a los riesgos asociados a esta tecnología y qué significa esto para la igualdad en el mercado laboral.",
+        "fecha_publicacion": "2026-03-09T00:00:00+00:00",
+        "fuente_id": "oit_podcast",
+        "fuente_nombre": "OIT Podcast",
+        "categoria": "Laboral"
+      },
+      {
+        "id": "a9cae82ea7a7",
+        "titulo": "Una mirada al estado del empleo mundial y sus principales desafíos",
+        "link": "https://voices.ilo.org/es-es/podcast/una-mirada-al-estado-del-empleo-mundial-y-sus-principales-desafios",
+        "descripcion": "En este episodio del pódcast Futuro del Trabajo de la OIT, analizamos el estado del empleo y los principales desafíos que enfrentan los mercados laborales a nivel mundial y en América Latina y el Caribe, junto a Miguel Sánchez Martínez, economista del Departamento de Investigación de la OIT, y Gerson Martínez, Especialista Regional Senior en Economía Laboral.",
+        "fecha_publicacion": "2026-01-22T00:00:00+00:00",
+        "fuente_id": "oit_podcast",
+        "fuente_nombre": "OIT Podcast",
+        "categoria": "Laboral"
+      }
+    ],
     "Automotor": [
+      {
+        "id": "01423122911a",
+        "titulo": "Toyota GR86: qué cambia en el deportivo tras su última actualización",
+        "link": "https://www.ambito.com/autos/toyota-gr86-que-cambia-el-deportivo-su-ultima-actualizacion-n6310451",
+        "descripcion": "El vehículo de tracción trasera recibió ajustes desarrollados en circuito para mejorar la respuesta del acelerador y la dirección. También incorpora novedades de equipamiento y recupera temporalmente un color histórico.",
+        "fecha_publicacion": "2026-08-13T16:08:00+00:00",
+        "fuente_id": "ambito_autos",
+        "fuente_nombre": "Ámbito Autos",
+        "categoria": "Automotor"
+      },
+      {
+        "id": "dd559bddc3aa",
+        "titulo": "La Ciudad de Buenos Aires quiere transformar los taxis y saca un crédito con tasa del 20%",
+        "link": "https://www.iprofesional.com/finanzas/462227-la-ciudad-de-buenos-aires-quiere-transformar-los-taxis-y-saca-un-credito-con-tasa-del-20",
+        "descripcion": "El gobierno porteño, a través del Banco Ciudad, impulsó una línea de crédito de hasta $28 millones para comprar autos eléctricos para taxi",
+        "fecha_publicacion": "2026-08-13T15:19:00+00:00",
+        "fuente_id": "iprof_autos",
+        "fuente_nombre": "iProfesional Autos",
+        "categoria": "Automotor"
+      },
+      {
+        "id": "71248250709e",
+        "titulo": "Neumáticos: cómo detectar a tiempo cuándo es momento de cambiarlos",
+        "link": "https://www.ambito.com/autos/neumaticos-como-detectar-tiempo-cuando-es-momento-cambiarlos-n6310318",
+        "descripcion": "El estado de las cubiertas no depende solo del desgaste visible. Hay señales clave que permiten anticipar problemas y evitar riesgos al volante.",
+        "fecha_publicacion": "2026-08-13T12:56:00+00:00",
+        "fuente_id": "ambito_autos",
+        "fuente_nombre": "Ámbito Autos",
+        "categoria": "Automotor"
+      },
+      {
+        "id": "8ddd087f65ab",
+        "titulo": "Ford redefine la Ranger: suma electrificación y una variante extrema pensada para el off-road",
+        "link": "https://www.ambito.com/autos/ford-redefine-la-ranger-suma-electrificacion-y-una-variante-extrema-pensada-el-off-road-n6310301",
+        "descripcion": "La marca avanza con una ampliación clave de su pick up mediana producida en la Argentina. Habrá una opción híbrida enchufable y otra con enfoque aventurero para ampliar el alcance del modelo en la región.",
+        "fecha_publicacion": "2026-08-13T12:22:00+00:00",
+        "fuente_id": "ambito_autos",
+        "fuente_nombre": "Ámbito Autos",
+        "categoria": "Automotor"
+      },
+      {
+        "id": "645be07dce09",
+        "titulo": "Chery TIGGO 7 CHS: el SUV híbrido enchufable ya se vende en Argentina",
+        "link": "https://www.iprofesional.com/autos/461422-chery-tiggo-7-chs-el-suv-hibrido-enchufable-ya-se-vende-en-argentina",
+        "descripcion": "La marca china amplía su gama electrificada en el país con un SUV híbrido enchufable que ofrece hasta 93 km de autonomía eléctrica",
+        "fecha_publicacion": "2026-08-13T10:44:00+00:00",
+        "fuente_id": "iprof_autos",
+        "fuente_nombre": "iProfesional Autos",
+        "categoria": "Automotor"
+      },
       {
         "id": "7114bd94fbdc",
         "titulo": "Honda celebra 2 décadas de producción nacional y 48 años en Argentina",
@@ -52,8 +298,7 @@
         "fecha_publicacion": "2026-08-13T09:14:09+00:00",
         "fuente_id": "motorweb",
         "fuente_nombre": "Motorweb Argentina",
-        "categoria": "Automotor",
-        "resumen": "Stellantis presentó en Expo Transporte la Peugeot Partner Rapid, una furgoneta idéntica a la Fiat Fiorino con la que buscará competir en el segmento de entrada de los utilitarios livianos."
+        "categoria": "Automotor"
       },
       {
         "id": "0cbcaffea4e4",
@@ -63,212 +308,89 @@
         "fecha_publicacion": "2026-08-12T21:28:21+00:00",
         "fuente_id": "arodar",
         "fuente_nombre": "A Rodar Post",
-        "categoria": "Automotor",
-        "resumen": "El mercado de 0km inició el mes con una baja promedio del 24% y derrumbes de hasta el 50% en varias terminales. Dentro de este panorama de contracción, dos marcas de origen chino lograron posicionarse en el top ten de ventas."
-      },
-      {
-        "id": "332753c8ebe7",
-        "titulo": "Stellantis está presente en Expo Transporte con la novedad de la Peugeot Partner Rapid",
-        "link": "https://arodarpost.com.ar/stellantis-esta-presente-en-expo-transporte-con-la-novedad-de-la-peugeot-partner-rapid/",
-        "descripcion": "ExpoTransporte 2026 une a fabricantes, proveedores y profesionales del sector en un evento internacional de equipamiento y tecnología para el transporte automotor de cargas y pasajeros. Bajo este marco y como líder en el mercado del segmento de las VANS en Argentina con una participación del 41,5% (Peugeot:13,5%, Citroën: 10,8% y Fiat: 17,2%), Stellantis se [&#8230;]",
-        "fecha_publicacion": "2026-08-12T17:21:06+00:00",
-        "fuente_id": "arodar",
-        "fuente_nombre": "A Rodar Post",
-        "categoria": "Automotor",
-        "resumen": "El grupo automotriz participa de la feria internacional del sector de cargas y pasajeros exhibiendo sus principales novedades en equipamiento. Su apuesta fuerte para la muestra se centra en la presentación de la nueva propuesta comercial de Peugeot."
-      },
-      {
-        "id": "4a126d2e98a1",
-        "titulo": "Cuánto costarían las entradas para ver la Fórmula 1 en Buenos Aires",
-        "link": "https://noticias.autocosmos.com.ar/2026/08/12/cuanto-costarian-las-entradas-para-ver-la-formula-1-en-buenos-aires",
-        "descripcion": "El regreso de la F.1 todavía se negocia, pero las obras del Gálvez ya permiten pensar en una pregunta muy concreta: cuánto tendría que pagar el público.",
-        "fecha_publicacion": "2026-08-12T15:00:00+00:00",
-        "fuente_id": "autocosmos",
-        "fuente_nombre": "Autocosmos Argentina",
-        "categoria": "Automotor",
-        "resumen": "Con las obras de remodelación en marcha dentro del Autódromo Gálvez, avanzan las tratativas para el regreso de la categoría e inician los cálculos sobre el costo que tendrán los tickets para el público."
-      },
-      {
-        "id": "69081930352a",
-        "titulo": "Marca china inicia la preventa de un sedán híbrido enchufable con hasta 1.600 km de autonomía",
-        "link": "https://www.ambito.com/autos/marca-china-inicia-la-preventa-un-sedan-hibrido-enchufable-1600-km-autonomia-n6309927",
-        "descripcion": "El nuevo modelo combina tecnología híbrida, bajo consumo y espacio interior, y se convierte en el primer sedán de la marca en llegar al mercado argentino.",
-        "fecha_publicacion": "2026-08-12T14:24:00+00:00",
-        "fuente_id": "ambito_autos",
-        "fuente_nombre": "Ámbito Autos",
-        "categoria": "Automotor",
-        "resumen": "Arrancó en el país la comercialización del primer sedán de una firma china, un modelo híbrido enchufable que destaca por su bajo consumo y una autonomía de 1.600 kilómetros."
-      },
-      {
-        "id": "68aeb759165d",
-        "titulo": "El nuevo mapa de marcas y precios de neumáticos en Argentina por el avance de empresas chinas",
-        "link": "https://www.iprofesional.com/finanzas/462110-el-nuevo-mapa-de-los-neumaticos-en-argentina-el-avance-de-las-marcas-chinas",
-        "descripcion": "El sector enfrenta los cambios estructurales más profundos de la última década, que trae aparejada una fuerte guerra de precios en el canal minorista",
-        "fecha_publicacion": "2026-08-12T14:02:00+00:00",
-        "fuente_id": "iprof_autos",
-        "fuente_nombre": "iProfesional Autos",
-        "categoria": "Automotor",
-        "resumen": "La irrupción masiva de fabricantes chinos desató la mayor reestructuración del sector en diez años y generó una fuerte guerra de precios en el canal minorista."
-      },
-      {
-        "id": "55a0edee82da",
-        "titulo": "Expo Transporte: Volkswagen lanza financiación especial para su gama de camiones y pick-ups",
-        "link": "https://arodarpost.com.ar/expo-transporte-volkswagen-lanza-financiacion-especial-para-su-gama-de-camiones-y-pick-ups/",
-        "descripcion": "Volkswagen participa de la 14.ª edición de Expotransporte, una de las principales muestras del país dedicadas al transporte de cargas y pasajeros, que se realiza hasta el 13 de agosto en el predio ferial de La Rural, en la Ciudad de Buenos Aires. En su stand, Volkswagen exhibe Amarok y Saveiro, dos modelos referentes en [&#8230;]",
-        "fecha_publicacion": "2026-08-12T13:12:14+00:00",
-        "fuente_id": "arodar",
-        "fuente_nombre": "A Rodar Post",
-        "categoria": "Automotor",
-        "resumen": "En el marco de la muestra sectorial, la automotriz alemana presentó planes de pago exclusivos destinados a la compra de camiones y camionetas."
+        "categoria": "Automotor"
       }
     ],
-    "Mercados": [
+    "Energía y Minería": [
       {
-        "id": "5d77341e5482",
-        "titulo": "El Estrecho de Ormuz está bajo control iraní, según el jefe de los Basij",
-        "link": "https://es.investing.com/news/economy-news/el-estrecho-de-ormuz-esta-bajo-control-irani-segun-el-jefe-de-los-basij-3794428",
-        "descripcion": "",
-        "fecha_publicacion": "2026-08-13T09:10:58+00:00",
-        "fuente_id": "investing_economia",
-        "fuente_nombre": "Investing Economía",
-        "categoria": "Mercados",
-        "resumen": "Dirigentes paramilitares iraníes aseguraron tener el dominio total sobre este paso marítimo clave para el comercio global de petróleo, lo que suma tensión geopolítica al mercado energético."
+        "id": "2d940ed0b8eb",
+        "titulo": "Lamelas ratificó su veto a Huawei en Vaca Muerta: «Cualquier dato que pasa por sus redes es controlado por el Partido Comunista Chino»",
+        "link": "https://econojournal.com.ar/oilgas/lamelas-ratifico-su-veto-a-huawei-en-vaca-muerta/",
+        "descripcion": "El embajador de los Estados Unidos en la Argentina, Peter Lamelas, lanzó una contundente advertencia dirigida a las empresas y gobiernos locales sobre la utilización de infraestructura tecnológica provista por compañías chinas en torno a las operaciones de Vaca Muerta. Lo hizo este jueves durante su disertación, ante ejecutivos y funcionarios, en el Summit Amcham [&#8230;]",
+        "fecha_publicacion": "2026-08-13T15:50:03+00:00",
+        "fuente_id": "econojournal",
+        "fuente_nombre": "EconoJournal",
+        "categoria": "Energía y Minería"
       },
       {
-        "id": "06730a286ade",
-        "titulo": "Los grandes inversores acumulan Bitcoin y el mercado se ilusiona con el fin del mercado bajista",
-        "link": "https://www.iproup.com/economia-digital/70648-grandes-inversores-acumulan-bitcoin-y-anticipan-el-fin-del-mercado-bajista",
-        "descripcion": "Las ballenas y fondos apuestan a comprar la divisa digital líder y los inversores esperan que el criptoinvierno entre en cuenta regresiva",
-        "fecha_publicacion": "2026-08-13T09:07:00+00:00",
-        "fuente_id": "iproup_eco",
-        "fuente_nombre": "iProUP Economía Digital",
-        "categoria": "Mercados",
-        "resumen": "Las compras masivas por parte de fondos y grandes tenedores reavivaron las expectativas de un cambio de tendencia en el mercado cripto. Este incremento en la demanda sugiere que la etapa de bajas prolongadas podría estar llegando a su fin."
+        "id": "e71a0657579b",
+        "titulo": "CAN_200: una nueva señal para reactivar la exploración offshore argentina",
+        "link": "https://econojournal.com.ar/opinion-mineria-energia/can_200-una-nueva-senal-para-reactivar-la-exploracion-offshore-argentina/",
+        "descripcion": "Hace pocas semanas señalábamos en EconoJournal que la exploración offshore argentina se encontraba frente a una nueva oportunidad. La incorporación de la actividad costa afuera al Régimen de Incentivo para Grandes Inversiones (RIGI), la experiencia acumulada durante la primera ronda offshore y el renovado interés internacional por el Atlántico Sur conformaban un escenario diferente para [&#8230;]",
+        "fecha_publicacion": "2026-08-13T15:31:53+00:00",
+        "fuente_id": "econojournal",
+        "fuente_nombre": "EconoJournal",
+        "categoria": "Energía y Minería"
       },
       {
-        "id": "e93764159b19",
-        "titulo": "Aluvión de ganancias de Cisco impulsado por la IA; IPP: 5 claves en Wall Street",
-        "link": "https://es.investing.com/news/economy-news/el-salto-de-beneficios-de-cisco-impulsado-por-la-ia-el-ipp-a-la-espera-3794317",
-        "descripcion": "",
-        "fecha_publicacion": "2026-08-13T08:01:03+00:00",
-        "fuente_id": "investing_economia",
-        "fuente_nombre": "Investing Economía",
-        "categoria": "Mercados",
-        "resumen": "Cisco superó las previsiones financieras gracias a la demanda vinculada a la inteligencia artificial. A su vez, los inversores monitorean el dato del índice de precios al productor para evaluar el rumbo de Wall Street."
+        "id": "3a875cd9e1b4",
+        "titulo": "Daniel González reveló que Vaca Muerta duplicó sus recursos recuperables y roza los 30.000 millones de barriles, cifra equivalente a un siglo de producción",
+        "link": "https://econojournal.com.ar/oilgas/daniel-gonzalez-vaca-muerta-recursos/",
+        "descripcion": "El secretario coordinador de Energía y Minería, Daniel González, anunció este jueves que Vaca Muerta duplicó sus recursos técnicamente recuperables de petróleo y alcanzó los 30.000 millones de barriles. El dato surge de un nuevo estudio encargado por la Secretaría de Energía al Instituto Argentino del Petróleo y del Gas (IAPG), el cual actualizó estimaciones [&#8230;]",
+        "fecha_publicacion": "2026-08-13T14:47:28+00:00",
+        "fuente_id": "econojournal",
+        "fuente_nombre": "EconoJournal",
+        "categoria": "Energía y Minería"
       },
       {
-        "id": "5676bc7acf77",
-        "titulo": "El PIB del Reino Unido crece un 0,4% en el segundo trimestre",
-        "link": "https://es.investing.com/news/economy-news/el-pib-del-reino-unido-crece-un-04-en-el-segundo-trimestre-3794148",
-        "descripcion": "",
-        "fecha_publicacion": "2026-08-13T06:21:08+00:00",
-        "fuente_id": "investing_economia",
-        "fuente_nombre": "Investing Economía",
-        "categoria": "Mercados",
-        "resumen": "La economía británica registró una expansión moderada durante el segundo trimestre del año. El dato confirma cierta estabilización de la actividad tras un período prolongado de estancamiento."
+        "id": "7ffdd57110fb",
+        "titulo": "Argentina-Brasil: la energía frente a la crisis diplomática",
+        "link": "https://dataenergia.ar/mundo/argentina-brasil-la-energia-frente-a-la-crisis-diplomatica-202681217280",
+        "descripcion": "Guillermo Usandivaras analiza cómo la creciente tensión diplomática entre Argentina y Brasil se produce, paradójicamente, en un momento en el que ambos países tienen fuertes incentivos para profundizar su integración energética.",
+        "fecha_publicacion": "2026-08-12T20:28:00+00:00",
+        "fuente_id": "data_energia",
+        "fuente_nombre": "Data Energía",
+        "categoria": "Energía y Minería"
       },
       {
-        "id": "58a79fa6b585",
-        "titulo": "Strategy lanza créditos respaldados en Bitcoin y apunta a firmas que no quieren vender sus criptos",
-        "link": "https://www.iproup.com/economia-digital/70642-strategy-lanza-creditos-respaldados-en-bitcoin-como-colateral",
-        "descripcion": "La propuesta de Strategy consiste en otorgar préstamos a compañías que depositen BTC como garantía, con un sistema que ajusta el nivel de exposición",
-        "fecha_publicacion": "2026-08-12T22:45:00+00:00",
-        "fuente_id": "iproup_eco",
-        "fuente_nombre": "iProUP Economía Digital",
-        "categoria": "Mercados",
-        "resumen": "La compañía empezó a ofrecer financiamiento corporativo respaldado por depósitos en Bitcoin como garantía. De esta manera, las empresas pueden acceder a liquidez inmediata sin necesidad de liquidar sus tenencias cripto."
+        "id": "2f7b901fecec",
+        "titulo": "Tierra del Fuego presentó un proyecto para dotar de energía eléctrica limpia al Puerto de Ushuaia",
+        "link": "https://dataenergia.ar/electricidad/tierra-del-fuego-presento-un-proyecto-para-dotar-de-energia-electrica-limpia-al-puerto-de-ushuaia-202681216160",
+        "descripcion": "El Gobierno de Tierra del Fuego presentó ante organismos financieros internacionales (Banco Mundial, BID, CAF e IFC) un proyecto para electrificar el Puerto de Ushuaia y abastecer de combustibles verdes a los buques que operan hacia la Antártida.",
+        "fecha_publicacion": "2026-08-12T19:16:00+00:00",
+        "fuente_id": "data_energia",
+        "fuente_nombre": "Data Energía",
+        "categoria": "Energía y Minería"
       },
       {
-        "id": "69a6af8bf091",
-        "titulo": "Binance ofrece ayuda de u$s650.000 para afectados por el terremoto en Colombia",
-        "link": "https://www.iproup.com/economia-digital/70636-binance-dona-usd-650000-en-usdt-a-afectados-por-el-terremoto-en-colombia",
-        "descripcion": "Los usuarios elegibles recibirán 20 USDT y podrán operar sin comisiones P2P en pesos colombianos hasta el 18 de agosto. Los detalles",
-        "fecha_publicacion": "2026-08-12T21:00:00+00:00",
-        "fuente_id": "iproup_eco",
-        "fuente_nombre": "iProUP Economía Digital",
-        "categoria": "Mercados"
-      }
-    ],
-    "Finanzas": [
-      {
-        "id": "a46d5cfb0f9f",
-        "titulo": "Mercado Pago va más allá del QR y apuesta fuerte a los comercios para aprovechar un negocio en alza",
-        "link": "https://www.iproup.com/finanzas/70644-mercado-pago-va-mas-alla-del-qr-y-apuesta-a-una-oportunidad-en-los-comercios",
-        "descripcion": "Cinco firmas listadas están marcando tendencia en finanzas digitales y una sobresale como la elección de grandes fondos institucionales",
-        "fecha_publicacion": "2026-08-13T09:07:00+00:00",
-        "fuente_id": "iproup_fintech",
-        "fuente_nombre": "iProUP Fintech",
-        "categoria": "Finanzas"
+        "id": "2b1df4aab98d",
+        "titulo": "El Oleoducto Vaca Muerta Oil Sur superó el 77% de ejecución y apuntala el récord productivo de YPF",
+        "link": "https://dataenergia.ar/petroleo-y-combustibles/el-oleoducto-vaca-muerta-oil-sur-supero-el-77-de-ejecucion-y-apuntala-el-record-productivo-de-ypf-202681214300",
+        "descripcion": "YPF reportó un avance físico superior al 77% en las obras del oleoducto y puerto de exportación Vaca Muerta Oil Sur (VMOS) al cierre de junio, manteniendo la fecha de puesta en marcha para inicios de 2027.",
+        "fecha_publicacion": "2026-08-12T17:30:00+00:00",
+        "fuente_id": "data_energia",
+        "fuente_nombre": "Data Energía",
+        "categoria": "Energía y Minería"
       },
       {
-        "id": "5bae03fcbee6",
-        "titulo": "Tiene 700.000 vacas: en una región aumenta el traslado de hacienda por El Niño y hay ventas de urgencia",
-        "link": "https://www.lanacion.com.ar/economia/campo/tiene-700000-vacas-en-una-region-aumenta-el-traslado-de-hacienda-por-el-nino-y-hay-ventas-de-nid12082026/",
-        "descripcion": "En el departamento de Vera, entre otros lugares del norte de Santa Fe, llovió más de lo habitual y ante las perspectivas de más precipitaciones los productores buscan llevar los animales a otros lugares",
-        "fecha_publicacion": "2026-08-13T03:25:50+00:00",
-        "fuente_id": "lanacion_eco",
-        "fuente_nombre": "La Nación Economía",
-        "categoria": "Finanzas"
+        "id": "b2d92c3bf379",
+        "titulo": "Minería: las inversiones impulsan empleo, proveedores y una proyección de crecimiento de largo plazo",
+        "link": "https://caem.com.ar/mineria-las-inversiones-impulsan-empleo-proveedores-y-una-proyeccion-de-crecimiento-de-largo-plazo/",
+        "descripcion": "El presidente de la Cámara Argentina de Empresas Mineras (CAEM), Roberto Cacciola, destacó el momento de la industria minera argentina y afirmó que el sector se encuentra ante una oportunidad para impulsar inversiones, generar empleo y fortalecer la cadena de... The post Minería: las inversiones impulsan empleo, proveedores y una proyección de crecimiento de largo plazo first appeared on CAEM .",
+        "fecha_publicacion": "2026-08-11T20:11:37+00:00",
+        "fuente_id": "caem",
+        "fuente_nombre": "CAEM",
+        "categoria": "Energía y Minería"
       },
       {
-        "id": "f1f3e5d4ab9a",
-        "titulo": "Nuevo dueño: comienza a producir 350 toneladas de quesos por mes la planta láctea paralizada durante seis meses",
-        "link": "https://www.lanacion.com.ar/economia/campo/nuevo-dueno-comienza-a-producir-350-toneladas-de-quesos-por-mes-la-planta-lactea-paralizada-durante-nid12082026/",
-        "descripcion": "Sudamericana de Lácteos, ubicada en Díaz, Santa Fe, volverá a elaborar la próxima semana con una recepción diaria de 100.000 litros de leche",
-        "fecha_publicacion": "2026-08-13T03:24:56+00:00",
-        "fuente_id": "lanacion_eco",
-        "fuente_nombre": "La Nación Economía",
-        "categoria": "Finanzas"
-      },
-      {
-        "id": "2981b3f61d69",
-        "titulo": "Sommeliers de carne. Marmoleo y terneza: en el país del asado, el consumo se sofistica",
-        "link": "https://www.lanacion.com.ar/economia/negocios/sommeliers-de-carne-marmoleo-terneza-grain-feed-en-el-pais-del-asado-el-consumo-se-sofistica-nid13082026/",
-        "descripcion": "Restaurantes, productores, frigoríficos, carnicerías y científicos protagonizan la nueva cultura",
-        "fecha_publicacion": "2026-08-13T03:01:00+00:00",
-        "fuente_id": "lanacion_eco",
-        "fuente_nombre": "La Nación Economía",
-        "categoria": "Finanzas"
-      },
-      {
-        "id": "ab75af7c93b5",
-        "titulo": "Real blue: a cuánto opera este jueves 13 de agosto",
-        "link": "https://www.ambito.com/finanzas/real-blue-cuanto-opera-este-jueves-13-agosto-n6310157",
-        "descripcion": "La cotización minuto a minuto para la compra y venta de la divisa brasileña en nuestro país.",
-        "fecha_publicacion": "2026-08-13T03:00:00+00:00",
-        "fuente_id": "ambito_fin",
-        "fuente_nombre": "Ámbito Finanzas",
-        "categoria": "Finanzas"
-      },
-      {
-        "id": "ba81dbd345c9",
-        "titulo": "El oro anotó su sexta suba en siete jornadas y tocó un nuevo récord en dos meses",
-        "link": "https://www.ambito.com/finanzas/el-oro-sube-mas-1-y-toca-record-dos-meses-el-ipc-eeuu-y-la-menor-presion-la-fed-n6309951",
-        "descripcion": "Datos de IPC debilitan argumento para aumento de tasas de interés por parte de la Reserva Federal. Los detalles, en la nota.",
-        "fecha_publicacion": "2026-08-13T01:04:00+00:00",
-        "fuente_id": "ambito_fin",
-        "fuente_nombre": "Ámbito Finanzas",
-        "categoria": "Finanzas"
-      },
-      {
-        "id": "33303d4b2d67",
-        "titulo": "El CEO de YPF proyectó que Argentina exportará un millón de barriles de petróleo por día",
-        "link": "https://www.iprofesional.com/energia/462173-el-ceo-de-ypf-proyecto-que-argentina-exportara-un-millon-de-barriles-de-petroleo-por-dia",
-        "descripcion": "El presidente de YPF afirmó en un foro sobre Vaca Muerta que la producción alcanzará los 1,5 millones de barriles diarios gracias al impulso del shale",
-        "fecha_publicacion": "2026-08-13T00:00:00+00:00",
-        "fuente_id": "iprof_economia",
-        "fuente_nombre": "iProfesional Economía",
-        "categoria": "Finanzas"
-      },
-      {
-        "id": "706a130749f5",
-        "titulo": "La morosidad de las familias se frena pero la economía real todavía muestra señales de alerta",
-        "link": "https://www.iprofesional.com/finanzas/462172-morosidad-de-familias-se-frena-pero-economia-real-aun-muestra-senales-alerta",
-        "descripcion": "Si bien el número de deudores registró una baja respecto a mayo, tanto las familias como las empresas continúan operando bajo un elevado costo financiero",
-        "fecha_publicacion": "2026-08-12T23:49:00+00:00",
-        "fuente_id": "iprof_economia",
-        "fuente_nombre": "iProfesional Economía",
-        "categoria": "Finanzas"
+        "id": "11291e7f134e",
+        "titulo": "Se efectuó una charla sobre los alcances de la Ley de Modernización Laboral y Fondo de Asistencia Laboral",
+        "link": "https://caem.com.ar/se-efectuo-una-charla-sobre-los-alcances-de-la-ley-de-modernizacion-laboral-y-fondo-de-asistencia-laboral/",
+        "descripcion": "La Cámara Argentina de Empresas Mineras (CAEM) realizó un encuentro de actualización sobre la reciente Ley de Modernización Laboral, con foco en sus implicancias para la actividad minera y en las herramientas previstas para su implementación. La jornada contó con... The post Se efectuó una charla sobre los alcances de la Ley de Modernización Laboral y Fondo de Asistencia Laboral first appeared on CAEM .",
+        "fecha_publicacion": "2026-08-11T20:04:53+00:00",
+        "fuente_id": "caem",
+        "fuente_nombre": "CAEM",
+        "categoria": "Energía y Minería"
       }
     ],
     "Fiscal": [
@@ -277,7 +399,7 @@
         "titulo": "Luego del dictamen, qué trabas quedan aún en la reforma de la Inocencia Fiscal",
         "link": "https://www.iprofesional.com/impuestos/462190-luego-del-dictamen-que-trabas-quedan-aun-en-la-reforma-de-la-inocencia-fiscal",
         "descripcion": "El oficialismo se alzó este miércoles en la Cámara de Diputados con el dictamen del proyecto de Inocencia Fiscal II. Qué cambios se introducen",
-        "fecha_publicacion": "2026-08-13T09:04:00+00:00",
+        "fecha_publicacion": "2026-08-13T12:48:00+00:00",
         "fuente_id": "iprof_impuestos",
         "fuente_nombre": "iProfesional Impuestos",
         "categoria": "Fiscal"
@@ -287,17 +409,17 @@
         "titulo": "Incorporan la reducción de multas en la reforma de la Inocencia Fiscal",
         "link": "https://www.iprofesional.com/impuestos/462189-incorporan-la-reduccion-de-multas-en-la-reforma-de-la-inocencia-fiscal",
         "descripcion": "El oficialismo se alzó este miércoles en la Cámara de Diputados con el dictamen del proyecto de Inocencia Fiscal II. Qué cambios se introducen",
-        "fecha_publicacion": "2026-08-13T08:45:00+00:00",
+        "fecha_publicacion": "2026-08-13T12:46:00+00:00",
         "fuente_id": "iprof_impuestos",
         "fuente_nombre": "iProfesional Impuestos",
         "categoria": "Fiscal"
       },
       {
-        "id": "ec3cae0de202",
-        "titulo": "La ley de Inocencia Fiscal II avanza en Diputados y blinda por completo los dólares del colchón",
-        "link": "https://www.iprofesional.com/impuestos/462149-avanza-inocencia-fiscal-ii-en-diputados-y-blinda-dolares-colchon",
-        "descripcion": "Con la modificación, los dólares del colchón no quedan más sujetos a que se detecte una discrepancia significativa porque se crea una vía de reparación",
-        "fecha_publicacion": "2026-08-12T18:55:00+00:00",
+        "id": "f7767cb0df89",
+        "titulo": "Monotributo las obras sociales habilitadas en agosto y el dato clave antes de elegir",
+        "link": "https://www.iprofesional.com/salud/461355-la-lista-actualizada-en-agosto-de-2026-obras-sociales-monotributistas",
+        "descripcion": "El padrón oficial de agosto reúne 43 obras sociales para monotributistas. Qué tener en cuenta antes de elegir una cobertura de salud",
+        "fecha_publicacion": "2026-08-13T12:40:00+00:00",
         "fuente_id": "iprof_impuestos",
         "fuente_nombre": "iProfesional Impuestos",
         "categoria": "Fiscal"
@@ -331,6 +453,68 @@
         "fuente_id": "ambito_fisc",
         "fuente_nombre": "Ámbito Fiscal",
         "categoria": "Fiscal"
+      }
+    ],
+    "Internacional": [
+      {
+        "id": "8891f4674487",
+        "titulo": "El índice de precios de producción de EE.UU. se mantiene sin cambios en julio",
+        "link": "https://es.investing.com/news/economic-indicators/precios-de-produccion-en-eeuu-inalterados-en-julio-3795132",
+        "descripcion": "",
+        "fecha_publicacion": "2026-08-13T12:35:32+00:00",
+        "fuente_id": "investing_intl2",
+        "fuente_nombre": "Investing Mundo",
+        "categoria": "Internacional"
+      },
+      {
+        "id": "6a3af5d128af",
+        "titulo": "La economía de Polonia creció un 0,9% en el segundo trimestre",
+        "link": "https://es.investing.com/news/economic-indicators/la-economia-de-polonia-crecio-un-09-en-el-segundo-trimestre-93CH-3794414",
+        "descripcion": "",
+        "fecha_publicacion": "2026-08-13T08:58:40+00:00",
+        "fuente_id": "investing_intl2",
+        "fuente_nombre": "Investing Mundo",
+        "categoria": "Internacional"
+      },
+      {
+        "id": "7f5c66349550",
+        "titulo": "La inflación de España sube al 3,9% en julio, superando previsiones",
+        "link": "https://es.investing.com/news/economic-indicators/la-inflacion-de-espana-sube-al-39-en-julio-superando-previsiones-93CH-3794238",
+        "descripcion": "",
+        "fecha_publicacion": "2026-08-13T07:03:56+00:00",
+        "fuente_id": "investing_intl2",
+        "fuente_nombre": "Investing Mundo",
+        "categoria": "Internacional"
+      },
+      {
+        "id": "8c2ec133da87",
+        "titulo": "Petroleros saudíes apagan rastreadores en el mar Rojo",
+        "link": "https://es.investing.com/news/world-news/petroleros-saudies-apagan-rastreadores-en-el-mar-rojo-93CH-3793167",
+        "descripcion": "",
+        "fecha_publicacion": "2026-08-12T13:59:53+00:00",
+        "fuente_id": "investing_intl",
+        "fuente_nombre": "Investing Internacional",
+        "categoria": "Internacional"
+      },
+      {
+        "id": "9729d01175db",
+        "titulo": "La ACLU pide a un tribunal que bloquee las órdenes de Trump sobre la ciudadanía por nacimiento",
+        "link": "https://es.investing.com/news/world-news/la-aclu-pide-a-un-tribunal-que-bloquee-las-ordenes-de-trump-sobre-la-ciudadania-por-nacimiento-93CH-3790641",
+        "descripcion": "",
+        "fecha_publicacion": "2026-08-11T15:22:10+00:00",
+        "fuente_id": "investing_intl",
+        "fuente_nombre": "Investing Internacional",
+        "categoria": "Internacional"
+      },
+      {
+        "id": "605fc575101e",
+        "titulo": "El jefe de Transporte trabaja para resolver problemas de telecomunicaciones tras un incidente",
+        "link": "https://es.investing.com/news/world-news/el-jefe-de-transporte-trabaja-para-resolver-problemas-de-telecomunicaciones-tras-un-incidente-93CH-3790447",
+        "descripcion": "",
+        "fecha_publicacion": "2026-08-11T14:03:55+00:00",
+        "fuente_id": "investing_intl",
+        "fuente_nombre": "Investing Internacional",
+        "categoria": "Internacional"
       }
     ],
     "Agro": [
@@ -415,150 +599,6 @@
         "categoria": "Agro"
       }
     ],
-    "Internacional": [
-      {
-        "id": "6a3af5d128af",
-        "titulo": "La economía de Polonia creció un 0,9% en el segundo trimestre",
-        "link": "https://es.investing.com/news/economic-indicators/la-economia-de-polonia-crecio-un-09-en-el-segundo-trimestre-93CH-3794414",
-        "descripcion": "",
-        "fecha_publicacion": "2026-08-13T08:58:40+00:00",
-        "fuente_id": "investing_intl2",
-        "fuente_nombre": "Investing Mundo",
-        "categoria": "Internacional"
-      },
-      {
-        "id": "7f5c66349550",
-        "titulo": "La inflación de España sube al 3,9% en julio, superando previsiones",
-        "link": "https://es.investing.com/news/economic-indicators/la-inflacion-de-espana-sube-al-39-en-julio-superando-previsiones-93CH-3794238",
-        "descripcion": "",
-        "fecha_publicacion": "2026-08-13T07:03:56+00:00",
-        "fuente_id": "investing_intl2",
-        "fuente_nombre": "Investing Mundo",
-        "categoria": "Internacional"
-      },
-      {
-        "id": "6060e384ce8d",
-        "titulo": "El IPP de Japón en julio queda por debajo de lo esperado pero se mantiene cerca de máximos de 3 años y medio",
-        "link": "https://es.investing.com/news/economic-indicators/el-ipp-de-japon-en-julio-queda-por-debajo-de-lo-esperado-pero-se-mantiene-cerca-de-maximos-de-3-anos-y-medio-3793993",
-        "descripcion": "",
-        "fecha_publicacion": "2026-08-13T00:18:37+00:00",
-        "fuente_id": "investing_intl2",
-        "fuente_nombre": "Investing Mundo",
-        "categoria": "Internacional"
-      },
-      {
-        "id": "8c2ec133da87",
-        "titulo": "Petroleros saudíes apagan rastreadores en el mar Rojo",
-        "link": "https://es.investing.com/news/world-news/petroleros-saudies-apagan-rastreadores-en-el-mar-rojo-93CH-3793167",
-        "descripcion": "",
-        "fecha_publicacion": "2026-08-12T13:59:53+00:00",
-        "fuente_id": "investing_intl",
-        "fuente_nombre": "Investing Internacional",
-        "categoria": "Internacional"
-      },
-      {
-        "id": "9729d01175db",
-        "titulo": "La ACLU pide a un tribunal que bloquee las órdenes de Trump sobre la ciudadanía por nacimiento",
-        "link": "https://es.investing.com/news/world-news/la-aclu-pide-a-un-tribunal-que-bloquee-las-ordenes-de-trump-sobre-la-ciudadania-por-nacimiento-93CH-3790641",
-        "descripcion": "",
-        "fecha_publicacion": "2026-08-11T15:22:10+00:00",
-        "fuente_id": "investing_intl",
-        "fuente_nombre": "Investing Internacional",
-        "categoria": "Internacional"
-      },
-      {
-        "id": "605fc575101e",
-        "titulo": "El jefe de Transporte trabaja para resolver problemas de telecomunicaciones tras un incidente",
-        "link": "https://es.investing.com/news/world-news/el-jefe-de-transporte-trabaja-para-resolver-problemas-de-telecomunicaciones-tras-un-incidente-93CH-3790447",
-        "descripcion": "",
-        "fecha_publicacion": "2026-08-11T14:03:55+00:00",
-        "fuente_id": "investing_intl",
-        "fuente_nombre": "Investing Internacional",
-        "categoria": "Internacional"
-      }
-    ],
-    "Energía y Minería": [
-      {
-        "id": "27e3710550c0",
-        "titulo": "Avanza la obra de Duplicar Norte, el oleoducto que ampliará la capacidad de evacuación de Vaca Muerta",
-        "link": "https://econojournal.com.ar/oilgas/avanza-la-obra-de-duplicar-norte-el-oleoducto-que-ampliara-la-capacidad-de-evacuacion-de-vaca-muerta/",
-        "descripcion": "Oleoductos del Valle (Oldelval) registra un avance de obra cercano al 50% en la construcción del Oleoducto Duplicar Norte, un proyecto estratégico a cargo de la contratista Techint Ingeniería y Construcción que permitirá ampliar la capacidad de evacuación de petróleo del hub norte de Vaca Muerta, que entró en una etapa acelerada de desarrollo. La [&#8230;]",
-        "fecha_publicacion": "2026-08-13T00:16:54+00:00",
-        "fuente_id": "econojournal",
-        "fuente_nombre": "EconoJournal",
-        "categoria": "Energía y Minería"
-      },
-      {
-        "id": "b068ee939df8",
-        "titulo": "Giulio Retamal de FECENE: «Vaca Muerta no es un lugar para llegar, hacerte el valiente, bajar precio, ganar mercado y después ver qué hacemos»",
-        "link": "https://econojournal.com.ar/oilgas/giulio-retamal-de-fecene-vaca-muerta/",
-        "descripcion": "El referente de la Federación de Cámaras del Sector Energético de la Provincia del Neuquén (FECENE), Giulio Retamal Schiappacasse, le marcó la cancha a los proveedores que buscan aprovechar las oportunidades que ofrece la producción no convencional. «Vaca Muerta no es un lugar para llegar, hacerte el valiente, bajar precio, ganar mercado y después ver [&#8230;]",
-        "fecha_publicacion": "2026-08-12T22:50:07+00:00",
-        "fuente_id": "econojournal",
-        "fuente_nombre": "EconoJournal",
-        "categoria": "Energía y Minería"
-      },
-      {
-        "id": "7ffdd57110fb",
-        "titulo": "Argentina-Brasil: la energía frente a la crisis diplomática",
-        "link": "https://dataenergia.ar/mundo/argentina-brasil-la-energia-frente-a-la-crisis-diplomatica-202681217280",
-        "descripcion": "Guillermo Usandivaras analiza cómo la creciente tensión diplomática entre Argentina y Brasil se produce, paradójicamente, en un momento en el que ambos países tienen fuertes incentivos para profundizar su integración energética.",
-        "fecha_publicacion": "2026-08-12T20:28:00+00:00",
-        "fuente_id": "data_energia",
-        "fuente_nombre": "Data Energía",
-        "categoria": "Energía y Minería"
-      },
-      {
-        "id": "2f7b901fecec",
-        "titulo": "Tierra del Fuego presentó un proyecto para dotar de energía eléctrica limpia al Puerto de Ushuaia",
-        "link": "https://dataenergia.ar/electricidad/tierra-del-fuego-presento-un-proyecto-para-dotar-de-energia-electrica-limpia-al-puerto-de-ushuaia-202681216160",
-        "descripcion": "El Gobierno de Tierra del Fuego presentó ante organismos financieros internacionales (Banco Mundial, BID, CAF e IFC) un proyecto para electrificar el Puerto de Ushuaia y abastecer de combustibles verdes a los buques que operan hacia la Antártida.",
-        "fecha_publicacion": "2026-08-12T19:16:00+00:00",
-        "fuente_id": "data_energia",
-        "fuente_nombre": "Data Energía",
-        "categoria": "Energía y Minería"
-      },
-      {
-        "id": "2b1df4aab98d",
-        "titulo": "El Oleoducto Vaca Muerta Oil Sur superó el 77% de ejecución y apuntala el récord productivo de YPF",
-        "link": "https://dataenergia.ar/petroleo-y-combustibles/el-oleoducto-vaca-muerta-oil-sur-supero-el-77-de-ejecucion-y-apuntala-el-record-productivo-de-ypf-202681214300",
-        "descripcion": "YPF reportó un avance físico superior al 77% en las obras del oleoducto y puerto de exportación Vaca Muerta Oil Sur (VMOS) al cierre de junio, manteniendo la fecha de puesta en marcha para inicios de 2027.",
-        "fecha_publicacion": "2026-08-12T17:30:00+00:00",
-        "fuente_id": "data_energia",
-        "fuente_nombre": "Data Energía",
-        "categoria": "Energía y Minería"
-      },
-      {
-        "id": "ee94e3021520",
-        "titulo": "Proveedores petroleros llamaron a preservar y potenciar la cadena de valor local frente a la apertura importadora",
-        "link": "https://econojournal.com.ar/oilgas/proveedores-petroleros-cadena-de-valor-local-apertura-importadora/",
-        "descripcion": "El trabajo conjunto entre las operadoras de petróleo y gas y la cadena de valor local será clave para preservar y potenciar la competitividad de los proveedores locales frente a la apertura de las importaciones, según lo expresado por representantes de empresas asociadas al Grupo Argentino de Proveedores Petroleros (GAPP) que participaron en el Supplier [&#8230;]",
-        "fecha_publicacion": "2026-08-12T16:20:34+00:00",
-        "fuente_id": "econojournal",
-        "fuente_nombre": "EconoJournal",
-        "categoria": "Energía y Minería"
-      },
-      {
-        "id": "b2d92c3bf379",
-        "titulo": "Minería: las inversiones impulsan empleo, proveedores y una proyección de crecimiento de largo plazo",
-        "link": "https://caem.com.ar/mineria-las-inversiones-impulsan-empleo-proveedores-y-una-proyeccion-de-crecimiento-de-largo-plazo/",
-        "descripcion": "El presidente de la Cámara Argentina de Empresas Mineras (CAEM), Roberto Cacciola, destacó el momento de la industria minera argentina y afirmó que el sector se encuentra ante una oportunidad para impulsar inversiones, generar empleo y fortalecer la cadena de... The post Minería: las inversiones impulsan empleo, proveedores y una proyección de crecimiento de largo plazo first appeared on CAEM .",
-        "fecha_publicacion": "2026-08-11T20:11:37+00:00",
-        "fuente_id": "caem",
-        "fuente_nombre": "CAEM",
-        "categoria": "Energía y Minería"
-      },
-      {
-        "id": "11291e7f134e",
-        "titulo": "Se efectuó una charla sobre los alcances de la Ley de Modernización Laboral y Fondo de Asistencia Laboral",
-        "link": "https://caem.com.ar/se-efectuo-una-charla-sobre-los-alcances-de-la-ley-de-modernizacion-laboral-y-fondo-de-asistencia-laboral/",
-        "descripcion": "La Cámara Argentina de Empresas Mineras (CAEM) realizó un encuentro de actualización sobre la reciente Ley de Modernización Laboral, con foco en sus implicancias para la actividad minera y en las herramientas previstas para su implementación. La jornada contó con... The post Se efectuó una charla sobre los alcances de la Ley de Modernización Laboral y Fondo de Asistencia Laboral first appeared on CAEM .",
-        "fecha_publicacion": "2026-08-11T20:04:53+00:00",
-        "fuente_id": "caem",
-        "fuente_nombre": "CAEM",
-        "categoria": "Energía y Minería"
-      }
-    ],
     "Fulbito": [
       {
         "id": "0ba8133f3e43",
@@ -589,48 +629,6 @@
         "fuente_id": "est_0221",
         "fuente_nombre": "0221 Estudiantes",
         "categoria": "Fulbito"
-      }
-    ],
-    "Laboral": [
-      {
-        "id": "430492e1bd50",
-        "titulo": "Empleados de comercio: uno por uno, cuánto cobrarán los trabajadores de call centers por agosto",
-        "link": "https://www.iprofesional.com/management/461950-paritaria-empleados-de-comercio-uno-a-uno-cuanto-cobran-los-trabajadores-de-call-centers",
-        "descripcion": "Los sueldos de agosto de los trabajadores de centros de contacto llegarán con aumento y con una nueva suma no remunerativa extra, negociada por FAECyS",
-        "fecha_publicacion": "2026-08-12T13:31:00+00:00",
-        "fuente_id": "iprof_management",
-        "fuente_nombre": "iProfesional Management",
-        "categoria": "Laboral"
-      },
-      {
-        "id": "07f564b6ffd7",
-        "titulo": "Riesgos psicosociales en el trabajo: la amenaza invisible para la salud de los trabajadores",
-        "link": "https://voices.ilo.org/es-es/podcast/riesgos-psicosociales-en-el-trabajo-la-amenaza-invisible-para-la-salud-de-los-trabajadores",
-        "descripcion": "En este episodio del pódcast “El futuro del trabajo de la OIT”, Dafne Papandrea y Lucía Risueño Navarro explican cómo los riesgos psicosociales —como las largas jornadas laborales, la inseguridad en el empleo y el acoso en el lugar de trabajo— afectan a la salud de los trabajadores, y qué medidas pueden adoptarse para crear entornos laborales más saludables en todo el mundo.",
-        "fecha_publicacion": "2026-04-28T00:00:00+00:00",
-        "fuente_id": "oit_podcast",
-        "fuente_nombre": "OIT Podcast",
-        "categoria": "Laboral"
-      },
-      {
-        "id": "ef1638f33032",
-        "titulo": "La inteligencia artificial generativa y las desigualdades de género en el trabajo",
-        "link": "https://voices.ilo.org/es-es/podcast/la-inteligencia-artificial-generativa-y-las-desigualdades-de-genero-en-el-trabajo",
-        "descripcion": "En este episodio del pódcast de la Organización Internacional del Trabajo, Janine Berg, Economista senior en la OIT, presenta un nuevo informe sobre el impacto de la inteligencia artificial generativa en el mundo del trabajo. La experta explica por qué las mujeres están más expuestas que los hombres a los riesgos asociados a esta tecnología y qué significa esto para la igualdad en el mercado laboral.",
-        "fecha_publicacion": "2026-03-09T00:00:00+00:00",
-        "fuente_id": "oit_podcast",
-        "fuente_nombre": "OIT Podcast",
-        "categoria": "Laboral"
-      },
-      {
-        "id": "a9cae82ea7a7",
-        "titulo": "Una mirada al estado del empleo mundial y sus principales desafíos",
-        "link": "https://voices.ilo.org/es-es/podcast/una-mirada-al-estado-del-empleo-mundial-y-sus-principales-desafios",
-        "descripcion": "En este episodio del pódcast Futuro del Trabajo de la OIT, analizamos el estado del empleo y los principales desafíos que enfrentan los mercados laborales a nivel mundial y en América Latina y el Caribe, junto a Miguel Sánchez Martínez, economista del Departamento de Investigación de la OIT, y Gerson Martínez, Especialista Regional Senior en Economía Laboral.",
-        "fecha_publicacion": "2026-01-22T00:00:00+00:00",
-        "fuente_id": "oit_podcast",
-        "fuente_nombre": "OIT Podcast",
-        "categoria": "Laboral"
       }
     ],
     "Comex": [
