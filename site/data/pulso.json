@@ -1,6 +1,6 @@
 {
-  "generado_en": "2026-08-18T20:37:33.283513+00:00",
-  "generado_ar": "18/08/2026 17:37",
+  "generado_en": "2026-08-19T09:21:21.671307+00:00",
+  "generado_ar": "19/08/2026 06:21",
   "hechos": [
     {
       "slug": "brecha-dolar",
@@ -45,44 +45,44 @@
       "criollo": "La brecha es cuánto más caro está el dólar financiero (el que se compra con bonos) que el oficial. Cuando es chica, los dos precios casi se tocan.",
       "fuente_nombre": "DolarApi · cálculo PPA",
       "fuente_url": "https://dolarapi.com",
-      "dato_fecha": "18/08/2026 17:37",
+      "dato_fecha": "19/08/2026 06:21",
       "prioridad": 90
     },
     {
       "slug": "reservas-bcra",
       "categoria": "Reservas",
-      "titulo": "Las reservas del BCRA quedaron en US$ 49.628 millones",
-      "bajada": "Stock bruto del Banco Central, una suba del 0,1% en el día.",
+      "titulo": "Las reservas del BCRA quedaron en US$ 49.543 millones",
+      "bajada": "Stock bruto del Banco Central, una baja del 0,2% en el día.",
       "dato": {
-        "n": "49.628",
-        "txt": "millones de USD · reservas brutas · +0,1%"
+        "n": "49.543",
+        "txt": "millones de USD · reservas brutas · -0,2%"
       },
       "cuerpo": [
-        "Las reservas internacionales brutas del Banco Central cerraron en US$ 49.628 millones, una suba del 0,1% en el día. Es el stock bruto, antes de descontar swaps, encajes y otras obligaciones."
+        "Las reservas internacionales brutas del Banco Central cerraron en US$ 49.543 millones, una baja del 0,2% en el día. Es el stock bruto, antes de descontar swaps, encajes y otras obligaciones."
       ],
       "criollo": "Son los dólares que tiene el Banco Central. El número bruto es el total; el neto (que descuenta deudas) suele ser bastante más bajo.",
       "fuente_nombre": "BCRA API v4",
       "fuente_url": "https://www.bcra.gob.ar",
-      "dato_fecha": "12/08/2026",
+      "dato_fecha": "13/08/2026",
       "prioridad": 88
     },
     {
       "slug": "riesgo-pais",
       "categoria": "Deuda",
-      "titulo": "El riesgo país subió a 480 puntos",
-      "bajada": "El indicador quedó en 480 puntos básicos, un alza del 1,7% frente al día previo.",
+      "titulo": "El riesgo país subió a 489 puntos",
+      "bajada": "El indicador quedó en 489 puntos básicos, un alza del 1,9% frente al día previo.",
       "dato": {
-        "n": "480",
-        "txt": "puntos básicos · +1,7% en el día"
+        "n": "489",
+        "txt": "puntos básicos · +1,9% en el día"
       },
       "cuerpo": [
-        "El riesgo país cerró en 480 puntos básicos, un alza del 1,7% frente al día previo. El indicador mide la sobretasa que paga la deuda argentina por encima de los bonos del Tesoro de Estados Unidos.",
-        "En números redondos, 480 puntos equivalen a 4,8% de interés extra sobre lo que paga Estados Unidos por endeudarse."
+        "El riesgo país cerró en 489 puntos básicos, un alza del 1,9% frente al día previo. El indicador mide la sobretasa que paga la deuda argentina por encima de los bonos del Tesoro de Estados Unidos.",
+        "En números redondos, 489 puntos equivalen a 4,9% de interés extra sobre lo que paga Estados Unidos por endeudarse."
       ],
       "criollo": "Es como el puntaje crediticio del país. Si sube, pedir plata prestada afuera se encarece; si baja, se abarata.",
       "fuente_nombre": "argentinadatos.com",
       "fuente_url": "https://argentinadatos.com",
-      "dato_fecha": "14/08/2026",
+      "dato_fecha": "17/08/2026",
       "prioridad": 85
     },
     {
@@ -108,19 +108,19 @@
       "slug": "banda-cambiaria",
       "categoria": "Banda cambiaria",
       "titulo": "El dólar mayorista corre al 66% de la banda",
-      "bajada": "Con piso en $739 y techo en $1.886, el mayorista ($1.495) se ubica en el canal.",
+      "bajada": "Con piso en $738 y techo en $1.888, el mayorista ($1.495) se ubica en el canal.",
       "dato": {
         "n": "66%",
         "txt": "posición del mayorista dentro del canal piso–techo"
       },
       "cuerpo": [
-        "Bajo el esquema de bandas del Banco Central, el piso se desliza a $739 y el techo a $1.886. El dólar mayorista ($1.495) se ubica al 65,9% del recorrido entre ambos."
+        "Bajo el esquema de bandas del Banco Central, el piso se desliza a $738 y el techo a $1.888. El dólar mayorista ($1.495) se ubica al 65,9% del recorrido entre ambos."
       ],
-      "metodo": "Posición = (Mayorista − Piso) ÷ (Techo − Piso) × 100 = (1.495 − 739) ÷ (1.886 − 739) × 100 = 65,9%.",
+      "metodo": "Posición = (Mayorista − Piso) ÷ (Techo − Piso) × 100 = (1.495 − 738) ÷ (1.888 − 738) × 100 = 65,9%.",
       "criollo": "El BCRA deja flotar el dólar dentro de un pasillo. Si se pega al techo hay más presión de suba; si se va al piso, lo contrario.",
       "fuente_nombre": "cálculo PPA (esquema BCRA)",
       "fuente_url": "https://www.bcra.gob.ar",
-      "dato_fecha": "18/08/2026 17:37",
+      "dato_fecha": "19/08/2026 06:21",
       "prioridad": 75
     }
   ]
