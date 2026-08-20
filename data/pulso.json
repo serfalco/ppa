@@ -1,19 +1,19 @@
 {
-  "generado_en": "2026-08-19T20:42:44.615141+00:00",
-  "generado_ar": "19/08/2026 17:42",
+  "generado_en": "2026-08-20T09:22:15.094674+00:00",
+  "generado_ar": "20/08/2026 06:22",
   "hechos": [
     {
       "slug": "brecha-dolar",
       "categoria": "Cambiario",
-      "titulo": "La brecha del dólar quedó casi planchada: 0,6%",
-      "bajada": "El MEP ($1.524) frente al oficial ($1.515). Además, el CCL marca 4,3% y el blue, 3,0%.",
+      "titulo": "La brecha del dólar quedó casi planchada: 1,0%",
+      "bajada": "El MEP ($1.530) frente al oficial ($1.515). Además, el CCL marca 4,2% y el blue, 3,0%.",
       "dato": {
-        "n": "0,6%",
+        "n": "1,0%",
         "txt": "Brecha entre el dólar MEP y el oficial"
       },
       "cuerpo": [
-        "El dólar oficial cerró a $1.515 para la venta y el MEP a $1.524, dejando una brecha de 0,6% entre ambos.",
-        "Mirando el resto de las cotizaciones, el contado con liquidación ($1.580) marca 4,3% y el blue ($1.560) queda en 3,0% de brecha contra el oficial."
+        "El dólar oficial cerró a $1.515 para la venta y el MEP a $1.530, dejando una brecha de 1,0% entre ambos.",
+        "Mirando el resto de las cotizaciones, el contado con liquidación ($1.578) marca 4,2% y el blue ($1.560) queda en 3,0% de brecha contra el oficial."
       ],
       "tabla": [
         [
@@ -26,11 +26,11 @@
         ],
         [
           "MEP",
-          "$1.524"
+          "$1.530"
         ],
         [
           "CCL",
-          "$1.580"
+          "$1.578"
         ],
         [
           "Blue",
@@ -41,48 +41,48 @@
           "$1.970"
         ]
       ],
-      "metodo": "Brecha = (MEP ÷ Oficial − 1) × 100 = (1.524 ÷ 1.515 − 1) × 100 = 0,6%.",
+      "metodo": "Brecha = (MEP ÷ Oficial − 1) × 100 = (1.530 ÷ 1.515 − 1) × 100 = 1,0%.",
       "criollo": "La brecha es cuánto más caro está el dólar financiero (el que se compra con bonos) que el oficial. Cuando es chica, los dos precios casi se tocan.",
       "fuente_nombre": "DolarApi · cálculo PPA",
       "fuente_url": "https://dolarapi.com",
-      "dato_fecha": "19/08/2026 17:42",
+      "dato_fecha": "20/08/2026 06:22",
       "prioridad": 90
     },
     {
       "slug": "reservas-bcra",
       "categoria": "Reservas",
-      "titulo": "Las reservas del BCRA quedaron en US$ 49.543 millones",
-      "bajada": "Stock bruto del Banco Central, una baja del 0,2% en el día.",
+      "titulo": "Las reservas del BCRA quedaron en US$ 49.505 millones",
+      "bajada": "Stock bruto del Banco Central, una baja del 0,1% en el día.",
       "dato": {
-        "n": "49.543",
-        "txt": "millones de USD · reservas brutas · -0,2%"
+        "n": "49.505",
+        "txt": "millones de USD · reservas brutas · -0,1%"
       },
       "cuerpo": [
-        "Las reservas internacionales brutas del Banco Central cerraron en US$ 49.543 millones, una baja del 0,2% en el día. Es el stock bruto, antes de descontar swaps, encajes y otras obligaciones."
+        "Las reservas internacionales brutas del Banco Central cerraron en US$ 49.505 millones, una baja del 0,1% en el día. Es el stock bruto, antes de descontar swaps, encajes y otras obligaciones."
       ],
       "criollo": "Son los dólares que tiene el Banco Central. El número bruto es el total; el neto (que descuenta deudas) suele ser bastante más bajo.",
       "fuente_nombre": "BCRA API v4",
       "fuente_url": "https://www.bcra.gob.ar",
-      "dato_fecha": "13/08/2026",
+      "dato_fecha": "14/08/2026",
       "prioridad": 88
     },
     {
       "slug": "riesgo-pais",
       "categoria": "Deuda",
-      "titulo": "El riesgo país subió a 489 puntos",
-      "bajada": "El indicador quedó en 489 puntos básicos, un alza del 1,9% frente al día previo.",
+      "titulo": "El riesgo país subió a 511 puntos",
+      "bajada": "El indicador quedó en 511 puntos básicos, un alza del 4,5% frente al día previo.",
       "dato": {
-        "n": "489",
-        "txt": "puntos básicos · +1,9% en el día"
+        "n": "511",
+        "txt": "puntos básicos · +4,5% en el día"
       },
       "cuerpo": [
-        "El riesgo país cerró en 489 puntos básicos, un alza del 1,9% frente al día previo. El indicador mide la sobretasa que paga la deuda argentina por encima de los bonos del Tesoro de Estados Unidos.",
-        "En números redondos, 489 puntos equivalen a 4,9% de interés extra sobre lo que paga Estados Unidos por endeudarse."
+        "El riesgo país cerró en 511 puntos básicos, un alza del 4,5% frente al día previo. El indicador mide la sobretasa que paga la deuda argentina por encima de los bonos del Tesoro de Estados Unidos.",
+        "En números redondos, 511 puntos equivalen a 5,1% de interés extra sobre lo que paga Estados Unidos por endeudarse."
       ],
       "criollo": "Es como el puntaje crediticio del país. Si sube, pedir plata prestada afuera se encarece; si baja, se abarata.",
       "fuente_nombre": "argentinadatos.com",
       "fuente_url": "https://argentinadatos.com",
-      "dato_fecha": "17/08/2026",
+      "dato_fecha": "18/08/2026",
       "prioridad": 85
     },
     {
@@ -108,19 +108,19 @@
       "slug": "banda-cambiaria",
       "categoria": "Banda cambiaria",
       "titulo": "El dólar mayorista corre al 66% de la banda",
-      "bajada": "Con piso en $738 y techo en $1.888, el mayorista ($1.497) se ubica en el canal.",
+      "bajada": "Con piso en $737 y techo en $1.889, el mayorista ($1.497) se ubica en el canal.",
       "dato": {
         "n": "66%",
         "txt": "posición del mayorista dentro del canal piso–techo"
       },
       "cuerpo": [
-        "Bajo el esquema de bandas del Banco Central, el piso se desliza a $738 y el techo a $1.888. El dólar mayorista ($1.497) se ubica al 66,0% del recorrido entre ambos."
+        "Bajo el esquema de bandas del Banco Central, el piso se desliza a $737 y el techo a $1.889. El dólar mayorista ($1.497) se ubica al 66,0% del recorrido entre ambos."
       ],
-      "metodo": "Posición = (Mayorista − Piso) ÷ (Techo − Piso) × 100 = (1.497 − 738) ÷ (1.888 − 738) × 100 = 66,0%.",
+      "metodo": "Posición = (Mayorista − Piso) ÷ (Techo − Piso) × 100 = (1.497 − 737) ÷ (1.889 − 737) × 100 = 66,0%.",
       "criollo": "El BCRA deja flotar el dólar dentro de un pasillo. Si se pega al techo hay más presión de suba; si se va al piso, lo contrario.",
       "fuente_nombre": "cálculo PPA (esquema BCRA)",
       "fuente_url": "https://www.bcra.gob.ar",
-      "dato_fecha": "19/08/2026 17:42",
+      "dato_fecha": "20/08/2026 06:22",
       "prioridad": 75
     }
   ]
