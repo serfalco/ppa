@@ -1,6 +1,6 @@
 {
-  "generado_en": "2026-08-23T20:36:29.984107+00:00",
-  "generado_ar": "23/08/2026 17:36",
+  "generado_en": "2026-08-24T09:34:25.720989+00:00",
+  "generado_ar": "24/08/2026 06:34",
   "hechos": [
     {
       "slug": "brecha-dolar",
@@ -45,7 +45,7 @@
       "criollo": "La brecha es cuánto más caro está el dólar financiero (el que se compra con bonos) que el oficial. Cuando es chica, los dos precios casi se tocan.",
       "fuente_nombre": "DolarApi · cálculo PPA",
       "fuente_url": "https://dolarapi.com",
-      "dato_fecha": "23/08/2026 17:36",
+      "dato_fecha": "24/08/2026 06:34",
       "prioridad": 90
     },
     {
@@ -108,19 +108,19 @@
       "slug": "banda-cambiaria",
       "categoria": "Banda cambiaria",
       "titulo": "El dólar mayorista corre al 66% de la banda",
-      "bajada": "Con piso en $735 y techo en $1.894, el mayorista ($1.499) se ubica en el canal.",
+      "bajada": "Con piso en $735 y techo en $1.896, el mayorista ($1.499) se ubica en el canal.",
       "dato": {
         "n": "66%",
         "txt": "posición del mayorista dentro del canal piso–techo"
       },
       "cuerpo": [
-        "Bajo el esquema de bandas del Banco Central, el piso se desliza a $735 y el techo a $1.894. El dólar mayorista ($1.499) se ubica al 65,9% del recorrido entre ambos."
+        "Bajo el esquema de bandas del Banco Central, el piso se desliza a $735 y el techo a $1.896. El dólar mayorista ($1.499) se ubica al 65,8% del recorrido entre ambos."
       ],
-      "metodo": "Posición = (Mayorista − Piso) ÷ (Techo − Piso) × 100 = (1.499 − 735) ÷ (1.894 − 735) × 100 = 65,9%.",
+      "metodo": "Posición = (Mayorista − Piso) ÷ (Techo − Piso) × 100 = (1.499 − 735) ÷ (1.896 − 735) × 100 = 65,8%.",
       "criollo": "El BCRA deja flotar el dólar dentro de un pasillo. Si se pega al techo hay más presión de suba; si se va al piso, lo contrario.",
       "fuente_nombre": "cálculo PPA (esquema BCRA)",
       "fuente_url": "https://www.bcra.gob.ar",
-      "dato_fecha": "23/08/2026 17:36",
+      "dato_fecha": "24/08/2026 06:34",
       "prioridad": 75
     }
   ]
