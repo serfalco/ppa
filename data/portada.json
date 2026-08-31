@@ -1,38 +1,574 @@
 {
-  "generado_en": "2026-08-30T22:42:49.828848+00:00",
+  "generado_en": "2026-08-31T14:32:50.568319+00:00",
   "destacados": [
     {
-      "id": "f17a85f6431f",
-      "titulo": "¿Cómo reshapeará el conflicto entre EE.UU. e Irán el mundo?",
-      "link": "https://es.investing.com/news/economy-news/como-reshapeara-el-conflicto-entre-eeuu-e-iran-el-mundo-3815831",
-      "descripcion": "",
-      "fecha_publicacion": "2026-08-30T13:41:58+00:00",
-      "fuente_id": "investing_economia",
-      "fuente_nombre": "Investing Economía",
+      "id": "a7425d281823",
+      "titulo": "Solana rompió la barrera de los u$s100: ¿hasta dónde puede llegar?",
+      "link": "https://www.iproup.com/economia-digital/71099-solana-rompio-la-barrera-de-los-us100-hasta-donde-puede-llegar",
+      "descripcion": "En medio de la euforia cripto, operadores y especialistas trazan nuevos escenarios para la evolución de Solana y el mercado de activos digitales",
+      "fecha_publicacion": "2026-08-31T15:58:00+00:00",
+      "fuente_id": "iproup_eco",
+      "fuente_nombre": "iProUP Economía Digital",
       "categoria": "Mercados"
     },
     {
-      "id": "2d04c0516773",
-      "titulo": "Goldman Sachs analizó el balance del Grupo Financiero Galicia y recomendó qué hacer con la acción",
-      "link": "https://www.iprofesional.com/finanzas/463157-que-hacer-con-las-acciones-de-galicia-segun-goldman-sachs",
-      "descripcion": "El banco ganó más de lo esperado y recuperó rentabilidad, mientras la mora volvió a crecer. Qué recomienda Goldman Sachs para la acción",
-      "fecha_publicacion": "2026-08-30T22:00:00+00:00",
-      "fuente_id": "iprof_finanzas",
-      "fuente_nombre": "iProfesional Finanzas",
+      "id": "5c8c10273340",
+      "titulo": "Apple y Bitcoin: por qué la compañía nunca sumó cripto a su balance",
+      "link": "https://www.iproup.com/economia-digital/71098-por-que-apple-nunca-compro-bitcoin-para-su-tesoreria",
+      "descripcion": "Con u$s146.500 millones en efectivo y títulos, Apple mantuvo una estricta política contra el riesgo cripto. Qué esperar con John Ternus",
+      "fecha_publicacion": "2026-08-31T15:11:00+00:00",
+      "fuente_id": "iproup_fintech",
+      "fuente_nombre": "iProUP Fintech",
       "categoria": "Finanzas"
     },
     {
-      "id": "ccfd0f60a68f",
-      "titulo": "S&P confirma las calificaciones ’BB-/B’ de Jordania por su resiliencia económica",
-      "link": "https://es.investing.com/news/world-news/sp-confirma-las-calificaciones-bbb-de-jordania-por-su-resiliencia-economica-93CH-3815576",
+      "id": "d02872739ccf",
+      "titulo": "El auge del petróleo impulsa el mayor crecimiento de Nigeria en cinco años",
+      "link": "https://es.investing.com/news/world-news/el-auge-del-petroleo-impulsa-el-mayor-crecimiento-de-nigeria-en-cinco-anos-93CH-3816786",
       "descripcion": "",
-      "fecha_publicacion": "2026-08-28T21:08:44+00:00",
+      "fecha_publicacion": "2026-08-31T14:18:19+00:00",
       "fuente_id": "investing_intl",
       "fuente_nombre": "Investing Internacional",
       "categoria": "Internacional"
     }
   ],
   "secciones": {
+    "Mercados": [
+      {
+        "id": "a7425d281823",
+        "titulo": "Solana rompió la barrera de los u$s100: ¿hasta dónde puede llegar?",
+        "link": "https://www.iproup.com/economia-digital/71099-solana-rompio-la-barrera-de-los-us100-hasta-donde-puede-llegar",
+        "descripcion": "En medio de la euforia cripto, operadores y especialistas trazan nuevos escenarios para la evolución de Solana y el mercado de activos digitales",
+        "fecha_publicacion": "2026-08-31T15:58:00+00:00",
+        "fuente_id": "iproup_eco",
+        "fuente_nombre": "iProUP Economía Digital",
+        "categoria": "Mercados"
+      },
+      {
+        "id": "1ef481ff2eb9",
+        "titulo": "Bessent en el G20: el crecimiento es clave para resolver la crisis de deuda",
+        "link": "https://es.investing.com/news/economy-news/bessent-en-el-g20-el-crecimiento-es-clave-para-resolver-la-crisis-de-deuda-93CH-3816672",
+        "descripcion": "",
+        "fecha_publicacion": "2026-08-31T13:26:22+00:00",
+        "fuente_id": "investing_economia",
+        "fuente_nombre": "Investing Economía",
+        "categoria": "Mercados"
+      },
+      {
+        "id": "80edf2bd1906",
+        "titulo": "El gobernador del BoE advierte que la IA podría desestabilizar los mercados",
+        "link": "https://es.investing.com/news/economy-news/el-gobernador-del-boe-advierte-que-la-ia-podria-desestabilizar-los-mercados-3816667",
+        "descripcion": "",
+        "fecha_publicacion": "2026-08-31T13:19:50+00:00",
+        "fuente_id": "investing_economia",
+        "fuente_nombre": "Investing Economía",
+        "categoria": "Mercados"
+      },
+      {
+        "id": "39eae175f5ea",
+        "titulo": "Un banco de Wall Street proyecta el precio de Bitcoin a u$s150.000 en 2027 y $300.000 en 2029",
+        "link": "https://www.iproup.com/economia-digital/70989-bitcoin-proyeccion-precio-proximos-anos-bernstein-wall-street-informe-analisis-agosto-2026",
+        "descripcion": "La entidad detalló los distintos escenario que baraja para la criptomoneda líder de cara a los próximos ciclos del mercado cripto global",
+        "fecha_publicacion": "2026-08-31T13:19:00+00:00",
+        "fuente_id": "iproup_eco",
+        "fuente_nombre": "iProUP Economía Digital",
+        "categoria": "Mercados"
+      },
+      {
+        "id": "eb1ff72b001d",
+        "titulo": "La inflación alemana sube al 2,9% en agosto, por debajo de las previsiones",
+        "link": "https://es.investing.com/news/economy-news/la-inflacion-alemana-sube-al-29-en-agosto-por-debajo-de-las-previsiones-93CH-3816536",
+        "descripcion": "",
+        "fecha_publicacion": "2026-08-31T12:23:30+00:00",
+        "fuente_id": "investing_economia",
+        "fuente_nombre": "Investing Economía",
+        "categoria": "Mercados"
+      }
+    ],
+    "Finanzas": [
+      {
+        "id": "5c8c10273340",
+        "titulo": "Apple y Bitcoin: por qué la compañía nunca sumó cripto a su balance",
+        "link": "https://www.iproup.com/economia-digital/71098-por-que-apple-nunca-compro-bitcoin-para-su-tesoreria",
+        "descripcion": "Con u$s146.500 millones en efectivo y títulos, Apple mantuvo una estricta política contra el riesgo cripto. Qué esperar con John Ternus",
+        "fecha_publicacion": "2026-08-31T15:11:00+00:00",
+        "fuente_id": "iproup_fintech",
+        "fuente_nombre": "iProUP Fintech",
+        "categoria": "Finanzas"
+      },
+      {
+        "id": "9e6a9b01fec8",
+        "titulo": "El Gobierno inicia el plan de $2 billones para créditos hipotecarios con una licitación clave",
+        "link": "https://www.iproup.com/finanzas/71097-creditos-hipotecarios-anses-tasa-tope-alerta-acceso-limitado-agosto-2026",
+        "descripcion": "El nuevo esquema de financiamiento impulsa préstamos para vivienda mientras expertos alertan sobre el limitado acceso y creciente morosidad",
+        "fecha_publicacion": "2026-08-31T14:39:00+00:00",
+        "fuente_id": "iproup_fintech",
+        "fuente_nombre": "iProUP Fintech",
+        "categoria": "Finanzas"
+      },
+      {
+        "id": "7583c90d55ef",
+        "titulo": "Bitcoin resiste por encima de los u$s78.000 pese al tono restrictivo de Kevin Warsh en Jackson Hole",
+        "link": "https://www.ambito.com/finanzas/bitcoin-resiste-encima-los-us78000-pese-al-tono-restrictivo-kevin-warsh-jackson-hole-n6316621",
+        "descripcion": "La principal criptomoneda mostró resiliencia tras las declaraciones del presidente de la Fed, que el mercado interpretó como una señal de suba de tasas en septiembre. La reanudación de la acción militar entre EE.UU. e Irán disparó el precio del petróleo y añadió presión sobre los activos de riesgo.",
+        "fecha_publicacion": "2026-08-31T14:24:00+00:00",
+        "fuente_id": "ambito_fin",
+        "fuente_nombre": "Ámbito Finanzas",
+        "categoria": "Finanzas"
+      },
+      {
+        "id": "83f69c9120d8",
+        "titulo": "Transporte, alquileres y prepagas: septiembre llega con aumentos que impactan en el presupuesto",
+        "link": "https://www.iproup.com/finanzas/71057-transporte-alquileres-y-prepagas-los-aumentos-de-septiembre-2026",
+        "descripcion": "El transporte del AMBA, las prepagas, los alquileres y los colegios privados actualizan valores en septiembre con aumentos que van del 1,8% al 14,29%",
+        "fecha_publicacion": "2026-08-31T13:58:00+00:00",
+        "fuente_id": "iproup_fintech",
+        "fuente_nombre": "iProUP Fintech",
+        "categoria": "Finanzas"
+      },
+      {
+        "id": "9c38fbacf153",
+        "titulo": "Los bonos soberanos vuelven a caer y el riesgo país apunta a cerrar agosto arriba de 500 puntos",
+        "link": "https://www.ambito.com/finanzas/los-bonos-soberanos-vuelven-caer-y-el-riesgo-pais-apunta-cerrar-agosto-arriba-500-puntos-n6316646",
+        "descripcion": "Los bonos soberanos arrancan la semana en rojo, en línea con los emergentes, mientras el riesgo país se mantiene sobre los 500 puntos y la escalada entre EEUU e Irán impulsa al petróleo.",
+        "fecha_publicacion": "2026-08-31T13:30:00+00:00",
+        "fuente_id": "ambito_fin",
+        "fuente_nombre": "Ámbito Finanzas",
+        "categoria": "Finanzas"
+      },
+      {
+        "id": "fa03ee957636",
+        "titulo": "El mercado ya pone en precio las elecciones 2027 y calcula qué chances de reelegir tiene Javier Milei",
+        "link": "https://www.ambito.com/finanzas/el-mercado-ya-pone-precio-las-elecciones-2027-y-calcula-que-chances-reelegir-tiene-javier-milei-n6316637",
+        "descripcion": "Un informe estimó que los bonos reflejan una probabilidad del 53,5% de continuidad del oficialismo. El riesgo país volvió a superar los 500 puntos y la atención también se concentra en la actividad, el ingreso de las familias y la capacidad de ahorro.",
+        "fecha_publicacion": "2026-08-31T13:25:00+00:00",
+        "fuente_id": "ambito_fin",
+        "fuente_nombre": "Ámbito Finanzas",
+        "categoria": "Finanzas"
+      },
+      {
+        "id": "223201ea262b",
+        "titulo": "La Iglesia pone el foco en las deudas familiares y advierte por el avance de la mora",
+        "link": "https://www.iprofesional.com/finanzas/463380-la-iglesia-alerta-por-endeudamiento-familiar-y-reclama-medidas-ante-591-millones-en-mora",
+        "descripcion": "La CEA advirtió por el avance de la morosidad familiar y pidió medidas para evitar que las deudas comprometan una parte excesiva de los ingresos",
+        "fecha_publicacion": "2026-08-31T12:27:00+00:00",
+        "fuente_id": "iprof_finanzas",
+        "fuente_nombre": "iProfesional Finanzas",
+        "categoria": "Finanzas"
+      },
+      {
+        "id": "464c364e2646",
+        "titulo": "ANSES abrió la inscripción al Progresar Obligatorio para cobrar 35.000 pesos por mes",
+        "link": "https://www.iprofesional.com/economia/463348-anses-abrio-la-inscripcion-al-progresar-obligatorio-para-cobrar-35000-pesos-por-mes",
+        "descripcion": "ANSES habilitó la segunda convocatoria del Progresar Obligatorio con un haber de 35.000 pesos mensuales. Requisitos y fecha límite",
+        "fecha_publicacion": "2026-08-31T11:50:00+00:00",
+        "fuente_id": "iprof_economia",
+        "fuente_nombre": "iProfesional Economía",
+        "categoria": "Finanzas"
+      }
+    ],
+    "Internacional": [
+      {
+        "id": "d02872739ccf",
+        "titulo": "El auge del petróleo impulsa el mayor crecimiento de Nigeria en cinco años",
+        "link": "https://es.investing.com/news/world-news/el-auge-del-petroleo-impulsa-el-mayor-crecimiento-de-nigeria-en-cinco-anos-93CH-3816786",
+        "descripcion": "",
+        "fecha_publicacion": "2026-08-31T14:18:19+00:00",
+        "fuente_id": "investing_intl",
+        "fuente_nombre": "Investing Internacional",
+        "categoria": "Internacional"
+      },
+      {
+        "id": "c17c498f06d3",
+        "titulo": "La economía de India crece un 7,8% en el segundo trimestre",
+        "link": "https://es.investing.com/news/economic-indicators/la-economia-de-india-crece-un-78-en-el-segundo-trimestre-93CH-3816329",
+        "descripcion": "",
+        "fecha_publicacion": "2026-08-31T10:57:37+00:00",
+        "fuente_id": "investing_intl2",
+        "fuente_nombre": "Investing Mundo",
+        "categoria": "Internacional"
+      },
+      {
+        "id": "362765ea7d41",
+        "titulo": "El déficit fiscal de India alcanza los 47.810 millones de dólares entre abril y julio",
+        "link": "https://es.investing.com/news/economic-indicators/el-deficit-fiscal-de-india-alcanza-los-47810-millones-de-dolares-entre-abril-y-julio-93CH-3816318",
+        "descripcion": "",
+        "fecha_publicacion": "2026-08-31T10:55:12+00:00",
+        "fuente_id": "investing_intl2",
+        "fuente_nombre": "Investing Mundo",
+        "categoria": "Internacional"
+      },
+      {
+        "id": "932b7fbf74b9",
+        "titulo": "Arroz más barato, tasas más altas: el enigma de la inflación en Japón",
+        "link": "https://es.investing.com/news/economic-indicators/arroz-mas-barato-tasas-mas-altas-el-enigma-de-la-inflacion-en-japon-3816090",
+        "descripcion": "",
+        "fecha_publicacion": "2026-08-31T08:19:48+00:00",
+        "fuente_id": "investing_intl2",
+        "fuente_nombre": "Investing Mundo",
+        "categoria": "Internacional"
+      },
+      {
+        "id": "ccfd0f60a68f",
+        "titulo": "S&P confirma las calificaciones ’BB-/B’ de Jordania por su resiliencia económica",
+        "link": "https://es.investing.com/news/world-news/sp-confirma-las-calificaciones-bbb-de-jordania-por-su-resiliencia-economica-93CH-3815576",
+        "descripcion": "",
+        "fecha_publicacion": "2026-08-28T21:08:44+00:00",
+        "fuente_id": "investing_intl",
+        "fuente_nombre": "Investing Internacional",
+        "categoria": "Internacional"
+      },
+      {
+        "id": "538a308bd165",
+        "titulo": "S&P confirma el rating A+ de Portugal por sus perspectivas de crecimiento",
+        "link": "https://es.investing.com/news/world-news/sp-confirma-el-rating-a-de-portugal-por-sus-perspectivas-de-crecimiento-93CH-3815575",
+        "descripcion": "",
+        "fecha_publicacion": "2026-08-28T21:08:15+00:00",
+        "fuente_id": "investing_intl",
+        "fuente_nombre": "Investing Internacional",
+        "categoria": "Internacional"
+      }
+    ],
+    "Automotor": [
+      {
+        "id": "a3c8999aee52",
+        "titulo": "Registro Automotor: simplifican el esquema de aranceles y eliminan el 40% de los cobros vigentes",
+        "link": "https://www.ambito.com/autos/registro-automotor-simplifican-el-esquema-aranceles-y-eliminan-el-40-los-cobros-vigentes-n6316661",
+        "descripcion": "A través de la Resolución 412/2026, el Ministerio de Justicia readecuó el esquema arancelario y fijó las pautas para calcular los ingresos de los encargados seccionales.",
+        "fecha_publicacion": "2026-08-31T13:33:00+00:00",
+        "fuente_id": "ambito_autos",
+        "fuente_nombre": "Ámbito Autos",
+        "categoria": "Automotor"
+      },
+      {
+        "id": "af7476545ccd",
+        "titulo": "Los autos chinos usados y el riesgo de su pérdida de valor",
+        "link": "https://www.iprofesional.com/autos/463346-cuanto-se-deprecian-los-autos-chinos-usados-frente-a-otras-marcas",
+        "descripcion": "Un análisis sobre la devaluación de los autos chinos usados frente a marcas tradicionales y los factores que explican la diferencia de precios",
+        "fecha_publicacion": "2026-08-31T10:46:00+00:00",
+        "fuente_id": "iprof_autos",
+        "fuente_nombre": "iProfesional Autos",
+        "categoria": "Automotor"
+      },
+      {
+        "id": "01c69294dea9",
+        "titulo": "Tesla lanzará el Cybercab en septiembre: el robotaxi 100% autónomo sin volante, ni pedales",
+        "link": "https://www.ambito.com/autos/tesla-lanzara-el-cybercab-septiembre-el-robotaxi-100-autonomo-volante-ni-pedales-n6315611",
+        "descripcion": "La empresa presentó el modelo en 2024 y, después de años de adelantos, cuestionamientos y demoras, está por llegar.",
+        "fecha_publicacion": "2026-08-31T01:00:00+00:00",
+        "fuente_id": "ambito_autos",
+        "fuente_nombre": "Ámbito Autos",
+        "categoria": "Automotor"
+      },
+      {
+        "id": "ca6f643d72e8",
+        "titulo": "Qué pasa si un Tesla se queda sin batería en la ruta: qué hacer y cuánto tarda en volver a circular",
+        "link": "https://www.ambito.com/autos/que-pasa-si-un-tesla-se-queda-bateria-la-ruta-que-hacer-y-cuanto-tarda-volver-circular-n6315602",
+        "descripcion": "Quedarse sin batería con un auto eléctrico en plena ruta no es igual que quedarse sin nafta. Qué sucede y cuáles son las opciones.",
+        "fecha_publicacion": "2026-08-30T21:00:00+00:00",
+        "fuente_id": "ambito_autos",
+        "fuente_nombre": "Ámbito Autos",
+        "categoria": "Automotor"
+      },
+      {
+        "id": "12f810bc0c54",
+        "titulo": "Autos usados: cuáles son los requisitos para comprar y transferir un vehículo",
+        "link": "https://www.iprofesional.com/autos/463344-comprar-un-auto-usado-que-cambio-con-la-cedula-azul-y-el-ceta",
+        "descripcion": "Tras los recientes cambios, los pasos esenciales y los documentos necesarios para transferir un vehículo usado en Argentina cambiaron por completo",
+        "fecha_publicacion": "2026-08-30T15:14:00+00:00",
+        "fuente_id": "iprof_autos",
+        "fuente_nombre": "iProfesional Autos",
+        "categoria": "Automotor"
+      },
+      {
+        "id": "b88f1909f820",
+        "titulo": "El concesionario Fangio de Mercedes-Benz cambia de dueños y deja atrás su emblemático nombre",
+        "link": "https://www.iprofesional.com/autos/463331-concesionario-mercedes-benz-cambia-de-dueno-y-deja-atras-un-nombre-emblematico",
+        "descripcion": "En medio de un escenario de profundos cambios dentro de la industria, la empresa cambiará de propietarios y dejará atrás un nombre icónico",
+        "fecha_publicacion": "2026-08-30T14:51:00+00:00",
+        "fuente_id": "iprof_autos",
+        "fuente_nombre": "iProfesional Autos",
+        "categoria": "Automotor"
+      },
+      {
+        "id": "f406181ca03d",
+        "titulo": "Servicios. Sugerencias para no llevar el vehículo con una presión inadecuada de los neumáticos, lo que los desgasta",
+        "link": "https://www.diariodeautos.com.ar/index.php/noticias/servicios/item/13379-servicios-sugerencias-para-no-llevar-el-vehículo-con-una-presión-inadecuada-de-los-neumáticos",
+        "descripcion": "Muchas veces en esta página, los usuarios preguntan por inconvenientes en la dirección o temas de la suspensión y hasta de la dirección del vehículo que manejan. La mayoría de las veces, estos inconvenientes tienen que ver con la presión de los neumáticos y no con lo que suponían o preguntaban. Por eso hicimos un relevamiento entre gomeros y los productores de cubiertas para que nos dieran algunos consejos, que ponemos a disposición. Presión Lo primero por saber es si la gente conoce ¿cuál es la",
+        "fecha_publicacion": "2026-08-30T09:50:14+00:00",
+        "fuente_id": "diario_autos",
+        "fuente_nombre": "Diario de Autos",
+        "categoria": "Automotor"
+      },
+      {
+        "id": "8f4218bd1302",
+        "titulo": "Las 10 claves del MG ZS Hybrid",
+        "link": "https://arodarpost.com.ar/las-10-claves-del-mg-zs-hybrid/",
+        "descripcion": "La variedad de marcas y modelos que llegaron en los últimos meses a la Argentina cambiaron el mercado automotor. En esta competencia, el ganador es el consumidor que puede tener una mayor oferta de elección con precios que, si bien en muchos casos siguen altos, son más atractivos que un tiempo atrás. MG es una [&#8230;]",
+        "fecha_publicacion": "2026-08-29T22:21:44+00:00",
+        "fuente_id": "arodar",
+        "fuente_nombre": "A Rodar Post",
+        "categoria": "Automotor"
+      }
+    ],
+    "Laboral": [
+      {
+        "id": "62b88de31508",
+        "titulo": "Bill Gates advierte que la IA eliminará empleos y propone reservar puestos para humanos",
+        "link": "https://www.iprofesional.com/tecnologia/463179-bill-gates-advierte-que-la-ia-destruira-empleos-y-propone-reservar-trabajos-para-humanos",
+        "descripcion": "El cofundador de Microsoft cuestionó el silencio de la industria y planteó proteger ciertos empleos frente al avance de la inteligencia artificial",
+        "fecha_publicacion": "2026-08-31T13:10:00+00:00",
+        "fuente_id": "iprof_management",
+        "fuente_nombre": "iProfesional Management",
+        "categoria": "Laboral"
+      },
+      {
+        "id": "68d2e020afaf",
+        "titulo": "Multas laborales: la Ley Bases no puede aplicarse en forma retroactiva, según la Justicia",
+        "link": "https://www.iprofesional.com/legales/463379-ley-bases-multas-laborales-juicios-anteriores",
+        "descripcion": "El Tribunal Superior de Justicia de Córdoba fijó un criterio para los reclamos por incumplimientos laborales ocurridos antes de julio de 2024",
+        "fecha_publicacion": "2026-08-31T12:55:00+00:00",
+        "fuente_id": "iprof_management",
+        "fuente_nombre": "iProfesional Management",
+        "categoria": "Laboral"
+      },
+      {
+        "id": "86384dc7cb26",
+        "titulo": "Las 15 carreras cortas con más salida laboral y alta demanda para estudiar en 2026",
+        "link": "https://www.iprofesional.com/management/463347-las-15-carreras-cortas-con-mas-salida-laboral-en-2026",
+        "descripcion": "Carreras de dos a tres años ganan terreno frente a las carreras tradicionales. Cuáles son las opciones con más demanda y alta salida laboral",
+        "fecha_publicacion": "2026-08-31T11:50:00+00:00",
+        "fuente_id": "iprof_management",
+        "fuente_nombre": "iProfesional Management",
+        "categoria": "Laboral"
+      },
+      {
+        "id": "4c8ab50dbfd9",
+        "titulo": "Trabajo decente en las plataformas digitales: una nueva norma mundial",
+        "link": "https://voices.ilo.org/es-es/podcast/trabajo-decente-en-las-plataformas-digitales-una-nueva-norma-mundial",
+        "descripcion": "Las plataformas digitales han transformado el mundo del trabajo, generando nuevas oportunidades, pero también importantes desafíos para los derechos y la protección de los trabajadores. En este episodio de El futuro del trabajo, Nuno Cunha, especialista en instituciones de mercados laborales de la OIT, explica qué supone el nuevo Convenio núm. 193, la primera norma internacional del trabajo sobre la economía de plataformas, cómo fue elaborado a través del diálogo social y cuáles son los próximos",
+        "fecha_publicacion": "2026-08-26T00:00:00+00:00",
+        "fuente_id": "oit_podcast",
+        "fuente_nombre": "OIT Podcast",
+        "categoria": "Laboral"
+      },
+      {
+        "id": "07f564b6ffd7",
+        "titulo": "Riesgos psicosociales en el trabajo: la amenaza invisible para la salud de los trabajadores",
+        "link": "https://voices.ilo.org/es-es/podcast/riesgos-psicosociales-en-el-trabajo-la-amenaza-invisible-para-la-salud-de-los-trabajadores",
+        "descripcion": "En este episodio del pódcast “El futuro del trabajo de la OIT”, Dafne Papandrea y Lucía Risueño Navarro explican cómo los riesgos psicosociales —como las largas jornadas laborales, la inseguridad en el empleo y el acoso en el lugar de trabajo— afectan a la salud de los trabajadores, y qué medidas pueden adoptarse para crear entornos laborales más saludables en todo el mundo.",
+        "fecha_publicacion": "2026-04-28T00:00:00+00:00",
+        "fuente_id": "oit_podcast",
+        "fuente_nombre": "OIT Podcast",
+        "categoria": "Laboral"
+      },
+      {
+        "id": "ef1638f33032",
+        "titulo": "La inteligencia artificial generativa y las desigualdades de género en el trabajo",
+        "link": "https://voices.ilo.org/es-es/podcast/la-inteligencia-artificial-generativa-y-las-desigualdades-de-genero-en-el-trabajo",
+        "descripcion": "En este episodio del pódcast de la Organización Internacional del Trabajo, Janine Berg, Economista senior en la OIT, presenta un nuevo informe sobre el impacto de la inteligencia artificial generativa en el mundo del trabajo. La experta explica por qué las mujeres están más expuestas que los hombres a los riesgos asociados a esta tecnología y qué significa esto para la igualdad en el mercado laboral.",
+        "fecha_publicacion": "2026-03-09T00:00:00+00:00",
+        "fuente_id": "oit_podcast",
+        "fuente_nombre": "OIT Podcast",
+        "categoria": "Laboral"
+      }
+    ],
+    "Energía y Minería": [
+      {
+        "id": "d5f1129e35c2",
+        "titulo": "El plan de Prometva para expandirse en obras metalmecánicas para Oil & Gas, minería y Data Centers",
+        "link": "https://econojournal.com.ar/energia/el-plan-de-prometva-para-expandirse-en-obras-metalmecanicas-para-oil-gas-mineria-y-data-centers/",
+        "descripcion": "Prometva construyó su posición en el mercado de estructuras metálicas a partir de proyectos vinculados principalmente con Oil &#38; Gas y energía. En la actualidad, el 90% de su actividad está concentrada en el sector hidrocarburífero, donde la compañía asegura ubicarse entre las cinco firmas líderes en estructuras metálicas. Ahora busca utilizar esa experiencia como [&#8230;]",
+        "fecha_publicacion": "2026-08-31T12:28:51+00:00",
+        "fuente_id": "econojournal",
+        "fuente_nombre": "EconoJournal",
+        "categoria": "Energía y Minería"
+      },
+      {
+        "id": "9d6bb45993da",
+        "titulo": "Aunque las tarifas cubren menos del 50% del costo de la energía, el peso de los servicios públicos sobre salarios trepó al 14,5%",
+        "link": "https://econojournal.com.ar/energia/tarifas-energia-servicios-salarios/",
+        "descripcion": "La canasta de servicios públicos en el Área Metropolitana de Buenos Aires representó en agosto el 14,5% del salario promedio registrado del sector privado, de acuerdo con el último reporte del Observatorio de Tarifas y Subsidios del IIEP (UBA-CONICET). El dato refleja cómo la masa de gastos en tarifas consolidó un piso al alza que [&#8230;]",
+        "fecha_publicacion": "2026-08-31T11:17:00+00:00",
+        "fuente_id": "econojournal",
+        "fuente_nombre": "EconoJournal",
+        "categoria": "Energía y Minería"
+      },
+      {
+        "id": "5eb561d4bbe6",
+        "titulo": "Las ventas de combustibles cayeron 6,4% en julio y acumulan medio año en terreno negativo",
+        "link": "https://dataenergia.ar/petroleo-y-combustibles/las-ventas-de-combustibles-cayeron-6-4-en-julio-y-acumulan-medio-ano-en-terreno-negativo-202683019310",
+        "descripcion": "Las ventas de combustibles en estaciones de servicio cayeron 6,4% interanual en julio al comercializarse 1.368.722 m³, acumulando seis meses consecutivos en terreno negativo y un retroceso cercano al 10% respecto a 2023.",
+        "fecha_publicacion": "2026-08-30T22:31:00+00:00",
+        "fuente_id": "data_energia",
+        "fuente_nombre": "Data Energía",
+        "categoria": "Energía y Minería"
+      },
+      {
+        "id": "80d72cd5d36d",
+        "titulo": "Exploración offshore: YPF oficializó la incorporación de Eni como operador del Área OFF-5 en Uruguay",
+        "link": "https://dataenergia.ar/petroleo-y-combustibles/exploracion-offshore-ypf-oficializo-la-incorporacion-de-eni-como-operador-del-area-off-5-en-uruguay-202683018520",
+        "descripcion": "YPF oficializó la cesión del 50% de participación y la operación del bloque offshore Área OFF-5 en Uruguay a la petrolera italiana Eni, reservándose el 50% restante a través de su filial MIWEN.",
+        "fecha_publicacion": "2026-08-30T21:52:00+00:00",
+        "fuente_id": "data_energia",
+        "fuente_nombre": "Data Energía",
+        "categoria": "Energía y Minería"
+      },
+      {
+        "id": "6505482f06c5",
+        "titulo": "El desafío logístico de transportar palas eólicas de 75 metros y 22 toneladas por las rutas del sur",
+        "link": "https://econojournal.com.ar/renovables-te/el-desafio-de-transportar-palas-eolicas/",
+        "descripcion": "En las rutas del centro y sur de la Provincia de Buenos Aires viajan en estos meses carretones con palas eólicas de unos 75 metros de largo y 22 toneladas cuyo traslado supone acompañamiento, permisos y un trabajo previo de cálculos para resolver rotondas y curvas. En la industria los llaman “paleros”. En Argentina hay [&#8230;]",
+        "fecha_publicacion": "2026-08-30T12:05:59+00:00",
+        "fuente_id": "econojournal",
+        "fuente_nombre": "EconoJournal",
+        "categoria": "Energía y Minería"
+      },
+      {
+        "id": "8eaedceaac93",
+        "titulo": "Gestión ambiental: Santa Cruz fiscaliza el plan de abandono de los 1.160 pozos de YPF en la Cuenca del Golfo San Jorge",
+        "link": "https://dataenergia.ar/petroleo-y-combustibles/gestion-ambiental-santa-cruz-fiscaliza-el-plan-de-abandono-de-los-1-160-pozos-de-ypf-en-la-cuenca-del-golfo-san-jorge-20268281500",
+        "descripcion": "El Gobierno de Santa Cruz puso en marcha la supervisión del plan de abandono de 1.160 pozos inactivados en áreas de la Cuenca del Golfo San Jorge transferidas por YPF.",
+        "fecha_publicacion": "2026-08-28T18:00:00+00:00",
+        "fuente_id": "data_energia",
+        "fuente_nombre": "Data Energía",
+        "categoria": "Energía y Minería"
+      },
+      {
+        "id": "e2ed4fa542d9",
+        "titulo": "RIGI: La industria minera destacó su impacto positivo en las inversiones durante su exposición en el Senado",
+        "link": "https://caem.com.ar/rigi-la-industria-minera-destaco-su-impacto-positivo-en-las-inversiones-durante-su-exposicion-en-el-senado/",
+        "descripcion": "El presidente de la Cámara Argentina de Empresas Mineras (CAEM), Roberto Cacciola, expuso ayer ante el plenario de las comisiones de Presupuesto, Economía Nacional y Legislación del Senado de la Nación, donde sostuvo que el Régimen de Incentivo para Grandes... The post RIGI: La industria minera destacó su impacto positivo en las inversiones durante su exposición en el Senado first appeared on CAEM .",
+        "fecha_publicacion": "2026-08-27T23:38:27+00:00",
+        "fuente_id": "caem",
+        "fuente_nombre": "CAEM",
+        "categoria": "Energía y Minería"
+      },
+      {
+        "id": "6bcba281cca7",
+        "titulo": "CAEM y UIA presentaron un estudio sobre el potencial de desarrollo de proveedores para la minería argentina",
+        "link": "https://caem.com.ar/caem-y-uia-presentaron-un-estudio-sobre-el-potencial-de-desarrollo-de-proveedores-para-la-mineria-argentina/",
+        "descripcion": "En el marco del encuentro organizado por la Mesa del Litio, el Consejo Federal de Inversiones (CFI) y el Banco Interamericano de Desarrollo (BID), la Cámara Argentina de Empresas Mineras (CAEM) y la Unión Industrial Argentina (UIA) presentaron los resultados... The post CAEM y UIA presentaron un estudio sobre el potencial de desarrollo de proveedores para la minería argentina first appeared on CAEM .",
+        "fecha_publicacion": "2026-08-25T20:43:55+00:00",
+        "fuente_id": "caem",
+        "fuente_nombre": "CAEM",
+        "categoria": "Energía y Minería"
+      }
+    ],
+    "Logística": [
+      {
+        "id": "3ca6583b00e9",
+        "titulo": "Trump se adjudica el estrecho de Ormuz como “nuevo” territorio de Estados Unidos",
+        "link": "https://webpicking.com/trump-se-adjudica-el-estrecho-de-ormuz-como-nuevo-territorio-de-estados-unidos/",
+        "descripcion": "Donald Trump publicó un mapa en su red Truth Social en el que incorporó este estratégico paso marítimo como “nuevo” territorio estadounidense La entrada Trump se adjudica el estrecho de Ormuz como &#8220;nuevo&#8221; territorio de Estados Unidos se publicó primero en Webpicking .",
+        "fecha_publicacion": "2026-08-31T11:33:56+00:00",
+        "fuente_id": "webpicking",
+        "fuente_nombre": "Webpicking",
+        "categoria": "Logística"
+      },
+      {
+        "id": "480956191713",
+        "titulo": "Volvo, Mercomar y Vulcano completaron una operación inédita",
+        "link": "https://webpicking.com/volvo-mercomar-y-vulcano-completaron-una-operacion-inedita/",
+        "descripcion": "Un bitren de 75 toneladas completó con éxito una prueba de operación en la cordillera, en un recorrido que superó los 4.500 metros sobre el nivel del mar. La entrada Volvo, Mercomar y Vulcano completaron una operación inédita se publicó primero en Webpicking .",
+        "fecha_publicacion": "2026-08-30T20:48:33+00:00",
+        "fuente_id": "webpicking",
+        "fuente_nombre": "Webpicking",
+        "categoria": "Logística"
+      },
+      {
+        "id": "ebd3029b4641",
+        "titulo": "Hablemos de Logística 923 con Fernando Lía, Coordinador de Transporte Sustentable del Proyecto ProCLIM-AR – UNSAM",
+        "link": "https://webpicking.com/hablemos-de-logistica-923-con-fernando-lia-coordinador-de-transporte-sustentable-del-proyecto-proclim-ar-unsam/",
+        "descripcion": "Explica el Programa Rumbo Eficiente de certificaciones y validaciones técnicas en el Transporte Automotor de Cargas que apunta a un transporte con menos consumo de energía La entrada Hablemos de Logística 923 con Fernando Lía, Coordinador de Transporte Sustentable del Proyecto ProCLIM-AR &#8211; UNSAM se publicó primero en Webpicking .",
+        "fecha_publicacion": "2026-08-28T20:41:42+00:00",
+        "fuente_id": "webpicking",
+        "fuente_nombre": "Webpicking",
+        "categoria": "Logística"
+      },
+      {
+        "id": "5a43cf912373",
+        "titulo": "LOS COSTOS LOGÍSTICOS AUMENTARON 2,25% EN JULIO",
+        "link": "https://www.cedol.org.ar/logistica/los-costos-logisticos-aumentaron-225-en-julio-2/",
+        "descripcion": "Buenos Aires, 4 de agosto 2026 &#8211; La Universidad Tecnológica Nacional (UTN) a través de su Centro Tecnológico de Transporte, Tránsito y Seguridad Vial (C3T), [&#8230;] The post LOS COSTOS LOGÍSTICOS AUMENTARON 2,25% EN JULIO appeared first on CEDOL .",
+        "fecha_publicacion": "2026-08-04T22:27:27+00:00",
+        "fuente_id": "cedol",
+        "fuente_nombre": "CEDOL",
+        "categoria": "Logística"
+      },
+      {
+        "id": "7dd9bf725ad8",
+        "titulo": "SANTA FE ACTIVA LA TRANSICIÓN ENERGÉTICA DEL TRANSPORTE DE CARGAS",
+        "link": "https://www.cedol.org.ar/logistica/santa-fe-activa-la-transicion-energetica-del-transporte-de-cargas/",
+        "descripcion": "CEDOL se sumó a la Mesa Provincial de Transporte de Cargas y Logística constituida en la ciudad de Rosario. La iniciativa busca transformar la sostenibilidad [&#8230;] The post SANTA FE ACTIVA LA TRANSICIÓN ENERGÉTICA DEL TRANSPORTE DE CARGAS appeared first on CEDOL .",
+        "fecha_publicacion": "2026-07-31T14:17:36+00:00",
+        "fuente_id": "cedol",
+        "fuente_nombre": "CEDOL",
+        "categoria": "Logística"
+      }
+    ],
+    "Fiscal": [
+      {
+        "id": "30da14499ed6",
+        "titulo": "Fallo de la Corte frenó retenciones por $7.000 millones y 307 años en Ingresos Brutos",
+        "link": "https://www.iprofesional.com/impuestos/463370-fallo-freno-retenciones-7000-millones-pesos-ingresos-brutos",
+        "descripcion": "Un fallo de la Corte Suprema dictó medidas cautelares para que Misiones no siga cobrando retenciones a dos empresas con grandes saldos acumulados",
+        "fecha_publicacion": "2026-08-31T10:50:00+00:00",
+        "fuente_id": "iprof_impuestos",
+        "fuente_nombre": "iProfesional Impuestos",
+        "categoria": "Fiscal"
+      },
+      {
+        "id": "8a5ce1e97c90",
+        "titulo": "Bancos y billeteras virtuales ya pueden debitar las cuotas impagas de los créditos",
+        "link": "https://www.iprofesional.com/impuestos/463365-bancos-y-billeteras-virtuales-ya-pueden-debitar-las-cuotas-impagas-de-creditos",
+        "descripcion": "A partir de este 31 de agosto de 2026, entra en vigencia el sistema de Cobro con Transferencia (CCT) impulsado por el Banco Central",
+        "fecha_publicacion": "2026-08-31T09:48:00+00:00",
+        "fuente_id": "iprof_impuestos",
+        "fuente_nombre": "iProfesional Impuestos",
+        "categoria": "Fiscal"
+      },
+      {
+        "id": "a2e392afb9ce",
+        "titulo": "El Gobierno confirma el pago del bono previsional de $70 mil en septiembre",
+        "link": "https://www.iprofesional.com/impuestos/463366-el-gobierno-confirma-el-pago-del-bono-previsional-de-70-mil-en-septiembre",
+        "descripcion": "El Gobierno nacional confirmó que pagará un bono extraordinario previsional de hasta $70.000 en septiembre de 2026. Quiénes lo reciben",
+        "fecha_publicacion": "2026-08-31T09:46:00+00:00",
+        "fuente_id": "iprof_impuestos",
+        "fuente_nombre": "iProfesional Impuestos",
+        "categoria": "Fiscal"
+      },
+      {
+        "id": "3ac11b3d8f2f",
+        "titulo": "Fideicomisos de construcción al costo: compensar Bienes Personales Responsable Sustituto, una deuda pendiente",
+        "link": "https://www.ambito.com/novedades-fiscales/fideicomisos-construccion-al-costo-compensar-bienes-personales-responsable-sustituto-una-deuda-pendiente-n6316462",
+        "descripcion": "Es frecuente que un fideicomiso de construcción al costo acumule saldos de libre disponibilidad en el IVA y, paralelamente, deba ingresarse Bienes Personales a través del fiduciario como responsable sustituto. La falta de identidad entre ambos sujetos impide la compensación directa e inmoviliza fondos.",
+        "fecha_publicacion": "2026-08-30T23:13:00+00:00",
+        "fuente_id": "ambito_fisc",
+        "fuente_nombre": "Ámbito Fiscal",
+        "categoria": "Fiscal"
+      },
+      {
+        "id": "6870faefe4b0",
+        "titulo": "Impuesto a las Ganancias: cuáles son las consecuencias del nuevo régimen de anticipos para personas humanas",
+        "link": "https://www.ambito.com/novedades-fiscales/impuesto-las-ganancias-cuales-son-las-consecuencias-del-nuevo-regimen-anticipos-personas-humanas-n6316055",
+        "descripcion": "ARCA modificó la determinación de los anticipos del impuesto, implementando un mecanismo de actualización de valores que, ante ciertas rentas, puede provocar efectos significativos sobre el nuevo monto a ingresar",
+        "fecha_publicacion": "2026-08-28T23:21:00+00:00",
+        "fuente_id": "ambito_fisc",
+        "fuente_nombre": "Ámbito Fiscal",
+        "categoria": "Fiscal"
+      },
+      {
+        "id": "24c0a83a9a8f",
+        "titulo": "Resultados financieros frente a Ingresos Brutos: la Comisión Plenaria adopta el criterio de actividad complementaria",
+        "link": "https://www.ambito.com/novedades-fiscales/resultados-financieros-frente-ingresos-brutos-la-comision-plenaria-adopta-el-criterio-actividad-complementaria-n6315206",
+        "descripcion": "La atribución de este tipo de ingresos, a los fines de tributar Ingresos Brutos en las diversas jurisdicciones adheridas al Convenio Multilateral, acaba de dar un giro interpretativo que trasciende la “formalidad administrativa”",
+        "fecha_publicacion": "2026-08-26T22:25:00+00:00",
+        "fuente_id": "ambito_fisc",
+        "fuente_nombre": "Ámbito Fiscal",
+        "categoria": "Fiscal"
+      }
+    ],
     "Comex": [
       {
         "id": "ab0eb51b9fe9",
@@ -52,6 +588,16 @@
         "fecha_publicacion": "2026-08-30T22:35:11+00:00",
         "fuente_id": "mercojuris",
         "fuente_nombre": "Mercojuris",
+        "categoria": "Comex"
+      },
+      {
+        "id": "ff5e49fd3227",
+        "titulo": "Exportaciones de Argentina a Europa crecieron en un 20% y superaron los u$s5100 millones",
+        "link": "https://www.iprofesional.com/actualidad/463356-exportaciones-de-argentina-a-europa-crecieron-en-un-20-y-superaron-los-us5100-millones",
+        "descripcion": "Un informe de la Bolsa de Comercio de Rosario asegura que en los primeros siete meses del 2026 tuvieron un gran impulso en las ventas a la Unión Europea",
+        "fecha_publicacion": "2026-08-30T22:00:00+00:00",
+        "fuente_id": "iprof_comex",
+        "fuente_nombre": "iProfesional Comex",
         "categoria": "Comex"
       },
       {
@@ -103,180 +649,6 @@
         "fuente_id": "trade_news",
         "fuente_nombre": "Trade News",
         "categoria": "Comex"
-      },
-      {
-        "id": "d4bf58d6a600",
-        "titulo": "La reforma aduanera de la Unión Europea: hacia una aduana basada en datos, riesgo y supervisión de las cadenas logísticas",
-        "link": "https://aduananews.com/la-reforma-aduanera-de-la-union-europea-hacia-una-aduana-basada-en-datos-riesgo-y-supervision-de-las-cadenas-logisticas/?utm_source=rss&utm_medium=rss&utm_campaign=la-reforma-aduanera-de-la-union-europea-hacia-una-aduana-basada-en-datos-riesgo-y-supervision-de-las-cadenas-logisticas",
-        "descripcion": "I. Introducción La Unión Aduanera constituye uno de los pilares históricos del proceso de integración europea. Desde su establecimiento en 1968, la eliminación de los derechos de aduana internos y la aplicación de un arancel exterior común han permitido que las administraciones de los Estados miembros actúen como frontera exterior de un espacio económico integrado. [&#8230;] The post La reforma aduanera de la Unión Europea: hacia una aduana basada en datos, riesgo y supervisión de las cadenas lo",
-        "fecha_publicacion": "2026-08-28T06:39:00+00:00",
-        "fuente_id": "aduana_news",
-        "fuente_nombre": "Aduana News",
-        "categoria": "Comex"
-      }
-    ],
-    "Energía y Minería": [
-      {
-        "id": "5eb561d4bbe6",
-        "titulo": "Las ventas de combustibles cayeron 6,4% en julio y acumulan medio año en terreno negativo",
-        "link": "https://dataenergia.ar/petroleo-y-combustibles/las-ventas-de-combustibles-cayeron-6-4-en-julio-y-acumulan-medio-ano-en-terreno-negativo-202683019310",
-        "descripcion": "Las ventas de combustibles en estaciones de servicio cayeron 6,4% interanual en julio al comercializarse 1.368.722 m³, acumulando seis meses consecutivos en terreno negativo y un retroceso cercano al 10% respecto a 2023.",
-        "fecha_publicacion": "2026-08-30T22:31:00+00:00",
-        "fuente_id": "data_energia",
-        "fuente_nombre": "Data Energía",
-        "categoria": "Energía y Minería"
-      },
-      {
-        "id": "80d72cd5d36d",
-        "titulo": "Exploración offshore: YPF oficializó la incorporación de Eni como operador del Área OFF-5 en Uruguay",
-        "link": "https://dataenergia.ar/petroleo-y-combustibles/exploracion-offshore-ypf-oficializo-la-incorporacion-de-eni-como-operador-del-area-off-5-en-uruguay-202683018520",
-        "descripcion": "YPF oficializó la cesión del 50% de participación y la operación del bloque offshore Área OFF-5 en Uruguay a la petrolera italiana Eni, reservándose el 50% restante a través de su filial MIWEN.",
-        "fecha_publicacion": "2026-08-30T21:52:00+00:00",
-        "fuente_id": "data_energia",
-        "fuente_nombre": "Data Energía",
-        "categoria": "Energía y Minería"
-      },
-      {
-        "id": "6505482f06c5",
-        "titulo": "El desafío logístico de transportar palas eólicas de 75 metros y 22 toneladas por las rutas del sur",
-        "link": "https://econojournal.com.ar/renovables-te/el-desafio-de-transportar-palas-eolicas/",
-        "descripcion": "En las rutas del centro y sur de la Provincia de Buenos Aires viajan en estos meses carretones con palas eólicas de unos 75 metros de largo y 22 toneladas cuyo traslado supone acompañamiento, permisos y un trabajo previo de cálculos para resolver rotondas y curvas. En la industria los llaman “paleros”. En Argentina hay [&#8230;]",
-        "fecha_publicacion": "2026-08-30T12:05:59+00:00",
-        "fuente_id": "econojournal",
-        "fuente_nombre": "EconoJournal",
-        "categoria": "Energía y Minería"
-      },
-      {
-        "id": "fefedab405ab",
-        "titulo": "Neuquén 2027, entre el escritorio y la rosca territorial",
-        "link": "https://econojournal.com.ar/enclave/neuquen-2027-entre-el-escritorio-y-la-rosca-territorial/",
-        "descripcion": "Los armados electorales del 2027 en Neuquén se empiezan a definir en dos dimensiones: en los escritorios de la justicia federal y en las recorridas territoriales para buscar candidatos y organizar las estrategias de campaña. Como adelantó EN/CLAVE la semana pasada, la fecha para elegir gobernador, diputados y renovar la mayoría de las intendencias todavía [&#8230;]",
-        "fecha_publicacion": "2026-08-30T11:00:00+00:00",
-        "fuente_id": "econojournal",
-        "fuente_nombre": "EconoJournal",
-        "categoria": "Energía y Minería"
-      },
-      {
-        "id": "7f035a1782a9",
-        "titulo": "Teófilo Lacroze renunció como CEO de Meitner y crecen las dudas sobre el proyecto para construir un pequeño reactor modular en el país",
-        "link": "https://econojournal.com.ar/energia/teofilo-lacroze-renuncio-como-ceo-de-meitner/",
-        "descripcion": "Teófilo Lacroze, CEO de Meitner Energy, se reunió el mes pasado con el ministro de Economía, Luis Caputo, para anunciarle la construcción de un reactor nuclear pequeño en el predio de Atucha. “El proyecto tendrá una inversión estimada de US$ 1.200 millones y será a través de capitales privados estadounidenses en base a una patente [&#8230;]",
-        "fecha_publicacion": "2026-08-28T22:27:11+00:00",
-        "fuente_id": "econojournal",
-        "fuente_nombre": "EconoJournal",
-        "categoria": "Energía y Minería"
-      },
-      {
-        "id": "8eaedceaac93",
-        "titulo": "Gestión ambiental: Santa Cruz fiscaliza el plan de abandono de los 1.160 pozos de YPF en la Cuenca del Golfo San Jorge",
-        "link": "https://dataenergia.ar/petroleo-y-combustibles/gestion-ambiental-santa-cruz-fiscaliza-el-plan-de-abandono-de-los-1-160-pozos-de-ypf-en-la-cuenca-del-golfo-san-jorge-20268281500",
-        "descripcion": "El Gobierno de Santa Cruz puso en marcha la supervisión del plan de abandono de 1.160 pozos inactivados en áreas de la Cuenca del Golfo San Jorge transferidas por YPF.",
-        "fecha_publicacion": "2026-08-28T18:00:00+00:00",
-        "fuente_id": "data_energia",
-        "fuente_nombre": "Data Energía",
-        "categoria": "Energía y Minería"
-      },
-      {
-        "id": "e2ed4fa542d9",
-        "titulo": "RIGI: La industria minera destacó su impacto positivo en las inversiones durante su exposición en el Senado",
-        "link": "https://caem.com.ar/rigi-la-industria-minera-destaco-su-impacto-positivo-en-las-inversiones-durante-su-exposicion-en-el-senado/",
-        "descripcion": "El presidente de la Cámara Argentina de Empresas Mineras (CAEM), Roberto Cacciola, expuso ayer ante el plenario de las comisiones de Presupuesto, Economía Nacional y Legislación del Senado de la Nación, donde sostuvo que el Régimen de Incentivo para Grandes... The post RIGI: La industria minera destacó su impacto positivo en las inversiones durante su exposición en el Senado first appeared on CAEM .",
-        "fecha_publicacion": "2026-08-27T23:38:27+00:00",
-        "fuente_id": "caem",
-        "fuente_nombre": "CAEM",
-        "categoria": "Energía y Minería"
-      },
-      {
-        "id": "6bcba281cca7",
-        "titulo": "CAEM y UIA presentaron un estudio sobre el potencial de desarrollo de proveedores para la minería argentina",
-        "link": "https://caem.com.ar/caem-y-uia-presentaron-un-estudio-sobre-el-potencial-de-desarrollo-de-proveedores-para-la-mineria-argentina/",
-        "descripcion": "En el marco del encuentro organizado por la Mesa del Litio, el Consejo Federal de Inversiones (CFI) y el Banco Interamericano de Desarrollo (BID), la Cámara Argentina de Empresas Mineras (CAEM) y la Unión Industrial Argentina (UIA) presentaron los resultados... The post CAEM y UIA presentaron un estudio sobre el potencial de desarrollo de proveedores para la minería argentina first appeared on CAEM .",
-        "fecha_publicacion": "2026-08-25T20:43:55+00:00",
-        "fuente_id": "caem",
-        "fuente_nombre": "CAEM",
-        "categoria": "Energía y Minería"
-      }
-    ],
-    "Finanzas": [
-      {
-        "id": "2d04c0516773",
-        "titulo": "Goldman Sachs analizó el balance del Grupo Financiero Galicia y recomendó qué hacer con la acción",
-        "link": "https://www.iprofesional.com/finanzas/463157-que-hacer-con-las-acciones-de-galicia-segun-goldman-sachs",
-        "descripcion": "El banco ganó más de lo esperado y recuperó rentabilidad, mientras la mora volvió a crecer. Qué recomienda Goldman Sachs para la acción",
-        "fecha_publicacion": "2026-08-30T22:00:00+00:00",
-        "fuente_id": "iprof_finanzas",
-        "fuente_nombre": "iProfesional Finanzas",
-        "categoria": "Finanzas"
-      },
-      {
-        "id": "1c6cebedd7a4",
-        "titulo": "Bradesco visitó Argentina, mantuvo cautela por la morosidad y eligió estas cinco acciones argentinas",
-        "link": "https://www.iprofesional.com/economia/462996-bradesco-advierte-por-la-mora-y-elige-cinco-acciones-para-invertir",
-        "descripcion": "El gigante brasileño visitó el país y analizó el rumbo económico. Cuáles son las cinco acciones que prefiere y los riesgos que observa en el crédito",
-        "fecha_publicacion": "2026-08-30T21:30:00+00:00",
-        "fuente_id": "iprof_economia",
-        "fuente_nombre": "iProfesional Economía",
-        "categoria": "Finanzas"
-      },
-      {
-        "id": "a4b5a400d59d",
-        "titulo": "Gita Gopinath, ex subdirectora del FMI, elogió la gestión económica de Javier Milei y pidió mayor flexibilidad cambiaria",
-        "link": "https://www.ambito.com/finanzas/gita-gopinath-ex-subdirectora-del-fmi-elogio-la-gestion-economica-javier-milei-y-pidio-mayor-flexibilidad-cambiaria-n6316428",
-        "descripcion": "La ex subdirectora consideró “urgente” que Argentina vuelva a los mercados internacionales y acelere la acumulación de divisas. También pidió avanzar con cautela en la salida del cepo y advirtió sobre las necesidades de financiamiento de 2027.",
-        "fecha_publicacion": "2026-08-30T19:21:00+00:00",
-        "fuente_id": "ambito_fin",
-        "fuente_nombre": "Ámbito Finanzas",
-        "categoria": "Finanzas"
-      },
-      {
-        "id": "29db4af24c79",
-        "titulo": "El Gobierno lanza dos nuevas herramientas para mejorar el cobro de préstamos y reducir la mora",
-        "link": "https://www.iproup.com/finanzas/71092-el-gobierno-prepara-dos-medidas-para-bajar-la-mora-de-los-prestamos",
-        "descripcion": "Con casi 6 millones de personas afectadas por la mora, el Gobierno activa dos mecanismos para mejorar el cobro de préstamos bancarios y fintech",
-        "fecha_publicacion": "2026-08-30T14:20:00+00:00",
-        "fuente_id": "iproup_fintech",
-        "fuente_nombre": "iProUP Fintech",
-        "categoria": "Finanzas"
-      },
-      {
-        "id": "073eac573b22",
-        "titulo": "El BCE propone llevar reservas a blockchain para impulsar la tokenización en Europa",
-        "link": "https://www.iproup.com/finanzas/71091-bce-propone-llevar-reservas-a-blockchain-para-impulsar-la-tokenizacion",
-        "descripcion": "El BCE impulsa una infraestructura blockchain para integrar reservas, activos tokenizados y liquidaciones dentro del sistema financiero europeo",
-        "fecha_publicacion": "2026-08-30T13:01:00+00:00",
-        "fuente_id": "iproup_fintech",
-        "fuente_nombre": "iProUP Fintech",
-        "categoria": "Finanzas"
-      },
-      {
-        "id": "21a868ad2fdc",
-        "titulo": "Los dólares van a sobrar en septiembre y es momento de aprovechar las tasas que ofrece el mercado",
-        "link": "https://www.iprofesional.com/finanzas/463318-van-a-sobrar-dolares-y-es-momento-de-ganar-con-tasas-de-interes",
-        "descripcion": "Mientras el mercado cambiario siga siendo positivo, no hay en el horizonte probabilidades de un salto de precios importante en el tipo de cambio",
-        "fecha_publicacion": "2026-08-30T12:00:00+00:00",
-        "fuente_id": "iprof_economia",
-        "fuente_nombre": "iProfesional Economía",
-        "categoria": "Finanzas"
-      },
-      {
-        "id": "74fc8952b157",
-        "titulo": "La compra de dólares marcó un récord anual por el \"efecto mundial\" y superó los u$s2.900 millones",
-        "link": "https://www.iproup.com/finanzas/71087-los-argentinos-marcan-un-record-anual-de-compra-de-dolares",
-        "descripcion": "Los ahorristas marcaron la mayor compra de dólares del año, mientras el BCRA adquirió divisas y las reservas crecieron durante el período",
-        "fecha_publicacion": "2026-08-30T11:52:00+00:00",
-        "fuente_id": "iproup_fintech",
-        "fuente_nombre": "iProUP Fintech",
-        "categoria": "Finanzas"
-      },
-      {
-        "id": "67ee03343d46",
-        "titulo": "La persistencia de la demanda minorista: el desafío estructural del BCRA frente a la cobertura cambiaria",
-        "link": "https://www.ambito.com/finanzas/la-persistencia-la-demanda-minorista-el-desafio-estructural-del-bcra-frente-la-cobertura-cambiaria-n6316265",
-        "descripcion": "El atesoramiento minorista superó los u$s3.460 millones en julio. Esta demanda inelástica plantea interrogantes sobre la liquidez disponible para futuros compromisos financieros.",
-        "fecha_publicacion": "2026-08-29T20:32:00+00:00",
-        "fuente_id": "ambito_fin",
-        "fuente_nombre": "Ámbito Finanzas",
-        "categoria": "Finanzas"
       }
     ],
     "Agro": [
@@ -393,336 +765,6 @@
         "categoria": "Fulbito"
       }
     ],
-    "Automotor": [
-      {
-        "id": "12f810bc0c54",
-        "titulo": "Autos usados: cuáles son los requisitos para comprar y transferir un vehículo",
-        "link": "https://www.iprofesional.com/autos/463344-comprar-un-auto-usado-que-cambio-con-la-cedula-azul-y-el-ceta",
-        "descripcion": "Tras los recientes cambios, los pasos esenciales y los documentos necesarios para transferir un vehículo usado en Argentina cambiaron por completo",
-        "fecha_publicacion": "2026-08-30T15:14:00+00:00",
-        "fuente_id": "iprof_autos",
-        "fuente_nombre": "iProfesional Autos",
-        "categoria": "Automotor"
-      },
-      {
-        "id": "b88f1909f820",
-        "titulo": "El concesionario Fangio de Mercedes-Benz cambia de dueños y deja atrás su emblemático nombre",
-        "link": "https://www.iprofesional.com/autos/463331-concesionario-mercedes-benz-cambia-de-dueno-y-deja-atras-un-nombre-emblematico",
-        "descripcion": "En medio de un escenario de profundos cambios dentro de la industria, la empresa cambiará de propietarios y dejará atrás un nombre icónico",
-        "fecha_publicacion": "2026-08-30T14:51:00+00:00",
-        "fuente_id": "iprof_autos",
-        "fuente_nombre": "iProfesional Autos",
-        "categoria": "Automotor"
-      },
-      {
-        "id": "6dff3bdfb1a9",
-        "titulo": "Después de un año, Volkswagen reabre el segundo turno de producción para fabricar la nueva Amarok",
-        "link": "https://www.iprofesional.com/autos/463330-volkswagenreabre-el-segundo-turno-para-fabricar-la-nueva-amarok",
-        "descripcion": "La marca acelera los pasos para la producción del nuevo modelo. Hace unos días, exhibió su nueva imagen más descubierta en Brasil",
-        "fecha_publicacion": "2026-08-30T14:37:00+00:00",
-        "fuente_id": "iprof_autos",
-        "fuente_nombre": "iProfesional Autos",
-        "categoria": "Automotor"
-      },
-      {
-        "id": "f406181ca03d",
-        "titulo": "Servicios. Sugerencias para no llevar el vehículo con una presión inadecuada de los neumáticos, lo que los desgasta",
-        "link": "https://www.diariodeautos.com.ar/index.php/noticias/servicios/item/13379-servicios-sugerencias-para-no-llevar-el-vehículo-con-una-presión-inadecuada-de-los-neumáticos",
-        "descripcion": "Muchas veces en esta página, los usuarios preguntan por inconvenientes en la dirección o temas de la suspensión y hasta de la dirección del vehículo que manejan. La mayoría de las veces, estos inconvenientes tienen que ver con la presión de los neumáticos y no con lo que suponían o preguntaban. Por eso hicimos un relevamiento entre gomeros y los productores de cubiertas para que nos dieran algunos consejos, que ponemos a disposición. Presión Lo primero por saber es si la gente conoce ¿cuál es la",
-        "fecha_publicacion": "2026-08-30T09:50:14+00:00",
-        "fuente_id": "diario_autos",
-        "fuente_nombre": "Diario de Autos",
-        "categoria": "Automotor"
-      },
-      {
-        "id": "8f4218bd1302",
-        "titulo": "Las 10 claves del MG ZS Hybrid",
-        "link": "https://arodarpost.com.ar/las-10-claves-del-mg-zs-hybrid/",
-        "descripcion": "La variedad de marcas y modelos que llegaron en los últimos meses a la Argentina cambiaron el mercado automotor. En esta competencia, el ganador es el consumidor que puede tener una mayor oferta de elección con precios que, si bien en muchos casos siguen altos, son más atractivos que un tiempo atrás. MG es una [&#8230;]",
-        "fecha_publicacion": "2026-08-29T22:21:44+00:00",
-        "fuente_id": "arodar",
-        "fuente_nombre": "A Rodar Post",
-        "categoria": "Automotor"
-      },
-      {
-        "id": "c36e2ca50e58",
-        "titulo": "Baterías para los vehículos. Algunas sugerencias para realizar el cambio en forma segura y sin contratiempos",
-        "link": "https://www.diariodeautos.com.ar/index.php/noticias/servicios/item/16226-baterías",
-        "descripcion": "Luego de varias preguntas de nuestros seguidores y oyentes cabe destacar que, a partir de los 3 años de uso, la mayoría de las baterías para los vehículos suelen comenzar a descargarse o dar algunos inconvenientes. Además, durante el invierno sufren más, provocando incluso que el motor no arranque. Para evitar estas situaciones, la sugerencia es estar atento a las señales, por lo que sería necesario acudir a un taller profesional en caso de haya cambios en el funcionamiento. Cabe recordar que ha",
-        "fecha_publicacion": "2026-08-29T03:18:55+00:00",
-        "fuente_id": "diario_autos",
-        "fuente_nombre": "Diario de Autos",
-        "categoria": "Automotor"
-      },
-      {
-        "id": "c88f22f04db9",
-        "titulo": "DFSK: la marca china apuesta a expandir sus operaciones en provincias",
-        "link": "https://arodarpost.com.ar/dfsk-la-marca-china-apuesta-a-expandir-sus-operaciones-en-provincias/",
-        "descripcion": "DFSK Argentina participó de la segunda muestra Expo Sobre Ruedas 2026, uno de los principales encuentros vinculados al mundo automotor y la movilidad del Noroeste argentino, que se desarrolló en el predio de la Sociedad Rural de esta provincia. La marca estuvo junto a Bluemotors, concesionario oficial DFSK en Tucumán, con una propuesta que tuvo [&#8230;]",
-        "fecha_publicacion": "2026-08-28T20:28:42+00:00",
-        "fuente_id": "arodar",
-        "fuente_nombre": "A Rodar Post",
-        "categoria": "Automotor"
-      },
-      {
-        "id": "5e28eb5481de",
-        "titulo": "Ram develó la nueva Rampage Rebel Ignition con guiño para el mercado local",
-        "link": "https://www.ambito.com/autos/ram-develo-la-nueva-rampage-rebel-ignition-guino-el-mercado-local-n6315965",
-        "descripcion": "Con solo 400 ejemplares producidos, la camioneta compacta estrena diseño exclusivo, alto equipamiento y mayor rendimiento a la espera de un posible desembarco en el país.",
-        "fecha_publicacion": "2026-08-28T19:28:00+00:00",
-        "fuente_id": "ambito_autos",
-        "fuente_nombre": "Ámbito Autos",
-        "categoria": "Automotor"
-      }
-    ],
-    "Mercados": [
-      {
-        "id": "f17a85f6431f",
-        "titulo": "¿Cómo reshapeará el conflicto entre EE.UU. e Irán el mundo?",
-        "link": "https://es.investing.com/news/economy-news/como-reshapeara-el-conflicto-entre-eeuu-e-iran-el-mundo-3815831",
-        "descripcion": "",
-        "fecha_publicacion": "2026-08-30T13:41:58+00:00",
-        "fuente_id": "investing_economia",
-        "fuente_nombre": "Investing Economía",
-        "categoria": "Mercados"
-      },
-      {
-        "id": "686917fdfe3b",
-        "titulo": "Las 4 señales que indican que Bitcoin tocó fondo y puede iniciar una nueva suba",
-        "link": "https://www.iproup.com/economia-digital/71086-las-4-senales-de-bitcoin-que-podrian-anticipar-una-nueva-suba",
-        "descripcion": "Bitcoin mejoró varios indicadores y cuatro señales refuerzan la posibilidad de que el activo podría dejar atrás la etapa bajista e iniciar una suba",
-        "fecha_publicacion": "2026-08-30T11:50:00+00:00",
-        "fuente_id": "iproup_eco",
-        "fuente_nombre": "iProUP Economía Digital",
-        "categoria": "Mercados"
-      },
-      {
-        "id": "e46c3d63e789",
-        "titulo": "Los argentinos gastaron más de u$s700 millones en Shein, Temu y Amazon este año",
-        "link": "https://www.iproup.com/economia-digital/71088-los-argentinos-ya-gastaron-millones-en-shein-temu-y-amazon-este-ano",
-        "descripcion": "Los argentinos aceleran sus compras en plataformas internacionales y el gasto vía courier se acerca al total registrado durante 2025",
-        "fecha_publicacion": "2026-08-30T11:50:00+00:00",
-        "fuente_id": "iproup_eco",
-        "fuente_nombre": "iProUP Economía Digital",
-        "categoria": "Mercados"
-      },
-      {
-        "id": "8a426b177390",
-        "titulo": "SpaceX lanza el telescopio espacial Roman de la NASA, valorado en 4.300 millones de dólares",
-        "link": "https://es.investing.com/news/economy-news/spacex-lanzara-el-telescopio-espacial-roman-de-la-nasa-valorado-en-4300-millones-de-dolares-3815820",
-        "descripcion": "",
-        "fecha_publicacion": "2026-08-30T09:57:47+00:00",
-        "fuente_id": "investing_economia",
-        "fuente_nombre": "Investing Economía",
-        "categoria": "Mercados"
-      },
-      {
-        "id": "16a90584bbe7",
-        "titulo": "Llegan 18 nuevos CEDEAR y la City ya eligió los papeles que tienen mayor potencial",
-        "link": "https://www.iproup.com/finanzas/71050-lanzan-18-nuevos-cedear-y-la-city-revela-en-cuales-conviene-invertir-hoy",
-        "descripcion": "El menú se amplía con opciones en Wall Street, semiconductores y commodities. Lista completa, ratios de canje y perfil de inversor en esta nota de iProUP",
-        "fecha_publicacion": "2026-08-30T09:07:00+00:00",
-        "fuente_id": "iproup_eco",
-        "fuente_nombre": "iProUP Economía Digital",
-        "categoria": "Mercados"
-      },
-      {
-        "id": "d2834352757e",
-        "titulo": "Ataque de dron ucraniano provoca incendio en refinería rusa",
-        "link": "https://es.investing.com/news/economy-news/ataque-de-dron-ucraniano-provoca-incendio-en-refineria-rusa-3815802",
-        "descripcion": "",
-        "fecha_publicacion": "2026-08-30T07:49:27+00:00",
-        "fuente_id": "investing_economia",
-        "fuente_nombre": "Investing Economía",
-        "categoria": "Mercados"
-      }
-    ],
-    "Fiscal": [
-      {
-        "id": "3aed7c0e6d82",
-        "titulo": "Ganancias cómo se calculan los anticipos de ARCA y qué pasa con las rentas en dólares",
-        "link": "https://www.iprofesional.com/impuestos/463337-arca-modifica-los-anticipos-de-ganancias-y-genera-un-descalce-con-el-dolar",
-        "descripcion": "ARCA modificó el cálculo de anticipos de Ganancias y la actualización por IPC puede generar diferencias para quienes tienen rentas en dólares",
-        "fecha_publicacion": "2026-08-30T13:13:00+00:00",
-        "fuente_id": "iprof_impuestos",
-        "fuente_nombre": "iProfesional Impuestos",
-        "categoria": "Fiscal"
-      },
-      {
-        "id": "f1da9b83b655",
-        "titulo": "Giro de la Corte Suprema: habilita su competencia y limita los pagos a cuenta de Ingresos Brutos",
-        "link": "https://www.iprofesional.com/impuestos/463319-corte-suprema-falla-contra-agresivos-pagos-a-cuenta-de-ingresos-brutos",
-        "descripcion": "Un fallo de la Corte aceptó una cuestión de tributación local y confirmó dos medidas cautelares para que Misiones detenga retenciones de Ingresos Brutos",
-        "fecha_publicacion": "2026-08-29T16:00:00+00:00",
-        "fuente_id": "iprof_impuestos",
-        "fuente_nombre": "iProfesional Impuestos",
-        "categoria": "Fiscal"
-      },
-      {
-        "id": "6c7e00ae028a",
-        "titulo": "ARCA extendió el plazo para Ganancias: hasta cuándo hay tiempo",
-        "link": "https://www.iprofesional.com/impuestos/463271-arca-extendio-el-plazo-para-ganancias-hasta-cuando-hay-tiempo",
-        "descripcion": "La nueva medida del organismo fiscal otorga un margen extra para la presentación formal de la declaración jurada de 2025. Los detalles clave",
-        "fecha_publicacion": "2026-08-29T10:15:00+00:00",
-        "fuente_id": "iprof_impuestos",
-        "fuente_nombre": "iProfesional Impuestos",
-        "categoria": "Fiscal"
-      },
-      {
-        "id": "6870faefe4b0",
-        "titulo": "Impuesto a las Ganancias: cuáles son las consecuencias del nuevo régimen de anticipos para personas humanas",
-        "link": "https://www.ambito.com/novedades-fiscales/impuesto-las-ganancias-cuales-son-las-consecuencias-del-nuevo-regimen-anticipos-personas-humanas-n6316055",
-        "descripcion": "ARCA modificó la determinación de los anticipos del impuesto, implementando un mecanismo de actualización de valores que, ante ciertas rentas, puede provocar efectos significativos sobre el nuevo monto a ingresar",
-        "fecha_publicacion": "2026-08-28T23:21:00+00:00",
-        "fuente_id": "ambito_fisc",
-        "fuente_nombre": "Ámbito Fiscal",
-        "categoria": "Fiscal"
-      },
-      {
-        "id": "24c0a83a9a8f",
-        "titulo": "Resultados financieros frente a Ingresos Brutos: la Comisión Plenaria adopta el criterio de actividad complementaria",
-        "link": "https://www.ambito.com/novedades-fiscales/resultados-financieros-frente-ingresos-brutos-la-comision-plenaria-adopta-el-criterio-actividad-complementaria-n6315206",
-        "descripcion": "La atribución de este tipo de ingresos, a los fines de tributar Ingresos Brutos en las diversas jurisdicciones adheridas al Convenio Multilateral, acaba de dar un giro interpretativo que trasciende la “formalidad administrativa”",
-        "fecha_publicacion": "2026-08-26T22:25:00+00:00",
-        "fuente_id": "ambito_fisc",
-        "fuente_nombre": "Ámbito Fiscal",
-        "categoria": "Fiscal"
-      },
-      {
-        "id": "995ae407c64d",
-        "titulo": "Adecuaron el procedimiento para que los jueces y magistrados mayores de 75 años mantengan sus cargos",
-        "link": "https://www.ambito.com/novedades-fiscales/adecuaron-el-procedimiento-que-los-jueces-y-magistrados-mayores-75-anos-mantengan-sus-cargos-n6315226",
-        "descripcion": "Los jueces y magistrados, cuando cumplen los 75 años de edad, deberían jubilarse; sin embargo, pueden permanecer en ejercicio, lo que requiere un nuevo nombramiento donde intervienen el Poder Ejecutivo y el Senado",
-        "fecha_publicacion": "2026-08-26T22:24:00+00:00",
-        "fuente_id": "ambito_fisc",
-        "fuente_nombre": "Ámbito Fiscal",
-        "categoria": "Fiscal"
-      }
-    ],
-    "Laboral": [
-      {
-        "id": "86e84018ef7c",
-        "titulo": "Un cerrajero puede cobrar hasta $160.000 y esto cuesta cuesta cada trabajo en 2026",
-        "link": "https://www.iprofesional.com/management/463021-cuanto-gana-un-cerrajero-en-argentina-en-2026-y-por-que-cuesta-encontrar-profesionales",
-        "descripcion": "En agosto de 2026, un cerrajero puede cobrar hasta $160.000 por algunos servicios. Cuánto cuesta cada trabajo y por qué cuesta encontrar profesionales",
-        "fecha_publicacion": "2026-08-30T11:00:00+00:00",
-        "fuente_id": "iprof_management",
-        "fuente_nombre": "iProfesional Management",
-        "categoria": "Laboral"
-      },
-      {
-        "id": "83eb87dad6cf",
-        "titulo": "FAL: qué deberán hacer las empresas antes del 1° de noviembre y qué pasa si no alcanza",
-        "link": "https://www.iprofesional.com/management/463111-fal-que-deberan-hacer-las-empresas-antes-del-1-de-noviembre-y-que-pasa-si-no-alcanza",
-        "descripcion": "El nuevo Fondo de Asistencia Laboral comienza a regir el 1° de noviembre. Qué deben preparar las empresas, cuánto aportarán y quién paga si falta dinero",
-        "fecha_publicacion": "2026-08-30T11:00:00+00:00",
-        "fuente_id": "iprof_management",
-        "fuente_nombre": "iProfesional Management",
-        "categoria": "Laboral"
-      },
-      {
-        "id": "d75df8d360df",
-        "titulo": "Del junior al CEO, los millonarios salarios del sector de Energía en la Argentina de Vaca Muerta",
-        "link": "https://www.iprofesional.com/management/463231-sueldos-de-energia-en-vaca-muerta-del-junior-al-ceo",
-        "descripcion": "Las cifras llegan a más de 18 millones de pesos por mes, pero varían por seniority y por la cuenca en la que se desempeñe cada trabajador",
-        "fecha_publicacion": "2026-08-29T11:53:00+00:00",
-        "fuente_id": "iprof_management",
-        "fuente_nombre": "iProfesional Management",
-        "categoria": "Laboral"
-      },
-      {
-        "id": "4c8ab50dbfd9",
-        "titulo": "Trabajo decente en las plataformas digitales: una nueva norma mundial",
-        "link": "https://voices.ilo.org/es-es/podcast/trabajo-decente-en-las-plataformas-digitales-una-nueva-norma-mundial",
-        "descripcion": "Las plataformas digitales han transformado el mundo del trabajo, generando nuevas oportunidades, pero también importantes desafíos para los derechos y la protección de los trabajadores. En este episodio de El futuro del trabajo, Nuno Cunha, especialista en instituciones de mercados laborales de la OIT, explica qué supone el nuevo Convenio núm. 193, la primera norma internacional del trabajo sobre la economía de plataformas, cómo fue elaborado a través del diálogo social y cuáles son los próximos",
-        "fecha_publicacion": "2026-08-26T00:00:00+00:00",
-        "fuente_id": "oit_podcast",
-        "fuente_nombre": "OIT Podcast",
-        "categoria": "Laboral"
-      },
-      {
-        "id": "07f564b6ffd7",
-        "titulo": "Riesgos psicosociales en el trabajo: la amenaza invisible para la salud de los trabajadores",
-        "link": "https://voices.ilo.org/es-es/podcast/riesgos-psicosociales-en-el-trabajo-la-amenaza-invisible-para-la-salud-de-los-trabajadores",
-        "descripcion": "En este episodio del pódcast “El futuro del trabajo de la OIT”, Dafne Papandrea y Lucía Risueño Navarro explican cómo los riesgos psicosociales —como las largas jornadas laborales, la inseguridad en el empleo y el acoso en el lugar de trabajo— afectan a la salud de los trabajadores, y qué medidas pueden adoptarse para crear entornos laborales más saludables en todo el mundo.",
-        "fecha_publicacion": "2026-04-28T00:00:00+00:00",
-        "fuente_id": "oit_podcast",
-        "fuente_nombre": "OIT Podcast",
-        "categoria": "Laboral"
-      },
-      {
-        "id": "ef1638f33032",
-        "titulo": "La inteligencia artificial generativa y las desigualdades de género en el trabajo",
-        "link": "https://voices.ilo.org/es-es/podcast/la-inteligencia-artificial-generativa-y-las-desigualdades-de-genero-en-el-trabajo",
-        "descripcion": "En este episodio del pódcast de la Organización Internacional del Trabajo, Janine Berg, Economista senior en la OIT, presenta un nuevo informe sobre el impacto de la inteligencia artificial generativa en el mundo del trabajo. La experta explica por qué las mujeres están más expuestas que los hombres a los riesgos asociados a esta tecnología y qué significa esto para la igualdad en el mercado laboral.",
-        "fecha_publicacion": "2026-03-09T00:00:00+00:00",
-        "fuente_id": "oit_podcast",
-        "fuente_nombre": "OIT Podcast",
-        "categoria": "Laboral"
-      }
-    ],
-    "Internacional": [
-      {
-        "id": "ccfd0f60a68f",
-        "titulo": "S&P confirma las calificaciones ’BB-/B’ de Jordania por su resiliencia económica",
-        "link": "https://es.investing.com/news/world-news/sp-confirma-las-calificaciones-bbb-de-jordania-por-su-resiliencia-economica-93CH-3815576",
-        "descripcion": "",
-        "fecha_publicacion": "2026-08-28T21:08:44+00:00",
-        "fuente_id": "investing_intl",
-        "fuente_nombre": "Investing Internacional",
-        "categoria": "Internacional"
-      },
-      {
-        "id": "538a308bd165",
-        "titulo": "S&P confirma el rating A+ de Portugal por sus perspectivas de crecimiento",
-        "link": "https://es.investing.com/news/world-news/sp-confirma-el-rating-a-de-portugal-por-sus-perspectivas-de-crecimiento-93CH-3815575",
-        "descripcion": "",
-        "fecha_publicacion": "2026-08-28T21:08:15+00:00",
-        "fuente_id": "investing_intl",
-        "fuente_nombre": "Investing Internacional",
-        "categoria": "Internacional"
-      },
-      {
-        "id": "5ffd4267dc4f",
-        "titulo": "Moody’s mejora la perspectiva de Nigeria por su posición externa más sólida",
-        "link": "https://es.investing.com/news/world-news/moodys-mejora-la-perspectiva-de-nigeria-por-su-posicion-externa-mas-solida-93CH-3815573",
-        "descripcion": "",
-        "fecha_publicacion": "2026-08-28T21:05:29+00:00",
-        "fuente_id": "investing_intl",
-        "fuente_nombre": "Investing Internacional",
-        "categoria": "Internacional"
-      },
-      {
-        "id": "fbd23c345555",
-        "titulo": "La economía checa crece un 0,4% en el segundo trimestre",
-        "link": "https://es.investing.com/news/economic-indicators/la-economia-checa-crece-un-04-en-el-segundo-trimestre-93CH-3814443",
-        "descripcion": "",
-        "fecha_publicacion": "2026-08-28T07:33:03+00:00",
-        "fuente_id": "investing_intl2",
-        "fuente_nombre": "Investing Mundo",
-        "categoria": "Internacional"
-      },
-      {
-        "id": "449392422ca9",
-        "titulo": "Las ventas minoristas de España caen un 0,3% en julio",
-        "link": "https://es.investing.com/news/economic-indicators/las-ventas-minoristas-de-espana-caen-un-03-en-julio-93CH-3814422",
-        "descripcion": "",
-        "fecha_publicacion": "2026-08-28T07:14:16+00:00",
-        "fuente_id": "investing_intl2",
-        "fuente_nombre": "Investing Mundo",
-        "categoria": "Internacional"
-      },
-      {
-        "id": "386de0665330",
-        "titulo": "La inflación en Francia sube al 2,7% en agosto por los costes energéticos",
-        "link": "https://es.investing.com/news/economic-indicators/la-inflacion-en-francia-sube-al-27-en-agosto-por-los-costes-energeticos-93CH-3814417",
-        "descripcion": "",
-        "fecha_publicacion": "2026-08-28T07:13:04+00:00",
-        "fuente_id": "investing_intl2",
-        "fuente_nombre": "Investing Mundo",
-        "categoria": "Internacional"
-      }
-    ],
     "Análisis Consultoras": [
       {
         "id": "bddac1b30b6e",
@@ -803,28 +845,6 @@
         "fuente_id": "iaraf",
         "fuente_nombre": "IARAF",
         "categoria": "Análisis Consultoras"
-      }
-    ],
-    "Logística": [
-      {
-        "id": "5a43cf912373",
-        "titulo": "LOS COSTOS LOGÍSTICOS AUMENTARON 2,25% EN JULIO",
-        "link": "https://www.cedol.org.ar/logistica/los-costos-logisticos-aumentaron-225-en-julio-2/",
-        "descripcion": "Buenos Aires, 4 de agosto 2026 &#8211; La Universidad Tecnológica Nacional (UTN) a través de su Centro Tecnológico de Transporte, Tránsito y Seguridad Vial (C3T), [&#8230;] The post LOS COSTOS LOGÍSTICOS AUMENTARON 2,25% EN JULIO appeared first on CEDOL .",
-        "fecha_publicacion": "2026-08-04T22:27:27+00:00",
-        "fuente_id": "cedol",
-        "fuente_nombre": "CEDOL",
-        "categoria": "Logística"
-      },
-      {
-        "id": "7dd9bf725ad8",
-        "titulo": "SANTA FE ACTIVA LA TRANSICIÓN ENERGÉTICA DEL TRANSPORTE DE CARGAS",
-        "link": "https://www.cedol.org.ar/logistica/santa-fe-activa-la-transicion-energetica-del-transporte-de-cargas/",
-        "descripcion": "CEDOL se sumó a la Mesa Provincial de Transporte de Cargas y Logística constituida en la ciudad de Rosario. La iniciativa busca transformar la sostenibilidad [&#8230;] The post SANTA FE ACTIVA LA TRANSICIÓN ENERGÉTICA DEL TRANSPORTE DE CARGAS appeared first on CEDOL .",
-        "fecha_publicacion": "2026-07-31T14:17:36+00:00",
-        "fuente_id": "cedol",
-        "fuente_nombre": "CEDOL",
-        "categoria": "Logística"
       }
     ]
   }
