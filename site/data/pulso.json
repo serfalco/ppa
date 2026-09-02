@@ -1,19 +1,19 @@
 {
-  "generado_en": "2026-09-02T13:02:22.019262+00:00",
-  "generado_ar": "02/09/2026 10:02",
+  "generado_en": "2026-09-02T22:36:17.794599+00:00",
+  "generado_ar": "02/09/2026 19:36",
   "hechos": [
     {
       "slug": "brecha-dolar",
       "categoria": "Cambiario",
-      "titulo": "La brecha del dólar quedó casi planchada: -0,1%",
-      "bajada": "El MEP ($1.534) frente al oficial ($1.535). Además, el CCL marca 3,7% y el blue, 0,7%.",
+      "titulo": "La brecha del dólar quedó casi planchada: 0,0%",
+      "bajada": "El MEP ($1.535) frente al oficial ($1.535). Además, el CCL marca 3,9% y el blue, 0,3%.",
       "dato": {
-        "n": "-0,1%",
+        "n": "0,0%",
         "txt": "Brecha entre el dólar MEP y el oficial"
       },
       "cuerpo": [
-        "El dólar oficial cerró a $1.535 para la venta y el MEP a $1.534, dejando una brecha de -0,1% entre ambos.",
-        "Mirando el resto de las cotizaciones, el contado con liquidación ($1.592) marca 3,7% y el blue ($1.545) queda en 0,7% de brecha contra el oficial."
+        "El dólar oficial cerró a $1.535 para la venta y el MEP a $1.535, dejando una brecha de 0,0% entre ambos.",
+        "Mirando el resto de las cotizaciones, el contado con liquidación ($1.594) marca 3,9% y el blue ($1.540) queda en 0,3% de brecha contra el oficial."
       ],
       "tabla": [
         [
@@ -22,48 +22,48 @@
         ],
         [
           "Mayorista",
-          "$1.513"
+          "$1.511"
         ],
         [
           "MEP",
-          "$1.534"
+          "$1.535"
         ],
         [
           "CCL",
-          "$1.592"
+          "$1.594"
         ],
         [
           "Blue",
-          "$1.545"
+          "$1.540"
         ],
         [
           "Tarjeta",
           "$1.996"
         ]
       ],
-      "metodo": "Brecha = (MEP ÷ Oficial − 1) × 100 = (1.534 ÷ 1.535 − 1) × 100 = -0,1%.",
+      "metodo": "Brecha = (MEP ÷ Oficial − 1) × 100 = (1.535 ÷ 1.535 − 1) × 100 = 0,0%.",
       "criollo": "La brecha es cuánto más caro está el dólar financiero (el que se compra con bonos) que el oficial. Cuando es chica, los dos precios casi se tocan.",
       "fuente_nombre": "DolarApi · cálculo PPA",
       "fuente_url": "https://dolarapi.com",
-      "dato_fecha": "02/09/2026 10:02",
+      "dato_fecha": "02/09/2026 19:36",
       "prioridad": 90
     },
     {
       "slug": "reservas-bcra",
       "categoria": "Reservas",
-      "titulo": "Las reservas del BCRA quedaron en US$ 49.793 millones",
-      "bajada": "Stock bruto del Banco Central, una baja del 2,1% en el día.",
+      "titulo": "Las reservas del BCRA quedaron en US$ 48.259 millones",
+      "bajada": "Stock bruto del Banco Central, una baja del 3,1% en el día.",
       "dato": {
-        "n": "49.793",
-        "txt": "millones de USD · reservas brutas · -2,1%"
+        "n": "48.259",
+        "txt": "millones de USD · reservas brutas · -3,1%"
       },
       "cuerpo": [
-        "Las reservas internacionales brutas del Banco Central cerraron en US$ 49.793 millones, una baja del 2,1% en el día. Es el stock bruto, antes de descontar swaps, encajes y otras obligaciones."
+        "Las reservas internacionales brutas del Banco Central cerraron en US$ 48.259 millones, una baja del 3,1% en el día. Es el stock bruto, antes de descontar swaps, encajes y otras obligaciones."
       ],
       "criollo": "Son los dólares que tiene el Banco Central. El número bruto es el total; el neto (que descuenta deudas) suele ser bastante más bajo.",
       "fuente_nombre": "BCRA API v4",
       "fuente_url": "https://www.bcra.gob.ar",
-      "dato_fecha": "28/08/2026",
+      "dato_fecha": "31/08/2026",
       "prioridad": 88
     },
     {
@@ -88,15 +88,14 @@
     {
       "slug": "inflacion-ipc",
       "categoria": "Inflación",
-      "titulo": "El IPC marcó 2,3% mensual, con el núcleo en 1,9%",
-      "bajada": "La inflación núcleo corrió por debajo del nivel general.",
+      "titulo": "El IPC marcó 2,3% mensual",
+      "bajada": "Último dato del índice de precios.",
       "dato": {
         "n": "2,3%",
-        "txt": "IPC mensual · núcleo 1,9%"
+        "txt": "IPC mensual"
       },
       "cuerpo": [
-        "El último IPC nacional registró una variación mensual del 2,3%.",
-        "El componente núcleo — que excluye precios estacionales y regulados y suele marcar la tendencia de fondo — avanzó 1,9%, por debajo del índice general."
+        "El último IPC nacional registró una variación mensual del 2,3%."
       ],
       "criollo": "El IPC general mide todo. El núcleo saca lo que sube o baja por temporada o por decisión del Estado, para mostrar la inflación de fondo.",
       "fuente_nombre": "INDEC · datos.gob.ar",
@@ -108,19 +107,19 @@
       "slug": "banda-cambiaria",
       "categoria": "Banda cambiaria",
       "titulo": "El dólar mayorista corre al 66% de la banda",
-      "bajada": "Con piso en $729 y techo en $1.910, el mayorista ($1.513) se ubica en el canal.",
+      "bajada": "Con piso en $729 y techo en $1.910, el mayorista ($1.511) se ubica en el canal.",
       "dato": {
         "n": "66%",
         "txt": "posición del mayorista dentro del canal piso–techo"
       },
       "cuerpo": [
-        "Bajo el esquema de bandas del Banco Central, el piso se desliza a $729 y el techo a $1.910. El dólar mayorista ($1.513) se ubica al 66,4% del recorrido entre ambos."
+        "Bajo el esquema de bandas del Banco Central, el piso se desliza a $729 y el techo a $1.910. El dólar mayorista ($1.511) se ubica al 66,2% del recorrido entre ambos."
       ],
-      "metodo": "Posición = (Mayorista − Piso) ÷ (Techo − Piso) × 100 = (1.513 − 729) ÷ (1.910 − 729) × 100 = 66,4%.",
+      "metodo": "Posición = (Mayorista − Piso) ÷ (Techo − Piso) × 100 = (1.511 − 729) ÷ (1.910 − 729) × 100 = 66,2%.",
       "criollo": "El BCRA deja flotar el dólar dentro de un pasillo. Si se pega al techo hay más presión de suba; si se va al piso, lo contrario.",
       "fuente_nombre": "cálculo PPA (esquema BCRA)",
       "fuente_url": "https://www.bcra.gob.ar",
-      "dato_fecha": "02/09/2026 10:02",
+      "dato_fecha": "02/09/2026 19:36",
       "prioridad": 75
     }
   ]
