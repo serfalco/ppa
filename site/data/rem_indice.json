@@ -1,5 +1,32 @@
 [
   {
+    "periodo": "2026-08",
+    "mes_nombre": "Agosto 2026",
+    "datos": {
+      "ipc": {
+        "valor": 1.72,
+        "referencia": "var. % mensual",
+        "periodo": "2026-08-31"
+      },
+      "tasa": {
+        "valor": 24.11,
+        "referencia": "TNA; %",
+        "periodo": "2026-09-30"
+      },
+      "tcn": {
+        "valor": 1530.4,
+        "referencia": "$/USD",
+        "periodo": "2026-09-30"
+      },
+      "pbi": {
+        "valor": -0.9,
+        "referencia": "var. % trim. s.e.",
+        "periodo": "Trim. II-26"
+      }
+    },
+    "parseado_en": "2026-09-04T22:21:34.470656+00:00"
+  },
+  {
     "periodo": "2026-07",
     "mes_nombre": "Julio 2026",
     "datos": {
