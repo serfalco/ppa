@@ -1,5 +1,5 @@
 {
-  "generado_en": "2026-09-12T11:21:47.409111+00:00",
+  "generado_en": "2026-09-12T12:27:54.806427+00:00",
   "destacados": [
     {
       "id": "de5b27174fb1",
@@ -9,17 +9,19 @@
       "fecha_publicacion": "2026-09-12T10:50:00+00:00",
       "fuente_id": "iproup_eco",
       "fuente_nombre": "iProUP Economía Digital",
-      "categoria": "Mercados"
+      "categoria": "Mercados",
+      "resumen": "La gestora dará de baja el fondo tras una caída constante en el volumen operado, lejos de los tres millones de dólares diarios que llegó a mover en su debut."
     },
     {
-      "id": "3906c557178c",
-      "titulo": "A cuánto abre el dólar el lunes 14 de septiembre",
-      "link": "https://www.lanacion.com.ar/economia/dolar/a-cuanto-abre-el-dolar-el-lunes-14-de-septiembre-nid12092026/",
-      "descripcion": "La cotización de la divisa oficial abre con los mismos números que en su último día de cierre; así se posicionaron el dólar oficial, el paralelo y los financieros",
-      "fecha_publicacion": "2026-09-12T11:17:00+00:00",
-      "fuente_id": "lanacion_eco",
-      "fuente_nombre": "La Nación Economía",
-      "categoria": "Finanzas"
+      "id": "409397b1c3e4",
+      "titulo": "Bancos y billeteras frenan los préstamos mientras priorizan bajar la morosidad",
+      "link": "https://www.iproup.com/finanzas/71487-mora-record-bancos-y-billeteras-ponen-un-freno-a-los-prestamos",
+      "descripcion": "El crédito al consumo vuelve a caer en agosto y bancos y fintech endurecen las condiciones para prestar, ante una mora que todavía preocupa. Los detalles",
+      "fecha_publicacion": "2026-09-12T12:15:00+00:00",
+      "fuente_id": "iproup_fintech",
+      "fuente_nombre": "iProUP Fintech",
+      "categoria": "Finanzas",
+      "resumen": "Las entidades financieras y las fintech endurecieron los requisitos para prestar con el fin de contener la morosidad, lo que profundizó la caída del crédito al consumo en agosto."
     },
     {
       "id": "92236444afe5",
@@ -29,11 +31,34 @@
       "fecha_publicacion": "2026-09-11T21:02:59+00:00",
       "fuente_id": "investing_intl",
       "fuente_nombre": "Investing Internacional",
-      "categoria": "Internacional"
+      "categoria": "Internacional",
+      "resumen": "La agencia crediticia mantuvo la nota soberana del país centroamericano respaldada en el desempeño estable de su economía."
     }
   ],
   "secciones": {
     "Finanzas": [
+      {
+        "id": "409397b1c3e4",
+        "titulo": "Bancos y billeteras frenan los préstamos mientras priorizan bajar la morosidad",
+        "link": "https://www.iproup.com/finanzas/71487-mora-record-bancos-y-billeteras-ponen-un-freno-a-los-prestamos",
+        "descripcion": "El crédito al consumo vuelve a caer en agosto y bancos y fintech endurecen las condiciones para prestar, ante una mora que todavía preocupa. Los detalles",
+        "fecha_publicacion": "2026-09-12T12:15:00+00:00",
+        "fuente_id": "iproup_fintech",
+        "fuente_nombre": "iProUP Fintech",
+        "categoria": "Finanzas",
+        "resumen": "Frente al aumento en los niveles de mora, el sector financiero restringió la oferta de financiamiento y provocó una nueva contracción en el crédito a las familias durante agosto."
+      },
+      {
+        "id": "5060c8fc0680",
+        "titulo": "Cambió el mercado: el negocio de bajo perfil que multiplicó por 20 sus exportaciones y puso al país en un ranking mundial por EE.UU.",
+        "link": "https://www.lanacion.com.ar/economia/campo/cambio-el-mercado-el-negocio-de-bajo-perfil-que-multiplico-por-20-sus-exportaciones-y-puso-al-pais-nid12092026/",
+        "descripcion": "Las exportaciones argentinas de sebo bovino superaron las 154.000 toneladas en 2025 y ubicaron al país como el cuarto proveedor global; la creciente demanda de Estados Unidos para producir diésel renovable fue clave para transformar la actividad",
+        "fecha_publicacion": "2026-09-12T12:00:00+00:00",
+        "fuente_id": "lanacion_eco",
+        "fuente_nombre": "La Nación Economía",
+        "categoria": "Finanzas",
+        "resumen": "Las exportaciones de sebo bovino superaron las 154.000 toneladas impulsadas por la demanda estadounidense para producir biocombustibles. Con este salto comercial, el país se posicionó como el cuarto proveedor global del insumo."
+      },
       {
         "id": "3906c557178c",
         "titulo": "A cuánto abre el dólar el lunes 14 de septiembre",
@@ -42,7 +67,8 @@
         "fecha_publicacion": "2026-09-12T11:17:00+00:00",
         "fuente_id": "lanacion_eco",
         "fuente_nombre": "La Nación Economía",
-        "categoria": "Finanzas"
+        "categoria": "Finanzas",
+        "resumen": "El dólar oficial arrancó la semana sin variaciones respecto de la rueda previa. La atención del mercado sigue centrada en el comportamiento del billete paralelo y los tipos de cambio financieros."
       },
       {
         "id": "24175b087b0e",
@@ -52,7 +78,8 @@
         "fecha_publicacion": "2026-09-12T10:50:00+00:00",
         "fuente_id": "iproup_fintech",
         "fuente_nombre": "iProUP Fintech",
-        "categoria": "Finanzas"
+        "categoria": "Finanzas",
+        "resumen": "Mastercard presentó Wallet Pay, una plataforma pensada para interconectar billeteras digitales y agilizar pagos y transferencias. La solución apunta a profundizar la interoperabilidad y sumar servicios financieros en el ecosistema regional."
       },
       {
         "id": "d488dd3cb84b",
@@ -62,7 +89,8 @@
         "fecha_publicacion": "2026-09-12T10:50:00+00:00",
         "fuente_id": "iproup_fintech",
         "fuente_nombre": "iProUP Fintech",
-        "categoria": "Finanzas"
+        "categoria": "Finanzas",
+        "resumen": "Un ETF estadounidense trepó 5.100% en el último año y se coronó como el activo de mayor rendimiento en Wall Street. Con este salto, el instrumento superó con holgura a las opciones atadas a la inteligencia artificial y los semiconductores."
       },
       {
         "id": "4f3054dc03ca",
@@ -72,27 +100,8 @@
         "fecha_publicacion": "2026-09-12T10:03:49+00:00",
         "fuente_id": "lanacion_eco",
         "fuente_nombre": "La Nación Economía",
-        "categoria": "Finanzas"
-      },
-      {
-        "id": "a410bbdeed01",
-        "titulo": "“Después de 25 años”: un senador libertario cesó la actividad de sus empresas, puso en venta una planta y acusó a un gobernador",
-        "link": "https://www.lanacion.com.ar/economia/campo/despues-de-25-anos-un-senador-libertario-ceso-la-actividad-de-sus-empresas-puso-en-venta-una-planta-nid11092026/",
-        "descripcion": "Francisco Paoltroni, que tiene firmas en Formosa, dijo que llegó a una situación de “ahogo financiero y económico” por el gobierno de Gildo Insfrán; Ganaderos de Formosa registra 213 cheques rechazados por más de $1128 millones",
-        "fecha_publicacion": "2026-09-12T10:03:06+00:00",
-        "fuente_id": "lanacion_eco",
-        "fuente_nombre": "La Nación Economía",
-        "categoria": "Finanzas"
-      },
-      {
-        "id": "92db90aa8e51",
-        "titulo": "La compra de dólares marca récord y la City revela cómo invertir los ahorros del \"colchón\"",
-        "link": "https://www.iproup.com/finanzas/71136-compra-record-de-dolar-la-city-revela-como-invertir-el-colchon",
-        "descripcion": "En un contexto de creciente dolarización, alternativas de inversión buscan transformar el ahorro inmovilizado en dólares en ganancias anuales en divisa",
-        "fecha_publicacion": "2026-09-12T09:07:00+00:00",
-        "fuente_id": "iproup_fintech",
-        "fuente_nombre": "iProUP Fintech",
-        "categoria": "Finanzas"
+        "categoria": "Finanzas",
+        "resumen": "Un informe proyecta un 75% de probabilidades de que el fenómeno climático alcance niveles récord entre octubre y diciembre. Si bien las precipitaciones mejoran las perspectivas para el agro, crecen las alertas por el impacto de eventuales inundaciones."
       },
       {
         "id": "b8d2121f5a30",
@@ -102,7 +111,8 @@
         "fecha_publicacion": "2026-09-12T00:27:00+00:00",
         "fuente_id": "ambito_fin",
         "fuente_nombre": "Ámbito Finanzas",
-        "categoria": "Finanzas"
+        "categoria": "Finanzas",
+        "resumen": "La brecha entre lo que los bancos pagan por los plazos fijos y lo que cobran por prestar se mantiene cerca de máximos históricos. Con este spread, el costo de financiamiento local se ubica como el segundo más alto de la región, solo por detrás de Brasil."
       },
       {
         "id": "520dd32a8805",
@@ -112,7 +122,135 @@
         "fecha_publicacion": "2026-09-11T23:25:00+00:00",
         "fuente_id": "iprof_economia",
         "fuente_nombre": "iProfesional Economía",
-        "categoria": "Finanzas"
+        "categoria": "Finanzas",
+        "resumen": "El sector gastronómico lanza una nueva jornada de promociones y combos para apuntalar el consumo en pizzerías y casas de empanadas de todo el país. Cada comercio definirá sus propios descuentos y medios de pago habilitados."
+      }
+    ],
+    "Agro": [
+      {
+        "id": "e51f07dadbdb",
+        "titulo": "El dulce milagro de Carabelas: la familia que desafió a la agricultura con 50 años de pasión por las abejas",
+        "link": "https://www.infocampo.com.ar/el-dulce-milagro-de-carabelas-la-familia-que-desafio-a-la-agricultura-con-50-anos-de-pasion-por-las-abejas/",
+        "descripcion": "En una región dominada por la agricultura extensiva, los Castañón construyeron durante más de medio siglo una historia familiar alrededor de las abejas. De aquellas primeras 20 colmenas y los viajes en Rastrojero, a llegar a mercados internacionales.",
+        "fecha_publicacion": "2026-09-12T12:13:11+00:00",
+        "fuente_id": "infocampo",
+        "fuente_nombre": "Infocampo",
+        "categoria": "Agro",
+        "resumen": "En pleno corazón de la zona núcleo agrícola, una pyme familiar sostiene desde hace medio siglo una producción apícola a contracorriente del monocultivo. El proyecto demuestra la rentabilidad de diversificar la matriz pampeana a través del agregado de valor."
+      },
+      {
+        "id": "7b9be207b0c0",
+        "titulo": "De Córdoba a Latinoamérica: La cabaña La Sultana, de Mauricio Groppo, expande su genética Brangus con embriones “hechos a medida” de cada productor",
+        "link": "https://bichosdecampo.com/de-cordoba-a-latinoamerica-la-cabana-la-sultana-de-mauricio-groppo-expande-su-genetica-brangus-con-embriones-hechos-a-medida-de-cada-productor/",
+        "descripcion": "La historia de La Sultana de Groppo comenzó hace más de 60 años en el sudeste de Córdoba, pero el negocio genético que hoy desarrolla su titular, Mauricio Groppo, ya tiene una dimensión mucho más amplia. La cabaña, que actualmente trabaja exclusivamente con Brangus, está llevando su genética a distintos países de Latinoamérica y busca [&#8230;]",
+        "fecha_publicacion": "2026-09-12T12:05:31+00:00",
+        "fuente_id": "bichos_campo",
+        "fuente_nombre": "Bichos de Campo",
+        "categoria": "Agro",
+        "resumen": "La cabaña cordobesa La Sultana consolida su negocio en la región mediante la exportación de embriones Brangus personalizados según la demanda de cada cliente. La firma capitaliza seis décadas de trayectoria para escalar su desarrollo genético en el mercado latinoamericano."
+      },
+      {
+        "id": "f5cc784ca236",
+        "titulo": "Parece una pava, pero es un laboratorio portátil: La firma SCIO difunde las bondades de su medidor portátil de materia seca en forrajes, equipado con tecnología irsaelí",
+        "link": "https://bichosdecampo.com/parece-una-pava-pero-es-un-laboratorio-portatil-la-firma-scio-difunde-las-bondades-de-su-medidor-portatil-de-materia-seca-en-forrajes-equipado-con-tecnologia-irsaeli/",
+        "descripcion": "A simple vista, lo que Diego Zbar expuso en la última edición del Congreso de Contratistas Forrajeros no parecía ser más que una simple pava eléctrica. Sin embargo, en su interior había todo menos agua caliente. “Es una tecnología que permite medir en segundos y con precisión de laboratorio la materia seca de los forrajes”, [&#8230;]",
+        "fecha_publicacion": "2026-09-12T11:56:11+00:00",
+        "fuente_id": "bichos_campo",
+        "fuente_nombre": "Bichos de Campo",
+        "categoria": "Agro"
+      },
+      {
+        "id": "5fa6fc479b1c",
+        "titulo": "La urea hará grande al maíz, otra vez: el fertilizante viene llegando, aunque con una luz amarilla en el precio",
+        "link": "https://www.infocampo.com.ar/la-urea-hara-grande-al-maiz-otra-vez-el-fertilizante-viene-llegando-aunque-con-una-luz-amarilla-en-el-precio/",
+        "descripcion": "Según informes navieros, en septiembre están arribando unas 200.000 toneladas de urea a Argentina, que se suman a 230.000 de agosto. El conflicto en Oriente Medio encarece su cotización, aunque el aumento del maíz compensa e incluso mejora la relación insumo-producto.",
+        "fecha_publicacion": "2026-09-12T11:50:34+00:00",
+        "fuente_id": "infocampo",
+        "fuente_nombre": "Infocampo",
+        "categoria": "Agro",
+        "resumen": "Con el arribo de más de 400.000 toneladas de urea entre agosto y septiembre, el agro asegura el insumo clave para la siembra maicera. Sin embargo, la escalada del conflicto en Oriente Medio presiona al alza los precios internacionales y enciende alertas en los márgenes del sector."
+      },
+      {
+        "id": "64c102dba0f1",
+        "titulo": "El clima cambia y la ganadería toma nota: en Tierra del Fuego, los pastizales se cuidan con más tecnología",
+        "link": "https://www.infocampo.com.ar/el-clima-cambia-y-la-ganaderia-toma-nota-en-tierra-del-fuego-los-pastizales-se-cuidan-con-mas-tecnologia/",
+        "descripcion": "Desde una estación meteorológica ubicada en una estancia de San Sebastián, el INTA monitorea datos claves del clima como lluvias, temperaturas, viento y humedad para detectar tendencias y anticipar cómo impactarán sobre el pastizal y la producción ganadera.",
+        "fecha_publicacion": "2026-09-12T11:31:13+00:00",
+        "fuente_id": "infocampo",
+        "fuente_nombre": "Infocampo",
+        "categoria": "Agro"
+      },
+      {
+        "id": "2dc4e80c1bf7",
+        "titulo": "Cambio de época: El maíz argentino es el más barato del mundo, pero los productores argentinos cobran lo mismo que sus pares estadounidenses",
+        "link": "https://bichosdecampo.com/cambio-de-epoca-el-maiz-argentino-es-el-mas-barato-del-mundo-pero-los-productores-argentinos-cobran-lo-mismo-que-sus-pares-estadounidenses/",
+        "descripcion": "Este viernes volvió a quedar muy claro que el maíz es el producto más sensible en la actual coyuntura global, marcada por un “apagón logístico” en el Mar Negro que pone el riesgo el abastecimiento del cereal. Este viernes el informe mensual del USDA sigue considerando que Ucrania debería exportar en 2026/27 una cifra de [&#8230;]",
+        "fecha_publicacion": "2026-09-12T02:34:57+00:00",
+        "fuente_id": "bichos_campo",
+        "fuente_nombre": "Bichos de Campo",
+        "categoria": "Agro"
+      },
+      {
+        "id": "c79a395b3050",
+        "titulo": "Los grados del petróleo caen ante el aumento del sondeo en EE.UU. y avances en el Estrecho de Ormuz",
+        "link": "https://es.investing.com/news/commodities-news/los-grados-del-petroleo-caen-ante-el-aumento-del-sondeo-en-eeuu-y-avances-en-el-estrecho-de-ormuz-93CH-3832266",
+        "descripcion": "",
+        "fecha_publicacion": "2026-09-11T20:33:48+00:00",
+        "fuente_id": "investing_agro",
+        "fuente_nombre": "Investing Agro",
+        "categoria": "Agro"
+      },
+      {
+        "id": "bbd2bf3cd427",
+        "titulo": "Agricultores argentinos impulsan ventas de soja ante subida de precios",
+        "link": "https://es.investing.com/news/commodities-news/agricultores-argentinos-impulsan-ventas-de-soja-ante-subida-de-precios-93CH-3832255",
+        "descripcion": "",
+        "fecha_publicacion": "2026-09-11T20:29:51+00:00",
+        "fuente_id": "investing_agro",
+        "fuente_nombre": "Investing Agro",
+        "categoria": "Agro"
+      }
+    ],
+    "Laboral": [
+      {
+        "id": "6c6b4d64f59e",
+        "titulo": "El nuevo salario de los encargados de edificios en septiembre de 2026 según la categoría",
+        "link": "https://www.iprofesional.com/management/464330-sueldos-encargados-de-edificios-cuanto-cobran-tras-el-ultimo-aumento",
+        "descripcion": "Los trabajadores de edificios acceden a una importante mejora salarial tras la firma del nuevo acuerdo paritario que impacta desde septiembre",
+        "fecha_publicacion": "2026-09-12T12:13:00+00:00",
+        "fuente_id": "iprof_management",
+        "fuente_nombre": "iProfesional Management",
+        "categoria": "Laboral"
+      },
+      {
+        "id": "4c8ab50dbfd9",
+        "titulo": "Trabajo decente en las plataformas digitales: una nueva norma mundial",
+        "link": "https://voices.ilo.org/es-es/podcast/trabajo-decente-en-las-plataformas-digitales-una-nueva-norma-mundial",
+        "descripcion": "Las plataformas digitales han transformado el mundo del trabajo, generando nuevas oportunidades, pero también importantes desafíos para los derechos y la protección de los trabajadores. En este episodio de El futuro del trabajo, Nuno Cunha, especialista en instituciones de mercados laborales de la OIT, explica qué supone el nuevo Convenio núm. 193, la primera norma internacional del trabajo sobre la economía de plataformas, cómo fue elaborado a través del diálogo social y cuáles son los próximos",
+        "fecha_publicacion": "2026-08-26T00:00:00+00:00",
+        "fuente_id": "oit_podcast",
+        "fuente_nombre": "OIT Podcast",
+        "categoria": "Laboral"
+      },
+      {
+        "id": "07f564b6ffd7",
+        "titulo": "Riesgos psicosociales en el trabajo: la amenaza invisible para la salud de los trabajadores",
+        "link": "https://voices.ilo.org/es-es/podcast/riesgos-psicosociales-en-el-trabajo-la-amenaza-invisible-para-la-salud-de-los-trabajadores",
+        "descripcion": "En este episodio del pódcast “El futuro del trabajo de la OIT”, Dafne Papandrea y Lucía Risueño Navarro explican cómo los riesgos psicosociales —como las largas jornadas laborales, la inseguridad en el empleo y el acoso en el lugar de trabajo— afectan a la salud de los trabajadores, y qué medidas pueden adoptarse para crear entornos laborales más saludables en todo el mundo.",
+        "fecha_publicacion": "2026-04-28T00:00:00+00:00",
+        "fuente_id": "oit_podcast",
+        "fuente_nombre": "OIT Podcast",
+        "categoria": "Laboral"
+      },
+      {
+        "id": "ef1638f33032",
+        "titulo": "La inteligencia artificial generativa y las desigualdades de género en el trabajo",
+        "link": "https://voices.ilo.org/es-es/podcast/la-inteligencia-artificial-generativa-y-las-desigualdades-de-genero-en-el-trabajo",
+        "descripcion": "En este episodio del pódcast de la Organización Internacional del Trabajo, Janine Berg, Economista senior en la OIT, presenta un nuevo informe sobre el impacto de la inteligencia artificial generativa en el mundo del trabajo. La experta explica por qué las mujeres están más expuestas que los hombres a los riesgos asociados a esta tecnología y qué significa esto para la igualdad en el mercado laboral.",
+        "fecha_publicacion": "2026-03-09T00:00:00+00:00",
+        "fuente_id": "oit_podcast",
+        "fuente_nombre": "OIT Podcast",
+        "categoria": "Laboral"
       }
     ],
     "Fiscal": [
@@ -239,89 +377,17 @@
         "categoria": "Mercados"
       }
     ],
-    "Agro": [
-      {
-        "id": "31c0f29e8b42",
-        "titulo": "Fierros capitalizados: Crucianelli y Gimetal, dos íconos de la maquinaria agrícola de Armstrong, salieron a buscar financiamiento al mercado de capitales",
-        "link": "https://bichosdecampo.com/fierros-capitalizados-crucianelli-y-gimetal-dos-iconos-de-la-maquinaria-agricola-de-armstrong-salieron-a-buscar-financiamiento-al-mercado-de-capitales/",
-        "descripcion": "En una misma semana, dos de las fábricas de maquinaria agrícola más conocidas de Armstrong, la localidad santafesina que supo ganarse fama de meca de los fierros del agro, salieron a buscar plata fresca por afuera de los bancos, a través del mercado de capitales. Se trata de Crucianelli, la firma que lidera el negocio [&#8230;]",
-        "fecha_publicacion": "2026-09-11T22:15:14+00:00",
-        "fuente_id": "bichos_campo",
-        "fuente_nombre": "Bichos de Campo",
-        "categoria": "Agro"
-      },
-      {
-        "id": "f5f34008a85b",
-        "titulo": "Locura: Los fondos agrícolas no tienen dudas y siguen apostando fuerte por un mercado alcista explosivo para el maíz y la soja",
-        "link": "https://bichosdecampo.com/locura-los-fondos-agricolas-no-tienen-dudas-y-siguen-apostando-fuerte-por-un-mercado-alcista-explosivo-para-el-maiz-y-la-soja/",
-        "descripcion": "Si bien los precios de la soja y el maíz vienen registrando una enorme volatilidad, a los administradores de fondos agrícolas no les tiembla el pulso al momento de apostar fuerte por un mercado súper alcista. El martes pasado la posición neta especulativa en contratos futuros y opciones de maíz en el CME Group (“Chicago”) [&#8230;]",
-        "fecha_publicacion": "2026-09-11T21:58:27+00:00",
-        "fuente_id": "bichos_campo",
-        "fuente_nombre": "Bichos de Campo",
-        "categoria": "Agro"
-      },
-      {
-        "id": "2e086da3e780",
-        "titulo": "No todos están preocupados: Desde Santiago del Estero, el productor algodonero Juan Pablo Karnatz le baja la espuma al “Super Niño” y busca llevar calma a sus vecinos",
-        "link": "https://bichosdecampo.com/no-todos-estan-preocupados-desde-santiago-del-estero-el-productor-algodonero-juan-pablo-karnatz-le-baja-la-espuma-al-super-nino-y-busca-llevar-calma-a-sus-vecinos/",
-        "descripcion": "El fenómeno del Super Niño es una preocupación para la mayoría de las personas que trabajan en el sector agropecuario debido a que, según la región en donde ocurre, puede producir sequías o intensas lluvias e inundaciones que después derivan en problemas para la producción. Este año, el temor es por inundaciones y crecidas. Debido [&#8230;]",
-        "fecha_publicacion": "2026-09-11T21:45:08+00:00",
-        "fuente_id": "bichos_campo",
-        "fuente_nombre": "Bichos de Campo",
-        "categoria": "Agro"
-      },
-      {
-        "id": "744345f70925",
-        "titulo": "Conflicto en el vino: el sindicato vitivinícola inicia asambleas ante la falta de acuerdo salarial",
-        "link": "https://www.infocampo.com.ar/conflicto-en-el-vino-el-sindicato-vitivinicola-inicia-asambleas-ante-la-falta-de-acuerdo-salarial/",
-        "descripcion": "En una nueva reunión paritaria volvió a quedar muy lejos la pretensión de aumento de FOEVA respecto de la oferta de los empleadores, que el gremio calificó de “paupérrima e insuficiente”, además de acusar de “tacaños” a los empresarios del vino.",
-        "fecha_publicacion": "2026-09-11T21:39:46+00:00",
-        "fuente_id": "infocampo",
-        "fuente_nombre": "Infocampo",
-        "categoria": "Agro"
-      },
-      {
-        "id": "c79a395b3050",
-        "titulo": "Los grados del petróleo caen ante el aumento del sondeo en EE.UU. y avances en el Estrecho de Ormuz",
-        "link": "https://es.investing.com/news/commodities-news/los-grados-del-petroleo-caen-ante-el-aumento-del-sondeo-en-eeuu-y-avances-en-el-estrecho-de-ormuz-93CH-3832266",
-        "descripcion": "",
-        "fecha_publicacion": "2026-09-11T20:33:48+00:00",
-        "fuente_id": "investing_agro",
-        "fuente_nombre": "Investing Agro",
-        "categoria": "Agro"
-      },
-      {
-        "id": "bbd2bf3cd427",
-        "titulo": "Agricultores argentinos impulsan ventas de soja ante subida de precios",
-        "link": "https://es.investing.com/news/commodities-news/agricultores-argentinos-impulsan-ventas-de-soja-ante-subida-de-precios-93CH-3832255",
-        "descripcion": "",
-        "fecha_publicacion": "2026-09-11T20:29:51+00:00",
-        "fuente_id": "investing_agro",
-        "fuente_nombre": "Investing Agro",
-        "categoria": "Agro"
-      },
-      {
-        "id": "553282f38e33",
-        "titulo": "Año histórico: con el maíz más competitivo del mundo, las exportaciones de granos son récord",
-        "link": "https://www.infocampo.com.ar/ano-historico-con-el-maiz-mas-competitivo-del-mundo-las-exportaciones-de-granos-son-record/",
-        "descripcion": "Según la Bolsa de Rosario, las exportaciones de los principales productos agrícolas superaron las 80,7 millones de toneladas entre enero y agosto, el mayor volumen registrado. Maíz, trigo y girasol explican buena parte del salto, mientras la soja acelera sus fijaciones.",
-        "fecha_publicacion": "2026-09-11T19:44:33+00:00",
-        "fuente_id": "infocampo",
-        "fuente_nombre": "Infocampo",
-        "categoria": "Agro"
-      },
-      {
-        "id": "8afe4c308436",
-        "titulo": "El cobre rechaza máximos históricos con sesgo bajista: Niveles en vivo",
-        "link": "https://es.investing.com/news/commodities-news/el-cobre-en-rango-apretado-con-senales-sobrecompradas-niveles-en-vivo-93CH-3824228",
-        "descripcion": "",
-        "fecha_publicacion": "2026-09-11T19:08:14+00:00",
-        "fuente_id": "investing_agro",
-        "fuente_nombre": "Investing Agro",
-        "categoria": "Agro"
-      }
-    ],
     "Fulbito": [
+      {
+        "id": "4a397c1936bf",
+        "titulo": "Estudiantes vs. Platense por el Torneo Clausura 2026: hora, TV y formaciones",
+        "link": "https://www.0221.com.ar/estudiantes/estudiantes-vs-platense-el-torneo-clausura-2026-hora-tv-y-formaciones-n134070",
+        "descripcion": "Estudiantes recibirá a Platense desde las 14.45 en medio de la definición de la Copa Libertadores y la necesidad de ganar en el Torneo Clausura.",
+        "fecha_publicacion": "2026-09-12T01:03:00+00:00",
+        "fuente_id": "est_0221",
+        "fuente_nombre": "0221 Estudiantes",
+        "categoria": "Fulbito"
+      },
       {
         "id": "6adb87bb871e",
         "titulo": "Alexander Medina mete mano en Estudiantes y apuesta por los juveniles para enfrentar a Platense",
@@ -341,16 +407,88 @@
         "fuente_id": "est_0221",
         "fuente_nombre": "0221 Estudiantes",
         "categoria": "Fulbito"
+      }
+    ],
+    "Comex": [
+      {
+        "id": "e7c18ea47a42",
+        "titulo": "El shock económico detrás de los 100 días de calor record de los océanos",
+        "link": "https://tradenews.com.ar/el-shock-economico-detras-de-los-100-dias-de-calor-record-de-los-oceanos/",
+        "descripcion": "Con el cambio climático como principal impulsor, los océanos alcanzaron el jueves último 100 días consecutivos de calor sin precedentes, con consecuencias desastrosas para los ecosistemas marinos e importantes impactos...",
+        "fecha_publicacion": "2026-09-11T22:11:40+00:00",
+        "fuente_id": "trade_news",
+        "fuente_nombre": "Trade News",
+        "categoria": "Comex"
       },
       {
-        "id": "7027d9d36370",
-        "titulo": "El regreso goleador del Tecla Farías a Estudiantes después de dos décadas",
-        "link": "https://www.0221.com.ar/estudiantes/el-regreso-goleador-del-tecla-farias-estudiantes-despues-dos-decadas-n134059",
-        "descripcion": "El Tecla Farías se volvió a poner la camiseta de Estudiantes de manera oficial para representar al Senior del León. Convirtió un gol e hizo una asistencia.",
-        "fecha_publicacion": "2026-09-11T20:28:00+00:00",
-        "fuente_id": "est_0221",
-        "fuente_nombre": "0221 Estudiantes",
-        "categoria": "Fulbito"
+        "id": "67c448bb7a24",
+        "titulo": "Despachantes de Aduana proponen al Congreso revisar el régimen del sector tras el DNU 70/2023",
+        "link": "https://aduananews.com/despachantes-de-aduana-proponen-al-congreso-revisar-el-regimen-del-sector-tras-el-dnu-70-2023/?utm_source=rss&utm_medium=rss&utm_campaign=despachantes-de-aduana-proponen-al-congreso-revisar-el-regimen-del-sector-tras-el-dnu-70-2023",
+        "descripcion": "Durante la segunda semana de septiembre, el Centro Despachantes de Aduana de la República Argentina (CDA) presentó ante las Comisiones de Comercio y de Pequeñas y Medianas Empresas de la Cámara de Diputados de la Nación un proyecto de ley que propone revisar las modificaciones introducidas por el DNU 70/2023 al Código Aduanero, particularmente las [&#8230;] The post Despachantes de Aduana proponen al Congreso revisar el régimen del sector tras el DNU 70/2023 appeared first on Aduana News .",
+        "fecha_publicacion": "2026-09-11T15:42:18+00:00",
+        "fuente_id": "aduana_news",
+        "fuente_nombre": "Aduana News",
+        "categoria": "Comex"
+      },
+      {
+        "id": "8b5f1bc8e7fe",
+        "titulo": "Caputo celebra récord exportador pyme de u$s7.630 millones, pero crece la morosidad",
+        "link": "https://www.iprofesional.com/finanzas/464283-caputo-celebra-record-exportador-pyme-de-us7630-millones-pero-crece-la-morosidad",
+        "descripcion": "Las ventas al exterior crecieron 24% hasta agosto, mientras casi 37.500 PyMEs están endeudadas y la morosidad de los créditos trepó al 3,7%",
+        "fecha_publicacion": "2026-09-11T14:29:00+00:00",
+        "fuente_id": "iprof_comex",
+        "fuente_nombre": "iProfesional Comex",
+        "categoria": "Comex"
+      },
+      {
+        "id": "cd01323f4503",
+        "titulo": "Las importaciones textiles ya representan el 70% del mercado y la industria opera al 39%",
+        "link": "https://www.iprofesional.com/comex/464272-las-importaciones-textiles-ya-representan-el-70-del-mercado-y-la-industria-opera-al-39",
+        "descripcion": "La producción cayó 24,4% en el primer semestre frente a 2025, mientras crece el peso de los productos importados sobre la oferta local",
+        "fecha_publicacion": "2026-09-11T12:24:00+00:00",
+        "fuente_id": "iprof_comex",
+        "fuente_nombre": "iProfesional Comex",
+        "categoria": "Comex"
+      },
+      {
+        "id": "c1eacac4554d",
+        "titulo": "Apuntes sobre el contrabando y el comercio electrónico",
+        "link": "https://aduananews.com/apuntes-sobre-el-contrabando-y-el-comercio-electronico/?utm_source=rss&utm_medium=rss&utm_campaign=apuntes-sobre-el-contrabando-y-el-comercio-electronico",
+        "descripcion": "En estos últimos tiempos, algunas notas periodísticas y de opinión han dado cuenta del aumento del contrabando, especialmente en relación a cierto tipo de mercaderías como perfumes, medicamentos, indumentaria, celulares, bebidas alcohólicas, neumáticos, y productos agroquímicos, entre otros. Ciertamente, si esta información fuera cierta, hablamos de un perjuicio importante para el fisco por la merma [&#8230;] The post Apuntes sobre el contrabando y el comercio electrónico appeared first on Aduan",
+        "fecha_publicacion": "2026-09-11T08:00:00+00:00",
+        "fuente_id": "aduana_news",
+        "fuente_nombre": "Aduana News",
+        "categoria": "Comex"
+      },
+      {
+        "id": "b83d67056d87",
+        "titulo": "La IA amortigua la incertidumbre geopolítica y acelera el comercio global de bienes",
+        "link": "https://tradenews.com.ar/la-ia-amortigua-la-incertidumbre-geopolitica-y-acelera-el-comercio-global-de-bienes/",
+        "descripcion": "El comercio mundial de bienes siguió en terreno de expansión y mostró señales de mayor dinamismo durante el tercer trimestre de 2026, pese a la persistente incertidumbre geopolítica. Los datos...",
+        "fecha_publicacion": "2026-09-10T18:43:08+00:00",
+        "fuente_id": "trade_news",
+        "fuente_nombre": "Trade News",
+        "categoria": "Comex"
+      },
+      {
+        "id": "8918f056f7ca",
+        "titulo": "A 25 años del 11-S: el mundo cambió sus Aduanas. ¿Y Argentina?",
+        "link": "https://aduananews.com/a-25-anos-del-11-s-el-mundo-cambio-sus-aduanas-y-argentina/?utm_source=rss&utm_medium=rss&utm_campaign=a-25-anos-del-11-s-el-mundo-cambio-sus-aduanas-y-argentina",
+        "descripcion": "Todos recordamos que estábamos haciendo ese fatal día. Recuerdo el tiempo breve mientras golpeó el primer avión y no se sabía si era un error o algo parecido. Hasta que el segundo avión se incrustó en la otra torre. Se están cumpliendo 25 años del 11 de septiembre de 2001 que cambió muchas cosas en [&#8230;] The post A 25 años del 11-S: el mundo cambió sus Aduanas. ¿Y Argentina? appeared first on Aduana News .",
+        "fecha_publicacion": "2026-09-10T08:00:00+00:00",
+        "fuente_id": "aduana_news",
+        "fuente_nombre": "Aduana News",
+        "categoria": "Comex"
+      },
+      {
+        "id": "1e08dd41bbe8",
+        "titulo": "Según Vistage Argentina, la confianza de los empresarios tuvo un leve repunte en el segundo trimestre de 2026",
+        "link": "https://tradenews.com.ar/segun-vistage-argentina-la-confianza-de-los-empresarios-tuvo-un-leve-repunte-en-el-segundo-trimestre-de-2026/",
+        "descripcion": "Impulsada por mejores expectativas de ventas y facturación, la confianza de los empresarios repuntó levemente en el segundo trimestre de 2026 en el país. Los datos surgen del Índice de...",
+        "fecha_publicacion": "2026-09-08T17:17:04+00:00",
+        "fuente_id": "trade_news",
+        "fuente_nombre": "Trade News",
+        "categoria": "Comex"
       }
     ],
     "Automotor": [
@@ -362,6 +500,16 @@
         "fecha_publicacion": "2026-09-11T21:50:00+00:00",
         "fuente_id": "iprof_autos",
         "fuente_nombre": "iProfesional Autos",
+        "categoria": "Automotor"
+      },
+      {
+        "id": "2dd6a2b26943",
+        "titulo": "Acara da a conocer un informe sobre la Estimación del Consumo Energético del Parque Automotriz a 2031",
+        "link": "https://www.diariodeautos.com.ar/index.php/noticias/nacionales/item/20517-acara",
+        "descripcion": "El fuerte crecimiento de la electromovilidad ha llevado a que Siomaa se encuentre trabajando y cooperando con las empresas de electricidad y energía, aportando la información más calificada para proyectar los niveles de consumo y producción necesaria hacia el futuro, dicen desde la Asociación de Concesionarios de Automóviles de la República Argentina (Acara), indicando que, en este contexto, realizamos el primer Informe sobre la Estimación del Consumo Energético del Parque Automotriz (automóvile",
+        "fecha_publicacion": "2026-09-11T20:10:44+00:00",
+        "fuente_id": "diario_autos",
+        "fuente_nombre": "Diario de Autos",
         "categoria": "Automotor"
       },
       {
@@ -392,16 +540,6 @@
         "fecha_publicacion": "2026-09-11T14:00:00+00:00",
         "fuente_id": "ambito_autos",
         "fuente_nombre": "Ámbito Autos",
-        "categoria": "Automotor"
-      },
-      {
-        "id": "d7b174142800",
-        "titulo": "Sibilla: ´´La pick-up Niagara viene con un nivel de tecnología que ni las marcas chinas tienen´´",
-        "link": "https://arodarpost.com.ar/sibilla-la-pick-up-niagara-viene-con-un-nivel-de-tecnologia-que-ni-las-marcas-chinas-tienen/",
-        "descripcion": "Para Renault Argentina el inicio de producción de la nueva pick-up Niagara es un hecho trascedente ya que es la gran apuesta industrial de la automotriz para los próximos años. Tras una inversión de más de u$s400 millones, el nuevo modelo – que se lanzará comercialmente en noviembre – será la base de la presencia [&#8230;]",
-        "fecha_publicacion": "2026-09-11T13:14:33+00:00",
-        "fuente_id": "arodar",
-        "fuente_nombre": "A Rodar Post",
         "categoria": "Automotor"
       },
       {
@@ -497,88 +635,6 @@
         "categoria": "Internacional"
       }
     ],
-    "Comex": [
-      {
-        "id": "048db6eeb803",
-        "titulo": "II Jornadas de Derecho Aduanero – Instituto Ecuatoriano Derecho Aduanero (IEDA) – 21/10",
-        "link": "https://mercojuris.com/ii-jornadas-de-derecho-aduanero-instituto-ecuatoriano-derecho-aduanero-ieda-21-10/",
-        "descripcion": "Las II Jornadas de Derecho Aduanero llegan para conectar a la academia, el sector público y sector privado. Es el mejor espacio para aprender e intercambiar experiencias en el ámbito aduanero y de comercio exterior. Miércoles, 21 de octubre, 2026. Centro de Convenciones UEES. Adquiere tu entrada en el siguiente link: https://lnkd.in/eZkgA9my La entrada II Jornadas de Derecho Aduanero &#8211; Instituto Ecuatoriano Derecho Aduanero (IEDA) &#8211; 21/10 se publicó primero en Mercojuris .",
-        "fecha_publicacion": "2026-09-11T19:26:27+00:00",
-        "fuente_id": "mercojuris",
-        "fuente_nombre": "Mercojuris",
-        "categoria": "Comex"
-      },
-      {
-        "id": "67c448bb7a24",
-        "titulo": "Despachantes de Aduana proponen al Congreso revisar el régimen del sector tras el DNU 70/2023",
-        "link": "https://aduananews.com/despachantes-de-aduana-proponen-al-congreso-revisar-el-regimen-del-sector-tras-el-dnu-70-2023/?utm_source=rss&utm_medium=rss&utm_campaign=despachantes-de-aduana-proponen-al-congreso-revisar-el-regimen-del-sector-tras-el-dnu-70-2023",
-        "descripcion": "Durante la segunda semana de septiembre, el Centro Despachantes de Aduana de la República Argentina (CDA) presentó ante las Comisiones de Comercio y de Pequeñas y Medianas Empresas de la Cámara de Diputados de la Nación un proyecto de ley que propone revisar las modificaciones introducidas por el DNU 70/2023 al Código Aduanero, particularmente las [&#8230;] The post Despachantes de Aduana proponen al Congreso revisar el régimen del sector tras el DNU 70/2023 appeared first on Aduana News .",
-        "fecha_publicacion": "2026-09-11T15:42:18+00:00",
-        "fuente_id": "aduana_news",
-        "fuente_nombre": "Aduana News",
-        "categoria": "Comex"
-      },
-      {
-        "id": "8b5f1bc8e7fe",
-        "titulo": "Caputo celebra récord exportador pyme de u$s7.630 millones, pero crece la morosidad",
-        "link": "https://www.iprofesional.com/finanzas/464283-caputo-celebra-record-exportador-pyme-de-us7630-millones-pero-crece-la-morosidad",
-        "descripcion": "Las ventas al exterior crecieron 24% hasta agosto, mientras casi 37.500 PyMEs están endeudadas y la morosidad de los créditos trepó al 3,7%",
-        "fecha_publicacion": "2026-09-11T14:29:00+00:00",
-        "fuente_id": "iprof_comex",
-        "fuente_nombre": "iProfesional Comex",
-        "categoria": "Comex"
-      },
-      {
-        "id": "cd01323f4503",
-        "titulo": "Las importaciones textiles ya representan el 70% del mercado y la industria opera al 39%",
-        "link": "https://www.iprofesional.com/comex/464272-las-importaciones-textiles-ya-representan-el-70-del-mercado-y-la-industria-opera-al-39",
-        "descripcion": "La producción cayó 24,4% en el primer semestre frente a 2025, mientras crece el peso de los productos importados sobre la oferta local",
-        "fecha_publicacion": "2026-09-11T12:24:00+00:00",
-        "fuente_id": "iprof_comex",
-        "fuente_nombre": "iProfesional Comex",
-        "categoria": "Comex"
-      },
-      {
-        "id": "c1eacac4554d",
-        "titulo": "Apuntes sobre el contrabando y el comercio electrónico",
-        "link": "https://aduananews.com/apuntes-sobre-el-contrabando-y-el-comercio-electronico/?utm_source=rss&utm_medium=rss&utm_campaign=apuntes-sobre-el-contrabando-y-el-comercio-electronico",
-        "descripcion": "En estos últimos tiempos, algunas notas periodísticas y de opinión han dado cuenta del aumento del contrabando, especialmente en relación a cierto tipo de mercaderías como perfumes, medicamentos, indumentaria, celulares, bebidas alcohólicas, neumáticos, y productos agroquímicos, entre otros. Ciertamente, si esta información fuera cierta, hablamos de un perjuicio importante para el fisco por la merma [&#8230;] The post Apuntes sobre el contrabando y el comercio electrónico appeared first on Aduan",
-        "fecha_publicacion": "2026-09-11T08:00:00+00:00",
-        "fuente_id": "aduana_news",
-        "fuente_nombre": "Aduana News",
-        "categoria": "Comex"
-      },
-      {
-        "id": "b83d67056d87",
-        "titulo": "La IA amortigua la incertidumbre geopolítica y acelera el comercio global de bienes",
-        "link": "https://tradenews.com.ar/la-ia-amortigua-la-incertidumbre-geopolitica-y-acelera-el-comercio-global-de-bienes/",
-        "descripcion": "El comercio mundial de bienes siguió en terreno de expansión y mostró señales de mayor dinamismo durante el tercer trimestre de 2026, pese a la persistente incertidumbre geopolítica. Los datos...",
-        "fecha_publicacion": "2026-09-10T18:43:08+00:00",
-        "fuente_id": "trade_news",
-        "fuente_nombre": "Trade News",
-        "categoria": "Comex"
-      },
-      {
-        "id": "8918f056f7ca",
-        "titulo": "A 25 años del 11-S: el mundo cambió sus Aduanas. ¿Y Argentina?",
-        "link": "https://aduananews.com/a-25-anos-del-11-s-el-mundo-cambio-sus-aduanas-y-argentina/?utm_source=rss&utm_medium=rss&utm_campaign=a-25-anos-del-11-s-el-mundo-cambio-sus-aduanas-y-argentina",
-        "descripcion": "Todos recordamos que estábamos haciendo ese fatal día. Recuerdo el tiempo breve mientras golpeó el primer avión y no se sabía si era un error o algo parecido. Hasta que el segundo avión se incrustó en la otra torre. Se están cumpliendo 25 años del 11 de septiembre de 2001 que cambió muchas cosas en [&#8230;] The post A 25 años del 11-S: el mundo cambió sus Aduanas. ¿Y Argentina? appeared first on Aduana News .",
-        "fecha_publicacion": "2026-09-10T08:00:00+00:00",
-        "fuente_id": "aduana_news",
-        "fuente_nombre": "Aduana News",
-        "categoria": "Comex"
-      },
-      {
-        "id": "70adbf78b104",
-        "titulo": "“Curso Derecho Aduanero de la UE” – Universidad de Valencia – Octubre 2026",
-        "link": "https://mercojuris.com/curdo-derecho-aduanero-de-la-ue-universidad-de-valencia-octubre-2026/",
-        "descripcion": "El Profesor Santiago Ibáñez Marsila (Universidad de Valencia) comunica e invita al curso &#8220;Derecho aduanero de la UE” en su decimotercera presentación. Destaca que “Los aranceles son hoy más importantes que nunca. Ahora puedes ser un experto en aranceles aduaneros. Los aranceles copan titulares y las empresas necesitan hacer frente a nuevos retos en materia aduanera, así como aprovechar las nuevas oportunidades que se abren con los acuerdos comerciales. Muchas cosas están cambiando muy rápi",
-        "fecha_publicacion": "2026-09-09T00:48:36+00:00",
-        "fuente_id": "mercojuris",
-        "fuente_nombre": "Mercojuris",
-        "categoria": "Comex"
-      }
-    ],
     "Energía y Minería": [
       {
         "id": "6e8ab8257f38",
@@ -659,48 +715,6 @@
         "fuente_id": "caem",
         "fuente_nombre": "CAEM",
         "categoria": "Energía y Minería"
-      }
-    ],
-    "Laboral": [
-      {
-        "id": "2989be634f72",
-        "titulo": "Con la mejora del dato de inflación, más empresas darán hasta tres aumentos de sueldo este año",
-        "link": "https://www.iprofesional.com/management/464290-con-la-mejora-del-dato-de-inflacion-mas-empresas-daran-hasta-3-aumentos-de-sueldo-este-ano",
-        "descripcion": "Un informe de Marsh en Argentina refleja como las empresas, ante la potencial baja de la inflación, vuelven a pensar en aumentos de sueldo por mérito",
-        "fecha_publicacion": "2026-09-11T17:08:00+00:00",
-        "fuente_id": "iprof_management",
-        "fuente_nombre": "iProfesional Management",
-        "categoria": "Laboral"
-      },
-      {
-        "id": "4c8ab50dbfd9",
-        "titulo": "Trabajo decente en las plataformas digitales: una nueva norma mundial",
-        "link": "https://voices.ilo.org/es-es/podcast/trabajo-decente-en-las-plataformas-digitales-una-nueva-norma-mundial",
-        "descripcion": "Las plataformas digitales han transformado el mundo del trabajo, generando nuevas oportunidades, pero también importantes desafíos para los derechos y la protección de los trabajadores. En este episodio de El futuro del trabajo, Nuno Cunha, especialista en instituciones de mercados laborales de la OIT, explica qué supone el nuevo Convenio núm. 193, la primera norma internacional del trabajo sobre la economía de plataformas, cómo fue elaborado a través del diálogo social y cuáles son los próximos",
-        "fecha_publicacion": "2026-08-26T00:00:00+00:00",
-        "fuente_id": "oit_podcast",
-        "fuente_nombre": "OIT Podcast",
-        "categoria": "Laboral"
-      },
-      {
-        "id": "07f564b6ffd7",
-        "titulo": "Riesgos psicosociales en el trabajo: la amenaza invisible para la salud de los trabajadores",
-        "link": "https://voices.ilo.org/es-es/podcast/riesgos-psicosociales-en-el-trabajo-la-amenaza-invisible-para-la-salud-de-los-trabajadores",
-        "descripcion": "En este episodio del pódcast “El futuro del trabajo de la OIT”, Dafne Papandrea y Lucía Risueño Navarro explican cómo los riesgos psicosociales —como las largas jornadas laborales, la inseguridad en el empleo y el acoso en el lugar de trabajo— afectan a la salud de los trabajadores, y qué medidas pueden adoptarse para crear entornos laborales más saludables en todo el mundo.",
-        "fecha_publicacion": "2026-04-28T00:00:00+00:00",
-        "fuente_id": "oit_podcast",
-        "fuente_nombre": "OIT Podcast",
-        "categoria": "Laboral"
-      },
-      {
-        "id": "ef1638f33032",
-        "titulo": "La inteligencia artificial generativa y las desigualdades de género en el trabajo",
-        "link": "https://voices.ilo.org/es-es/podcast/la-inteligencia-artificial-generativa-y-las-desigualdades-de-genero-en-el-trabajo",
-        "descripcion": "En este episodio del pódcast de la Organización Internacional del Trabajo, Janine Berg, Economista senior en la OIT, presenta un nuevo informe sobre el impacto de la inteligencia artificial generativa en el mundo del trabajo. La experta explica por qué las mujeres están más expuestas que los hombres a los riesgos asociados a esta tecnología y qué significa esto para la igualdad en el mercado laboral.",
-        "fecha_publicacion": "2026-03-09T00:00:00+00:00",
-        "fuente_id": "oit_podcast",
-        "fuente_nombre": "OIT Podcast",
-        "categoria": "Laboral"
       }
     ],
     "Logística": [
