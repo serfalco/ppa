@@ -1,46 +1,286 @@
 {
-  "generado_en": "2026-09-16T13:48:32.528564+00:00",
+  "generado_en": "2026-09-16T20:45:13.090940+00:00",
   "total": 107,
   "notas": [
     {
-      "id": "54848b90fdd9",
-      "titulo": "OpenAI negocia ronda de financiamiento para juntar u$s1,2 billones antes de su IPO en Wall Street",
-      "link": "https://www.iproup.com/economia-digital/71584-openai-busca-juntar-us12-billones-antes-de-su-salida-a-bolsa-en-wall-street",
-      "descripcion": "OpenAI mantiene conversaciones preliminares con inversores para una nueva inyección de capital que podría elevar aún más su valuación privada actual",
-      "fecha_publicacion": "2026-09-16T15:38:00+00:00",
+      "id": "aeac1044f700",
+      "titulo": "“Activá tu huerta”: entregan 10.000 kits de semillas para familias e instituciones",
+      "link": "https://www.lanacion.com.ar/economia/campo/activa-tu-huerta-entregan-10000-kits-de-semillas-para-familias-e-instituciones-nid16092026/",
+      "descripcion": "Se trata de una iniciativa de la provincia de Santa Cruz que, además, incluye capacitación y apoyo técnico",
+      "fecha_publicacion": "2026-09-16T20:41:35+00:00",
+      "fuente_id": "lanacion_eco",
+      "fuente_nombre": "La Nación Economía",
+      "categoria": "Finanzas"
+    },
+    {
+      "id": "9c8650df2a29",
+      "titulo": "Súper Niño: dónde habrá excesos de lluvias, en qué lugares no será grave y qué son las “olitas” que preocupan",
+      "link": "https://www.lanacion.com.ar/economia/campo/super-nino-donde-habra-excesos-de-lluvias-en-que-lugares-el-fenomeno-sera-menor-y-que-es-el-efecto-nid16092026/",
+      "descripcion": "Según un informe, el evento podría impactar de manera diferente en las distintas regiones productivas; los mayores peligros se encuentran en el este del territorio del país",
+      "fecha_publicacion": "2026-09-16T20:39:20+00:00",
+      "fuente_id": "lanacion_eco",
+      "fuente_nombre": "La Nación Economía",
+      "categoria": "Finanzas"
+    },
+    {
+      "id": "4f58ae4dd0d6",
+      "titulo": "Cómo impactará en dólar, acciones y bonos argentinos la suba de tasas de la Fed",
+      "link": "https://www.iprofesional.com/finanzas/464594-como-impacta-en-dolar-acciones-y-bonos-argentinos-suba-de-tasa-de-la-fed",
+      "descripcion": "El alza de 25 puntos básicos de la tasa de referencia impulsada por Reserva Federal impacta en el costo de emisión de deuda y otros factores",
+      "fecha_publicacion": "2026-09-16T20:35:00+00:00",
+      "fuente_id": "iprof_comex",
+      "fuente_nombre": "iProfesional Comex",
+      "categoria": "Comex"
+    },
+    {
+      "id": "cbdee25e3bca",
+      "titulo": "El riesgo país se consolida arriba de los 500 puntos y ADRs anotan mayoría de bajas ante caída del petróleo",
+      "link": "https://www.ambito.com/finanzas/los-bonos-dolares-operan-mixtos-wall-street-mientras-que-el-riesgo-pais-sigue-encima-los-500-puntos-n6322967",
+      "descripcion": "Los bonos cotizan con mayoría de bajas y las acciones argentinas que cotizan en Wall Street anotan mayoría de bajas, mientras la City analiza el Presupuesto 2027, que prevé 4% de PBI, 18% de inflación y dólar a $1.847,6.",
+      "fecha_publicacion": "2026-09-16T20:33:00+00:00",
+      "fuente_id": "ambito_fin",
+      "fuente_nombre": "Ámbito Finanzas",
+      "categoria": "Finanzas"
+    },
+    {
+      "id": "97cc5922e20c",
+      "titulo": "La subida de tipos de la Fed lleva los bonos del Tesoro a 2 años al un máximo desde julio de 2024",
+      "link": "https://es.investing.com/news/economy-news/la-subida-de-tipos-de-la-fed-lleva-los-bonos-del-tesoro-a-2-anos-al-un-maximo-desde-julio-de-2024-93CH-3838060",
+      "descripcion": "",
+      "fecha_publicacion": "2026-09-16T20:31:47+00:00",
+      "fuente_id": "investing_economia",
+      "fuente_nombre": "Investing Economía",
+      "categoria": "Mercados"
+    },
+    {
+      "id": "4b9560080288",
+      "titulo": "Polémica: se fue con casi $110 millones cuando lo despidieron del Enacom y lo contrataron en el INTA al día siguiente",
+      "link": "https://www.lanacion.com.ar/economia/campo/polemica-se-fue-con-casi-110-millones-cuando-lo-despidieron-del-enacom-y-lo-contrataron-en-el-inta-nid16092026/",
+      "descripcion": "Daniel Alfredo Neira dejó el ente de comunicaciones el 31 de julio y recibió una liquidación final neta de $109,7 millones; el Consejo Directivo del INTA formalizó luego su designación transitoria con efecto desde el 1° de agosto; consejeros aseguran que desconocían las condiciones de su salida y ahora analizan revisar la aprobación",
+      "fecha_publicacion": "2026-09-16T20:22:55+00:00",
+      "fuente_id": "lanacion_eco",
+      "fuente_nombre": "La Nación Economía",
+      "categoria": "Finanzas"
+    },
+    {
+      "id": "14283beecd3c",
+      "titulo": "Por qué el volumen de criptomonedas se recuperó en agosto",
+      "link": "https://www.iproup.com/economia-digital/71588-por-que-se-recupera-el-volumen-de-criptomonedas-en-agosto",
+      "descripcion": "El volumen spot alcanzó los u$s75.000 millones el 21 de agosto, mientras que los futuros perpetuos llegaron a los u$s336.000 millones",
+      "fecha_publicacion": "2026-09-16T20:15:00+00:00",
       "fuente_id": "iproup_eco",
       "fuente_nombre": "iProUP Economía Digital",
       "categoria": "Mercados"
     },
     {
-      "id": "7a075f04787a",
-      "titulo": "La SEC promete avanzar con reglas cripto pese al freno a Clarity Act en el Senado de EEUU",
-      "link": "https://www.iproup.com/economia-digital/71580-sec-reglas-criptomonedas-clarity-act-senado-eeuu-septiembre-2026",
-      "descripcion": "El regulador apunta a modernizar la custodia y transferencia de activos digitales pese al freno del proyecto cripto en el Congreso de Estados Unidos",
-      "fecha_publicacion": "2026-09-16T14:39:00+00:00",
+      "id": "702e93ecaf14",
+      "titulo": "Precio de las criptomonedas top: cuánto valen en Argentina y a nivel global hoy, 16 de septiembre de 2026",
+      "link": "https://www.iproup.com/economia-digital/71597-precio-de-criptomonedas-en-argentina-cuanto-valen-hoy-16-de-septiembre-de-2026",
+      "descripcion": "En las últimas 24 horas, la criptomoneda número uno bajó 0,21%. Las cotizaciones de de otras divisas digitales y dólares cripto",
+      "fecha_publicacion": "2026-09-16T19:53:00+00:00",
       "fuente_id": "iproup_eco",
       "fuente_nombre": "iProUP Economía Digital",
       "categoria": "Mercados"
     },
     {
-      "id": "337a4a9cbe17",
-      "titulo": "ARCA debe $1.596 millones en devoluciones de percepciones por dólar tarjeta: cómo hacer el reclamo",
-      "link": "https://www.iproup.com/finanzas/71541-percepciones-30-por-ciento-arca-como-recuperar-devolucion-septiembre-2026",
-      "descripcion": "El fisco mantiene una deuda por percepciones en moneda extranjera y los contribuyentes tienen tres vías para tramitar el reintegro según su caso fiscal",
-      "fecha_publicacion": "2026-09-16T13:52:00+00:00",
+      "id": "1262495e9a4e",
+      "titulo": "Precio de Bitcoin: cuánto vale en Argentina y a nivel global hoy, 16 de septiembre de 2026",
+      "link": "https://www.iproup.com/economia-digital/71598-precio-de-criptomonedas-en-argentina-cuanto-valen-hoy-16-de-septiembre-de-2026",
+      "descripcion": "En las últimas 24 horas, la criptomoneda principal retrocedió 0,21%. Cómo evolucionaron otras monedas digitales y dólares cripto",
+      "fecha_publicacion": "2026-09-16T19:53:00+00:00",
+      "fuente_id": "iproup_eco",
+      "fuente_nombre": "iProUP Economía Digital",
+      "categoria": "Mercados"
+    },
+    {
+      "id": "18fcab276b3f",
+      "titulo": "Presupuesto 2027: Luis Caputo prevé deuda por u$s11.000 millones en Bonares pero sin el regreso al mercado internacional",
+      "link": "https://www.ambito.com/finanzas/presupuesto-2027-luis-caputo-preve-deuda-us11000-millones-bonares-pero-el-regreso-al-mercado-internacional-n6323062",
+      "descripcion": "El Gobierno envió al Congreso el proyecto de Presupuesto 2027, donde planifica financiamiento en dólares proveniente de bonos en el mercado local y organismos internacionales.",
+      "fecha_publicacion": "2026-09-16T19:46:00+00:00",
+      "fuente_id": "ambito_fin",
+      "fuente_nombre": "Ámbito Finanzas",
+      "categoria": "Finanzas"
+    },
+    {
+      "id": "aa58f36e9cac",
+      "titulo": "El riesgo país sigue arriba de los 500 puntos y caen los ADR, tras la decisión de la FED",
+      "link": "https://www.iprofesional.com/finanzas/464565-mercados-en-alerta-por-la-fed-el-merval-cae-11-y-el-riesgo-pais-llega-a-509-puntos",
+      "descripcion": "Los inversores siguen de cerca la definición del organismo estadounidense, mientras los activos locales operan con señales dispares",
+      "fecha_publicacion": "2026-09-16T19:45:00+00:00",
+      "fuente_id": "iprof_finanzas",
+      "fuente_nombre": "iProfesional Finanzas",
+      "categoria": "Finanzas"
+    },
+    {
+      "id": "18273c7e2ac9",
+      "titulo": "El CEO de Nvidia explicó por qué la IA llevará a plomeros o electricistas a sueldos altos",
+      "link": "https://www.iprofesional.com/management/464591-el-ceo-de-nvidia-explico-por-que-la-ia-llevara-a-plomeros-o-electricistas-a-sueldos-altos",
+      "descripcion": "Uno de los máximos referentes de tecnología en el mundo dejó su parecer respecto de lo que implicarán ciertos oficios dentro de algunos años",
+      "fecha_publicacion": "2026-09-16T19:38:00+00:00",
+      "fuente_id": "iprof_management",
+      "fuente_nombre": "iProfesional Management",
+      "categoria": "Laboral"
+    },
+    {
+      "id": "9dcff9eb17aa",
+      "titulo": "Los bancos centrales del Golfo suben tipos tras la decisión de la Fed",
+      "link": "https://es.investing.com/news/economy-news/los-bancos-centrales-del-golfo-suben-tipos-tras-la-decision-de-la-fed-93CH-3837953",
+      "descripcion": "",
+      "fecha_publicacion": "2026-09-16T19:36:42+00:00",
+      "fuente_id": "investing_economia",
+      "fuente_nombre": "Investing Economía",
+      "categoria": "Mercados"
+    },
+    {
+      "id": "137b118f8300",
+      "titulo": "La inflación mayorista se aceleró y llegó al 2,1% en agosto por la suba del petróleo",
+      "link": "https://www.iprofesional.com/economia/464592-la-inflacion-mayorista-se-acelero-al-21-en-agosto-por-la-suba-del-petroleo",
+      "descripcion": "A contramano del IPC, los precios mayoristas saltaron el mes pasado luego de haber perforado el 1% en julio. El mensaje de Luis Caputo",
+      "fecha_publicacion": "2026-09-16T19:32:00+00:00",
+      "fuente_id": "iprof_economia",
+      "fuente_nombre": "iProfesional Economía",
+      "categoria": "Finanzas"
+    },
+    {
+      "id": "cc84a4102126",
+      "titulo": "Carne barata en Mataderos: cómo y qué comprar directo en frigoríficos para ahorrar",
+      "link": "https://www.iprofesional.com/finanzas/464564-carne-barata-en-mataderos-como-y-que-comprar-directo-en-frigorificos-para-ahorrar",
+      "descripcion": "Los precios al público son sustancialmente más bajos que en los supermercados, incluso cuando estos ofrecen promociones. Las claves para comprar",
+      "fecha_publicacion": "2026-09-16T19:24:00+00:00",
+      "fuente_id": "iprof_finanzas",
+      "fuente_nombre": "iProfesional Finanzas",
+      "categoria": "Finanzas"
+    },
+    {
+      "id": "07476ba0a277",
+      "titulo": "Cómo la gestión de la energía se convirtió en herramienta de competitividad",
+      "link": "https://econojournal.com.ar/actualidad-mineria-energia/como-la-gestion-de-la-energia-se-convirtio-en-herramienta-de-competitividad/",
+      "descripcion": "Susana González Antico, socia fundadora y vicepresidenta de Turbine Heat &#038; Power S.A.]",
+      "fecha_publicacion": "2026-09-16T19:19:07+00:00",
+      "fuente_id": "econojournal",
+      "fuente_nombre": "EconoJournal",
+      "categoria": "Energía y Minería"
+    },
+    {
+      "id": "2966d9a53d14",
+      "titulo": "El dólar mayorista anotó su mayor suba en lo que va de septiembre y dejó atrás cuatro jornadas a la baja",
+      "link": "https://www.ambito.com/finanzas/el-dolar-mayorista-extendio-la-baja-y-el-blue-toco-maximos-casi-un-mes-que-preve-el-gobierno-2027-n6322868",
+      "descripcion": "El tipo de cambio dejó atrás la seguidilla negativa acumulada en la semana. Por otra parte, el Presupuesto 2027 incorporó nuevas referencias para el billete verde.",
+      "fecha_publicacion": "2026-09-16T19:19:00+00:00",
+      "fuente_id": "ambito_fin",
+      "fuente_nombre": "Ámbito Finanzas",
+      "categoria": "Finanzas"
+    },
+    {
+      "id": "05fc373a7055",
+      "titulo": "Cómo anda y cuánto sale la  camioneta Ford Ranger Black 2026",
+      "link": "https://www.iprofesional.com/autos/462863-test-drive-de-la-ford-ranger-black-2026-precio-y-prestaciones",
+      "descripcion": "nalizamos la nueva camioneta de Ford. Enterate qué motor tiene, cómo es el andar de la versión urbana y cuánto cuesta este mes en el mercado",
+      "fecha_publicacion": "2026-09-16T19:00:00+00:00",
+      "fuente_id": "iprof_autos",
+      "fuente_nombre": "iProfesional Autos",
+      "categoria": "Automotor"
+    },
+    {
+      "id": "1dafc523b16a",
+      "titulo": "La Fed desafía a Trump y sube tasas por primera vez desde 2023 para contener la inflación",
+      "link": "https://www.iprofesional.com/economia/464582-la-fed-desafia-a-trump-y-sube-tasas-por-primera-vez-desde-2023-para-contener-la-inflacion",
+      "descripcion": "Concretó una suba de 25 puntos básicos, que quedaron en 4% en línea con lo que esperaba el mercado. La decisión va en contra de lo que pedía Trump",
+      "fecha_publicacion": "2026-09-16T18:25:00+00:00",
+      "fuente_id": "iprof_economia",
+      "fuente_nombre": "iProfesional Economía",
+      "categoria": "Finanzas"
+    },
+    {
+      "id": "57de7c501b50",
+      "titulo": "El dólar blue se consigue hoy a $1.555 en el microcentro porteño",
+      "link": "https://www.iproup.com/finanzas/71593-precio-dolar-hoy-a-cuanto-cerro-el-billete-este-jueves-16-de-septiembre",
+      "descripcion": "El dólar MEP y el dólar CCL experimentaron nuevas alzas. El dólar tarjeta y el dólar mayorista, por su parte, retomaron sus rachas alcistas",
+      "fecha_publicacion": "2026-09-16T18:15:00+00:00",
       "fuente_id": "iproup_fintech",
       "fuente_nombre": "iProUP Fintech",
       "categoria": "Finanzas"
     },
     {
-      "id": "93454e472329",
-      "titulo": "Presupuesto 2027: cómo afecta a jubilados, empleados públicos y beneficiarios de Anses",
-      "link": "https://www.lanacion.com.ar/economia/presupuesto-2027-como-afecta-a-jubilados-empleados-publicos-y-beneficiarios-de-anses-nid16092026/",
-      "descripcion": "El proyecto enviado al Congreso contempla un aumento de casi 30% en las prestaciones de la seguridad social, proyecta inflación del 18% para el año próximo y ratifica la estrategia de reducción del Estado",
-      "fecha_publicacion": "2026-09-16T13:40:18+00:00",
-      "fuente_id": "lanacion_eco",
-      "fuente_nombre": "La Nación Economía",
+      "id": "ef9c701fe6b1",
+      "titulo": "La Fed sube los tipos de interés 25 puntos básicos, como se esperaba",
+      "link": "https://es.investing.com/news/economy-news/la-fed-sube-los-tipos-de-interes-25-puntos-basicos-como-se-esperaba-3837854",
+      "descripcion": "",
+      "fecha_publicacion": "2026-09-16T18:00:57+00:00",
+      "fuente_id": "investing_economia",
+      "fuente_nombre": "Investing Economía",
+      "categoria": "Mercados"
+    },
+    {
+      "id": "02e327aa98cf",
+      "titulo": "Las exportaciones mineras superaron los US$ 4.700 millones en el primer semestre y registraron un crecimiento de 75% interanual",
+      "link": "https://econojournal.com.ar/mineria/las-exportaciones-mineras-us-4-700-millones-en-el-primer-semestre/",
+      "descripcion": "Las exportaciones mineras argentinas alcanzaron US$ 4.742 millones durante el primer semestre de 2026, el mayor valor registrado para un período enero-junio desde que existen estadísticas comparables para el sector. El resultado representa un crecimiento de casi 75% interanual, frente a los US$ 2.712 millones exportados en la primera mitad de 2025, y una expansión [&#8230;]",
+      "fecha_publicacion": "2026-09-16T17:30:22+00:00",
+      "fuente_id": "econojournal",
+      "fuente_nombre": "EconoJournal",
+      "categoria": "Energía y Minería"
+    },
+    {
+      "id": "bc5014a0acb1",
+      "titulo": "Robots, drones, inteligencia artificial y poliuretano: la tecnología de Vestas para hacer más eficientes a los parques eólicos",
+      "link": "https://econojournal.com.ar/renovables-te/robots-drones-inteligencia-artificial-y-poliuretano-la-tecnologia-de-vestas-para-los-parques-eolicos/",
+      "descripcion": "Las nuevas tecnologías aplicadas a optimizar la operación y mantenimiento de los parques eólicos tienen un rol cada vez más protagónico. En los últimos años, la compañía danesa Vestas, especializada en soluciones en energía renovable, incorporó el uso de inteligencia artificial, análisis de datos, drones y robots de manera integrada en el mantenimiento de los [&#8230;]",
+      "fecha_publicacion": "2026-09-16T16:58:14+00:00",
+      "fuente_id": "econojournal",
+      "fuente_nombre": "EconoJournal",
+      "categoria": "Energía y Minería"
+    },
+    {
+      "id": "adc5d8918fd5",
+      "titulo": "Morgan Stanley proyecta una mejora gradual de la economía argentina",
+      "link": "https://www.iproup.com/economia-digital/71586-morgan-stanley-proyecta-una-mejora-gradual-de-la-economia-argentina",
+      "descripcion": "Para Morgan Stanley lo peor ya pasó en Argentina, pero en Wall Street manda la cautela por la actividad y los vencimientos de deuda",
+      "fecha_publicacion": "2026-09-16T16:34:00+00:00",
+      "fuente_id": "iproup_fintech",
+      "fuente_nombre": "iProUP Fintech",
       "categoria": "Finanzas"
+    },
+    {
+      "id": "6315ca3d5a23",
+      "titulo": "Cuál fue el Cedear de ETF más operado: la sorpresa cripto",
+      "link": "https://www.iproup.com/finanzas/71585-cual-fue-el-cedear-de-etf-mas-operado",
+      "descripcion": "SPY dominó el volumen de Cedears de ETF con el 22,22% del total negociado. Bitcoin y oro completaron el podio del mercado local",
+      "fecha_publicacion": "2026-09-16T16:09:00+00:00",
+      "fuente_id": "iproup_fintech",
+      "fuente_nombre": "iProUP Fintech",
+      "categoria": "Finanzas"
+    },
+    {
+      "id": "b7c92f63fe47",
+      "titulo": "Salarios, inflación, dólar y cifras clave del Presupuesto que estima el Gobierno para 2027",
+      "link": "https://www.iprofesional.com/management/464568-salarios-inflacion-dolar-pbi-y-cifras-clave-del-proyecto-de-presupuesto-2027",
+      "descripcion": "Con salarios creciendo por encima de la inflación y el dólar incluso por debajo de ello, el Presupuesto 2027 desborda de optimismo",
+      "fecha_publicacion": "2026-09-16T15:33:00+00:00",
+      "fuente_id": "iprof_management",
+      "fuente_nombre": "iProfesional Management",
+      "categoria": "Laboral"
+    },
+    {
+      "id": "d72bef68559f",
+      "titulo": "Nuevas aplicaciones para buscar trabajo en Argentina que no son LinkedIn",
+      "link": "https://www.iprofesional.com/management/464476-aplicaciones-para-buscar-trabajo-en-argentina-que-no-son-linkedin",
+      "descripcion": "En sitios web y aplicaciones especializadas es posible encontrar ofertas de empleo menos difundidas. Las nuevas opciones para buscar trabajo en Argentina",
+      "fecha_publicacion": "2026-09-16T14:01:00+00:00",
+      "fuente_id": "iprof_management",
+      "fuente_nombre": "iProfesional Management",
+      "categoria": "Laboral"
+    },
+    {
+      "id": "c160df4aaf92",
+      "titulo": "Los precios de importación en EE.UU. suben y las ventas minoristas repuntan en agosto",
+      "link": "https://es.investing.com/news/economic-indicators/los-precios-de-importacion-suben-y-las-ventas-minoristas-repuntan-en-agosto-3837553",
+      "descripcion": "",
+      "fecha_publicacion": "2026-09-16T13:43:28+00:00",
+      "fuente_id": "investing_intl2",
+      "fuente_nombre": "Investing Mundo",
+      "categoria": "Internacional"
     },
     {
       "id": "b9abf6cb486d",
@@ -53,46 +293,6 @@
       "categoria": "Agro"
     },
     {
-      "id": "11af2d6ce5fb",
-      "titulo": "Las 10 claves del Presupuesto 2027 de Javier Milei: las proyecciones de inflación, dólar y crecimiento",
-      "link": "https://www.lanacion.com.ar/economia/las-10-claves-del-presupuesto-2027-de-javier-milei-las-proyecciones-de-inflacion-dolar-y-crecimiento-nid16092026/",
-      "descripcion": "El proyecto de ley, que el Gobierno ya envió al Congreso, propone el “equilibrio fiscal sostenido” como eje central de su estructura",
-      "fecha_publicacion": "2026-09-16T13:36:31+00:00",
-      "fuente_id": "lanacion_eco",
-      "fuente_nombre": "La Nación Economía",
-      "categoria": "Finanzas"
-    },
-    {
-      "id": "8f72bf1e1333",
-      "titulo": "La UIA reclama al Gobierno cuotas y prorrateo de tarifas eléctricas para pymes",
-      "link": "https://www.iprofesional.com/energia/464530-la-uia-pide-pago-en-cuotas-de-tarifas-de-energia-para-pymes",
-      "descripcion": "Frente a boletas de luz duplicadas la central fabril exigió planes de financiamiento urgentes para mitigar los aumentos en industrias",
-      "fecha_publicacion": "2026-09-16T13:30:00+00:00",
-      "fuente_id": "iprof_economia",
-      "fuente_nombre": "iProfesional Economía",
-      "categoria": "Finanzas"
-    },
-    {
-      "id": "601531d10bde",
-      "titulo": "Cuánto gana hoy un camionero, un chofer de colectivo y un maquinista de tren",
-      "link": "https://www.iprofesional.com/management/464499-cuanto-gana-hoy-un-camionero-un-chofer-de-colectivo-y-un-maquinista-de-tren",
-      "descripcion": "Cómo resultaron las principales paritarias de transporte, qué aumento de sueldo tendrán en septiembre 2026 y qué gremios siguen negociando",
-      "fecha_publicacion": "2026-09-16T13:25:00+00:00",
-      "fuente_id": "iprof_economia",
-      "fuente_nombre": "iProfesional Economía",
-      "categoria": "Finanzas"
-    },
-    {
-      "id": "b417ff0c8508",
-      "titulo": "Las 10 claves del presupuesto 2027 de Javier Milei: cómo se moverán el dólar, los precios y los salarios",
-      "link": "https://www.lanacion.com.ar/economia/dolar-inflacion-y-pbi-10-claves-de-la-hoja-de-ruta-que-presenta-el-gobierno-en-el-congreso-nid15092026/",
-      "descripcion": "Qué pasará con las principales variables de la economía durante el año de las elecciones presidenciales",
-      "fecha_publicacion": "2026-09-16T13:22:06+00:00",
-      "fuente_id": "lanacion_eco",
-      "fuente_nombre": "La Nación Economía",
-      "categoria": "Finanzas"
-    },
-    {
       "id": "9b681aa86bdc",
       "titulo": "En un fuerte respaldo para la ley de agroquímicos en Entre Ríos, el Tribunal Superior de Justicia anuló amparos que establecían exageradas áreas de exclusión (de más de 1 kilómetro) para las aplicaciones",
       "link": "https://bichosdecampo.com/en-un-fuerte-respaldo-para-la-ley-de-agroquimicos-en-entre-rios-el-tribunal-superior-de-justicia-anulo-amparos-que-establecian-exageradas-areas-de-exclusion-de-mas-de-1-kilometro-para-las-aplicacio/",
@@ -101,26 +301,6 @@
       "fuente_id": "bichos_campo",
       "fuente_nombre": "Bichos de Campo",
       "categoria": "Agro"
-    },
-    {
-      "id": "2fa949877bf4",
-      "titulo": "Empleadas domésticas tienen nuevos sueldos y un bono de hasta $20.000",
-      "link": "https://www.iprofesional.com/economia/464552-empleadas-domesticas-cuanto-cobraran-en-septiembre-octubre-noviembre-y-diciembre",
-      "descripcion": "Las empleadas domésticas tendrán cinco aumentos consecutivos hasta diciembre y un bono de hasta $20.000 según las horas trabajadas",
-      "fecha_publicacion": "2026-09-16T13:20:00+00:00",
-      "fuente_id": "iprof_economia",
-      "fuente_nombre": "iProfesional Economía",
-      "categoria": "Finanzas"
-    },
-    {
-      "id": "fbf8f94d570f",
-      "titulo": "Cómo rendir el examen de idoneidad de la CNV para trabajar en la City",
-      "link": "https://www.iproup.com/empleo/71575-como-rendir-el-examen-de-idoneidad-de-la-cnv-para-trabajar-en-la-city",
-      "descripcion": "La CNV exige certificar idoneidad para operar en el mercado financiero. BYMA Educa lanzó un programa de apoyo online. Cómo inscribirse.",
-      "fecha_publicacion": "2026-09-16T13:16:00+00:00",
-      "fuente_id": "iproup_fintech",
-      "fuente_nombre": "iProUP Fintech",
-      "categoria": "Finanzas"
     },
     {
       "id": "06e4d6983d39",
@@ -163,26 +343,6 @@
       "categoria": "Comex"
     },
     {
-      "id": "ef0ba314405f",
-      "titulo": "La actividad económica de Brasil cae un 0,2% en julio",
-      "link": "https://es.investing.com/news/economy-news/la-actividad-economica-de-brasil-cae-un-02-en-julio-93CH-3837363",
-      "descripcion": "",
-      "fecha_publicacion": "2026-09-16T12:42:25+00:00",
-      "fuente_id": "investing_economia",
-      "fuente_nombre": "Investing Economía",
-      "categoria": "Mercados"
-    },
-    {
-      "id": "b1f781e69a59",
-      "titulo": "El Nobel Michael Kremer, nuevo economista jefe del Banco Mundial",
-      "link": "https://es.investing.com/news/economy-news/el-nobel-michael-kremer-nuevo-economista-jefe-del-banco-mundial-93CH-3837310",
-      "descripcion": "",
-      "fecha_publicacion": "2026-09-16T12:33:20+00:00",
-      "fuente_id": "investing_economia",
-      "fuente_nombre": "Investing Economía",
-      "categoria": "Mercados"
-    },
-    {
       "id": "6f679ee61d26",
       "titulo": "Automotrices argentinas están en alerta porque Brasil quiere libre comercio bilateral",
       "link": "https://www.iprofesional.com/autos/464509-argentina-prepara-libre-comercio-de-autos-con-brasil-y-empresas-piden-proteccion",
@@ -203,26 +363,6 @@
       "categoria": "Automotor"
     },
     {
-      "id": "b02c6c3b6343",
-      "titulo": "Bitcoin pierde terreno ante el fracaso de la Ley Clarity en EEUU y la inminente suba de tasas de la Fed",
-      "link": "https://www.ambito.com/finanzas/bitcoin-pierde-terreno-el-fracaso-la-ley-clarity-eeuu-y-la-inminente-suba-tasas-la-fed-n6322903",
-      "descripcion": "La votación en el Senado norteamericano quedó 50 a favor y 49 en contra, lejos de los 60 votos necesarios para avanzar. Los exchanges liquidaron u$s571 millones en posiciones largas en 24 horas, el mayor nivel desde el 22 de agosto.",
-      "fecha_publicacion": "2026-09-16T12:15:00+00:00",
-      "fuente_id": "ambito_fin",
-      "fuente_nombre": "Ámbito Finanzas",
-      "categoria": "Finanzas"
-    },
-    {
-      "id": "0f30a7ac3a43",
-      "titulo": "El BIS lanza advertencia sobre la inteligencia artificial que pone en alerta al sistema financiero",
-      "link": "https://www.iproup.com/finanzas/71414-inteligencia-artificial-alerta-bis-bancos-sistema-financiero-global-septiembre-2026",
-      "descripcion": "El organismo remarcó que la IA ya se financia con deuda y crédito privado en estructuras opacas que podrían amplificar una corrección de mercado",
-      "fecha_publicacion": "2026-09-16T12:12:00+00:00",
-      "fuente_id": "iproup_fintech",
-      "fuente_nombre": "iProUP Fintech",
-      "categoria": "Finanzas"
-    },
-    {
       "id": "55854c8817df",
       "titulo": "Colombia inició la preparación del borrador del nuevo Código Nacional de Tránsito",
       "link": "https://webpicking.com/colombia-inicio-la-preparacion-del-borrador-del-nuevo-codigo-nacional-de-transito/",
@@ -231,16 +371,6 @@
       "fuente_id": "webpicking",
       "fuente_nombre": "Webpicking",
       "categoria": "Logística"
-    },
-    {
-      "id": "0831664694a3",
-      "titulo": "Los futuros de Wall Street ensayan un rebote a la espera de la decisión de la Fed",
-      "link": "https://www.ambito.com/finanzas/los-futuros-wall-street-ensayan-un-rebote-la-espera-la-decision-la-fed-n6322877",
-      "descripcion": "Las acciones y los bonos del Tesoro de EEUU están encontrando un respiro tras varios días de ventas. Los operadores aguardan por la última decisión de la Reserva Federal sobre las tasas de interés y las proyecciones actualizadas antes de apostar por el rumbo que tomarán los mercados.",
-      "fecha_publicacion": "2026-09-16T11:55:00+00:00",
-      "fuente_id": "ambito_fin",
-      "fuente_nombre": "Ámbito Finanzas",
-      "categoria": "Finanzas"
     },
     {
       "id": "f5b40878400b",
@@ -253,26 +383,6 @@
       "categoria": "Agro"
     },
     {
-      "id": "30e45ed96b9a",
-      "titulo": "Ataques saudíes golpean Yemen en medio del avance hutí",
-      "link": "https://es.investing.com/news/economy-news/ataques-saudies-golpean-yemen-en-medio-del-avance-huti-3837161",
-      "descripcion": "",
-      "fecha_publicacion": "2026-09-16T11:41:37+00:00",
-      "fuente_id": "investing_economia",
-      "fuente_nombre": "Investing Economía",
-      "categoria": "Mercados"
-    },
-    {
-      "id": "2966d9a53d14",
-      "titulo": "El dólar mayorista extendió la baja y el blue tocó máximos de casi un mes: ¿qué prevé el Gobierno para 2027?",
-      "link": "https://www.ambito.com/finanzas/el-dolar-mayorista-extendio-la-baja-y-el-blue-toco-maximos-casi-un-mes-que-preve-el-gobierno-2027-n6322868",
-      "descripcion": "El tipo de cambio oficial volvió a cerrar por debajo de los $1.510, mientras el blue trepó a $1.560 y el CCL se mantuvo cerca de los $1.600. El Presupuesto 2027 también incorporó nuevas referencias para el dólar.",
-      "fecha_publicacion": "2026-09-16T11:36:12+00:00",
-      "fuente_id": "ambito_fin",
-      "fuente_nombre": "Ámbito Finanzas",
-      "categoria": "Finanzas"
-    },
-    {
       "id": "b52b109fea07",
       "titulo": "La Asociación Japonesa del Gas apoya el acuerdo de GNL con Petronas",
       "link": "https://es.investing.com/news/commodities-news/la-asociacion-japonesa-del-gas-apoya-el-acuerdo-de-gnl-con-petronas-93CH-3837083",
@@ -281,26 +391,6 @@
       "fuente_id": "investing_agro",
       "fuente_nombre": "Investing Agro",
       "categoria": "Agro"
-    },
-    {
-      "id": "2bfe5d87b043",
-      "titulo": "Matías Stanislavsky asume como Country Head Argentina de Ingenia",
-      "link": "https://www.iprofesional.com/management/464539-matias-stanislavsky-asume-como-country-head-argentina-de-ingenia",
-      "descripcion": "El ejecutivo cuenta con más de 20 años en desarrollo de estrategias data-driven y liderazgo en Retail, Telecomunicaciones, Banca, Fintech y TravelTech",
-      "fecha_publicacion": "2026-09-16T11:12:00+00:00",
-      "fuente_id": "iprof_management",
-      "fuente_nombre": "iProfesional Management",
-      "categoria": "Laboral"
-    },
-    {
-      "id": "e899ed26e4d0",
-      "titulo": "Licitación de nuevas áreas en Vaca Muerta: GyP pidió información adicional a los oferentes y abre las ofertas económicas",
-      "link": "https://econojournal.com.ar/oilgas/licitacion-de-nuevas-areas-en-vaca-muerta-gyp-informacion-adicional-ofertas-economicas/",
-      "descripcion": "Gas y Petróleo del Neuquén (GyP), la empresa provincial controlada por el Estado neuquino, abrirá este miércoles a las 11 los sobres B con las ofertas económicas presentadas por las compañías que compiten por desarrollar ocho de los 15 bloques que la petrolera estatal puso a disposición de inversores privados. Durante las últimas dos semanas, [&#8230;]",
-      "fecha_publicacion": "2026-09-16T11:00:00+00:00",
-      "fuente_id": "econojournal",
-      "fuente_nombre": "EconoJournal",
-      "categoria": "Energía y Minería"
     },
     {
       "id": "827df80e4b6b",
@@ -333,16 +423,6 @@
       "categoria": "Internacional"
     },
     {
-      "id": "e7ec949c6e04",
-      "titulo": "¿Argentina debe festejar suba del petróleo?: la ola de dólares viene con un costoso lado B",
-      "link": "https://www.iprofesional.com/economia/464428-se-dispara-el-precio-del-petroleo-argentina-tiene-que-festejar",
-      "descripcion": "El repunte del petróleo alivia la brecha cambiaria en Argentina aunque genera un aumento de costos internos y de la tasa de interés global",
-      "fecha_publicacion": "2026-09-16T10:30:00+00:00",
-      "fuente_id": "iprof_finanzas",
-      "fuente_nombre": "iProfesional Finanzas",
-      "categoria": "Finanzas"
-    },
-    {
       "id": "88632f8e966f",
       "titulo": "Renault Niagara: ¿Qué precio tendrá la reemplazante de la Oroch?",
       "link": "https://motorwebargentina.com/renault-niagara-precio-2026/",
@@ -351,16 +431,6 @@
       "fuente_id": "motorweb",
       "fuente_nombre": "Motorweb Argentina",
       "categoria": "Automotor"
-    },
-    {
-      "id": "ea4160e37113",
-      "titulo": "Los 4 MBA argentinos de negocios mejor posicionados en el ranking de QS 2026",
-      "link": "https://www.iprofesional.com/management/464491-ranking-qs-2026-los-4-mba-argentinos-de-negocios-mejor-posicionados",
-      "descripcion": "Un MBA Global en Argentina se posicionó por primera vez en este ranking. Las mejores maestrías de negocios a nivel mundial en el ranking 2027",
-      "fecha_publicacion": "2026-09-16T10:00:00+00:00",
-      "fuente_id": "iprof_management",
-      "fuente_nombre": "iProfesional Management",
-      "categoria": "Laboral"
     },
     {
       "id": "e0fec96a833c",
@@ -403,16 +473,6 @@
       "categoria": "Internacional"
     },
     {
-      "id": "5f06774e65c1",
-      "titulo": "La inflación del Reino Unido sube al 3,1% y pone al Banco de Inglaterra en la atención",
-      "link": "https://es.investing.com/news/economic-indicators/la-inflacion-en-el-reino-unido-sube-al-31-en-agosto-por-el-alza-de-los-combustibles-3836464",
-      "descripcion": "",
-      "fecha_publicacion": "2026-09-16T06:12:33+00:00",
-      "fuente_id": "investing_intl2",
-      "fuente_nombre": "Investing Mundo",
-      "categoria": "Internacional"
-    },
-    {
       "id": "f7411cafeeff",
       "titulo": "Tasas de servicios municipales: la Corte Suprema ratifica su doctrina",
       "link": "https://www.ambito.com/novedades-fiscales/tasas-servicios-municipales-la-corte-suprema-ratifica-su-doctrina-n6322777",
@@ -433,16 +493,6 @@
       "categoria": "Comex"
     },
     {
-      "id": "b38e4c500114",
-      "titulo": "El veredicto del mercado sobre el Presupuesto y un dólar a $1.848 para 2027",
-      "link": "https://www.iprofesional.com/finanzas/464517-que-tan-viable-es-un-dolar-a-1848-pesos-en-2027-como-preve-el-presupuesto",
-      "descripcion": "El Gobierno envió al Congreso de la Nación sus proyecciones para el tipo de cambio para fines del próximo año. La visión de la City",
-      "fecha_publicacion": "2026-09-15T22:27:00+00:00",
-      "fuente_id": "iprof_finanzas",
-      "fuente_nombre": "iProfesional Finanzas",
-      "categoria": "Finanzas"
-    },
-    {
       "id": "d264b1cb4f12",
       "titulo": "El antecedente que ilusiona a Estudiantes antes de visitar a Lanús: vuelve Nicolás Ramírez",
       "link": "https://www.0221.com.ar/estudiantes/el-antecedente-que-ilusiona-estudiantes-antes-visitar-lanus-vuelve-nicolas-ramirez-n134263",
@@ -461,26 +511,6 @@
       "fuente_id": "webpicking",
       "fuente_nombre": "Webpicking",
       "categoria": "Logística"
-    },
-    {
-      "id": "79a8e6a4d19e",
-      "titulo": "Edesur cierra un préstamo millonario en pesos  para obras y mejora del servicio",
-      "link": "https://www.iprofesional.com/energia/464515-edesur-cierra-prestamo-millonario-para-obras-y-mejora-del-servicio",
-      "descripcion": "La distribuidora anunció un financiamiento sindicado a tres años con 5 bancos privados. El plan de inversiones rebustece la red en su área de concesión",
-      "fecha_publicacion": "2026-09-15T21:41:00+00:00",
-      "fuente_id": "iprof_finanzas",
-      "fuente_nombre": "iProfesional Finanzas",
-      "categoria": "Finanzas"
-    },
-    {
-      "id": "bb64fb649dac",
-      "titulo": "Edesur obtuvo un préstamo de bancos privados por $320.000 millones para inversiones y capital de trabajo",
-      "link": "https://econojournal.com.ar/energia/edesur-obtuvo-un-prestamo-para-inversiones-y-capital-de-trabajo/",
-      "descripcion": "La distribuidora de energía eléctrica Edesur cerró la contratación de un préstamo sindicado por un monto total de $320.000 millones. La operación formalizada por la representación legal de la compañía involucra a cinco de las principales entidades bancarias privadas del mercado local: ICBC Argentina, Banco Santander Argentina, Banco BBVA Argentina, Banco de Galicia y Buenos [&#8230;]",
-      "fecha_publicacion": "2026-09-15T21:24:06+00:00",
-      "fuente_id": "econojournal",
-      "fuente_nombre": "EconoJournal",
-      "categoria": "Energía y Minería"
     },
     {
       "id": "e4c54eb53989",
@@ -521,26 +551,6 @@
       "fuente_id": "trade_news",
       "fuente_nombre": "Trade News",
       "categoria": "Comex"
-    },
-    {
-      "id": "d9f517c93865",
-      "titulo": "Solo tres automotrices accedieron al cupo para importar autos electrificados sin arancel",
-      "link": "https://www.iprofesional.com/autos/464508-tres-automotrices-accedieron-al-cupo-para-importar-autos-sin-arancel",
-      "descripcion": "Se trata de un remanente de apenas 865 unidades del 2025 y 2026. Se presentaron 9.617 solicitudes y la mayoría tuvo que ser rechazada",
-      "fecha_publicacion": "2026-09-15T20:25:00+00:00",
-      "fuente_id": "iprof_autos",
-      "fuente_nombre": "iProfesional Autos",
-      "categoria": "Automotor"
-    },
-    {
-      "id": "071190ef9088",
-      "titulo": "Arenas para Vaca Muerta: el gobierno de Neuquén defendió la ley de regalías mineras y espera una sanción antes de fin de año",
-      "link": "https://econojournal.com.ar/enclave/arenas-para-vaca-muerta-el-gobierno-de-neuquen-defendio-la-ley-de-regalias-mineras/",
-      "descripcion": "El gobierno de Neuquén ratificó este martes que buscará sancionar el nuevo régimen de regalías mineras de la provincia antes de fin de año, pese a estar pendiente de tratamiento en la Legislatura desde marzo. «Vamos a avanzar», aseguró la ministra de Ambiente, Leticia Esteves, quien afirmó que ninguna operadora presentó un reclamo «oficial» contra [&#8230;]",
-      "fecha_publicacion": "2026-09-15T19:31:59+00:00",
-      "fuente_id": "econojournal",
-      "fuente_nombre": "EconoJournal",
-      "categoria": "Energía y Minería"
     },
     {
       "id": "5209602b1624",
@@ -841,16 +851,6 @@
       "fuente_id": "diario_autos",
       "fuente_nombre": "Diario de Autos",
       "categoria": "Automotor"
-    },
-    {
-      "id": "8b5f1bc8e7fe",
-      "titulo": "Caputo celebra récord exportador pyme de u$s7.630 millones, pero crece la morosidad",
-      "link": "https://www.iprofesional.com/finanzas/464283-caputo-celebra-record-exportador-pyme-de-us7630-millones-pero-crece-la-morosidad",
-      "descripcion": "Las ventas al exterior crecieron 24% hasta agosto, mientras casi 37.500 PyMEs están endeudadas y la morosidad de los créditos trepó al 3,7%",
-      "fecha_publicacion": "2026-09-11T14:29:00+00:00",
-      "fuente_id": "iprof_comex",
-      "fuente_nombre": "iProfesional Comex",
-      "categoria": "Comex"
     },
     {
       "id": "6ef5b983c867",

@@ -1,170 +1,468 @@
 {
-  "generado_en": "2026-09-16T13:48:32.566047+00:00",
+  "generado_en": "2026-09-16T20:45:13.130096+00:00",
   "destacados": [
     {
-      "id": "54848b90fdd9",
-      "titulo": "OpenAI negocia ronda de financiamiento para juntar u$s1,2 billones antes de su IPO en Wall Street",
-      "link": "https://www.iproup.com/economia-digital/71584-openai-busca-juntar-us12-billones-antes-de-su-salida-a-bolsa-en-wall-street",
-      "descripcion": "OpenAI mantiene conversaciones preliminares con inversores para una nueva inyección de capital que podría elevar aún más su valuación privada actual",
-      "fecha_publicacion": "2026-09-16T15:38:00+00:00",
-      "fuente_id": "iproup_eco",
-      "fuente_nombre": "iProUP Economía Digital",
+      "id": "97cc5922e20c",
+      "titulo": "La subida de tipos de la Fed lleva los bonos del Tesoro a 2 años al un máximo desde julio de 2024",
+      "link": "https://es.investing.com/news/economy-news/la-subida-de-tipos-de-la-fed-lleva-los-bonos-del-tesoro-a-2-anos-al-un-maximo-desde-julio-de-2024-93CH-3838060",
+      "descripcion": "",
+      "fecha_publicacion": "2026-09-16T20:31:47+00:00",
+      "fuente_id": "investing_economia",
+      "fuente_nombre": "Investing Economía",
       "categoria": "Mercados"
     },
     {
-      "id": "337a4a9cbe17",
-      "titulo": "ARCA debe $1.596 millones en devoluciones de percepciones por dólar tarjeta: cómo hacer el reclamo",
-      "link": "https://www.iproup.com/finanzas/71541-percepciones-30-por-ciento-arca-como-recuperar-devolucion-septiembre-2026",
-      "descripcion": "El fisco mantiene una deuda por percepciones en moneda extranjera y los contribuyentes tienen tres vías para tramitar el reintegro según su caso fiscal",
-      "fecha_publicacion": "2026-09-16T13:52:00+00:00",
-      "fuente_id": "iproup_fintech",
-      "fuente_nombre": "iProUP Fintech",
+      "id": "aeac1044f700",
+      "titulo": "“Activá tu huerta”: entregan 10.000 kits de semillas para familias e instituciones",
+      "link": "https://www.lanacion.com.ar/economia/campo/activa-tu-huerta-entregan-10000-kits-de-semillas-para-familias-e-instituciones-nid16092026/",
+      "descripcion": "Se trata de una iniciativa de la provincia de Santa Cruz que, además, incluye capacitación y apoyo técnico",
+      "fecha_publicacion": "2026-09-16T20:41:35+00:00",
+      "fuente_id": "lanacion_eco",
+      "fuente_nombre": "La Nación Economía",
       "categoria": "Finanzas"
     },
     {
-      "id": "5ebaa6f38cf3",
-      "titulo": "Los alquileres en Reino Unido suben al ritmo más rápido del año en agosto",
-      "link": "https://es.investing.com/news/economic-indicators/los-alquileres-en-reino-unido-suben-al-ritmo-mas-rapido-del-ano-en-agosto-93CH-3836965",
+      "id": "c160df4aaf92",
+      "titulo": "Los precios de importación en EE.UU. suben y las ventas minoristas repuntan en agosto",
+      "link": "https://es.investing.com/news/economic-indicators/los-precios-de-importacion-suben-y-las-ventas-minoristas-repuntan-en-agosto-3837553",
       "descripcion": "",
-      "fecha_publicacion": "2026-09-16T10:35:33+00:00",
+      "fecha_publicacion": "2026-09-16T13:43:28+00:00",
       "fuente_id": "investing_intl2",
       "fuente_nombre": "Investing Mundo",
       "categoria": "Internacional"
     }
   ],
   "secciones": {
+    "Finanzas": [
+      {
+        "id": "aeac1044f700",
+        "titulo": "“Activá tu huerta”: entregan 10.000 kits de semillas para familias e instituciones",
+        "link": "https://www.lanacion.com.ar/economia/campo/activa-tu-huerta-entregan-10000-kits-de-semillas-para-familias-e-instituciones-nid16092026/",
+        "descripcion": "Se trata de una iniciativa de la provincia de Santa Cruz que, además, incluye capacitación y apoyo técnico",
+        "fecha_publicacion": "2026-09-16T20:41:35+00:00",
+        "fuente_id": "lanacion_eco",
+        "fuente_nombre": "La Nación Economía",
+        "categoria": "Finanzas"
+      },
+      {
+        "id": "9c8650df2a29",
+        "titulo": "Súper Niño: dónde habrá excesos de lluvias, en qué lugares no será grave y qué son las “olitas” que preocupan",
+        "link": "https://www.lanacion.com.ar/economia/campo/super-nino-donde-habra-excesos-de-lluvias-en-que-lugares-el-fenomeno-sera-menor-y-que-es-el-efecto-nid16092026/",
+        "descripcion": "Según un informe, el evento podría impactar de manera diferente en las distintas regiones productivas; los mayores peligros se encuentran en el este del territorio del país",
+        "fecha_publicacion": "2026-09-16T20:39:20+00:00",
+        "fuente_id": "lanacion_eco",
+        "fuente_nombre": "La Nación Economía",
+        "categoria": "Finanzas"
+      },
+      {
+        "id": "cbdee25e3bca",
+        "titulo": "El riesgo país se consolida arriba de los 500 puntos y ADRs anotan mayoría de bajas ante caída del petróleo",
+        "link": "https://www.ambito.com/finanzas/los-bonos-dolares-operan-mixtos-wall-street-mientras-que-el-riesgo-pais-sigue-encima-los-500-puntos-n6322967",
+        "descripcion": "Los bonos cotizan con mayoría de bajas y las acciones argentinas que cotizan en Wall Street anotan mayoría de bajas, mientras la City analiza el Presupuesto 2027, que prevé 4% de PBI, 18% de inflación y dólar a $1.847,6.",
+        "fecha_publicacion": "2026-09-16T20:33:00+00:00",
+        "fuente_id": "ambito_fin",
+        "fuente_nombre": "Ámbito Finanzas",
+        "categoria": "Finanzas"
+      },
+      {
+        "id": "4b9560080288",
+        "titulo": "Polémica: se fue con casi $110 millones cuando lo despidieron del Enacom y lo contrataron en el INTA al día siguiente",
+        "link": "https://www.lanacion.com.ar/economia/campo/polemica-se-fue-con-casi-110-millones-cuando-lo-despidieron-del-enacom-y-lo-contrataron-en-el-inta-nid16092026/",
+        "descripcion": "Daniel Alfredo Neira dejó el ente de comunicaciones el 31 de julio y recibió una liquidación final neta de $109,7 millones; el Consejo Directivo del INTA formalizó luego su designación transitoria con efecto desde el 1° de agosto; consejeros aseguran que desconocían las condiciones de su salida y ahora analizan revisar la aprobación",
+        "fecha_publicacion": "2026-09-16T20:22:55+00:00",
+        "fuente_id": "lanacion_eco",
+        "fuente_nombre": "La Nación Economía",
+        "categoria": "Finanzas"
+      },
+      {
+        "id": "18fcab276b3f",
+        "titulo": "Presupuesto 2027: Luis Caputo prevé deuda por u$s11.000 millones en Bonares pero sin el regreso al mercado internacional",
+        "link": "https://www.ambito.com/finanzas/presupuesto-2027-luis-caputo-preve-deuda-us11000-millones-bonares-pero-el-regreso-al-mercado-internacional-n6323062",
+        "descripcion": "El Gobierno envió al Congreso el proyecto de Presupuesto 2027, donde planifica financiamiento en dólares proveniente de bonos en el mercado local y organismos internacionales.",
+        "fecha_publicacion": "2026-09-16T19:46:00+00:00",
+        "fuente_id": "ambito_fin",
+        "fuente_nombre": "Ámbito Finanzas",
+        "categoria": "Finanzas"
+      },
+      {
+        "id": "aa58f36e9cac",
+        "titulo": "El riesgo país sigue arriba de los 500 puntos y caen los ADR, tras la decisión de la FED",
+        "link": "https://www.iprofesional.com/finanzas/464565-mercados-en-alerta-por-la-fed-el-merval-cae-11-y-el-riesgo-pais-llega-a-509-puntos",
+        "descripcion": "Los inversores siguen de cerca la definición del organismo estadounidense, mientras los activos locales operan con señales dispares",
+        "fecha_publicacion": "2026-09-16T19:45:00+00:00",
+        "fuente_id": "iprof_finanzas",
+        "fuente_nombre": "iProfesional Finanzas",
+        "categoria": "Finanzas"
+      },
+      {
+        "id": "137b118f8300",
+        "titulo": "La inflación mayorista se aceleró y llegó al 2,1% en agosto por la suba del petróleo",
+        "link": "https://www.iprofesional.com/economia/464592-la-inflacion-mayorista-se-acelero-al-21-en-agosto-por-la-suba-del-petroleo",
+        "descripcion": "A contramano del IPC, los precios mayoristas saltaron el mes pasado luego de haber perforado el 1% en julio. El mensaje de Luis Caputo",
+        "fecha_publicacion": "2026-09-16T19:32:00+00:00",
+        "fuente_id": "iprof_economia",
+        "fuente_nombre": "iProfesional Economía",
+        "categoria": "Finanzas"
+      },
+      {
+        "id": "cc84a4102126",
+        "titulo": "Carne barata en Mataderos: cómo y qué comprar directo en frigoríficos para ahorrar",
+        "link": "https://www.iprofesional.com/finanzas/464564-carne-barata-en-mataderos-como-y-que-comprar-directo-en-frigorificos-para-ahorrar",
+        "descripcion": "Los precios al público son sustancialmente más bajos que en los supermercados, incluso cuando estos ofrecen promociones. Las claves para comprar",
+        "fecha_publicacion": "2026-09-16T19:24:00+00:00",
+        "fuente_id": "iprof_finanzas",
+        "fuente_nombre": "iProfesional Finanzas",
+        "categoria": "Finanzas"
+      }
+    ],
+    "Comex": [
+      {
+        "id": "4f58ae4dd0d6",
+        "titulo": "Cómo impactará en dólar, acciones y bonos argentinos la suba de tasas de la Fed",
+        "link": "https://www.iprofesional.com/finanzas/464594-como-impacta-en-dolar-acciones-y-bonos-argentinos-suba-de-tasa-de-la-fed",
+        "descripcion": "El alza de 25 puntos básicos de la tasa de referencia impulsada por Reserva Federal impacta en el costo de emisión de deuda y otros factores",
+        "fecha_publicacion": "2026-09-16T20:35:00+00:00",
+        "fuente_id": "iprof_comex",
+        "fuente_nombre": "iProfesional Comex",
+        "categoria": "Comex"
+      },
+      {
+        "id": "3160ea8e9c5e",
+        "titulo": "Aduanas de Chile detecta más de 164 kilos de drogas antes de las Fiestas Patrias",
+        "link": "https://aduananews.com/aduanas-de-chile-detecta-mas-de-164-kilos-de-drogas-antes-de-las-fiestas-patrias/?utm_source=rss&utm_medium=rss&utm_campaign=aduanas-de-chile-detecta-mas-de-164-kilos-de-drogas-antes-de-las-fiestas-patrias",
+        "descripcion": "Funcionarios de la Aduana de Iquique detectaron este martes (15.09.2026) más de 150 kilos de cocaína y otros 14 kilos de ketamina en dos procedimientos de fiscalización realizados recientemente en el Complejo Fronterizo Quillagua, ubicado en la comuna de María Elena, provincia de Tocopilla, en la Región de Antofagasta, en el extremo norte de Chile. [&#8230;] The post Aduanas de Chile detecta más de 164 kilos de drogas antes de las Fiestas Patrias appeared first on Aduana News .",
+        "fecha_publicacion": "2026-09-16T12:49:15+00:00",
+        "fuente_id": "aduana_news",
+        "fuente_nombre": "Aduana News",
+        "categoria": "Comex"
+      },
+      {
+        "id": "5b94f1ca30e8",
+        "titulo": "Argentina vuelve a venderle pollo a un país con un mercado de u$s1400 millones por año",
+        "link": "https://www.iprofesional.com/comex/464525-argentina-vuelve-a-venderle-pollo-a-un-pais-con-un-mercado-de-us1400-millones-por-ano",
+        "descripcion": "La Secretaría de Agricultura, Ganadería y Pesca informó que el Ministerio de agricultura japonés levantó la suspensión de importaciones avícolas argentinas",
+        "fecha_publicacion": "2026-09-15T22:59:00+00:00",
+        "fuente_id": "iprof_comex",
+        "fuente_nombre": "iProfesional Comex",
+        "categoria": "Comex"
+      },
+      {
+        "id": "3041f22ad518",
+        "titulo": "Informe 2026 de la OMC: adaptar las reglas del comercio a las nuevas realidades económicas",
+        "link": "https://aduananews.com/nuevo-informe-de-la-omc-adaptar-las-reglas-del-comercio-a-las-nuevas-realidades-economicas/?utm_source=rss&utm_medium=rss&utm_campaign=nuevo-informe-de-la-omc-adaptar-las-reglas-del-comercio-a-las-nuevas-realidades-economicas",
+        "descripcion": "El sistema mundial de comercio atraviesa el período de mayor perturbación desde la creación de las instituciones multilaterales después de la Gran Depresión y la Segunda Guerra Mundial. En este contexto, la Organización Mundial del Comercio (OMC) advirtió este martes (15.09.2026) que la falta de modernización del sistema podría hacer que el producto interno bruto [&#8230;] The post Informe 2026 de la OMC: adaptar las reglas del comercio a las nuevas realidades económicas appeared first on Aduana",
+        "fecha_publicacion": "2026-09-15T20:54:08+00:00",
+        "fuente_id": "aduana_news",
+        "fuente_nombre": "Aduana News",
+        "categoria": "Comex"
+      },
+      {
+        "id": "cb6be22a02d5",
+        "titulo": "La industria metalmecánica acumuló una caída de 10,9% en los primeros siete meses de 2026",
+        "link": "https://tradenews.com.ar/la-industria-metalmecanica-acumulo-una-caida-de-109-en-los-primeros-siete-meses-de-2026/",
+        "descripcion": "La producción metalmecánica profundizó su retroceso y acumula una caída interanual de 10,9% hasta julio de 2026, frente a una baja de 2,6% en el conjunto de la industria. El...",
+        "fecha_publicacion": "2026-09-15T20:35:15+00:00",
+        "fuente_id": "trade_news",
+        "fuente_nombre": "Trade News",
+        "categoria": "Comex"
+      },
+      {
+        "id": "3be3d4ecdfa4",
+        "titulo": "Mercedes-Benz Camiones y Buses celebra 75 años en la Argentina",
+        "link": "https://tradenews.com.ar/mercedes-benz-camiones-y-buses-celebra-75-anos-en-la-argentina/",
+        "descripcion": "En la Argentina, el transporte pesado y de pasajeros representa una parte fundamental de la matriz productiva y de la vida cotidiana. En ese contexto, Mercedes-Benz Camiones y Buses conmemora...",
+        "fecha_publicacion": "2026-09-15T15:59:52+00:00",
+        "fuente_id": "trade_news",
+        "fuente_nombre": "Trade News",
+        "categoria": "Comex"
+      },
+      {
+        "id": "d685f3b49fdd",
+        "titulo": "Argentina promulga la ley que aprueba el acuerdo MERCOSUR-Singapur",
+        "link": "https://aduananews.com/argentina-promulga-la-ley-que-aprueba-el-acuerdo-mercosur-singapur/?utm_source=rss&utm_medium=rss&utm_campaign=argentina-promulga-la-ley-que-aprueba-el-acuerdo-mercosur-singapur",
+        "descripcion": "El Gobierno argentino promulgó la Ley N.º 27.819, que aprueba el Acuerdo de Libre Comercio entre el MERCOSUR y la República de Singapur, firmado el 7 de diciembre de 2023 en Río de Janeiro. La promulgación fue dispuesta mediante el Decreto 1010/2026, publicado este martes (15.09.2026) en el Boletín Oficial. El acuerdo establece una Zona [&#8230;] The post Argentina promulga la ley que aprueba el acuerdo MERCOSUR-Singapur appeared first on Aduana News .",
+        "fecha_publicacion": "2026-09-15T14:08:30+00:00",
+        "fuente_id": "aduana_news",
+        "fuente_nombre": "Aduana News",
+        "categoria": "Comex"
+      },
+      {
+        "id": "9d966f685928",
+        "titulo": "Estrecho de Ormuz: por qué las pymes sufren el mayor impacto de la crisis comercial",
+        "link": "https://tradenews.com.ar/estrecho-de-ormuz-por-que-las-pymes-sufren-el-mayor-impacto-de-la-crisis-comercial/",
+        "descripcion": "Las interrupciones del comercio afectan a todas las empresas, pero raramente las afectan por igual. Y las interrupciones en el estrecho de Ormuz no son la excepción. Un estudio de...",
+        "fecha_publicacion": "2026-09-14T20:52:41+00:00",
+        "fuente_id": "trade_news",
+        "fuente_nombre": "Trade News",
+        "categoria": "Comex"
+      }
+    ],
     "Mercados": [
       {
-        "id": "54848b90fdd9",
-        "titulo": "OpenAI negocia ronda de financiamiento para juntar u$s1,2 billones antes de su IPO en Wall Street",
-        "link": "https://www.iproup.com/economia-digital/71584-openai-busca-juntar-us12-billones-antes-de-su-salida-a-bolsa-en-wall-street",
-        "descripcion": "OpenAI mantiene conversaciones preliminares con inversores para una nueva inyección de capital que podría elevar aún más su valuación privada actual",
-        "fecha_publicacion": "2026-09-16T15:38:00+00:00",
-        "fuente_id": "iproup_eco",
-        "fuente_nombre": "iProUP Economía Digital",
-        "categoria": "Mercados"
-      },
-      {
-        "id": "7a075f04787a",
-        "titulo": "La SEC promete avanzar con reglas cripto pese al freno a Clarity Act en el Senado de EEUU",
-        "link": "https://www.iproup.com/economia-digital/71580-sec-reglas-criptomonedas-clarity-act-senado-eeuu-septiembre-2026",
-        "descripcion": "El regulador apunta a modernizar la custodia y transferencia de activos digitales pese al freno del proyecto cripto en el Congreso de Estados Unidos",
-        "fecha_publicacion": "2026-09-16T14:39:00+00:00",
-        "fuente_id": "iproup_eco",
-        "fuente_nombre": "iProUP Economía Digital",
-        "categoria": "Mercados"
-      },
-      {
-        "id": "ef0ba314405f",
-        "titulo": "La actividad económica de Brasil cae un 0,2% en julio",
-        "link": "https://es.investing.com/news/economy-news/la-actividad-economica-de-brasil-cae-un-02-en-julio-93CH-3837363",
+        "id": "97cc5922e20c",
+        "titulo": "La subida de tipos de la Fed lleva los bonos del Tesoro a 2 años al un máximo desde julio de 2024",
+        "link": "https://es.investing.com/news/economy-news/la-subida-de-tipos-de-la-fed-lleva-los-bonos-del-tesoro-a-2-anos-al-un-maximo-desde-julio-de-2024-93CH-3838060",
         "descripcion": "",
-        "fecha_publicacion": "2026-09-16T12:42:25+00:00",
+        "fecha_publicacion": "2026-09-16T20:31:47+00:00",
         "fuente_id": "investing_economia",
         "fuente_nombre": "Investing Economía",
         "categoria": "Mercados"
       },
       {
-        "id": "b1f781e69a59",
-        "titulo": "El Nobel Michael Kremer, nuevo economista jefe del Banco Mundial",
-        "link": "https://es.investing.com/news/economy-news/el-nobel-michael-kremer-nuevo-economista-jefe-del-banco-mundial-93CH-3837310",
+        "id": "14283beecd3c",
+        "titulo": "Por qué el volumen de criptomonedas se recuperó en agosto",
+        "link": "https://www.iproup.com/economia-digital/71588-por-que-se-recupera-el-volumen-de-criptomonedas-en-agosto",
+        "descripcion": "El volumen spot alcanzó los u$s75.000 millones el 21 de agosto, mientras que los futuros perpetuos llegaron a los u$s336.000 millones",
+        "fecha_publicacion": "2026-09-16T20:15:00+00:00",
+        "fuente_id": "iproup_eco",
+        "fuente_nombre": "iProUP Economía Digital",
+        "categoria": "Mercados"
+      },
+      {
+        "id": "702e93ecaf14",
+        "titulo": "Precio de las criptomonedas top: cuánto valen en Argentina y a nivel global hoy, 16 de septiembre de 2026",
+        "link": "https://www.iproup.com/economia-digital/71597-precio-de-criptomonedas-en-argentina-cuanto-valen-hoy-16-de-septiembre-de-2026",
+        "descripcion": "En las últimas 24 horas, la criptomoneda número uno bajó 0,21%. Las cotizaciones de de otras divisas digitales y dólares cripto",
+        "fecha_publicacion": "2026-09-16T19:53:00+00:00",
+        "fuente_id": "iproup_eco",
+        "fuente_nombre": "iProUP Economía Digital",
+        "categoria": "Mercados"
+      },
+      {
+        "id": "1262495e9a4e",
+        "titulo": "Precio de Bitcoin: cuánto vale en Argentina y a nivel global hoy, 16 de septiembre de 2026",
+        "link": "https://www.iproup.com/economia-digital/71598-precio-de-criptomonedas-en-argentina-cuanto-valen-hoy-16-de-septiembre-de-2026",
+        "descripcion": "En las últimas 24 horas, la criptomoneda principal retrocedió 0,21%. Cómo evolucionaron otras monedas digitales y dólares cripto",
+        "fecha_publicacion": "2026-09-16T19:53:00+00:00",
+        "fuente_id": "iproup_eco",
+        "fuente_nombre": "iProUP Economía Digital",
+        "categoria": "Mercados"
+      },
+      {
+        "id": "9dcff9eb17aa",
+        "titulo": "Los bancos centrales del Golfo suben tipos tras la decisión de la Fed",
+        "link": "https://es.investing.com/news/economy-news/los-bancos-centrales-del-golfo-suben-tipos-tras-la-decision-de-la-fed-93CH-3837953",
         "descripcion": "",
-        "fecha_publicacion": "2026-09-16T12:33:20+00:00",
+        "fecha_publicacion": "2026-09-16T19:36:42+00:00",
         "fuente_id": "investing_economia",
         "fuente_nombre": "Investing Economía",
         "categoria": "Mercados"
       },
       {
-        "id": "30e45ed96b9a",
-        "titulo": "Ataques saudíes golpean Yemen en medio del avance hutí",
-        "link": "https://es.investing.com/news/economy-news/ataques-saudies-golpean-yemen-en-medio-del-avance-huti-3837161",
+        "id": "ef9c701fe6b1",
+        "titulo": "La Fed sube los tipos de interés 25 puntos básicos, como se esperaba",
+        "link": "https://es.investing.com/news/economy-news/la-fed-sube-los-tipos-de-interes-25-puntos-basicos-como-se-esperaba-3837854",
         "descripcion": "",
-        "fecha_publicacion": "2026-09-16T11:41:37+00:00",
+        "fecha_publicacion": "2026-09-16T18:00:57+00:00",
         "fuente_id": "investing_economia",
         "fuente_nombre": "Investing Economía",
         "categoria": "Mercados"
       }
     ],
-    "Finanzas": [
+    "Laboral": [
       {
-        "id": "337a4a9cbe17",
-        "titulo": "ARCA debe $1.596 millones en devoluciones de percepciones por dólar tarjeta: cómo hacer el reclamo",
-        "link": "https://www.iproup.com/finanzas/71541-percepciones-30-por-ciento-arca-como-recuperar-devolucion-septiembre-2026",
-        "descripcion": "El fisco mantiene una deuda por percepciones en moneda extranjera y los contribuyentes tienen tres vías para tramitar el reintegro según su caso fiscal",
-        "fecha_publicacion": "2026-09-16T13:52:00+00:00",
-        "fuente_id": "iproup_fintech",
-        "fuente_nombre": "iProUP Fintech",
-        "categoria": "Finanzas"
+        "id": "18273c7e2ac9",
+        "titulo": "El CEO de Nvidia explicó por qué la IA llevará a plomeros o electricistas a sueldos altos",
+        "link": "https://www.iprofesional.com/management/464591-el-ceo-de-nvidia-explico-por-que-la-ia-llevara-a-plomeros-o-electricistas-a-sueldos-altos",
+        "descripcion": "Uno de los máximos referentes de tecnología en el mundo dejó su parecer respecto de lo que implicarán ciertos oficios dentro de algunos años",
+        "fecha_publicacion": "2026-09-16T19:38:00+00:00",
+        "fuente_id": "iprof_management",
+        "fuente_nombre": "iProfesional Management",
+        "categoria": "Laboral"
       },
       {
-        "id": "93454e472329",
-        "titulo": "Presupuesto 2027: cómo afecta a jubilados, empleados públicos y beneficiarios de Anses",
-        "link": "https://www.lanacion.com.ar/economia/presupuesto-2027-como-afecta-a-jubilados-empleados-publicos-y-beneficiarios-de-anses-nid16092026/",
-        "descripcion": "El proyecto enviado al Congreso contempla un aumento de casi 30% en las prestaciones de la seguridad social, proyecta inflación del 18% para el año próximo y ratifica la estrategia de reducción del Estado",
-        "fecha_publicacion": "2026-09-16T13:40:18+00:00",
-        "fuente_id": "lanacion_eco",
-        "fuente_nombre": "La Nación Economía",
-        "categoria": "Finanzas"
+        "id": "b7c92f63fe47",
+        "titulo": "Salarios, inflación, dólar y cifras clave del Presupuesto que estima el Gobierno para 2027",
+        "link": "https://www.iprofesional.com/management/464568-salarios-inflacion-dolar-pbi-y-cifras-clave-del-proyecto-de-presupuesto-2027",
+        "descripcion": "Con salarios creciendo por encima de la inflación y el dólar incluso por debajo de ello, el Presupuesto 2027 desborda de optimismo",
+        "fecha_publicacion": "2026-09-16T15:33:00+00:00",
+        "fuente_id": "iprof_management",
+        "fuente_nombre": "iProfesional Management",
+        "categoria": "Laboral"
       },
       {
-        "id": "11af2d6ce5fb",
-        "titulo": "Las 10 claves del Presupuesto 2027 de Javier Milei: las proyecciones de inflación, dólar y crecimiento",
-        "link": "https://www.lanacion.com.ar/economia/las-10-claves-del-presupuesto-2027-de-javier-milei-las-proyecciones-de-inflacion-dolar-y-crecimiento-nid16092026/",
-        "descripcion": "El proyecto de ley, que el Gobierno ya envió al Congreso, propone el “equilibrio fiscal sostenido” como eje central de su estructura",
-        "fecha_publicacion": "2026-09-16T13:36:31+00:00",
-        "fuente_id": "lanacion_eco",
-        "fuente_nombre": "La Nación Economía",
-        "categoria": "Finanzas"
+        "id": "d72bef68559f",
+        "titulo": "Nuevas aplicaciones para buscar trabajo en Argentina que no son LinkedIn",
+        "link": "https://www.iprofesional.com/management/464476-aplicaciones-para-buscar-trabajo-en-argentina-que-no-son-linkedin",
+        "descripcion": "En sitios web y aplicaciones especializadas es posible encontrar ofertas de empleo menos difundidas. Las nuevas opciones para buscar trabajo en Argentina",
+        "fecha_publicacion": "2026-09-16T14:01:00+00:00",
+        "fuente_id": "iprof_management",
+        "fuente_nombre": "iProfesional Management",
+        "categoria": "Laboral"
       },
       {
-        "id": "8f72bf1e1333",
-        "titulo": "La UIA reclama al Gobierno cuotas y prorrateo de tarifas eléctricas para pymes",
-        "link": "https://www.iprofesional.com/energia/464530-la-uia-pide-pago-en-cuotas-de-tarifas-de-energia-para-pymes",
-        "descripcion": "Frente a boletas de luz duplicadas la central fabril exigió planes de financiamiento urgentes para mitigar los aumentos en industrias",
-        "fecha_publicacion": "2026-09-16T13:30:00+00:00",
-        "fuente_id": "iprof_economia",
-        "fuente_nombre": "iProfesional Economía",
-        "categoria": "Finanzas"
+        "id": "4c8ab50dbfd9",
+        "titulo": "Trabajo decente en las plataformas digitales: una nueva norma mundial",
+        "link": "https://voices.ilo.org/es-es/podcast/trabajo-decente-en-las-plataformas-digitales-una-nueva-norma-mundial",
+        "descripcion": "Las plataformas digitales han transformado el mundo del trabajo, generando nuevas oportunidades, pero también importantes desafíos para los derechos y la protección de los trabajadores. En este episodio de El futuro del trabajo, Nuno Cunha, especialista en instituciones de mercados laborales de la OIT, explica qué supone el nuevo Convenio núm. 193, la primera norma internacional del trabajo sobre la economía de plataformas, cómo fue elaborado a través del diálogo social y cuáles son los próximos",
+        "fecha_publicacion": "2026-08-26T00:00:00+00:00",
+        "fuente_id": "oit_podcast",
+        "fuente_nombre": "OIT Podcast",
+        "categoria": "Laboral"
       },
       {
-        "id": "b417ff0c8508",
-        "titulo": "Las 10 claves del presupuesto 2027 de Javier Milei: cómo se moverán el dólar, los precios y los salarios",
-        "link": "https://www.lanacion.com.ar/economia/dolar-inflacion-y-pbi-10-claves-de-la-hoja-de-ruta-que-presenta-el-gobierno-en-el-congreso-nid15092026/",
-        "descripcion": "Qué pasará con las principales variables de la economía durante el año de las elecciones presidenciales",
-        "fecha_publicacion": "2026-09-16T13:22:06+00:00",
-        "fuente_id": "lanacion_eco",
-        "fuente_nombre": "La Nación Economía",
-        "categoria": "Finanzas"
+        "id": "07f564b6ffd7",
+        "titulo": "Riesgos psicosociales en el trabajo: la amenaza invisible para la salud de los trabajadores",
+        "link": "https://voices.ilo.org/es-es/podcast/riesgos-psicosociales-en-el-trabajo-la-amenaza-invisible-para-la-salud-de-los-trabajadores",
+        "descripcion": "En este episodio del pódcast “El futuro del trabajo de la OIT”, Dafne Papandrea y Lucía Risueño Navarro explican cómo los riesgos psicosociales —como las largas jornadas laborales, la inseguridad en el empleo y el acoso en el lugar de trabajo— afectan a la salud de los trabajadores, y qué medidas pueden adoptarse para crear entornos laborales más saludables en todo el mundo.",
+        "fecha_publicacion": "2026-04-28T00:00:00+00:00",
+        "fuente_id": "oit_podcast",
+        "fuente_nombre": "OIT Podcast",
+        "categoria": "Laboral"
       },
       {
-        "id": "2fa949877bf4",
-        "titulo": "Empleadas domésticas tienen nuevos sueldos y un bono de hasta $20.000",
-        "link": "https://www.iprofesional.com/economia/464552-empleadas-domesticas-cuanto-cobraran-en-septiembre-octubre-noviembre-y-diciembre",
-        "descripcion": "Las empleadas domésticas tendrán cinco aumentos consecutivos hasta diciembre y un bono de hasta $20.000 según las horas trabajadas",
-        "fecha_publicacion": "2026-09-16T13:20:00+00:00",
-        "fuente_id": "iprof_economia",
-        "fuente_nombre": "iProfesional Economía",
-        "categoria": "Finanzas"
+        "id": "ef1638f33032",
+        "titulo": "La inteligencia artificial generativa y las desigualdades de género en el trabajo",
+        "link": "https://voices.ilo.org/es-es/podcast/la-inteligencia-artificial-generativa-y-las-desigualdades-de-genero-en-el-trabajo",
+        "descripcion": "En este episodio del pódcast de la Organización Internacional del Trabajo, Janine Berg, Economista senior en la OIT, presenta un nuevo informe sobre el impacto de la inteligencia artificial generativa en el mundo del trabajo. La experta explica por qué las mujeres están más expuestas que los hombres a los riesgos asociados a esta tecnología y qué significa esto para la igualdad en el mercado laboral.",
+        "fecha_publicacion": "2026-03-09T00:00:00+00:00",
+        "fuente_id": "oit_podcast",
+        "fuente_nombre": "OIT Podcast",
+        "categoria": "Laboral"
+      }
+    ],
+    "Energía y Minería": [
+      {
+        "id": "07476ba0a277",
+        "titulo": "Cómo la gestión de la energía se convirtió en herramienta de competitividad",
+        "link": "https://econojournal.com.ar/actualidad-mineria-energia/como-la-gestion-de-la-energia-se-convirtio-en-herramienta-de-competitividad/",
+        "descripcion": "Susana González Antico, socia fundadora y vicepresidenta de Turbine Heat &#038; Power S.A.]",
+        "fecha_publicacion": "2026-09-16T19:19:07+00:00",
+        "fuente_id": "econojournal",
+        "fuente_nombre": "EconoJournal",
+        "categoria": "Energía y Minería"
       },
       {
-        "id": "fbf8f94d570f",
-        "titulo": "Cómo rendir el examen de idoneidad de la CNV para trabajar en la City",
-        "link": "https://www.iproup.com/empleo/71575-como-rendir-el-examen-de-idoneidad-de-la-cnv-para-trabajar-en-la-city",
-        "descripcion": "La CNV exige certificar idoneidad para operar en el mercado financiero. BYMA Educa lanzó un programa de apoyo online. Cómo inscribirse.",
-        "fecha_publicacion": "2026-09-16T13:16:00+00:00",
-        "fuente_id": "iproup_fintech",
-        "fuente_nombre": "iProUP Fintech",
-        "categoria": "Finanzas"
+        "id": "02e327aa98cf",
+        "titulo": "Las exportaciones mineras superaron los US$ 4.700 millones en el primer semestre y registraron un crecimiento de 75% interanual",
+        "link": "https://econojournal.com.ar/mineria/las-exportaciones-mineras-us-4-700-millones-en-el-primer-semestre/",
+        "descripcion": "Las exportaciones mineras argentinas alcanzaron US$ 4.742 millones durante el primer semestre de 2026, el mayor valor registrado para un período enero-junio desde que existen estadísticas comparables para el sector. El resultado representa un crecimiento de casi 75% interanual, frente a los US$ 2.712 millones exportados en la primera mitad de 2025, y una expansión [&#8230;]",
+        "fecha_publicacion": "2026-09-16T17:30:22+00:00",
+        "fuente_id": "econojournal",
+        "fuente_nombre": "EconoJournal",
+        "categoria": "Energía y Minería"
       },
       {
-        "id": "b02c6c3b6343",
-        "titulo": "Bitcoin pierde terreno ante el fracaso de la Ley Clarity en EEUU y la inminente suba de tasas de la Fed",
-        "link": "https://www.ambito.com/finanzas/bitcoin-pierde-terreno-el-fracaso-la-ley-clarity-eeuu-y-la-inminente-suba-tasas-la-fed-n6322903",
-        "descripcion": "La votación en el Senado norteamericano quedó 50 a favor y 49 en contra, lejos de los 60 votos necesarios para avanzar. Los exchanges liquidaron u$s571 millones en posiciones largas en 24 horas, el mayor nivel desde el 22 de agosto.",
-        "fecha_publicacion": "2026-09-16T12:15:00+00:00",
-        "fuente_id": "ambito_fin",
-        "fuente_nombre": "Ámbito Finanzas",
-        "categoria": "Finanzas"
+        "id": "bc5014a0acb1",
+        "titulo": "Robots, drones, inteligencia artificial y poliuretano: la tecnología de Vestas para hacer más eficientes a los parques eólicos",
+        "link": "https://econojournal.com.ar/renovables-te/robots-drones-inteligencia-artificial-y-poliuretano-la-tecnologia-de-vestas-para-los-parques-eolicos/",
+        "descripcion": "Las nuevas tecnologías aplicadas a optimizar la operación y mantenimiento de los parques eólicos tienen un rol cada vez más protagónico. En los últimos años, la compañía danesa Vestas, especializada en soluciones en energía renovable, incorporó el uso de inteligencia artificial, análisis de datos, drones y robots de manera integrada en el mantenimiento de los [&#8230;]",
+        "fecha_publicacion": "2026-09-16T16:58:14+00:00",
+        "fuente_id": "econojournal",
+        "fuente_nombre": "EconoJournal",
+        "categoria": "Energía y Minería"
+      },
+      {
+        "id": "94665e6aedf9",
+        "titulo": "Río Negro: El Boletín Oficial publicó actuaciones sobre derechos mineros de uranio, vanadio, oro, plata y cobre en Valcheta",
+        "link": "https://dataenergia.ar/mineria/rio-negro-el-boletin-oficial-publico-actuaciones-sobre-derechos-mineros-de-uranio-vanadio-oro-plata-y-cobre-en-valcheta-202691517470",
+        "descripcion": "El Boletín Oficial de Río Negro formalizó un paquete de actuaciones administrativas sobre expedientes mineros de uranio, vanadio, oro, plata y cobre en el departamento Valcheta.",
+        "fecha_publicacion": "2026-09-15T20:47:00+00:00",
+        "fuente_id": "data_energia",
+        "fuente_nombre": "Data Energía",
+        "categoria": "Energía y Minería"
+      },
+      {
+        "id": "f699f2ca97c0",
+        "titulo": "Biocombustibles en la Argentina: La producción acumulada de biodiesel subió 12%, pero registra uno de los niveles más bajos en 17 años",
+        "link": "https://dataenergia.ar/renovables-y-de-transicion/biocombustibles-en-la-argentina-la-produccion-acumulada-de-biodiesel-subio-12-pero-registra-uno-de-los-niveles-mas-bajos-en-17-anos-202691514260",
+        "descripcion": "De acuerdo con datos sectoriales y proyecciones de Oil World, la producción argentina de biodiesel sumó 621.000 toneladas entre enero y julio de 2026, un 12% más que en 2025 pero configurando el tercer volumen más bajo en 17 años y un 37% por debajo de los registros de 2010.",
+        "fecha_publicacion": "2026-09-15T17:26:00+00:00",
+        "fuente_id": "data_energia",
+        "fuente_nombre": "Data Energía",
+        "categoria": "Energía y Minería"
+      },
+      {
+        "id": "f5312475e958",
+        "titulo": "Chubut: El Puerto de Comodoro Rivadavia descargó palas eólicas destinadas al Parque Eólico Kosten",
+        "link": "https://dataenergia.ar/renovables-y-de-transicion/chubut-el-puerto-de-comodoro-rivadavia-descargo-palas-eolicas-destinadas-al-parque-eolico-kosten-202691513560",
+        "descripcion": "El Muelle de Ultramar “Antonio Morán” del Puerto de Comodoro Rivadavia concretó la descarga de tres palas eólicas de 48.700 kilos transportadas por el buque Cóndor Valparaíso desde Zárate.",
+        "fecha_publicacion": "2026-09-15T16:56:00+00:00",
+        "fuente_id": "data_energia",
+        "fuente_nombre": "Data Energía",
+        "categoria": "Energía y Minería"
+      },
+      {
+        "id": "d54676fbec8f",
+        "titulo": "Récord exportador y máximos históricos de inversión: la minería argentina consolida su nuevo ciclo",
+        "link": "https://caem.com.ar/record-exportador-y-maximos-historicos-de-inversion-la-mineria-argentina-consolida-su-nuevo-ciclo/",
+        "descripcion": "Las exportaciones mineras argentinas totalizaron US$ 4.742 millones en la primera mitad de 2026. Se trata del máximo nivel exportador registrado para un primer semestre desde que existen estadísticas comparables para la minería argentina. De esta manera, se registra una... The post Récord exportador y máximos históricos de inversión: la minería argentina consolida su nuevo ciclo first appeared on CAEM .",
+        "fecha_publicacion": "2026-09-14T19:03:41+00:00",
+        "fuente_id": "caem",
+        "fuente_nombre": "CAEM",
+        "categoria": "Energía y Minería"
+      },
+      {
+        "id": "ed7c1e095250",
+        "titulo": "Análisis Resolución 73/2026 – importaciones con destino minero",
+        "link": "https://caem.com.ar/analisis-resolucion-73-2026-importaciones-con-destino-minero/",
+        "descripcion": "La Resolución 73/2026 de la Secretaría de Minería, publicada en el día de ayer, introduce cambios en la operatoria del beneficio previsto en el artículo 21 de la Ley de Inversiones Mineras, destinado a la importación de bienes, equipos e... The post Análisis Resolución 73/2026 – importaciones con destino minero first appeared on CAEM .",
+        "fecha_publicacion": "2026-09-02T20:38:54+00:00",
+        "fuente_id": "caem",
+        "fuente_nombre": "CAEM",
+        "categoria": "Energía y Minería"
+      }
+    ],
+    "Internacional": [
+      {
+        "id": "c160df4aaf92",
+        "titulo": "Los precios de importación en EE.UU. suben y las ventas minoristas repuntan en agosto",
+        "link": "https://es.investing.com/news/economic-indicators/los-precios-de-importacion-suben-y-las-ventas-minoristas-repuntan-en-agosto-3837553",
+        "descripcion": "",
+        "fecha_publicacion": "2026-09-16T13:43:28+00:00",
+        "fuente_id": "investing_intl2",
+        "fuente_nombre": "Investing Mundo",
+        "categoria": "Internacional"
+      },
+      {
+        "id": "5ebaa6f38cf3",
+        "titulo": "Los alquileres en Reino Unido suben al ritmo más rápido del año en agosto",
+        "link": "https://es.investing.com/news/economic-indicators/los-alquileres-en-reino-unido-suben-al-ritmo-mas-rapido-del-ano-en-agosto-93CH-3836965",
+        "descripcion": "",
+        "fecha_publicacion": "2026-09-16T10:35:33+00:00",
+        "fuente_id": "investing_intl2",
+        "fuente_nombre": "Investing Mundo",
+        "categoria": "Internacional"
+      },
+      {
+        "id": "0ce15ef509c4",
+        "titulo": "Los salarios medios de Hungría suben un 7,5% en julio",
+        "link": "https://es.investing.com/news/economic-indicators/los-salarios-medios-de-hungria-suben-un-75-en-julio-93CH-3836555",
+        "descripcion": "",
+        "fecha_publicacion": "2026-09-16T07:09:34+00:00",
+        "fuente_id": "investing_intl2",
+        "fuente_nombre": "Investing Mundo",
+        "categoria": "Internacional"
+      },
+      {
+        "id": "ad22fad333ee",
+        "titulo": "La inflación en Nigeria baja al 15,39%, abriendo la puerta a recortes",
+        "link": "https://es.investing.com/news/world-news/la-inflacion-en-nigeria-baja-al-1539-abriendo-la-puerta-a-recortes-93CH-3835973",
+        "descripcion": "",
+        "fecha_publicacion": "2026-09-15T16:34:16+00:00",
+        "fuente_id": "investing_intl",
+        "fuente_nombre": "Investing Internacional",
+        "categoria": "Internacional"
+      },
+      {
+        "id": "3e8670768144",
+        "titulo": "Economía de Perú crece un 3,56% en julio por construcción y comercio",
+        "link": "https://es.investing.com/news/world-news/economia-de-peru-crece-un-356-en-julio-por-construccion-y-comercio-93CH-3835972",
+        "descripcion": "",
+        "fecha_publicacion": "2026-09-15T16:34:03+00:00",
+        "fuente_id": "investing_intl",
+        "fuente_nombre": "Investing Internacional",
+        "categoria": "Internacional"
+      },
+      {
+        "id": "33c679c3bc5b",
+        "titulo": "El banco central de Angola recorta los tipos al 14,75% mientras la inflación cede",
+        "link": "https://es.investing.com/news/world-news/el-banco-central-de-angola-recorta-los-tipos-al-1475-mientras-la-inflacion-cede-93CH-3835883",
+        "descripcion": "",
+        "fecha_publicacion": "2026-09-15T15:27:27+00:00",
+        "fuente_id": "investing_intl",
+        "fuente_nombre": "Investing Internacional",
+        "categoria": "Internacional"
       }
     ],
     "Agro": [
@@ -249,88 +547,6 @@
         "categoria": "Agro"
       }
     ],
-    "Comex": [
-      {
-        "id": "3160ea8e9c5e",
-        "titulo": "Aduanas de Chile detecta más de 164 kilos de drogas antes de las Fiestas Patrias",
-        "link": "https://aduananews.com/aduanas-de-chile-detecta-mas-de-164-kilos-de-drogas-antes-de-las-fiestas-patrias/?utm_source=rss&utm_medium=rss&utm_campaign=aduanas-de-chile-detecta-mas-de-164-kilos-de-drogas-antes-de-las-fiestas-patrias",
-        "descripcion": "Funcionarios de la Aduana de Iquique detectaron este martes (15.09.2026) más de 150 kilos de cocaína y otros 14 kilos de ketamina en dos procedimientos de fiscalización realizados recientemente en el Complejo Fronterizo Quillagua, ubicado en la comuna de María Elena, provincia de Tocopilla, en la Región de Antofagasta, en el extremo norte de Chile. [&#8230;] The post Aduanas de Chile detecta más de 164 kilos de drogas antes de las Fiestas Patrias appeared first on Aduana News .",
-        "fecha_publicacion": "2026-09-16T12:49:15+00:00",
-        "fuente_id": "aduana_news",
-        "fuente_nombre": "Aduana News",
-        "categoria": "Comex"
-      },
-      {
-        "id": "5b94f1ca30e8",
-        "titulo": "Argentina vuelve a venderle pollo a un país con un mercado de u$s1400 millones por año",
-        "link": "https://www.iprofesional.com/comex/464525-argentina-vuelve-a-venderle-pollo-a-un-pais-con-un-mercado-de-us1400-millones-por-ano",
-        "descripcion": "La Secretaría de Agricultura, Ganadería y Pesca informó que el Ministerio de agricultura japonés levantó la suspensión de importaciones avícolas argentinas",
-        "fecha_publicacion": "2026-09-15T22:59:00+00:00",
-        "fuente_id": "iprof_comex",
-        "fuente_nombre": "iProfesional Comex",
-        "categoria": "Comex"
-      },
-      {
-        "id": "3041f22ad518",
-        "titulo": "Informe 2026 de la OMC: adaptar las reglas del comercio a las nuevas realidades económicas",
-        "link": "https://aduananews.com/nuevo-informe-de-la-omc-adaptar-las-reglas-del-comercio-a-las-nuevas-realidades-economicas/?utm_source=rss&utm_medium=rss&utm_campaign=nuevo-informe-de-la-omc-adaptar-las-reglas-del-comercio-a-las-nuevas-realidades-economicas",
-        "descripcion": "El sistema mundial de comercio atraviesa el período de mayor perturbación desde la creación de las instituciones multilaterales después de la Gran Depresión y la Segunda Guerra Mundial. En este contexto, la Organización Mundial del Comercio (OMC) advirtió este martes (15.09.2026) que la falta de modernización del sistema podría hacer que el producto interno bruto [&#8230;] The post Informe 2026 de la OMC: adaptar las reglas del comercio a las nuevas realidades económicas appeared first on Aduana",
-        "fecha_publicacion": "2026-09-15T20:54:08+00:00",
-        "fuente_id": "aduana_news",
-        "fuente_nombre": "Aduana News",
-        "categoria": "Comex"
-      },
-      {
-        "id": "cb6be22a02d5",
-        "titulo": "La industria metalmecánica acumuló una caída de 10,9% en los primeros siete meses de 2026",
-        "link": "https://tradenews.com.ar/la-industria-metalmecanica-acumulo-una-caida-de-109-en-los-primeros-siete-meses-de-2026/",
-        "descripcion": "La producción metalmecánica profundizó su retroceso y acumula una caída interanual de 10,9% hasta julio de 2026, frente a una baja de 2,6% en el conjunto de la industria. El...",
-        "fecha_publicacion": "2026-09-15T20:35:15+00:00",
-        "fuente_id": "trade_news",
-        "fuente_nombre": "Trade News",
-        "categoria": "Comex"
-      },
-      {
-        "id": "3be3d4ecdfa4",
-        "titulo": "Mercedes-Benz Camiones y Buses celebra 75 años en la Argentina",
-        "link": "https://tradenews.com.ar/mercedes-benz-camiones-y-buses-celebra-75-anos-en-la-argentina/",
-        "descripcion": "En la Argentina, el transporte pesado y de pasajeros representa una parte fundamental de la matriz productiva y de la vida cotidiana. En ese contexto, Mercedes-Benz Camiones y Buses conmemora...",
-        "fecha_publicacion": "2026-09-15T15:59:52+00:00",
-        "fuente_id": "trade_news",
-        "fuente_nombre": "Trade News",
-        "categoria": "Comex"
-      },
-      {
-        "id": "d685f3b49fdd",
-        "titulo": "Argentina promulga la ley que aprueba el acuerdo MERCOSUR-Singapur",
-        "link": "https://aduananews.com/argentina-promulga-la-ley-que-aprueba-el-acuerdo-mercosur-singapur/?utm_source=rss&utm_medium=rss&utm_campaign=argentina-promulga-la-ley-que-aprueba-el-acuerdo-mercosur-singapur",
-        "descripcion": "El Gobierno argentino promulgó la Ley N.º 27.819, que aprueba el Acuerdo de Libre Comercio entre el MERCOSUR y la República de Singapur, firmado el 7 de diciembre de 2023 en Río de Janeiro. La promulgación fue dispuesta mediante el Decreto 1010/2026, publicado este martes (15.09.2026) en el Boletín Oficial. El acuerdo establece una Zona [&#8230;] The post Argentina promulga la ley que aprueba el acuerdo MERCOSUR-Singapur appeared first on Aduana News .",
-        "fecha_publicacion": "2026-09-15T14:08:30+00:00",
-        "fuente_id": "aduana_news",
-        "fuente_nombre": "Aduana News",
-        "categoria": "Comex"
-      },
-      {
-        "id": "9d966f685928",
-        "titulo": "Estrecho de Ormuz: por qué las pymes sufren el mayor impacto de la crisis comercial",
-        "link": "https://tradenews.com.ar/estrecho-de-ormuz-por-que-las-pymes-sufren-el-mayor-impacto-de-la-crisis-comercial/",
-        "descripcion": "Las interrupciones del comercio afectan a todas las empresas, pero raramente las afectan por igual. Y las interrupciones en el estrecho de Ormuz no son la excepción. Un estudio de...",
-        "fecha_publicacion": "2026-09-14T20:52:41+00:00",
-        "fuente_id": "trade_news",
-        "fuente_nombre": "Trade News",
-        "categoria": "Comex"
-      },
-      {
-        "id": "4d4c8ce34a3f",
-        "titulo": "La Zona Franca La Plata. Actualidad y futuro – Dr. Enrique Bernabé",
-        "link": "https://mercojuris.com/la-zona-franca-la-plata-actualidad-y-futuro-dr-enrique-bernabe/",
-        "descripcion": "1. Introducción. 1.1 El pasado 31 de agosto del corriente se publicó en el Boletín Oficial de la Provincia de Buenos Aires, la resolución 335/2026, del Ministerio de la Producción, Ciencia e Innovación Tecnológica de la Provincia de Buenos Aires, en virtud de la cual se decidió: ” Rechazar la solicitud de prórroga del contrato de concesión de la Zona Franca La Plata formulada por la empresa Buenos Aires Zona Franca La PLata SA por los fundamentos expuestos en los considerandos de la presente “.(",
-        "fecha_publicacion": "2026-09-13T23:16:15+00:00",
-        "fuente_id": "mercojuris",
-        "fuente_nombre": "Mercojuris",
-        "categoria": "Comex"
-      }
-    ],
     "Automotor": [
       {
         "id": "6f679ee61d26",
@@ -373,16 +589,6 @@
         "categoria": "Automotor"
       },
       {
-        "id": "d9f517c93865",
-        "titulo": "Solo tres automotrices accedieron al cupo para importar autos electrificados sin arancel",
-        "link": "https://www.iprofesional.com/autos/464508-tres-automotrices-accedieron-al-cupo-para-importar-autos-sin-arancel",
-        "descripcion": "Se trata de un remanente de apenas 865 unidades del 2025 y 2026. Se presentaron 9.617 solicitudes y la mayoría tuvo que ser rechazada",
-        "fecha_publicacion": "2026-09-15T20:25:00+00:00",
-        "fuente_id": "iprof_autos",
-        "fuente_nombre": "iProfesional Autos",
-        "categoria": "Automotor"
-      },
-      {
         "id": "3849c7c06d56",
         "titulo": "VW Mission Efficiency: anticipando al auto más eficiente del mundo",
         "link": "https://noticias.autocosmos.com.ar/2026/09/15/vw-mission-efficiency-anticipando-al-auto-mas-eficiente-del-mundo",
@@ -410,6 +616,16 @@
         "fecha_publicacion": "2026-09-15T12:53:09+00:00",
         "fuente_id": "arodar",
         "fuente_nombre": "A Rodar Post",
+        "categoria": "Automotor"
+      },
+      {
+        "id": "284d111484f2",
+        "titulo": "Lanzamiento Gilera Smash 2026",
+        "link": "https://motorwebargentina.com/lanzamiento-gilera-smash-2026/",
+        "descripcion": "Gilera lanzó en Argentina a la Smash 2026, uno de los modelos de motos más vendidos de Argentina. La Smash está disponible en el país en una amplia gama de versiones, e incluye algunas mejoras en su nueva oferta, que mantiene el clásico motor de 110 CC con caja de cuatro velocidades. El precio parte [&#8230;] La entrada Lanzamiento Gilera Smash 2026 se publicó primero en Motorweb Argentina .",
+        "fecha_publicacion": "2026-09-15T10:11:35+00:00",
+        "fuente_id": "motorweb",
+        "fuente_nombre": "Motorweb Argentina",
         "categoria": "Automotor"
       }
     ],
@@ -465,140 +681,6 @@
         "categoria": "Logística"
       }
     ],
-    "Laboral": [
-      {
-        "id": "2bfe5d87b043",
-        "titulo": "Matías Stanislavsky asume como Country Head Argentina de Ingenia",
-        "link": "https://www.iprofesional.com/management/464539-matias-stanislavsky-asume-como-country-head-argentina-de-ingenia",
-        "descripcion": "El ejecutivo cuenta con más de 20 años en desarrollo de estrategias data-driven y liderazgo en Retail, Telecomunicaciones, Banca, Fintech y TravelTech",
-        "fecha_publicacion": "2026-09-16T11:12:00+00:00",
-        "fuente_id": "iprof_management",
-        "fuente_nombre": "iProfesional Management",
-        "categoria": "Laboral"
-      },
-      {
-        "id": "ea4160e37113",
-        "titulo": "Los 4 MBA argentinos de negocios mejor posicionados en el ranking de QS 2026",
-        "link": "https://www.iprofesional.com/management/464491-ranking-qs-2026-los-4-mba-argentinos-de-negocios-mejor-posicionados",
-        "descripcion": "Un MBA Global en Argentina se posicionó por primera vez en este ranking. Las mejores maestrías de negocios a nivel mundial en el ranking 2027",
-        "fecha_publicacion": "2026-09-16T10:00:00+00:00",
-        "fuente_id": "iprof_management",
-        "fuente_nombre": "iProfesional Management",
-        "categoria": "Laboral"
-      },
-      {
-        "id": "4c8ab50dbfd9",
-        "titulo": "Trabajo decente en las plataformas digitales: una nueva norma mundial",
-        "link": "https://voices.ilo.org/es-es/podcast/trabajo-decente-en-las-plataformas-digitales-una-nueva-norma-mundial",
-        "descripcion": "Las plataformas digitales han transformado el mundo del trabajo, generando nuevas oportunidades, pero también importantes desafíos para los derechos y la protección de los trabajadores. En este episodio de El futuro del trabajo, Nuno Cunha, especialista en instituciones de mercados laborales de la OIT, explica qué supone el nuevo Convenio núm. 193, la primera norma internacional del trabajo sobre la economía de plataformas, cómo fue elaborado a través del diálogo social y cuáles son los próximos",
-        "fecha_publicacion": "2026-08-26T00:00:00+00:00",
-        "fuente_id": "oit_podcast",
-        "fuente_nombre": "OIT Podcast",
-        "categoria": "Laboral"
-      },
-      {
-        "id": "07f564b6ffd7",
-        "titulo": "Riesgos psicosociales en el trabajo: la amenaza invisible para la salud de los trabajadores",
-        "link": "https://voices.ilo.org/es-es/podcast/riesgos-psicosociales-en-el-trabajo-la-amenaza-invisible-para-la-salud-de-los-trabajadores",
-        "descripcion": "En este episodio del pódcast “El futuro del trabajo de la OIT”, Dafne Papandrea y Lucía Risueño Navarro explican cómo los riesgos psicosociales —como las largas jornadas laborales, la inseguridad en el empleo y el acoso en el lugar de trabajo— afectan a la salud de los trabajadores, y qué medidas pueden adoptarse para crear entornos laborales más saludables en todo el mundo.",
-        "fecha_publicacion": "2026-04-28T00:00:00+00:00",
-        "fuente_id": "oit_podcast",
-        "fuente_nombre": "OIT Podcast",
-        "categoria": "Laboral"
-      },
-      {
-        "id": "ef1638f33032",
-        "titulo": "La inteligencia artificial generativa y las desigualdades de género en el trabajo",
-        "link": "https://voices.ilo.org/es-es/podcast/la-inteligencia-artificial-generativa-y-las-desigualdades-de-genero-en-el-trabajo",
-        "descripcion": "En este episodio del pódcast de la Organización Internacional del Trabajo, Janine Berg, Economista senior en la OIT, presenta un nuevo informe sobre el impacto de la inteligencia artificial generativa en el mundo del trabajo. La experta explica por qué las mujeres están más expuestas que los hombres a los riesgos asociados a esta tecnología y qué significa esto para la igualdad en el mercado laboral.",
-        "fecha_publicacion": "2026-03-09T00:00:00+00:00",
-        "fuente_id": "oit_podcast",
-        "fuente_nombre": "OIT Podcast",
-        "categoria": "Laboral"
-      }
-    ],
-    "Energía y Minería": [
-      {
-        "id": "e899ed26e4d0",
-        "titulo": "Licitación de nuevas áreas en Vaca Muerta: GyP pidió información adicional a los oferentes y abre las ofertas económicas",
-        "link": "https://econojournal.com.ar/oilgas/licitacion-de-nuevas-areas-en-vaca-muerta-gyp-informacion-adicional-ofertas-economicas/",
-        "descripcion": "Gas y Petróleo del Neuquén (GyP), la empresa provincial controlada por el Estado neuquino, abrirá este miércoles a las 11 los sobres B con las ofertas económicas presentadas por las compañías que compiten por desarrollar ocho de los 15 bloques que la petrolera estatal puso a disposición de inversores privados. Durante las últimas dos semanas, [&#8230;]",
-        "fecha_publicacion": "2026-09-16T11:00:00+00:00",
-        "fuente_id": "econojournal",
-        "fuente_nombre": "EconoJournal",
-        "categoria": "Energía y Minería"
-      },
-      {
-        "id": "bb64fb649dac",
-        "titulo": "Edesur obtuvo un préstamo de bancos privados por $320.000 millones para inversiones y capital de trabajo",
-        "link": "https://econojournal.com.ar/energia/edesur-obtuvo-un-prestamo-para-inversiones-y-capital-de-trabajo/",
-        "descripcion": "La distribuidora de energía eléctrica Edesur cerró la contratación de un préstamo sindicado por un monto total de $320.000 millones. La operación formalizada por la representación legal de la compañía involucra a cinco de las principales entidades bancarias privadas del mercado local: ICBC Argentina, Banco Santander Argentina, Banco BBVA Argentina, Banco de Galicia y Buenos [&#8230;]",
-        "fecha_publicacion": "2026-09-15T21:24:06+00:00",
-        "fuente_id": "econojournal",
-        "fuente_nombre": "EconoJournal",
-        "categoria": "Energía y Minería"
-      },
-      {
-        "id": "94665e6aedf9",
-        "titulo": "Río Negro: El Boletín Oficial publicó actuaciones sobre derechos mineros de uranio, vanadio, oro, plata y cobre en Valcheta",
-        "link": "https://dataenergia.ar/mineria/rio-negro-el-boletin-oficial-publico-actuaciones-sobre-derechos-mineros-de-uranio-vanadio-oro-plata-y-cobre-en-valcheta-202691517470",
-        "descripcion": "El Boletín Oficial de Río Negro formalizó un paquete de actuaciones administrativas sobre expedientes mineros de uranio, vanadio, oro, plata y cobre en el departamento Valcheta.",
-        "fecha_publicacion": "2026-09-15T20:47:00+00:00",
-        "fuente_id": "data_energia",
-        "fuente_nombre": "Data Energía",
-        "categoria": "Energía y Minería"
-      },
-      {
-        "id": "071190ef9088",
-        "titulo": "Arenas para Vaca Muerta: el gobierno de Neuquén defendió la ley de regalías mineras y espera una sanción antes de fin de año",
-        "link": "https://econojournal.com.ar/enclave/arenas-para-vaca-muerta-el-gobierno-de-neuquen-defendio-la-ley-de-regalias-mineras/",
-        "descripcion": "El gobierno de Neuquén ratificó este martes que buscará sancionar el nuevo régimen de regalías mineras de la provincia antes de fin de año, pese a estar pendiente de tratamiento en la Legislatura desde marzo. «Vamos a avanzar», aseguró la ministra de Ambiente, Leticia Esteves, quien afirmó que ninguna operadora presentó un reclamo «oficial» contra [&#8230;]",
-        "fecha_publicacion": "2026-09-15T19:31:59+00:00",
-        "fuente_id": "econojournal",
-        "fuente_nombre": "EconoJournal",
-        "categoria": "Energía y Minería"
-      },
-      {
-        "id": "f699f2ca97c0",
-        "titulo": "Biocombustibles en la Argentina: La producción acumulada de biodiesel subió 12%, pero registra uno de los niveles más bajos en 17 años",
-        "link": "https://dataenergia.ar/renovables-y-de-transicion/biocombustibles-en-la-argentina-la-produccion-acumulada-de-biodiesel-subio-12-pero-registra-uno-de-los-niveles-mas-bajos-en-17-anos-202691514260",
-        "descripcion": "De acuerdo con datos sectoriales y proyecciones de Oil World, la producción argentina de biodiesel sumó 621.000 toneladas entre enero y julio de 2026, un 12% más que en 2025 pero configurando el tercer volumen más bajo en 17 años y un 37% por debajo de los registros de 2010.",
-        "fecha_publicacion": "2026-09-15T17:26:00+00:00",
-        "fuente_id": "data_energia",
-        "fuente_nombre": "Data Energía",
-        "categoria": "Energía y Minería"
-      },
-      {
-        "id": "f5312475e958",
-        "titulo": "Chubut: El Puerto de Comodoro Rivadavia descargó palas eólicas destinadas al Parque Eólico Kosten",
-        "link": "https://dataenergia.ar/renovables-y-de-transicion/chubut-el-puerto-de-comodoro-rivadavia-descargo-palas-eolicas-destinadas-al-parque-eolico-kosten-202691513560",
-        "descripcion": "El Muelle de Ultramar “Antonio Morán” del Puerto de Comodoro Rivadavia concretó la descarga de tres palas eólicas de 48.700 kilos transportadas por el buque Cóndor Valparaíso desde Zárate.",
-        "fecha_publicacion": "2026-09-15T16:56:00+00:00",
-        "fuente_id": "data_energia",
-        "fuente_nombre": "Data Energía",
-        "categoria": "Energía y Minería"
-      },
-      {
-        "id": "d54676fbec8f",
-        "titulo": "Récord exportador y máximos históricos de inversión: la minería argentina consolida su nuevo ciclo",
-        "link": "https://caem.com.ar/record-exportador-y-maximos-historicos-de-inversion-la-mineria-argentina-consolida-su-nuevo-ciclo/",
-        "descripcion": "Las exportaciones mineras argentinas totalizaron US$ 4.742 millones en la primera mitad de 2026. Se trata del máximo nivel exportador registrado para un primer semestre desde que existen estadísticas comparables para la minería argentina. De esta manera, se registra una... The post Récord exportador y máximos históricos de inversión: la minería argentina consolida su nuevo ciclo first appeared on CAEM .",
-        "fecha_publicacion": "2026-09-14T19:03:41+00:00",
-        "fuente_id": "caem",
-        "fuente_nombre": "CAEM",
-        "categoria": "Energía y Minería"
-      },
-      {
-        "id": "ed7c1e095250",
-        "titulo": "Análisis Resolución 73/2026 – importaciones con destino minero",
-        "link": "https://caem.com.ar/analisis-resolucion-73-2026-importaciones-con-destino-minero/",
-        "descripcion": "La Resolución 73/2026 de la Secretaría de Minería, publicada en el día de ayer, introduce cambios en la operatoria del beneficio previsto en el artículo 21 de la Ley de Inversiones Mineras, destinado a la importación de bienes, equipos e... The post Análisis Resolución 73/2026 – importaciones con destino minero first appeared on CAEM .",
-        "fecha_publicacion": "2026-09-02T20:38:54+00:00",
-        "fuente_id": "caem",
-        "fuente_nombre": "CAEM",
-        "categoria": "Energía y Minería"
-      }
-    ],
     "Fulbito": [
       {
         "id": "827df80e4b6b",
@@ -629,68 +711,6 @@
         "fuente_id": "est_0221",
         "fuente_nombre": "0221 Estudiantes",
         "categoria": "Fulbito"
-      }
-    ],
-    "Internacional": [
-      {
-        "id": "5ebaa6f38cf3",
-        "titulo": "Los alquileres en Reino Unido suben al ritmo más rápido del año en agosto",
-        "link": "https://es.investing.com/news/economic-indicators/los-alquileres-en-reino-unido-suben-al-ritmo-mas-rapido-del-ano-en-agosto-93CH-3836965",
-        "descripcion": "",
-        "fecha_publicacion": "2026-09-16T10:35:33+00:00",
-        "fuente_id": "investing_intl2",
-        "fuente_nombre": "Investing Mundo",
-        "categoria": "Internacional"
-      },
-      {
-        "id": "0ce15ef509c4",
-        "titulo": "Los salarios medios de Hungría suben un 7,5% en julio",
-        "link": "https://es.investing.com/news/economic-indicators/los-salarios-medios-de-hungria-suben-un-75-en-julio-93CH-3836555",
-        "descripcion": "",
-        "fecha_publicacion": "2026-09-16T07:09:34+00:00",
-        "fuente_id": "investing_intl2",
-        "fuente_nombre": "Investing Mundo",
-        "categoria": "Internacional"
-      },
-      {
-        "id": "5f06774e65c1",
-        "titulo": "La inflación del Reino Unido sube al 3,1% y pone al Banco de Inglaterra en la atención",
-        "link": "https://es.investing.com/news/economic-indicators/la-inflacion-en-el-reino-unido-sube-al-31-en-agosto-por-el-alza-de-los-combustibles-3836464",
-        "descripcion": "",
-        "fecha_publicacion": "2026-09-16T06:12:33+00:00",
-        "fuente_id": "investing_intl2",
-        "fuente_nombre": "Investing Mundo",
-        "categoria": "Internacional"
-      },
-      {
-        "id": "ad22fad333ee",
-        "titulo": "La inflación en Nigeria baja al 15,39%, abriendo la puerta a recortes",
-        "link": "https://es.investing.com/news/world-news/la-inflacion-en-nigeria-baja-al-1539-abriendo-la-puerta-a-recortes-93CH-3835973",
-        "descripcion": "",
-        "fecha_publicacion": "2026-09-15T16:34:16+00:00",
-        "fuente_id": "investing_intl",
-        "fuente_nombre": "Investing Internacional",
-        "categoria": "Internacional"
-      },
-      {
-        "id": "3e8670768144",
-        "titulo": "Economía de Perú crece un 3,56% en julio por construcción y comercio",
-        "link": "https://es.investing.com/news/world-news/economia-de-peru-crece-un-356-en-julio-por-construccion-y-comercio-93CH-3835972",
-        "descripcion": "",
-        "fecha_publicacion": "2026-09-15T16:34:03+00:00",
-        "fuente_id": "investing_intl",
-        "fuente_nombre": "Investing Internacional",
-        "categoria": "Internacional"
-      },
-      {
-        "id": "33c679c3bc5b",
-        "titulo": "El banco central de Angola recorta los tipos al 14,75% mientras la inflación cede",
-        "link": "https://es.investing.com/news/world-news/el-banco-central-de-angola-recorta-los-tipos-al-1475-mientras-la-inflacion-cede-93CH-3835883",
-        "descripcion": "",
-        "fecha_publicacion": "2026-09-15T15:27:27+00:00",
-        "fuente_id": "investing_intl",
-        "fuente_nombre": "Investing Internacional",
-        "categoria": "Internacional"
       }
     ],
     "Fiscal": [
