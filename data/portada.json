@@ -1,170 +1,510 @@
 {
-  "generado_en": "2026-09-17T13:51:16.019279+00:00",
+  "generado_en": "2026-09-17T20:50:32.780986+00:00",
   "destacados": [
     {
-      "id": "9a6b1be9fb6e",
-      "titulo": "Almacén es la categoría que más terreno ganó en el comercio electrónico argentino en el último año",
-      "link": "https://www.iproup.com/economia-digital/71583-comercio-electronico-argentino-crecio-fuerza-dato-confirma-cambio-imparable",
-      "descripcion": "La tecnología encabeza las compras online de los argentinos, aunque almacén fue la categoría que más terreno sumó frente al año pasado, según NIQ",
-      "fecha_publicacion": "2026-09-17T16:38:00+00:00",
+      "id": "2cc24d582b5f",
+      "titulo": "Jamie Dimon, CEO de JPMorgan, advierte que la IA debería estar regulada",
+      "link": "https://www.iproup.com/economia-digital/71632-ceo-de-jpmorgan-advierte-que-la-ia-deberia-estar-regulada",
+      "descripcion": "Jamie Dimon sostuvo que un marco nacional permitiría evitar un mosaico de normas estatales y reducir la incertidumbre para las empresas",
+      "fecha_publicacion": "2026-09-17T19:35:00+00:00",
       "fuente_id": "iproup_eco",
       "fuente_nombre": "iProUP Economía Digital",
       "categoria": "Mercados"
     },
     {
-      "id": "4aaa9a4ce2c7",
-      "titulo": "El Fonde de cese laboral sumará hasta u$s5.000 millones a la Bolsa",
-      "link": "https://www.iproup.com/finanzas/71623-el-fondo-de-cese-laboral-movilizara-hasta-us5-000-millones-al-ano",
-      "descripcion": "Con la norma de la CNV lista, el mercado proyecta 500.000 nuevas cuentas para el cese laboral. Qué rol jugará VALO en la custodia",
-      "fecha_publicacion": "2026-09-17T13:58:00+00:00",
-      "fuente_id": "iproup_fintech",
-      "fuente_nombre": "iProUP Fintech",
+      "id": "da1bbf2be2d6",
+      "titulo": "Los ADRs escalaron hasta 6,7%, pero el riesgo país se consolidó por encima de los 510 puntos",
+      "link": "https://www.ambito.com/finanzas/los-bonos-argentinos-suben-pese-al-giro-hawkish-la-fed-y-acompanan-el-rebote-wall-street-n6323455",
+      "descripcion": "Los títulos soberanos avanzaron este jueves, a pesar de que la suba de tasas en EEUU plantea un escenario más desafiante para los emergentes. La renta variable argentina entró en terreno positivo.",
+      "fecha_publicacion": "2026-09-17T20:39:00+00:00",
+      "fuente_id": "ambito_fin",
+      "fuente_nombre": "Ámbito Finanzas",
       "categoria": "Finanzas"
     },
     {
-      "id": "1e70adb26879",
-      "titulo": "La inflación en la eurozona sube un 3,2% en los doce meses hasta agosto - Eurostat",
-      "link": "https://es.investing.com/news/economic-indicators/la-inflacion-de-la-eurozona-sube-un-32-en-los-doce-meses-hasta-agosto-3838693",
+      "id": "1089b20aea21",
+      "titulo": "Fitch confirma la calificación de Marruecos en BB+ por sus sólidas políticas monetarias",
+      "link": "https://es.investing.com/news/world-news/fitch-confirma-la-calificacion-de-marruecos-en-bb-por-sus-solidas-politicas-monetarias-93CH-3839540",
       "descripcion": "",
-      "fecha_publicacion": "2026-09-17T09:37:43+00:00",
-      "fuente_id": "investing_intl2",
-      "fuente_nombre": "Investing Mundo",
+      "fecha_publicacion": "2026-09-17T14:35:03+00:00",
+      "fuente_id": "investing_intl",
+      "fuente_nombre": "Investing Internacional",
       "categoria": "Internacional"
     }
   ],
   "secciones": {
+    "Finanzas": [
+      {
+        "id": "da1bbf2be2d6",
+        "titulo": "Los ADRs escalaron hasta 6,7%, pero el riesgo país se consolidó por encima de los 510 puntos",
+        "link": "https://www.ambito.com/finanzas/los-bonos-argentinos-suben-pese-al-giro-hawkish-la-fed-y-acompanan-el-rebote-wall-street-n6323455",
+        "descripcion": "Los títulos soberanos avanzaron este jueves, a pesar de que la suba de tasas en EEUU plantea un escenario más desafiante para los emergentes. La renta variable argentina entró en terreno positivo.",
+        "fecha_publicacion": "2026-09-17T20:39:00+00:00",
+        "fuente_id": "ambito_fin",
+        "fuente_nombre": "Ámbito Finanzas",
+        "categoria": "Finanzas"
+      },
+      {
+        "id": "a9d6c1c04f29",
+        "titulo": "El Gobierno logró aprobar la ley Inocencia Fiscal II para atraer los dólares del colchón",
+        "link": "https://www.iprofesional.com/politica/464669-el-gobierno-logro-aprobar-la-ley-inocencia-fiscal-ii-para-atraer-los-dolares-del-colchon",
+        "descripcion": "El Senado aprobó la ley que amplía el universo de contribuyentes alcanzados por el régimen actual. Calculan que hay u$s170.000 millones fuera del sistema",
+        "fecha_publicacion": "2026-09-17T20:21:00+00:00",
+        "fuente_id": "iprof_economia",
+        "fuente_nombre": "iProfesional Economía",
+        "categoria": "Finanzas"
+      },
+      {
+        "id": "4a2c7ea48b1e",
+        "titulo": "El regreso inesperado de los auriculares con cable",
+        "link": "https://www.lanacion.com.ar/tecnologia/el-regreso-inesperado-de-los-auriculares-con-cable-nid17092026/",
+        "descripcion": "Para algunas marcas los modelos de este tipo ya representan más del 40% de las ventas",
+        "fecha_publicacion": "2026-09-17T20:20:35+00:00",
+        "fuente_id": "lanacion_eco",
+        "fuente_nombre": "La Nación Economía",
+        "categoria": "Finanzas"
+      },
+      {
+        "id": "c2d86d082634",
+        "titulo": "La quiebra de SanCor. La Justicia ordenó que continúe la venta de los activos de la láctea: “No hay que empezar de nuevo”",
+        "link": "https://www.lanacion.com.ar/economia/campo/la-quiebra-de-sancor-la-justicia-ordeno-que-continue-la-venta-de-los-activos-de-la-lactea-no-hay-que-nid17092026/",
+        "descripcion": "Lo resolvió una cámara de apelaciones de Santa Fe luego de pedidos que frenaron el proceso licitatorio",
+        "fecha_publicacion": "2026-09-17T20:07:58+00:00",
+        "fuente_id": "lanacion_eco",
+        "fuente_nombre": "La Nación Economía",
+        "categoria": "Finanzas"
+      },
+      {
+        "id": "9890b1218ff6",
+        "titulo": "Andrés Hatum, profesor en management de Di Tella: “Llegar a los 50 años no representa necesariamente el final del recorrido profesional”",
+        "link": "https://www.lanacion.com.ar/economia/andres-hatum-profesor-en-management-de-di-tella-llegar-a-los-50-anos-no-representa-necesariamente-el-nid17092026/",
+        "descripcion": "El especialista sostuvo que la experiencia, la resiliencia y la red de contactos representan activos valiosos para iniciar una nueva etapa profesional; cuáles son los tres pasos que recomienda para transformar una trayectoria laboral",
+        "fecha_publicacion": "2026-09-17T20:00:00+00:00",
+        "fuente_id": "lanacion_eco",
+        "fuente_nombre": "La Nación Economía",
+        "categoria": "Finanzas"
+      },
+      {
+        "id": "ca2db3c1da9f",
+        "titulo": "El desempleo subió al 7,9% y afectó a 1,7 millones de argentinos en el segundo trimestre",
+        "link": "https://www.iprofesional.com/economia/464668-el-desempleo-subio-al-79-y-afecto-a-17-millones-de-argentinos-en-el-segundo-trimestre",
+        "descripcion": "En tanto, dentro del universo de trabajadores, la informalidad subió al 45%, con un incremento de 1 punto frente al mismo período de 2025",
+        "fecha_publicacion": "2026-09-17T19:55:00+00:00",
+        "fuente_id": "iprof_economia",
+        "fuente_nombre": "iProfesional Economía",
+        "categoria": "Finanzas"
+      },
+      {
+        "id": "ac53bea2d424",
+        "titulo": "Más de 57.000 empresas ya están en mora con bancos alertan por \"riesgo elevado\"",
+        "link": "https://www.iprofesional.com/economia/464646-mas-de-57000-companias-ya-estan-en-mora-con-los-bancos",
+        "descripcion": "Las más afectadas son compañías de los sectores productivos, castigadas por la caída en las ventas y los costos del financiamiento",
+        "fecha_publicacion": "2026-09-17T19:40:00+00:00",
+        "fuente_id": "iprof_economia",
+        "fuente_nombre": "iProfesional Economía",
+        "categoria": "Finanzas"
+      },
+      {
+        "id": "9aaa7174243e",
+        "titulo": "El dólar mayorista cayó a $1.510 tras anotar su mayor suba de septiembre",
+        "link": "https://www.ambito.com/finanzas/el-dolar-reboto-cuatro-ruedas-baja-y-anoto-su-mayor-suba-septiembre-que-espera-el-mercado-n6323327",
+        "descripcion": "El mayorista operó en los $1.510 tras rebotar $7 hasta $1.513,50 en la jornada previa. Pese a esto se mantiene más de 25% por debajo del techo de la banda.",
+        "fecha_publicacion": "2026-09-17T18:43:00+00:00",
+        "fuente_id": "ambito_fin",
+        "fuente_nombre": "Ámbito Finanzas",
+        "categoria": "Finanzas"
+      }
+    ],
+    "Automotor": [
+      {
+        "id": "6506966ca2bf",
+        "titulo": "En Argentina se venden menos autos y culpan a las motos y al boom de apps de movilidad",
+        "link": "https://www.iprofesional.com/autos/464448-en-argentina-se-venden-menos-autos-y-culpan-a-motos-y-apps-de-movilidad",
+        "descripcion": "El auge de los servicios de transporte y el menor costo de las motos de baja cilindrada transforman el mercado y reducen la compra de autos 0km",
+        "fecha_publicacion": "2026-09-17T20:05:00+00:00",
+        "fuente_id": "iprof_autos",
+        "fuente_nombre": "iProfesional Autos",
+        "categoria": "Automotor"
+      },
+      {
+        "id": "788e914ca01e",
+        "titulo": "Se viene la Expo Auto Chino y las marcas adelantan las novedades que exhibirán en la muestra",
+        "link": "https://arodarpost.com.ar/se-viene-la-expo-auto-chino-y-las-marcas-adelantan-las-novedades-que-exhibiran-en-la-muestra/",
+        "descripcion": "Del 2 al 4 de octubre de 2026, BA Ferial (Costa Salguero, Ciudad de Buenos Aires) será sede de la primera edición de Expo Auto Chino, que reunirá a 26 marcas automotrices chinas en un mismo predio, con más de 13.000 m² de exposición y una convocatoria estimada de 20.000 visitantes. Durante los tres días [&#8230;]",
+        "fecha_publicacion": "2026-09-17T13:33:05+00:00",
+        "fuente_id": "arodar",
+        "fuente_nombre": "A Rodar Post",
+        "categoria": "Automotor"
+      },
+      {
+        "id": "8451554c6acf",
+        "titulo": "Banco Provincia lanza créditos para autos y compite con el Banco Nación",
+        "link": "https://www.iprofesional.com/finanzas/464576-banco-provincia-lanza-creditos-para-autos-y-compite-con-el-banco-nacion",
+        "descripcion": "La nueva línea de préstamos permite financiar hasta el 100% de un 0 km o usado y ofrece opciones UVA y a tasa fija. Cómo acceder",
+        "fecha_publicacion": "2026-09-17T12:32:00+00:00",
+        "fuente_id": "iprof_autos",
+        "fuente_nombre": "iProfesional Autos",
+        "categoria": "Automotor"
+      },
+      {
+        "id": "b929100c319d",
+        "titulo": "Renault y Geely invertirán 388 millones de dólares en Brasil",
+        "link": "https://noticias.autocosmos.com.ar/2026/09/17/renault-y-geely-invertiran-388-millones-de-dolares-en-brasil",
+        "descripcion": "La inversión se destinará a la producción de un nuevo modelo eléctrico, junto con la confirmación del Geely EX2 en el país carioca.",
+        "fecha_publicacion": "2026-09-17T10:00:00+00:00",
+        "fuente_id": "autocosmos",
+        "fuente_nombre": "Autocosmos Argentina",
+        "categoria": "Automotor"
+      },
+      {
+        "id": "5ef265793266",
+        "titulo": "Volkswagen ID.3 GTI: con todas las pilas",
+        "link": "https://noticias.autocosmos.com.ar/2026/09/17/volkswagen-id3-gti-con-todas-las-pilas",
+        "descripcion": "El nuevo hot hatch toma elementos de diseño del Golf GTI, con una puesta a punto específica, y 326 CV de potencia en el eje posterior.",
+        "fecha_publicacion": "2026-09-17T09:00:01+00:00",
+        "fuente_id": "autocosmos",
+        "fuente_nombre": "Autocosmos Argentina",
+        "categoria": "Automotor"
+      },
+      {
+        "id": "d6a1116bd423",
+        "titulo": "Hay un nuevo GTI: se llama ID.3 GTI, es Volkswagen y eléctrico",
+        "link": "https://motorwebargentina.com/volkswagen-id-3-gti-2027/",
+        "descripcion": "Volkswagen presentó las primeras imágenes y características del nuevo ID.3 GTI, precisamente en el año que celebra los 50 años de la sigla GTI. En este caso, con una potencia de 240 kW (326 CV), el modelo será el GTI de producción en serie más potente desarrollado hasta la fecha y trasladará a la movilidad [&#8230;] La entrada Hay un nuevo GTI: se llama ID.3 GTI, es Volkswagen y eléctrico se publicó primero en Motorweb Argentina .",
+        "fecha_publicacion": "2026-09-17T08:46:06+00:00",
+        "fuente_id": "motorweb",
+        "fuente_nombre": "Motorweb Argentina",
+        "categoria": "Automotor"
+      },
+      {
+        "id": "50773c2a6d09",
+        "titulo": "Mercedes-Benz Camiones y Buses: Red de Servicio, asistencia 24 hs y logística en Zárate 🚛",
+        "link": "https://visionmotor.com/mercedes-benz-camiones-y-buses-red-de-servicio-asistencia-24-hs-y-logistica-en-zarate-%f0%9f%9a%9b/",
+        "descripcion": "Recorremos la estrategia de Mercedes-Benz Camiones y Buses para acompañar al transporte pesado en Argentina. Desde la inauguración de su Centro Industrial en Zárate y su Centro Logístico de Repuestos de 10.300 m², la marca de la estrella consolida una red de 45 puntos de atención, servicio de Asistencia 24 horas y una disponibilidad de &#8230; Seguir leyendo Mercedes-Benz Camiones y Buses: Red de Servicio, asistencia 24 hs y logística en Zárate 🚛 &#8594;",
+        "fecha_publicacion": "2026-09-17T00:19:08+00:00",
+        "fuente_id": "vision_motor",
+        "fuente_nombre": "Vision Motor",
+        "categoria": "Automotor"
+      },
+      {
+        "id": "669884be2208",
+        "titulo": "Triumph renueva la gama 400 con los modelos Tracker y Thruxton desde $11.700.000",
+        "link": "https://arodarpost.com.ar/triumph-renueva-la-gama-400-con-los-modelos-tracker-y-thruxton-desde-11-700-000/",
+        "descripcion": "Triumph amplía su oferta con la incorporación de las nuevas Thruxton 400 y Tracker 400, dos modelos que extienden la familia 400 y presentan distintas interpretaciones del concepto Modern Classic. Las nuevas Thruxton 400 y Tracker 400 comparten plataforma, motor y tecnología, pero presentan propuestas claramente diferenciadas. La Thruxton 400 recupera el espíritu de las [&#8230;]",
+        "fecha_publicacion": "2026-09-16T22:43:10+00:00",
+        "fuente_id": "arodar",
+        "fuente_nombre": "A Rodar Post",
+        "categoria": "Automotor"
+      }
+    ],
     "Mercados": [
       {
-        "id": "9a6b1be9fb6e",
-        "titulo": "Almacén es la categoría que más terreno ganó en el comercio electrónico argentino en el último año",
-        "link": "https://www.iproup.com/economia-digital/71583-comercio-electronico-argentino-crecio-fuerza-dato-confirma-cambio-imparable",
-        "descripcion": "La tecnología encabeza las compras online de los argentinos, aunque almacén fue la categoría que más terreno sumó frente al año pasado, según NIQ",
-        "fecha_publicacion": "2026-09-17T16:38:00+00:00",
+        "id": "2cc24d582b5f",
+        "titulo": "Jamie Dimon, CEO de JPMorgan, advierte que la IA debería estar regulada",
+        "link": "https://www.iproup.com/economia-digital/71632-ceo-de-jpmorgan-advierte-que-la-ia-deberia-estar-regulada",
+        "descripcion": "Jamie Dimon sostuvo que un marco nacional permitiría evitar un mosaico de normas estatales y reducir la incertidumbre para las empresas",
+        "fecha_publicacion": "2026-09-17T19:35:00+00:00",
         "fuente_id": "iproup_eco",
         "fuente_nombre": "iProUP Economía Digital",
         "categoria": "Mercados"
       },
       {
-        "id": "479201c56eb0",
-        "titulo": "Un token de energía argentino destrona a gigantes de Wall Street y se mete en el Top 5 mundial",
-        "link": "https://www.iproup.com/economia-digital/71581-token-energia-argentino-desplaza-colosos-mete-top-cinco-mundial",
-        "descripcion": "La capitalización de JMWH escaló a u$s2.200 millones en pocos meses y ubicó a Justoken entre los mayores emisores de activos tokenizados del mundo",
-        "fecha_publicacion": "2026-09-17T16:04:00+00:00",
+        "id": "610afe639161",
+        "titulo": "La SEC abre una vía regulatoria para negociar acciones tokenizadas en EE.UU.",
+        "link": "https://www.iproup.com/economia-digital/71627-la-sec-regulara-las-acciones-tokenizadas",
+        "descripcion": "El mecanismo tendrá una vigencia de 5 años y estará sujeto a límites de volumen, controles de acceso y condiciones destinadas a preservar a los accionistas",
+        "fecha_publicacion": "2026-09-17T19:10:00+00:00",
         "fuente_id": "iproup_eco",
         "fuente_nombre": "iProUP Economía Digital",
         "categoria": "Mercados"
       },
       {
-        "id": "ac08190ab4cc",
-        "titulo": "Strategy cambia su estrategia financiera: no compra Bitcoin y destina u$s951 millones a STRC",
-        "link": "https://www.iproup.com/economia-digital/71622-strategy-recompra-strc-bitcoin-us950-millones-septiembre-2026",
-        "descripcion": "El movimiento redefine la asignación de capital de la compañía, que conserva 845.050 BTC y amplió a u$s2.000 millones el límite para recomprar STRC",
-        "fecha_publicacion": "2026-09-17T14:33:00+00:00",
+        "id": "a21eae599ac0",
+        "titulo": "Cuáles son las empresas que compran y venden cripto mientras el mercado se debilita",
+        "link": "https://www.iproup.com/economia-digital/71612-el-mercado-cripto-se-debilta-por-compras-y-ventas-institucionales",
+        "descripcion": "Septiembre mostró un abanico de estrategias corporativas: acumulación agresiva en Ethereum y Bitcoin, diversificación en Solana, recompras y liquidaciones",
+        "fecha_publicacion": "2026-09-17T18:45:00+00:00",
         "fuente_id": "iproup_eco",
         "fuente_nombre": "iProUP Economía Digital",
         "categoria": "Mercados"
       },
       {
-        "id": "6ec5a8619e1c",
-        "titulo": "China pide a Irán que frene a los hutíes tras solicitud de Arabia Saudí",
-        "link": "https://es.investing.com/news/economy-news/china-pide-a-iran-que-frene-a-los-huties-tras-solicitud-de-arabia-saudi-3839405",
+        "id": "66485c52972c",
+        "titulo": "EE.UU. retrasa anuncio de aranceles hasta después de la cumbre Xi-Trump",
+        "link": "https://es.investing.com/news/economy-news/eeuu-retrasa-anuncio-de-aranceles-hasta-despues-de-la-cumbre-xitrump-93CH-3839742",
         "descripcion": "",
-        "fecha_publicacion": "2026-09-17T13:30:46+00:00",
+        "fecha_publicacion": "2026-09-17T18:11:32+00:00",
         "fuente_id": "investing_economia",
         "fuente_nombre": "Investing Economía",
         "categoria": "Mercados"
       },
       {
-        "id": "6d142b3a3cff",
-        "titulo": "El Banco Nacional Checo mantiene los tipos de interés en el 3,75%",
-        "link": "https://es.investing.com/news/economy-news/el-banco-nacional-checo-mantiene-los-tipos-de-interes-en-el-375-93CH-3839350",
+        "id": "e0e5e7d37614",
+        "titulo": "EE.UU. impone sanciones al exchange de criptomonedas iraní BitBank",
+        "link": "https://es.investing.com/news/economy-news/eeuu-impone-sanciones-al-exchange-de-criptomonedas-irani-bitbank-93CH-3839730",
         "descripcion": "",
-        "fecha_publicacion": "2026-09-17T13:13:06+00:00",
+        "fecha_publicacion": "2026-09-17T18:01:21+00:00",
+        "fuente_id": "investing_economia",
+        "fuente_nombre": "Investing Economía",
+        "categoria": "Mercados"
+      },
+      {
+        "id": "397572230759",
+        "titulo": "Rusia prevé un déficit presupuestario del 2% para 2027, según Putin",
+        "link": "https://es.investing.com/news/economy-news/rusia-preve-un-deficit-presupuestario-del-2-para-2027-segun-putin-93CH-3839719",
+        "descripcion": "",
+        "fecha_publicacion": "2026-09-17T17:45:10+00:00",
         "fuente_id": "investing_economia",
         "fuente_nombre": "Investing Economía",
         "categoria": "Mercados"
       }
     ],
-    "Finanzas": [
+    "Comex": [
       {
-        "id": "4aaa9a4ce2c7",
-        "titulo": "El Fonde de cese laboral sumará hasta u$s5.000 millones a la Bolsa",
-        "link": "https://www.iproup.com/finanzas/71623-el-fondo-de-cese-laboral-movilizara-hasta-us5-000-millones-al-ano",
-        "descripcion": "Con la norma de la CNV lista, el mercado proyecta 500.000 nuevas cuentas para el cese laboral. Qué rol jugará VALO en la custodia",
-        "fecha_publicacion": "2026-09-17T13:58:00+00:00",
-        "fuente_id": "iproup_fintech",
-        "fuente_nombre": "iProUP Fintech",
-        "categoria": "Finanzas"
+        "id": "4f58ae4dd0d6",
+        "titulo": "Cómo impactará en dólar, acciones y bonos argentinos la suba de tasas de la Fed",
+        "link": "https://www.iprofesional.com/finanzas/464594-como-impacta-en-dolar-acciones-y-bonos-argentinos-suba-de-tasa-de-la-fed",
+        "descripcion": "El alza de 25 puntos básicos de la tasa de referencia impulsada por Reserva Federal impacta en el costo de emisión de deuda y otros factores",
+        "fecha_publicacion": "2026-09-17T16:54:00+00:00",
+        "fuente_id": "iprof_comex",
+        "fuente_nombre": "iProfesional Comex",
+        "categoria": "Comex"
       },
       {
-        "id": "907147bfcdd9",
-        "titulo": "Invertirán US$2200 millones para que llegue el gas de Vaca Muerta al norte argentino",
-        "link": "https://www.lanacion.com.ar/economia/invertiran-us2200-millones-para-que-llegue-el-gas-de-vaca-muerta-al-norte-argentino-nid17092026/",
-        "descripcion": "TGN construirá el gasoducto Manuel Belgrano, de 753 kilómetros entre Neuquén y Córdoba, que estaría operativo en abril de 2029; el proyecto busca resolver el cuello de botella que dejó a parte de la industria sin gas el último invierno",
-        "fecha_publicacion": "2026-09-17T13:38:57+00:00",
-        "fuente_id": "lanacion_eco",
-        "fuente_nombre": "La Nación Economía",
-        "categoria": "Finanzas"
+        "id": "1d518fbf79e6",
+        "titulo": "Tribunales fiscales de Iberoamérica: evolución institucional y modernización, ejes de una mesa redonda de la AAEF",
+        "link": "https://aduananews.com/tribunales-fiscales-de-iberoamerica-evolucion-institucional-y-modernizacion-ejes-de-una-mesa-redonda-de-la-aaef/?utm_source=rss&utm_medium=rss&utm_campaign=tribunales-fiscales-de-iberoamerica-evolucion-institucional-y-modernizacion-ejes-de-una-mesa-redonda-de-la-aaef",
+        "descripcion": "En la sede de la Asociación Argentina de Estudios Fiscales (AAEF) se realizó este miércoles (16.09.2026) una mesa redonda titulada «Tribunales que imparten justicia tributaria en Iberoamérica», que reunió a especialistas y representantes de organismos de justicia tributaria de distintos países. Organizado por la Comisión de Tribunales Fiscales de la AAEF, el encuentro se desarrolló [&#8230;] The post Tribunales fiscales de Iberoamérica: evolución institucional y modernización, ejes de una mesa r",
+        "fecha_publicacion": "2026-09-17T13:06:11+00:00",
+        "fuente_id": "aduana_news",
+        "fuente_nombre": "Aduana News",
+        "categoria": "Comex"
       },
       {
-        "id": "69a54ca53e61",
-        "titulo": "Cristina Kirchner rechazó la liquidación de su pensión: reclama retroactivos y que no le apliquen descuentos",
-        "link": "https://www.lanacion.com.ar/economia/cristina-kirchner-rechazo-la-liquidacion-de-su-pension-busca-que-le-paguen-retroactivos-y-que-no-le-nid16092026/",
-        "descripcion": "En una presentación judicial, un apoderado impugnó la manera en que se le restituyó en agosto un beneficio de más de $16 millones; pretende que el pago sea desde abril y que no le resten por montos “indebidamente” antes percibidos, ni por el impuesto a las ganancias",
-        "fecha_publicacion": "2026-09-17T13:38:35+00:00",
-        "fuente_id": "lanacion_eco",
-        "fuente_nombre": "La Nación Economía",
-        "categoria": "Finanzas"
+        "id": "0fd5e33947f3",
+        "titulo": "Jornadas de Derecho Aduanero en la UB y en UBA – 29 Y 30 de octubre",
+        "link": "https://mercojuris.com/jornadas-de-derecho-aduanero-en-la-ub-y-en-uba-29-y-30-de-octubre/",
+        "descripcion": "Jornada de Derecho Aduanero ADACE – Universidad de Belgrano Jueves 29 de octubre de 2026 de 15 a 20 hs. Aula 4.4 y transmisión on line UE–Mercosur: el nuevo escenario del comercio birregional Aspectos jurídicos y operativos, desafíos, oportunidades y acceso a nuevos mercados Panel I: El nuevo marco de la integración El Acuerdo Unión Europea–Mercosur: arquitectura jurídica, compromisos y nuevas reglas del comercio birregional Panel II: De las reglas a la operatoria El Acuerdo en acción: aduanas, ",
+        "fecha_publicacion": "2026-09-16T21:22:32+00:00",
+        "fuente_id": "mercojuris",
+        "fuente_nombre": "Mercojuris",
+        "categoria": "Comex"
       },
       {
-        "id": "7a6aafc50b33",
-        "titulo": "Cambia el viento: por qué la decisión de la FED podría complicar a la Argentina",
-        "link": "https://www.lanacion.com.ar/economia/cambia-el-viento-por-que-la-decision-de-la-fed-podria-complicar-a-la-argentina-nid16092026/",
-        "descripcion": "La Reserva Federal hizo el primer aumento de tasas de interés desde julio de 2023; el nuevo escenario puede encarecer el financiamiento externo para el Gobierno",
-        "fecha_publicacion": "2026-09-17T13:37:55+00:00",
-        "fuente_id": "lanacion_eco",
-        "fuente_nombre": "La Nación Economía",
-        "categoria": "Finanzas"
+        "id": "3041f22ad518",
+        "titulo": "Informe 2026 de la OMC: adaptar las reglas del comercio a las nuevas realidades económicas",
+        "link": "https://aduananews.com/nuevo-informe-de-la-omc-adaptar-las-reglas-del-comercio-a-las-nuevas-realidades-economicas/?utm_source=rss&utm_medium=rss&utm_campaign=nuevo-informe-de-la-omc-adaptar-las-reglas-del-comercio-a-las-nuevas-realidades-economicas",
+        "descripcion": "El sistema mundial de comercio atraviesa el período de mayor perturbación desde la creación de las instituciones multilaterales después de la Gran Depresión y la Segunda Guerra Mundial. En este contexto, la Organización Mundial del Comercio (OMC) advirtió este martes (15.09.2026) que la falta de modernización del sistema podría hacer que el producto interno bruto [&#8230;] The post Informe 2026 de la OMC: adaptar las reglas del comercio a las nuevas realidades económicas appeared first on Aduana",
+        "fecha_publicacion": "2026-09-16T20:54:08+00:00",
+        "fuente_id": "aduana_news",
+        "fuente_nombre": "Aduana News",
+        "categoria": "Comex"
       },
       {
-        "id": "7792d0c4bae2",
-        "titulo": "Coinbase suma derivados cripto, mercados de predicción y acciones tokenizadas a su exchange",
-        "link": "https://www.iproup.com/finanzas/71448-coinbase-reinventa-plataforma-multiactivo-busca-atrapar-inversores",
-        "descripcion": "Coinbase diversifica sus ingresos más allá del contado en cripto y apunta a ganar escala en nuevos productos financieros dentro de una sola plataforma",
-        "fecha_publicacion": "2026-09-17T12:53:00+00:00",
-        "fuente_id": "iproup_fintech",
-        "fuente_nombre": "iProUP Fintech",
-        "categoria": "Finanzas"
+        "id": "6f679ee61d26",
+        "titulo": "Automotrices argentinas están en alerta porque Brasil quiere libre comercio bilateral",
+        "link": "https://www.iprofesional.com/autos/464509-argentina-prepara-libre-comercio-de-autos-con-brasil-y-empresas-piden-proteccion",
+        "descripcion": "La firma Renault pidió preservar la producción local ante la apertura comercial y el futuro incierto del acuerdo automotor con Brasil",
+        "fecha_publicacion": "2026-09-16T12:20:00+00:00",
+        "fuente_id": "iprof_comex",
+        "fuente_nombre": "iProfesional Comex",
+        "categoria": "Comex"
       },
       {
-        "id": "8df6fbb056ca",
-        "titulo": "Bitcoin recupera los u$s76.000 a pesar de la suba de tasas de la Fed y el revés de la Ley Clarity",
-        "link": "https://www.ambito.com/finanzas/bitcoin-recupera-los-us76000-pesar-la-suba-tasas-la-fed-y-el-reves-la-ley-clarity-n6323378",
-        "descripcion": "A pesar del alza en las tasas de interés dispuesta por la Reserva Federal, Bitcoin ha logrado superar los u$s76.000, en un contexto marcado por la incertidumbre regulatoria en Estados Unidos.",
-        "fecha_publicacion": "2026-09-17T12:45:00+00:00",
-        "fuente_id": "ambito_fin",
-        "fuente_nombre": "Ámbito Finanzas",
-        "categoria": "Finanzas"
+        "id": "5b94f1ca30e8",
+        "titulo": "Argentina vuelve a venderle pollo a un país con un mercado de u$s1400 millones por año",
+        "link": "https://www.iprofesional.com/comex/464525-argentina-vuelve-a-venderle-pollo-a-un-pais-con-un-mercado-de-us1400-millones-por-ano",
+        "descripcion": "La Secretaría de Agricultura, Ganadería y Pesca informó que el Ministerio de agricultura japonés levantó la suspensión de importaciones avícolas argentinas",
+        "fecha_publicacion": "2026-09-15T22:59:00+00:00",
+        "fuente_id": "iprof_comex",
+        "fuente_nombre": "iProfesional Comex",
+        "categoria": "Comex"
       },
       {
-        "id": "917de7136132",
-        "titulo": "Combustibles: la diferencia de precio entre provincias llega a $22.450 por tanque",
-        "link": "https://www.iprofesional.com/finanzas/464578-combustibles-la-diferencia-de-precio-entre-provincias-llega-a-22-450-por-tanque",
-        "descripcion": "Un relevamiento de UBA-Conicet muestra las mayores brechas entre provincias y qué factores explican los distintos valores en surtidores",
-        "fecha_publicacion": "2026-09-17T12:32:00+00:00",
-        "fuente_id": "iprof_finanzas",
-        "fuente_nombre": "iProfesional Finanzas",
-        "categoria": "Finanzas"
+        "id": "cb6be22a02d5",
+        "titulo": "La industria metalmecánica acumuló una caída de 10,9% en los primeros siete meses de 2026",
+        "link": "https://tradenews.com.ar/la-industria-metalmecanica-acumulo-una-caida-de-109-en-los-primeros-siete-meses-de-2026/",
+        "descripcion": "La producción metalmecánica profundizó su retroceso y acumula una caída interanual de 10,9% hasta julio de 2026, frente a una baja de 2,6% en el conjunto de la industria. El...",
+        "fecha_publicacion": "2026-09-15T20:35:15+00:00",
+        "fuente_id": "trade_news",
+        "fuente_nombre": "Trade News",
+        "categoria": "Comex"
       },
       {
-        "id": "da1a3f1d9149",
-        "titulo": "El Banco de Inglaterra mantuvo la tasa en 3,75%, pero advirtió que podría volver a subirla por la inflación",
-        "link": "https://www.ambito.com/finanzas/el-banco-inglaterra-mantuvo-la-tasa-375-pero-advirtio-que-podria-volver-subirla-la-inflacion-n6323337",
-        "descripcion": "La decisión estuvo en línea con lo esperado por el mercado, aunque tres de los nueve miembros votaron por elevar la tasa al 4%. El organismo proyectó que la inflación podría superar ligeramente el 4% a comienzos de 2027 y alertó por el impacto de la energía.",
-        "fecha_publicacion": "2026-09-17T12:30:00+00:00",
-        "fuente_id": "ambito_fin",
-        "fuente_nombre": "Ámbito Finanzas",
-        "categoria": "Finanzas"
+        "id": "3be3d4ecdfa4",
+        "titulo": "Mercedes-Benz Camiones y Buses celebra 75 años en la Argentina",
+        "link": "https://tradenews.com.ar/mercedes-benz-camiones-y-buses-celebra-75-anos-en-la-argentina/",
+        "descripcion": "En la Argentina, el transporte pesado y de pasajeros representa una parte fundamental de la matriz productiva y de la vida cotidiana. En ese contexto, Mercedes-Benz Camiones y Buses conmemora...",
+        "fecha_publicacion": "2026-09-15T15:59:52+00:00",
+        "fuente_id": "trade_news",
+        "fuente_nombre": "Trade News",
+        "categoria": "Comex"
+      }
+    ],
+    "Laboral": [
+      {
+        "id": "fe2bc06c3312",
+        "titulo": "Tras el aumento de agosto, ¿cuánto más deben recuperar los salarios para empatar la inflación 2026?",
+        "link": "https://www.iprofesional.com/management/464550-salarios-en-el-presupuesto-2027-cuanto-deben-recuperar-para-empatar-la-inflacion",
+        "descripcion": "Especialistas de C-P Consultora analizan la brecha salarial de 2026 y las metas optimistas del Presupuesto 2027 sobre la inflación",
+        "fecha_publicacion": "2026-09-17T15:25:00+00:00",
+        "fuente_id": "iprof_management",
+        "fuente_nombre": "iProfesional Management",
+        "categoria": "Laboral"
+      },
+      {
+        "id": "4c8ab50dbfd9",
+        "titulo": "Trabajo decente en las plataformas digitales: una nueva norma mundial",
+        "link": "https://voices.ilo.org/es-es/podcast/trabajo-decente-en-las-plataformas-digitales-una-nueva-norma-mundial",
+        "descripcion": "Las plataformas digitales han transformado el mundo del trabajo, generando nuevas oportunidades, pero también importantes desafíos para los derechos y la protección de los trabajadores. En este episodio de El futuro del trabajo, Nuno Cunha, especialista en instituciones de mercados laborales de la OIT, explica qué supone el nuevo Convenio núm. 193, la primera norma internacional del trabajo sobre la economía de plataformas, cómo fue elaborado a través del diálogo social y cuáles son los próximos",
+        "fecha_publicacion": "2026-08-26T00:00:00+00:00",
+        "fuente_id": "oit_podcast",
+        "fuente_nombre": "OIT Podcast",
+        "categoria": "Laboral"
+      },
+      {
+        "id": "07f564b6ffd7",
+        "titulo": "Riesgos psicosociales en el trabajo: la amenaza invisible para la salud de los trabajadores",
+        "link": "https://voices.ilo.org/es-es/podcast/riesgos-psicosociales-en-el-trabajo-la-amenaza-invisible-para-la-salud-de-los-trabajadores",
+        "descripcion": "En este episodio del pódcast “El futuro del trabajo de la OIT”, Dafne Papandrea y Lucía Risueño Navarro explican cómo los riesgos psicosociales —como las largas jornadas laborales, la inseguridad en el empleo y el acoso en el lugar de trabajo— afectan a la salud de los trabajadores, y qué medidas pueden adoptarse para crear entornos laborales más saludables en todo el mundo.",
+        "fecha_publicacion": "2026-04-28T00:00:00+00:00",
+        "fuente_id": "oit_podcast",
+        "fuente_nombre": "OIT Podcast",
+        "categoria": "Laboral"
+      },
+      {
+        "id": "ef1638f33032",
+        "titulo": "La inteligencia artificial generativa y las desigualdades de género en el trabajo",
+        "link": "https://voices.ilo.org/es-es/podcast/la-inteligencia-artificial-generativa-y-las-desigualdades-de-genero-en-el-trabajo",
+        "descripcion": "En este episodio del pódcast de la Organización Internacional del Trabajo, Janine Berg, Economista senior en la OIT, presenta un nuevo informe sobre el impacto de la inteligencia artificial generativa en el mundo del trabajo. La experta explica por qué las mujeres están más expuestas que los hombres a los riesgos asociados a esta tecnología y qué significa esto para la igualdad en el mercado laboral.",
+        "fecha_publicacion": "2026-03-09T00:00:00+00:00",
+        "fuente_id": "oit_podcast",
+        "fuente_nombre": "OIT Podcast",
+        "categoria": "Laboral"
+      }
+    ],
+    "Fiscal": [
+      {
+        "id": "f0bcb5c899c3",
+        "titulo": "El dato del Presupuesto 2027 que impacta a jubilados y anticipa 104.760 menos en ANSES",
+        "link": "https://www.iprofesional.com/impuestos/464644-presupuesto-2027-anses-proyecta-104-760-jubilados-menos-y-cambia-el-padron-previsional",
+        "descripcion": "El Presupuesto 2027 proyecta 104.760 jubilados menos y 32.724 beneficiarios más de la PUAM, ante la dificultad para reunir 30 años de aportes",
+        "fecha_publicacion": "2026-09-17T15:05:00+00:00",
+        "fuente_id": "iprof_impuestos",
+        "fuente_nombre": "iProfesional Impuestos",
+        "categoria": "Fiscal"
+      },
+      {
+        "id": "f86a63e70af4",
+        "titulo": "Presupuesto 2027 proyecta más presión tributaria y menor recaudación de ANSES",
+        "link": "https://www.iprofesional.com/impuestos/464587-presupuesto-2027-sube-presion-tributaria-y-baja-recaudacion-anses",
+        "descripcion": "Alza de la presión tributaria y baja de recaudación para la seguridad social por el FAL: los ejes de la estimación de recursos del Presupuesto 2027",
+        "fecha_publicacion": "2026-09-16T21:50:00+00:00",
+        "fuente_id": "iprof_impuestos",
+        "fuente_nombre": "iProfesional Impuestos",
+        "categoria": "Fiscal"
+      },
+      {
+        "id": "f7411cafeeff",
+        "titulo": "Tasas de servicios municipales: la Corte Suprema ratifica su doctrina",
+        "link": "https://www.ambito.com/novedades-fiscales/tasas-servicios-municipales-la-corte-suprema-ratifica-su-doctrina-n6322777",
+        "descripcion": "Pese a varios antecedentes judiciales adversos, algunos municipios persisten en no respetar los aspectos que hacen a la cabal y legal aplicación de las tasas de servicios, exigencias que acaban de ser confirmadas y revalidadas por la CSJN",
+        "fecha_publicacion": "2026-09-16T00:03:00+00:00",
+        "fuente_id": "ambito_fisc",
+        "fuente_nombre": "Ámbito Fiscal",
+        "categoria": "Fiscal"
+      },
+      {
+        "id": "5209602b1624",
+        "titulo": "La Cámara revocó el fallo que suspendía la baja de la imputabilidad",
+        "link": "https://www.iprofesional.com/legales/464506-la-camara-revoco-el-fallo-que-suspendia-la-baja-de-la-imputabilidad",
+        "descripcion": "La Cámara dejó sin efecto la cautelar que había suspendido por 60 días la aplicación de la Ley 27.801 en la provincia de Buenos Aires.",
+        "fecha_publicacion": "2026-09-15T19:06:00+00:00",
+        "fuente_id": "iprof_impuestos",
+        "fuente_nombre": "iProfesional Impuestos",
+        "categoria": "Fiscal"
+      },
+      {
+        "id": "e308c044d93a",
+        "titulo": "Honorarios profesionales: la mera cita o invocación de una norma no satisface la fundamentación de una sentencia",
+        "link": "https://www.ambito.com/novedades-fiscales/honorarios-profesionales-la-mera-cita-o-invocacion-una-norma-no-satisface-la-fundamentacion-una-sentencia-n6321809",
+        "descripcion": "Ante la reducción de los honorarios profesionales regulados judicialmente por parte de la cámara, la Corte Suprema aplicó la doctrina de la arbitrariedad, doctrina que también cuenta con antecedentes en materia tributaria",
+        "fecha_publicacion": "2026-09-13T22:01:00+00:00",
+        "fuente_id": "ambito_fisc",
+        "fuente_nombre": "Ámbito Fiscal",
+        "categoria": "Fiscal"
+      },
+      {
+        "id": "802daf88fcc7",
+        "titulo": "Ingresos Brutos: qué cambia tras el fallo de la Corte Suprema sobre retenciones y percepciones",
+        "link": "https://www.ambito.com/novedades-fiscales/ingresos-brutos-que-cambia-el-fallo-la-corte-suprema-retenciones-y-percepciones-n6321407",
+        "descripcion": "El máximo tribunal se expidió con relación a la aplicación de estos pagos a cuenta del tributo respecto de aquellas actividades cuya riqueza se produce fuera de la jurisdicción provincial",
+        "fecha_publicacion": "2026-09-11T21:20:00+00:00",
+        "fuente_id": "ambito_fisc",
+        "fuente_nombre": "Ámbito Fiscal",
+        "categoria": "Fiscal"
+      }
+    ],
+    "Internacional": [
+      {
+        "id": "1089b20aea21",
+        "titulo": "Fitch confirma la calificación de Marruecos en BB+ por sus sólidas políticas monetarias",
+        "link": "https://es.investing.com/news/world-news/fitch-confirma-la-calificacion-de-marruecos-en-bb-por-sus-solidas-politicas-monetarias-93CH-3839540",
+        "descripcion": "",
+        "fecha_publicacion": "2026-09-17T14:35:03+00:00",
+        "fuente_id": "investing_intl",
+        "fuente_nombre": "Investing Internacional",
+        "categoria": "Internacional"
+      },
+      {
+        "id": "1e70adb26879",
+        "titulo": "La inflación en la eurozona sube un 3,2% en los doce meses hasta agosto - Eurostat",
+        "link": "https://es.investing.com/news/economic-indicators/la-inflacion-de-la-eurozona-sube-un-32-en-los-doce-meses-hasta-agosto-3838693",
+        "descripcion": "",
+        "fecha_publicacion": "2026-09-17T09:37:43+00:00",
+        "fuente_id": "investing_intl2",
+        "fuente_nombre": "Investing Mundo",
+        "categoria": "Internacional"
+      },
+      {
+        "id": "074a3e63d03d",
+        "titulo": "El crecimiento de la productividad en Reino Unido se revisa al alza con nuevo método del ONS",
+        "link": "https://es.investing.com/news/economic-indicators/el-crecimiento-de-la-productividad-en-reino-unido-se-revisa-al-alza-con-nuevo-metodo-del-ons-93CH-3838630",
+        "descripcion": "",
+        "fecha_publicacion": "2026-09-17T09:04:35+00:00",
+        "fuente_id": "investing_intl2",
+        "fuente_nombre": "Investing Mundo",
+        "categoria": "Internacional"
+      },
+      {
+        "id": "5fcc43ede31d",
+        "titulo": "Suiza eleva su previsión de crecimiento para 2026 al 1,7%",
+        "link": "https://es.investing.com/news/economic-indicators/suiza-eleva-su-prevision-de-crecimiento-para-2026-al-17-93CH-3838436",
+        "descripcion": "",
+        "fecha_publicacion": "2026-09-17T07:08:20+00:00",
+        "fuente_id": "investing_intl2",
+        "fuente_nombre": "Investing Mundo",
+        "categoria": "Internacional"
+      },
+      {
+        "id": "b849f67d4d21",
+        "titulo": "La UE pide a China limitar exportaciones de híbridos al 15% del mercado",
+        "link": "https://es.investing.com/news/world-news/la-ue-pide-a-china-limitar-exportaciones-de-hibridos-al-15-del-mercado-93CH-3838371",
+        "descripcion": "",
+        "fecha_publicacion": "2026-09-17T06:36:33+00:00",
+        "fuente_id": "investing_intl",
+        "fuente_nombre": "Investing Internacional",
+        "categoria": "Internacional"
+      },
+      {
+        "id": "ebacf4a3ccbc",
+        "titulo": "Brasil: Copom recorta la tasa Selic al 13,75% por inflación",
+        "link": "https://es.investing.com/news/world-news/brasil-copom-recorta-la-tasa-selic-al-1375-por-inflacion-93CH-3838139",
+        "descripcion": "",
+        "fecha_publicacion": "2026-09-16T21:38:48+00:00",
+        "fuente_id": "investing_intl",
+        "fuente_nombre": "Investing Internacional",
+        "categoria": "Internacional"
       }
     ],
     "Fulbito": [
@@ -281,88 +621,6 @@
         "categoria": "Energía y Minería"
       }
     ],
-    "Automotor": [
-      {
-        "id": "788e914ca01e",
-        "titulo": "Se viene la Expo Auto Chino y las marcas adelantan las novedades que exhibirán en la muestra",
-        "link": "https://arodarpost.com.ar/se-viene-la-expo-auto-chino-y-las-marcas-adelantan-las-novedades-que-exhibiran-en-la-muestra/",
-        "descripcion": "Del 2 al 4 de octubre de 2026, BA Ferial (Costa Salguero, Ciudad de Buenos Aires) será sede de la primera edición de Expo Auto Chino, que reunirá a 26 marcas automotrices chinas en un mismo predio, con más de 13.000 m² de exposición y una convocatoria estimada de 20.000 visitantes. Durante los tres días [&#8230;]",
-        "fecha_publicacion": "2026-09-17T13:33:05+00:00",
-        "fuente_id": "arodar",
-        "fuente_nombre": "A Rodar Post",
-        "categoria": "Automotor"
-      },
-      {
-        "id": "8451554c6acf",
-        "titulo": "Banco Provincia lanza créditos para autos y compite con el Banco Nación",
-        "link": "https://www.iprofesional.com/finanzas/464576-banco-provincia-lanza-creditos-para-autos-y-compite-con-el-banco-nacion",
-        "descripcion": "La nueva línea de préstamos permite financiar hasta el 100% de un 0 km o usado y ofrece opciones UVA y a tasa fija. Cómo acceder",
-        "fecha_publicacion": "2026-09-17T12:32:00+00:00",
-        "fuente_id": "iprof_autos",
-        "fuente_nombre": "iProfesional Autos",
-        "categoria": "Automotor"
-      },
-      {
-        "id": "b929100c319d",
-        "titulo": "Renault y Geely invertirán 388 millones de dólares en Brasil",
-        "link": "https://noticias.autocosmos.com.ar/2026/09/17/renault-y-geely-invertiran-388-millones-de-dolares-en-brasil",
-        "descripcion": "La inversión se destinará a la producción de un nuevo modelo eléctrico, junto con la confirmación del Geely EX2 en el país carioca.",
-        "fecha_publicacion": "2026-09-17T10:00:00+00:00",
-        "fuente_id": "autocosmos",
-        "fuente_nombre": "Autocosmos Argentina",
-        "categoria": "Automotor"
-      },
-      {
-        "id": "5ef265793266",
-        "titulo": "Volkswagen ID.3 GTI: con todas las pilas",
-        "link": "https://noticias.autocosmos.com.ar/2026/09/17/volkswagen-id3-gti-con-todas-las-pilas",
-        "descripcion": "El nuevo hot hatch toma elementos de diseño del Golf GTI, con una puesta a punto específica, y 326 CV de potencia en el eje posterior.",
-        "fecha_publicacion": "2026-09-17T09:00:01+00:00",
-        "fuente_id": "autocosmos",
-        "fuente_nombre": "Autocosmos Argentina",
-        "categoria": "Automotor"
-      },
-      {
-        "id": "d6a1116bd423",
-        "titulo": "Hay un nuevo GTI: se llama ID.3 GTI, es Volkswagen y eléctrico",
-        "link": "https://motorwebargentina.com/volkswagen-id-3-gti-2027/",
-        "descripcion": "Volkswagen presentó las primeras imágenes y características del nuevo ID.3 GTI, precisamente en el año que celebra los 50 años de la sigla GTI. En este caso, con una potencia de 240 kW (326 CV), el modelo será el GTI de producción en serie más potente desarrollado hasta la fecha y trasladará a la movilidad [&#8230;] La entrada Hay un nuevo GTI: se llama ID.3 GTI, es Volkswagen y eléctrico se publicó primero en Motorweb Argentina .",
-        "fecha_publicacion": "2026-09-17T08:46:06+00:00",
-        "fuente_id": "motorweb",
-        "fuente_nombre": "Motorweb Argentina",
-        "categoria": "Automotor"
-      },
-      {
-        "id": "50773c2a6d09",
-        "titulo": "Mercedes-Benz Camiones y Buses: Red de Servicio, asistencia 24 hs y logística en Zárate 🚛",
-        "link": "https://visionmotor.com/mercedes-benz-camiones-y-buses-red-de-servicio-asistencia-24-hs-y-logistica-en-zarate-%f0%9f%9a%9b/",
-        "descripcion": "Recorremos la estrategia de Mercedes-Benz Camiones y Buses para acompañar al transporte pesado en Argentina. Desde la inauguración de su Centro Industrial en Zárate y su Centro Logístico de Repuestos de 10.300 m², la marca de la estrella consolida una red de 45 puntos de atención, servicio de Asistencia 24 horas y una disponibilidad de &#8230; Seguir leyendo Mercedes-Benz Camiones y Buses: Red de Servicio, asistencia 24 hs y logística en Zárate 🚛 &#8594;",
-        "fecha_publicacion": "2026-09-17T00:19:08+00:00",
-        "fuente_id": "vision_motor",
-        "fuente_nombre": "Vision Motor",
-        "categoria": "Automotor"
-      },
-      {
-        "id": "669884be2208",
-        "titulo": "Triumph renueva la gama 400 con los modelos Tracker y Thruxton desde $11.700.000",
-        "link": "https://arodarpost.com.ar/triumph-renueva-la-gama-400-con-los-modelos-tracker-y-thruxton-desde-11-700-000/",
-        "descripcion": "Triumph amplía su oferta con la incorporación de las nuevas Thruxton 400 y Tracker 400, dos modelos que extienden la familia 400 y presentan distintas interpretaciones del concepto Modern Classic. Las nuevas Thruxton 400 y Tracker 400 comparten plataforma, motor y tecnología, pero presentan propuestas claramente diferenciadas. La Thruxton 400 recupera el espíritu de las [&#8230;]",
-        "fecha_publicacion": "2026-09-16T22:43:10+00:00",
-        "fuente_id": "arodar",
-        "fuente_nombre": "A Rodar Post",
-        "categoria": "Automotor"
-      },
-      {
-        "id": "809d1c53f3ef",
-        "titulo": "Volkswagen reveló las primeras imágenes del nuevo ID.3 GTI eléctrico",
-        "link": "https://arodarpost.com.ar/volkswagen-revelo-las-primeras-imagenes-del-nuevo-id-3-gti-electrico/",
-        "descripcion": "Volkswagen presentó las primeras imágenes y características del nuevo ID.3 GTI eléctrico en el año en que celebra cinco décadas de historia GTI. Con una potencia de 240 kW (326 CV), el modelo será el GTI de producción en serie más potente desarrollado hasta la fecha y trasladará a la movilidad eléctrica la identidad deportiva [&#8230;]",
-        "fecha_publicacion": "2026-09-16T21:08:58+00:00",
-        "fuente_id": "arodar",
-        "fuente_nombre": "A Rodar Post",
-        "categoria": "Automotor"
-      }
-    ],
     "Agro": [
       {
         "id": "6fd3a6d45afe",
@@ -445,88 +703,6 @@
         "categoria": "Agro"
       }
     ],
-    "Comex": [
-      {
-        "id": "1d518fbf79e6",
-        "titulo": "Tribunales fiscales de Iberoamérica: evolución institucional y modernización, ejes de una mesa redonda de la AAEF",
-        "link": "https://aduananews.com/tribunales-fiscales-de-iberoamerica-evolucion-institucional-y-modernizacion-ejes-de-una-mesa-redonda-de-la-aaef/?utm_source=rss&utm_medium=rss&utm_campaign=tribunales-fiscales-de-iberoamerica-evolucion-institucional-y-modernizacion-ejes-de-una-mesa-redonda-de-la-aaef",
-        "descripcion": "En la sede de la Asociación Argentina de Estudios Fiscales (AAEF) se realizó este miércoles (16.09.2026) una mesa redonda titulada «Tribunales que imparten justicia tributaria en Iberoamérica», que reunió a especialistas y representantes de organismos de justicia tributaria de distintos países. Organizado por la Comisión de Tribunales Fiscales de la AAEF, el encuentro se desarrolló [&#8230;] The post Tribunales fiscales de Iberoamérica: evolución institucional y modernización, ejes de una mesa r",
-        "fecha_publicacion": "2026-09-17T13:06:11+00:00",
-        "fuente_id": "aduana_news",
-        "fuente_nombre": "Aduana News",
-        "categoria": "Comex"
-      },
-      {
-        "id": "0fd5e33947f3",
-        "titulo": "Jornadas de Derecho Aduanero en la UB y en UBA – 29 Y 30 de octubre",
-        "link": "https://mercojuris.com/jornadas-de-derecho-aduanero-en-la-ub-y-en-uba-29-y-30-de-octubre/",
-        "descripcion": "Jornada de Derecho Aduanero ADACE – Universidad de Belgrano Jueves 29 de octubre de 2026 de 15 a 20 hs. Aula 4.4 y transmisión on line UE–Mercosur: el nuevo escenario del comercio birregional Aspectos jurídicos y operativos, desafíos, oportunidades y acceso a nuevos mercados Panel I: El nuevo marco de la integración El Acuerdo Unión Europea–Mercosur: arquitectura jurídica, compromisos y nuevas reglas del comercio birregional Panel II: De las reglas a la operatoria El Acuerdo en acción: aduanas, ",
-        "fecha_publicacion": "2026-09-16T21:22:32+00:00",
-        "fuente_id": "mercojuris",
-        "fuente_nombre": "Mercojuris",
-        "categoria": "Comex"
-      },
-      {
-        "id": "3041f22ad518",
-        "titulo": "Informe 2026 de la OMC: adaptar las reglas del comercio a las nuevas realidades económicas",
-        "link": "https://aduananews.com/nuevo-informe-de-la-omc-adaptar-las-reglas-del-comercio-a-las-nuevas-realidades-economicas/?utm_source=rss&utm_medium=rss&utm_campaign=nuevo-informe-de-la-omc-adaptar-las-reglas-del-comercio-a-las-nuevas-realidades-economicas",
-        "descripcion": "El sistema mundial de comercio atraviesa el período de mayor perturbación desde la creación de las instituciones multilaterales después de la Gran Depresión y la Segunda Guerra Mundial. En este contexto, la Organización Mundial del Comercio (OMC) advirtió este martes (15.09.2026) que la falta de modernización del sistema podría hacer que el producto interno bruto [&#8230;] The post Informe 2026 de la OMC: adaptar las reglas del comercio a las nuevas realidades económicas appeared first on Aduana",
-        "fecha_publicacion": "2026-09-16T20:54:08+00:00",
-        "fuente_id": "aduana_news",
-        "fuente_nombre": "Aduana News",
-        "categoria": "Comex"
-      },
-      {
-        "id": "4f58ae4dd0d6",
-        "titulo": "Cómo impactará en dólar, acciones y bonos argentinos la suba de tasas de la Fed",
-        "link": "https://www.iprofesional.com/finanzas/464594-como-impacta-en-dolar-acciones-y-bonos-argentinos-suba-de-tasa-de-la-fed",
-        "descripcion": "El alza de 25 puntos básicos de la tasa de referencia impulsada por Reserva Federal impacta en el costo de emisión de deuda y otros factores",
-        "fecha_publicacion": "2026-09-16T20:35:00+00:00",
-        "fuente_id": "iprof_comex",
-        "fuente_nombre": "iProfesional Comex",
-        "categoria": "Comex"
-      },
-      {
-        "id": "6f679ee61d26",
-        "titulo": "Automotrices argentinas están en alerta porque Brasil quiere libre comercio bilateral",
-        "link": "https://www.iprofesional.com/autos/464509-argentina-prepara-libre-comercio-de-autos-con-brasil-y-empresas-piden-proteccion",
-        "descripcion": "La firma Renault pidió preservar la producción local ante la apertura comercial y el futuro incierto del acuerdo automotor con Brasil",
-        "fecha_publicacion": "2026-09-16T12:20:00+00:00",
-        "fuente_id": "iprof_comex",
-        "fuente_nombre": "iProfesional Comex",
-        "categoria": "Comex"
-      },
-      {
-        "id": "5b94f1ca30e8",
-        "titulo": "Argentina vuelve a venderle pollo a un país con un mercado de u$s1400 millones por año",
-        "link": "https://www.iprofesional.com/comex/464525-argentina-vuelve-a-venderle-pollo-a-un-pais-con-un-mercado-de-us1400-millones-por-ano",
-        "descripcion": "La Secretaría de Agricultura, Ganadería y Pesca informó que el Ministerio de agricultura japonés levantó la suspensión de importaciones avícolas argentinas",
-        "fecha_publicacion": "2026-09-15T22:59:00+00:00",
-        "fuente_id": "iprof_comex",
-        "fuente_nombre": "iProfesional Comex",
-        "categoria": "Comex"
-      },
-      {
-        "id": "d685f3b49fdd",
-        "titulo": "Argentina promulga la ley que aprueba el acuerdo MERCOSUR-Singapur",
-        "link": "https://aduananews.com/argentina-promulga-la-ley-que-aprueba-el-acuerdo-mercosur-singapur/?utm_source=rss&utm_medium=rss&utm_campaign=argentina-promulga-la-ley-que-aprueba-el-acuerdo-mercosur-singapur",
-        "descripcion": "El Gobierno argentino promulgó la Ley N.º 27.819, que aprueba el Acuerdo de Libre Comercio entre el MERCOSUR y la República de Singapur, firmado el 7 de diciembre de 2023 en Río de Janeiro. La promulgación fue dispuesta mediante el Decreto 1010/2026, publicado este martes (15.09.2026) en el Boletín Oficial. El acuerdo establece una Zona [&#8230;] The post Argentina promulga la ley que aprueba el acuerdo MERCOSUR-Singapur appeared first on Aduana News .",
-        "fecha_publicacion": "2026-09-15T14:08:30+00:00",
-        "fuente_id": "aduana_news",
-        "fuente_nombre": "Aduana News",
-        "categoria": "Comex"
-      },
-      {
-        "id": "4d4c8ce34a3f",
-        "titulo": "La Zona Franca La Plata. Actualidad y futuro – Dr. Enrique Bernabé",
-        "link": "https://mercojuris.com/la-zona-franca-la-plata-actualidad-y-futuro-dr-enrique-bernabe/",
-        "descripcion": "1. Introducción. 1.1 El pasado 31 de agosto del corriente se publicó en el Boletín Oficial de la Provincia de Buenos Aires, la resolución 335/2026, del Ministerio de la Producción, Ciencia e Innovación Tecnológica de la Provincia de Buenos Aires, en virtud de la cual se decidió: ” Rechazar la solicitud de prórroga del contrato de concesión de la Zona Franca La Plata formulada por la empresa Buenos Aires Zona Franca La PLata SA por los fundamentos expuestos en los considerandos de la presente “.(",
-        "fecha_publicacion": "2026-09-13T23:16:15+00:00",
-        "fuente_id": "mercojuris",
-        "fuente_nombre": "Mercojuris",
-        "categoria": "Comex"
-      }
-    ],
     "Logística": [
       {
         "id": "62e503504ed1",
@@ -577,192 +753,6 @@
         "fuente_id": "cedol",
         "fuente_nombre": "CEDOL",
         "categoria": "Logística"
-      }
-    ],
-    "Laboral": [
-      {
-        "id": "87491ca0efec",
-        "titulo": "En el país con más burnout de la región, ¿cómo puede ayudar el juego?",
-        "link": "https://www.iprofesional.com/management/464618-en-el-pais-con-mas-burnout-de-la-region-como-puede-ayudar-el-juego",
-        "descripcion": "Ninguna empresa diagnostica \"tenemos burnout\", pero el juego cambia las dinámicas y permite que se resuelvan los problemas de comunicación",
-        "fecha_publicacion": "2026-09-17T10:28:00+00:00",
-        "fuente_id": "iprof_management",
-        "fuente_nombre": "iProfesional Management",
-        "categoria": "Laboral"
-      },
-      {
-        "id": "9c560a3e9f15",
-        "titulo": "Buscan voluntarios para un hostel cerca de las Cataratas y ofrecen alojamiento gratis",
-        "link": "https://www.iprofesional.com/turismo/464597-viajar-a-cataratas-y-dormir-gratis-buscan-voluntarios-para-hostel-de-puerto-iguazu",
-        "descripcion": "Un hostel de Puerto Iguazú ofrece alojamiento a quienes quieran colaborar cinco horas diarias y permanecer al menos tres semanas. Se requiere inglés",
-        "fecha_publicacion": "2026-09-16T20:25:00+00:00",
-        "fuente_id": "iprof_management",
-        "fuente_nombre": "iProfesional Management",
-        "categoria": "Laboral"
-      },
-      {
-        "id": "18273c7e2ac9",
-        "titulo": "El CEO de Nvidia explicó por qué la IA llevará a plomeros o electricistas a sueldos altos",
-        "link": "https://www.iprofesional.com/management/464591-el-ceo-de-nvidia-explico-por-que-la-ia-llevara-a-plomeros-o-electricistas-a-sueldos-altos",
-        "descripcion": "Uno de los máximos referentes de tecnología en el mundo dejó su parecer respecto de lo que implicarán ciertos oficios dentro de algunos años",
-        "fecha_publicacion": "2026-09-16T19:38:00+00:00",
-        "fuente_id": "iprof_management",
-        "fuente_nombre": "iProfesional Management",
-        "categoria": "Laboral"
-      },
-      {
-        "id": "4c8ab50dbfd9",
-        "titulo": "Trabajo decente en las plataformas digitales: una nueva norma mundial",
-        "link": "https://voices.ilo.org/es-es/podcast/trabajo-decente-en-las-plataformas-digitales-una-nueva-norma-mundial",
-        "descripcion": "Las plataformas digitales han transformado el mundo del trabajo, generando nuevas oportunidades, pero también importantes desafíos para los derechos y la protección de los trabajadores. En este episodio de El futuro del trabajo, Nuno Cunha, especialista en instituciones de mercados laborales de la OIT, explica qué supone el nuevo Convenio núm. 193, la primera norma internacional del trabajo sobre la economía de plataformas, cómo fue elaborado a través del diálogo social y cuáles son los próximos",
-        "fecha_publicacion": "2026-08-26T00:00:00+00:00",
-        "fuente_id": "oit_podcast",
-        "fuente_nombre": "OIT Podcast",
-        "categoria": "Laboral"
-      },
-      {
-        "id": "07f564b6ffd7",
-        "titulo": "Riesgos psicosociales en el trabajo: la amenaza invisible para la salud de los trabajadores",
-        "link": "https://voices.ilo.org/es-es/podcast/riesgos-psicosociales-en-el-trabajo-la-amenaza-invisible-para-la-salud-de-los-trabajadores",
-        "descripcion": "En este episodio del pódcast “El futuro del trabajo de la OIT”, Dafne Papandrea y Lucía Risueño Navarro explican cómo los riesgos psicosociales —como las largas jornadas laborales, la inseguridad en el empleo y el acoso en el lugar de trabajo— afectan a la salud de los trabajadores, y qué medidas pueden adoptarse para crear entornos laborales más saludables en todo el mundo.",
-        "fecha_publicacion": "2026-04-28T00:00:00+00:00",
-        "fuente_id": "oit_podcast",
-        "fuente_nombre": "OIT Podcast",
-        "categoria": "Laboral"
-      },
-      {
-        "id": "ef1638f33032",
-        "titulo": "La inteligencia artificial generativa y las desigualdades de género en el trabajo",
-        "link": "https://voices.ilo.org/es-es/podcast/la-inteligencia-artificial-generativa-y-las-desigualdades-de-genero-en-el-trabajo",
-        "descripcion": "En este episodio del pódcast de la Organización Internacional del Trabajo, Janine Berg, Economista senior en la OIT, presenta un nuevo informe sobre el impacto de la inteligencia artificial generativa en el mundo del trabajo. La experta explica por qué las mujeres están más expuestas que los hombres a los riesgos asociados a esta tecnología y qué significa esto para la igualdad en el mercado laboral.",
-        "fecha_publicacion": "2026-03-09T00:00:00+00:00",
-        "fuente_id": "oit_podcast",
-        "fuente_nombre": "OIT Podcast",
-        "categoria": "Laboral"
-      }
-    ],
-    "Internacional": [
-      {
-        "id": "1e70adb26879",
-        "titulo": "La inflación en la eurozona sube un 3,2% en los doce meses hasta agosto - Eurostat",
-        "link": "https://es.investing.com/news/economic-indicators/la-inflacion-de-la-eurozona-sube-un-32-en-los-doce-meses-hasta-agosto-3838693",
-        "descripcion": "",
-        "fecha_publicacion": "2026-09-17T09:37:43+00:00",
-        "fuente_id": "investing_intl2",
-        "fuente_nombre": "Investing Mundo",
-        "categoria": "Internacional"
-      },
-      {
-        "id": "074a3e63d03d",
-        "titulo": "El crecimiento de la productividad en Reino Unido se revisa al alza con nuevo método del ONS",
-        "link": "https://es.investing.com/news/economic-indicators/el-crecimiento-de-la-productividad-en-reino-unido-se-revisa-al-alza-con-nuevo-metodo-del-ons-93CH-3838630",
-        "descripcion": "",
-        "fecha_publicacion": "2026-09-17T09:04:35+00:00",
-        "fuente_id": "investing_intl2",
-        "fuente_nombre": "Investing Mundo",
-        "categoria": "Internacional"
-      },
-      {
-        "id": "5fcc43ede31d",
-        "titulo": "Suiza eleva su previsión de crecimiento para 2026 al 1,7%",
-        "link": "https://es.investing.com/news/economic-indicators/suiza-eleva-su-prevision-de-crecimiento-para-2026-al-17-93CH-3838436",
-        "descripcion": "",
-        "fecha_publicacion": "2026-09-17T07:08:20+00:00",
-        "fuente_id": "investing_intl2",
-        "fuente_nombre": "Investing Mundo",
-        "categoria": "Internacional"
-      },
-      {
-        "id": "b849f67d4d21",
-        "titulo": "La UE pide a China limitar exportaciones de híbridos al 15% del mercado",
-        "link": "https://es.investing.com/news/world-news/la-ue-pide-a-china-limitar-exportaciones-de-hibridos-al-15-del-mercado-93CH-3838371",
-        "descripcion": "",
-        "fecha_publicacion": "2026-09-17T06:36:33+00:00",
-        "fuente_id": "investing_intl",
-        "fuente_nombre": "Investing Internacional",
-        "categoria": "Internacional"
-      },
-      {
-        "id": "ebacf4a3ccbc",
-        "titulo": "Brasil: Copom recorta la tasa Selic al 13,75% por inflación",
-        "link": "https://es.investing.com/news/world-news/brasil-copom-recorta-la-tasa-selic-al-1375-por-inflacion-93CH-3838139",
-        "descripcion": "",
-        "fecha_publicacion": "2026-09-16T21:38:48+00:00",
-        "fuente_id": "investing_intl",
-        "fuente_nombre": "Investing Internacional",
-        "categoria": "Internacional"
-      },
-      {
-        "id": "ad22fad333ee",
-        "titulo": "La inflación en Nigeria baja al 15,39%, abriendo la puerta a recortes",
-        "link": "https://es.investing.com/news/world-news/la-inflacion-en-nigeria-baja-al-1539-abriendo-la-puerta-a-recortes-93CH-3835973",
-        "descripcion": "",
-        "fecha_publicacion": "2026-09-15T16:34:16+00:00",
-        "fuente_id": "investing_intl",
-        "fuente_nombre": "Investing Internacional",
-        "categoria": "Internacional"
-      }
-    ],
-    "Fiscal": [
-      {
-        "id": "f86a63e70af4",
-        "titulo": "Presupuesto 2027 proyecta más presión tributaria y menor recaudación de ANSES",
-        "link": "https://www.iprofesional.com/impuestos/464587-presupuesto-2027-sube-presion-tributaria-y-baja-recaudacion-anses",
-        "descripcion": "Alza de la presión tributaria y baja de recaudación para la seguridad social por el FAL: los ejes de la estimación de recursos del Presupuesto 2027",
-        "fecha_publicacion": "2026-09-16T21:50:00+00:00",
-        "fuente_id": "iprof_impuestos",
-        "fuente_nombre": "iProfesional Impuestos",
-        "categoria": "Fiscal"
-      },
-      {
-        "id": "f7411cafeeff",
-        "titulo": "Tasas de servicios municipales: la Corte Suprema ratifica su doctrina",
-        "link": "https://www.ambito.com/novedades-fiscales/tasas-servicios-municipales-la-corte-suprema-ratifica-su-doctrina-n6322777",
-        "descripcion": "Pese a varios antecedentes judiciales adversos, algunos municipios persisten en no respetar los aspectos que hacen a la cabal y legal aplicación de las tasas de servicios, exigencias que acaban de ser confirmadas y revalidadas por la CSJN",
-        "fecha_publicacion": "2026-09-16T00:03:00+00:00",
-        "fuente_id": "ambito_fisc",
-        "fuente_nombre": "Ámbito Fiscal",
-        "categoria": "Fiscal"
-      },
-      {
-        "id": "5209602b1624",
-        "titulo": "La Cámara revocó el fallo que suspendía la baja de la imputabilidad",
-        "link": "https://www.iprofesional.com/legales/464506-la-camara-revoco-el-fallo-que-suspendia-la-baja-de-la-imputabilidad",
-        "descripcion": "La Cámara dejó sin efecto la cautelar que había suspendido por 60 días la aplicación de la Ley 27.801 en la provincia de Buenos Aires.",
-        "fecha_publicacion": "2026-09-15T19:06:00+00:00",
-        "fuente_id": "iprof_impuestos",
-        "fuente_nombre": "iProfesional Impuestos",
-        "categoria": "Fiscal"
-      },
-      {
-        "id": "2263659f6c0b",
-        "titulo": "Jubilaciones con aumento: ¿cómo quedan la mínima y la máxima en octubre 2026?",
-        "link": "https://www.iprofesional.com/impuestos/464456-jubilaciones-con-aumento-como-quedan-la-minima-y-la-maxima-en-octubre-2026",
-        "descripcion": "Los nuevos valores alcanzarán a jubilados y pensionados, mientras se espera la definición sobre el refuerzo destinado a los ingresos más bajos",
-        "fecha_publicacion": "2026-09-15T12:21:00+00:00",
-        "fuente_id": "iprof_impuestos",
-        "fuente_nombre": "iProfesional Impuestos",
-        "categoria": "Fiscal"
-      },
-      {
-        "id": "e308c044d93a",
-        "titulo": "Honorarios profesionales: la mera cita o invocación de una norma no satisface la fundamentación de una sentencia",
-        "link": "https://www.ambito.com/novedades-fiscales/honorarios-profesionales-la-mera-cita-o-invocacion-una-norma-no-satisface-la-fundamentacion-una-sentencia-n6321809",
-        "descripcion": "Ante la reducción de los honorarios profesionales regulados judicialmente por parte de la cámara, la Corte Suprema aplicó la doctrina de la arbitrariedad, doctrina que también cuenta con antecedentes en materia tributaria",
-        "fecha_publicacion": "2026-09-13T22:01:00+00:00",
-        "fuente_id": "ambito_fisc",
-        "fuente_nombre": "Ámbito Fiscal",
-        "categoria": "Fiscal"
-      },
-      {
-        "id": "802daf88fcc7",
-        "titulo": "Ingresos Brutos: qué cambia tras el fallo de la Corte Suprema sobre retenciones y percepciones",
-        "link": "https://www.ambito.com/novedades-fiscales/ingresos-brutos-que-cambia-el-fallo-la-corte-suprema-retenciones-y-percepciones-n6321407",
-        "descripcion": "El máximo tribunal se expidió con relación a la aplicación de estos pagos a cuenta del tributo respecto de aquellas actividades cuya riqueza se produce fuera de la jurisdicción provincial",
-        "fecha_publicacion": "2026-09-11T21:20:00+00:00",
-        "fuente_id": "ambito_fisc",
-        "fuente_nombre": "Ámbito Fiscal",
-        "categoria": "Fiscal"
       }
     ],
     "Análisis Consultoras": [
