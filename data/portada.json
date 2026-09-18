@@ -1,38 +1,326 @@
 {
-  "generado_en": "2026-09-17T22:50:18.030504+00:00",
+  "generado_en": "2026-09-18T11:57:40.026190+00:00",
   "destacados": [
     {
-      "id": "3aebb19b0d3b",
-      "titulo": "Binance lanza su tarjeta física en el país: devuelve 3% de cada compra en cripto",
-      "link": "https://www.iproup.com/economia-digital/71646-binance-lanza-su-tarjeta-fisica-en-argentina-y-ofrece-reintegro-en-cripto",
-      "descripcion": "La Binance Card permitirá pagar con activos digitales en cualquier comercio que acepte tarjetas con conversión automática a pesos y programa de recompensas",
-      "fecha_publicacion": "2026-09-17T22:30:00+00:00",
+      "id": "e5960b51367d",
+      "titulo": "Por qué Standard Chartered ve a Arbitrum superando a Bitcoin y a Ethereum hacia 2030",
+      "link": "https://www.iproup.com/economia-digital/71579-arbitrum-standard-chartered-supera-bitcoin-ethereum-2030-septiembre-2026",
+      "descripcion": "El banco vincula la suba de Arbitrum a cuánta actividad tokenizada logre captar la red, un debate central entre los proyectos de capa 2 desde hace tiempo",
+      "fecha_publicacion": "2026-09-18T12:47:00+00:00",
       "fuente_id": "iproup_eco",
       "fuente_nombre": "iProUP Economía Digital",
       "categoria": "Mercados"
     },
     {
-      "id": "b0739c281f9b",
-      "titulo": "Micromedidas y paciencia: la apuesta oficial hasta la elección",
-      "link": "https://www.lanacion.com.ar/economia/micromedidas-y-paciencia-la-apuesta-oficial-hasta-la-eleccion-nid17092026/",
-      "descripcion": "En estos días, todos los esfuerzos del Gobierno están puestos en demostrar que se puede conseguir aprobar el presupuesto 2027",
-      "fecha_publicacion": "2026-09-17T22:43:11+00:00",
+      "id": "e3769f6d01bf",
+      "titulo": "El magnate Warren Buffett dejó la presidencia del holding Berkshire Hathaway tras 56 años",
+      "link": "https://www.lanacion.com.ar/economia/el-magnate-financiero-warren-buffett-dejo-la-presidencia-del-holding-que-lidero-por-56-anos-nid18092026/",
+      "descripcion": "Le escribió una carta a los accionistas anunciando su salida; lo reemplazará su hijo Howard y la parte operativa continúa a cargo del canadiense Greg Abel",
+      "fecha_publicacion": "2026-09-18T11:47:47+00:00",
       "fuente_id": "lanacion_eco",
       "fuente_nombre": "La Nación Economía",
       "categoria": "Finanzas"
     },
     {
-      "id": "f8cdc749bec6",
-      "titulo": "Los precios de producción en Corea del Sur suben por costes agrícolas derivados de una ola de calor",
-      "link": "https://es.investing.com/news/world-news/los-precios-de-produccion-en-corea-del-sur-suben-por-costes-agricolas-derivados-de-una-ola-de-calor-93CH-3839933",
+      "id": "6162139889cd",
+      "titulo": "Las ventas minoristas del Reino Unido repuntan en agosto",
+      "link": "https://es.investing.com/news/economic-indicators/las-ventas-minoristas-del-reino-unido-repuntan-en-agosto-3840161",
       "descripcion": "",
-      "fecha_publicacion": "2026-09-17T21:15:53+00:00",
-      "fuente_id": "investing_intl",
-      "fuente_nombre": "Investing Internacional",
+      "fecha_publicacion": "2026-09-18T06:32:09+00:00",
+      "fuente_id": "investing_intl2",
+      "fuente_nombre": "Investing Mundo",
       "categoria": "Internacional"
     }
   ],
   "secciones": {
+    "Mercados": [
+      {
+        "id": "e5960b51367d",
+        "titulo": "Por qué Standard Chartered ve a Arbitrum superando a Bitcoin y a Ethereum hacia 2030",
+        "link": "https://www.iproup.com/economia-digital/71579-arbitrum-standard-chartered-supera-bitcoin-ethereum-2030-septiembre-2026",
+        "descripcion": "El banco vincula la suba de Arbitrum a cuánta actividad tokenizada logre captar la red, un debate central entre los proyectos de capa 2 desde hace tiempo",
+        "fecha_publicacion": "2026-09-18T12:47:00+00:00",
+        "fuente_id": "iproup_eco",
+        "fuente_nombre": "iProUP Economía Digital",
+        "categoria": "Mercados"
+      },
+      {
+        "id": "1a237e4890a5",
+        "titulo": "Alerta: El mercado considera necesario un mayor endurecimiento de la Fed",
+        "link": "https://es.investing.com/news/economy-news/alerta-el-mercado-considera-necesario-un-mayor-endurecimiento-de-la-fed-3840703",
+        "descripcion": "",
+        "fecha_publicacion": "2026-09-18T11:49:24+00:00",
+        "fuente_id": "investing_economia",
+        "fuente_nombre": "Investing Economía",
+        "categoria": "Mercados"
+      },
+      {
+        "id": "a20fc3e210e9",
+        "titulo": "Saudi Aramco suspende el suministro de crudo a clientes europeos",
+        "link": "https://es.investing.com/news/economy-news/saudi-aramco-suspende-el-suministro-de-crudo-a-clientes-europeos-3840690",
+        "descripcion": "",
+        "fecha_publicacion": "2026-09-18T11:40:30+00:00",
+        "fuente_id": "investing_economia",
+        "fuente_nombre": "Investing Economía",
+        "categoria": "Mercados"
+      },
+      {
+        "id": "c48253fb2014",
+        "titulo": "Los costes de la deuda pública de Italia aumentan por tensiones geopolíticas",
+        "link": "https://es.investing.com/news/economy-news/los-costes-de-la-deuda-publica-de-italia-aumentan-por-tensiones-geopoliticas-93CH-3840591",
+        "descripcion": "",
+        "fecha_publicacion": "2026-09-18T10:59:21+00:00",
+        "fuente_id": "investing_economia",
+        "fuente_nombre": "Investing Economía",
+        "categoria": "Mercados"
+      },
+      {
+        "id": "2a896f681418",
+        "titulo": "Qué negocios tienen Elon Musk, Jeff Bezos y los 10 hombres más ricos del mundo en Argentina",
+        "link": "https://www.iproup.com/economia-digital/71618-negocios-argentina-hombres-mas-ricos-mundo-empresas-septiembre-2026",
+        "descripcion": "Las fortunas que suman cerca de u$s3 billones están detrás de filiales, sociedades locales y hasta bodegas con producción propia en Mendoza",
+        "fecha_publicacion": "2026-09-18T10:53:00+00:00",
+        "fuente_id": "iproup_eco",
+        "fuente_nombre": "iProUP Economía Digital",
+        "categoria": "Mercados"
+      },
+      {
+        "id": "f75cc647e14a",
+        "titulo": "Bitcoin, Ethereum y una carrera para ver qué cripto top da la sorpresa antes de fin de año",
+        "link": "https://www.iproup.com/economia-digital/71636-bitcoin-vs-ethereum-cual-puede-dar-la-sorpresa-antes-de-fin-de-ano",
+        "descripcion": "Los retiros de ETH de exchanges entusiasman al mercado, pero expertos advierten que sacar monedas de las plataformas no implica inmovilización total",
+        "fecha_publicacion": "2026-09-18T09:07:00+00:00",
+        "fuente_id": "iproup_eco",
+        "fuente_nombre": "iProUP Economía Digital",
+        "categoria": "Mercados"
+      }
+    ],
+    "Finanzas": [
+      {
+        "id": "e3769f6d01bf",
+        "titulo": "El magnate Warren Buffett dejó la presidencia del holding Berkshire Hathaway tras 56 años",
+        "link": "https://www.lanacion.com.ar/economia/el-magnate-financiero-warren-buffett-dejo-la-presidencia-del-holding-que-lidero-por-56-anos-nid18092026/",
+        "descripcion": "Le escribió una carta a los accionistas anunciando su salida; lo reemplazará su hijo Howard y la parte operativa continúa a cargo del canadiense Greg Abel",
+        "fecha_publicacion": "2026-09-18T11:47:47+00:00",
+        "fuente_id": "lanacion_eco",
+        "fuente_nombre": "La Nación Economía",
+        "categoria": "Finanzas"
+      },
+      {
+        "id": "fe53af1726f3",
+        "titulo": "Wall Street extiende las subas posteriores a la decisión de la Fed y el petróleo se toma un respiro",
+        "link": "https://www.ambito.com/finanzas/wall-street-extiende-las-subas-posteriores-la-decision-la-fed-y-el-petroleo-se-toma-un-respiro-n6323843",
+        "descripcion": "Las acciones del sector tecnológico impulsan las ganancias en Estados Unidos y Asia, mientras que la caída de los precios del petróleo mejoró el ánimo general. Sin embargo, en Europa las bolsas caen con fuerza.",
+        "fecha_publicacion": "2026-09-18T11:44:00+00:00",
+        "fuente_id": "ambito_fin",
+        "fuente_nombre": "Ámbito Finanzas",
+        "categoria": "Finanzas"
+      },
+      {
+        "id": "d8ddd481fab9",
+        "titulo": "La Argentina del 2030, según la IA: un informe vaticina qué empleos estarán más protegidos y cuáles quedarán más expuestos",
+        "link": "https://www.lanacion.com.ar/economia/IA/la-argentina-del-2030-segun-la-ia-un-informe-vaticina-que-empleos-estaran-mas-protegidos-y-cuales-nid18092026/",
+        "descripcion": "Cada vez son más los especialistas que advierten sobre los peligros de esta nueva tecnología; un reciente informe analizó su impacto en el país en los próximos años",
+        "fecha_publicacion": "2026-09-18T11:27:12+00:00",
+        "fuente_id": "lanacion_eco",
+        "fuente_nombre": "La Nación Economía",
+        "categoria": "Finanzas"
+      },
+      {
+        "id": "b904098a9ae5",
+        "titulo": "Qué cambia para ARCA, Ganancias y dólares con la Inocencia Fiscal II que el Senado convirtió en ley",
+        "link": "https://www.iproup.com/finanzas/71652-ley-inocencia-fiscal-2-cambios-regimen-simplificado-ganancias-septiembre-2026",
+        "descripcion": "La Ley de Inocencia Fiscal II amplía el acceso al Régimen Simplificado de Ganancias y redefine cómo ARCA puede impugnar una declaración jurada en el país",
+        "fecha_publicacion": "2026-09-18T10:24:00+00:00",
+        "fuente_id": "iproup_fintech",
+        "fuente_nombre": "iProUP Fintech",
+        "categoria": "Finanzas"
+      },
+      {
+        "id": "5877393bb2d3",
+        "titulo": "Nueva herramienta bursátil: cómo es la caución en dólar cable",
+        "link": "https://www.iprofesional.com/finanzas/464680-nueva-herramienta-bursatil-como-es-la-caucion-en-dolar-cable",
+        "descripcion": "La operatoria permite colocar o tomar fondos directamente en divisas sin incurrir en costos, ni riesgos, por conversión cambiaria.",
+        "fecha_publicacion": "2026-09-18T10:01:00+00:00",
+        "fuente_id": "iprof_economia",
+        "fuente_nombre": "iProfesional Economía",
+        "categoria": "Finanzas"
+      },
+      {
+        "id": "91e00315857b",
+        "titulo": "Caputo puso techo a la suba de sueldos en el Presupuesto y mandó un mensaje a sindicatos",
+        "link": "https://www.iprofesional.com/economia/464604-el-techo-que-caputo-puso-a-la-suba-de-sueldos-en-el-presupuesto-2027",
+        "descripcion": "Las proyecciones de inflación y de variación nominal del salario implican una señal sobre el rango de aumentos que se validarán",
+        "fecha_publicacion": "2026-09-18T10:00:00+00:00",
+        "fuente_id": "iprof_economia",
+        "fuente_nombre": "iProfesional Economía",
+        "categoria": "Finanzas"
+      },
+      {
+        "id": "e2d17a0fdd0e",
+        "titulo": "Calzado en oferta en Grimoldi con hasta 50% de descuento y un código extra",
+        "link": "https://www.iprofesional.com/economia/464631-grimoldi-liquida-calzado-con-hasta-50-por-ciento-de-descuento-y-20-por-ciento-adicional",
+        "descripcion": "El Outlet de Grimoldi ofrece calzado para toda la familia con descuentos de hasta 50% y un código que permite sumar un 20% adicional",
+        "fecha_publicacion": "2026-09-18T10:00:00+00:00",
+        "fuente_id": "iprof_economia",
+        "fuente_nombre": "iProfesional Economía",
+        "categoria": "Finanzas"
+      },
+      {
+        "id": "b2de6db91c4d",
+        "titulo": "Denuncian que Mercado Pago cambió el alias de una transferencia para cobrar una deuda",
+        "link": "https://www.iproup.com/finanzas/71637-mercado-pago-desvio-transferencia-explicacion-indignacion",
+        "descripcion": "La explicación oficial tras el desvío de una operación bancaria reavivó el debate sobre la seguridad y el respaldo jurídico en apps de pago",
+        "fecha_publicacion": "2026-09-18T09:30:00+00:00",
+        "fuente_id": "iproup_fintech",
+        "fuente_nombre": "iProUP Fintech",
+        "categoria": "Finanzas"
+      }
+    ],
+    "Internacional": [
+      {
+        "id": "6162139889cd",
+        "titulo": "Las ventas minoristas del Reino Unido repuntan en agosto",
+        "link": "https://es.investing.com/news/economic-indicators/las-ventas-minoristas-del-reino-unido-repuntan-en-agosto-3840161",
+        "descripcion": "",
+        "fecha_publicacion": "2026-09-18T06:32:09+00:00",
+        "fuente_id": "investing_intl2",
+        "fuente_nombre": "Investing Mundo",
+        "categoria": "Internacional"
+      },
+      {
+        "id": "f8cdc749bec6",
+        "titulo": "Los precios de producción en Corea del Sur suben por costes agrícolas derivados de una ola de calor",
+        "link": "https://es.investing.com/news/world-news/los-precios-de-produccion-en-corea-del-sur-suben-por-costes-agricolas-derivados-de-una-ola-de-calor-93CH-3839933",
+        "descripcion": "",
+        "fecha_publicacion": "2026-09-17T21:15:53+00:00",
+        "fuente_id": "investing_intl",
+        "fuente_nombre": "Investing Internacional",
+        "categoria": "Internacional"
+      },
+      {
+        "id": "1089b20aea21",
+        "titulo": "Fitch confirma la calificación de Marruecos en BB+ por sus sólidas políticas monetarias",
+        "link": "https://es.investing.com/news/world-news/fitch-confirma-la-calificacion-de-marruecos-en-bb-por-sus-solidas-politicas-monetarias-93CH-3839540",
+        "descripcion": "",
+        "fecha_publicacion": "2026-09-17T14:35:03+00:00",
+        "fuente_id": "investing_intl",
+        "fuente_nombre": "Investing Internacional",
+        "categoria": "Internacional"
+      },
+      {
+        "id": "1e70adb26879",
+        "titulo": "La inflación en la eurozona sube un 3,2% en los doce meses hasta agosto - Eurostat",
+        "link": "https://es.investing.com/news/economic-indicators/la-inflacion-de-la-eurozona-sube-un-32-en-los-doce-meses-hasta-agosto-3838693",
+        "descripcion": "",
+        "fecha_publicacion": "2026-09-17T09:37:43+00:00",
+        "fuente_id": "investing_intl2",
+        "fuente_nombre": "Investing Mundo",
+        "categoria": "Internacional"
+      },
+      {
+        "id": "074a3e63d03d",
+        "titulo": "El crecimiento de la productividad en Reino Unido se revisa al alza con nuevo método del ONS",
+        "link": "https://es.investing.com/news/economic-indicators/el-crecimiento-de-la-productividad-en-reino-unido-se-revisa-al-alza-con-nuevo-metodo-del-ons-93CH-3838630",
+        "descripcion": "",
+        "fecha_publicacion": "2026-09-17T09:04:35+00:00",
+        "fuente_id": "investing_intl2",
+        "fuente_nombre": "Investing Mundo",
+        "categoria": "Internacional"
+      },
+      {
+        "id": "b849f67d4d21",
+        "titulo": "La UE pide a China limitar exportaciones de híbridos al 15% del mercado",
+        "link": "https://es.investing.com/news/world-news/la-ue-pide-a-china-limitar-exportaciones-de-hibridos-al-15-del-mercado-93CH-3838371",
+        "descripcion": "",
+        "fecha_publicacion": "2026-09-17T06:36:33+00:00",
+        "fuente_id": "investing_intl",
+        "fuente_nombre": "Investing Internacional",
+        "categoria": "Internacional"
+      }
+    ],
+    "Energía y Minería": [
+      {
+        "id": "bbb92488f12f",
+        "titulo": "Vaca Muerta: se conocieron las ofertas de las petroleras en las áreas licitadas y la inversión comprometida supera los US$ 230 millones",
+        "link": "https://econojournal.com.ar/oilgas/vaca-muerta-se-conocieron-las-ofertas-de-las-petroleras-en-las-areas-licitadas/",
+        "descripcion": "Como parte del Plan Exploratorio Neuquén Ronda N° 1/2026, la empresa provincial Gas y Petróleo del Neuquén (GyP) llevó a cabo este miércoles la apertura de los Sobres B correspondientes a las propuestas económicas de los oferentes precalificados. El proceso arrojó ofertas por más de US$ 180 millones en concepto de bono de acceso al [&#8230;]",
+        "fecha_publicacion": "2026-09-17T23:42:27+00:00",
+        "fuente_id": "econojournal",
+        "fuente_nombre": "EconoJournal",
+        "categoria": "Energía y Minería"
+      },
+      {
+        "id": "596c80f8c756",
+        "titulo": "Nación autorizó el ingreso de la empresa provincial de energía de Chubut al Mercado Eléctrico Mayorista",
+        "link": "https://dataenergia.ar/gubernamental/nacion-autorizo-el-ingreso-de-la-empresa-provincial-de-energia-de-chubut-al-mercado-electrico-mayorista-202691712570",
+        "descripcion": "La Secretaría de Energía de la Nación aprobó mediante la Resolución 239/2026 la incorporación de la Empresa Provincial de Energía de Chubut (EPECH S.A.U.) al Mercado Eléctrico Mayorista en calidad de Participante Comercializador.",
+        "fecha_publicacion": "2026-09-17T15:57:00+00:00",
+        "fuente_id": "data_energia",
+        "fuente_nombre": "Data Energía",
+        "categoria": "Energía y Minería"
+      },
+      {
+        "id": "b67d30124b9f",
+        "titulo": "TGN presentó un proyecto de u$s2.200 millones para construir el Gasoducto Manuel Belgrano y evacuar gas de Vaca Muerta",
+        "link": "https://dataenergia.ar/gas/tgn-presento-un-proyecto-de-u-s2-200-millones-para-construir-el-gasoducto-manuel-belgrano-y-evacuar-gas-de-vaca-muerta-202691712100",
+        "descripcion": "Transportadora de Gas del Norte (TGN) anunció un plan de inversiones por u$s2.200 millones para la construcción del Gasoducto Manuel Belgrano (753 km entre Tratayén y La Carlota) y la ampliación de su sistema troncal.",
+        "fecha_publicacion": "2026-09-17T15:10:00+00:00",
+        "fuente_id": "data_energia",
+        "fuente_nombre": "Data Energía",
+        "categoria": "Energía y Minería"
+      },
+      {
+        "id": "86dd03b38332",
+        "titulo": "Presupuesto 2027: El Gobierno pasa la motosierra por los subsidios energéticos y apunta a que los usuarios cubran casi el 100% del costo mayorista",
+        "link": "https://dataenergia.ar/gubernamental/presupuesto-2027-el-gobierno-pasa-la-motosierra-por-los-subsidios-energeticos-y-apunta-a-que-los-usuarios-cubran-casi-el-100-del-costo-mayorista-202691711290",
+        "descripcion": "El proyecto de Presupuesto 2027 establece que la tarifa de energía eléctrica cubrirá en promedio el 99,75% del costo mayorista de generación, proyectando una cobertura del 94,62% para residenciales sin subsidio y del 64,27% para beneficiarios del Subsidio Energético Focalizado (SEF).",
+        "fecha_publicacion": "2026-09-17T14:29:00+00:00",
+        "fuente_id": "data_energia",
+        "fuente_nombre": "Data Energía",
+        "categoria": "Energía y Minería"
+      },
+      {
+        "id": "c6148e5d7772",
+        "titulo": "TGN busca construir un nuevo gasoducto desde Vaca Muerta hasta Córdoba que demandará una inversión de US$ 2200 millones",
+        "link": "https://econojournal.com.ar/oilgas/tgn-busca-construir-un-nuevo-gasoducto/",
+        "descripcion": "TGN busca construir un gasoducto entre Tratayén, en la cuenca Neuquina, y La Carlota, en Córdoba, al que bautizará Manuel Belgrano. La obra demandará una inversión de US$ 2200 millones y proyecta una capacidad inicial de abastecimiento de 13 millones de metros cúbicos diarios, previéndose la puesta en funcionamiento para abril de 2029. La compañía [&#8230;]",
+        "fecha_publicacion": "2026-09-17T13:37:40+00:00",
+        "fuente_id": "econojournal",
+        "fuente_nombre": "EconoJournal",
+        "categoria": "Energía y Minería"
+      },
+      {
+        "id": "3c807405c23e",
+        "titulo": "Vaca Muerta: el crudo Medanito vuelve a cotizar con premios sobre el Brent con la intensificación del conflicto en Medio Oriente",
+        "link": "https://econojournal.com.ar/oilgas/vaca-muerta-el-crudo-medanito-vuelve-a-cotizar-con-premios/",
+        "descripcion": "El barril de Medanito, el crudo liviano que se produce principalmente en la Cuenca Neuquina, está cotizando nuevamente con premios sobre contratos futuros del Brent, el marcador internacional de referencia para las inversiones en Vaca Muerta. El diferencial a favor de la producción argentina responde a un mercado petrolero que vuelve a estar en déficit [&#8230;]",
+        "fecha_publicacion": "2026-09-17T04:00:00+00:00",
+        "fuente_id": "econojournal",
+        "fuente_nombre": "EconoJournal",
+        "categoria": "Energía y Minería"
+      },
+      {
+        "id": "d54676fbec8f",
+        "titulo": "Récord exportador y máximos históricos de inversión: la minería argentina consolida su nuevo ciclo",
+        "link": "https://caem.com.ar/record-exportador-y-maximos-historicos-de-inversion-la-mineria-argentina-consolida-su-nuevo-ciclo/",
+        "descripcion": "Las exportaciones mineras argentinas totalizaron US$ 4.742 millones en la primera mitad de 2026. Se trata del máximo nivel exportador registrado para un primer semestre desde que existen estadísticas comparables para la minería argentina. De esta manera, se registra una... The post Récord exportador y máximos históricos de inversión: la minería argentina consolida su nuevo ciclo first appeared on CAEM .",
+        "fecha_publicacion": "2026-09-14T19:03:41+00:00",
+        "fuente_id": "caem",
+        "fuente_nombre": "CAEM",
+        "categoria": "Energía y Minería"
+      },
+      {
+        "id": "ed7c1e095250",
+        "titulo": "Análisis Resolución 73/2026 – importaciones con destino minero",
+        "link": "https://caem.com.ar/analisis-resolucion-73-2026-importaciones-con-destino-minero/",
+        "descripcion": "La Resolución 73/2026 de la Secretaría de Minería, publicada en el día de ayer, introduce cambios en la operatoria del beneficio previsto en el artículo 21 de la Ley de Inversiones Mineras, destinado a la importación de bienes, equipos e... The post Análisis Resolución 73/2026 – importaciones con destino minero first appeared on CAEM .",
+        "fecha_publicacion": "2026-09-02T20:38:54+00:00",
+        "fuente_id": "caem",
+        "fuente_nombre": "CAEM",
+        "categoria": "Energía y Minería"
+      }
+    ],
     "Agro": [
       {
         "id": "54eb3d201053",
@@ -52,8 +340,7 @@
         "fecha_publicacion": "2026-09-17T22:23:41+00:00",
         "fuente_id": "bichos_campo",
         "fuente_nombre": "Bichos de Campo",
-        "categoria": "Agro",
-        "resumen": "Un productor de Sastre aprovechó la zona periurbana donde rige la veda de agroquímicos para implantar viñedos y elaborar vino santafesino. La iniciativa surge como una alternativa rentable frente a las restricciones que pesan sobre la agricultura extensiva tradicional."
+        "categoria": "Agro"
       },
       {
         "id": "a87020f15e88",
@@ -63,8 +350,7 @@
         "fecha_publicacion": "2026-09-17T22:20:34+00:00",
         "fuente_id": "bichos_campo",
         "fuente_nombre": "Bichos de Campo",
-        "categoria": "Agro",
-        "resumen": "Se dio un solapamiento histórico en el maíz: mientras todavía resta recolectar más de un millón de toneladas del ciclo previo, la siembra de la nueva campaña ya cubrió más del 10% del área prevista."
+        "categoria": "Agro"
       },
       {
         "id": "8061e7a99708",
@@ -74,8 +360,7 @@
         "fecha_publicacion": "2026-09-17T21:16:48+00:00",
         "fuente_id": "investing_agro",
         "fuente_nombre": "Investing Agro",
-        "categoria": "Agro",
-        "resumen": "Las cotizaciones del cereal operaron a la baja en la plaza de Chicago ante la falta de fundamentos de mercado que traccionen la demanda. La cautela de los operadores y una oferta global sostenida continúan presionando los valores internacionales."
+        "categoria": "Agro"
       },
       {
         "id": "360b28e82c32",
@@ -85,8 +370,7 @@
         "fecha_publicacion": "2026-09-17T21:12:53+00:00",
         "fuente_id": "bichos_campo",
         "fuente_nombre": "Bichos de Campo",
-        "categoria": "Agro",
-        "resumen": "La Fundación Producir Conservando alertó que el deterioro de las rutas y caminos rurales compromete la competitividad del agro argentino. Desde la entidad remarcaron que el déficit en infraestructura logística amenaza con frenar el potencial de futuras cosechas récord."
+        "categoria": "Agro"
       },
       {
         "id": "be4066511e23",
@@ -117,150 +401,6 @@
         "fuente_id": "infocampo",
         "fuente_nombre": "Infocampo",
         "categoria": "Agro"
-      }
-    ],
-    "Finanzas": [
-      {
-        "id": "b0739c281f9b",
-        "titulo": "Micromedidas y paciencia: la apuesta oficial hasta la elección",
-        "link": "https://www.lanacion.com.ar/economia/micromedidas-y-paciencia-la-apuesta-oficial-hasta-la-eleccion-nid17092026/",
-        "descripcion": "En estos días, todos los esfuerzos del Gobierno están puestos en demostrar que se puede conseguir aprobar el presupuesto 2027",
-        "fecha_publicacion": "2026-09-17T22:43:11+00:00",
-        "fuente_id": "lanacion_eco",
-        "fuente_nombre": "La Nación Economía",
-        "categoria": "Finanzas"
-      },
-      {
-        "id": "5cffef4bc25c",
-        "titulo": "Seis meses que abollaron el rumbo camino a la “tierra prometida”",
-        "link": "https://www.lanacion.com.ar/economia/seis-meses-que-abollaron-el-rumbo-camino-a-la-tierra-prometida-nid17092026/",
-        "descripcion": "El combo de inflación, salarios, pobreza, empleo y actividad tuvo vaivenes en el primer semestre; el Gobierno cree que las exportaciones, el RIGI y la vuelta de la desaceleración de los precios, entre otras cosas, ya mejoran la situación",
-        "fecha_publicacion": "2026-09-17T22:18:57+00:00",
-        "fuente_id": "lanacion_eco",
-        "fuente_nombre": "La Nación Economía",
-        "categoria": "Finanzas"
-      },
-      {
-        "id": "2e075d3b6b79",
-        "titulo": "Las reservas del BCRA cayeron u$s184 millones y tocaron mínimos de septiembre",
-        "link": "https://www.ambito.com/finanzas/las-reservas-del-bcra-cayeron-us184-millones-y-tocaron-minimos-septiembre-n6323734",
-        "descripcion": "La autoridad monetaria mantuvo compras débiles en el MLC. Esto se da en un contexto de menor flujo de divisas y mayor demanda de títulos en pesos de corto plazo.",
-        "fecha_publicacion": "2026-09-17T22:00:00+00:00",
-        "fuente_id": "ambito_fin",
-        "fuente_nombre": "Ámbito Finanzas",
-        "categoria": "Finanzas"
-      },
-      {
-        "id": "f25694d4e72a",
-        "titulo": "Wall Street: el S&P anotó su mayor suba en un mes y medio al disiparse la incertidumbre sobre tasas de la Fed",
-        "link": "https://www.ambito.com/finanzas/los-futuros-wall-street-y-los-bonos-del-tesoro-rebotan-mientras-el-petroleo-se-toma-un-respiro-n6323339",
-        "descripcion": "Las acciones estadounidenses repuntaron junto con los bonos del Tesoro, ya que la caída de los precios del petróleo reforzó el optimismo de que se pueda mantener la inflación bajo control, un día después de que la Reserva Federal subiera las tasas de interés y diera señales de que se avecinan más medidas de endurecimiento monetario.",
-        "fecha_publicacion": "2026-09-17T21:58:00+00:00",
-        "fuente_id": "ambito_fin",
-        "fuente_nombre": "Ámbito Finanzas",
-        "categoria": "Finanzas"
-      },
-      {
-        "id": "10edc7aa0367",
-        "titulo": "Gigante concursado: Granja Tres Arroyos declaró un pasivo de $536.000 millones y más de $126.000 millones en cheques rechazados",
-        "link": "https://www.lanacion.com.ar/economia/campo/gigante-concursado-granja-tres-arroyos-declaro-un-pasivo-de-536000-millones-y-mas-de-126000-millones-nid17092026/",
-        "descripcion": "La empresa informó más de 4800 acreedores; la Justicia protegió parte de la operatoria, pero no levantó los embargos de sus cuentas",
-        "fecha_publicacion": "2026-09-17T21:56:43+00:00",
-        "fuente_id": "lanacion_eco",
-        "fuente_nombre": "La Nación Economía",
-        "categoria": "Finanzas"
-      },
-      {
-        "id": "dd50ec3be580",
-        "titulo": "La tasa para las pymes en el mercado de capitales creció a casi 28% en agosto, pero hubo extensión de plazos",
-        "link": "https://www.ambito.com/finanzas/la-tasa-las-pymes-el-mercado-capitales-crecio-casi-28-agosto-pero-hubo-extension-plazos-n6323644",
-        "descripcion": "Pese al mayor costo de financiamiento, un informe de Vetacap pronosticó que habrá una mayor estabilidad en septiembre, y destacó que se amplió el perfil de vencimientos.",
-        "fecha_publicacion": "2026-09-17T21:41:00+00:00",
-        "fuente_id": "ambito_fin",
-        "fuente_nombre": "Ámbito Finanzas",
-        "categoria": "Finanzas"
-      },
-      {
-        "id": "5c5abacbc70e",
-        "titulo": "El nuevo semáforo de bonos: qué títulos tienen luz verde, amarilla y roja para inversores",
-        "link": "https://www.iprofesional.com/finanzas/463851-el-nuevo-semaforo-de-bonos-argentinos-de-la-city",
-        "descripcion": "Distintas firmas y analistas de la City analizaron la renta fija y definieron sus bonos favoritos para septiembre, tanto en pesos como en dólares",
-        "fecha_publicacion": "2026-09-17T21:22:00+00:00",
-        "fuente_id": "iprof_economia",
-        "fuente_nombre": "iProfesional Economía",
-        "categoria": "Finanzas"
-      },
-      {
-        "id": "54f41ef8d8b8",
-        "titulo": "Pymes de biocombustibles envían a Milei una carta de alerta por su futuro",
-        "link": "https://www.iprofesional.com/energia/464675-pymes-de-biocombustibles-envian-a-milei-una-carta-de-alerta-por-su-futuro",
-        "descripcion": "Empresas Pymes Regionales Elaboradoras de Biocombustibles alertan que el proyecto amenaza con extinguir a las plantas del interior",
-        "fecha_publicacion": "2026-09-17T21:18:00+00:00",
-        "fuente_id": "iprof_economia",
-        "fuente_nombre": "iProfesional Economía",
-        "categoria": "Finanzas"
-      }
-    ],
-    "Mercados": [
-      {
-        "id": "3aebb19b0d3b",
-        "titulo": "Binance lanza su tarjeta física en el país: devuelve 3% de cada compra en cripto",
-        "link": "https://www.iproup.com/economia-digital/71646-binance-lanza-su-tarjeta-fisica-en-argentina-y-ofrece-reintegro-en-cripto",
-        "descripcion": "La Binance Card permitirá pagar con activos digitales en cualquier comercio que acepte tarjetas con conversión automática a pesos y programa de recompensas",
-        "fecha_publicacion": "2026-09-17T22:30:00+00:00",
-        "fuente_id": "iproup_eco",
-        "fuente_nombre": "iProUP Economía Digital",
-        "categoria": "Mercados"
-      },
-      {
-        "id": "ca7790335c7a",
-        "titulo": "Tom Lee anticipa un año alcista para las criptomonedas por avance de Wall Street",
-        "link": "https://www.iproup.com/economia-digital/71639-tom-lee-espera-ahora-un-periodo-alcista-para-cripto",
-        "descripcion": "El presidente de Bitmine ve un nuevo ciclo cripto, mientras acumula 5,96 millones de ETH y Wall Street acelera sus planes con blockchain",
-        "fecha_publicacion": "2026-09-17T21:30:00+00:00",
-        "fuente_id": "iproup_eco",
-        "fuente_nombre": "iProUP Economía Digital",
-        "categoria": "Mercados"
-      },
-      {
-        "id": "8b23d4268950",
-        "titulo": "Los rendimientos del Tesoro de EE.UU. caen mientras el petróleo retrocede",
-        "link": "https://es.investing.com/news/economy-news/los-rendimientos-del-tesoro-de-eeuu-caen-mientras-el-petroleo-retrocede-93CH-3839931",
-        "descripcion": "",
-        "fecha_publicacion": "2026-09-17T21:14:27+00:00",
-        "fuente_id": "investing_economia",
-        "fuente_nombre": "Investing Economía",
-        "categoria": "Mercados"
-      },
-      {
-        "id": "2cc24d582b5f",
-        "titulo": "Jamie Dimon, CEO de JPMorgan, advierte que la IA debería estar regulada",
-        "link": "https://www.iproup.com/economia-digital/71632-ceo-de-jpmorgan-advierte-que-la-ia-deberia-estar-regulada",
-        "descripcion": "Jamie Dimon sostuvo que un marco nacional permitiría evitar un mosaico de normas estatales y reducir la incertidumbre para las empresas",
-        "fecha_publicacion": "2026-09-17T19:35:00+00:00",
-        "fuente_id": "iproup_eco",
-        "fuente_nombre": "iProUP Economía Digital",
-        "categoria": "Mercados"
-      },
-      {
-        "id": "66485c52972c",
-        "titulo": "EE.UU. retrasa anuncio de aranceles hasta después de la cumbre Xi-Trump",
-        "link": "https://es.investing.com/news/economy-news/eeuu-retrasa-anuncio-de-aranceles-hasta-despues-de-la-cumbre-xitrump-93CH-3839742",
-        "descripcion": "",
-        "fecha_publicacion": "2026-09-17T18:11:32+00:00",
-        "fuente_id": "investing_economia",
-        "fuente_nombre": "Investing Economía",
-        "categoria": "Mercados"
-      },
-      {
-        "id": "e0e5e7d37614",
-        "titulo": "EE.UU. impone sanciones al exchange de criptomonedas iraní BitBank",
-        "link": "https://es.investing.com/news/economy-news/eeuu-impone-sanciones-al-exchange-de-criptomonedas-irani-bitbank-93CH-3839730",
-        "descripcion": "",
-        "fecha_publicacion": "2026-09-17T18:01:21+00:00",
-        "fuente_id": "investing_economia",
-        "fuente_nombre": "Investing Economía",
-        "categoria": "Mercados"
       }
     ],
     "Fiscal": [
@@ -407,68 +547,6 @@
         "categoria": "Automotor"
       }
     ],
-    "Internacional": [
-      {
-        "id": "f8cdc749bec6",
-        "titulo": "Los precios de producción en Corea del Sur suben por costes agrícolas derivados de una ola de calor",
-        "link": "https://es.investing.com/news/world-news/los-precios-de-produccion-en-corea-del-sur-suben-por-costes-agricolas-derivados-de-una-ola-de-calor-93CH-3839933",
-        "descripcion": "",
-        "fecha_publicacion": "2026-09-17T21:15:53+00:00",
-        "fuente_id": "investing_intl",
-        "fuente_nombre": "Investing Internacional",
-        "categoria": "Internacional"
-      },
-      {
-        "id": "1089b20aea21",
-        "titulo": "Fitch confirma la calificación de Marruecos en BB+ por sus sólidas políticas monetarias",
-        "link": "https://es.investing.com/news/world-news/fitch-confirma-la-calificacion-de-marruecos-en-bb-por-sus-solidas-politicas-monetarias-93CH-3839540",
-        "descripcion": "",
-        "fecha_publicacion": "2026-09-17T14:35:03+00:00",
-        "fuente_id": "investing_intl",
-        "fuente_nombre": "Investing Internacional",
-        "categoria": "Internacional"
-      },
-      {
-        "id": "1e70adb26879",
-        "titulo": "La inflación en la eurozona sube un 3,2% en los doce meses hasta agosto - Eurostat",
-        "link": "https://es.investing.com/news/economic-indicators/la-inflacion-de-la-eurozona-sube-un-32-en-los-doce-meses-hasta-agosto-3838693",
-        "descripcion": "",
-        "fecha_publicacion": "2026-09-17T09:37:43+00:00",
-        "fuente_id": "investing_intl2",
-        "fuente_nombre": "Investing Mundo",
-        "categoria": "Internacional"
-      },
-      {
-        "id": "074a3e63d03d",
-        "titulo": "El crecimiento de la productividad en Reino Unido se revisa al alza con nuevo método del ONS",
-        "link": "https://es.investing.com/news/economic-indicators/el-crecimiento-de-la-productividad-en-reino-unido-se-revisa-al-alza-con-nuevo-metodo-del-ons-93CH-3838630",
-        "descripcion": "",
-        "fecha_publicacion": "2026-09-17T09:04:35+00:00",
-        "fuente_id": "investing_intl2",
-        "fuente_nombre": "Investing Mundo",
-        "categoria": "Internacional"
-      },
-      {
-        "id": "5fcc43ede31d",
-        "titulo": "Suiza eleva su previsión de crecimiento para 2026 al 1,7%",
-        "link": "https://es.investing.com/news/economic-indicators/suiza-eleva-su-prevision-de-crecimiento-para-2026-al-17-93CH-3838436",
-        "descripcion": "",
-        "fecha_publicacion": "2026-09-17T07:08:20+00:00",
-        "fuente_id": "investing_intl2",
-        "fuente_nombre": "Investing Mundo",
-        "categoria": "Internacional"
-      },
-      {
-        "id": "b849f67d4d21",
-        "titulo": "La UE pide a China limitar exportaciones de híbridos al 15% del mercado",
-        "link": "https://es.investing.com/news/world-news/la-ue-pide-a-china-limitar-exportaciones-de-hibridos-al-15-del-mercado-93CH-3838371",
-        "descripcion": "",
-        "fecha_publicacion": "2026-09-17T06:36:33+00:00",
-        "fuente_id": "investing_intl",
-        "fuente_nombre": "Investing Internacional",
-        "categoria": "Internacional"
-      }
-    ],
     "Fulbito": [
       {
         "id": "c2e4588c0b58",
@@ -503,21 +581,21 @@
     ],
     "Laboral": [
       {
-        "id": "ac53bea2d424",
-        "titulo": "Más de 57.000 empresas ya están en mora con bancos alertan por \"riesgo elevado\"",
-        "link": "https://www.iprofesional.com/economia/464646-mas-de-57000-companias-ya-estan-en-mora-con-los-bancos",
-        "descripcion": "Las más afectadas son compañías de los sectores productivos, castigadas por la caída en las ventas y los costos del financiamiento",
-        "fecha_publicacion": "2026-09-17T19:40:00+00:00",
+        "id": "ca2db3c1da9f",
+        "titulo": "El desempleo subió al 7,9% y afectó a 1,7 millones de argentinos en el segundo trimestre",
+        "link": "https://www.iprofesional.com/economia/464668-el-desempleo-subio-al-79-y-afecto-a-17-millones-de-argentinos-en-el-segundo-trimestre",
+        "descripcion": "En tanto, dentro del universo de trabajadores, la informalidad subió al 45%, con un incremento de 1 punto frente al mismo período de 2025",
+        "fecha_publicacion": "2026-09-17T19:55:00+00:00",
         "fuente_id": "iprof_management",
         "fuente_nombre": "iProfesional Management",
         "categoria": "Laboral"
       },
       {
-        "id": "fe2bc06c3312",
-        "titulo": "Tras el aumento de agosto, ¿cuánto más deben recuperar los salarios para empatar la inflación 2026?",
-        "link": "https://www.iprofesional.com/management/464550-salarios-en-el-presupuesto-2027-cuanto-deben-recuperar-para-empatar-la-inflacion",
-        "descripcion": "Especialistas de C-P Consultora analizan la brecha salarial de 2026 y las metas optimistas del Presupuesto 2027 sobre la inflación",
-        "fecha_publicacion": "2026-09-17T15:25:00+00:00",
+        "id": "ac53bea2d424",
+        "titulo": "Más de 57.000 empresas ya están en mora con bancos alertan por \"riesgo elevado\"",
+        "link": "https://www.iprofesional.com/economia/464646-mas-de-57000-companias-ya-estan-en-mora-con-los-bancos",
+        "descripcion": "Las más afectadas son compañías de los sectores productivos, castigadas por la caída en las ventas y los costos del financiamiento",
+        "fecha_publicacion": "2026-09-17T19:40:00+00:00",
         "fuente_id": "iprof_management",
         "fuente_nombre": "iProfesional Management",
         "categoria": "Laboral"
@@ -715,88 +793,6 @@
         "fuente_id": "iaraf",
         "fuente_nombre": "IARAF",
         "categoria": "Análisis Consultoras"
-      }
-    ],
-    "Energía y Minería": [
-      {
-        "id": "596c80f8c756",
-        "titulo": "Nación autorizó el ingreso de la empresa provincial de energía de Chubut al Mercado Eléctrico Mayorista",
-        "link": "https://dataenergia.ar/gubernamental/nacion-autorizo-el-ingreso-de-la-empresa-provincial-de-energia-de-chubut-al-mercado-electrico-mayorista-202691712570",
-        "descripcion": "La Secretaría de Energía de la Nación aprobó mediante la Resolución 239/2026 la incorporación de la Empresa Provincial de Energía de Chubut (EPECH S.A.U.) al Mercado Eléctrico Mayorista en calidad de Participante Comercializador.",
-        "fecha_publicacion": "2026-09-17T15:57:00+00:00",
-        "fuente_id": "data_energia",
-        "fuente_nombre": "Data Energía",
-        "categoria": "Energía y Minería"
-      },
-      {
-        "id": "b67d30124b9f",
-        "titulo": "TGN presentó un proyecto de u$s2.200 millones para construir el Gasoducto Manuel Belgrano y evacuar gas de Vaca Muerta",
-        "link": "https://dataenergia.ar/gas/tgn-presento-un-proyecto-de-u-s2-200-millones-para-construir-el-gasoducto-manuel-belgrano-y-evacuar-gas-de-vaca-muerta-202691712100",
-        "descripcion": "Transportadora de Gas del Norte (TGN) anunció un plan de inversiones por u$s2.200 millones para la construcción del Gasoducto Manuel Belgrano (753 km entre Tratayén y La Carlota) y la ampliación de su sistema troncal.",
-        "fecha_publicacion": "2026-09-17T15:10:00+00:00",
-        "fuente_id": "data_energia",
-        "fuente_nombre": "Data Energía",
-        "categoria": "Energía y Minería"
-      },
-      {
-        "id": "86dd03b38332",
-        "titulo": "Presupuesto 2027: El Gobierno pasa la motosierra por los subsidios energéticos y apunta a que los usuarios cubran casi el 100% del costo mayorista",
-        "link": "https://dataenergia.ar/gubernamental/presupuesto-2027-el-gobierno-pasa-la-motosierra-por-los-subsidios-energeticos-y-apunta-a-que-los-usuarios-cubran-casi-el-100-del-costo-mayorista-202691711290",
-        "descripcion": "El proyecto de Presupuesto 2027 establece que la tarifa de energía eléctrica cubrirá en promedio el 99,75% del costo mayorista de generación, proyectando una cobertura del 94,62% para residenciales sin subsidio y del 64,27% para beneficiarios del Subsidio Energético Focalizado (SEF).",
-        "fecha_publicacion": "2026-09-17T14:29:00+00:00",
-        "fuente_id": "data_energia",
-        "fuente_nombre": "Data Energía",
-        "categoria": "Energía y Minería"
-      },
-      {
-        "id": "c6148e5d7772",
-        "titulo": "TGN busca construir un nuevo gasoducto desde Vaca Muerta hasta Córdoba que demandará una inversión de US$ 2200 millones",
-        "link": "https://econojournal.com.ar/oilgas/tgn-busca-construir-un-nuevo-gasoducto/",
-        "descripcion": "TGN busca construir un gasoducto entre Tratayén, en la cuenca Neuquina, y La Carlota, en Córdoba, al que bautizará Manuel Belgrano. La obra demandará una inversión de US$ 2200 millones y proyecta una capacidad inicial de abastecimiento de 13 millones de metros cúbicos diarios, previéndose la puesta en funcionamiento para abril de 2029. La compañía [&#8230;]",
-        "fecha_publicacion": "2026-09-17T13:37:40+00:00",
-        "fuente_id": "econojournal",
-        "fuente_nombre": "EconoJournal",
-        "categoria": "Energía y Minería"
-      },
-      {
-        "id": "3c807405c23e",
-        "titulo": "Vaca Muerta: el crudo Medanito vuelve a cotizar con premios sobre el Brent con la intensificación del conflicto en Medio Oriente",
-        "link": "https://econojournal.com.ar/oilgas/vaca-muerta-el-crudo-medanito-vuelve-a-cotizar-con-premios/",
-        "descripcion": "El barril de Medanito, el crudo liviano que se produce principalmente en la Cuenca Neuquina, está cotizando nuevamente con premios sobre contratos futuros del Brent, el marcador internacional de referencia para las inversiones en Vaca Muerta. El diferencial a favor de la producción argentina responde a un mercado petrolero que vuelve a estar en déficit [&#8230;]",
-        "fecha_publicacion": "2026-09-17T04:00:00+00:00",
-        "fuente_id": "econojournal",
-        "fuente_nombre": "EconoJournal",
-        "categoria": "Energía y Minería"
-      },
-      {
-        "id": "4d35d41b224a",
-        "titulo": "Zona Fría obtuvo dictamen en el Senado y el bloque de Rolando Figueroa firmó la ley sin cambios, pero con un guiño de la Casa Rosada",
-        "link": "https://econojournal.com.ar/enclave/zona-fria-dictamen-senado-rolando-figueroa-firmo-la-ley-sin-cambios/",
-        "descripcion": "La comisión de Minería, Energía e Hidrocarburos del Senado consiguió este miércoles dictamen favorable para avanzar con la ley que modifica el régimen de Zona Fría y lo retrotrae al esquema previo a la ampliación del 2021. Tras meses de parate y arduas negociaciones, la media sanción de Diputados finalmente llegará al recinto sin modificaciones [&#8230;]",
-        "fecha_publicacion": "2026-09-16T23:38:40+00:00",
-        "fuente_id": "econojournal",
-        "fuente_nombre": "EconoJournal",
-        "categoria": "Energía y Minería"
-      },
-      {
-        "id": "d54676fbec8f",
-        "titulo": "Récord exportador y máximos históricos de inversión: la minería argentina consolida su nuevo ciclo",
-        "link": "https://caem.com.ar/record-exportador-y-maximos-historicos-de-inversion-la-mineria-argentina-consolida-su-nuevo-ciclo/",
-        "descripcion": "Las exportaciones mineras argentinas totalizaron US$ 4.742 millones en la primera mitad de 2026. Se trata del máximo nivel exportador registrado para un primer semestre desde que existen estadísticas comparables para la minería argentina. De esta manera, se registra una... The post Récord exportador y máximos históricos de inversión: la minería argentina consolida su nuevo ciclo first appeared on CAEM .",
-        "fecha_publicacion": "2026-09-14T19:03:41+00:00",
-        "fuente_id": "caem",
-        "fuente_nombre": "CAEM",
-        "categoria": "Energía y Minería"
-      },
-      {
-        "id": "ed7c1e095250",
-        "titulo": "Análisis Resolución 73/2026 – importaciones con destino minero",
-        "link": "https://caem.com.ar/analisis-resolucion-73-2026-importaciones-con-destino-minero/",
-        "descripcion": "La Resolución 73/2026 de la Secretaría de Minería, publicada en el día de ayer, introduce cambios en la operatoria del beneficio previsto en el artículo 21 de la Ley de Inversiones Mineras, destinado a la importación de bienes, equipos e... The post Análisis Resolución 73/2026 – importaciones con destino minero first appeared on CAEM .",
-        "fecha_publicacion": "2026-09-02T20:38:54+00:00",
-        "fuente_id": "caem",
-        "fuente_nombre": "CAEM",
-        "categoria": "Energía y Minería"
       }
     ],
     "Logística": [
