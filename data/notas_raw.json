@@ -1,26 +1,356 @@
 {
-  "generado_en": "2026-09-20T22:24:28.304346+00:00",
-  "total": 106,
+  "generado_en": "2026-09-21T13:27:03.536112+00:00",
+  "total": 110,
   "notas": [
     {
-      "id": "23423420e6ff",
-      "titulo": "Cuánto cobra un empleado de una casa de empanadas y qué hay detrás del boom de franquicias",
-      "link": "https://www.iprofesional.com/actualidad/464600-cuanto-cobra-un-empleado-en-una-casa-de-empanadas",
-      "descripcion": "Es uno de los modelos de negocio que más creció de la mano de las franquicias. Cuánto cuesta poner un local y qué tener en cuenta",
-      "fecha_publicacion": "2026-09-20T22:16:00+00:00",
+      "id": "5b9507cd3718",
+      "titulo": "Charles Hoskinson aseguró que la industria de las criptomonedas va a \"devorar\" a la IA",
+      "link": "https://www.iproup.com/economia-digital/71713-charles-hoskinson-aseguro-que-la-industria-cripto-se-comera-a-la-ia",
+      "descripcion": "El fundador de Cardano sostuvo que blockchain podría resolver los costos, la gobernanza y los pagos que hoy limitan el avance de la inteligencia artificial",
+      "fecha_publicacion": "2026-09-21T15:49:00+00:00",
+      "fuente_id": "iproup_eco",
+      "fuente_nombre": "iProUP Economía Digital",
+      "categoria": "Mercados"
+    },
+    {
+      "id": "7612f0faac49",
+      "titulo": "6 de cada 10 argentinos se endeudaron en el último semestre por gastos de alimentos, salud y tarifas",
+      "link": "https://www.iproup.com/finanzas/71709-endeudamiento-argentinos-gastos-basicos-zentrix-mora-familias-septiembre-2026",
+      "descripcion": "El endeudamiento de los argentinos golpea más a la clase baja y a los jóvenes de 18 a 39 años, que financian comida, salud y facturas con crédito",
+      "fecha_publicacion": "2026-09-21T15:12:00+00:00",
+      "fuente_id": "iproup_fintech",
+      "fuente_nombre": "iProUP Fintech",
+      "categoria": "Finanzas"
+    },
+    {
+      "id": "1358c3f2fcd9",
+      "titulo": "Brasil bloquea el uso de USDT y USDC en un canal clave para los pagos internacionales",
+      "link": "https://www.iproup.com/economia-digital/71708-brasil-prohibe-stablecoins-pagos-internacionales-exchanges-septiembre-2026",
+      "descripcion": "Una nueva resolución del Banco Central de Brasil veta las stablecoins como medio de liquidación internacional a partir del mes de octubre",
+      "fecha_publicacion": "2026-09-21T14:49:00+00:00",
+      "fuente_id": "iproup_eco",
+      "fuente_nombre": "iProUP Economía Digital",
+      "categoria": "Mercados"
+    },
+    {
+      "id": "43858d5b498f",
+      "titulo": "Le exigieron devolver $4 millones que no existían: cómo funciona la estafa del comprobante falso",
+      "link": "https://www.iproup.com/finanzas/71542-comprobante-falso-4-millones-puso-alerta-usuarios-billeteras-digitales",
+      "descripcion": "Lo sufrió una comerciante de Paraná. Estafadores envían una factura con un monto inflado y exigen devolver un dinero que la víctima nunca recibió",
+      "fecha_publicacion": "2026-09-21T14:08:00+00:00",
+      "fuente_id": "iproup_fintech",
+      "fuente_nombre": "iProUP Fintech",
+      "categoria": "Finanzas"
+    },
+    {
+      "id": "b1b6a77acee1",
+      "titulo": "S&P compra OpenZeppelin y auditará el código que sostiene las stablecoins más grandes del mundo",
+      "link": "https://www.iproup.com/economia-digital/71654-sp-global-compra-openzeppelin-auditoria-codigo-stablecoins-septiembre-2026",
+      "descripcion": "OpenZeppelin, referente en auditoría de contratos inteligentes, se suma a S&amp;P para elevar la seguridad y transparencia en el sector blockchain global",
+      "fecha_publicacion": "2026-09-21T13:21:00+00:00",
+      "fuente_id": "iproup_eco",
+      "fuente_nombre": "iProUP Economía Digital",
+      "categoria": "Mercados"
+    },
+    {
+      "id": "f5307626e1da",
+      "titulo": "Goolsbee (Fed) advierte que la inflación puede exigir subidas de tipos más rápidas",
+      "link": "https://es.investing.com/news/economy-news/goolsbee-fed-advierte-que-la-inflacion-puede-exigir-subidas-de-tipos-mas-rapidas-3842657",
+      "descripcion": "",
+      "fecha_publicacion": "2026-09-21T13:10:35+00:00",
+      "fuente_id": "investing_economia",
+      "fuente_nombre": "Investing Economía",
+      "categoria": "Mercados"
+    },
+    {
+      "id": "aaa61f79e09b",
+      "titulo": "Rusia planea aumentar su fondo de riqueza nacional hasta 1,19 billones de rublos",
+      "link": "https://es.investing.com/news/economy-news/rusia-planea-aumentar-su-fondo-de-riqueza-nacional-hasta-119-billones-de-rublos-93CH-3842655",
+      "descripcion": "",
+      "fecha_publicacion": "2026-09-21T13:08:09+00:00",
+      "fuente_id": "investing_economia",
+      "fuente_nombre": "Investing Economía",
+      "categoria": "Mercados"
+    },
+    {
+      "id": "0f54369fd7f4",
+      "titulo": "Scott Bessent celebra los avances en las conversaciones sobre IA con China, ¿qué sigue?",
+      "link": "https://www.ambito.com/finanzas/scott-bessent-celebra-los-avances-las-conversaciones-ia-china-que-sigue-n6324679",
+      "descripcion": "Se prevé que la inteligencia artificial y otros temas similares sean cuestiones importantes en la cumbre de esta semana entre el presidente Trump y Xi Jinping, el máximo líder de China.",
+      "fecha_publicacion": "2026-09-21T12:59:00+00:00",
+      "fuente_id": "ambito_fin",
+      "fuente_nombre": "Ámbito Finanzas",
+      "categoria": "Finanzas"
+    },
+    {
+      "id": "ccb46c6fb944",
+      "titulo": "Bitcoin sube a su máximo nivel desde enero luego de la aprobación de una normativa cripto en EEUU",
+      "link": "https://www.ambito.com/finanzas/bitcoin-sube-su-maximo-nivel-enero-luego-la-aprobacion-una-normativa-cripto-eeuu-n6324682",
+      "descripcion": "El mercado cripto arranca la semana con fuertes subas impulsadas por el movimiento regulatorio de la Comisión de Bolsas y Valores y la caída del petróleo, que alimenta el apetito por el riesgo.",
+      "fecha_publicacion": "2026-09-21T12:59:00+00:00",
+      "fuente_id": "ambito_fin",
+      "fuente_nombre": "Ámbito Finanzas",
+      "categoria": "Finanzas"
+    },
+    {
+      "id": "20845623a038",
+      "titulo": "Cinco años de investigación: el campo que marcó un antes y un después con la carne y abrió una nueva era",
+      "link": "https://www.lanacion.com.ar/economia/campo/cinco-anos-de-investigacion-el-campo-que-marco-un-antes-y-un-despues-con-la-carne-y-abrio-una-nueva-nid20092026/",
+      "descripcion": "Santa Unión, de Víctor Tonelli, en la Cuenca del Salado, aumentó su productividad, redujo su huella de carbono y logró verificar una disminución de emisiones que ahora puede transformarse también en una fuente de rentabilidad",
+      "fecha_publicacion": "2026-09-21T12:53:23+00:00",
+      "fuente_id": "lanacion_eco",
+      "fuente_nombre": "La Nación Economía",
+      "categoria": "Finanzas"
+    },
+    {
+      "id": "66a24096da35",
+      "titulo": "Subasta de autos en la Argentina: rematan unidades de Toyota, Ford y otras marcas desde $7 millones",
+      "link": "https://www.ambito.com/autos/subasta-la-argentina-rematan-unidades-toyota-ford-y-otras-marcas-7-millones-n6324671",
+      "descripcion": "Un nuevo concurso online ofrece vehículos de distintas marcas, con unidades en buen estado, bajo kilometraje y precios competitivos.",
+      "fecha_publicacion": "2026-09-21T12:52:00+00:00",
+      "fuente_id": "ambito_autos",
+      "fuente_nombre": "Ámbito Autos",
+      "categoria": "Automotor"
+    },
+    {
+      "id": "f20dd4995013",
+      "titulo": "Los inversores podrían subestimar hasta dónde llegarán las subidas de tipos, según Deutsche Bank",
+      "link": "https://es.investing.com/news/economy-news/los-inversores-podrian-subestimar-hasta-donde-llegaran-las-subidas-de-tipos-segun-deutsche-bank-3842596",
+      "descripcion": "",
+      "fecha_publicacion": "2026-09-21T12:40:19+00:00",
+      "fuente_id": "investing_economia",
+      "fuente_nombre": "Investing Economía",
+      "categoria": "Mercados"
+    },
+    {
+      "id": "b806768c8d4c",
+      "titulo": "Economistas de Brasil reducen previsión del Selic para 2026 tras el recorte de tipos",
+      "link": "https://es.investing.com/news/world-news/economistas-de-brasil-reducen-prevision-del-selic-para-2026-tras-el-recorte-de-tipos-93CH-3842523",
+      "descripcion": "",
+      "fecha_publicacion": "2026-09-21T12:31:34+00:00",
+      "fuente_id": "investing_intl",
+      "fuente_nombre": "Investing Internacional",
+      "categoria": "Internacional"
+    },
+    {
+      "id": "3125f57ff3cc",
+      "titulo": "Turquía estudia crear un fondo de activos para compensar a inversores tras la crisis",
+      "link": "https://es.investing.com/news/world-news/turquia-estudia-crear-un-fondo-de-activos-para-compensar-a-inversores-tras-la-crisis-93CH-3842511",
+      "descripcion": "",
+      "fecha_publicacion": "2026-09-21T12:27:30+00:00",
+      "fuente_id": "investing_intl",
+      "fuente_nombre": "Investing Internacional",
+      "categoria": "Internacional"
+    },
+    {
+      "id": "c9f9c1b6c5f2",
+      "titulo": "El Gobierno volvió a prorrogar la presentación de la declaración jurada de Ganancias",
+      "link": "https://www.lanacion.com.ar/economia/el-gobierno-volvio-a-prorrogar-la-presentacion-de-la-declaracion-jurada-de-ganancias-nid21092026/",
+      "descripcion": "La medida se conoce pocos días después de que el Congreso aprobara Inocencia Fiscal II",
+      "fecha_publicacion": "2026-09-21T12:25:52+00:00",
+      "fuente_id": "lanacion_eco",
+      "fuente_nombre": "La Nación Economía",
+      "categoria": "Finanzas"
+    },
+    {
+      "id": "e9b84f7c32af",
+      "titulo": "Los futuros de Wall Street suben en el arranque de la semana, mientras afloja el petróleo",
+      "link": "https://www.ambito.com/finanzas/los-futuros-wall-street-suben-el-arranque-la-semana-mientras-afloja-el-petroleo-n6324647",
+      "descripcion": "La caída del crudo hacia los u$s100 por barril disipa parte de la inquietud de los inversores ante la posibilidad de subidas de tasas por parte de bancos centrales globales. Las acciones y los bonos repuntan en el arranque de la semana, gracias a la caída de los precios del petróleo.",
+      "fecha_publicacion": "2026-09-21T12:16:00+00:00",
+      "fuente_id": "ambito_fin",
+      "fuente_nombre": "Ámbito Finanzas",
+      "categoria": "Finanzas"
+    },
+    {
+      "id": "2583c0650490",
+      "titulo": "La decisión que cambió todo: cómo una empresa familiar logró un inesperado resultado con sus vacas",
+      "link": "https://www.lanacion.com.ar/economia/campo/la-decision-que-cambio-todo-como-una-empresa-familiar-logro-un-inesperado-resultado-con-sus-vacas-nid21092026/",
+      "descripcion": "Con un enfoque integral, en Benito Juárez, Buenos Aires, El Compinche Agro pasó de 120 a 240 kilos por hectárea de carne y a producir hacienda gorda con 480 kilos en Teodelina, Santa Fe",
+      "fecha_publicacion": "2026-09-21T12:10:37+00:00",
+      "fuente_id": "lanacion_eco",
+      "fuente_nombre": "La Nación Economía",
+      "categoria": "Finanzas"
+    },
+    {
+      "id": "bac966b5f6e7",
+      "titulo": "Financiación para autos eléctricos: nuevas opciones para acceder a modelos de marca líder china",
+      "link": "https://www.ambito.com/autos/financiacion-electricos-nuevas-opciones-acceder-modelos-marca-lider-china-n6324637",
+      "descripcion": "La firma asiática amplía su oferta con planes a tasa 0% y cuotas fijas para distintos vehículos de su gama en el país.",
+      "fecha_publicacion": "2026-09-21T12:03:00+00:00",
+      "fuente_id": "ambito_autos",
+      "fuente_nombre": "Ámbito Autos",
+      "categoria": "Automotor"
+    },
+    {
+      "id": "88c427f237aa",
+      "titulo": "Apagón en AMBA: por qué la falla en un interruptor en una estación transformadora dejó sin suministro eléctrico a más de 600.000 hogares",
+      "link": "https://econojournal.com.ar/energia/apagon-interruptor-edenor-amba/",
+      "descripcion": "El apagón que el sábado por la noche dejó sin electricidad a más de 600.000 usuarios del Área Metropolitana de Buenos Aires (AMBA) se originó por una falla en un interruptor de 220 kilovoltios (kV) de la estación transformadora Malaver, una instalación de Edenor ubicada en el partido bonaerense de San Martín. La distribuidora confirmó [&#8230;]",
+      "fecha_publicacion": "2026-09-21T11:48:05+00:00",
+      "fuente_id": "econojournal",
+      "fuente_nombre": "EconoJournal",
+      "categoria": "Energía y Minería"
+    },
+    {
+      "id": "3a785461e8b6",
+      "titulo": "BCRA y CNV permitirían transferir fondos a Alyc sin volver a pagar el impuesto al cheque",
+      "link": "https://www.iprofesional.com/finanzas/464816-alyc-bcra-y-cnv-analizan-evitar-una-doble-retencion-del-impuesto-al-cheque",
+      "descripcion": "El BCRA y la CNV preparan cambios para que empresas puedan mover fondos hacia Alyc o FCI sin volver a pagar el impuesto al cheque",
+      "fecha_publicacion": "2026-09-21T11:48:00+00:00",
+      "fuente_id": "iprof_finanzas",
+      "fuente_nombre": "iProfesional Finanzas",
+      "categoria": "Finanzas"
+    },
+    {
+      "id": "a2c377a40141",
+      "titulo": "Zapatillas de Nike, adidas, Puma y Reebok desde $39.000 con hasta 70% de descuento",
+      "link": "https://www.iprofesional.com/actualidad/464733-nike-adidas-puma-y-reebok-liquidan-zapatillas-desde-39000-con-hasta-70-por-ciento-de-descuento",
+      "descripcion": "Las tiendas oficiales ofrecen modelos de temporadas anteriores para running, entrenamiento y uso urbano, con stock sujeto a talles y colores",
+      "fecha_publicacion": "2026-09-21T11:47:00+00:00",
       "fuente_id": "iprof_economia",
       "fuente_nombre": "iProfesional Economía",
       "categoria": "Finanzas"
     },
     {
-      "id": "453f9101cb71",
-      "titulo": "Sociedad de bolsa IEB revela su estrategia para invertir $1 millón en 13 acciones",
-      "link": "https://www.iprofesional.com/finanzas/464008-broker-ieb-revela-estrategia-para-inveritr-1-millon-de-pesos-en-13-empresas",
-      "descripcion": "YPF y Pampa Energía se quedan con los lugares más importantes de la cartera que presentó IEB. Entre ambas reúnen el 30% del portafolio",
-      "fecha_publicacion": "2026-09-20T22:00:00+00:00",
+      "id": "2b7d117f387b",
+      "titulo": "Outlets de Converse ofrecen 2x1 y zapatillas desde $45.000 con 3 cuotas sin interés",
+      "link": "https://www.iprofesional.com/economia/464734-outlets-de-converse-liquidan-2x1-en-zapatillas-e-indumentaria",
+      "descripcion": "La promoción permite combinar calzado e indumentaria y abonar solamente el producto de mayor valor. Hay dos locales adheridos en Buenos Aires",
+      "fecha_publicacion": "2026-09-21T11:47:00+00:00",
       "fuente_id": "iprof_economia",
       "fuente_nombre": "iProfesional Economía",
       "categoria": "Finanzas"
+    },
+    {
+      "id": "6d511587d6cc",
+      "titulo": "Banco Nación: cómo aprovechar el 20% de descuento en combustible y cuánto se puede ahorrar",
+      "link": "https://www.iprofesional.com/finanzas/464738-banco-nacion-como-aprovechar-el-20-de-descuento-en-combustible-y-cuanto-se-puede-ahorrar",
+      "descripcion": "La promoción rige todos los viernes hasta enero de 2027 y permite obtener un reintegro de hasta $10.000 por mes en las estaciones adheridas",
+      "fecha_publicacion": "2026-09-21T11:47:00+00:00",
+      "fuente_id": "iprof_finanzas",
+      "fuente_nombre": "iProfesional Finanzas",
+      "categoria": "Finanzas"
+    },
+    {
+      "id": "257bbfff7a83",
+      "titulo": "Zapatillas Adidas: cuánto se puede pagar en outlet con el 80% de descuento",
+      "link": "https://www.iprofesional.com/actualidad/464741-zapatillas-adidas-cuanto-se-puede-pagar-en-outlet-con-el-80-de-descuento",
+      "descripcion": "La promoción alcanza productos seleccionados en outlets durante septiembre. Hay una oferta de dos pares de calzado por $119.999 en CABA",
+      "fecha_publicacion": "2026-09-21T11:47:00+00:00",
+      "fuente_id": "iprof_finanzas",
+      "fuente_nombre": "iProfesional Finanzas",
+      "categoria": "Finanzas"
+    },
+    {
+      "id": "3056b491f902",
+      "titulo": "Trabajadores rurales: cuánto cobrará un peón desde octubre y cómo queda la nueva escala",
+      "link": "https://www.iprofesional.com/management/464742-trabajadores-rurales-cuanto-cobrara-un-peon-desde-octubre-y-como-queda-la-nueva-escala",
+      "descripcion": "La nueva escala salarial suma cuatro tramos de aumento y lleva el básico del peón general a $1,248 millones. Cómo quedan las principales categorías",
+      "fecha_publicacion": "2026-09-21T11:47:00+00:00",
+      "fuente_id": "iprof_management",
+      "fuente_nombre": "iProfesional Management",
+      "categoria": "Laboral"
+    },
+    {
+      "id": "8a57c9ed4097",
+      "titulo": "Toyota fabricará dos Papamóviles en Zárate para los traslados del papa León XIV: cómo son",
+      "link": "https://www.ambito.com/autos/toyota-fabricara-dos-papamoviles-zarate-los-traslados-leon-xiv-n6320825",
+      "descripcion": "Los vehículos serán fabricados con especificaciones del Vaticano para cubrir la itinerario del pontífice por Buenos Aires y Córdoba.",
+      "fecha_publicacion": "2026-09-21T11:22:00+00:00",
+      "fuente_id": "ambito_autos",
+      "fuente_nombre": "Ámbito Autos",
+      "categoria": "Automotor"
+    },
+    {
+      "id": "07dc725dfe03",
+      "titulo": "Plazo fijo: por qué dejar $1 millón en tu banco puede hacerte perder $6.000 en un mes",
+      "link": "https://www.iprofesional.com/finanzas/464795-plazo-fijo-por-que-dejar-1-millon-de-pesos-te-puede-costar-6000-pesos",
+      "descripcion": "La tasa que paga un banco por un plazo fijo dejó de ser un dato menor para los ahorristas, por lo que hay que buscar cuáles son los más rendidores",
+      "fecha_publicacion": "2026-09-21T11:12:00+00:00",
+      "fuente_id": "iprof_economia",
+      "fuente_nombre": "iProfesional Economía",
+      "categoria": "Finanzas"
+    },
+    {
+      "id": "4df494c6d8a6",
+      "titulo": "Inocencia Fiscal: ARCA reglamentará 12 puntos clave para regularizar dólares del colchón",
+      "link": "https://www.iprofesional.com/impuestos/464806-arca-debe-precisar-12-puntos-clave-para-dolares-colchon",
+      "descripcion": "La posibilidad de regularizar fondos no declarados exige haber adherido previamente a Ganancias Simplificado: la reglamentación de ese régimen",
+      "fecha_publicacion": "2026-09-21T11:00:00+00:00",
+      "fuente_id": "iprof_impuestos",
+      "fuente_nombre": "iProfesional Impuestos",
+      "categoria": "Fiscal"
+    },
+    {
+      "id": "d0932c87fe0c",
+      "titulo": "Fallo clave: cobra su indemnización laboral a los herederos del jefe después de 28 años",
+      "link": "https://www.iprofesional.com/impuestos/464811-fallo-clave-cobra-indemnizacion-laboral-a-herederos-del-jefe",
+      "descripcion": "Un trabajador ganó un juicio laboral, el empleador murió antes de pagar la indemnización y les cobró a los herederos con una creativa acción civil",
+      "fecha_publicacion": "2026-09-21T10:55:00+00:00",
+      "fuente_id": "iprof_impuestos",
+      "fuente_nombre": "iProfesional Impuestos",
+      "categoria": "Fiscal"
+    },
+    {
+      "id": "895b78de62c9",
+      "titulo": "Empleados de McDonald's y Burger King reciben nuevo aumento: cuánto cobran en octubre",
+      "link": "https://www.iprofesional.com/management/464793-cuanto-cobra-un-empleado-de-mcdonalds-burger-king-y-starbucks-en-octubre",
+      "descripcion": "La mejora salarial para el personal de la rama Servicios Rápidos fue del 7,40% y se termina en noviembre, mes en que que se reabrirán las negociaciones.",
+      "fecha_publicacion": "2026-09-21T10:05:00+00:00",
+      "fuente_id": "iprof_management",
+      "fuente_nombre": "iProfesional Management",
+      "categoria": "Laboral"
+    },
+    {
+      "id": "6600a1fe049e",
+      "titulo": "ARCA prorroga nuevamente la declaración de Ganancias 2025: cuál es la fecha límite",
+      "link": "https://www.iprofesional.com/impuestos/464803-arca-prorroga-nuevamente-la-declaracion-de-ganancias-2025-cual-es-la-fecha-limite",
+      "descripcion": "La Agencia de Recaudación y Control Aduanero volvió a modificar el calendario del Impuesto a las Ganancias para personas humanas y sucesiones indivisas",
+      "fecha_publicacion": "2026-09-21T09:24:00+00:00",
+      "fuente_id": "iprof_impuestos",
+      "fuente_nombre": "iProfesional Impuestos",
+      "categoria": "Fiscal"
+    },
+    {
+      "id": "2d0ad7b757d6",
+      "titulo": "Honda WR-V 2026 llegó a la Argentina para competir con los SUV más chicos",
+      "link": "https://www.iprofesional.com/autos/464785-honda-wr-v-2026-a-prueba-cuanto-cuesta-y-como-anda-el-suv-chico",
+      "descripcion": "Probamos el SUV con motor 1.5, caja automática CVT y mucha seguridad. Cómo se comporta en ciudad, en ruta, y cómo queda frente a sus rivales",
+      "fecha_publicacion": "2026-09-21T09:18:00+00:00",
+      "fuente_id": "iprof_autos",
+      "fuente_nombre": "iProfesional Autos",
+      "categoria": "Automotor"
+    },
+    {
+      "id": "9c68b75c9242",
+      "titulo": "Bancos y billeteras arman alianzas y crean ecosistemas para quedarse con los usuarios",
+      "link": "https://www.iproup.com/finanzas/71535-bancos-billeteras-alianzas-ecosistemas-financieros-usuarios-argentina-septiembre-2026",
+      "descripcion": "La pelea por la principalidad empuja movimientos entre bancos, billeteras y plataformas de inversión, e incluso petroleras y empresas de telecomunicaciones",
+      "fecha_publicacion": "2026-09-21T09:15:00+00:00",
+      "fuente_id": "iproup_fintech",
+      "fuente_nombre": "iProUP Fintech",
+      "categoria": "Finanzas"
+    },
+    {
+      "id": "c274386e5c37",
+      "titulo": "Los salarios corporativos de Polonia suben un 5,6% en agosto",
+      "link": "https://es.investing.com/news/economic-indicators/los-salarios-corporativos-de-polonia-suben-un-56-en-agosto-93CH-3841825",
+      "descripcion": "",
+      "fecha_publicacion": "2026-09-21T07:41:12+00:00",
+      "fuente_id": "investing_intl2",
+      "fuente_nombre": "Investing Mundo",
+      "categoria": "Internacional"
+    },
+    {
+      "id": "a63c1880d140",
+      "titulo": "El Impuesto sobre los Bienes Personales, las diferencias patrimoniales y la presunción de evasión del tributo",
+      "link": "https://www.ambito.com/novedades-fiscales/el-impuesto-los-bienes-personales-las-diferencias-patrimoniales-y-la-presuncion-evasion-del-tributo-n6324552",
+      "descripcion": "En torno a los movimientos patrimoniales que ocurren cercanos al 31 de diciembre de cada año, desde hace tiempo, se presenta una controversia interpretativa donde colisionan el principio de legalidad con la realidad económica",
+      "fecha_publicacion": "2026-09-20T22:23:00+00:00",
+      "fuente_id": "ambito_fisc",
+      "fuente_nombre": "Ámbito Fiscal",
+      "categoria": "Fiscal"
     },
     {
       "id": "f941729c3c47",
@@ -43,16 +373,6 @@
       "categoria": "Automotor"
     },
     {
-      "id": "b72e12a89701",
-      "titulo": "Informalidad récord: el tipo de empleo que más creció durante la gestión Milei paga menos de la mitad que un puesto en blanco",
-      "link": "https://www.lanacion.com.ar/economia/informalidad-record-el-tipo-de-empleo-que-mas-crecio-durante-la-gestion-milei-paga-menos-de-la-mitad-nid20092026/",
-      "descripcion": "El cuentapropismo absorbió la caída del trabajo formal y evitó que la desocupación llegara al 9,8%, pero profundizó el deterioro de los ingresos familiares",
-      "fecha_publicacion": "2026-09-20T21:43:25+00:00",
-      "fuente_id": "lanacion_eco",
-      "fuente_nombre": "La Nación Economía",
-      "categoria": "Finanzas"
-    },
-    {
       "id": "9fd7af3ed93b",
       "titulo": "Lanús vs. Estudiantes por el Torneo Clausura: hora, TV y probables formaciones",
       "link": "https://www.0221.com.ar/estudiantes/lanus-vs-estudiantes-el-torneo-clausura-hora-tv-y-probables-formaciones-n134498",
@@ -61,6 +381,16 @@
       "fuente_id": "est_0221",
       "fuente_nombre": "0221 Estudiantes",
       "categoria": "Fulbito"
+    },
+    {
+      "id": "074aea313f60",
+      "titulo": "Las 10 claves de la pick-up Foton Tunland V9 4×4 A/T Pro Sport",
+      "link": "https://arodarpost.com.ar/las-10-claves-de-la-pick-up-foton-tunland-v9-4x4-a-t-pro-sport/",
+      "descripcion": "El segmento de las pick-ups es uno de los más competitivos del mercado argentino. Primero, porque está la oferta fuerte de los productos de producción nacional, como Toyota Hilux, Ford Ranger y Volkswagen Amarok, que se ubican en el top ten de ventas. Después, porque la oferta importada es importante y va en aumento. Además, [&#8230;]",
+      "fecha_publicacion": "2026-09-20T20:55:16+00:00",
+      "fuente_id": "arodar",
+      "fuente_nombre": "A Rodar Post",
+      "categoria": "Automotor"
     },
     {
       "id": "378cd0fcddeb",
@@ -83,16 +413,6 @@
       "categoria": "Fulbito"
     },
     {
-      "id": "e04820f3ab1b",
-      "titulo": "Argentinos detrás de un hito: usan insectos modificados genéticamente para combatir enfermedades que generan pérdidas",
-      "link": "https://www.lanacion.com.ar/economia/campo/argentinos-detras-de-un-hito-usan-insectos-modificados-geneticamente-para-combatir-enfermedades-que-nid20092026/",
-      "descripcion": "Instalada en Coquimbo, Chile, ByBug tiene la participación de científicos argentinos; utiliza herramientas de ingeniería genética para modificar insectos y convertirlos en productores de proteínas con aplicaciones en salud animal",
-      "fecha_publicacion": "2026-09-20T20:00:00+00:00",
-      "fuente_id": "lanacion_eco",
-      "fuente_nombre": "La Nación Economía",
-      "categoria": "Finanzas"
-    },
-    {
       "id": "536f0e6f0241",
       "titulo": "Memphis Depay rompió el silencio tras la eliminación con Estudiantes: \"La mayor decepción de mi carrera\"",
       "link": "https://www.0221.com.ar/estudiantes/memphis-depay-rompio-el-silencio-la-eliminacion-estudiantes-la-mayor-decepcion-mi-carrera-n134497",
@@ -113,64 +433,14 @@
       "categoria": "Agro"
     },
     {
-      "id": "33cd02109b18",
-      "titulo": "Nicolás Dujovne advirtió por el impacto de las elecciones de 2027 en el dólar: \"Va a depender de la política\"",
-      "link": "https://www.ambito.com/finanzas/nicolas-dujovne-advirtio-el-impacto-las-elecciones-2027-el-dolar-va-depender-la-politica-n6324498",
-      "descripcion": "El exministro de Economía sostuvo que la incertidumbre electoral explica parte de la prima que pagan los bonos argentinos frente a países con una calificación crediticia similar.",
-      "fecha_publicacion": "2026-09-20T17:12:00+00:00",
-      "fuente_id": "ambito_fin",
-      "fuente_nombre": "Ámbito Finanzas",
-      "categoria": "Finanzas"
-    },
-    {
-      "id": "12669d12064b",
-      "titulo": "El plan de China con la IA: reconoce los riesgos, pero rechaza frenar la carrera tecnológica con EEUU",
-      "link": "https://www.ambito.com/finanzas/el-plan-china-la-ia-reconoce-los-riesgos-pero-rechaza-frenar-la-carrera-tecnologica-eeuu-n6324491",
-      "descripcion": "Pekín advierte sobre los peligros de que la inteligencia artificial escape al control humano, pero apuesta por gestionarlos mediante regulación sin desacelerar su desarrollo. La competencia estratégica con Estados Unidos dificulta un eventual acuerdo entre las dos potencias.",
-      "fecha_publicacion": "2026-09-20T16:36:00+00:00",
-      "fuente_id": "ambito_fin",
-      "fuente_nombre": "Ámbito Finanzas",
-      "categoria": "Finanzas"
-    },
-    {
-      "id": "c5f78055abf5",
-      "titulo": "Cuándo cobro Anses: el calendario completo de septiembre 2026",
-      "link": "https://www.lanacion.com.ar/economia/cuando-cobro-anses-el-calendario-completo-de-septiembre-2026-nid31082026/",
-      "descripcion": "El organismo nacional difundió el cronograma de pagos de todas las prestaciones sociales del noveno mes del año; descubrí los detalles",
-      "fecha_publicacion": "2026-09-20T16:22:59+00:00",
-      "fuente_id": "lanacion_eco",
-      "fuente_nombre": "La Nación Economía",
-      "categoria": "Finanzas"
-    },
-    {
-      "id": "8d235229ee85",
-      "titulo": "Wall Street acelera la tokenización: la SEC habilita acciones en blockchain y abre un debate sobre Bitcoin",
-      "link": "https://www.ambito.com/finanzas/wall-street-acelera-la-tokenizacion-la-sec-habilita-acciones-blockchain-y-abre-un-debate-bitcoin-n6324483",
-      "descripcion": "El regulador estadounidense lanzó una exención por cinco años para negociar determinadas acciones tokenizadas y facilitar operaciones “onchain”. Bitcoin reaccionó con una fuerte suba, aunque Peter Schiff advirtió que la medida podría restarle atractivo a la criptomoneda.",
-      "fecha_publicacion": "2026-09-20T15:44:00+00:00",
-      "fuente_id": "ambito_fin",
-      "fuente_nombre": "Ámbito Finanzas",
-      "categoria": "Finanzas"
-    },
-    {
-      "id": "5f4aa5ad8895",
-      "titulo": "Kashkari (Fed de Minneapolis) advierte que la inflación sigue siendo demasiado alta",
-      "link": "https://es.investing.com/news/economy-news/kashkari-fed-de-minneapolis-advierte-que-la-inflacion-sigue-siendo-demasiado-alta-3841619",
-      "descripcion": "",
-      "fecha_publicacion": "2026-09-20T15:13:02+00:00",
-      "fuente_id": "investing_economia",
-      "fuente_nombre": "Investing Economía",
-      "categoria": "Mercados"
-    },
-    {
-      "id": "bdfcad8ef2fe",
-      "titulo": "Trump convierte su arco triunfal en una instalación para drones",
-      "link": "https://es.investing.com/news/economy-news/trump-convierte-su-arco-triunfal-en-una-instalacion-para-drones-93CH-3841614",
-      "descripcion": "",
-      "fecha_publicacion": "2026-09-20T14:24:10+00:00",
-      "fuente_id": "investing_economia",
-      "fuente_nombre": "Investing Economía",
-      "categoria": "Mercados"
+      "id": "4a495721c29f",
+      "titulo": "Las automotrices de Estados Unidos le piden (otra vez) a Trump que frene la llegada de marca chinas",
+      "link": "https://arodarpost.com.ar/las-automotrices-de-estados-unidos-le-piden-otra-vez-a-trump-que-frene-la-llegada-de-marca-chinas/",
+      "descripcion": "Las principales automotrices de Estados Unidos redoblaron su presión sobre la administración de Donald Trump mediante una carta conjunta enviada a la Casa Blanca, en la que reclamaron medidas más estrictas para impedir el avance de los fabricantes chinos en el mercado norteamericano. El planteo &#8211; que me se suma a otros pedidos formulados en [&#8230;]",
+      "fecha_publicacion": "2026-09-20T14:19:05+00:00",
+      "fuente_id": "arodar",
+      "fuente_nombre": "A Rodar Post",
+      "categoria": "Automotor"
     },
     {
       "id": "fa02892f902b",
@@ -181,16 +451,6 @@
       "fuente_id": "trade_news",
       "fuente_nombre": "Trade News",
       "categoria": "Comex"
-    },
-    {
-      "id": "0ab1600e97ba",
-      "titulo": "¿Quiénes están detrás del gráfico de puntos de la Fed para 2026?",
-      "link": "https://es.investing.com/news/economy-news/quienes-estan-detras-del-grafico-de-puntos-de-la-fed-para-2026-3841613",
-      "descripcion": "",
-      "fecha_publicacion": "2026-09-20T14:17:27+00:00",
-      "fuente_id": "investing_economia",
-      "fuente_nombre": "Investing Economía",
-      "categoria": "Mercados"
     },
     {
       "id": "1a97cf21e334",
@@ -233,16 +493,6 @@
       "categoria": "Comex"
     },
     {
-      "id": "af65eb16a029",
-      "titulo": "Criptomoneda rival de Bitcoin podría multiplicar 70 veces su valor para 2030",
-      "link": "https://www.iproup.com/economia-digital/71707-rival-de-bitcoin-subira-70-veces-en-3-anos-segun-banco-de-wall-street",
-      "descripcion": "Standard Chartered inició la cobertura de una criptomoneda y prevé una suba de 70 veces para 2030, apoyada en la expansión de la tokenización",
-      "fecha_publicacion": "2026-09-20T13:36:00+00:00",
-      "fuente_id": "iproup_eco",
-      "fuente_nombre": "iProUP Economía Digital",
-      "categoria": "Mercados"
-    },
-    {
       "id": "43833fbe990d",
       "titulo": "Agentes de IA inventan su propio idioma para dejar fuera a los humanos",
       "link": "https://www.iprofesional.com/autos/464789-agentes-de-ia-inventan-idioma-para-dejar-fuera-a-los-humanos",
@@ -263,76 +513,6 @@
       "categoria": "Comex"
     },
     {
-      "id": "6bf8767a2509",
-      "titulo": "La mora tocó su mayor nivel en 20 años y Mercado Pago reúne 19% de los deudores",
-      "link": "https://www.iproup.com/finanzas/71706-mora-record-cuantos-argentinos-tienen-deuda-en-mercado-pago",
-      "descripcion": "La mora de los hogares volvió a crecer y alcanzó su mayor nivel en más de 20 años, con Mercado Pago concentrando una parte importante de los morosos",
-      "fecha_publicacion": "2026-09-20T12:57:00+00:00",
-      "fuente_id": "iproup_fintech",
-      "fuente_nombre": "iProUP Fintech",
-      "categoria": "Finanzas"
-    },
-    {
-      "id": "f492490962b7",
-      "titulo": "El economista Gabriel Rubinstein dice que Argentina tendría que tener más superávit",
-      "link": "https://www.iprofesional.com/economia/464787-el-economista-gabriel-rubinstein-dice-que-argentina-tendria-que-tener-mas-superavit",
-      "descripcion": "El economista habló del presupuesto para el año electoral. \"Es más realista que el de 2026\" dijo. Y mencionó un punto negativo que es el recorte en gastos",
-      "fecha_publicacion": "2026-09-20T11:42:00+00:00",
-      "fuente_id": "iprof_economia",
-      "fuente_nombre": "iProfesional Economía",
-      "categoria": "Finanzas"
-    },
-    {
-      "id": "1b93b427b30d",
-      "titulo": "Las pantallas se podrían imponer a los botones en los autos del futuro",
-      "link": "https://www.iprofesional.com/autos/464788-autos-del-futuro-por-que-las-pantallas-le-ganan-a-los-botones",
-      "descripcion": "El mundo de los automovilistas se divide entre los amantes de las pantallas y los defensores del mundo analógico. ¿Quién vencerá?",
-      "fecha_publicacion": "2026-09-20T11:40:00+00:00",
-      "fuente_id": "iprof_autos",
-      "fuente_nombre": "iProfesional Autos",
-      "categoria": "Automotor"
-    },
-    {
-      "id": "ca45d1e0b706",
-      "titulo": "Llega BanksWeek, la semana de descuentos de los bancos con hasta 50% off y 24 cuotas sin interés",
-      "link": "https://www.iproup.com/finanzas/71702-llega-el-hot-sale-de-los-bancos-con-descuentos-y-cuotas-sin-interes",
-      "descripcion": "BanksWeek ofrecerá descuentos de hasta 50% y hasta 24 cuotas sin interés en tecnología, electro, moda, hogar y otras categorías. Los detalles",
-      "fecha_publicacion": "2026-09-20T11:30:00+00:00",
-      "fuente_id": "iproup_fintech",
-      "fuente_nombre": "iProUP Fintech",
-      "categoria": "Finanzas"
-    },
-    {
-      "id": "e33f396e5778",
-      "titulo": "La mora empresarial crece un 18,7% y ya son más de 57.000 las empresas afectadas",
-      "link": "https://www.iproup.com/finanzas/71703-la-mora-empresarial-crece-187-y-golpea-a-mas-de-57000-empresas",
-      "descripcion": "Más mora, crédito restringido y caída industrial configuran un escenario exigente para las empresas, que deben reforzar liquidez y controles de riesgo",
-      "fecha_publicacion": "2026-09-20T11:30:00+00:00",
-      "fuente_id": "iproup_fintech",
-      "fuente_nombre": "iProUP Fintech",
-      "categoria": "Finanzas"
-    },
-    {
-      "id": "706fbc3b16ac",
-      "titulo": "La Clarity Act queda frenada en EE.UU. pero la regulación puede seguir por otra vía, según gestora",
-      "link": "https://www.iproup.com/economia-digital/71701-gestora-cripto-ve-otra-via-para-regular-el-sector-tras-freno-de-clarity-act",
-      "descripcion": "La Clarity Act quedó frenada en el Senado de Estados Unidos, mientras una firma especializada destaca el rol de los reguladores federales",
-      "fecha_publicacion": "2026-09-20T11:30:00+00:00",
-      "fuente_id": "iproup_eco",
-      "fuente_nombre": "iProUP Economía Digital",
-      "categoria": "Mercados"
-    },
-    {
-      "id": "bca2e438d9e3",
-      "titulo": "USDT abandona Ethereum: la red pierde 250.000 billeteras en menos de dos semanas",
-      "link": "https://www.iproup.com/economia-digital/71704-por-que-las-billeteras-de-usdt-huyen-de-ethereum",
-      "descripcion": "Las billeteras de USDT en Ethereum caen con fuerza, pero las comisiones bajan y cambian el escenario para operar en la red principal",
-      "fecha_publicacion": "2026-09-20T11:30:00+00:00",
-      "fuente_id": "iproup_eco",
-      "fuente_nombre": "iProUP Economía Digital",
-      "categoria": "Mercados"
-    },
-    {
       "id": "e2c08906adf8",
       "titulo": "Las mil razones de Rolando Figueroa o el significado de cuidar",
       "link": "https://econojournal.com.ar/enclave/las-mil-razones-de-rolando-figueroa-o-el-significado-de-cuidar/",
@@ -343,16 +523,6 @@
       "categoria": "Energía y Minería"
     },
     {
-      "id": "244a22f91b54",
-      "titulo": "ANSES: cuánto cobrarían los jubilados con 30 años de aportes en octubre y cómo calcularlo",
-      "link": "https://www.iprofesional.com/impuestos/464654-anses-cuanto-cobrarian-los-jubilados-con-30-anos-de-aportes-en-octubre-y-como-calcularlo",
-      "descripcion": "El haber mínimo subirá a $435.662,86 en octubre. Cuánto influye la historia laboral y qué componentes se tienen en cuenta para calcular el beneficio",
-      "fecha_publicacion": "2026-09-20T11:00:00+00:00",
-      "fuente_id": "iprof_impuestos",
-      "fuente_nombre": "iProfesional Impuestos",
-      "categoria": "Fiscal"
-    },
-    {
       "id": "57a19ab437c1",
       "titulo": "Empleadas domésticas: sube el sueldo y estas son las obligaciones del empleador en octubre",
       "link": "https://www.iprofesional.com/management/464663-empleada-domestica-obligaciones-del-empleador-y-cuanto-debe-pagar-en-octubre-2026",
@@ -361,36 +531,6 @@
       "fuente_id": "iprof_management",
       "fuente_nombre": "iProfesional Management",
       "categoria": "Laboral"
-    },
-    {
-      "id": "fb7177257f67",
-      "titulo": "IA en el CV y cómo utilizar la inteligencia artificial para destacar con tu currículum",
-      "link": "https://www.iprofesional.com/management/464639-ia-en-el-cv-como-utilizar-la-inteligencia-artificial-para-destacar-tu-curriculum",
-      "descripcion": "Buscar trabajo sigue dando trabajo, aún con IA. Pero la herramienta puede servir para optimizar el CV en cada búsqueda laboral, si se usa adecuadamente",
-      "fecha_publicacion": "2026-09-20T11:00:00+00:00",
-      "fuente_id": "iprof_management",
-      "fuente_nombre": "iProfesional Management",
-      "categoria": "Laboral"
-    },
-    {
-      "id": "a78e4f594140",
-      "titulo": "Plazo fijo tradicional vs UVA: cuál paga más",
-      "link": "https://www.iprofesional.com/actualidad/464629-plazo-fijo-tradicional-vs-uva-cual-paga-mas",
-      "descripcion": "Anta la baja de la inflación y la caída de las tasas, el detalle de cuál de las dos inversiones rinde más en tres meses en Argentina. Los detalles",
-      "fecha_publicacion": "2026-09-20T10:00:00+00:00",
-      "fuente_id": "iprof_finanzas",
-      "fuente_nombre": "iProfesional Finanzas",
-      "categoria": "Finanzas"
-    },
-    {
-      "id": "2b5d243a6522",
-      "titulo": "Cuál es el precio del dólar que prevén las 6 consultoras que más aciertan en la City",
-      "link": "https://www.iprofesional.com/finanzas/464762-nuevo-precio-del-dolar-que-preven-las-6-consultoras-que-mas-aciertan",
-      "descripcion": "Entre las entidades figuran MAPFRE Econmics, Credicorp Capital e Invecq Consulting. Esto prevén para diciembre, tras acertar en 2025",
-      "fecha_publicacion": "2026-09-20T09:37:00+00:00",
-      "fuente_id": "iprof_finanzas",
-      "fuente_nombre": "iProfesional Finanzas",
-      "categoria": "Finanzas"
     },
     {
       "id": "3921d6f843b0",
@@ -413,36 +553,6 @@
       "categoria": "Automotor"
     },
     {
-      "id": "dbcc3d99d95f",
-      "titulo": "ARCA definió el monotributo: cuánto se paga en octubre 2026 y cuáles son nuevos topes",
-      "link": "https://www.iprofesional.com/impuestos/464455-arca-definio-el-monotributo-cuanto-se-paga-en-octubre-2026-y-cuales-son-nuevos-topes",
-      "descripcion": "Durante agosto 2026, ARCA actualizó los valores que los monotributistas deben pagar mensualmente. El incremento sobre los montos vigentes fue del 16,8%",
-      "fecha_publicacion": "2026-09-19T20:15:00+00:00",
-      "fuente_id": "iprof_impuestos",
-      "fuente_nombre": "iProfesional Impuestos",
-      "categoria": "Fiscal"
-    },
-    {
-      "id": "fcebdd7a1fec",
-      "titulo": "ARCA: a partir de qué monto investigará las transferencias en octubre 2026",
-      "link": "https://www.iprofesional.com/impuestos/464454-arca-a-partir-de-que-monto-investigara-las-transferencias-en-octubre-2026",
-      "descripcion": "Los bancos y plataformas digitales tienen la obligación de informar determinados movimientos a la Agencia de Recaudación y Control Aduanero (ARCA)",
-      "fecha_publicacion": "2026-09-19T19:00:00+00:00",
-      "fuente_id": "iprof_impuestos",
-      "fuente_nombre": "iProfesional Impuestos",
-      "categoria": "Fiscal"
-    },
-    {
-      "id": "c2684ce5633a",
-      "titulo": "Cuánto cobra un chofer de colectivo en octubre 2026 tras el aumento de septiembre",
-      "link": "https://www.iprofesional.com/management/464567-como-quedo-el-sueldo-de-choferes-de-colectivo-en-octubre-2026",
-      "descripcion": "Los trabajadores llegan al décimo mes del año con cambios en su ingreso y una suma extraordinaria que impactará en la liquidación",
-      "fecha_publicacion": "2026-09-19T19:00:00+00:00",
-      "fuente_id": "iprof_management",
-      "fuente_nombre": "iProfesional Management",
-      "categoria": "Laboral"
-    },
-    {
       "id": "7c00edd55689",
       "titulo": "Uruguay amplía red de carga pública de vehículos eléctricos",
       "link": "https://webpicking.com/uruguay-amplia-red-de-carga-publica-de-vehiculos-electricos/",
@@ -451,6 +561,16 @@
       "fuente_id": "webpicking",
       "fuente_nombre": "Webpicking",
       "categoria": "Logística"
+    },
+    {
+      "id": "67781e507f4a",
+      "titulo": "La empresa SAP incorporó una flota del Toyota bZ4X eléctrico para sus ejecutivos",
+      "link": "https://arodarpost.com.ar/la-empresa-sap-incorporo-una-flota-del-toyota-bz4x-electrico-para-sus-ejecutivos/",
+      "descripcion": "La empresa SAP Argentina incorporó una flota del modelo Toyota bZ4X para el traslado de sus ejecutivos por lo que, desde ahora, el personal jerárquico de la compañía comenzará a moverse en este modelo, el primer vehículo 100% eléctrico en Argentina de la automotriz japonesa. El bZ4X combina los beneficios de la tecnología 100% eléctrica [&#8230;]",
+      "fecha_publicacion": "2026-09-19T01:48:12+00:00",
+      "fuente_id": "arodar",
+      "fuente_nombre": "A Rodar Post",
+      "categoria": "Automotor"
     },
     {
       "id": "b96f8f42c9e0",
@@ -493,26 +613,6 @@
       "categoria": "Internacional"
     },
     {
-      "id": "8f43fb85fa51",
-      "titulo": "Moody’s cambia la perspectiva de Grecia a positiva por avances en reformas",
-      "link": "https://es.investing.com/news/world-news/moodys-cambia-la-perspectiva-de-grecia-a-positiva-por-avances-en-reformas-93CH-3841327",
-      "descripcion": "",
-      "fecha_publicacion": "2026-09-18T20:53:34+00:00",
-      "fuente_id": "investing_intl",
-      "fuente_nombre": "Investing Internacional",
-      "categoria": "Internacional"
-    },
-    {
-      "id": "d9c3438d616a",
-      "titulo": "Moody’s rebaja la calificación de Mozambique a Caa3 por riesgo de reestructuración",
-      "link": "https://es.investing.com/news/world-news/moodys-rebaja-la-calificacion-de-mozambique-a-caa3-por-riesgo-de-reestructuracion-93CH-3841325",
-      "descripcion": "",
-      "fecha_publicacion": "2026-09-18T20:53:00+00:00",
-      "fuente_id": "investing_intl",
-      "fuente_nombre": "Investing Internacional",
-      "categoria": "Internacional"
-    },
-    {
       "id": "cceff8dbceb4",
       "titulo": "Profertil presentará el proyecto de ampliación de la planta de Bahía Blanca en el RIGI antes de fin de año",
       "link": "https://econojournal.com.ar/energia/profertil-planta-de-bahia-blanca-rigi/",
@@ -531,16 +631,6 @@
       "fuente_id": "diario_autos",
       "fuente_nombre": "Diario de Autos",
       "categoria": "Automotor"
-    },
-    {
-      "id": "3ccfc99c3f1c",
-      "titulo": "Cómo “surfear la ola” de Vaca Muerta: las pymes ante el nuevo salto de escala",
-      "link": "https://econojournal.com.ar/oilgas/como-surfear-la-ola-de-vaca-muerta-las-pymes-ante-el-nuevo-salto-de-escala/",
-      "descripcion": "Vaca Muerta se consolidó como una de las locomotoras de la economía argentina y se prepara para un nuevo salto de escala. La ampliación de la infraestructura de evacuación, el crecimiento esperado de la producción, las exportaciones de gas y los nuevos proyectos de inversión configuran un escenario de expansión para la industria petrolera. Sin [&#8230;]",
-      "fecha_publicacion": "2026-09-18T20:25:29+00:00",
-      "fuente_id": "econojournal",
-      "fuente_nombre": "EconoJournal",
-      "categoria": "Energía y Minería"
     },
     {
       "id": "39bcf7dd97d4",
@@ -713,16 +803,6 @@
       "categoria": "Análisis Consultoras"
     },
     {
-      "id": "8b0f2e3aff1b",
-      "titulo": "El SUV que sigue reinando en el mercado de autos argentino: cuánto cuesta",
-      "link": "https://www.ambito.com/autos/el-suv-que-sigue-reinando-el-mercado-argentino-cuanto-cuesta-n6323575",
-      "descripcion": "El arancel preferencial de importación abrió la puerta a una oleada de modelos híbridos y eléctricos que reestructuraron las preferencias de los compradores, aunque el valor de compra no siempre define el éxito comercial.",
-      "fecha_publicacion": "2026-09-17T17:24:00+00:00",
-      "fuente_id": "ambito_autos",
-      "fuente_nombre": "Ámbito Autos",
-      "categoria": "Automotor"
-    },
-    {
       "id": "4f58ae4dd0d6",
       "titulo": "Cómo impactará en dólar, acciones y bonos argentinos la suba de tasas de la Fed",
       "link": "https://www.iprofesional.com/finanzas/464594-como-impacta-en-dolar-acciones-y-bonos-argentinos-suba-de-tasa-de-la-fed",
@@ -733,41 +813,11 @@
       "categoria": "Comex"
     },
     {
-      "id": "4b27c5ff62b2",
-      "titulo": "Mapa del robo de autos en el AMBA: las zonas más afectadas y cuáles son los modos de hurto",
-      "link": "https://www.ambito.com/autos/mapa-del-delito-vehicular-el-amba-los-hurtos-ganan-terreno-y-las-madrugadas-duplican-los-casos-n6323528",
-      "descripcion": "Un informe privado revela una transformación en las modalidades delictivas: la Zona Sur pasó a liderar los hechos, mientras que la delincuencia evita el enfrentamiento directo y ataca en domicilios privados y durante la noche.",
-      "fecha_publicacion": "2026-09-17T16:24:00+00:00",
-      "fuente_id": "ambito_autos",
-      "fuente_nombre": "Ámbito Autos",
-      "categoria": "Automotor"
-    },
-    {
-      "id": "01d1b66a7079",
-      "titulo": "Conos, divisores de carril y lomas de burro: los materiales detrás de una movilidad sustentable y segura",
-      "link": "https://www.ambito.com/autos/conos-divisores-carril-y-lomas-burro-los-materiales-detras-una-movilidad-sustentable-y-segura-n6323468",
-      "descripcion": "Detrás de las ciclovías y zonas calmas opera una red de señalización vital: cómo el PVC y la tecnología de los materiales garantizan ciudades más seguras, sostenibles y duraderas.",
-      "fecha_publicacion": "2026-09-17T15:07:00+00:00",
-      "fuente_id": "ambito_autos",
-      "fuente_nombre": "Ámbito Autos",
-      "categoria": "Automotor"
-    },
-    {
       "id": "1e70adb26879",
       "titulo": "La inflación en la eurozona sube un 3,2% en los doce meses hasta agosto - Eurostat",
       "link": "https://es.investing.com/news/economic-indicators/la-inflacion-de-la-eurozona-sube-un-32-en-los-doce-meses-hasta-agosto-3838693",
       "descripcion": "",
       "fecha_publicacion": "2026-09-17T09:37:43+00:00",
-      "fuente_id": "investing_intl2",
-      "fuente_nombre": "Investing Mundo",
-      "categoria": "Internacional"
-    },
-    {
-      "id": "074a3e63d03d",
-      "titulo": "El crecimiento de la productividad en Reino Unido se revisa al alza con nuevo método del ONS",
-      "link": "https://es.investing.com/news/economic-indicators/el-crecimiento-de-la-productividad-en-reino-unido-se-revisa-al-alza-con-nuevo-metodo-del-ons-93CH-3838630",
-      "descripcion": "",
-      "fecha_publicacion": "2026-09-17T09:04:35+00:00",
       "fuente_id": "investing_intl2",
       "fuente_nombre": "Investing Mundo",
       "categoria": "Internacional"
@@ -891,16 +941,6 @@
       "fuente_id": "mercojuris",
       "fuente_nombre": "Mercojuris",
       "categoria": "Comex"
-    },
-    {
-      "id": "e308c044d93a",
-      "titulo": "Honorarios profesionales: la mera cita o invocación de una norma no satisface la fundamentación de una sentencia",
-      "link": "https://www.ambito.com/novedades-fiscales/honorarios-profesionales-la-mera-cita-o-invocacion-una-norma-no-satisface-la-fundamentacion-una-sentencia-n6321809",
-      "descripcion": "Ante la reducción de los honorarios profesionales regulados judicialmente por parte de la cámara, la Corte Suprema aplicó la doctrina de la arbitrariedad, doctrina que también cuenta con antecedentes en materia tributaria",
-      "fecha_publicacion": "2026-09-13T22:01:00+00:00",
-      "fuente_id": "ambito_fisc",
-      "fuente_nombre": "Ámbito Fiscal",
-      "categoria": "Fiscal"
     },
     {
       "id": "b4911b1f4aa7",
