@@ -1,170 +1,428 @@
 {
-  "generado_en": "2026-09-24T23:11:13.829074+00:00",
+  "generado_en": "2026-09-25T12:23:15.111514+00:00",
   "destacados": [
     {
-      "id": "f269196b24ae",
-      "titulo": "San Juan emite un bono por u$s600 millones y retorna al mercado internacional con éxito",
-      "link": "https://www.iproup.com/economia-digital/71839-san-juan-emite-con-exito-un-bono-por-usd-600-millones",
-      "descripcion": "La provincia utilizará el dinero para financiar obras de infraestructura. Todos los detalles de la exitosa emisión bajo legislación de Nueva York",
-      "fecha_publicacion": "2026-09-24T23:00:00+00:00",
+      "id": "cf2db43af560",
+      "titulo": "El BCE quiere prohibir los intereses de stablecoins mientras EEUU avanza en dirección contraria",
+      "link": "https://www.iproup.com/economia-digital/71789-stablecoins-mira-europa-quiere-prohibir-ganancias-afecta-usuarios",
+      "descripcion": "El BCE profundiza su postura al exigir que no se ofrezcan recompensas, beneficios o participaciones por usar monedas digitales respaldadas",
+      "fecha_publicacion": "2026-09-25T16:48:00+00:00",
       "fuente_id": "iproup_eco",
       "fuente_nombre": "iProUP Economía Digital",
       "categoria": "Mercados"
     },
     {
-      "id": "1bccda77143e",
-      "titulo": "“Quisieron justificarse y la empeoraron”: un municipio bonaerense informó millones en gastos, pero $0 en obras esenciales en dos años",
-      "link": "https://www.lanacion.com.ar/economia/campo/quisieron-justificarse-y-la-empeoraron-un-municipio-bonaerense-informo-millones-en-gastos-pero-0-en-nid24092026/",
-      "descripcion": "La cifra surge de la respuesta de la Municipalidad de Colón al pedido de la Sociedad Rural local y productores independientes; el abogado Pablo Torres Barthe trató de “hilarante” a cómo fueron imputados los recursos",
-      "fecha_publicacion": "2026-09-24T23:06:25+00:00",
-      "fuente_id": "lanacion_eco",
-      "fuente_nombre": "La Nación Economía",
+      "id": "88e61312ff9a",
+      "titulo": "BlackRock y Ondo lanzan carteras tokenizadas: cómo invertir en Wall Street",
+      "link": "https://www.iproup.com/economia-digital/71823-blackrock-y-ondo-lanzan-carteras-tokenizadas-como-invertir-en-wall-street",
+      "descripcion": "Wall Street llega a las billeteras digitales: Ondo y BlackRock lanzan tres tokens que replican carteras de inversión globales. Los detalles en iProUP",
+      "fecha_publicacion": "2026-09-25T14:18:00+00:00",
+      "fuente_id": "iproup_fintech",
+      "fuente_nombre": "iProUP Fintech",
       "categoria": "Finanzas"
     },
     {
-      "id": "0b94fc542142",
-      "titulo": "Capital Economics prevé menos subidas de tipos del BCE de lo esperado",
-      "link": "https://es.investing.com/news/economic-indicators/capital-economics-preve-menos-subidas-de-tipos-del-bce-de-lo-esperado-93CH-3847538",
+      "id": "cb9b5d3597b3",
+      "titulo": "Bailey (Banco de Inglaterra): la IA podría ser un shock positivo de oferta",
+      "link": "https://es.investing.com/news/economic-indicators/bailey-banco-de-inglaterra-la-ia-podria-ser-un-shock-positivo-de-oferta-93CH-3849173",
       "descripcion": "",
-      "fecha_publicacion": "2026-09-24T11:03:39+00:00",
+      "fecha_publicacion": "2026-09-25T10:03:56+00:00",
       "fuente_id": "investing_intl2",
       "fuente_nombre": "Investing Mundo",
       "categoria": "Internacional"
     }
   ],
   "secciones": {
+    "Mercados": [
+      {
+        "id": "cf2db43af560",
+        "titulo": "El BCE quiere prohibir los intereses de stablecoins mientras EEUU avanza en dirección contraria",
+        "link": "https://www.iproup.com/economia-digital/71789-stablecoins-mira-europa-quiere-prohibir-ganancias-afecta-usuarios",
+        "descripcion": "El BCE profundiza su postura al exigir que no se ofrezcan recompensas, beneficios o participaciones por usar monedas digitales respaldadas",
+        "fecha_publicacion": "2026-09-25T16:48:00+00:00",
+        "fuente_id": "iproup_eco",
+        "fuente_nombre": "iProUP Economía Digital",
+        "categoria": "Mercados"
+      },
+      {
+        "id": "7f9a0eb89536",
+        "titulo": "El CEO de Bybit advierte que los exchanges tradicionales están llegando a su fin",
+        "link": "https://www.iproup.com/economia-digital/71816-el-ceo-de-bybit-advierte-que-los-exchanges-tradicionales-estan-llegando-a-su-fin",
+        "descripcion": "La evolución de los criptoexchanges apunta a una integración con sistemas bancarios y tecnología blockchain más allá de las monedas digitales",
+        "fecha_publicacion": "2026-09-25T13:26:00+00:00",
+        "fuente_id": "iproup_eco",
+        "fuente_nombre": "iProUP Economía Digital",
+        "categoria": "Mercados"
+      },
+      {
+        "id": "754dc4adb598",
+        "titulo": "Representantes de Arabia Saudí, Turquía y Pakistán se reúnen en medio de los combates en Yemen",
+        "link": "https://es.investing.com/news/economy-news/representantes-de-arabia-saudi-turquia-y-pakistan-se-reunen-en-medio-de-los-combates-en-yemen-3849465",
+        "descripcion": "",
+        "fecha_publicacion": "2026-09-25T11:43:04+00:00",
+        "fuente_id": "investing_economia",
+        "fuente_nombre": "Investing Economía",
+        "categoria": "Mercados"
+      },
+      {
+        "id": "98182455aa14",
+        "titulo": "El Banco de Inglaterra podría tener dificultades para mantener los tipos de interés",
+        "link": "https://es.investing.com/news/economy-news/el-banco-de-inglaterra-podria-tener-dificultades-para-mantener-los-tipos-de-interes-93CH-3849223",
+        "descripcion": "",
+        "fecha_publicacion": "2026-09-25T10:17:35+00:00",
+        "fuente_id": "investing_economia",
+        "fuente_nombre": "Investing Economía",
+        "categoria": "Mercados"
+      },
+      {
+        "id": "931374f31fbf",
+        "titulo": "El Kremlin dice que podría celebrarse pronto una reunión entre EE.UU., Rusia y Ucrania",
+        "link": "https://es.investing.com/news/economy-news/el-kremlin-dice-que-podria-celebrarse-pronto-una-reunion-entre-eeuu-rusia-y-ucrania-93CH-3849215",
+        "descripcion": "",
+        "fecha_publicacion": "2026-09-25T10:15:54+00:00",
+        "fuente_id": "investing_economia",
+        "fuente_nombre": "Investing Economía",
+        "categoria": "Mercados"
+      }
+    ],
     "Finanzas": [
       {
-        "id": "1bccda77143e",
-        "titulo": "“Quisieron justificarse y la empeoraron”: un municipio bonaerense informó millones en gastos, pero $0 en obras esenciales en dos años",
-        "link": "https://www.lanacion.com.ar/economia/campo/quisieron-justificarse-y-la-empeoraron-un-municipio-bonaerense-informo-millones-en-gastos-pero-0-en-nid24092026/",
-        "descripcion": "La cifra surge de la respuesta de la Municipalidad de Colón al pedido de la Sociedad Rural local y productores independientes; el abogado Pablo Torres Barthe trató de “hilarante” a cómo fueron imputados los recursos",
-        "fecha_publicacion": "2026-09-24T23:06:25+00:00",
-        "fuente_id": "lanacion_eco",
-        "fuente_nombre": "La Nación Economía",
-        "categoria": "Finanzas"
-      },
-      {
-        "id": "fb5cfaf2d553",
-        "titulo": "“El que quiera la tecnología que la pague”: sorpresivo contrapunto entre dos CEOs del agro por el cobro de la propiedad intelectual en semillas",
-        "link": "https://www.lanacion.com.ar/economia/campo/el-que-quiera-la-tecnologia-que-la-pague-sorpresivo-contrapunto-entre-dos-ceos-del-agro-por-el-cobro-nid24092026/",
-        "descripcion": "En el Forum Nacional de Agronegocios de LIDE Argentina, Ignacio Bartolomé, de GDM, defendió un nuevo esquema para cobrar por la innovación; Alejandro Elsztain, de Cresud, dijo que la incorporación del costo debería hacerse de manera gradual",
-        "fecha_publicacion": "2026-09-24T23:05:51+00:00",
-        "fuente_id": "lanacion_eco",
-        "fuente_nombre": "La Nación Economía",
-        "categoria": "Finanzas"
-      },
-      {
-        "id": "9531484b404a",
-        "titulo": "“Una vaca excepcional”: Angus mostró su poderío genético con una gran campeona",
-        "link": "https://www.lanacion.com.ar/economia/campo/una-vaca-excepcional-angus-mostro-su-poderio-genetico-con-una-gran-campeona-nid24092026/",
-        "descripcion": "La consagración en terneras y hembras adultas mostró que la raza tiene un nivel superlativo",
-        "fecha_publicacion": "2026-09-24T23:02:13+00:00",
-        "fuente_id": "lanacion_eco",
-        "fuente_nombre": "La Nación Economía",
-        "categoria": "Finanzas"
-      },
-      {
-        "id": "af4e0161e577",
-        "titulo": "Los puntos clave del nuevo acuerdo con EE.UU. con inversiones por u$s7.000 millones",
-        "link": "https://www.iprofesional.com/energia/465140-puntos-clave-del-nuevo-acuerdo-con-ee-uu-con-inversiones-por-us7-000-millones",
-        "descripcion": "El plan prevé financiamiento clave para potenciar integración logística, digitalización y mejora en la cadena de valor de sectores estratégicos",
-        "fecha_publicacion": "2026-09-24T22:10:00+00:00",
-        "fuente_id": "iprof_economia",
-        "fuente_nombre": "iProfesional Economía",
-        "categoria": "Finanzas"
-      },
-      {
-        "id": "737b27f36822",
-        "titulo": "Wall Street recortó las pérdidas ante la expectativa de una tregua entre EEUU e Irán",
-        "link": "https://www.ambito.com/finanzas/los-rendimientos-los-bonos-eeuu-saltan-maximos-2004-y-wall-street-adelanta-otra-rueda-volatil-n6326050",
-        "descripcion": "El Dow Jones y el S&amp;P 500 terminaron en baja, mientras que el Nasdaq logró una leve suba. Las versiones sobre una salida gradual del conflicto con Irán hicieron retroceder momentáneamente al crudo, pero el Brent volvió a superar los u$s100. Los rendimientos de los bonos del Tesoro también presionaron a las acciones.",
-        "fecha_publicacion": "2026-09-24T22:04:00+00:00",
-        "fuente_id": "ambito_fin",
-        "fuente_nombre": "Ámbito Finanzas",
-        "categoria": "Finanzas"
-      },
-      {
-        "id": "858a39d23fc9",
-        "titulo": "El BCRA amplía el crédito en dólares y las empresas deberán mirar más allá de la cuota inicial",
-        "link": "https://www.iproup.com/finanzas/71838-banco-central-amplia-el-credito-en-dolares-para-empresas",
-        "descripcion": "La medida permite que las entidades financieras destinen hasta el 15% de sus depósitos en dólares u otra divisa a estas operaciones",
-        "fecha_publicacion": "2026-09-24T21:45:00+00:00",
+        "id": "88e61312ff9a",
+        "titulo": "BlackRock y Ondo lanzan carteras tokenizadas: cómo invertir en Wall Street",
+        "link": "https://www.iproup.com/economia-digital/71823-blackrock-y-ondo-lanzan-carteras-tokenizadas-como-invertir-en-wall-street",
+        "descripcion": "Wall Street llega a las billeteras digitales: Ondo y BlackRock lanzan tres tokens que replican carteras de inversión globales. Los detalles en iProUP",
+        "fecha_publicacion": "2026-09-25T14:18:00+00:00",
         "fuente_id": "iproup_fintech",
         "fuente_nombre": "iProUP Fintech",
         "categoria": "Finanzas"
       },
       {
-        "id": "02fa24f0a1fa",
-        "titulo": "Con un dato de pobreza peor que lo previsto, Milei pierde su argumento contra las críticas",
-        "link": "https://www.iprofesional.com/politica/465182-hay-dos-millones-de-nuevos-pobres-y-milei-se-queda-sin-argumento",
-        "descripcion": "La oposición se ensañó con el plan económico por los dos millones de nuevos pobres. El Gobierno no quiso prometer una mejora el próximo semestre",
-        "fecha_publicacion": "2026-09-24T21:40:00+00:00",
-        "fuente_id": "iprof_economia",
-        "fuente_nombre": "iProfesional Economía",
+        "id": "1b71b6a6169b",
+        "titulo": "Qué es la infidelidad financiera y por qué se volvió un problema para las parejas argentinas",
+        "link": "https://www.iproup.com/finanzas/71059-secreto-financiero-pareja-genera-crisis-familias-argentinas-relaciones-infidelidad",
+        "descripcion": "Se trata de ocultar datos financieros, como cuentas, tarjetas o deudas, a una pareja y puede desgastar o romper cualquier relación. Qué dicen los expertos",
+        "fecha_publicacion": "2026-09-25T12:22:00+00:00",
+        "fuente_id": "iproup_fintech",
+        "fuente_nombre": "iProUP Fintech",
         "categoria": "Finanzas"
       },
       {
-        "id": "fa937aaed4e7",
-        "titulo": "Deuda: el Tesoro busca renovar $8,6 billones sin bonos más allá de las elecciones y tampoco ofrecerá el Bonar 2029",
-        "link": "https://www.ambito.com/finanzas/deuda-el-tesoro-busca-renovar-86-billones-bonos-mas-alla-las-elecciones-y-tampoco-ofrecera-el-bonar-2029-n6326385",
-        "descripcion": "El Tesoro volvió a dejar afuera los Bonares para evitar convalidar tasas superiores al 10%. En el mercado, la demanda se concentra en los títulos dólar linked.",
-        "fecha_publicacion": "2026-09-24T21:40:00+00:00",
+        "id": "23e7258b30fd",
+        "titulo": "Crece en EE.UU. el escándalo que salpica a glorias del fútbol",
+        "link": "https://www.lanacion.com.ar/economia/crece-en-eeuu-el-escandalo-que-salpica-a-glorias-del-futbol-nid25092026/",
+        "descripcion": "Una demanda presentada en Nevada afirma que un casino investigó por años a un grupo de apostadores argentinos; el expediente vuelve a poner bajo la lupa a Maximiliano Palermo y expone una trama que conecta al juego, a exfutbolistas, periodistas y tiene una causa judicial abierta en Buenos Aires",
+        "fecha_publicacion": "2026-09-25T12:04:55+00:00",
+        "fuente_id": "lanacion_eco",
+        "fuente_nombre": "La Nación Economía",
+        "categoria": "Finanzas"
+      },
+      {
+        "id": "0d5619df97ed",
+        "titulo": "Wall Street en alerta: qué pasa si Trump pierde el control de la Cámara de Representantes",
+        "link": "https://www.iprofesional.com/finanzas/465214-wall-street-en-alerta-que-pasa-si-trump-pierde-el-control-de-la-camara-de-representantes",
+        "descripcion": "Los analistas observan cómo la historia de la renta variable en Estados Unidos anticipa movimientos bursátiles tras la cita electoral clave",
+        "fecha_publicacion": "2026-09-25T12:03:00+00:00",
+        "fuente_id": "iprof_finanzas",
+        "fuente_nombre": "iProfesional Finanzas",
+        "categoria": "Finanzas"
+      },
+      {
+        "id": "530635071b37",
+        "titulo": "“Inexacto, injusto y falaz”: fuerte malestar por el estado de más de 2000 kilómetros de caminos rurales",
+        "link": "https://www.lanacion.com.ar/economia/campo/inexacto-injusto-y-falaz-fuerte-malestar-de-productores-por-el-estado-de-mas-de-2000-kilometros-de-nid25092026/",
+        "descripcion": "La Sociedad Rural de Azul cruzó al municipio por trabajos en un camino viejo; alertó sobre problemas en las tareas, falta de señalización y tramos intransitables en distintos puntos del partido",
+        "fecha_publicacion": "2026-09-25T12:01:51+00:00",
+        "fuente_id": "lanacion_eco",
+        "fuente_nombre": "La Nación Economía",
+        "categoria": "Finanzas"
+      },
+      {
+        "id": "1bccda77143e",
+        "titulo": "“Quisieron justificarse y la empeoraron”: un municipio bonaerense informó millones en gastos, pero $0 en obras esenciales en dos años",
+        "link": "https://www.lanacion.com.ar/economia/campo/quisieron-justificarse-y-la-empeoraron-un-municipio-bonaerense-informo-millones-en-gastos-pero-0-en-nid24092026/",
+        "descripcion": "La cifra surge de la respuesta de la Municipalidad de Colón al pedido de la Sociedad Rural local y productores independientes; el abogado Pablo Torres Barthe trató de “hilarante” a cómo fueron imputados los recursos",
+        "fecha_publicacion": "2026-09-25T12:00:17+00:00",
+        "fuente_id": "lanacion_eco",
+        "fuente_nombre": "La Nación Economía",
+        "categoria": "Finanzas"
+      },
+      {
+        "id": "4e12bc986f82",
+        "titulo": "Los futuros de Wall Street ensayan un rebote y el petróleo se mantiene por encima de los u$s105",
+        "link": "https://www.ambito.com/finanzas/los-futuros-wall-street-ensayan-un-rebote-y-el-petroleo-se-mantiene-encima-los-us105-n6326518",
+        "descripcion": "La ola global de ventas de bonos, que llevó a los rendimientos a máximos de varias décadas, se estabilizó en los mercados globales al tiempo que el petróleo rompió una racha alcista de dos días, lo que ofreció a los inversionistas un respiro.",
+        "fecha_publicacion": "2026-09-25T11:12:00+00:00",
         "fuente_id": "ambito_fin",
         "fuente_nombre": "Ámbito Finanzas",
         "categoria": "Finanzas"
+      },
+      {
+        "id": "6b418aac0940",
+        "titulo": "Qué impacto electoral pueden tener los bonos argentinos según Bind Inversiones",
+        "link": "https://www.iprofesional.com/finanzas/463947-que-impacto-electoral-pueden-tener-bonos-argentinos-segun-bind-inversiones",
+        "descripcion": "El banco Bind Inversiones analiza el impacto electoral en los bonos soberanos en pesos y dólares y señala oportunidades de rendimiento para 2027",
+        "fecha_publicacion": "2026-09-25T10:15:00+00:00",
+        "fuente_id": "iprof_economia",
+        "fuente_nombre": "iProfesional Economía",
+        "categoria": "Finanzas"
       }
     ],
-    "Mercados": [
+    "Laboral": [
       {
-        "id": "f269196b24ae",
-        "titulo": "San Juan emite un bono por u$s600 millones y retorna al mercado internacional con éxito",
-        "link": "https://www.iproup.com/economia-digital/71839-san-juan-emite-con-exito-un-bono-por-usd-600-millones",
-        "descripcion": "La provincia utilizará el dinero para financiar obras de infraestructura. Todos los detalles de la exitosa emisión bajo legislación de Nueva York",
-        "fecha_publicacion": "2026-09-24T23:00:00+00:00",
-        "fuente_id": "iproup_eco",
-        "fuente_nombre": "iProUP Economía Digital",
-        "categoria": "Mercados"
+        "id": "48f3f9dd1940",
+        "titulo": "Empleadas domésticas: cómo tramitar la licencia por maternidad y cobrar por Anses",
+        "link": "https://www.iprofesional.com/management/465210-empleadas-domesticas-tienen-90-dias-de-licencia-por-maternidad-y-pueden-cobrar-anses",
+        "descripcion": "Las empleadas domésticas pueden acceder a una licencia de 90 días y cobrar la Asignación por Embarazo, el Complemento Leche y la Tarjeta Alimentar",
+        "fecha_publicacion": "2026-09-25T11:09:00+00:00",
+        "fuente_id": "iprof_management",
+        "fuente_nombre": "iProfesional Management",
+        "categoria": "Laboral"
       },
       {
-        "id": "dc777841c4f8",
-        "titulo": "Coinbase y Ripple lanzan una ofensiva millonaria para revivir la ley cripto más importante en EEUU",
-        "link": "https://www.iproup.com/economia-digital/71836-coinbase-y-ripple-lanzan-ofensiva-millonaria-para-revivir-la-ley-clarity",
-        "descripcion": "Las empresas buscan que se ejecuten reglas claras para los mercados de activos digitales y presionar al Senado con una ofensiva política y legislativa",
-        "fecha_publicacion": "2026-09-24T21:40:00+00:00",
-        "fuente_id": "iproup_eco",
-        "fuente_nombre": "iProUP Economía Digital",
-        "categoria": "Mercados"
+        "id": "32e6287739d5",
+        "titulo": "Cuánta plata pierde un trabajador que pasa del empleo formal al cuentapropismo informal",
+        "link": "https://www.iprofesional.com/management/465123-cuanto-ingreso-pierde-un-trabajador-al-volverse-cuentapropista",
+        "descripcion": "La tasa de desempleo llegó al 7,9% y el cuentapropismo informal crece como refugio, pero con una severa pérdida del poder adquisitivo",
+        "fecha_publicacion": "2026-09-25T11:05:00+00:00",
+        "fuente_id": "iprof_management",
+        "fuente_nombre": "iProfesional Management",
+        "categoria": "Laboral"
       },
       {
-        "id": "24b54de7a542",
-        "titulo": "Blue Origin recauda 10.000 millones mientras Bezos invierte 32.000 millones",
-        "link": "https://es.investing.com/news/economy-news/blue-origin-recauda-10000-millones-mientras-bezos-invierte-32000-millones-3848554",
+        "id": "4c8ab50dbfd9",
+        "titulo": "Trabajo decente en las plataformas digitales: una nueva norma mundial",
+        "link": "https://voices.ilo.org/es-es/podcast/trabajo-decente-en-las-plataformas-digitales-una-nueva-norma-mundial",
+        "descripcion": "Las plataformas digitales han transformado el mundo del trabajo, generando nuevas oportunidades, pero también importantes desafíos para los derechos y la protección de los trabajadores. En este episodio de El futuro del trabajo, Nuno Cunha, especialista en instituciones de mercados laborales de la OIT, explica qué supone el nuevo Convenio núm. 193, la primera norma internacional del trabajo sobre la economía de plataformas, cómo fue elaborado a través del diálogo social y cuáles son los próximos",
+        "fecha_publicacion": "2026-08-26T00:00:00+00:00",
+        "fuente_id": "oit_podcast",
+        "fuente_nombre": "OIT Podcast",
+        "categoria": "Laboral"
+      },
+      {
+        "id": "07f564b6ffd7",
+        "titulo": "Riesgos psicosociales en el trabajo: la amenaza invisible para la salud de los trabajadores",
+        "link": "https://voices.ilo.org/es-es/podcast/riesgos-psicosociales-en-el-trabajo-la-amenaza-invisible-para-la-salud-de-los-trabajadores",
+        "descripcion": "En este episodio del pódcast “El futuro del trabajo de la OIT”, Dafne Papandrea y Lucía Risueño Navarro explican cómo los riesgos psicosociales —como las largas jornadas laborales, la inseguridad en el empleo y el acoso en el lugar de trabajo— afectan a la salud de los trabajadores, y qué medidas pueden adoptarse para crear entornos laborales más saludables en todo el mundo.",
+        "fecha_publicacion": "2026-04-28T00:00:00+00:00",
+        "fuente_id": "oit_podcast",
+        "fuente_nombre": "OIT Podcast",
+        "categoria": "Laboral"
+      },
+      {
+        "id": "ef1638f33032",
+        "titulo": "La inteligencia artificial generativa y las desigualdades de género en el trabajo",
+        "link": "https://voices.ilo.org/es-es/podcast/la-inteligencia-artificial-generativa-y-las-desigualdades-de-genero-en-el-trabajo",
+        "descripcion": "En este episodio del pódcast de la Organización Internacional del Trabajo, Janine Berg, Economista senior en la OIT, presenta un nuevo informe sobre el impacto de la inteligencia artificial generativa en el mundo del trabajo. La experta explica por qué las mujeres están más expuestas que los hombres a los riesgos asociados a esta tecnología y qué significa esto para la igualdad en el mercado laboral.",
+        "fecha_publicacion": "2026-03-09T00:00:00+00:00",
+        "fuente_id": "oit_podcast",
+        "fuente_nombre": "OIT Podcast",
+        "categoria": "Laboral"
+      }
+    ],
+    "Fiscal": [
+      {
+        "id": "064a424816eb",
+        "titulo": "Día del Empleado de Comercio: el próximo lunes es feriado para supermercados y shoppings",
+        "link": "https://www.iprofesional.com/impuestos/465207-dia-empleado-comercio-lunes-cierran-supers-y-shoppings",
+        "descripcion": "Los empleados de comercio celebran su feriado anual el próximo lunes, y los supermercados, grandes cadenas y shoppings no abren",
+        "fecha_publicacion": "2026-09-25T10:50:00+00:00",
+        "fuente_id": "iprof_impuestos",
+        "fuente_nombre": "iProfesional Impuestos",
+        "categoria": "Fiscal"
+      },
+      {
+        "id": "493e65e80eda",
+        "titulo": "Alivio fiscal porteño: Jorge Macri anunció que bajará la Patente en 2027 en la Ciudad",
+        "link": "https://www.iprofesional.com/impuestos/465145-alivio-fiscal-porteno-jorge-macri-anuncio-baja-patente-2027",
+        "descripcion": "Para 6 de cada 10 vehículos radicados en la ciudad de Buenos Aires, el impuesto automotor será menor en 2027 y los demás pagarán igual que en 2026",
+        "fecha_publicacion": "2026-09-24T18:36:00+00:00",
+        "fuente_id": "iprof_impuestos",
+        "fuente_nombre": "iProfesional Impuestos",
+        "categoria": "Fiscal"
+      },
+      {
+        "id": "8d3dde0171f2",
+        "titulo": "La Cámara del Trabajo validó el contrato a plazo fijo para suplencias temporales",
+        "link": "https://www.iprofesional.com/impuestos/465135-fallo-laboral-avala-contrato-plazo-fijo-por-suplencias-temporales",
+        "descripcion": "Un fallo laboral rechazó la demanda por despido de una trabajadora que fue contratada con contratos a plazo fijo y por períodos cortos",
+        "fecha_publicacion": "2026-09-24T14:06:00+00:00",
+        "fuente_id": "iprof_impuestos",
+        "fuente_nombre": "iProfesional Impuestos",
+        "categoria": "Fiscal"
+      },
+      {
+        "id": "1d7bc64d9999",
+        "titulo": "Inocencia Fiscal II: cambios, riesgos y oportunidades para los contribuyentes",
+        "link": "https://www.ambito.com/novedades-fiscales/inocencia-fiscal-ii-cambios-riesgos-y-oportunidades-los-contribuyentes-n6325949",
+        "descripcion": "El proyecto de modificaciones al régimen que ya es ley, introduce mejoras a la aplicación del mismo que avanzan sobre una mayor simplificación y previsibilidad, generando un cambio en la relación del contribuyente con la administración tributaria.",
+        "fecha_publicacion": "2026-09-23T23:24:00+00:00",
+        "fuente_id": "ambito_fisc",
+        "fuente_nombre": "Ámbito Fiscal",
+        "categoria": "Fiscal"
+      },
+      {
+        "id": "706bd9ebf537",
+        "titulo": "Rectifican los incrementos en salarios mínimos del personal de casas particulares",
+        "link": "https://www.ambito.com/novedades-fiscales/rectifican-los-incrementos-salarios-minimos-del-personal-casas-particulares-n6325944",
+        "descripcion": "En el marco de la convocatoria de la Comisión Nacional de Trabajo en Casas Particulares se acordó un incremento de los salarios mínimos vigentes para el personal desde agosto a diciembre 2026. Ante errores detectados se procedió a su corrección",
+        "fecha_publicacion": "2026-09-23T23:22:00+00:00",
+        "fuente_id": "ambito_fisc",
+        "fuente_nombre": "Ámbito Fiscal",
+        "categoria": "Fiscal"
+      },
+      {
+        "id": "637c736f4c96",
+        "titulo": "Inversiones verdes: impulsan beneficios fiscales para las empresas que reduzcan su huella de carbono",
+        "link": "https://www.ambito.com/novedades-fiscales/inversiones-verdes-impulsan-beneficios-fiscales-las-empresas-que-reduzcan-su-huella-carbono-n6325010",
+        "descripcion": "Con el objetivo de reducir, remover y compensar las emisiones de gases de efecto invernadero, se presentó una iniciativa de adhesión voluntaria incentivada mediante estímulos tributarios",
+        "fecha_publicacion": "2026-09-21T23:33:00+00:00",
+        "fuente_id": "ambito_fisc",
+        "fuente_nombre": "Ámbito Fiscal",
+        "categoria": "Fiscal"
+      }
+    ],
+    "Internacional": [
+      {
+        "id": "cb9b5d3597b3",
+        "titulo": "Bailey (Banco de Inglaterra): la IA podría ser un shock positivo de oferta",
+        "link": "https://es.investing.com/news/economic-indicators/bailey-banco-de-inglaterra-la-ia-podria-ser-un-shock-positivo-de-oferta-93CH-3849173",
         "descripcion": "",
-        "fecha_publicacion": "2026-09-24T20:25:21+00:00",
-        "fuente_id": "investing_economia",
-        "fuente_nombre": "Investing Economía",
-        "categoria": "Mercados"
+        "fecha_publicacion": "2026-09-25T10:03:56+00:00",
+        "fuente_id": "investing_intl2",
+        "fuente_nombre": "Investing Mundo",
+        "categoria": "Internacional"
       },
       {
-        "id": "46d063c3044a",
-        "titulo": "Banxico mantiene los tipos de interés en 6,5% ante inflación subyacente persistente",
-        "link": "https://es.investing.com/news/economy-news/banxico-mantiene-los-tipos-de-interes-en-65-ante-inflacion-subyacente-persistente-3848465",
+        "id": "e982a7aadd8c",
+        "titulo": "El PIB de España en el segundo trimestre se mantiene en el 0,7% trimestral impulsado por la demanda interna",
+        "link": "https://es.investing.com/news/economic-indicators/el-pib-de-espana-en-el-segundo-trimestre-se-mantiene-en-el-07-trimestral-impulsado-por-la-demanda-interna-93CH-3848921",
         "descripcion": "",
-        "fecha_publicacion": "2026-09-24T19:26:59+00:00",
-        "fuente_id": "investing_economia",
-        "fuente_nombre": "Investing Economía",
-        "categoria": "Mercados"
+        "fecha_publicacion": "2026-09-25T07:50:03+00:00",
+        "fuente_id": "investing_intl2",
+        "fuente_nombre": "Investing Mundo",
+        "categoria": "Internacional"
       },
       {
-        "id": "0de78cf776df",
-        "titulo": "Repsol advierte que el 90% de su crudo podría incumplir la normativa de metano de la UE",
-        "link": "https://es.investing.com/news/economy-news/repsol-advierte-que-el-90-de-su-crudo-podria-incumplir-la-normativa-de-metano-de-la-ue-3848400",
+        "id": "1467c341e98b",
+        "titulo": "La confianza del consumidor alemán cae más de lo esperado por los costes energéticos",
+        "link": "https://es.investing.com/news/economic-indicators/la-confianza-del-consumidor-aleman-cae-mas-de-lo-esperado-por-los-costes-energeticos-3848849",
         "descripcion": "",
-        "fecha_publicacion": "2026-09-24T17:34:45+00:00",
-        "fuente_id": "investing_economia",
-        "fuente_nombre": "Investing Economía",
-        "categoria": "Mercados"
+        "fecha_publicacion": "2026-09-25T06:56:11+00:00",
+        "fuente_id": "investing_intl2",
+        "fuente_nombre": "Investing Mundo",
+        "categoria": "Internacional"
+      },
+      {
+        "id": "6253c3a42032",
+        "titulo": "Banco de Reserva de Sudáfrica sube los tipos de interés por la inflación",
+        "link": "https://es.investing.com/news/world-news/banco-de-reserva-de-sudafrica-sube-los-tipos-de-interes-por-la-inflacion-93CH-3846088",
+        "descripcion": "",
+        "fecha_publicacion": "2026-09-23T13:29:08+00:00",
+        "fuente_id": "investing_intl",
+        "fuente_nombre": "Investing Internacional",
+        "categoria": "Internacional"
+      },
+      {
+        "id": "006d36751741",
+        "titulo": "S&P afirma las calificaciones ’BBB-/A-3’ de Panamá por avances fiscales",
+        "link": "https://es.investing.com/news/world-news/sp-afirma-las-calificaciones-bbba3-de-panama-por-avances-fiscales-93CH-3844742",
+        "descripcion": "",
+        "fecha_publicacion": "2026-09-22T20:08:52+00:00",
+        "fuente_id": "investing_intl",
+        "fuente_nombre": "Investing Internacional",
+        "categoria": "Internacional"
+      },
+      {
+        "id": "732dea06d9a0",
+        "titulo": "Fitch mejora la calificación de Sri Lanka por reformas fiscales",
+        "link": "https://es.investing.com/news/world-news/fitch-mejora-la-calificacion-de-sri-lanka-por-reformas-fiscales-93CH-3844637",
+        "descripcion": "",
+        "fecha_publicacion": "2026-09-22T17:38:51+00:00",
+        "fuente_id": "investing_intl",
+        "fuente_nombre": "Investing Internacional",
+        "categoria": "Internacional"
+      }
+    ],
+    "Energía y Minería": [
+      {
+        "id": "b25ecbec89d5",
+        "titulo": "Un veto a China del gobierno favoreció a una compañía estadounidense que se quedó con un insumo clave de la industria nuclear",
+        "link": "https://econojournal.com.ar/energia/un-veto-a-china-del-gobierno-favorecio-a-una-compania-estadounidense/",
+        "descripcion": "La Empresa Neuquina de Servicios de Ingeniería (ENSI), propiedad de la provincia de Neuquén y de la Comisión Nacional de Energía Atómica, decidió el año pasado poner en venta un stock de 6,2 toneladas de agua pesada que no estaba en condiciones de ser utilizada por las tres centrales nucleares de potencia que tiene el [&#8230;]",
+        "fecha_publicacion": "2026-09-25T04:42:13+00:00",
+        "fuente_id": "econojournal",
+        "fuente_nombre": "EconoJournal",
+        "categoria": "Energía y Minería"
+      },
+      {
+        "id": "02146336cd32",
+        "titulo": "Zona Fría: con el voto de Neuquén se aprobó la ley que cambia el esquema de subsidios al gas",
+        "link": "https://econojournal.com.ar/enclave/zona-fria-voto-de-neuquen-promesa-de-zonas-calidas-ley-subsidios-gas/",
+        "descripcion": "La Libertad Avanza consiguió este jueves los votos para aprobar la ley que modifica el régimen de Zona Fría y retrotrae el alcance de los subsidios al gas a la Patagonia, Malargüe y la Puna. La senadora Julieta Corroza de La Neuquinidad apoyó la sanción, tras el compromiso del gobierno nacional a Rolando Figueroa de [&#8230;]",
+        "fecha_publicacion": "2026-09-24T23:35:05+00:00",
+        "fuente_id": "econojournal",
+        "fuente_nombre": "EconoJournal",
+        "categoria": "Energía y Minería"
+      },
+      {
+        "id": "a98b9c592fa4",
+        "titulo": "Petroleras aumentan hasta un 5% el precio del gasoil por la disparada del combustible a nivel internacional",
+        "link": "https://econojournal.com.ar/energia/petroleras-aumentan-hasta-5-el-gasoil/",
+        "descripcion": "Raízen —licenciataria de la marca Shell—, Axion Energy y Puma aumentaron en las últimas horas hasta un 5% el precio del gasoil y alrededor de un 2,5% el de las naftas, lo que arroja una suba promedio cercana al 3% en los surtidores. El movimiento busca absorber, al menos parcialmente, el fuerte incremento de los [&#8230;]",
+        "fecha_publicacion": "2026-09-24T21:32:15+00:00",
+        "fuente_id": "econojournal",
+        "fuente_nombre": "EconoJournal",
+        "categoria": "Energía y Minería"
+      },
+      {
+        "id": "dd5814bc22b4",
+        "titulo": "NOA Lithium Brines superó los parámetros proyectados en las pruebas de bombeo del proyecto Río Grande en Salta",
+        "link": "https://dataenergia.ar/mineria/noa-lithium-brines-supero-los-parametros-proyectados-en-las-pruebas-de-bombeo-del-proyecto-rio-grande-en-salta-202692414380",
+        "descripcion": "La minera NOA Lithium Brines completó el pozo RT-RG26-PW002 en el proyecto de litio Río Grande (Salta) y obtuvo caudales de extracción de hasta 25 L/s en las pruebas hidráulicas iniciales",
+        "fecha_publicacion": "2026-09-24T17:38:00+00:00",
+        "fuente_id": "data_energia",
+        "fuente_nombre": "Data Energía",
+        "categoria": "Energía y Minería"
+      },
+      {
+        "id": "36436b338314",
+        "titulo": "Techint completó la última soldadura de la línea regular del oleoducto Duplicar Norte para Oldelval",
+        "link": "https://dataenergia.ar/petroleo-y-combustibles/techint-completo-la-ultima-soldadura-de-la-linea-regular-del-oleoducto-duplicar-norte-para-oldelval-202692414140",
+        "descripcion": "Techint Ingeniería & Construcción alcanzó la última soldadura de la línea regular del oleoducto Duplicar Norte, proyecto de US$ 380 millones impulsado por Oldelval que sumará 220.000 barriles diarios de capacidad en la Cuenca Neuquina.",
+        "fecha_publicacion": "2026-09-24T17:14:00+00:00",
+        "fuente_id": "data_energia",
+        "fuente_nombre": "Data Energía",
+        "categoria": "Energía y Minería"
+      },
+      {
+        "id": "c29294c664da",
+        "titulo": "Atucha II alcanzó el máximo puntaje de excelencia internacional de WANO en el segundo trimestre de 2026",
+        "link": "https://dataenergia.ar/renovables-y-de-transicion/atucha-ii-alcanzo-el-maximo-puntaje-de-excelencia-internacional-de-wano-en-el-segundo-trimestre-de-2026-202692413450",
+        "descripcion": "La Central Nuclear Atucha II logró por primera vez el puntaje máximo de 100 puntos en el índice de desempeño WANO en el segundo trimestre de 2026, mientras que la Central Nuclear Embalse alcanzó 98,4 puntos.",
+        "fecha_publicacion": "2026-09-24T16:45:00+00:00",
+        "fuente_id": "data_energia",
+        "fuente_nombre": "Data Energía",
+        "categoria": "Energía y Minería"
+      },
+      {
+        "id": "d54676fbec8f",
+        "titulo": "Récord exportador y máximos históricos de inversión: la minería argentina consolida su nuevo ciclo",
+        "link": "https://caem.com.ar/record-exportador-y-maximos-historicos-de-inversion-la-mineria-argentina-consolida-su-nuevo-ciclo/",
+        "descripcion": "Las exportaciones mineras argentinas totalizaron US$ 4.742 millones en la primera mitad de 2026. Se trata del máximo nivel exportador registrado para un primer semestre desde que existen estadísticas comparables para la minería argentina. De esta manera, se registra una... The post Récord exportador y máximos históricos de inversión: la minería argentina consolida su nuevo ciclo first appeared on CAEM .",
+        "fecha_publicacion": "2026-09-14T19:03:41+00:00",
+        "fuente_id": "caem",
+        "fuente_nombre": "CAEM",
+        "categoria": "Energía y Minería"
+      },
+      {
+        "id": "ed7c1e095250",
+        "titulo": "Análisis Resolución 73/2026 – importaciones con destino minero",
+        "link": "https://caem.com.ar/analisis-resolucion-73-2026-importaciones-con-destino-minero/",
+        "descripcion": "La Resolución 73/2026 de la Secretaría de Minería, publicada en el día de ayer, introduce cambios en la operatoria del beneficio previsto en el artículo 21 de la Ley de Inversiones Mineras, destinado a la importación de bienes, equipos e... The post Análisis Resolución 73/2026 – importaciones con destino minero first appeared on CAEM .",
+        "fecha_publicacion": "2026-09-02T20:38:54+00:00",
+        "fuente_id": "caem",
+        "fuente_nombre": "CAEM",
+        "categoria": "Energía y Minería"
       }
     ],
     "Agro": [
@@ -279,88 +537,6 @@
         "fuente_id": "est_0221",
         "fuente_nombre": "0221 Estudiantes",
         "categoria": "Fulbito"
-      }
-    ],
-    "Energía y Minería": [
-      {
-        "id": "a98b9c592fa4",
-        "titulo": "Petroleras aumentan hasta un 5% el precio del gasoil por la disparada del combustible a nivel internacional",
-        "link": "https://econojournal.com.ar/energia/petroleras-aumentan-hasta-5-el-gasoil/",
-        "descripcion": "Raízen —licenciataria de la marca Shell—, Axion Energy y Puma aumentaron en las últimas horas hasta un 5% el precio del gasoil y alrededor de un 2,5% el de las naftas, lo que arroja una suba promedio cercana al 3% en los surtidores. El movimiento busca absorber, al menos parcialmente, el fuerte incremento de los [&#8230;]",
-        "fecha_publicacion": "2026-09-24T21:32:15+00:00",
-        "fuente_id": "econojournal",
-        "fuente_nombre": "EconoJournal",
-        "categoria": "Energía y Minería"
-      },
-      {
-        "id": "2d132e9f4be9",
-        "titulo": "PCR abastecerá con energía renovable al Parque Empresarial Austral",
-        "link": "https://econojournal.com.ar/renovables-te/pcr-abastecera-con-energia-renovable-al-parque-empresarial-austral/",
-        "descripcion": "La generadora PCR firmó un contrato de suministro de energía renovable con el Parque Empresarial Austral, el hub de innovación, tecnología y negocios de la Universidad Austral. Mediante este entendimiento, abastecerá el 75% de la demanda eléctrica del predio con energía eólica generada por la reciente ampliación del Parque Eólico Mataco–San Jorge y por el [&#8230;]",
-        "fecha_publicacion": "2026-09-24T19:41:34+00:00",
-        "fuente_id": "econojournal",
-        "fuente_nombre": "EconoJournal",
-        "categoria": "Energía y Minería"
-      },
-      {
-        "id": "15f297376097",
-        "titulo": "Energía y compliance: ¿qué desafíos enfrenta la Patagonia en esta etapa de expansión?",
-        "link": "https://econojournal.com.ar/actualidad-mineria-energia/energia-y-compliance-que-desafios-enfrenta-la-patagonia-en-esta-etapa-de-expansion/",
-        "descripcion": "El crecimiento de Vaca Muerta y la transformación del mapa energético argentino están generando nuevas oportunidades de inversión y negocios para la Patagonia. Pero al mismo tiempo, la mayor escala y complejidad de los proyectos energéticos plantea desafíos para las empresas en materia de integridad, gestión de riesgos, ciberseguridad, inteligencia artificial y transparencia en las [&#8230;]",
-        "fecha_publicacion": "2026-09-24T18:19:29+00:00",
-        "fuente_id": "econojournal",
-        "fuente_nombre": "EconoJournal",
-        "categoria": "Energía y Minería"
-      },
-      {
-        "id": "dd5814bc22b4",
-        "titulo": "NOA Lithium Brines superó los parámetros proyectados en las pruebas de bombeo del proyecto Río Grande en Salta",
-        "link": "https://dataenergia.ar/mineria/noa-lithium-brines-supero-los-parametros-proyectados-en-las-pruebas-de-bombeo-del-proyecto-rio-grande-en-salta-202692414380",
-        "descripcion": "La minera NOA Lithium Brines completó el pozo RT-RG26-PW002 en el proyecto de litio Río Grande (Salta) y obtuvo caudales de extracción de hasta 25 L/s en las pruebas hidráulicas iniciales",
-        "fecha_publicacion": "2026-09-24T17:38:00+00:00",
-        "fuente_id": "data_energia",
-        "fuente_nombre": "Data Energía",
-        "categoria": "Energía y Minería"
-      },
-      {
-        "id": "36436b338314",
-        "titulo": "Techint completó la última soldadura de la línea regular del oleoducto Duplicar Norte para Oldelval",
-        "link": "https://dataenergia.ar/petroleo-y-combustibles/techint-completo-la-ultima-soldadura-de-la-linea-regular-del-oleoducto-duplicar-norte-para-oldelval-202692414140",
-        "descripcion": "Techint Ingeniería & Construcción alcanzó la última soldadura de la línea regular del oleoducto Duplicar Norte, proyecto de US$ 380 millones impulsado por Oldelval que sumará 220.000 barriles diarios de capacidad en la Cuenca Neuquina.",
-        "fecha_publicacion": "2026-09-24T17:14:00+00:00",
-        "fuente_id": "data_energia",
-        "fuente_nombre": "Data Energía",
-        "categoria": "Energía y Minería"
-      },
-      {
-        "id": "c29294c664da",
-        "titulo": "Atucha II alcanzó el máximo puntaje de excelencia internacional de WANO en el segundo trimestre de 2026",
-        "link": "https://dataenergia.ar/renovables-y-de-transicion/atucha-ii-alcanzo-el-maximo-puntaje-de-excelencia-internacional-de-wano-en-el-segundo-trimestre-de-2026-202692413450",
-        "descripcion": "La Central Nuclear Atucha II logró por primera vez el puntaje máximo de 100 puntos en el índice de desempeño WANO en el segundo trimestre de 2026, mientras que la Central Nuclear Embalse alcanzó 98,4 puntos.",
-        "fecha_publicacion": "2026-09-24T16:45:00+00:00",
-        "fuente_id": "data_energia",
-        "fuente_nombre": "Data Energía",
-        "categoria": "Energía y Minería"
-      },
-      {
-        "id": "d54676fbec8f",
-        "titulo": "Récord exportador y máximos históricos de inversión: la minería argentina consolida su nuevo ciclo",
-        "link": "https://caem.com.ar/record-exportador-y-maximos-historicos-de-inversion-la-mineria-argentina-consolida-su-nuevo-ciclo/",
-        "descripcion": "Las exportaciones mineras argentinas totalizaron US$ 4.742 millones en la primera mitad de 2026. Se trata del máximo nivel exportador registrado para un primer semestre desde que existen estadísticas comparables para la minería argentina. De esta manera, se registra una... The post Récord exportador y máximos históricos de inversión: la minería argentina consolida su nuevo ciclo first appeared on CAEM .",
-        "fecha_publicacion": "2026-09-14T19:03:41+00:00",
-        "fuente_id": "caem",
-        "fuente_nombre": "CAEM",
-        "categoria": "Energía y Minería"
-      },
-      {
-        "id": "ed7c1e095250",
-        "titulo": "Análisis Resolución 73/2026 – importaciones con destino minero",
-        "link": "https://caem.com.ar/analisis-resolucion-73-2026-importaciones-con-destino-minero/",
-        "descripcion": "La Resolución 73/2026 de la Secretaría de Minería, publicada en el día de ayer, introduce cambios en la operatoria del beneficio previsto en el artículo 21 de la Ley de Inversiones Mineras, destinado a la importación de bienes, equipos e... The post Análisis Resolución 73/2026 – importaciones con destino minero first appeared on CAEM .",
-        "fecha_publicacion": "2026-09-02T20:38:54+00:00",
-        "fuente_id": "caem",
-        "fuente_nombre": "CAEM",
-        "categoria": "Energía y Minería"
       }
     ],
     "Comex": [
@@ -527,110 +703,6 @@
         "categoria": "Automotor"
       }
     ],
-    "Fiscal": [
-      {
-        "id": "493e65e80eda",
-        "titulo": "Alivio fiscal porteño: Jorge Macri anunció que bajará la Patente en 2027 en la Ciudad",
-        "link": "https://www.iprofesional.com/impuestos/465145-alivio-fiscal-porteno-jorge-macri-anuncio-baja-patente-2027",
-        "descripcion": "Para 6 de cada 10 vehículos radicados en la ciudad de Buenos Aires, el impuesto automotor será menor en 2027 y los demás pagarán igual que en 2026",
-        "fecha_publicacion": "2026-09-24T18:36:00+00:00",
-        "fuente_id": "iprof_impuestos",
-        "fuente_nombre": "iProfesional Impuestos",
-        "categoria": "Fiscal"
-      },
-      {
-        "id": "8d3dde0171f2",
-        "titulo": "La Cámara del Trabajo validó el contrato a plazo fijo para suplencias temporales",
-        "link": "https://www.iprofesional.com/impuestos/465135-fallo-laboral-avala-contrato-plazo-fijo-por-suplencias-temporales",
-        "descripcion": "Un fallo laboral rechazó la demanda por despido de una trabajadora que fue contratada con contratos a plazo fijo y por períodos cortos",
-        "fecha_publicacion": "2026-09-24T14:06:00+00:00",
-        "fuente_id": "iprof_impuestos",
-        "fuente_nombre": "iProfesional Impuestos",
-        "categoria": "Fiscal"
-      },
-      {
-        "id": "c322cbff72c7",
-        "titulo": "El conflicto en Ganancias Simplificado por el plazo de prescripción en Inocencia Fiscal",
-        "link": "https://www.iprofesional.com/impuestos/465124-conflicto-ganancias-simplificado-prescripcion-fiscal",
-        "descripcion": "Las Leyes de Inocencia Fiscal I y II tienen tratamientos diferentes para discrepancias significativas, que impactan distinto en la baja de la prescripción",
-        "fecha_publicacion": "2026-09-24T12:48:00+00:00",
-        "fuente_id": "iprof_impuestos",
-        "fuente_nombre": "iProfesional Impuestos",
-        "categoria": "Fiscal"
-      },
-      {
-        "id": "1d7bc64d9999",
-        "titulo": "Inocencia Fiscal II: cambios, riesgos y oportunidades para los contribuyentes",
-        "link": "https://www.ambito.com/novedades-fiscales/inocencia-fiscal-ii-cambios-riesgos-y-oportunidades-los-contribuyentes-n6325949",
-        "descripcion": "El proyecto de modificaciones al régimen que ya es ley, introduce mejoras a la aplicación del mismo que avanzan sobre una mayor simplificación y previsibilidad, generando un cambio en la relación del contribuyente con la administración tributaria.",
-        "fecha_publicacion": "2026-09-23T23:24:00+00:00",
-        "fuente_id": "ambito_fisc",
-        "fuente_nombre": "Ámbito Fiscal",
-        "categoria": "Fiscal"
-      },
-      {
-        "id": "706bd9ebf537",
-        "titulo": "Rectifican los incrementos en salarios mínimos del personal de casas particulares",
-        "link": "https://www.ambito.com/novedades-fiscales/rectifican-los-incrementos-salarios-minimos-del-personal-casas-particulares-n6325944",
-        "descripcion": "En el marco de la convocatoria de la Comisión Nacional de Trabajo en Casas Particulares se acordó un incremento de los salarios mínimos vigentes para el personal desde agosto a diciembre 2026. Ante errores detectados se procedió a su corrección",
-        "fecha_publicacion": "2026-09-23T23:22:00+00:00",
-        "fuente_id": "ambito_fisc",
-        "fuente_nombre": "Ámbito Fiscal",
-        "categoria": "Fiscal"
-      },
-      {
-        "id": "637c736f4c96",
-        "titulo": "Inversiones verdes: impulsan beneficios fiscales para las empresas que reduzcan su huella de carbono",
-        "link": "https://www.ambito.com/novedades-fiscales/inversiones-verdes-impulsan-beneficios-fiscales-las-empresas-que-reduzcan-su-huella-carbono-n6325010",
-        "descripcion": "Con el objetivo de reducir, remover y compensar las emisiones de gases de efecto invernadero, se presentó una iniciativa de adhesión voluntaria incentivada mediante estímulos tributarios",
-        "fecha_publicacion": "2026-09-21T23:33:00+00:00",
-        "fuente_id": "ambito_fisc",
-        "fuente_nombre": "Ámbito Fiscal",
-        "categoria": "Fiscal"
-      }
-    ],
-    "Laboral": [
-      {
-        "id": "f4a7905c6e2d",
-        "titulo": "Según un estudio oficial todos los hogares pierden contra la inflación de la Ciudad de Buenos Aires",
-        "link": "https://www.iprofesional.com/management/465150-caida-del-ingreso-real-en-caba-todos-los-hogares-pierden-contra-la-inflacion-de-la-ciudad",
-        "descripcion": "En general, el IDECBA del gobierno porteño detectó una pérdida de poder adquisitivo de 5,6 puntos en el segundo trimestre de 2026",
-        "fecha_publicacion": "2026-09-24T16:24:00+00:00",
-        "fuente_id": "iprof_management",
-        "fuente_nombre": "iProfesional Management",
-        "categoria": "Laboral"
-      },
-      {
-        "id": "4c8ab50dbfd9",
-        "titulo": "Trabajo decente en las plataformas digitales: una nueva norma mundial",
-        "link": "https://voices.ilo.org/es-es/podcast/trabajo-decente-en-las-plataformas-digitales-una-nueva-norma-mundial",
-        "descripcion": "Las plataformas digitales han transformado el mundo del trabajo, generando nuevas oportunidades, pero también importantes desafíos para los derechos y la protección de los trabajadores. En este episodio de El futuro del trabajo, Nuno Cunha, especialista en instituciones de mercados laborales de la OIT, explica qué supone el nuevo Convenio núm. 193, la primera norma internacional del trabajo sobre la economía de plataformas, cómo fue elaborado a través del diálogo social y cuáles son los próximos",
-        "fecha_publicacion": "2026-08-26T00:00:00+00:00",
-        "fuente_id": "oit_podcast",
-        "fuente_nombre": "OIT Podcast",
-        "categoria": "Laboral"
-      },
-      {
-        "id": "07f564b6ffd7",
-        "titulo": "Riesgos psicosociales en el trabajo: la amenaza invisible para la salud de los trabajadores",
-        "link": "https://voices.ilo.org/es-es/podcast/riesgos-psicosociales-en-el-trabajo-la-amenaza-invisible-para-la-salud-de-los-trabajadores",
-        "descripcion": "En este episodio del pódcast “El futuro del trabajo de la OIT”, Dafne Papandrea y Lucía Risueño Navarro explican cómo los riesgos psicosociales —como las largas jornadas laborales, la inseguridad en el empleo y el acoso en el lugar de trabajo— afectan a la salud de los trabajadores, y qué medidas pueden adoptarse para crear entornos laborales más saludables en todo el mundo.",
-        "fecha_publicacion": "2026-04-28T00:00:00+00:00",
-        "fuente_id": "oit_podcast",
-        "fuente_nombre": "OIT Podcast",
-        "categoria": "Laboral"
-      },
-      {
-        "id": "ef1638f33032",
-        "titulo": "La inteligencia artificial generativa y las desigualdades de género en el trabajo",
-        "link": "https://voices.ilo.org/es-es/podcast/la-inteligencia-artificial-generativa-y-las-desigualdades-de-genero-en-el-trabajo",
-        "descripcion": "En este episodio del pódcast de la Organización Internacional del Trabajo, Janine Berg, Economista senior en la OIT, presenta un nuevo informe sobre el impacto de la inteligencia artificial generativa en el mundo del trabajo. La experta explica por qué las mujeres están más expuestas que los hombres a los riesgos asociados a esta tecnología y qué significa esto para la igualdad en el mercado laboral.",
-        "fecha_publicacion": "2026-03-09T00:00:00+00:00",
-        "fuente_id": "oit_podcast",
-        "fuente_nombre": "OIT Podcast",
-        "categoria": "Laboral"
-      }
-    ],
     "Logística": [
       {
         "id": "4fbfe6e947b6",
@@ -763,68 +835,6 @@
         "fuente_id": "ceso",
         "fuente_nombre": "CESO",
         "categoria": "Análisis Consultoras"
-      }
-    ],
-    "Internacional": [
-      {
-        "id": "0b94fc542142",
-        "titulo": "Capital Economics prevé menos subidas de tipos del BCE de lo esperado",
-        "link": "https://es.investing.com/news/economic-indicators/capital-economics-preve-menos-subidas-de-tipos-del-bce-de-lo-esperado-93CH-3847538",
-        "descripcion": "",
-        "fecha_publicacion": "2026-09-24T11:03:39+00:00",
-        "fuente_id": "investing_intl2",
-        "fuente_nombre": "Investing Mundo",
-        "categoria": "Internacional"
-      },
-      {
-        "id": "4fc511a4bed0",
-        "titulo": "Los minoristas británicos registran una caída récord en pedidos a proveedores",
-        "link": "https://es.investing.com/news/economic-indicators/los-minoristas-britanicos-registran-una-caida-record-en-pedidos-a-proveedores-93CH-3847352",
-        "descripcion": "",
-        "fecha_publicacion": "2026-09-24T10:08:04+00:00",
-        "fuente_id": "investing_intl2",
-        "fuente_nombre": "Investing Mundo",
-        "categoria": "Internacional"
-      },
-      {
-        "id": "f2b4f79ce6da",
-        "titulo": "Dhingra (Banco de Inglaterra) advierte que las condiciones financieras ya son restrictivas",
-        "link": "https://es.investing.com/news/economic-indicators/dhingra-banco-de-inglaterra-advierte-que-las-condiciones-financieras-ya-son-restrictivas-93CH-3847302",
-        "descripcion": "",
-        "fecha_publicacion": "2026-09-24T09:57:16+00:00",
-        "fuente_id": "investing_intl2",
-        "fuente_nombre": "Investing Mundo",
-        "categoria": "Internacional"
-      },
-      {
-        "id": "6253c3a42032",
-        "titulo": "Banco de Reserva de Sudáfrica sube los tipos de interés por la inflación",
-        "link": "https://es.investing.com/news/world-news/banco-de-reserva-de-sudafrica-sube-los-tipos-de-interes-por-la-inflacion-93CH-3846088",
-        "descripcion": "",
-        "fecha_publicacion": "2026-09-23T13:29:08+00:00",
-        "fuente_id": "investing_intl",
-        "fuente_nombre": "Investing Internacional",
-        "categoria": "Internacional"
-      },
-      {
-        "id": "006d36751741",
-        "titulo": "S&P afirma las calificaciones ’BBB-/A-3’ de Panamá por avances fiscales",
-        "link": "https://es.investing.com/news/world-news/sp-afirma-las-calificaciones-bbba3-de-panama-por-avances-fiscales-93CH-3844742",
-        "descripcion": "",
-        "fecha_publicacion": "2026-09-22T20:08:52+00:00",
-        "fuente_id": "investing_intl",
-        "fuente_nombre": "Investing Internacional",
-        "categoria": "Internacional"
-      },
-      {
-        "id": "732dea06d9a0",
-        "titulo": "Fitch mejora la calificación de Sri Lanka por reformas fiscales",
-        "link": "https://es.investing.com/news/world-news/fitch-mejora-la-calificacion-de-sri-lanka-por-reformas-fiscales-93CH-3844637",
-        "descripcion": "",
-        "fecha_publicacion": "2026-09-22T17:38:51+00:00",
-        "fuente_id": "investing_intl",
-        "fuente_nombre": "Investing Internacional",
-        "categoria": "Internacional"
       }
     ]
   }
