@@ -1,5 +1,5 @@
 {
-  "generado_en": "2026-09-26T13:26:26.006529+00:00",
+  "generado_en": "2026-09-26T20:31:32.544751+00:00",
   "destacados": [
     {
       "id": "d3fcadb10df1",
@@ -9,19 +9,17 @@
       "fecha_publicacion": "2026-09-26T13:25:00+00:00",
       "fuente_id": "iproup_eco",
       "fuente_nombre": "iProUP Economía Digital",
-      "categoria": "Mercados",
-      "resumen": "La compañía implementará el protocolo RGB para emitir nuevamente su stablecoin sobre la red Bitcoin, con el objetivo de agilizar las transacciones, abaratar costos y sumar privacidad."
+      "categoria": "Mercados"
     },
     {
-      "id": "3e96e42dd2f0",
-      "titulo": "La economía quedó al borde de una recesión técnica, según expertos",
-      "link": "https://www.lanacion.com.ar/economia/la-economia-quedo-al-borde-de-una-recesion-tecnica-segun-expertos-nid25092026/",
-      "descripcion": "La magnitud de la baja mensual del EMAE de julio dejó poco margen para una recuperación en el tercer trimestre; en el segundo había caído 0,6% con respecto a los primeros tres meses del año",
-      "fecha_publicacion": "2026-09-26T13:05:44+00:00",
+      "id": "338586245e31",
+      "titulo": "El gobernador de Neuquén cruzó a Prat-Gay por decir que Vaca Muerta “no derrama” en la provincia",
+      "link": "https://www.lanacion.com.ar/economia/el-gobernador-de-neuquen-cruzo-a-prat-gay-por-decir-que-vaca-muerta-no-derrama-en-la-provincia-nid26092026/",
+      "descripcion": "Rolando Figueroa invitó al exministro de Economía a recorrer junto a él el territorio patagónico y defendió que allí “se ha logrado lo que muchos en el país no hicieron cuando tuvieron su oportunidad”",
+      "fecha_publicacion": "2026-09-26T19:47:43+00:00",
       "fuente_id": "lanacion_eco",
       "fuente_nombre": "La Nación Economía",
-      "categoria": "Finanzas",
-      "resumen": "Tras la caída del 0,6% en el segundo trimestre, el retroceso del EMAE en julio complica las chances de un rebote a corto plazo. Con este escenario, los analistas advierten que la actividad podría encadenar dos períodos consecutivos en baja y entrar formalmente en recesión."
+      "categoria": "Finanzas"
     },
     {
       "id": "a35af929c4da",
@@ -31,11 +29,236 @@
       "fecha_publicacion": "2026-09-25T21:51:40+00:00",
       "fuente_id": "investing_intl",
       "fuente_nombre": "Investing Internacional",
-      "categoria": "Internacional",
-      "resumen": "La agencia recortó la nota soberana del país africano a Baa2, aunque fijó el panorama en estable al estimar que los riesgos crediticios se mantienen equilibrados a mediano plazo."
+      "categoria": "Internacional"
     }
   ],
   "secciones": {
+    "Finanzas": [
+      {
+        "id": "338586245e31",
+        "titulo": "El gobernador de Neuquén cruzó a Prat-Gay por decir que Vaca Muerta “no derrama” en la provincia",
+        "link": "https://www.lanacion.com.ar/economia/el-gobernador-de-neuquen-cruzo-a-prat-gay-por-decir-que-vaca-muerta-no-derrama-en-la-provincia-nid26092026/",
+        "descripcion": "Rolando Figueroa invitó al exministro de Economía a recorrer junto a él el territorio patagónico y defendió que allí “se ha logrado lo que muchos en el país no hicieron cuando tuvieron su oportunidad”",
+        "fecha_publicacion": "2026-09-26T19:47:43+00:00",
+        "fuente_id": "lanacion_eco",
+        "fuente_nombre": "La Nación Economía",
+        "categoria": "Finanzas"
+      },
+      {
+        "id": "77ebb4ab3519",
+        "titulo": "Contexto internacional desfavorable y malas noticias locales: por qué el riesgo país subió por encima de los 600 puntos",
+        "link": "https://www.lanacion.com.ar/economia/contexto-internacional-desfavorable-y-malas-noticias-locales-por-que-el-riesgo-pais-subio-por-encima-nid26092026/",
+        "descripcion": "En la última semana, el indicador elaborado por JP Morgan escaló 85 unidades hasta niveles que no registraba desde abril; el impacto de la situación global y el incremento de tasas de la FED se suman a la incertidumbre ante el calendario electoral",
+        "fecha_publicacion": "2026-09-26T18:52:04+00:00",
+        "fuente_id": "lanacion_eco",
+        "fuente_nombre": "La Nación Economía",
+        "categoria": "Finanzas"
+      },
+      {
+        "id": "671648d0adc2",
+        "titulo": "La mora lleva a los bancos a restringir los préstamos",
+        "link": "https://www.lanacion.com.ar/economia/negocios/la-mora-lleva-a-los-bancos-a-restringir-los-prestamos-nid26092026/",
+        "descripcion": "Entidades y fintech endurecieron las condiciones y concentran sus ofertas en los clientes de mejor perfil, que son justamente los menos dispuestos a endeudarse",
+        "fecha_publicacion": "2026-09-26T17:25:20+00:00",
+        "fuente_id": "lanacion_eco",
+        "fuente_nombre": "La Nación Economía",
+        "categoria": "Finanzas"
+      },
+      {
+        "id": "3143afb4144c",
+        "titulo": "El BCE planea conectar su red de pagos con Pix para hacer más rápidas las operaciones con Brasil",
+        "link": "https://www.iproup.com/finanzas/71880-europa-quiere-conectar-su-sistema-de-pagos-al-pix-brasileno",
+        "descripcion": "Europa evalúa una conexión con Pix para acelerar los pagos entre ambos mercados, reducir costos y ampliar la interoperabilidad financiera internacional",
+        "fecha_publicacion": "2026-09-26T11:50:00+00:00",
+        "fuente_id": "iproup_fintech",
+        "fuente_nombre": "iProUP Fintech",
+        "categoria": "Finanzas"
+      },
+      {
+        "id": "ed8a28dfaede",
+        "titulo": "Tras los aumentos, cuánto cobrará un empleado de comercio en octubre 2026",
+        "link": "https://www.iprofesional.com/management/465137-tras-los-aumentos-cuanto-cobrara-un-empleado-de-comercio-en-octubre-2026",
+        "descripcion": "Lo sueldos de septiembre se pagarán en octubre con 1,9% de aumento. Cuánto cobran los empleados de comercio, categoría por categoría",
+        "fecha_publicacion": "2026-09-26T11:17:00+00:00",
+        "fuente_id": "iprof_economia",
+        "fuente_nombre": "iProfesional Economía",
+        "categoria": "Finanzas"
+      },
+      {
+        "id": "d83d7da85168",
+        "titulo": "En plena tensión financiera global, bonos argentinos ofrecen una rentabilidad imperdible",
+        "link": "https://www.iprofesional.com/finanzas/465293-tasas-interes-record-como-armar-cartera-segura-aprovechar-renta-fija-septiembre-2026",
+        "descripcion": "La estrategia debe ser esperar, mantener los ojos abiertos, no desarmar carteras y, si se dispone de liquidez, reforzar posiciones en renta fija",
+        "fecha_publicacion": "2026-09-26T11:00:00+00:00",
+        "fuente_id": "iprof_economia",
+        "fuente_nombre": "iProfesional Economía",
+        "categoria": "Finanzas"
+      },
+      {
+        "id": "b29b31fdcb7a",
+        "titulo": "Cathie Wood critica la cartera tradicional y revela una nueva forma de invertir",
+        "link": "https://www.iproup.com/finanzas/71870-el-cambio-que-propone-cathie-wood-para-invertir-en-acciones-y-bitcoin",
+        "descripcion": "Cathie Wood anticipa una década de mayor productividad y crecimiento, con menos inflación y un papel distinto para bonos, acciones y bitcoin",
+        "fecha_publicacion": "2026-09-26T10:41:00+00:00",
+        "fuente_id": "iproup_fintech",
+        "fuente_nombre": "iProUP Fintech",
+        "categoria": "Finanzas"
+      },
+      {
+        "id": "d79e5f39bd0c",
+        "titulo": "Strategy prepara dividendos diarios ligados a Bitcoin para cuatro acciones preferentes",
+        "link": "https://www.iproup.com/finanzas/71879-strategy-propone-pagar-dividendos-todos-los-dias-con-bitcoin",
+        "descripcion": "Strategy propone que sus accionistas preferentes reciban dividendos diarios mediante un nuevo esquema que alcanza a cuatro de sus principales instrumentos",
+        "fecha_publicacion": "2026-09-26T10:41:00+00:00",
+        "fuente_id": "iproup_fintech",
+        "fuente_nombre": "iProUP Fintech",
+        "categoria": "Finanzas"
+      }
+    ],
+    "Fiscal": [
+      {
+        "id": "1968148c15bf",
+        "titulo": "Catamarca elimina Ingresos Brutos para la industria: qué cambia para las empresas",
+        "link": "https://www.iprofesional.com/impuestos/465315-catamarca-elimino-impuesto-industria-cambio-reglas-fabricas-argentina",
+        "descripcion": "La decisión del Ejecutivo catamarqueño reactiva la discusión sobre cómo deben tributar las industrias en el entramado federal argentino",
+        "fecha_publicacion": "2026-09-26T15:00:00+00:00",
+        "fuente_id": "iprof_impuestos",
+        "fuente_nombre": "iProfesional Impuestos",
+        "categoria": "Fiscal"
+      },
+      {
+        "id": "2eaf983dd458",
+        "titulo": "Monotributo ARCA: cuándo vence la próxima recategorización y cómo se hace",
+        "link": "https://www.iprofesional.com/impuestos/465313-monotributo-arca-cuando-vence-la-recategorizacion-y-como-se-hace",
+        "descripcion": "Contribuyentes deben actualizar su perfil con los datos recientes y evitar inconsistencias que podrían derivar en sanciones administrativas sorpresa",
+        "fecha_publicacion": "2026-09-26T14:00:00+00:00",
+        "fuente_id": "iprof_impuestos",
+        "fuente_nombre": "iProfesional Impuestos",
+        "categoria": "Fiscal"
+      },
+      {
+        "id": "e402c2e4b528",
+        "titulo": "La transparencia fiscal de impuestos provinciales está cada vez más perezosa",
+        "link": "https://www.ambito.com/novedades-fiscales/la-transparencia-fiscal-impuestos-provinciales-esta-cada-vez-mas-perezosa-n6326904",
+        "descripcion": "La adhesión de las provincias al régimen que muestra la incidencia impositiva en las compras es escasa pero, además, las que si adhirieron y reglamentaron están otorgando mayores plazos para permitir la adecuación de los sistemas",
+        "fecha_publicacion": "2026-09-25T23:43:00+00:00",
+        "fuente_id": "ambito_fisc",
+        "fuente_nombre": "Ámbito Fiscal",
+        "categoria": "Fiscal"
+      },
+      {
+        "id": "cbbc3efac70e",
+        "titulo": "Dólares del colchón: el Senado publicó la letra chica de la ley de Inocencia Fiscal II",
+        "link": "https://www.iprofesional.com/impuestos/465288-dolares-colchon-senado-difundio-ley-inocencia-fiscal-dos",
+        "descripcion": "La Ley de Inocencia Fiscal II ya tiene texto oficial y número, tras la publicación en la página institucional del Senado de la Nación",
+        "fecha_publicacion": "2026-09-25T20:40:00+00:00",
+        "fuente_id": "iprof_impuestos",
+        "fuente_nombre": "iProfesional Impuestos",
+        "categoria": "Fiscal"
+      },
+      {
+        "id": "1d7bc64d9999",
+        "titulo": "Inocencia Fiscal II: cambios, riesgos y oportunidades para los contribuyentes",
+        "link": "https://www.ambito.com/novedades-fiscales/inocencia-fiscal-ii-cambios-riesgos-y-oportunidades-los-contribuyentes-n6325949",
+        "descripcion": "El proyecto de modificaciones al régimen que ya es ley, introduce mejoras a la aplicación del mismo que avanzan sobre una mayor simplificación y previsibilidad, generando un cambio en la relación del contribuyente con la administración tributaria.",
+        "fecha_publicacion": "2026-09-23T23:24:00+00:00",
+        "fuente_id": "ambito_fisc",
+        "fuente_nombre": "Ámbito Fiscal",
+        "categoria": "Fiscal"
+      },
+      {
+        "id": "706bd9ebf537",
+        "titulo": "Rectifican los incrementos en salarios mínimos del personal de casas particulares",
+        "link": "https://www.ambito.com/novedades-fiscales/rectifican-los-incrementos-salarios-minimos-del-personal-casas-particulares-n6325944",
+        "descripcion": "En el marco de la convocatoria de la Comisión Nacional de Trabajo en Casas Particulares se acordó un incremento de los salarios mínimos vigentes para el personal desde agosto a diciembre 2026. Ante errores detectados se procedió a su corrección",
+        "fecha_publicacion": "2026-09-23T23:22:00+00:00",
+        "fuente_id": "ambito_fisc",
+        "fuente_nombre": "Ámbito Fiscal",
+        "categoria": "Fiscal"
+      }
+    ],
+    "Automotor": [
+      {
+        "id": "144e96daced0",
+        "titulo": "El auto de los sueños de Milei: cuál es, cuándo costaría traerlo y cómo lo tunearía",
+        "link": "https://www.iprofesional.com/autos/465314-auto-de-los-suenos-de-javier-milei-cual-es-cuando-costaria-traerlo-y-que-le-pintaria",
+        "descripcion": "Durante un reportaje en Nueva York, el Presidente relató cómo personalizaría la camioneta eléctrica que admira. De qué modelo se trata",
+        "fecha_publicacion": "2026-09-26T14:36:00+00:00",
+        "fuente_id": "iprof_autos",
+        "fuente_nombre": "iProfesional Autos",
+        "categoria": "Automotor"
+      },
+      {
+        "id": "36739455ac79",
+        "titulo": "Mantenimiento. La importancia de Fluidos y Lubricantes para el mejor funcionamiento de los motores de combustión, eléctricos o híbridos",
+        "link": "https://www.diariodeautos.com.ar/index.php/noticias/servicios/item/15204-fluidos",
+        "descripcion": "El motor es una máquina construida para convertir el calor en un movimiento con la suficiente fuerza para lograr que las ruedas giren y el vehículo se desplace. La forma de obtener esta energía varía según el motor. En este punto, podemos hacer una distinción entre los diferentes tipos que ofrece el mercado actual. ⦁&nbsp;&nbsp; &nbsp; Motores de combustión interna : la reacción o la conversión del calor en movimiento se produce por la explosión -en el caso de los vehículos convencionales a naft",
+        "fecha_publicacion": "2026-09-26T09:03:28+00:00",
+        "fuente_id": "diario_autos",
+        "fuente_nombre": "Diario de Autos",
+        "categoria": "Automotor"
+      },
+      {
+        "id": "95ddf6fdb3d2",
+        "titulo": "Tesla llega a la Argentina y ya define dónde estará ubicada su primera tienda",
+        "link": "https://www.iprofesional.com/negocios/465306-tesla-llega-a-argentina-y-definio-donde-estara-ubicada-su-primera-tienda",
+        "descripcion": "La automotriz de Elon Musk acelera su desembarco en el país y prepara la apertura de su primer local en una zona estratégica de la ciudad",
+        "fecha_publicacion": "2026-09-25T23:31:00+00:00",
+        "fuente_id": "iprof_autos",
+        "fuente_nombre": "iProfesional Autos",
+        "categoria": "Automotor"
+      },
+      {
+        "id": "2cd1be77a998",
+        "titulo": "La marca china de autos que \"está en conversaciones\" para fabricar en Argentina",
+        "link": "https://www.iprofesional.com/autos/465303-que-marca-china-puede-empezar-a-fabricar-autos-en-argentina",
+        "descripcion": "Negociaciones avanzadas abrirían la puerta para que una nueva automotriz asiática fabrique vehículos en plantas locales y sume empleos",
+        "fecha_publicacion": "2026-09-25T23:16:00+00:00",
+        "fuente_id": "iprof_autos",
+        "fuente_nombre": "iProfesional Autos",
+        "categoria": "Automotor"
+      },
+      {
+        "id": "d4191fc912b8",
+        "titulo": "Pese a descuentos y más crédito, septiembre termina con una nueva caída de los patentamientos de autos",
+        "link": "https://arodarpost.com.ar/pese-a-descuentos-y-mas-credito-septiembre-termina-con-una-nueva-caida-de-los-patentamientos-de-autos/",
+        "descripcion": "A cuatro días hábiles para el cierre de septiembre, el mercado automotor argentino acumula 33.424 patentamientos, entre autos y vehículos comerciales livianos, y muestra una caída del 13,1% frente al mismo mes del año pasado. Si se realiza la comparación con agosto último, el retroceso es de 1.7%. En las concesionarias señalan que está cerrando [&#8230;]",
+        "fecha_publicacion": "2026-09-25T18:11:01+00:00",
+        "fuente_id": "arodar",
+        "fuente_nombre": "A Rodar Post",
+        "categoria": "Automotor"
+      },
+      {
+        "id": "bfe0d06e25f6",
+        "titulo": "Nissan Pixo: el hermano nipón del Twingo",
+        "link": "https://noticias.autocosmos.com.ar/2026/09/25/nissan-pixo-el-hermano-nipon-del-twingo",
+        "descripcion": "Será el modelo más pequeño de la marca en el viejo continente, atacando al segmento A con este pequeño auto eléctrico",
+        "fecha_publicacion": "2026-09-25T13:00:05+00:00",
+        "fuente_id": "autocosmos",
+        "fuente_nombre": "Autocosmos Argentina",
+        "categoria": "Automotor"
+      },
+      {
+        "id": "f91e73d14d54",
+        "titulo": "Zanella amplía su propuesta urbana con el nuevo scooter Exclusive 150: cuesta $3.289.990",
+        "link": "https://arodarpost.com.ar/zanella-amplia-su-propuesta-urbana-con-el-nuevo-scooter-exclusive-150-cuesta-3-289-990/",
+        "descripcion": "Zanella presenta las nuevas Exclusive 150 LT y Exclusive 150 Dark Edition, dos propuestas que amplían su portfolio de scooters y buscan responder a las nuevas formas de movilidad urbana. Con personalidades diferentes, ambos modelos combinan diseño, practicidady confort de manejo para acompañar los recorridos cotidianos por la ciudad. La Exclusive 150 LT recupera el [&#8230;]",
+        "fecha_publicacion": "2026-09-25T12:26:25+00:00",
+        "fuente_id": "arodar",
+        "fuente_nombre": "A Rodar Post",
+        "categoria": "Automotor"
+      },
+      {
+        "id": "5d4a7313dc27",
+        "titulo": "Fanáticos del Jeep IKA reunidos en San Pedro por los 70 años",
+        "link": "https://motorwebargentina.com/jeep-ika-san-pedro-70-anos/",
+        "descripcion": "La comunidad de Fanáticos del Jeep IKA volvió a reunirse en San Pedro con eje en los 70 años del Jeep IKA y reunió a propietarios y aficionados de los vehículos producidos por Industrias Kaiser Argentina (IKA), además de otros Jeeps vinculados con la comunidad. Vuelta de Obligado fue nuevamente el punto de referencia de [&#8230;] La entrada Fanáticos del Jeep IKA reunidos en San Pedro por los 70 años se publicó primero en Motorweb Argentina .",
+        "fecha_publicacion": "2026-09-25T10:19:43+00:00",
+        "fuente_id": "motorweb",
+        "fuente_nombre": "Motorweb Argentina",
+        "categoria": "Automotor"
+      }
+    ],
     "Mercados": [
       {
         "id": "d3fcadb10df1",
@@ -45,19 +268,17 @@
         "fecha_publicacion": "2026-09-26T13:25:00+00:00",
         "fuente_id": "iproup_eco",
         "fuente_nombre": "iProUP Economía Digital",
-        "categoria": "Mercados",
-        "resumen": "Mediante la infraestructura de RGB, la emisora busca procesar transacciones de su dólar digital en Bitcoin con mayor confidencialidad y tarifas más previsibles."
+        "categoria": "Mercados"
       },
       {
         "id": "1cfffd487734",
         "titulo": "Las stablecoins crecen 77,5% en pagos mientras cae casi un 50% el mercado cripto",
         "link": "https://www.iproup.com/economia-digital/71881-las-stablecoins-ganan-terreno-en-pagos-mientras-cae-el-mercado-cripto",
         "descripcion": "Las transferencias internacionales con stablecoins crecieron 77,5% mientras el mercado cripto perdió casi la mitad de su capitalización",
-        "fecha_publicacion": "2026-09-26T12:24:00+00:00",
+        "fecha_publicacion": "2026-09-26T12:40:00+00:00",
         "fuente_id": "iproup_eco",
         "fuente_nombre": "iProUP Economía Digital",
-        "categoria": "Mercados",
-        "resumen": "A contramano del desplome de casi el 50% en la capitalización del ecosistema cripto, las transferencias internacionales con monedas estables treparon un 77,5%. El dato ratifica la consolidación de estos activos como herramienta de pago transfronterizo frente a la volatilidad del resto del mercado."
+        "categoria": "Mercados"
       },
       {
         "id": "a3e481c17007",
@@ -77,12 +298,11 @@
         "fecha_publicacion": "2026-09-26T09:56:14+00:00",
         "fuente_id": "investing_economia",
         "fuente_nombre": "Investing Economía",
-        "categoria": "Mercados",
-        "resumen": "Fuerzas ucranianas alcanzaron una planta de procesamiento de crudo en territorio ruso en el marco de una ofensiva creciente con vehículos no tripulados. La maniobra suma presión a la capacidad de refinación de Moscú y mantiene la tensión sobre las cotizaciones globales del petróleo."
+        "categoria": "Mercados"
       },
       {
         "id": "34bbd6f39515",
-        "titulo": "China y EE.UU. acuerdan reducción arancelaria de 30.000 millones de dólares e inician diálogo sobre IA",
+        "titulo": "China y EE.UU. acuerdan reducción arancelaria y diálogo sobre IA",
         "link": "https://es.investing.com/news/economy-news/china-y-eeuu-acuerdan-reduccion-arancelaria-de-30000-millones-de-dolares-e-inician-dialogo-sobre-ia-3850259",
         "descripcion": "",
         "fecha_publicacion": "2026-09-26T09:37:25+00:00",
@@ -140,8 +360,7 @@
         "fecha_publicacion": "2026-09-26T11:52:40+00:00",
         "fuente_id": "investing_agro",
         "fuente_nombre": "Investing Agro",
-        "categoria": "Agro",
-        "resumen": "Bruselas alertó sobre un escenario de escasez y les reclamó a los países del bloque moderar el consumo de gas para evitar faltantes graves."
+        "categoria": "Agro"
       },
       {
         "id": "f59096d9b224",
@@ -151,8 +370,7 @@
         "fecha_publicacion": "2026-09-26T11:26:12+00:00",
         "fuente_id": "bichos_campo",
         "fuente_nombre": "Bichos de Campo",
-        "categoria": "Agro",
-        "resumen": "La caída del poder adquisitivo frenó la demanda interna de carne y, sumada al encarecimiento de los costos de producción, empezó a deprimir los valores de los terneros."
+        "categoria": "Agro"
       },
       {
         "id": "c947dda3b7cc",
@@ -162,8 +380,7 @@
         "fecha_publicacion": "2026-09-26T11:12:12+00:00",
         "fuente_id": "investing_agro",
         "fuente_nombre": "Investing Agro",
-        "categoria": "Agro",
-        "resumen": "La perspectiva de un evento climático extremo genera incertidumbre en el mercado energético global y obligará a recalcular las proyecciones de consumo de gas natural licuado."
+        "categoria": "Agro"
       },
       {
         "id": "07c4ab43f170",
@@ -173,8 +390,7 @@
         "fecha_publicacion": "2026-09-26T10:55:07+00:00",
         "fuente_id": "infocampo",
         "fuente_nombre": "Infocampo",
-        "categoria": "Agro",
-        "resumen": "Con financiamiento internacional, la provincia evalúa las emisiones reales de metano en rodeos lecheros y de cría bajo distintos esquemas de alimentación para medir la verdadera huella ambiental de la actividad."
+        "categoria": "Agro"
       },
       {
         "id": "1cb144af460a",
@@ -185,88 +401,6 @@
         "fuente_id": "infocampo",
         "fuente_nombre": "Infocampo",
         "categoria": "Agro"
-      }
-    ],
-    "Finanzas": [
-      {
-        "id": "3e96e42dd2f0",
-        "titulo": "La economía quedó al borde de una recesión técnica, según expertos",
-        "link": "https://www.lanacion.com.ar/economia/la-economia-quedo-al-borde-de-una-recesion-tecnica-segun-expertos-nid25092026/",
-        "descripcion": "La magnitud de la baja mensual del EMAE de julio dejó poco margen para una recuperación en el tercer trimestre; en el segundo había caído 0,6% con respecto a los primeros tres meses del año",
-        "fecha_publicacion": "2026-09-26T13:05:44+00:00",
-        "fuente_id": "lanacion_eco",
-        "fuente_nombre": "La Nación Economía",
-        "categoria": "Finanzas"
-      },
-      {
-        "id": "3143afb4144c",
-        "titulo": "El BCE planea conectar su red de pagos con Pix para hacer más rápidas las operaciones con Brasil",
-        "link": "https://www.iproup.com/finanzas/71880-europa-quiere-conectar-su-sistema-de-pagos-al-pix-brasileno",
-        "descripcion": "Europa evalúa una conexión con Pix para acelerar los pagos entre ambos mercados, reducir costos y ampliar la interoperabilidad financiera internacional",
-        "fecha_publicacion": "2026-09-26T11:50:00+00:00",
-        "fuente_id": "iproup_fintech",
-        "fuente_nombre": "iProUP Fintech",
-        "categoria": "Finanzas"
-      },
-      {
-        "id": "ed8a28dfaede",
-        "titulo": "Tras los aumentos, cuánto cobrará un empleado de comercio en octubre 2026",
-        "link": "https://www.iprofesional.com/management/465137-tras-los-aumentos-cuanto-cobrara-un-empleado-de-comercio-en-octubre-2026",
-        "descripcion": "Lo sueldos de septiembre se pagarán en octubre con 1,9% de aumento. Cuánto cobran los empleados de comercio, categoría por categoría",
-        "fecha_publicacion": "2026-09-26T11:17:00+00:00",
-        "fuente_id": "iprof_economia",
-        "fuente_nombre": "iProfesional Economía",
-        "categoria": "Finanzas"
-      },
-      {
-        "id": "d83d7da85168",
-        "titulo": "En plena tensión financiera global, bonos argentinos ofrecen una rentabilidad imperdible",
-        "link": "https://www.iprofesional.com/finanzas/465293-tasas-interes-record-como-armar-cartera-segura-aprovechar-renta-fija-septiembre-2026",
-        "descripcion": "La estrategia debe ser esperar, mantener los ojos abiertos, no desarmar carteras y, si se dispone de liquidez, reforzar posiciones en renta fija",
-        "fecha_publicacion": "2026-09-26T11:00:00+00:00",
-        "fuente_id": "iprof_economia",
-        "fuente_nombre": "iProfesional Economía",
-        "categoria": "Finanzas"
-      },
-      {
-        "id": "2972a70ab3b8",
-        "titulo": "“Impotencia y bronca”: se cayó un puente de 1930 y llevan 220 días sin poder circular",
-        "link": "https://www.lanacion.com.ar/economia/campo/impotencia-y-bronca-se-cayo-un-puente-de-1930-y-llevan-220-dias-sin-poder-circular-nid25092026/",
-        "descripcion": "Productores de la zona de Arroyo Venado, en el sudoeste bonaerense, reclaman una solución urgente para recuperar el paso entre las localidades de Guaminí y de Carhué; en el gobierno provincial dicen que la obra de reconstrucción será en octubre",
-        "fecha_publicacion": "2026-09-26T10:44:28+00:00",
-        "fuente_id": "lanacion_eco",
-        "fuente_nombre": "La Nación Economía",
-        "categoria": "Finanzas"
-      },
-      {
-        "id": "b29b31fdcb7a",
-        "titulo": "Cathie Wood critica la cartera tradicional y revela una nueva forma de invertir",
-        "link": "https://www.iproup.com/finanzas/71870-el-cambio-que-propone-cathie-wood-para-invertir-en-acciones-y-bitcoin",
-        "descripcion": "Cathie Wood anticipa una década de mayor productividad y crecimiento, con menos inflación y un papel distinto para bonos, acciones y bitcoin",
-        "fecha_publicacion": "2026-09-26T10:41:00+00:00",
-        "fuente_id": "iproup_fintech",
-        "fuente_nombre": "iProUP Fintech",
-        "categoria": "Finanzas"
-      },
-      {
-        "id": "d79e5f39bd0c",
-        "titulo": "Strategy prepara dividendos diarios ligados a Bitcoin para cuatro acciones preferentes",
-        "link": "https://www.iproup.com/finanzas/71879-strategy-propone-pagar-dividendos-todos-los-dias-con-bitcoin",
-        "descripcion": "Strategy propone que sus accionistas preferentes reciban dividendos diarios mediante un nuevo esquema que alcanza a cuatro de sus principales instrumentos",
-        "fecha_publicacion": "2026-09-26T10:41:00+00:00",
-        "fuente_id": "iproup_fintech",
-        "fuente_nombre": "iProUP Fintech",
-        "categoria": "Finanzas"
-      },
-      {
-        "id": "2f282e196b94",
-        "titulo": "Dos argentinos ilustres en una guerra fratricida en una zona de fuerte raigambre rural",
-        "link": "https://www.lanacion.com.ar/economia/campo/dos-argentinos-ilustres-en-una-guerra-fratricida-en-una-zona-de-fuerte-raigambre-rural-nid26092026/",
-        "descripcion": "Por el conflicto en el Chaco Boreal, Carlos Saavedra Lamas recibió hace 90 años el premio Nobel de la Paz; en el campo de batalla, el médico Esteban Laureano Maradona atendió a soldados de ambos bandos",
-        "fecha_publicacion": "2026-09-26T10:38:30+00:00",
-        "fuente_id": "lanacion_eco",
-        "fuente_nombre": "La Nación Economía",
-        "categoria": "Finanzas"
       }
     ],
     "Laboral": [
@@ -353,150 +487,6 @@
         "categoria": "Fulbito"
       }
     ],
-    "Automotor": [
-      {
-        "id": "36739455ac79",
-        "titulo": "Mantenimiento. La importancia de Fluidos y Lubricantes para el mejor funcionamiento de los motores de combustión, eléctricos o híbridos",
-        "link": "https://www.diariodeautos.com.ar/index.php/noticias/servicios/item/15204-fluidos",
-        "descripcion": "El motor es una máquina construida para convertir el calor en un movimiento con la suficiente fuerza para lograr que las ruedas giren y el vehículo se desplace. La forma de obtener esta energía varía según el motor. En este punto, podemos hacer una distinción entre los diferentes tipos que ofrece el mercado actual. ⦁&nbsp;&nbsp; &nbsp; Motores de combustión interna : la reacción o la conversión del calor en movimiento se produce por la explosión -en el caso de los vehículos convencionales a naft",
-        "fecha_publicacion": "2026-09-26T09:03:28+00:00",
-        "fuente_id": "diario_autos",
-        "fuente_nombre": "Diario de Autos",
-        "categoria": "Automotor"
-      },
-      {
-        "id": "95ddf6fdb3d2",
-        "titulo": "Tesla llega a la Argentina y ya define dónde estará ubicada su primera tienda",
-        "link": "https://www.iprofesional.com/negocios/465306-tesla-llega-a-argentina-y-definio-donde-estara-ubicada-su-primera-tienda",
-        "descripcion": "La automotriz de Elon Musk acelera su desembarco en el país y prepara la apertura de su primer local en una zona estratégica de la ciudad",
-        "fecha_publicacion": "2026-09-25T23:31:00+00:00",
-        "fuente_id": "iprof_autos",
-        "fuente_nombre": "iProfesional Autos",
-        "categoria": "Automotor"
-      },
-      {
-        "id": "2cd1be77a998",
-        "titulo": "La marca china de autos que \"está en conversaciones\" para fabricar en Argentina",
-        "link": "https://www.iprofesional.com/autos/465303-que-marca-china-puede-empezar-a-fabricar-autos-en-argentina",
-        "descripcion": "Negociaciones avanzadas abrirían la puerta para que una nueva automotriz asiática fabrique vehículos en plantas locales y sume empleos",
-        "fecha_publicacion": "2026-09-25T23:16:00+00:00",
-        "fuente_id": "iprof_autos",
-        "fuente_nombre": "iProfesional Autos",
-        "categoria": "Automotor"
-      },
-      {
-        "id": "3d78a04cd329",
-        "titulo": "Citroën vuelve a fabricar el 2 CV que dejó de producir en 1990 y será eléctrico",
-        "link": "https://www.iprofesional.com/autos/465260-citroen-vuelve-a-fabricar-un-auto-que-dejo-de-producir-en-1990",
-        "descripcion": "Fue un clásico modelo de la industria automotriz, económico y práctico. Ahora, volverá a fabricarse en versión 100 por ciento eléctrica",
-        "fecha_publicacion": "2026-09-25T18:37:00+00:00",
-        "fuente_id": "iprof_autos",
-        "fuente_nombre": "iProfesional Autos",
-        "categoria": "Automotor"
-      },
-      {
-        "id": "d4191fc912b8",
-        "titulo": "Pese a descuentos y más crédito, septiembre termina con una nueva caída de los patentamientos de autos",
-        "link": "https://arodarpost.com.ar/pese-a-descuentos-y-mas-credito-septiembre-termina-con-una-nueva-caida-de-los-patentamientos-de-autos/",
-        "descripcion": "A cuatro días hábiles para el cierre de septiembre, el mercado automotor argentino acumula 33.424 patentamientos, entre autos y vehículos comerciales livianos, y muestra una caída del 13,1% frente al mismo mes del año pasado. Si se realiza la comparación con agosto último, el retroceso es de 1.7%. En las concesionarias señalan que está cerrando [&#8230;]",
-        "fecha_publicacion": "2026-09-25T18:11:01+00:00",
-        "fuente_id": "arodar",
-        "fuente_nombre": "A Rodar Post",
-        "categoria": "Automotor"
-      },
-      {
-        "id": "bfe0d06e25f6",
-        "titulo": "Nissan Pixo: el hermano nipón del Twingo",
-        "link": "https://noticias.autocosmos.com.ar/2026/09/25/nissan-pixo-el-hermano-nipon-del-twingo",
-        "descripcion": "Será el modelo más pequeño de la marca en el viejo continente, atacando al segmento A con este pequeño auto eléctrico",
-        "fecha_publicacion": "2026-09-25T13:00:05+00:00",
-        "fuente_id": "autocosmos",
-        "fuente_nombre": "Autocosmos Argentina",
-        "categoria": "Automotor"
-      },
-      {
-        "id": "f91e73d14d54",
-        "titulo": "Zanella amplía su propuesta urbana con el nuevo scooter Exclusive 150: cuesta $3.289.990",
-        "link": "https://arodarpost.com.ar/zanella-amplia-su-propuesta-urbana-con-el-nuevo-scooter-exclusive-150-cuesta-3-289-990/",
-        "descripcion": "Zanella presenta las nuevas Exclusive 150 LT y Exclusive 150 Dark Edition, dos propuestas que amplían su portfolio de scooters y buscan responder a las nuevas formas de movilidad urbana. Con personalidades diferentes, ambos modelos combinan diseño, practicidady confort de manejo para acompañar los recorridos cotidianos por la ciudad. La Exclusive 150 LT recupera el [&#8230;]",
-        "fecha_publicacion": "2026-09-25T12:26:25+00:00",
-        "fuente_id": "arodar",
-        "fuente_nombre": "A Rodar Post",
-        "categoria": "Automotor"
-      },
-      {
-        "id": "5d4a7313dc27",
-        "titulo": "Fanáticos del Jeep IKA reunidos en San Pedro por los 70 años",
-        "link": "https://motorwebargentina.com/jeep-ika-san-pedro-70-anos/",
-        "descripcion": "La comunidad de Fanáticos del Jeep IKA volvió a reunirse en San Pedro con eje en los 70 años del Jeep IKA y reunió a propietarios y aficionados de los vehículos producidos por Industrias Kaiser Argentina (IKA), además de otros Jeeps vinculados con la comunidad. Vuelta de Obligado fue nuevamente el punto de referencia de [&#8230;] La entrada Fanáticos del Jeep IKA reunidos en San Pedro por los 70 años se publicó primero en Motorweb Argentina .",
-        "fecha_publicacion": "2026-09-25T10:19:43+00:00",
-        "fuente_id": "motorweb",
-        "fuente_nombre": "Motorweb Argentina",
-        "categoria": "Automotor"
-      }
-    ],
-    "Fiscal": [
-      {
-        "id": "e402c2e4b528",
-        "titulo": "La transparencia fiscal de impuestos provinciales está cada vez más perezosa",
-        "link": "https://www.ambito.com/novedades-fiscales/la-transparencia-fiscal-impuestos-provinciales-esta-cada-vez-mas-perezosa-n6326904",
-        "descripcion": "La adhesión de las provincias al régimen que muestra la incidencia impositiva en las compras es escasa pero, además, las que si adhirieron y reglamentaron están otorgando mayores plazos para permitir la adecuación de los sistemas",
-        "fecha_publicacion": "2026-09-25T23:43:00+00:00",
-        "fuente_id": "ambito_fisc",
-        "fuente_nombre": "Ámbito Fiscal",
-        "categoria": "Fiscal"
-      },
-      {
-        "id": "cbbc3efac70e",
-        "titulo": "Dólares del colchón: el Senado publicó la letra chica de la ley de Inocencia Fiscal II",
-        "link": "https://www.iprofesional.com/impuestos/465288-dolares-colchon-senado-difundio-ley-inocencia-fiscal-dos",
-        "descripcion": "La Ley de Inocencia Fiscal II ya tiene texto oficial y número, tras la publicación en la página institucional del Senado de la Nación",
-        "fecha_publicacion": "2026-09-25T20:40:00+00:00",
-        "fuente_id": "iprof_impuestos",
-        "fuente_nombre": "iProfesional Impuestos",
-        "categoria": "Fiscal"
-      },
-      {
-        "id": "2b028bf7b54b",
-        "titulo": "La Justicia falló a favor de ARCA y avaló una restricción para deducir gastos",
-        "link": "https://www.iprofesional.com/impuestos/465277-justicia-avalo-arca-restriccion-deducir-gastos",
-        "descripcion": "La deducción de pagos a monotributistas solo es deducible para gastos recurrentes. Una empresa protestó, pero la Justicia falló en su contra",
-        "fecha_publicacion": "2026-09-25T20:25:00+00:00",
-        "fuente_id": "iprof_impuestos",
-        "fuente_nombre": "iProfesional Impuestos",
-        "categoria": "Fiscal"
-      },
-      {
-        "id": "83ccfc89b77d",
-        "titulo": "El Presupuesto retiene u$s770 millones en saldos de IVA del agro para recaudar más",
-        "link": "https://www.iprofesional.com/impuestos/465229-presupuesto-retiene-770-millones-dolares-saldos-iva-agro",
-        "descripcion": "Los exponentes del agro denuncian importantes saldos de IVA por diferencias de alícuotas y proponen convertirlos en bonos negociables",
-        "fecha_publicacion": "2026-09-25T13:26:00+00:00",
-        "fuente_id": "iprof_impuestos",
-        "fuente_nombre": "iProfesional Impuestos",
-        "categoria": "Fiscal"
-      },
-      {
-        "id": "1d7bc64d9999",
-        "titulo": "Inocencia Fiscal II: cambios, riesgos y oportunidades para los contribuyentes",
-        "link": "https://www.ambito.com/novedades-fiscales/inocencia-fiscal-ii-cambios-riesgos-y-oportunidades-los-contribuyentes-n6325949",
-        "descripcion": "El proyecto de modificaciones al régimen que ya es ley, introduce mejoras a la aplicación del mismo que avanzan sobre una mayor simplificación y previsibilidad, generando un cambio en la relación del contribuyente con la administración tributaria.",
-        "fecha_publicacion": "2026-09-23T23:24:00+00:00",
-        "fuente_id": "ambito_fisc",
-        "fuente_nombre": "Ámbito Fiscal",
-        "categoria": "Fiscal"
-      },
-      {
-        "id": "706bd9ebf537",
-        "titulo": "Rectifican los incrementos en salarios mínimos del personal de casas particulares",
-        "link": "https://www.ambito.com/novedades-fiscales/rectifican-los-incrementos-salarios-minimos-del-personal-casas-particulares-n6325944",
-        "descripcion": "En el marco de la convocatoria de la Comisión Nacional de Trabajo en Casas Particulares se acordó un incremento de los salarios mínimos vigentes para el personal desde agosto a diciembre 2026. Ante errores detectados se procedió a su corrección",
-        "fecha_publicacion": "2026-09-23T23:22:00+00:00",
-        "fuente_id": "ambito_fisc",
-        "fuente_nombre": "Ámbito Fiscal",
-        "categoria": "Fiscal"
-      }
-    ],
     "Comex": [
       {
         "id": "fb22484cb1b8",
@@ -506,6 +496,16 @@
         "fecha_publicacion": "2026-09-25T23:01:17+00:00",
         "fuente_id": "aduana_news",
         "fuente_nombre": "Aduana News",
+        "categoria": "Comex"
+      },
+      {
+        "id": "880b6b4082fc",
+        "titulo": "El peso de las elecciones presidenciales en las proyecciones económicas de las empresas para 2027",
+        "link": "https://tradenews.com.ar/el-peso-de-las-elecciones-presidenciales-en-las-proyecciones-economicas-de-las-empresas-para-2027/",
+        "descripcion": "Las empresas comenzaron a preparar sus presupuestos para 2027 mientras miran las elecciones presidenciales. De acuerdo con una evaluación realizada por la consultora Abeceb, en ese escenario, se destacan las...",
+        "fecha_publicacion": "2026-09-25T19:33:39+00:00",
+        "fuente_id": "trade_news",
+        "fuente_nombre": "Trade News",
         "categoria": "Comex"
       },
       {
@@ -566,16 +566,6 @@
         "fecha_publicacion": "2026-09-24T04:22:52+00:00",
         "fuente_id": "aduana_news",
         "fuente_nombre": "Aduana News",
-        "categoria": "Comex"
-      },
-      {
-        "id": "c3411dd016a7",
-        "titulo": "La reforma aduanera de la Unión Europea de septiembre de 2026: nuevas reglas para el comercio electrónico y transformación de la gestión aduanera – Prof. José Carlos Fernández Rozas (desde España)",
-        "link": "https://mercojuris.com/la-reforma-aduanera-de-la-union-europea-de-septiembre-de-2026-nuevas-reglas-para-el-comercio-electronico-y-transformacion-de-la-gestion-aduanera-prof-jose-carlos-fernandez-rozas-desde-espana/",
-        "descripcion": "La reforma del sistema aduanero de la Unión Europea, culminada a finales de septiembre de 2026, introduce una revisión de amplio alcance de las normas aplicables al comercio exterior y abre una nueva etapa en la gestión de las fronteras exteriores del mercado interior, impulsada por el crecimiento de las importaciones realizadas mediante plataformas digitales y por la necesidad de adaptar los procedimientos de control a las características de las ventas a distancia y de los pequeños envíos. Entr",
-        "fecha_publicacion": "2026-09-21T19:59:46+00:00",
-        "fuente_id": "mercojuris",
-        "fuente_nombre": "Mercojuris",
         "categoria": "Comex"
       }
     ],
