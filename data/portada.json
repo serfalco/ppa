@@ -1,160 +1,406 @@
 {
-  "generado_en": "2026-10-01T15:47:00.156610+00:00",
+  "generado_en": "2026-10-01T22:13:45.257702+00:00",
   "destacados": [
     {
-      "id": "0b8644863e73",
-      "titulo": "MetaMask sufre un incidente de seguridad en medio de una ola de ataques al ecosistema cripto",
-      "link": "https://www.iproup.com/economia-digital/71991-metamask-detecto-una-vulnerabilidad-y-activo-medidas-de-seguridad",
-      "descripcion": "El incidente no generó amenazas para usuarios, pero se suma a ataques que expusieron debilidades en plataformas y servicios cripto. Los detalles",
-      "fecha_publicacion": "2026-10-01T16:01:00+00:00",
+      "id": "2d64c2aeea2f",
+      "titulo": "Los ETF de Bitcoin frenan su racha positiva y sufren salidas por u$s150 millones en una sola jornada",
+      "link": "https://www.iproup.com/economia-digital/72000-los-etf-bitcoin-pierden-su-racha-y-sufren-salida-de-usd-150-millones",
+      "descripcion": "La caída se produjo tras una semana en la que los ETF spot de BTC acumularon más de u$s1.200 millones en ingresos netos en las últimas jornadas",
+      "fecha_publicacion": "2026-10-01T21:20:00+00:00",
       "fuente_id": "iproup_eco",
       "fuente_nombre": "iProUP Economía Digital",
       "categoria": "Mercados"
     },
     {
-      "id": "3d6630950fa9",
-      "titulo": "El riesgo país otra vez se recalienta y se acerca a los 640 puntos básicos: acciones y bonos caen con fuerza",
-      "link": "https://www.ambito.com/finanzas/con-el-riesgo-pais-encima-los-610-puntos-las-acciones-y-bonos-se-someten-la-primera-rueda-octubre-n6328875",
-      "descripcion": "Tras un mes complejo para los activos locales, por factores locales e internacionales, arranca octubre y la city ya analiza la performance que se espera.",
-      "fecha_publicacion": "2026-10-01T15:38:00+00:00",
+      "id": "1867c2ab44af",
+      "titulo": "Wall Street cerró con ganancias la primera rueda del mes, en medio de un alivio en la tasa de los bonos de EEUU",
+      "link": "https://www.ambito.com/finanzas/los-futuros-wall-street-adelantan-un-arranque-mes-al-alza-pese-la-renovada-volatilidad-los-bonos-n6328780",
+      "descripcion": "Las acciones estadounidenses se ven favorecidas por buenas perspectivas para los informes trimestrales de empresas. Aun así, se sigue observando una elevada volatilidad.",
+      "fecha_publicacion": "2026-10-01T22:01:00+00:00",
       "fuente_id": "ambito_fin",
       "fuente_nombre": "Ámbito Finanzas",
       "categoria": "Finanzas"
     },
     {
-      "id": "71e0ef6d3f94",
-      "titulo": "La actividad fabril de EE.UU. se modera en septiembre mientras los precios suben",
-      "link": "https://es.investing.com/news/economic-indicators/la-actividad-fabril-de-eeuu-se-modera-en-septiembre-mientras-los-precios-suben-3857719",
+      "id": "e721d9dc5dbf",
+      "titulo": "Putin dice que empresas occidentales podrían recuperar activos en Rusia",
+      "link": "https://es.investing.com/news/world-news/putin-dice-que-empresas-occidentales-podrian-recuperar-activos-en-rusia-93CH-3857906",
       "descripcion": "",
-      "fecha_publicacion": "2026-10-01T14:25:41+00:00",
-      "fuente_id": "investing_intl2",
-      "fuente_nombre": "Investing Mundo",
+      "fecha_publicacion": "2026-10-01T18:15:03+00:00",
+      "fuente_id": "investing_intl",
+      "fuente_nombre": "Investing Internacional",
       "categoria": "Internacional"
     }
   ],
   "secciones": {
+    "Automotor": [
+      {
+        "id": "394c52016889",
+        "titulo": "Cuánto pagan de patente desde una Ford Territory a un Fiat Cronos en CABA y Provincia",
+        "link": "https://www.iprofesional.com/autos/465537-cuanto-pagan-de-patente-desde-una-ford-territory-a-un-fiat-cronos-en-caba-y-provincia",
+        "descripcion": "Tras el anuncio porteño sobre la baja de las patentes en 2027, repasamos los costos actuales y la diferencia entre vehículos híbridos y nafteros",
+        "fecha_publicacion": "2026-10-01T22:02:00+00:00",
+        "fuente_id": "iprof_autos",
+        "fuente_nombre": "iProfesional Autos",
+        "categoria": "Automotor"
+      },
+      {
+        "id": "617220eb33b2",
+        "titulo": "Un modelo chino lidera el ranking de autos y SUV híbridos más vendidos de Argentina",
+        "link": "https://www.iprofesional.com/autos/465701-un-modelo-chino-lidera-ranking-de-autos-y-suv-hibridos-mas-vendidos",
+        "descripcion": "Con ventas que siguen cayendo en el mercado automotor, tres SUV lideran el ranking de ventas con nuevas tecnologías de propulsión y algunos modelos crecen",
+        "fecha_publicacion": "2026-10-01T19:00:00+00:00",
+        "fuente_id": "iprof_autos",
+        "fuente_nombre": "iProfesional Autos",
+        "categoria": "Automotor"
+      },
+      {
+        "id": "13358278e2d9",
+        "titulo": "Qué pasará con los precios de los autos tras los cambios en el régimen de importación",
+        "link": "https://www.iprofesional.com/autos/465700-que-pasara-con-los-precios-de-los-autos-tras-cambios-en-el-regimen-de-importacion",
+        "descripcion": "La actualización de los valores FOB que habilitan la importación de vehículos híbridos y eléctricos amplía el universo de modelos",
+        "fecha_publicacion": "2026-10-01T18:30:00+00:00",
+        "fuente_id": "iprof_autos",
+        "fuente_nombre": "iProfesional Autos",
+        "categoria": "Automotor"
+      },
+      {
+        "id": "477d61dd72f8",
+        "titulo": "Fuerte crecimiento de autos híbridos y eléctricos en septiembre en Argentina: ventas, ranking y evolución del mercado",
+        "link": "https://www.ambito.com/autos/fuerte-crecimiento-hibridos-y-electricos-septiembre-argentina-ventas-ranking-y-evolucion-del-mercado-n6328939",
+        "descripcion": "El mercado de vehículos electrificados volvió a crecer con fuerza en septiembre y ratificó el dominio de las marcas chinas. El segmento suma nuevos jugadores y consolida una competencia cada vez más directa con las automotrices tradicionales.",
+        "fecha_publicacion": "2026-10-01T16:14:00+00:00",
+        "fuente_id": "ambito_autos",
+        "fuente_nombre": "Ámbito Autos",
+        "categoria": "Automotor"
+      },
+      {
+        "id": "4203aa21cf7b",
+        "titulo": "Lo que se viene en las pick ups: híbridas, nafteras y una gama cada vez más diversa en el mercado regional",
+        "link": "https://www.ambito.com/autos/lo-que-se-viene-las-pick-ups-hibridas-nafteras-y-una-gama-cada-vez-mas-diversa-el-mercado-regional-n6328908",
+        "descripcion": "El desarrollo de variantes en uno de los modelos más vendidos del mercado marca un giro en la estrategia de producto.",
+        "fecha_publicacion": "2026-10-01T15:20:00+00:00",
+        "fuente_id": "ambito_autos",
+        "fuente_nombre": "Ámbito Autos",
+        "categoria": "Automotor"
+      },
+      {
+        "id": "70cb798d7e14",
+        "titulo": "Tras el anuncio de inversión de Toyota, qué se sabe del nuevo modelo que producirá en la Argentina",
+        "link": "https://arodarpost.com.ar/tras-el-anuncio-de-inversion-de-toyota-que-se-sabe-del-nuevo-modelo-que-producira-en-la-argentina/",
+        "descripcion": "El anunció de Toyota de realizar una inversión de u$s1.431 millones de dólares para un nuevo modelo generó un fuerte impacto en la industria automotriz, ya que se trata del mayor desembolso de una empresa en el sector. En realidad, teniendo en cuenta la actualización de los valores, hay registros de montos importantes en los [&#8230;]",
+        "fecha_publicacion": "2026-10-01T14:24:16+00:00",
+        "fuente_id": "arodar",
+        "fuente_nombre": "A Rodar Post",
+        "categoria": "Automotor"
+      },
+      {
+        "id": "a002679109e8",
+        "titulo": "Las motos mantuvieron fuerte crecimiento en septiembre y se consolidan cambios en los primeros puestos del ranking",
+        "link": "https://www.ambito.com/autos/las-motos-mantuvieron-fuerte-crecimiento-septiembre-y-se-consolidan-cambios-los-primeros-puestos-del-ranking-n6328877",
+        "descripcion": "El patentamiento de motovehículos volvió a crecer en la comparación interanual y mensual, con más de 80 mil unidades registradas.",
+        "fecha_publicacion": "2026-10-01T14:23:00+00:00",
+        "fuente_id": "ambito_autos",
+        "fuente_nombre": "Ámbito Autos",
+        "categoria": "Automotor"
+      },
+      {
+        "id": "387cd61e20e2",
+        "titulo": "Qué pasará con los precios de los autos tras los cambios en el régimen de importación de vehículos híbridos o eléctricos",
+        "link": "https://arodarpost.com.ar/que-pasara-con-los-precios-de-los-autos-tras-los-cambios-en-el-regimen-de-importacion-de-vehiculos-hibridos-o-electricos/",
+        "descripcion": "El reciente anuncio del Gobierno argentino sobre la actualización de los valores FOB para la importación de vehículos híbridos y eléctricos plantea un escenario diferente para el mercado automotor con la incógnita que genera sobre el impacto que estas modificaciones pueden tener en los precios al público. El régimen de cupos y precios de corte [&#8230;]",
+        "fecha_publicacion": "2026-10-01T11:53:47+00:00",
+        "fuente_id": "arodar",
+        "fuente_nombre": "A Rodar Post",
+        "categoria": "Automotor"
+      }
+    ],
+    "Finanzas": [
+      {
+        "id": "1867c2ab44af",
+        "titulo": "Wall Street cerró con ganancias la primera rueda del mes, en medio de un alivio en la tasa de los bonos de EEUU",
+        "link": "https://www.ambito.com/finanzas/los-futuros-wall-street-adelantan-un-arranque-mes-al-alza-pese-la-renovada-volatilidad-los-bonos-n6328780",
+        "descripcion": "Las acciones estadounidenses se ven favorecidas por buenas perspectivas para los informes trimestrales de empresas. Aun así, se sigue observando una elevada volatilidad.",
+        "fecha_publicacion": "2026-10-01T22:01:00+00:00",
+        "fuente_id": "ambito_fin",
+        "fuente_nombre": "Ámbito Finanzas",
+        "categoria": "Finanzas"
+      },
+      {
+        "id": "5463fba62228",
+        "titulo": "La recaudación impositiva se recuperó en septiembre con un crecimiento de 3,7%",
+        "link": "https://www.lanacion.com.ar/economia/la-recaudacion-impositiva-se-recupero-en-septiembre-con-un-crecimiento-de-37-nid01102026/",
+        "descripcion": "Fue impulsada por Ganancias y Derechos de exportación; también tuvo buen resultado el IVA impositivo, lo que suele tomarse como indicador de recuperación de la actividad y el consumo",
+        "fecha_publicacion": "2026-10-01T21:47:45+00:00",
+        "fuente_id": "lanacion_eco",
+        "fuente_nombre": "La Nación Economía",
+        "categoria": "Finanzas"
+      },
+      {
+        "id": "af217435d2a6",
+        "titulo": "La recaudación subió por un efecto estadístico, pero sigue estancada en términos reales",
+        "link": "https://www.iprofesional.com/economia/465719-el-iva-sube-de-a-poco-y-la-caja-de-arca-explota-por-retenciones",
+        "descripcion": "El rubro de retenciones a la exportación explotó, porque el año pasado hubo un \"tax holiday\". También Ganancias subió de forma anómala. El IVA, paso a paso",
+        "fecha_publicacion": "2026-10-01T21:47:00+00:00",
+        "fuente_id": "iprof_finanzas",
+        "fuente_nombre": "iProfesional Finanzas",
+        "categoria": "Finanzas"
+      },
+      {
+        "id": "6a6b761f4607",
+        "titulo": "El 10% de los hogares de mayores ingresos gana 13 veces más que el 10% del segmento más bajo",
+        "link": "https://www.lanacion.com.ar/economia/el-10-de-los-hogares-de-mayores-ingresos-gana-13-veces-mas-que-el-10-del-segmento-mas-bajo-nid01102026/",
+        "descripcion": "El dato surge de un informe del Indec correspondiente al segundo trimestre; hubo una leve mejora en la distribución del ingreso",
+        "fecha_publicacion": "2026-10-01T21:30:44+00:00",
+        "fuente_id": "lanacion_eco",
+        "fuente_nombre": "La Nación Economía",
+        "categoria": "Finanzas"
+      },
+      {
+        "id": "c81fc13062bb",
+        "titulo": "El BCRA compró otros u$s93 milones y la reservas volvieron a superar los u$s48.000 millones",
+        "link": "https://www.ambito.com/finanzas/el-bcra-compro-otros-us93-milones-y-la-reservas-volvieron-superar-los-us48000-millones-n6329137",
+        "descripcion": "El stock bruto subió u$s2.199 millones y cerró en u$s48.289 millones, tras revertir parte de los movimientos contables de fin de mes. La autoridad monetaria inició octubre con saldo comprador en el mercado oficial.",
+        "fecha_publicacion": "2026-10-01T21:27:00+00:00",
+        "fuente_id": "ambito_fin",
+        "fuente_nombre": "Ámbito Finanzas",
+        "categoria": "Finanzas"
+      },
+      {
+        "id": "2fae987676e4",
+        "titulo": "La fabricante de baterías Willard entró en concurso tras cerrar una de sus plantas",
+        "link": "https://www.iprofesional.com/negocios/465710-fabricante-de-baterias-willard-entro-en-concurso-y-busca-evitar-la-quiebra",
+        "descripcion": "Unionbat despidió a 101 trabajadores y dejó indemnizaciones impagas por $5.000 millones. Acumula un pasivo multimillonario y apuntó a las importaciones",
+        "fecha_publicacion": "2026-10-01T20:56:00+00:00",
+        "fuente_id": "iprof_economia",
+        "fuente_nombre": "iProfesional Economía",
+        "categoria": "Finanzas"
+      },
+      {
+        "id": "84b383f2b69d",
+        "titulo": "Fondos FAL: estiman una nueva fuente de inversión de largo plazo por hasta u$s2.000 millones",
+        "link": "https://www.ambito.com/finanzas/fondos-fal-estiman-una-nueva-fuente-inversion-largo-plazo-us2000-millones-n6329084",
+        "descripcion": "Las ALYCs esperan el lanzamiento dentro de un mes de los Fondos de Asistencia Laboral (FAL). Afirman que va a cambiar el escenario de los Fondos Comunes de Inversión.",
+        "fecha_publicacion": "2026-10-01T20:54:00+00:00",
+        "fuente_id": "ambito_fin",
+        "fuente_nombre": "Ámbito Finanzas",
+        "categoria": "Finanzas"
+      },
+      {
+        "id": "15c64cb044f0",
+        "titulo": "Cuánto hay que tener ahorrado según la edad",
+        "link": "https://www.iproup.com/finanzas/72011-cuanto-hay-que-tener-ahorrado-segun-la-edad",
+        "descripcion": "Ariel Mamani, fundador de InverArg, explica cuánto ahorro acumular a los 30, 40, 50 y 60 años en una economía difícil como la argentina",
+        "fecha_publicacion": "2026-10-01T20:40:00+00:00",
+        "fuente_id": "iproup_fintech",
+        "fuente_nombre": "iProUP Fintech",
+        "categoria": "Finanzas"
+      }
+    ],
     "Mercados": [
       {
-        "id": "0b8644863e73",
-        "titulo": "MetaMask sufre un incidente de seguridad en medio de una ola de ataques al ecosistema cripto",
-        "link": "https://www.iproup.com/economia-digital/71991-metamask-detecto-una-vulnerabilidad-y-activo-medidas-de-seguridad",
-        "descripcion": "El incidente no generó amenazas para usuarios, pero se suma a ataques que expusieron debilidades en plataformas y servicios cripto. Los detalles",
-        "fecha_publicacion": "2026-10-01T16:01:00+00:00",
+        "id": "2d64c2aeea2f",
+        "titulo": "Los ETF de Bitcoin frenan su racha positiva y sufren salidas por u$s150 millones en una sola jornada",
+        "link": "https://www.iproup.com/economia-digital/72000-los-etf-bitcoin-pierden-su-racha-y-sufren-salida-de-usd-150-millones",
+        "descripcion": "La caída se produjo tras una semana en la que los ETF spot de BTC acumularon más de u$s1.200 millones en ingresos netos en las últimas jornadas",
+        "fecha_publicacion": "2026-10-01T21:20:00+00:00",
         "fuente_id": "iproup_eco",
         "fuente_nombre": "iProUP Economía Digital",
         "categoria": "Mercados"
       },
       {
-        "id": "06792ba986a2",
-        "titulo": "La UE alerta sobre el preocupante aumento de importaciones de China",
-        "link": "https://es.investing.com/news/economy-news/la-ue-alerta-sobre-el-preocupante-aumento-de-importaciones-de-china-3857539",
+        "id": "7024f3d3fdd8",
+        "titulo": "Por qué la plataforma Denaria Argentina llega al país para defender el uso del efectivo",
+        "link": "https://www.iproup.com/economia-digital/72014-plataforma-denaria-llega-al-pais-para-defender-el-uso-del-dinero-en-efectivo",
+        "descripcion": "La plataforma llega al país para defender el efectivo: circulante real en baja, \"desiertos\" sin cajeros y un canal gratuito para denunciar comercios",
+        "fecha_publicacion": "2026-10-01T21:00:00+00:00",
+        "fuente_id": "iproup_eco",
+        "fuente_nombre": "iProUP Economía Digital",
+        "categoria": "Mercados"
+      },
+      {
+        "id": "2d8990085eba",
+        "titulo": "Citi eleva precio objetivo para Bitcoin a u$s113000 y explica qué lo llevaría a ese precio en un año",
+        "link": "https://www.iproup.com/economia-digital/71998-citi-eleva-su-precio-objetivo-para-bitcoin-a-usd-113000-en-12-meses",
+        "descripcion": "La entidad financiera explicó que la revisión al alza responde a tres factores principales que incidirían en su valor de cara al 2027",
+        "fecha_publicacion": "2026-10-01T20:00:00+00:00",
+        "fuente_id": "iproup_eco",
+        "fuente_nombre": "iProUP Economía Digital",
+        "categoria": "Mercados"
+      },
+      {
+        "id": "b9c745631c57",
+        "titulo": "El Líbano necesita reformas para asegurar un nuevo programa del FMI",
+        "link": "https://es.investing.com/news/economy-news/el-libano-necesita-reformas-para-asegurar-un-nuevo-programa-del-fmi-93CH-3857904",
         "descripcion": "",
-        "fecha_publicacion": "2026-10-01T13:21:59+00:00",
+        "fecha_publicacion": "2026-10-01T18:13:45+00:00",
         "fuente_id": "investing_economia",
         "fuente_nombre": "Investing Economía",
         "categoria": "Mercados"
       },
       {
-        "id": "d189f5cc93b5",
-        "titulo": "Kashkari (Fed) deja la puerta abierta a más subidas de tipos",
-        "link": "https://es.investing.com/news/economy-news/kashkari-fed-deja-la-puerta-abierta-a-mas-subidas-de-tipos-3857429",
+        "id": "93cf470719a4",
+        "titulo": "Los rendimientos del Tesoro de EE.UU. alcanzan máximos de varias décadas",
+        "link": "https://es.investing.com/news/economy-news/los-rendimientos-del-tesoro-de-eeuu-alcanzan-maximos-de-varias-decadas-93CH-3857894",
         "descripcion": "",
-        "fecha_publicacion": "2026-10-01T12:44:00+00:00",
+        "fecha_publicacion": "2026-10-01T18:03:21+00:00",
         "fuente_id": "investing_economia",
         "fuente_nombre": "Investing Economía",
         "categoria": "Mercados"
       },
       {
-        "id": "4470d476ab04",
-        "titulo": "Irán seguirá buscando el diálogo con EE.UU., según Pezeshkian",
-        "link": "https://es.investing.com/news/economy-news/iran-seguira-buscando-el-dialogo-con-eeuu-segun-pezeshkian-3857416",
+        "id": "8e913a06b9d0",
+        "titulo": "Kashkari (Fed) dice que harán falta más subidas de tipos, pero duda sobre este mes",
+        "link": "https://es.investing.com/news/economy-news/kashkari-fed-dice-que-haran-falta-mas-subidas-de-tipos-pero-duda-sobre-este-mes-3857888",
         "descripcion": "",
-        "fecha_publicacion": "2026-10-01T12:36:56+00:00",
+        "fecha_publicacion": "2026-10-01T17:50:31+00:00",
         "fuente_id": "investing_economia",
         "fuente_nombre": "Investing Economía",
         "categoria": "Mercados"
       }
     ],
-    "Finanzas": [
+    "Energía y Minería": [
       {
-        "id": "3d6630950fa9",
-        "titulo": "El riesgo país otra vez se recalienta y se acerca a los 640 puntos básicos: acciones y bonos caen con fuerza",
-        "link": "https://www.ambito.com/finanzas/con-el-riesgo-pais-encima-los-610-puntos-las-acciones-y-bonos-se-someten-la-primera-rueda-octubre-n6328875",
-        "descripcion": "Tras un mes complejo para los activos locales, por factores locales e internacionales, arranca octubre y la city ya analiza la performance que se espera.",
-        "fecha_publicacion": "2026-10-01T15:38:00+00:00",
-        "fuente_id": "ambito_fin",
-        "fuente_nombre": "Ámbito Finanzas",
-        "categoria": "Finanzas"
+        "id": "64f0599f922c",
+        "titulo": "Río Negro convocó a una audiencia pública en Sierra Grande por el proyecto Argentina LNG, a días de que YPF firme el FID",
+        "link": "https://econojournal.com.ar/enclave/rio-negro-audiencia-publica-sierra-grande-argentina-lng-ypf/",
+        "descripcion": "El gobierno de Río Negro convocó a una audiencia pública en Sierra Grande por el proyecto Argentina LNG que lidera YPF para exportar gas licuado desde el Golfo San Matías. La instancia será para analizar cuatro estudios de impacto ambiental vinculados a la construcción del gasoducto dedicado y poliducto que saldrán desde Vaca Muerta, un [&#8230;]",
+        "fecha_publicacion": "2026-10-01T19:27:26+00:00",
+        "fuente_id": "econojournal",
+        "fuente_nombre": "EconoJournal",
+        "categoria": "Energía y Minería"
       },
       {
-        "id": "fc1272bc04ff",
-        "titulo": "Estaciones de servicio: las tiendas de conveniencia ya explican hasta la mitad de la rentabilidad",
-        "link": "https://www.lanacion.com.ar/economia/negocios/estaciones-de-servicio-las-tiendas-de-conveniencia-ya-explican-hasta-la-mitad-de-la-rentabilidad-nid01102026/",
-        "descripcion": "Las petroleras transforman sus tiendas de conveniencia, suman gastronomía, alianzas con grandes marcas y canales digitales; en algunos puntos, más de la mitad de la rentabilidad ya proviene de negocios distintos de la venta de nafta",
-        "fecha_publicacion": "2026-10-01T15:36:22+00:00",
-        "fuente_id": "lanacion_eco",
-        "fuente_nombre": "La Nación Economía",
-        "categoria": "Finanzas"
+        "id": "e9bf673ef47b",
+        "titulo": "Argentina Week: Figueroa destacó la previsibilidad del shale de Vaca Muerta como proveedor internacional",
+        "link": "https://econojournal.com.ar/oilgas/argentina-week-figueroa-destaco-la-previsibilidad-del-shale-de-vaca-muerta-como-proveedor-internacional/",
+        "descripcion": "En un contexto de alta volatilidad en los flujos globales de energía, el gobernador de Neuquén, Rolando Figueroa, remarcó durante su participación en la Argentina Week la capacidad de Vaca Muerta para fortalecerse como un proveedor atractivo, previsible y libre de riesgos geopolíticos. Sostuvo además que el rol de Río Negro como hub exportador será [&#8230;]",
+        "fecha_publicacion": "2026-10-01T18:04:16+00:00",
+        "fuente_id": "econojournal",
+        "fuente_nombre": "EconoJournal",
+        "categoria": "Energía y Minería"
       },
       {
-        "id": "8555b59207ac",
-        "titulo": "El dólar oficial muestra una leve suba y vuelve a su valor más alto del año",
-        "link": "https://www.lanacion.com.ar/economia/dolar/el-dolar-oficial-muestra-una-leve-suba-y-vuelve-a-su-valor-mas-alto-del-ano-nid01102026/",
-        "descripcion": "Los distintos tipos de cambio borran las bajas de la rueda anterior por mayor demanda de principio de mes",
-        "fecha_publicacion": "2026-10-01T15:34:41+00:00",
-        "fuente_id": "lanacion_eco",
-        "fuente_nombre": "La Nación Economía",
-        "categoria": "Finanzas"
-      },
-      {
-        "id": "6843fdac05c6",
-        "titulo": "Luz y gas: el Gobierno oficializó los aumentos de octubre, ratificó subsidios y abrió el debate por las tarifas del agua",
-        "link": "https://www.lanacion.com.ar/economia/luz-y-gas-el-gobierno-oficializo-los-aumentos-de-octubre-ratifico-subsidios-y-abrio-el-debate-por-nid01102026/",
-        "descripcion": "Los entes reguladores fijaron subas de hasta 2,4% y convocaron a una audiencia pública para redefinir los precios de AySA; Energía mantendrá descuentos por la crisis global",
-        "fecha_publicacion": "2026-10-01T15:26:35+00:00",
-        "fuente_id": "lanacion_eco",
-        "fuente_nombre": "La Nación Economía",
-        "categoria": "Finanzas"
-      },
-      {
-        "id": "d7395835095f",
-        "titulo": "El dólar roza los $1.525 al inicio de octubre mientras la city mira de cerca la compra de reservas",
-        "link": "https://www.ambito.com/finanzas/el-dolar-abre-octubre-1517-y-la-city-mira-cerca-la-compra-reservas-n6328786",
-        "descripcion": "El dólar abre octubre al alza tras cerrar septiembre con movimientos acotados. El mayorista opera en $1.523 mientras que el blue opera en $1.560 y los financieros se mantienen por encima del oficial.",
-        "fecha_publicacion": "2026-10-01T15:25:00+00:00",
-        "fuente_id": "ambito_fin",
-        "fuente_nombre": "Ámbito Finanzas",
-        "categoria": "Finanzas"
-      },
-      {
-        "id": "317b3163137b",
-        "titulo": "Goldman Sachs retrasa a diciembre su proyección de aumento de tasa de la Fed",
-        "link": "https://www.ambito.com/finanzas/goldman-sachs-retrasa-diciembre-su-proyeccion-aumento-tasa-la-fed-n6328851",
-        "descripcion": "Una lectura de inflación menor a la esperada en agosto y la cautela de los funcionarios del banco central de EEUU redujeron las probabilidades de un ajuste en octubre, desplazando las expectativas de un incremento a diciembre.",
+        "id": "9503d4ba1bb4",
+        "titulo": "YPF confirmó que la decisión final de inversión de Argentina LNG se firmará el 26 de noviembre en París",
+        "link": "https://dataenergia.ar/gas/ypf-confirmo-que-la-decision-final-de-inversion-de-argentina-lng-se-firmara-el-26-de-noviembre-en-paris-202610112200",
+        "descripcion": "YPF anunció que el 26 de noviembre firmará en París la decisión final de inversión (FID) para el proyecto Argentina LNG junto a sus socias Eni y XRG.",
         "fecha_publicacion": "2026-10-01T15:20:00+00:00",
-        "fuente_id": "ambito_fin",
-        "fuente_nombre": "Ámbito Finanzas",
-        "categoria": "Finanzas"
+        "fuente_id": "data_energia",
+        "fuente_nombre": "Data Energía",
+        "categoria": "Energía y Minería"
       },
       {
-        "id": "fe1e1f8e9467",
-        "titulo": "Nuevas ON de Arcor: cómo invertir en dólares o pesos desde u$s100",
-        "link": "https://www.iproup.com/finanzas/71992-arcor-licita-nuevas-on-en-pesos-y-dolares-como-comprar-en-el-mercado",
-        "descripcion": "Arcor licita Obligaciones Negociables Clases 7 y 8 en dólares MEP y pesos: los detalles técnicos de la colocación y cómo operar en el mercado secundario",
-        "fecha_publicacion": "2026-10-01T15:08:00+00:00",
-        "fuente_id": "iproup_fintech",
-        "fuente_nombre": "iProUP Fintech",
-        "categoria": "Finanzas"
+        "id": "c6f5c421d92f",
+        "titulo": "Argentina Week: TotalEnergies anuncia una cartera de proyectos por US$10.000 millones en Vaca Muerta y Tierra del Fuego",
+        "link": "https://econojournal.com.ar/destacada/argentina-week-totalenergies-anuncia-una-cartera-de-proyectos-por-us10-000-millones-en-vaca-muerta-y-tierra-del-fuego/",
+        "descripcion": "El CEO de TotalEnergies, Patrick Pouyanné, reveló que la compañía definió una cartera de proyectos por US$ 10.000 millones para invertir en Vaca Muerta y Tierra del Fuego, durante su participación en el Argentina Week en París. La mayor inversión será en la provincia de Neuquén para desarrollar el shale oil en el bloque San [&#8230;]",
+        "fecha_publicacion": "2026-10-01T14:13:45+00:00",
+        "fuente_id": "econojournal",
+        "fuente_nombre": "EconoJournal",
+        "categoria": "Energía y Minería"
       },
       {
-        "id": "ae89ba134b06",
-        "titulo": "Crece la dolarización entre ahorristas y el BCRA envía una poderosa señal al mercado",
-        "link": "https://www.iprofesional.com/economia/465629-crece-la-dolarizacion-y-el-banco-central-da-una-poderosa-senal-al-mercado",
-        "descripcion": "El BCRA compró ayer u$s160 millones, la mayor compra en dos meses. En contraparte, los ahorristas aceleran las compras de dólares en los bancos",
-        "fecha_publicacion": "2026-10-01T15:00:00+00:00",
-        "fuente_id": "iprof_economia",
-        "fuente_nombre": "iProfesional Economía",
-        "categoria": "Finanzas"
+        "id": "4925bf0769f0",
+        "titulo": "El Gobierno vuelve a postergar el aumento a los combustibles para intentar amortiguar el impacto en la inflación",
+        "link": "https://dataenergia.ar/gubernamental/el-gobierno-vuelve-a-postergar-el-aumento-a-los-combustibles-para-intentar-amortiguar-el-impacto-en-la-inflacion-202693017390",
+        "descripcion": "A través del Decreto 1126/2026, el Poder Ejecutivo postergó hasta noviembre la actualización del Impuesto a los Combustibles Líquidos y al Dióxido de Carbono para evitar un nuevo aumento en las estaciones de servicio durante octubre.",
+        "fecha_publicacion": "2026-09-30T20:39:00+00:00",
+        "fuente_id": "data_energia",
+        "fuente_nombre": "Data Energía",
+        "categoria": "Energía y Minería"
+      },
+      {
+        "id": "b44e3d35e834",
+        "titulo": "Transparencia: EITI Argentina amplía su reporte para reflejar la contribución de los proyectos mineros antes de producir",
+        "link": "https://caem.com.ar/transparencia-eiti-argentina-amplia-su-reporte-para-reflejar-la-contribucion-de-los-proyectos-mineros-antes-de-producir/",
+        "descripcion": "La minería comienza a generar valor para la economía mucho antes de que una mina entre en producción. Esa es una de las principales conclusiones del reciente Informe de Alcance, Materialidad y Divulgación Sistemática realizado para EITI Argentina. EITI (Iniciativa para... The post Transparencia: EITI Argentina amplía su reporte para reflejar la contribución de los proyectos mineros antes de producir first appeared on CAEM .",
+        "fecha_publicacion": "2026-09-30T19:32:22+00:00",
+        "fuente_id": "caem",
+        "fuente_nombre": "CAEM",
+        "categoria": "Energía y Minería"
+      },
+      {
+        "id": "af73ee42f94d",
+        "titulo": "Las exportaciones mineras alcanzaron un récord de u$s 6.059 millones al octavo mes del año y rozan el total anual de 2025",
+        "link": "https://dataenergia.ar/mineria/las-exportaciones-mineras-alcanzaron-un-record-de-u-s-6-059-millones-al-octavo-mes-del-ano-y-rozan-el-total-anual-de-2025-202693016290",
+        "descripcion": "Las exportaciones mineras argentinas acumularon u$s 6.059 millones entre enero y agosto de 2026, logrando un crecimiento interanual del 65,7% y quedando al borde de superar el récord histórico anual de u$s 6.074 millones alcanzado en todo 2025.",
+        "fecha_publicacion": "2026-09-30T19:29:00+00:00",
+        "fuente_id": "data_energia",
+        "fuente_nombre": "Data Energía",
+        "categoria": "Energía y Minería"
+      },
+      {
+        "id": "d54676fbec8f",
+        "titulo": "Récord exportador y máximos históricos de inversión: la minería argentina consolida su nuevo ciclo",
+        "link": "https://caem.com.ar/record-exportador-y-maximos-historicos-de-inversion-la-mineria-argentina-consolida-su-nuevo-ciclo/",
+        "descripcion": "Las exportaciones mineras argentinas totalizaron US$ 4.742 millones en la primera mitad de 2026. Se trata del máximo nivel exportador registrado para un primer semestre desde que existen estadísticas comparables para la minería argentina. De esta manera, se registra una... The post Récord exportador y máximos históricos de inversión: la minería argentina consolida su nuevo ciclo first appeared on CAEM .",
+        "fecha_publicacion": "2026-09-14T19:03:41+00:00",
+        "fuente_id": "caem",
+        "fuente_nombre": "CAEM",
+        "categoria": "Energía y Minería"
+      }
+    ],
+    "Internacional": [
+      {
+        "id": "e721d9dc5dbf",
+        "titulo": "Putin dice que empresas occidentales podrían recuperar activos en Rusia",
+        "link": "https://es.investing.com/news/world-news/putin-dice-que-empresas-occidentales-podrian-recuperar-activos-en-rusia-93CH-3857906",
+        "descripcion": "",
+        "fecha_publicacion": "2026-10-01T18:15:03+00:00",
+        "fuente_id": "investing_intl",
+        "fuente_nombre": "Investing Internacional",
+        "categoria": "Internacional"
+      },
+      {
+        "id": "d908cb9de29d",
+        "titulo": "La inflación en Perú se acelera al 4,55% en septiembre por los costes energéticos",
+        "link": "https://es.investing.com/news/world-news/la-inflacion-en-peru-se-acelera-al-455-en-septiembre-por-los-costes-energeticos-3857776",
+        "descripcion": "",
+        "fecha_publicacion": "2026-10-01T15:18:06+00:00",
+        "fuente_id": "investing_intl",
+        "fuente_nombre": "Investing Internacional",
+        "categoria": "Internacional"
+      },
+      {
+        "id": "71e0ef6d3f94",
+        "titulo": "La actividad fabril de EE.UU. se modera en septiembre mientras los precios suben",
+        "link": "https://es.investing.com/news/economic-indicators/la-actividad-fabril-de-eeuu-se-modera-en-septiembre-mientras-los-precios-suben-3857719",
+        "descripcion": "",
+        "fecha_publicacion": "2026-10-01T14:25:41+00:00",
+        "fuente_id": "investing_intl2",
+        "fuente_nombre": "Investing Mundo",
+        "categoria": "Internacional"
+      },
+      {
+        "id": "bfebc22b8d01",
+        "titulo": "El crecimiento manufacturero del Reino Unido repunta con el alza de precios",
+        "link": "https://es.investing.com/news/economic-indicators/el-crecimiento-manufacturero-del-reino-unido-avanza-mientras-suben-precios-3856946",
+        "descripcion": "",
+        "fecha_publicacion": "2026-10-01T10:20:18+00:00",
+        "fuente_id": "investing_intl2",
+        "fuente_nombre": "Investing Mundo",
+        "categoria": "Internacional"
+      },
+      {
+        "id": "c8b39fb94ea9",
+        "titulo": "La tasa de desempleo de Italia sube al 6,2% en agosto",
+        "link": "https://es.investing.com/news/economic-indicators/la-tasa-de-desempleo-de-italia-sube-al-62-en-agosto-93CH-3856647",
+        "descripcion": "",
+        "fecha_publicacion": "2026-10-01T08:22:26+00:00",
+        "fuente_id": "investing_intl2",
+        "fuente_nombre": "Investing Mundo",
+        "categoria": "Internacional"
+      },
+      {
+        "id": "e4fe7d474832",
+        "titulo": "Fitch confirma la calificación ’BB+’ de Paraguay con perspectiva positiva",
+        "link": "https://es.investing.com/news/world-news/fitch-confirma-la-calificacion-bb-de-paraguay-con-perspectiva-positiva-3856281",
+        "descripcion": "",
+        "fecha_publicacion": "2026-09-30T21:21:28+00:00",
+        "fuente_id": "investing_intl",
+        "fuente_nombre": "Investing Internacional",
+        "categoria": "Internacional"
       }
     ],
     "Fulbito": [
@@ -187,88 +433,6 @@
         "fuente_id": "est_0221",
         "fuente_nombre": "0221 Estudiantes",
         "categoria": "Fulbito"
-      }
-    ],
-    "Energía y Minería": [
-      {
-        "id": "9503d4ba1bb4",
-        "titulo": "YPF confirmó que la decisión final de inversión de Argentina LNG se firmará el 26 de noviembre en París",
-        "link": "https://dataenergia.ar/gas/ypf-confirmo-que-la-decision-final-de-inversion-de-argentina-lng-se-firmara-el-26-de-noviembre-en-paris-202610112200",
-        "descripcion": "YPF anunció que el 26 de noviembre firmará en París la decisión final de inversión (FID) para el proyecto Argentina LNG junto a sus socias Eni y XRG.",
-        "fecha_publicacion": "2026-10-01T15:20:00+00:00",
-        "fuente_id": "data_energia",
-        "fuente_nombre": "Data Energía",
-        "categoria": "Energía y Minería"
-      },
-      {
-        "id": "c6f5c421d92f",
-        "titulo": "Argentina Week: TotalEnergies anuncia una cartera de proyectos por US$10.000 millones en Vaca Muerta y Tierra del Fuego",
-        "link": "https://econojournal.com.ar/destacada/argentina-week-totalenergies-anuncia-una-cartera-de-proyectos-por-us10-000-millones-en-vaca-muerta-y-tierra-del-fuego/",
-        "descripcion": "El CEO de TotalEnergies, Patrick Pouyanné, reveló que la compañía definió una cartera de proyectos por US$ 10.000 millones para invertir en Vaca Muerta y Tierra del Fuego, durante su participación en el Argentina Week en París. La mayor inversión será en la provincia de Neuquén para desarrollar el shale oil en el bloque San [&#8230;]",
-        "fecha_publicacion": "2026-10-01T14:13:45+00:00",
-        "fuente_id": "econojournal",
-        "fuente_nombre": "EconoJournal",
-        "categoria": "Energía y Minería"
-      },
-      {
-        "id": "99edf14511e7",
-        "titulo": "Aval de diputados al acuerdo con petroleras para financiar rutas en Vaca Muerta, con rechazo del kirchnerismo y la izquierda",
-        "link": "https://econojournal.com.ar/enclave/aval-de-diputados-acuerdo-con-petroleras-rutas-en-vaca-muerta/",
-        "descripcion": "La comisión de Hidrocarburos y Energía de la Legislatura de Neuquén dio despacho por mayoría este miércoles al acuerdo firmado por Rolando Figueroa con 15 operadoras para financiar rutas en Vaca Muerta. Se trata de la segunda iniciativa de este tipo que encara el gobierno con la industria, aunque esta vez generó debate el uso [&#8230;]",
-        "fecha_publicacion": "2026-09-30T21:11:57+00:00",
-        "fuente_id": "econojournal",
-        "fuente_nombre": "EconoJournal",
-        "categoria": "Energía y Minería"
-      },
-      {
-        "id": "4925bf0769f0",
-        "titulo": "El Gobierno vuelve a postergar el aumento a los combustibles para intentar amortiguar el impacto en la inflación",
-        "link": "https://dataenergia.ar/gubernamental/el-gobierno-vuelve-a-postergar-el-aumento-a-los-combustibles-para-intentar-amortiguar-el-impacto-en-la-inflacion-202693017390",
-        "descripcion": "A través del Decreto 1126/2026, el Poder Ejecutivo postergó hasta noviembre la actualización del Impuesto a los Combustibles Líquidos y al Dióxido de Carbono para evitar un nuevo aumento en las estaciones de servicio durante octubre.",
-        "fecha_publicacion": "2026-09-30T20:39:00+00:00",
-        "fuente_id": "data_energia",
-        "fuente_nombre": "Data Energía",
-        "categoria": "Energía y Minería"
-      },
-      {
-        "id": "7ea480df678e",
-        "titulo": "Vaca Muerta: DLS anunció que ya se encuentran operativos los nuevos equipos de perforación de YPF",
-        "link": "https://econojournal.com.ar/actualidad-mineria-energia/vaca-muerta-dls-anuncio-que-ya-se-encuentran-operativos-los-nuevos-equipos-de-perforacion-de-ypf/",
-        "descripcion": "En tiempo récord, los equipos de perforación Súper High Spec ya se encuentran operando plenamente para YPF en Vaca Muerta, según confirmó DLS Archer, la empresa líder en soluciones para desarrollos no convencionales, responsable de la integración de las unidades DLS-175 y DLS-176 a la flota local. La incorporación de las dos unidades resulta de [&#8230;]",
-        "fecha_publicacion": "2026-09-30T19:50:55+00:00",
-        "fuente_id": "econojournal",
-        "fuente_nombre": "EconoJournal",
-        "categoria": "Energía y Minería"
-      },
-      {
-        "id": "b44e3d35e834",
-        "titulo": "Transparencia: EITI Argentina amplía su reporte para reflejar la contribución de los proyectos mineros antes de producir",
-        "link": "https://caem.com.ar/transparencia-eiti-argentina-amplia-su-reporte-para-reflejar-la-contribucion-de-los-proyectos-mineros-antes-de-producir/",
-        "descripcion": "La minería comienza a generar valor para la economía mucho antes de que una mina entre en producción. Esa es una de las principales conclusiones del reciente Informe de Alcance, Materialidad y Divulgación Sistemática realizado para EITI Argentina. EITI (Iniciativa para... The post Transparencia: EITI Argentina amplía su reporte para reflejar la contribución de los proyectos mineros antes de producir first appeared on CAEM .",
-        "fecha_publicacion": "2026-09-30T19:32:22+00:00",
-        "fuente_id": "caem",
-        "fuente_nombre": "CAEM",
-        "categoria": "Energía y Minería"
-      },
-      {
-        "id": "af73ee42f94d",
-        "titulo": "Las exportaciones mineras alcanzaron un récord de u$s 6.059 millones al octavo mes del año y rozan el total anual de 2025",
-        "link": "https://dataenergia.ar/mineria/las-exportaciones-mineras-alcanzaron-un-record-de-u-s-6-059-millones-al-octavo-mes-del-ano-y-rozan-el-total-anual-de-2025-202693016290",
-        "descripcion": "Las exportaciones mineras argentinas acumularon u$s 6.059 millones entre enero y agosto de 2026, logrando un crecimiento interanual del 65,7% y quedando al borde de superar el récord histórico anual de u$s 6.074 millones alcanzado en todo 2025.",
-        "fecha_publicacion": "2026-09-30T19:29:00+00:00",
-        "fuente_id": "data_energia",
-        "fuente_nombre": "Data Energía",
-        "categoria": "Energía y Minería"
-      },
-      {
-        "id": "d54676fbec8f",
-        "titulo": "Récord exportador y máximos históricos de inversión: la minería argentina consolida su nuevo ciclo",
-        "link": "https://caem.com.ar/record-exportador-y-maximos-historicos-de-inversion-la-mineria-argentina-consolida-su-nuevo-ciclo/",
-        "descripcion": "Las exportaciones mineras argentinas totalizaron US$ 4.742 millones en la primera mitad de 2026. Se trata del máximo nivel exportador registrado para un primer semestre desde que existen estadísticas comparables para la minería argentina. De esta manera, se registra una... The post Récord exportador y máximos históricos de inversión: la minería argentina consolida su nuevo ciclo first appeared on CAEM .",
-        "fecha_publicacion": "2026-09-14T19:03:41+00:00",
-        "fuente_id": "caem",
-        "fuente_nombre": "CAEM",
-        "categoria": "Energía y Minería"
       }
     ],
     "Agro": [
@@ -365,6 +529,16 @@
         "categoria": "Laboral"
       },
       {
+        "id": "af961c76f608",
+        "titulo": "Uno por uno, los gremios que cobrarán aumento de sueldo en octubre 2026",
+        "link": "https://www.iprofesional.com/management/465269-uno-por-uno-los-gremios-que-cobraran-aumento-de-sueldo-en-octubre-2026",
+        "descripcion": "Los gremios más fuertes ya negociaron la pauta salarial hasta febrero 2027, para retomar la paritaria después del receso de verano",
+        "fecha_publicacion": "2026-10-01T14:40:00+00:00",
+        "fuente_id": "iprof_management",
+        "fuente_nombre": "iProfesional Management",
+        "categoria": "Laboral"
+      },
+      {
         "id": "996ec5be6fac",
         "titulo": "Tras los aumentos, cuánto cobra un cajero de Coto y Carrefour en octubre de 2026",
         "link": "https://www.iprofesional.com/management/465063-cuanto-gana-un-cajero-de-coto-y-carrefour-en-octubre-de-2026",
@@ -403,150 +577,6 @@
         "fuente_id": "oit_podcast",
         "fuente_nombre": "OIT Podcast",
         "categoria": "Laboral"
-      }
-    ],
-    "Internacional": [
-      {
-        "id": "71e0ef6d3f94",
-        "titulo": "La actividad fabril de EE.UU. se modera en septiembre mientras los precios suben",
-        "link": "https://es.investing.com/news/economic-indicators/la-actividad-fabril-de-eeuu-se-modera-en-septiembre-mientras-los-precios-suben-3857719",
-        "descripcion": "",
-        "fecha_publicacion": "2026-10-01T14:25:41+00:00",
-        "fuente_id": "investing_intl2",
-        "fuente_nombre": "Investing Mundo",
-        "categoria": "Internacional"
-      },
-      {
-        "id": "bfebc22b8d01",
-        "titulo": "El crecimiento manufacturero del Reino Unido repunta con el alza de precios",
-        "link": "https://es.investing.com/news/economic-indicators/el-crecimiento-manufacturero-del-reino-unido-avanza-mientras-suben-precios-3856946",
-        "descripcion": "",
-        "fecha_publicacion": "2026-10-01T10:20:18+00:00",
-        "fuente_id": "investing_intl2",
-        "fuente_nombre": "Investing Mundo",
-        "categoria": "Internacional"
-      },
-      {
-        "id": "c8b39fb94ea9",
-        "titulo": "La tasa de desempleo de Italia sube al 6,2% en agosto",
-        "link": "https://es.investing.com/news/economic-indicators/la-tasa-de-desempleo-de-italia-sube-al-62-en-agosto-93CH-3856647",
-        "descripcion": "",
-        "fecha_publicacion": "2026-10-01T08:22:26+00:00",
-        "fuente_id": "investing_intl2",
-        "fuente_nombre": "Investing Mundo",
-        "categoria": "Internacional"
-      },
-      {
-        "id": "e4fe7d474832",
-        "titulo": "Fitch confirma la calificación ’BB+’ de Paraguay con perspectiva positiva",
-        "link": "https://es.investing.com/news/world-news/fitch-confirma-la-calificacion-bb-de-paraguay-con-perspectiva-positiva-3856281",
-        "descripcion": "",
-        "fecha_publicacion": "2026-09-30T21:21:28+00:00",
-        "fuente_id": "investing_intl",
-        "fuente_nombre": "Investing Internacional",
-        "categoria": "Internacional"
-      },
-      {
-        "id": "3f8f6c206402",
-        "titulo": "El Parlamento suizo exige aprobación cantonal para el acuerdo con la UE",
-        "link": "https://es.investing.com/news/world-news/el-parlamento-suizo-exige-aprobacion-cantonal-para-el-acuerdo-con-la-ue-93CH-3856081",
-        "descripcion": "",
-        "fecha_publicacion": "2026-09-30T17:30:00+00:00",
-        "fuente_id": "investing_intl",
-        "fuente_nombre": "Investing Internacional",
-        "categoria": "Internacional"
-      },
-      {
-        "id": "12a6a15c97a8",
-        "titulo": "Mozambique mantiene los tipos de interés en el 9,25% ante riesgos inflacionarios",
-        "link": "https://es.investing.com/news/world-news/mozambique-mantiene-los-tipos-de-interes-en-el-925-ante-riesgos-inflacionarios-3855971",
-        "descripcion": "",
-        "fecha_publicacion": "2026-09-30T15:23:03+00:00",
-        "fuente_id": "investing_intl",
-        "fuente_nombre": "Investing Internacional",
-        "categoria": "Internacional"
-      }
-    ],
-    "Automotor": [
-      {
-        "id": "70cb798d7e14",
-        "titulo": "Tras el anuncio de inversión de Toyota, qué se sabe del nuevo modelo que producirá en la Argentina",
-        "link": "https://arodarpost.com.ar/tras-el-anuncio-de-inversion-de-toyota-que-se-sabe-del-nuevo-modelo-que-producira-en-la-argentina/",
-        "descripcion": "El anunció de Toyota de realizar una inversión de u$s1.431 millones de dólares para un nuevo modelo generó un fuerte impacto en la industria automotriz, ya que se trata del mayor desembolso de una empresa en el sector. En realidad, teniendo en cuenta la actualización de los valores, hay registros de montos importantes en los [&#8230;]",
-        "fecha_publicacion": "2026-10-01T14:24:16+00:00",
-        "fuente_id": "arodar",
-        "fuente_nombre": "A Rodar Post",
-        "categoria": "Automotor"
-      },
-      {
-        "id": "deab744d3e1e",
-        "titulo": "Honda Wave lider los 10 modelos de motos más vendidos de septiembre",
-        "link": "https://www.iprofesional.com/autos/465665-cuales-fueron-las-motos-mas-vendidas-en-septiembre-2026",
-        "descripcion": "Con ventas que crecen un 35% interanual, el sector está en un gran momento y son varios los modelos que registran subas. Los detalles",
-        "fecha_publicacion": "2026-10-01T12:03:00+00:00",
-        "fuente_id": "iprof_autos",
-        "fuente_nombre": "iProfesional Autos",
-        "categoria": "Automotor"
-      },
-      {
-        "id": "387cd61e20e2",
-        "titulo": "Qué pasará con los precios de los autos tras los cambios en el régimen de importación de vehículos híbridos o eléctricos",
-        "link": "https://arodarpost.com.ar/que-pasara-con-los-precios-de-los-autos-tras-los-cambios-en-el-regimen-de-importacion-de-vehiculos-hibridos-o-electricos/",
-        "descripcion": "El reciente anuncio del Gobierno argentino sobre la actualización de los valores FOB para la importación de vehículos híbridos y eléctricos plantea un escenario diferente para el mercado automotor con la incógnita que genera sobre el impacto que estas modificaciones pueden tener en los precios al público. El régimen de cupos y precios de corte [&#8230;]",
-        "fecha_publicacion": "2026-10-01T11:53:47+00:00",
-        "fuente_id": "arodar",
-        "fuente_nombre": "A Rodar Post",
-        "categoria": "Automotor"
-      },
-      {
-        "id": "8a511496534c",
-        "titulo": "Toyota cada vez más cerca de fabricar Hilux híbrida y eléctrica en Argentina",
-        "link": "https://motorwebargentina.com/toyota-hilux-hibrida-argentina-2027/",
-        "descripcion": "Con la mayor inversión en la historia de la industria automotriz argentina, de 1.300 millones de dólares, Toyota Argentina consiguió la aprobación del Comité Evaluador del RIGI para producir un automóvil electrificado en el país. Si bien la marca no lo confirma, este nuevo modelo electrificado no es más que la Nueva Toyota Hilux, que [&#8230;] La entrada Toyota cada vez más cerca de fabricar Hilux híbrida y eléctrica en Argentina se publicó primero en Motorweb Argentina .",
-        "fecha_publicacion": "2026-10-01T09:55:59+00:00",
-        "fuente_id": "motorweb",
-        "fuente_nombre": "Motorweb Argentina",
-        "categoria": "Automotor"
-      },
-      {
-        "id": "7dd8d64a94fe",
-        "titulo": "Los 0km más vendidos de Argentina en septiembre de 2026",
-        "link": "https://noticias.autocosmos.com.ar/2026/10/01/los-0km-mas-vendidos-de-argentina-en-septiembre-de-2026",
-        "descripcion": "Hay una mejora respecto del mes anterior, pero sigue cayendo la venta de autos en el país.",
-        "fecha_publicacion": "2026-10-01T00:00:00+00:00",
-        "fuente_id": "autocosmos",
-        "fuente_nombre": "Autocosmos Argentina",
-        "categoria": "Automotor"
-      },
-      {
-        "id": "7c6d58866ffc",
-        "titulo": "Las marcas de autos más vendedoras de Argentina en septiembre de 2026",
-        "link": "https://noticias.autocosmos.com.ar/2026/10/01/las-marcas-de-autos-mas-vendedoras-de-argentina-en-septiembre-de-2026",
-        "descripcion": "Los patentamientos mejoran, pero sigue la caída del mercado respecto del año pasado y estas son las automotrices que más venden en nuestro país.",
-        "fecha_publicacion": "2026-10-01T00:00:00+00:00",
-        "fuente_id": "autocosmos",
-        "fuente_nombre": "Autocosmos Argentina",
-        "categoria": "Automotor"
-      },
-      {
-        "id": "2ac391f586c0",
-        "titulo": "Las pickup más vendedoras de Argentina en septiembre de 2026",
-        "link": "https://noticias.autocosmos.com.ar/2026/10/01/las-pickup-mas-vendedoras-de-argentina-en-septiembre-de-2026",
-        "descripcion": "Argentina es un país “pickapero”, pero de tres camionetas ¿y el resto?",
-        "fecha_publicacion": "2026-10-01T00:00:00+00:00",
-        "fuente_id": "autocosmos",
-        "fuente_nombre": "Autocosmos Argentina",
-        "categoria": "Automotor"
-      },
-      {
-        "id": "65ff38b2d483",
-        "titulo": "Vuelven a caer las ventas de 0Km y Ford suma dos modelos al ranking de autos más vendidos",
-        "link": "https://www.iprofesional.com/autos/465635-ford-suma-dos-modelos-al-ranking-de-autos-mas-vendidos",
-        "descripcion": "Septiembre dejó otro mes preocupante para el sector automotor, con una caída interanual de casi 11,5%. Así quedó el ranking modelo por modelo",
-        "fecha_publicacion": "2026-09-30T23:45:00+00:00",
-        "fuente_id": "iprof_autos",
-        "fuente_nombre": "iProfesional Autos",
-        "categoria": "Automotor"
       }
     ],
     "Fiscal": [
