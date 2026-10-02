@@ -1,19 +1,19 @@
 {
-  "generado_en": "2026-10-01T23:52:27.397739+00:00",
-  "generado_ar": "01/10/2026 20:52",
+  "generado_en": "2026-10-02T15:09:17.804144+00:00",
+  "generado_ar": "02/10/2026 12:09",
   "hechos": [
     {
       "slug": "brecha-dolar",
       "categoria": "Cambiario",
-      "titulo": "La brecha del dólar quedó casi planchada: 0,7%",
-      "bajada": "El MEP ($1.556) frente al oficial ($1.545). Además, el CCL marca 5,2% y el blue, 0,6%.",
+      "titulo": "La brecha del dólar quedó casi planchada: 0,5%",
+      "bajada": "El MEP ($1.553) frente al oficial ($1.545). Además, el CCL marca 4,9% y el blue, 0,6%.",
       "dato": {
-        "n": "0,7%",
+        "n": "0,5%",
         "txt": "Brecha entre el dólar MEP y el oficial"
       },
       "cuerpo": [
-        "El dólar oficial cerró a $1.545 para la venta y el MEP a $1.556, dejando una brecha de 0,7% entre ambos.",
-        "Mirando el resto de las cotizaciones, el contado con liquidación ($1.625) marca 5,2% y el blue ($1.555) queda en 0,6% de brecha contra el oficial."
+        "El dólar oficial cerró a $1.545 para la venta y el MEP a $1.553, dejando una brecha de 0,5% entre ambos.",
+        "Mirando el resto de las cotizaciones, el contado con liquidación ($1.621) marca 4,9% y el blue ($1.555) queda en 0,6% de brecha contra el oficial."
       ],
       "tabla": [
         [
@@ -26,11 +26,11 @@
         ],
         [
           "MEP",
-          "$1.556"
+          "$1.553"
         ],
         [
           "CCL",
-          "$1.625"
+          "$1.621"
         ],
         [
           "Blue",
@@ -41,11 +41,11 @@
           "$2.008"
         ]
       ],
-      "metodo": "Brecha = (MEP ÷ Oficial − 1) × 100 = (1.556 ÷ 1.545 − 1) × 100 = 0,7%.",
+      "metodo": "Brecha = (MEP ÷ Oficial − 1) × 100 = (1.553 ÷ 1.545 − 1) × 100 = 0,5%.",
       "criollo": "La brecha es cuánto más caro está el dólar financiero (el que se compra con bonos) que el oficial. Cuando es chica, los dos precios casi se tocan.",
       "fuente_nombre": "DolarApi · cálculo PPA",
       "fuente_url": "https://dolarapi.com",
-      "dato_fecha": "01/10/2026 20:52",
+      "dato_fecha": "02/10/2026 12:09",
       "prioridad": 90
     },
     {
@@ -69,58 +69,39 @@
     {
       "slug": "riesgo-pais",
       "categoria": "Deuda",
-      "titulo": "El riesgo país cerró en 607 puntos",
-      "bajada": "El indicador quedó en 607 puntos básicos, sin cambios relevantes frente al día previo.",
+      "titulo": "El riesgo país subió a 636 puntos",
+      "bajada": "El indicador quedó en 636 puntos básicos, un alza del 4,8% frente al día previo.",
       "dato": {
-        "n": "607",
-        "txt": "puntos básicos · +0,0% en el día"
+        "n": "636",
+        "txt": "puntos básicos · +4,8% en el día"
       },
       "cuerpo": [
-        "El riesgo país cerró en 607 puntos básicos, sin cambios relevantes frente al día previo. El indicador mide la sobretasa que paga la deuda argentina por encima de los bonos del Tesoro de Estados Unidos.",
-        "En números redondos, 607 puntos equivalen a 6,1% de interés extra sobre lo que paga Estados Unidos por endeudarse."
+        "El riesgo país cerró en 636 puntos básicos, un alza del 4,8% frente al día previo. El indicador mide la sobretasa que paga la deuda argentina por encima de los bonos del Tesoro de Estados Unidos.",
+        "En números redondos, 636 puntos equivalen a 6,4% de interés extra sobre lo que paga Estados Unidos por endeudarse."
       ],
       "criollo": "Es como el puntaje crediticio del país. Si sube, pedir plata prestada afuera se encarece; si baja, se abarata.",
       "fuente_nombre": "argentinadatos.com",
       "fuente_url": "https://argentinadatos.com",
-      "dato_fecha": "30/09/2026",
+      "dato_fecha": "01/10/2026",
       "prioridad": 85
-    },
-    {
-      "slug": "inflacion-ipc",
-      "categoria": "Inflación",
-      "titulo": "El IPC marcó 1,6% mensual, con el núcleo en 1,9%",
-      "bajada": "Último dato del índice de precios.",
-      "dato": {
-        "n": "1,6%",
-        "txt": "IPC mensual · núcleo 1,9%"
-      },
-      "cuerpo": [
-        "El último IPC nacional registró una variación mensual del 1,6%.",
-        "El componente núcleo — que excluye precios estacionales y regulados y suele marcar la tendencia de fondo — avanzó 1,9%, por encima del índice general."
-      ],
-      "criollo": "El IPC general mide todo. El núcleo saca lo que sube o baja por temporada o por decisión del Estado, para mostrar la inflación de fondo.",
-      "fuente_nombre": "INDEC · datos.gob.ar",
-      "fuente_url": "https://www.indec.gob.ar",
-      "dato_fecha": "01/08/2026",
-      "prioridad": 80
     },
     {
       "slug": "banda-cambiaria",
       "categoria": "Banda cambiaria",
       "titulo": "El dólar mayorista corre al 65% de la banda",
-      "bajada": "Con piso en $711 y techo en $1.958, el mayorista ($1.523) se ubica en el canal.",
+      "bajada": "Con piso en $711 y techo en $1.960, el mayorista ($1.523) se ubica en el canal.",
       "dato": {
         "n": "65%",
         "txt": "posición del mayorista dentro del canal piso–techo"
       },
       "cuerpo": [
-        "Bajo el esquema de bandas del Banco Central, el piso se desliza a $711 y el techo a $1.958. El dólar mayorista ($1.523) se ubica al 65,1% del recorrido entre ambos."
+        "Bajo el esquema de bandas del Banco Central, el piso se desliza a $711 y el techo a $1.960. El dólar mayorista ($1.523) se ubica al 65,0% del recorrido entre ambos."
       ],
-      "metodo": "Posición = (Mayorista − Piso) ÷ (Techo − Piso) × 100 = (1.523 − 711) ÷ (1.958 − 711) × 100 = 65,1%.",
+      "metodo": "Posición = (Mayorista − Piso) ÷ (Techo − Piso) × 100 = (1.523 − 711) ÷ (1.960 − 711) × 100 = 65,0%.",
       "criollo": "El BCRA deja flotar el dólar dentro de un pasillo. Si se pega al techo hay más presión de suba; si se va al piso, lo contrario.",
       "fuente_nombre": "cálculo PPA (esquema BCRA)",
       "fuente_url": "https://www.bcra.gob.ar",
-      "dato_fecha": "01/10/2026 20:52",
+      "dato_fecha": "02/10/2026 12:09",
       "prioridad": 75
     }
   ]
