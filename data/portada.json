@@ -1,5 +1,5 @@
 {
-  "generado_en": "2026-10-06T22:09:00.709509+00:00",
+  "generado_en": "2026-10-06T23:46:26.978123+00:00",
   "destacados": [
     {
       "id": "9bcab48ceb5c",
@@ -12,13 +12,13 @@
       "categoria": "Mercados"
     },
     {
-      "id": "b53fc32a12c9",
-      "titulo": "Doce bancos calificaron este mes para dar crédito hipotecario con dinero del FGS",
-      "link": "https://www.lanacion.com.ar/economia/doce-bancos-calificaron-este-mes-para-dar-credito-hipotecario-con-dinero-del-fgs-nid06102026/",
-      "descripcion": "Pagarán a ese organismo por sus plazos fijos entre 4 y 15 puntos básicos menos que lo pactado hace un mes, lo que abre la puerta a un posible nuevo reacomodamiento a la baja de los préstamos",
-      "fecha_publicacion": "2026-10-06T22:03:21+00:00",
-      "fuente_id": "lanacion_eco",
-      "fuente_nombre": "La Nación Economía",
+      "id": "2199b21a9495",
+      "titulo": "Con guiño de Bessent, Caputo responde a economistas que niegan la \"bazuka de dólares\"",
+      "link": "https://www.iprofesional.com/economia/466037-guino-de-bessent-para-que-caputo-confirme-bazuka-de-dolares",
+      "descripcion": "El secretario del US Treasury confirmó la vigencia del swap, justo cuando los analistas acusaban al gobierno de exagerar su \"poder de fuego\" para 2027",
+      "fecha_publicacion": "2026-10-06T23:22:00+00:00",
+      "fuente_id": "iprof_economia",
+      "fuente_nombre": "iProfesional Economía",
       "categoria": "Finanzas"
     },
     {
@@ -33,86 +33,368 @@
     }
   ],
   "secciones": {
+    "Agro": [
+      {
+        "id": "1ec91ec87f25",
+        "titulo": "¡Se les pudrió todo a los productores estadounidenses de soja! (literal: no en sentido figurado)",
+        "link": "https://bichosdecampo.com/se-les-pudrio-todo-a-los-productores-estadounidenses-de-soja-literal-no-en-sentido-figurado/",
+        "descripcion": "Las lluvias torrenciales que aseguraron buenos rendimientos de soja en gran parte de EE.UU. se extendieron por demás y ahora están generando preocupación al momento de observar la calidad del grano recolectado. Las redes sociales se vienen colmando de publicaciones realizadas por productores y agrónomos de sectores del norte de la zona núcleo agrícola estadounidense, [&#8230;]",
+        "fecha_publicacion": "2026-10-06T23:27:14+00:00",
+        "fuente_id": "bichos_campo",
+        "fuente_nombre": "Bichos de Campo",
+        "categoria": "Agro"
+      },
+      {
+        "id": "4a21f3a33648",
+        "titulo": "Los yerbateros misioneros aumentan la presión y reclaman a Diputados que rechace el DNU 70/2023: Según dicen, “serán infames traidores a la patria” quienes no lo hagan",
+        "link": "https://bichosdecampo.com/los-yerbateros-misioneros-aumentan-la-presion-y-reclaman-a-diputados-que-rechace-el-dnu-70-2023-segun-dicen-seran-infames-traidores-a-la-patria-quienes-no-lo-hagan/",
+        "descripcion": "La disputa por la yerba mate vuelve a cruzarse con una discusión mucho más amplia sobre el alcance del DNU 70/2023. Productores y tareferos de Misiones presentaron este martes un documento ante la Cámara de Diputados de la Nación en el que reclaman el “inmediato rechazo” del decreto y ponen bajo la lupa dos de [&#8230;]",
+        "fecha_publicacion": "2026-10-06T21:36:47+00:00",
+        "fuente_id": "bichos_campo",
+        "fuente_nombre": "Bichos de Campo",
+        "categoria": "Agro"
+      },
+      {
+        "id": "51b7d2a0824e",
+        "titulo": "Drones pulverizadores: gota a gota, el agro vuela hacia una protección de cultivos más inteligente",
+        "link": "https://www.infocampo.com.ar/drones-pulverizadores-gota-a-gota-el-agro-vuela-hacia-una-proteccion-de-cultivos-mas-inteligente/",
+        "descripcion": "Los drones crecen como una herramienta estratégica para resolver aplicaciones en lotes complejos. Desde Rizobacter analizan el desafío de generar caldos de ultra alta concentración para ganar calidad en la aplicación.",
+        "fecha_publicacion": "2026-10-06T21:17:28+00:00",
+        "fuente_id": "infocampo",
+        "fuente_nombre": "Infocampo",
+        "categoria": "Agro"
+      },
+      {
+        "id": "2ce6f3f9e45e",
+        "titulo": "Pasturas polifíticas: cómo diseñar la estrategia forrajera a partir del ambiente",
+        "link": "https://www.infocampo.com.ar/pasturas-polifiticas-como-disenar-la-estrategia-forrajera-a-partir-del-ambiente/",
+        "descripcion": "La combinación de especies templadas y megatérmicas gana espacio entre productores que buscan mayor estabilidad y persistencia en la oferta forrajera. El desafío está en definir qué especies se adaptan mejor a cada ambiente y objetivo productivo.",
+        "fecha_publicacion": "2026-10-06T20:37:17+00:00",
+        "fuente_id": "infocampo",
+        "fuente_nombre": "Infocampo",
+        "categoria": "Agro"
+      },
+      {
+        "id": "3afd87bb4cbe",
+        "titulo": "Vandalismo rural: Consiguió dictamen de mayoría en Diputados el proyecto que pena los delitos en el campo y ahora irá al recinto para su debate",
+        "link": "https://bichosdecampo.com/vandalismo-rural-consiguio-dictamen-de-mayoria-en-diputados-el-proyecto-que-pena-los-delitos-en-el-campo-y-ahora-ira-al-recinto-para-su-debate/",
+        "descripcion": "El proyecto para castigar el vandalismo rural logró este martes dictamen de mayoría en un plenario de las comisiones de Legislación Penal y de Agricultura y Ganadería de Diputados, y quedó en condiciones de llegar al recinto. La iniciativa es del diputado pampeano Martín Ardohain (PRO), que preside la comisión de Agricultura y fue quien [&#8230;]",
+        "fecha_publicacion": "2026-10-06T20:10:19+00:00",
+        "fuente_id": "bichos_campo",
+        "fuente_nombre": "Bichos de Campo",
+        "categoria": "Agro"
+      },
+      {
+        "id": "a2e717efae36",
+        "titulo": "Futuros del petróleo crudo WTI en soporte clave: niveles en vivo",
+        "link": "https://es.investing.com/news/commodities-news/futuros-del-petroleo-crudo-wti-en-rango-ruptura-inminente-niveles-en-vivo-93CH-3859970",
+        "descripcion": "",
+        "fecha_publicacion": "2026-10-06T19:08:56+00:00",
+        "fuente_id": "investing_agro",
+        "fuente_nombre": "Investing Agro",
+        "categoria": "Agro",
+        "resumen": "El crudo WTI testea un piso clave que definirá su rumbo inmediato. Los operadores siguen de cerca la zona para ver si el precio aguanta o si se profundiza la corrección."
+      },
+      {
+        "id": "5b1110b71d68",
+        "titulo": "La plata rebota en bear flag con resistencia en $62,60: niveles en vivo",
+        "link": "https://es.investing.com/news/commodities-news/futuros-de-la-plata-consolidan-bajistas-cerca-de-6160-niveles-en-vivo-93CH-3859967",
+        "descripcion": "",
+        "fecha_publicacion": "2026-10-06T19:08:42+00:00",
+        "fuente_id": "investing_agro",
+        "fuente_nombre": "Investing Agro",
+        "categoria": "Agro",
+        "resumen": "La cotización de la plata metió un rebote técnico dentro de una estructura bajista, con un techo marcado en los 62,60 dólares. Si no logra quebrar esa marca, el metal podría reanudar la caída."
+      },
+      {
+        "id": "40c77affa5c6",
+        "titulo": "El cobre atrapado entre 6,60 y 6,72 $: niveles en vivo",
+        "link": "https://es.investing.com/news/commodities-news/el-cobre-en-soporte-clave-con-mfi-en-sobreventa-extrema-en-vivo-93CH-3859969",
+        "descripcion": "",
+        "fecha_publicacion": "2026-10-06T19:08:39+00:00",
+        "fuente_id": "investing_agro",
+        "fuente_nombre": "Investing Agro",
+        "categoria": "Agro",
+        "resumen": "El cobre quedó encajonado en un rango estrecho de entre 6,60 y 6,72 dólares. El mercado aguarda que quiebre alguna de esas puntas para definir una tendencia clara."
+      }
+    ],
     "Finanzas": [
       {
-        "id": "b53fc32a12c9",
-        "titulo": "Doce bancos calificaron este mes para dar crédito hipotecario con dinero del FGS",
-        "link": "https://www.lanacion.com.ar/economia/doce-bancos-calificaron-este-mes-para-dar-credito-hipotecario-con-dinero-del-fgs-nid06102026/",
-        "descripcion": "Pagarán a ese organismo por sus plazos fijos entre 4 y 15 puntos básicos menos que lo pactado hace un mes, lo que abre la puerta a un posible nuevo reacomodamiento a la baja de los préstamos",
-        "fecha_publicacion": "2026-10-06T22:03:21+00:00",
+        "id": "2199b21a9495",
+        "titulo": "Con guiño de Bessent, Caputo responde a economistas que niegan la \"bazuka de dólares\"",
+        "link": "https://www.iprofesional.com/economia/466037-guino-de-bessent-para-que-caputo-confirme-bazuka-de-dolares",
+        "descripcion": "El secretario del US Treasury confirmó la vigencia del swap, justo cuando los analistas acusaban al gobierno de exagerar su \"poder de fuego\" para 2027",
+        "fecha_publicacion": "2026-10-06T23:22:00+00:00",
+        "fuente_id": "iprof_economia",
+        "fuente_nombre": "iProfesional Economía",
+        "categoria": "Finanzas",
+        "resumen": "Con el aval del Tesoro estadounidense sobre la vigencia del swap, Luis Caputo salió al cruce de los analistas que dudaban del colchón financiero oficial. El ministro ratificó que el Gobierno tiene divisas de sobra para cubrir los compromisos hacia 2027."
+      },
+      {
+        "id": "1f960c768919",
+        "titulo": "Bregman insinuó que “iba a robar” choclos y desató una polémica: “Está mal diputada”",
+        "link": "https://www.lanacion.com.ar/economia/campo/bregman-insinuo-que-iba-a-robar-choclos-y-desato-una-polemica-en-diputados-esta-mal-diputada-nid06102026/",
+        "descripcion": "Durante un debate sobre vandalismo rural en el Congreso, la legisladora habló de una práctica “habitual”; Martín Ardohain le reprochó el mensaje",
+        "fecha_publicacion": "2026-10-06T23:14:07+00:00",
         "fuente_id": "lanacion_eco",
         "fuente_nombre": "La Nación Economía",
         "categoria": "Finanzas"
       },
       {
-        "id": "32621b458624",
-        "titulo": "Wall Street renovó récords con impulso de la IA, mientras los bonos del Tesoro dieron un respiro",
-        "link": "https://www.ambito.com/finanzas/los-futuros-wall-street-extienden-las-subas-medida-que-repuntan-los-bonos-y-afloja-el-petroleo-n6330472",
-        "descripcion": "El S&amp;P 500 y el Nasdaq cerraron en máximos históricos, sostenidos por el entusiasmo en torno a la inteligencia artificial y una pausa en la venta de bonos del Tesoro. Los inversores miran ahora la temporada de balances, con los grandes bancos como primer termómetro del mercado.",
-        "fecha_publicacion": "2026-10-06T21:55:00+00:00",
-        "fuente_id": "ambito_fin",
-        "fuente_nombre": "Ámbito Finanzas",
-        "categoria": "Finanzas"
-      },
-      {
-        "id": "43ca6b0cd9ff",
-        "titulo": "El BCRA volvió a comprar dólares y las reservas tocaron un máximo de dos semanas",
-        "link": "https://www.iprofesional.com/finanzas/466045-reservas-bcra-pegaron-fuerte-salto-llevaron-alivio-dolar-blue-racha-compradora-octubre-2026",
-        "descripcion": "Tras varias ruedas de compras, el acumulado de divisas aumentó en octubre y se acerca al mejor nivel del último mes en la autoridad monetaria",
-        "fecha_publicacion": "2026-10-06T21:45:00+00:00",
+        "id": "ca90d6e533ae",
+        "titulo": "El riesgo país cayó por debajo de los 575 puntos y las acciones volvieron a subir",
+        "link": "https://www.iprofesional.com/finanzas/466019-el-riesgo-pais-cayo-80-puntos-desde-el-maximo-de-octubre-y-llego-a-575",
+        "descripcion": "El buen desempeño de la deuda local y la reacción positiva de los mercados externos brindaron nuevos impulsos a los activos argentinos en alza",
+        "fecha_publicacion": "2026-10-06T22:50:00+00:00",
         "fuente_id": "iprof_finanzas",
         "fuente_nombre": "iProfesional Finanzas",
         "categoria": "Finanzas"
       },
       {
-        "id": "137775d3e082",
-        "titulo": "Se destrabó un negocio clave con Europa y las exportaciones ya son más de cuatro veces las del primer semestre",
-        "link": "https://www.lanacion.com.ar/economia/campo/se-destrabo-un-negocio-clave-con-europa-y-las-exportaciones-ya-son-mas-de-cuatro-veces-las-del-nid06102026/",
-        "descripcion": "Luego del rechazo del Parlamento Europeo a una medida que amenazaba al biodiésel de soja argentino, los envíos pasaron de unas 50.000 toneladas en todo el primer semestre a 220.000 toneladas en lo que va del año",
-        "fecha_publicacion": "2026-10-06T21:43:36+00:00",
+        "id": "e0b76bd5b3d7",
+        "titulo": "Vandalismo: logró dictamen en Diputados un proyecto que prevé hasta ocho años de prisión por ataques al campo",
+        "link": "https://www.lanacion.com.ar/economia/campo/vandalismo-logro-dictamen-en-diputados-un-proyecto-que-preve-hasta-ocho-anos-de-prision-por-ataques-nid06102026/",
+        "descripcion": "Las comisiones de Legislación Penal y de Agricultura y Ganadería emitieron dictamen de mayoría; la iniciativa contempla diversos daños y también penas por ingresar sin autorización a establecimientos rurales",
+        "fecha_publicacion": "2026-10-06T22:46:14+00:00",
         "fuente_id": "lanacion_eco",
         "fuente_nombre": "La Nación Economía",
         "categoria": "Finanzas"
       },
       {
-        "id": "701dc2b79c82",
-        "titulo": "El ajuste en subsidios previsto para 2027 exigiría aumentos de hasta 26% en las facturas de luz, según estimaciones privadas",
-        "link": "https://www.lanacion.com.ar/economia/el-ajuste-en-subsidios-previsto-para-2027-exigiria-aumentos-de-hasta-26-en-las-facturas-de-luz-segun-nid06102026/",
-        "descripcion": "Es una previsión de la firma Economía y Energía para los hogares del AMBA con asistencia del Estado; sería del 9% para los usuarios que no tienen ayuda y del 9% para los comercios; los porcentajes excluyen otros incrementos y los especialistas dudan de que el Gobierno aplique las metas en un año electoral",
-        "fecha_publicacion": "2026-10-06T21:41:34+00:00",
+        "id": "6e6b81181972",
+        "titulo": "Para los analistas, la economía cayó en recesión y solo crecería entre 1,2 y 1,5% este año",
+        "link": "https://www.lanacion.com.ar/economia/para-los-analistas-la-economia-cayo-en-recesion-y-solo-creceria-entre-12-y-15-este-ano-nid06102026/",
+        "descripcion": "Estiman que la inflación se mantendría estabilizada debajo del 2% mensual pero sin bajar mucho, lo que la haría cerrar el año al 30%, apenas por debajo de la del 2025",
+        "fecha_publicacion": "2026-10-06T22:39:05+00:00",
         "fuente_id": "lanacion_eco",
         "fuente_nombre": "La Nación Economía",
         "categoria": "Finanzas"
       },
       {
-        "id": "d48b64399f61",
-        "titulo": "Economistas prevén que la inflación se mantendrá arriba de 1,5% en octubre y noviembre",
-        "link": "https://www.iprofesional.com/finanzas/465806-de-cuanto-sera-la-inflacion-ipc-indec-en-octubre-y-noviembre-segun-44-expertos",
-        "descripcion": "Según el relevamiento que publica el BCRA, para septiembre se prevé un IPC de 1,9%, con una tendencia a la baja hacia el cierre del año",
-        "fecha_publicacion": "2026-10-06T21:36:00+00:00",
+        "id": "389fe210f7ad",
+        "titulo": "¿Plazo fijo o dólar?: en qué conviene invertir a partir del pronóstico de 40 consultoras",
+        "link": "https://www.iprofesional.com/finanzas/466041-cual-sera-la-mejor-inversion-entre-plazo-fijo-y-dolar-los-proximos-6-meses",
+        "descripcion": "Los ahorristas vuelven a enfrentar su dilema clásico: aprovechar las tasas en pesos, protegerse de la inflación o comprar dólares",
+        "fecha_publicacion": "2026-10-06T22:34:00+00:00",
         "fuente_id": "iprof_economia",
         "fuente_nombre": "iProfesional Economía",
         "categoria": "Finanzas"
       },
       {
-        "id": "38205fd7cc1e",
-        "titulo": "Real blue: a cuánto operó este martes 6 de octubre",
-        "link": "https://www.ambito.com/finanzas/real-blue-cuanto-opero-este-martes-6-octubre-n6330848",
-        "descripcion": "La cotización minuto a minuto para la compra y venta de la divisa brasileña en nuestro país.",
-        "fecha_publicacion": "2026-10-06T21:31:00+00:00",
-        "fuente_id": "ambito_fin",
-        "fuente_nombre": "Ámbito Finanzas",
+        "id": "1f4d55d5c261",
+        "titulo": "La letra chica del RIGI: resigna casi u$s8.500 millones en recaudación de impuestos",
+        "link": "https://www.iprofesional.com/economia/466048-letra-chica-del-rigi-resigna-casi-8500-millones-dolares-recaudacion-de-impuestos",
+        "descripcion": "Hasta el momento, las inversiones suman u$s50.000 millones. En los proyectos ya aprobados, las empresas se comprometieron a crear 108.000 empleos.",
+        "fecha_publicacion": "2026-10-06T22:16:00+00:00",
+        "fuente_id": "iprof_economia",
+        "fuente_nombre": "iProfesional Economía",
         "categoria": "Finanzas"
       },
       {
-        "id": "735e6bedf55d",
-        "titulo": "Las consultoras anticipan que la economía crecerá menos de lo que espera el Gobierno",
-        "link": "https://www.iprofesional.com/economia/466042-las-consultoras-anticipan-que-la-economia-crecera-menos-de-lo-que-espera-el-gobierno",
-        "descripcion": "En línea con el Banco Mundial y JP Morgan, las firmas relevadas por el BCRA redujeron sus proyecciones de crecimiento para este año",
+        "id": "478c8fca03c4",
+        "titulo": "Por qué Wall Street marcó un nuevo récord este martes 6 de octubre",
+        "link": "https://www.iproup.com/finanzas/72131-wall-street-marco-un-nuevo-record-este-martes-6-de-octubre",
+        "descripcion": "Google firmó un acuerdo de 20 años con Constellation Energy por 890 megavatios de energía nuclear para sus centros de datos y la acción se disparó 12%",
+        "fecha_publicacion": "2026-10-06T22:00:00+00:00",
+        "fuente_id": "iproup_fintech",
+        "fuente_nombre": "iProUP Fintech",
+        "categoria": "Finanzas"
+      }
+    ],
+    "Comex": [
+      {
+        "id": "a5556f6c777a",
+        "titulo": "Jornada Derecho Aduanero (UB – ADACE) “UE–Mercosur: el nuevo escenario del comercio birregional …”  – 29/10",
+        "link": "https://mercojuris.com/jornada-derecho-aduanero-ub-adace-ue-mercosur-el-nuevo-escenario-del-comercio-birregional-29-10/",
+        "descripcion": "Como todos los años, nuevamente se realiza importante &#8220;Jornada de Derecho Aduanero&#8221;, en la Universidad de Belgrano, auspiciada por ASOCIACION DE DERECHO ADUANERO Y COMERCIO EXTERIOR (ADACE). En la oportunidad el tema convocante es &#8221; UE–Mercosur: el nuevo escenario del comercio birregional Aspectos jurídicos y operativos, desafíos, oportunidades y acceso a nuevos mercados&#8221;. 0 Se realiza el Jueves 29 de octubre de 2026 de 15 a 20 hs. Aula 4.4 y transmisión on line Apertura ",
+        "fecha_publicacion": "2026-10-06T23:19:03+00:00",
+        "fuente_id": "mercojuris",
+        "fuente_nombre": "Mercojuris",
+        "categoria": "Comex"
+      },
+      {
+        "id": "5681e10cd7bf",
+        "titulo": "Banco Mundial: Argentina crecerá 2,1% en 2026 en un proceso de reformas y apertura",
+        "link": "https://aduananews.com/banco-mundial-argentina-crecera-21-en-2026-en-un-proceso-de-reformas-y-apertura/?utm_source=rss&utm_medium=rss&utm_campaign=banco-mundial-argentina-crecera-21-en-2026-en-un-proceso-de-reformas-y-apertura",
+        "descripcion": "El Banco Mundial proyecta que el PIB real de Argentina crecerá 2,1% en 2026, por debajo del 4,5% registrado en 2025. Para 2027 y 2028, el organismo prevé una expansión del 3,0% y 3,5%, respectivamente. De cumplirse estas previsiones, Argentina acumularía tres años consecutivos de crecimiento entre 2025 y 2027, algo que no ocurre desde [&#8230;] The post Banco Mundial: Argentina crecerá 2,1% en 2026 en un proceso de reformas y apertura appeared first on Aduana News .",
+        "fecha_publicacion": "2026-10-06T21:55:14+00:00",
+        "fuente_id": "aduana_news",
+        "fuente_nombre": "Aduana News",
+        "categoria": "Comex"
+      },
+      {
+        "id": "5cdb2fe91241",
+        "titulo": "El comercio del G20 se aceleró en el segundo trimestre de 2026 y Argentina elevó sus exportaciones un 9,3%",
+        "link": "https://aduananews.com/el-comercio-del-g20-se-acelero-en-el-segundo-trimestre-de-2026-y-argentina-elevo-sus-exportaciones-un-93/?utm_source=rss&utm_medium=rss&utm_campaign=el-comercio-del-g20-se-acelero-en-el-segundo-trimestre-de-2026-y-argentina-elevo-sus-exportaciones-un-93",
+        "descripcion": "El G20 O &#160;Grupo de los Veinte, que reúne a las principales economías desarrolladas y emergentes y del que Argentina forma parte, concentra una porción significativa del comercio y de la actividad económica mundial. En este contexto, las estadísticas sobre el movimiento de mercancías entre países permiten observar la evolución de los intercambios comerciales y [&#8230;] The post El comercio del G20 se aceleró en el segundo trimestre de 2026 y Argentina elevó sus exportaciones un 9,3% appeare",
+        "fecha_publicacion": "2026-10-06T14:37:54+00:00",
+        "fuente_id": "aduana_news",
+        "fuente_nombre": "Aduana News",
+        "categoria": "Comex"
+      },
+      {
+        "id": "a4ee2cb8ddfc",
+        "titulo": "El Gobierno aprobó la prórroga de la concesión de Aeropuertos Argentina hasta 2049",
+        "link": "https://tradenews.com.ar/el-gobierno-aprobo-la-prorroga-de-la-concesion-de-aeropuertos-argentina-hasta-2049/",
+        "descripcion": "El Gobierno formalizó el acuerdo de readecuación contractual entre el Organismo Regulador del Sistema Nacional de Aeropuertos (ORSNA) y Aeropuertos Argentina -que hoy opera 35 aeropuertos en el país-, que...",
+        "fecha_publicacion": "2026-10-05T21:57:26+00:00",
+        "fuente_id": "trade_news",
+        "fuente_nombre": "Trade News",
+        "categoria": "Comex"
+      },
+      {
+        "id": "59efb349e922",
+        "titulo": "El costo del transporte acumula una suba de 30,3% en los primeros nueve meses de 2026",
+        "link": "https://tradenews.com.ar/el-costo-del-transporte-acumula-una-suba-de-303-en-los-primeros-nueve-meses-de-2026/",
+        "descripcion": "Los costos del transporte de cargas aumentaron 2,55% en septiembre y acumularon una suba de 30,3% en los primeros nueve meses de 2026, según el Índice de Costos de Transporte...",
+        "fecha_publicacion": "2026-10-05T16:44:22+00:00",
+        "fuente_id": "trade_news",
+        "fuente_nombre": "Trade News",
+        "categoria": "Comex"
+      },
+      {
+        "id": "f6da562bd4f9",
+        "titulo": "Falleció Carlos Canta Yoy, referente del comercio exterior",
+        "link": "https://aduananews.com/fallecio-carlos-canta-yoy-referente-del-comercio-exterior/?utm_source=rss&utm_medium=rss&utm_campaign=fallecio-carlos-canta-yoy-referente-del-comercio-exterior",
+        "descripcion": "El Centro Despachantes de Aduana (CDA) comunicó este lunes (05.09.2026) el fallecimiento de Carlos A. Canta Yoy, quien durante casi cuatro décadas mantuvo un vínculo ininterrumpido con la institución y se desempeñó como asesor en temas vinculados con ALADI, MERCOSUR y origen de las mercaderías. Según una reseña biográfica, Canta Yoy nació en Montevideo, Uruguay, [&#8230;] The post Falleció Carlos Canta Yoy, referente del comercio exterior appeared first on Aduana News .",
+        "fecha_publicacion": "2026-10-05T15:52:52+00:00",
+        "fuente_id": "aduana_news",
+        "fuente_nombre": "Aduana News",
+        "categoria": "Comex"
+      },
+      {
+        "id": "5aeb55123210",
+        "titulo": "Para Milei, el triunfo de Bolsonaro es victoria propia y reivindica su discurso fiscalista",
+        "link": "https://www.iprofesional.com/politica/465862-milei-festeja-triunfo-de-bolsonaro-y-reivindica-discurso-fiscal",
+        "descripcion": "Milei había hecho una apuesta arriesgada que le costó un roce diplomático con Brasil. Pero ahora celebra un resultado donde Lula pagó el costo del déficit",
+        "fecha_publicacion": "2026-10-05T09:20:00+00:00",
+        "fuente_id": "iprof_comex",
+        "fuente_nombre": "iProfesional Comex",
+        "categoria": "Comex"
+      },
+      {
+        "id": "68ad3143e8f7",
+        "titulo": "Japón habilita la carne bovina con vacunación tras 20 años y abre un mercado de US$ 3000 millones",
+        "link": "https://tradenews.com.ar/japon-habilita-la-carne-bovina-con-vacunacion-tras-20-anos-y-abre-un-mercado-de-us-3000-millones/",
+        "descripcion": "Tras 20 años de negociaciones, la Argentina y Japón acordaron los requisitos sanitarios definitivos para el ingreso de carne bovina y lengua proveniente de la zona libre de fiebre aftosa...",
+        "fecha_publicacion": "2026-10-05T00:21:48+00:00",
+        "fuente_id": "trade_news",
+        "fuente_nombre": "Trade News",
+        "categoria": "Comex"
+      }
+    ],
+    "Energía y Minería": [
+      {
+        "id": "2a880833d221",
+        "titulo": "Nucleoeléctrica no construirá una cuarta central nuclear con China y despeja el camino para cederle terrenos a Meitner Energy",
+        "link": "https://econojournal.com.ar/energia/nucleoelectrica-no-construira-central-con-china-y-busca-cederle-terrenos-a-meitner/",
+        "descripcion": "Nucleoeléctrica Argentina (NASA) resolvió en su última asamblea suspender la construcción de la cuarta central nuclear financiada por China, denominada Atucha III. Se trata de una suspensión, ya que la empresa no tiene autoridad para cancelar un proyecto canalizado por vías diplomáticas. De ese modo, despeja el camino para cederle a Meitner Energy los terrenos [&#8230;]",
+        "fecha_publicacion": "2026-10-06T23:08:58+00:00",
+        "fuente_id": "econojournal",
+        "fuente_nombre": "EconoJournal",
+        "categoria": "Energía y Minería"
+      },
+      {
+        "id": "9c9c094ada2e",
+        "titulo": "\"Proyecto Alberdi\": TotalEnergies anunció un proyecto offshore en las costas de Tierra del Fuego",
+        "link": "https://dataenergia.ar/petroleo-y-combustibles/proyecto-alberdi-totalenergies-anuncio-un-proyecto-offshore-en-las-costas-de-tierra-del-fuego-202610617420",
+        "descripcion": "La petrolera francesa TotalEnergies, iniciará una nueva operación offshore frente a las costas de Tierra del Fuego en el marco del RIGI.",
+        "fecha_publicacion": "2026-10-06T20:42:00+00:00",
+        "fuente_id": "data_energia",
+        "fuente_nombre": "Data Energía",
+        "categoria": "Energía y Minería"
+      },
+      {
+        "id": "3d537c7f4f62",
+        "titulo": "San Matías Pipeline inició el traslado de caños para el gasoducto que abastecerá el proyecto de GNL en Río Negro",
+        "link": "https://dataenergia.ar/petroleo-y-combustibles/san-matias-pipeline-inicio-el-traslado-de-canos-para-el-gasoducto-que-abastecera-el-proyecto-de-gnl-en-rio-negro-202610615100",
+        "descripcion": "Con el despacho de los primeros caños de 36 pulgadas desde el Puerto de San Antonio Este, San Matías Pipeline (SMP) inició la logística terrestre para la construcción del gasoducto de 472 km que unirá Vaca Muerta con el Golfo San Matías.",
+        "fecha_publicacion": "2026-10-06T18:10:00+00:00",
+        "fuente_id": "data_energia",
+        "fuente_nombre": "Data Energía",
+        "categoria": "Energía y Minería"
+      },
+      {
+        "id": "3e301440680a",
+        "titulo": "Acuerdo para financiar rutas en Vaca Muerta: para la oposición es «malísimo», pero están los votos para aprobarlo",
+        "link": "https://econojournal.com.ar/enclave/rutas-en-vaca-muerta-oposicion-es-malisimo-pero-estan-los-votos/",
+        "descripcion": "El acuerdo que firmó el gobierno de Neuquén con 15 operadoras de Vaca Muerta para financiar rutas en el corredor petrolero quedó este martes a un paso de convertirse en ley, pese a las críticas de diputados opositores que consideraron «malísimo» el mecanismo de adelanto de regalías para fondear las obras. El gobernador Rolando Figueroa [&#8230;]",
+        "fecha_publicacion": "2026-10-06T16:44:13+00:00",
+        "fuente_id": "econojournal",
+        "fuente_nombre": "EconoJournal",
+        "categoria": "Energía y Minería"
+      },
+      {
+        "id": "13de921a8cb1",
+        "titulo": "Llegaron a Río Negro las monoboyas para la terminal marítima del oleoducto Vaca Muerta Oil Sur",
+        "link": "https://dataenergia.ar/petroleo-y-combustibles/llegaron-a-rio-negro-las-monoboyas-para-la-terminal-maritima-del-oleoducto-vaca-muerta-oil-sur-202610613430",
+        "descripcion": "Procedentes de los Emiratos Árabes Unidos, arribaron al Puerto de San Antonio Este las dos monoboyas tipo CALM que conformarán la terminal offshore del oleoducto Vaca Muerta Oil Sur (VMOS) en Punta Colorada, Río Negro.",
+        "fecha_publicacion": "2026-10-06T16:43:00+00:00",
+        "fuente_id": "data_energia",
+        "fuente_nombre": "Data Energía",
+        "categoria": "Energía y Minería"
+      },
+      {
+        "id": "7bd562628ee9",
+        "titulo": "El Superior Tribunal de Justicia de Brasil define el futuro del fracking en el tramo final de la elección presidencial",
+        "link": "https://econojournal.com.ar/internacionales/el-superior-tribunal-de-justicia-de-brasil-define-el-futuro-del-fracking/",
+        "descripcion": "El fracking ganará visibilidad en la agenda brasileña durante las próximas semanas. Flávio Bolsonaro, quien llega a la segunda vuelta presidencial como favorito, propone explícitamente habilitar el fracking. Su programa plantea “permitir la exploración del gas no convencional con responsabilidad ambiental y cumpliendo la ley”. Sin embargo, el tema está en manos del Superior Tribunal [&#8230;]",
+        "fecha_publicacion": "2026-10-06T14:57:03+00:00",
+        "fuente_id": "econojournal",
+        "fuente_nombre": "EconoJournal",
+        "categoria": "Energía y Minería"
+      },
+      {
+        "id": "b44e3d35e834",
+        "titulo": "Transparencia: EITI Argentina amplía su reporte para reflejar la contribución de los proyectos mineros antes de producir",
+        "link": "https://caem.com.ar/transparencia-eiti-argentina-amplia-su-reporte-para-reflejar-la-contribucion-de-los-proyectos-mineros-antes-de-producir/",
+        "descripcion": "La minería comienza a generar valor para la economía mucho antes de que una mina entre en producción. Esa es una de las principales conclusiones del reciente Informe de Alcance, Materialidad y Divulgación Sistemática realizado para EITI Argentina. EITI (Iniciativa para... The post Transparencia: EITI Argentina amplía su reporte para reflejar la contribución de los proyectos mineros antes de producir first appeared on CAEM .",
+        "fecha_publicacion": "2026-09-30T19:32:22+00:00",
+        "fuente_id": "caem",
+        "fuente_nombre": "CAEM",
+        "categoria": "Energía y Minería"
+      },
+      {
+        "id": "d54676fbec8f",
+        "titulo": "Récord exportador y máximos históricos de inversión: la minería argentina consolida su nuevo ciclo",
+        "link": "https://caem.com.ar/record-exportador-y-maximos-historicos-de-inversion-la-mineria-argentina-consolida-su-nuevo-ciclo/",
+        "descripcion": "Las exportaciones mineras argentinas totalizaron US$ 4.742 millones en la primera mitad de 2026. Se trata del máximo nivel exportador registrado para un primer semestre desde que existen estadísticas comparables para la minería argentina. De esta manera, se registra una... The post Récord exportador y máximos históricos de inversión: la minería argentina consolida su nuevo ciclo first appeared on CAEM .",
+        "fecha_publicacion": "2026-09-14T19:03:41+00:00",
+        "fuente_id": "caem",
+        "fuente_nombre": "CAEM",
+        "categoria": "Energía y Minería"
+      }
+    ],
+    "Fulbito": [
+      {
+        "id": "3c76ede7ec35",
+        "titulo": "Julián Camino bancó la vuelta de Marcos Rojo a Estudiantes y destacó su jerarquía",
+        "link": "https://www.0221.com.ar/estudiantes/julian-camino-banco-la-vuelta-marcos-rojo-estudiantes-y-destaco-su-jerarquia-n135399",
+        "descripcion": "Julián Camino habló en No Juegan con Nadie sobre el regreso de Marcos Rojo a Estudiantes y destacó su jerarquía y compromiso con el club.",
+        "fecha_publicacion": "2026-10-06T22:44:00+00:00",
+        "fuente_id": "est_0221",
+        "fuente_nombre": "0221 Estudiantes",
+        "categoria": "Fulbito"
+      },
+      {
+        "id": "eb6b513c3afa",
+        "titulo": "La Reserva de Estudiantes empató con Newell's y quedó en zona de playoffs",
+        "link": "https://www.0221.com.ar/estudiantes/la-reserva-estudiantes-empato-newells-y-quedo-zona-playoffs-n135386",
+        "descripcion": "Estudiantes igualó 1 a 1 ante Newell's por la fecha 12 y quedó cuarto con 21 puntos, aunque deberá esperar otros resultados para sostenerse en playoffs.",
         "fecha_publicacion": "2026-10-06T21:20:00+00:00",
-        "fuente_id": "iprof_economia",
-        "fuente_nombre": "iProfesional Economía",
-        "categoria": "Finanzas"
+        "fuente_id": "est_0221",
+        "fuente_nombre": "0221 Estudiantes",
+        "categoria": "Fulbito"
+      },
+      {
+        "id": "603b35c76755",
+        "titulo": "Marcos Rojo tendrá una noche especial en la despedida de Lionel Messi de la Selección argentina",
+        "link": "https://www.0221.com.ar/estudiantes/marcos-rojo-tendra-una-noche-especial-la-despedida-lionel-messi-la-seleccion-argentina-n135383",
+        "descripcion": "Marcos Rojo asistirá al Monumental para la despedida de Lionel Messi mientras espera ser anunciado como refuerzo de Estudiantes para la Copa Libertadores.",
+        "fecha_publicacion": "2026-10-06T20:17:00+00:00",
+        "fuente_id": "est_0221",
+        "fuente_nombre": "0221 Estudiantes",
+        "categoria": "Fulbito"
       }
     ],
     "Fiscal": [
@@ -229,6 +511,68 @@
         "categoria": "Mercados"
       }
     ],
+    "Logística": [
+      {
+        "id": "737a86d8a4c3",
+        "titulo": "Se realizó el Encuentro Anual de la Plataforma Observatorio Nacional de Transporte Sostenible (PONTS)",
+        "link": "https://webpicking.com/se-realizo-el-encuentro-anual-de-la-plataforma-observatorio-nacional-de-transporte-sostenible-ponts/",
+        "descripcion": "Fue en el Campus Miguelete de la Universidad Nacional de San Martín La entrada Se realizó el Encuentro Anual de la Plataforma Observatorio Nacional de Transporte Sostenible (PONTS) se publicó primero en Webpicking .",
+        "fecha_publicacion": "2026-10-06T20:39:06+00:00",
+        "fuente_id": "webpicking",
+        "fuente_nombre": "Webpicking",
+        "categoria": "Logística"
+      },
+      {
+        "id": "c7f1bd5d446f",
+        "titulo": "Los costos logísticos aumentaron 2,55% en septiembre en Argentina",
+        "link": "https://webpicking.com/los-costos-logisticos-aumentaron-255-en-septiembre-en-argentina/",
+        "descripcion": "La Cámara Empresaria de Operadores Logísticos dio a conocer la evolución del Índice de Costos Logísticos Nacionales. La entrada Los costos logísticos aumentaron 2,55% en septiembre en Argentina se publicó primero en Webpicking .",
+        "fecha_publicacion": "2026-10-05T23:46:41+00:00",
+        "fuente_id": "webpicking",
+        "fuente_nombre": "Webpicking",
+        "categoria": "Logística"
+      },
+      {
+        "id": "51ad9d52ebcf",
+        "titulo": "CEDOL Y UIPBA SE UNEN PARA MEJORAR LA COMPETITIVIDAD DE LA INDUSTRIA BONAERENSE",
+        "link": "https://www.cedol.org.ar/logistica/cedol-y-uipba-se-unen-para-mejorar-la-competitividad-de-la-industria-bonaerense/",
+        "descripcion": "Uno de los pilares centrales del convenio es la difusión e incorporación de los índices CEDOL como parámetro de referencia para la evolución de los [&#8230;] The post CEDOL Y UIPBA SE UNEN PARA MEJORAR LA COMPETITIVIDAD DE LA INDUSTRIA BONAERENSE appeared first on CEDOL .",
+        "fecha_publicacion": "2026-10-05T14:11:54+00:00",
+        "fuente_id": "cedol",
+        "fuente_nombre": "CEDOL",
+        "categoria": "Logística"
+      },
+      {
+        "id": "8837f1a9e109",
+        "titulo": "MUJERES LOGÍSTICAS: YASI GARCÍA MIERAVILLA, ANALISTA DE GESTIÓN DE TALENTO DE TP",
+        "link": "https://www.cedol.org.ar/logistica/mujeres-logisticas-yasi-garcia-mieravilla-analista-de-gestion-de-talento-de-tp/",
+        "descripcion": "“En la era de la IA, el secreto para fidelizar talento es volver a la artesanalidad de los vínculos” Yasi García Mieravilla trabaja desde hace [&#8230;] The post MUJERES LOGÍSTICAS: YASI GARCÍA MIERAVILLA, ANALISTA DE GESTIÓN DE TALENTO DE TP appeared first on CEDOL .",
+        "fecha_publicacion": "2026-10-05T14:09:10+00:00",
+        "fuente_id": "cedol",
+        "fuente_nombre": "CEDOL",
+        "categoria": "Logística"
+      },
+      {
+        "id": "cc828e2f5b90",
+        "titulo": "CEDOL PRESENTE EN EL MANAGEMENT LOGÍSTICO",
+        "link": "https://www.cedol.org.ar/logistica/cedol-presente-en-el-management-logistico/",
+        "descripcion": "Hernán Sánchez: “La rentabilidad es el motor de la búsqueda de la eficiencia”. El presidente de CEDOL y FAETYL participó del panel Rentabilidad en Management [&#8230;] The post CEDOL PRESENTE EN EL MANAGEMENT LOGÍSTICO appeared first on CEDOL .",
+        "fecha_publicacion": "2026-10-05T14:00:40+00:00",
+        "fuente_id": "cedol",
+        "fuente_nombre": "CEDOL",
+        "categoria": "Logística"
+      },
+      {
+        "id": "fee8d6007222",
+        "titulo": "Scoring, IA y controles en las fronteras: los desafíos en seguridad vial en las provincias argentinas",
+        "link": "https://webpicking.com/scoring-ia-y-controles-en-las-fronteras-los-desafios-en-seguridad-vial-en-las-provincias-argentinas/",
+        "descripcion": "Son las conclusiones del 106º Asamblea del Consejo Federal de Seguridad Vial que se reunió en Córdoba el 1 de octubre La entrada Scoring, IA y controles en las fronteras: los desafíos en seguridad vial en las provincias argentinas se publicó primero en Webpicking .",
+        "fecha_publicacion": "2026-10-02T18:29:11+00:00",
+        "fuente_id": "webpicking",
+        "fuente_nombre": "Webpicking",
+        "categoria": "Logística"
+      }
+    ],
     "Laboral": [
       {
         "id": "0778428a56d2",
@@ -291,253 +635,47 @@
         "categoria": "Laboral"
       }
     ],
-    "Energía y Minería": [
-      {
-        "id": "3e301440680a",
-        "titulo": "Acuerdo para financiar rutas en Vaca Muerta: para la oposición es «malísimo», pero están los votos para aprobarlo",
-        "link": "https://econojournal.com.ar/enclave/rutas-en-vaca-muerta-oposicion-es-malisimo-pero-estan-los-votos/",
-        "descripcion": "El acuerdo que firmó el gobierno de Neuquén con 15 operadoras de Vaca Muerta para financiar rutas en el corredor petrolero quedó este martes a un paso de convertirse en ley, pese a las críticas de diputados opositores que consideraron «malísimo» el mecanismo de adelanto de regalías para fondear las obras. El gobernador Rolando Figueroa [&#8230;]",
-        "fecha_publicacion": "2026-10-06T16:44:13+00:00",
-        "fuente_id": "econojournal",
-        "fuente_nombre": "EconoJournal",
-        "categoria": "Energía y Minería"
-      },
-      {
-        "id": "7bd562628ee9",
-        "titulo": "El Superior Tribunal de Justicia de Brasil define el futuro del fracking en el tramo final de la elección presidencial",
-        "link": "https://econojournal.com.ar/internacionales/el-superior-tribunal-de-justicia-de-brasil-define-el-futuro-del-fracking/",
-        "descripcion": "El fracking ganará visibilidad en la agenda brasileña durante las próximas semanas. Flávio Bolsonaro, quien llega a la segunda vuelta presidencial como favorito, propone explícitamente habilitar el fracking. Su programa plantea “permitir la exploración del gas no convencional con responsabilidad ambiental y cumpliendo la ley”. Sin embargo, el tema está en manos del Superior Tribunal [&#8230;]",
-        "fecha_publicacion": "2026-10-06T14:57:03+00:00",
-        "fuente_id": "econojournal",
-        "fuente_nombre": "EconoJournal",
-        "categoria": "Energía y Minería"
-      },
-      {
-        "id": "749c785e756d",
-        "titulo": "Estrecho de Ormuz: arribó a la Argentina un equipamiento estratégico para construir la nueva terminal de exportación de petróleo en Río Negro",
-        "link": "https://econojournal.com.ar/oilgas/estrecho-de-ormuz-arribo-a-la-argentina-un-equipamiento-estrategico-para-construir-la-nueva-terminal-de-exportacion-de-petroleo-en-rio-negro/",
-        "descripcion": "Las dos monoboyas que formarán parte del sistema de exportación offshore de Vaca Muerta arribaron al Puerto de San Antonio Este, en Río Negro, provenientes de Emiratos Árabes Unidos. El desembarco constituye uno de los principales avances en la construcción de la infraestructura marítima asociada al proyecto Vaca Muerta Oil Sur (VMOS), que busca ampliar [&#8230;]",
-        "fecha_publicacion": "2026-10-06T00:15:41+00:00",
-        "fuente_id": "econojournal",
-        "fuente_nombre": "EconoJournal",
-        "categoria": "Energía y Minería"
-      },
-      {
-        "id": "e1d5a1646b1c",
-        "titulo": "Vaca Muerta impulsa a Neuquén hacia el liderazgo exportador nacional proyectado para 2031",
-        "link": "https://dataenergia.ar/petroleo-y-combustibles/vaca-muerta-impulsa-a-neuquen-hacia-el-liderazgo-exportador-nacional-proyectado-para-2031-202610514570",
-        "descripcion": "Un informe del Ieral de la Fundación Mediterránea revela que Neuquén se encamina a convertirse en la principal provincia exportadora de la Argentina hacia 2031, superando a Córdoba en 2027, a Santa Fe en 2028 y a Buenos Aires hacia el inicio de la próxima década.",
-        "fecha_publicacion": "2026-10-05T17:57:00+00:00",
-        "fuente_id": "data_energia",
-        "fuente_nombre": "Data Energía",
-        "categoria": "Energía y Minería"
-      },
-      {
-        "id": "3bfc5850800f",
-        "titulo": "Argentina consolida su liderazgo global en litio con un salto productivo del 62% e inversiones récord en la Puna",
-        "link": "https://dataenergia.ar/mineria/argentina-consolida-su-liderazgo-global-en-litio-con-un-salto-productivo-del-62-e-inversiones-record-en-la-puna-202610514360",
-        "descripcion": "Impulsada por la puesta en marcha de siete proyectos en la Puna y el uso de tecnología DLE, la producción de litio en Argentina creció un 62% en 2025, alcanzando las 120.000 toneladas de LCE.",
-        "fecha_publicacion": "2026-10-05T17:36:00+00:00",
-        "fuente_id": "data_energia",
-        "fuente_nombre": "Data Energía",
-        "categoria": "Energía y Minería"
-      },
-      {
-        "id": "e6d4d11563da",
-        "titulo": "Cambio de época: Vaca Muerta se posiciona para abastecer a Bolivia a partir de 2031 tras el colapso de su producción",
-        "link": "https://dataenergia.ar/gas/cambio-de-epoca-vaca-muerta-se-posiciona-para-abastecer-a-bolivia-a-partir-de-2031-tras-el-colapso-de-su-produccion-202610514170",
-        "descripcion": "Tras la finalización de los contratos históricos de provisión de gas en septiembre de 2024, Bolivia se encamina a convertirse en importador neto de hidrocarburos hacia 2031 debido al agotamiento acelerado de sus campos maduros.",
-        "fecha_publicacion": "2026-10-05T17:17:00+00:00",
-        "fuente_id": "data_energia",
-        "fuente_nombre": "Data Energía",
-        "categoria": "Energía y Minería"
-      },
-      {
-        "id": "b44e3d35e834",
-        "titulo": "Transparencia: EITI Argentina amplía su reporte para reflejar la contribución de los proyectos mineros antes de producir",
-        "link": "https://caem.com.ar/transparencia-eiti-argentina-amplia-su-reporte-para-reflejar-la-contribucion-de-los-proyectos-mineros-antes-de-producir/",
-        "descripcion": "La minería comienza a generar valor para la economía mucho antes de que una mina entre en producción. Esa es una de las principales conclusiones del reciente Informe de Alcance, Materialidad y Divulgación Sistemática realizado para EITI Argentina. EITI (Iniciativa para... The post Transparencia: EITI Argentina amplía su reporte para reflejar la contribución de los proyectos mineros antes de producir first appeared on CAEM .",
-        "fecha_publicacion": "2026-09-30T19:32:22+00:00",
-        "fuente_id": "caem",
-        "fuente_nombre": "CAEM",
-        "categoria": "Energía y Minería"
-      },
-      {
-        "id": "d54676fbec8f",
-        "titulo": "Récord exportador y máximos históricos de inversión: la minería argentina consolida su nuevo ciclo",
-        "link": "https://caem.com.ar/record-exportador-y-maximos-historicos-de-inversion-la-mineria-argentina-consolida-su-nuevo-ciclo/",
-        "descripcion": "Las exportaciones mineras argentinas totalizaron US$ 4.742 millones en la primera mitad de 2026. Se trata del máximo nivel exportador registrado para un primer semestre desde que existen estadísticas comparables para la minería argentina. De esta manera, se registra una... The post Récord exportador y máximos históricos de inversión: la minería argentina consolida su nuevo ciclo first appeared on CAEM .",
-        "fecha_publicacion": "2026-09-14T19:03:41+00:00",
-        "fuente_id": "caem",
-        "fuente_nombre": "CAEM",
-        "categoria": "Energía y Minería"
-      }
-    ],
-    "Agro": [
-      {
-        "id": "ba2f55dab9e9",
-        "titulo": "Nos fuimos al descenso: La capacidad de molienda de granos oleaginosos en Brasil ya supera en un 23% a la presente en la Argentina",
-        "link": "https://bichosdecampo.com/nos-fuimos-al-descenso-la-capacidad-de-molienda-de-granos-oleaginosos-en-brasil-ya-supera-en-un-23-a-la-presente-en-la-argentina/",
-        "descripcion": "En 2024 Brasil superó por primera vez a la Argentina en capacidad de procesamiento de oleaginosos y desde entonces el gigante agroindustrial no dejó de crecer. Según un relevamiento realizado por la Asociación Brasileña de Industrias de Aceites Vegetales (Abiove), la capacidad total de procesamiento diario de granos oleaginosos este año es de 261.868 toneladas/día [&#8230;]",
-        "fecha_publicacion": "2026-10-06T15:15:13+00:00",
-        "fuente_id": "bichos_campo",
-        "fuente_nombre": "Bichos de Campo",
-        "categoria": "Agro"
-      },
-      {
-        "id": "0d49560d04ad",
-        "titulo": "La Ley de Tierras de Kicillof suma fichas: Sergio Berni presentó su propio proyecto y el peronismo apura la pulseada legislativa",
-        "link": "https://bichosdecampo.com/la-ley-de-tierras-de-kicillof-suma-fichas-sergio-berni-presento-su-propio-proyecto-y-el-peronismo-apura-la-pulseada-legislativa/",
-        "descripcion": "Luego de la decisión de la Corte Suprema de Justicia de restituir el DNU 70/23 y, con él, la derogación de la Ley de Tierras Rurales, el camporismo, el cristinismo, el massismo y el kicillofismo aceleran el tratamiento de una ley análoga a aquella que regía desde el 2011, pero exclusiva de la provincia de [&#8230;]",
-        "fecha_publicacion": "2026-10-06T14:41:50+00:00",
-        "fuente_id": "bichos_campo",
-        "fuente_nombre": "Bichos de Campo",
-        "categoria": "Agro"
-      },
-      {
-        "id": "66db4a85b572",
-        "titulo": "El Niño, a medias: en algunas zonas ya impacta, en otras lo esperan y ¿podría al final no ser tan intenso?",
-        "link": "https://www.infocampo.com.ar/el-nino-a-medias-en-algunas-zonas-ya-impacta-en-otras-lo-esperan-y-podria-al-final-no-ser-tan-intenso/",
-        "descripcion": "Dos informes conocidos en los últimos días analizan los primeros pasos del fenómeno El Niño en Argentina y por qué hay varias zonas del país donde todavía no se ha reflejado su presencia como ya se esperaba para esta época del año.",
-        "fecha_publicacion": "2026-10-06T14:17:36+00:00",
-        "fuente_id": "infocampo",
-        "fuente_nombre": "Infocampo",
-        "categoria": "Agro"
-      },
-      {
-        "id": "2fa2c0e8162e",
-        "titulo": "Hornero: por qué es el ave nacional de Argentina",
-        "link": "https://www.infocampo.com.ar/hornero-por-que-es-el-ave-nacional-de-argentina/",
-        "descripcion": "El hornero argentino en casi todo el territorio, excepto en la Patagonia más austral y la alta cordillera.",
-        "fecha_publicacion": "2026-10-06T14:16:36+00:00",
-        "fuente_id": "infocampo",
-        "fuente_nombre": "Infocampo",
-        "categoria": "Agro"
-      },
-      {
-        "id": "89ea32c089fd",
-        "titulo": "Precio del maíz en Rosario hoy 6 octubre 2026",
-        "link": "https://www.infocampo.com.ar/precio-del-maiz-hoy-6-octubre-2026/",
-        "descripcion": "Todo sobre la cotización de maíz, precio en tiempo real.",
-        "fecha_publicacion": "2026-10-06T14:06:28+00:00",
-        "fuente_id": "infocampo",
-        "fuente_nombre": "Infocampo",
-        "categoria": "Agro"
-      },
-      {
-        "id": "015da675ee56",
-        "titulo": "En Quitilipi, al norte de Chaco, el abigeato no perdona ni al presidente de la Rural: Gonzalo Susara perdió 5 animales en menos de 3 meses y reclama respuestas",
-        "link": "https://bichosdecampo.com/en-quitilipi-al-norte-de-chaco-el-abigeato-no-perdona-ni-al-presidente-de-la-rural-gonzalo-susara-perdio-5-animales-en-menos-de-3-meses-y-reclama-respuestas/",
-        "descripcion": "Esta semana, las comisiones de Agricultura y Seguridad Penal tratarán el proyecto de ley que modificaría la normativa vigente sobre delitos rurales. Mientras tanto, en diferentes regiones se siguen sucediendo casos de diferente índole. Una de ellas es Chaco, cuya zona norte es una de las tantas “zonas calientes” del delito rural. Los casos de [&#8230;]",
-        "fecha_publicacion": "2026-10-06T14:00:08+00:00",
-        "fuente_id": "bichos_campo",
-        "fuente_nombre": "Bichos de Campo",
-        "categoria": "Agro"
-      },
-      {
-        "id": "d0b1ca9a4d01",
-        "titulo": "El índice de fletes secos báltico cae a su nivel más bajo en seis semanas",
-        "link": "https://es.investing.com/news/commodities-news/el-indice-de-fletes-secos-baltico-cae-a-su-nivel-mas-bajo-en-seis-semanas-93CH-3862964",
-        "descripcion": "",
-        "fecha_publicacion": "2026-10-06T13:42:12+00:00",
-        "fuente_id": "investing_agro",
-        "fuente_nombre": "Investing Agro",
-        "categoria": "Agro"
-      },
-      {
-        "id": "9a3c4215ed3c",
-        "titulo": "La soja CBOT sube por el lento avance de la cosecha en EE.UU.",
-        "link": "https://es.investing.com/news/commodities-news/la-soja-cbot-sube-por-el-lento-avance-de-la-cosecha-en-eeuu-93CH-3862893",
-        "descripcion": "",
-        "fecha_publicacion": "2026-10-06T13:21:00+00:00",
-        "fuente_id": "investing_agro",
-        "fuente_nombre": "Investing Agro",
-        "categoria": "Agro"
-      }
-    ],
-    "Comex": [
-      {
-        "id": "5cdb2fe91241",
-        "titulo": "El comercio del G20 se aceleró en el segundo trimestre de 2026 y Argentina elevó sus exportaciones un 9,3%",
-        "link": "https://aduananews.com/el-comercio-del-g20-se-acelero-en-el-segundo-trimestre-de-2026-y-argentina-elevo-sus-exportaciones-un-93/?utm_source=rss&utm_medium=rss&utm_campaign=el-comercio-del-g20-se-acelero-en-el-segundo-trimestre-de-2026-y-argentina-elevo-sus-exportaciones-un-93",
-        "descripcion": "El G20 O Grupo de los Veinte, que reúne a las principales economías desarrolladas y emergentes y del que Argentina forma parte, concentra una porción significativa del comercio y de la actividad económica mundial. En este contexto, las estadísticas sobre el movimiento de mercancías entre países permiten observar la evolución de los intercambios comerciales y [&#8230;] The post El comercio del G20 se aceleró en el segundo trimestre de 2026 y Argentina elevó sus exportaciones un 9,3% appeared firs",
-        "fecha_publicacion": "2026-10-06T14:37:54+00:00",
-        "fuente_id": "aduana_news",
-        "fuente_nombre": "Aduana News",
-        "categoria": "Comex"
-      },
-      {
-        "id": "a4ee2cb8ddfc",
-        "titulo": "El Gobierno aprobó la prórroga de la concesión de Aeropuertos Argentina hasta 2049",
-        "link": "https://tradenews.com.ar/el-gobierno-aprobo-la-prorroga-de-la-concesion-de-aeropuertos-argentina-hasta-2049/",
-        "descripcion": "El Gobierno formalizó el acuerdo de readecuación contractual entre el Organismo Regulador del Sistema Nacional de Aeropuertos (ORSNA) y Aeropuertos Argentina -que hoy opera 35 aeropuertos en el país-, que...",
-        "fecha_publicacion": "2026-10-05T21:57:26+00:00",
-        "fuente_id": "trade_news",
-        "fuente_nombre": "Trade News",
-        "categoria": "Comex"
-      },
-      {
-        "id": "59efb349e922",
-        "titulo": "El costo del transporte acumula una suba de 30,3% en los primeros nueve meses de 2026",
-        "link": "https://tradenews.com.ar/el-costo-del-transporte-acumula-una-suba-de-303-en-los-primeros-nueve-meses-de-2026/",
-        "descripcion": "Los costos del transporte de cargas aumentaron 2,55% en septiembre y acumularon una suba de 30,3% en los primeros nueve meses de 2026, según el Índice de Costos de Transporte...",
-        "fecha_publicacion": "2026-10-05T16:44:22+00:00",
-        "fuente_id": "trade_news",
-        "fuente_nombre": "Trade News",
-        "categoria": "Comex"
-      },
-      {
-        "id": "f6da562bd4f9",
-        "titulo": "Falleció Carlos Canta Yoy, referente del comercio exterior",
-        "link": "https://aduananews.com/fallecio-carlos-canta-yoy-referente-del-comercio-exterior/?utm_source=rss&utm_medium=rss&utm_campaign=fallecio-carlos-canta-yoy-referente-del-comercio-exterior",
-        "descripcion": "El Centro Despachantes de Aduana (CDA) comunicó este lunes (05.09.2026) el fallecimiento de Carlos A. Canta Yoy, quien durante casi cuatro décadas mantuvo un vínculo ininterrumpido con la institución y se desempeñó como asesor en temas vinculados con ALADI, MERCOSUR y origen de las mercaderías. Según una reseña biográfica, Canta Yoy nació en Montevideo, Uruguay, [&#8230;] The post Falleció Carlos Canta Yoy, referente del comercio exterior appeared first on Aduana News .",
-        "fecha_publicacion": "2026-10-05T15:52:52+00:00",
-        "fuente_id": "aduana_news",
-        "fuente_nombre": "Aduana News",
-        "categoria": "Comex"
-      },
-      {
-        "id": "c0cf5b78b2e9",
-        "titulo": "La declaración jurada de destino minero se incorpora a la VUCEA",
-        "link": "https://aduananews.com/la-declaracion-jurada-de-destino-minero-se-incorpora-a-la-vucea/?utm_source=rss&utm_medium=rss&utm_campaign=la-declaracion-jurada-de-destino-minero-se-incorpora-a-la-vucea",
-        "descripcion": "La Agencia de Recaudación y Control Aduanero (ARCA) incorporó al Régimen Nacional de Ventanilla Única de Comercio Exterior Argentino (VUCEA) la declaración jurada de destino minero correspondiente al Régimen de Inversiones para la Actividad Minera. Así lo establece la Resolución General 5909/2026, publicada hoy (05.10.2026), en el Boletín Oficial. La norma dispone que la declaración [&#8230;] The post La declaración jurada de destino minero se incorpora a la VUCEA appeared first on Aduana News .",
-        "fecha_publicacion": "2026-10-05T12:32:50+00:00",
-        "fuente_id": "aduana_news",
-        "fuente_nombre": "Aduana News",
-        "categoria": "Comex"
-      },
-      {
-        "id": "5aeb55123210",
-        "titulo": "Para Milei, el triunfo de Bolsonaro es victoria propia y reivindica su discurso fiscalista",
-        "link": "https://www.iprofesional.com/politica/465862-milei-festeja-triunfo-de-bolsonaro-y-reivindica-discurso-fiscal",
-        "descripcion": "Milei había hecho una apuesta arriesgada que le costó un roce diplomático con Brasil. Pero ahora celebra un resultado donde Lula pagó el costo del déficit",
-        "fecha_publicacion": "2026-10-05T09:20:00+00:00",
-        "fuente_id": "iprof_comex",
-        "fuente_nombre": "iProfesional Comex",
-        "categoria": "Comex"
-      },
-      {
-        "id": "68ad3143e8f7",
-        "titulo": "Japón habilita la carne bovina con vacunación tras 20 años y abre un mercado de US$ 3000 millones",
-        "link": "https://tradenews.com.ar/japon-habilita-la-carne-bovina-con-vacunacion-tras-20-anos-y-abre-un-mercado-de-us-3000-millones/",
-        "descripcion": "Tras 20 años de negociaciones, la Argentina y Japón acordaron los requisitos sanitarios definitivos para el ingreso de carne bovina y lengua proveniente de la zona libre de fiebre aftosa...",
-        "fecha_publicacion": "2026-10-05T00:21:48+00:00",
-        "fuente_id": "trade_news",
-        "fuente_nombre": "Trade News",
-        "categoria": "Comex"
-      },
-      {
-        "id": "39e1714d3bdc",
-        "titulo": "La exportación de lana también mostró un importante crecimiento interanual en 2026",
-        "link": "https://www.iprofesional.com/comex/465849-la-exportacion-de-lana-tambien-mostro-un-importante-crecimiento-interanual-en-2026",
-        "descripcion": "De mediados de 2025 a mediados de 2026, las exportaciones de lana aumentaron un 28% en volúmen y 66% en valor: China y Europa, los principales compradores",
-        "fecha_publicacion": "2026-10-04T23:04:00+00:00",
-        "fuente_id": "iprof_comex",
-        "fuente_nombre": "iProfesional Comex",
-        "categoria": "Comex"
-      }
-    ],
     "Automotor": [
+      {
+        "id": "a9f65433ed75",
+        "titulo": "Renault comenzó la producción en serie en Córdoba de la nueva pick-up Niagara",
+        "link": "https://arodarpost.com.ar/renault-comenzo-la-produccion-en-serie-en-cordoba-de-la-nueva-pick-up-niagara/",
+        "descripcion": "Tras su presentación mundial el 10 de septiembre, Renault puso en marcha la producción en serie de la nueva Niagara en la planta Santa Isabel de Córdoba. La pick-up, que combina el confort y la tecnología de un SUV del segmento C con la robustez y versatilidad necesarias para afrontar los usos más exigentes, se [&#8230;]",
+        "fecha_publicacion": "2026-10-06T18:39:35+00:00",
+        "fuente_id": "arodar",
+        "fuente_nombre": "A Rodar Post",
+        "categoria": "Automotor"
+      },
+      {
+        "id": "9ca175b1109e",
+        "titulo": "BMW M ya hizo un millón de vehículos",
+        "link": "https://noticias.autocosmos.com.ar/2026/10/06/bmw-m-ya-hizo-un-millon-de-vehiculos",
+        "descripcion": "Un BMW M3 fabricado en Múnich es la unidad que marca este logro de producción.",
+        "fecha_publicacion": "2026-10-06T17:00:01+00:00",
+        "fuente_id": "autocosmos",
+        "fuente_nombre": "Autocosmos Argentina",
+        "categoria": "Automotor"
+      },
+      {
+        "id": "55659d19758b",
+        "titulo": "Angelelli Automobili Tipo 829: con el espíritu del Stratos",
+        "link": "https://noticias.autocosmos.com.ar/2026/10/06/angelelli-automobili-tipo-829-con-el-espiritu-del-stratos",
+        "descripcion": "Este superdeportivo ultra exclusivo tendrá distintos enfoques, empezando por el Terra para caminos tipo rally, recuperando de alguna manera la escancia del mítico modelo de Lancia.",
+        "fecha_publicacion": "2026-10-06T15:00:01+00:00",
+        "fuente_id": "autocosmos",
+        "fuente_nombre": "Autocosmos Argentina",
+        "categoria": "Automotor"
+      },
+      {
+        "id": "b974be194eec",
+        "titulo": "Estos datos recopilan las automotrices con los autos conectados",
+        "link": "https://noticias.autocosmos.com.ar/2026/10/06/estos-datos-recopilan-las-automotrices-con-los-autos-conectados",
+        "descripcion": "Los autos modernos están conectados a Internet, cuentan con cámaras, sensores y aplicaciones que generan grandes cantidades de información y un estudio reciente vuelve a poner sobre la mesa la pregunta: ¿qué pasa con todos esos datos una vez que salen del automóvil?",
+        "fecha_publicacion": "2026-10-06T15:00:00+00:00",
+        "fuente_id": "autocosmos",
+        "fuente_nombre": "Autocosmos Argentina",
+        "categoria": "Automotor"
+      },
       {
         "id": "23ae88ef6f4c",
         "titulo": "Vuelve la marca Mazda a la Argentina y con el Grupo Belcastro como importador",
@@ -577,58 +715,6 @@
         "fuente_id": "iprof_autos",
         "fuente_nombre": "iProfesional Autos",
         "categoria": "Automotor"
-      },
-      {
-        "id": "74a458ca5ca9",
-        "titulo": "Honda sin aumentos y con promociones en octubre: lista de precios aquí",
-        "link": "https://motorwebargentina.com/honda-sin-aumentos-y-con-promociones-en-octubre-lista-de-precios-aqui/",
-        "descripcion": "Honda Motor Argentina informó que durante octubre mantiene congelados los precios de toda su gama de automóviles. La única excepción pasa por la WR-V, que actualiza su valor a $43.490.000 en su única versión disponible. Asimismo, continúan vigentes las condiciones especiales de mercado. Paralelamente Honda ofrece interesantes descuentos en tres modelos de su gama media-alta. [&#8230;] La entrada Honda sin aumentos y con promociones en octubre: lista de precios aquí se publicó primero en Motorweb",
-        "fecha_publicacion": "2026-10-06T10:02:43+00:00",
-        "fuente_id": "motorweb",
-        "fuente_nombre": "Motorweb Argentina",
-        "categoria": "Automotor"
-      },
-      {
-        "id": "37ee9541b26c",
-        "titulo": "Honda actualiza al City en sus versiones sedán y hatchback",
-        "link": "https://noticias.autocosmos.com.ar/2026/10/06/honda-actualiza-al-city-en-sus-versiones-sedan-y-hatchback",
-        "descripcion": "Si bien no vimos esta generación en nuestras tierras, vale al pana seguirla en su segunda puesta al día que estrena la variante RS.",
-        "fecha_publicacion": "2026-10-06T09:00:02+00:00",
-        "fuente_id": "autocosmos",
-        "fuente_nombre": "Autocosmos Argentina",
-        "categoria": "Automotor"
-      },
-      {
-        "id": "8b408eb87daf",
-        "titulo": "Los autos más baratos del mercado subieron 21% en pesos en un año contra una inflación de más de 30% (en dólares aumentaron 14%)",
-        "link": "https://arodarpost.com.ar/los-autos-mas-baratos-del-mercado-subieron-21-en-pesos-en-un-ano-contra-una-inflacion-de-mas-de-30-en-dolares-aumentaron-14/",
-        "descripcion": "Entre octubre de 2025 y octubre de 2026, los autos 0 km más accesibles de la Argentina registraron aumentos de precios, en pesos, menores a la inflación y, en varios casos, mostraron una suba más acotada cuando la comparación se realiza en dólares. Con un tipo de cambio de $1.455 por dólar en octubre de [&#8230;]",
-        "fecha_publicacion": "2026-10-06T00:37:59+00:00",
-        "fuente_id": "arodar",
-        "fuente_nombre": "A Rodar Post",
-        "categoria": "Automotor"
-      },
-      {
-        "id": "1d9291ab44a1",
-        "titulo": "La producción automotriz cayó 15,6% anual en septiembre, pero las exportaciones tocaron máximos del año",
-        "link": "https://www.ambito.com/economia/la-produccion-automotriz-cayo-156-anual-septiembre-pero-las-exportaciones-tocaron-maximos-del-ano-n6330382",
-        "descripcion": "Según estimaciones privadas, la industria también arrojó una caída mensual del 3% y un retroceso trimestral del 9,2%.",
-        "fecha_publicacion": "2026-10-05T22:33:00+00:00",
-        "fuente_id": "ambito_autos",
-        "fuente_nombre": "Ámbito Autos",
-        "categoria": "Automotor"
-      }
-    ],
-    "Fulbito": [
-      {
-        "id": "68954dcb0463",
-        "titulo": "Video: el mensaje a corazón abierto de Santiago Arzamendia tras su vuelta en Estudiantes",
-        "link": "https://www.0221.com.ar/estudiantes/video-el-mensaje-corazon-abierto-santiago-arzamendia-su-vuelta-estudiantes-n135350",
-        "descripcion": "Una de las buenas noticias del partido ante Gimnasia de Mendoza, fue el regreso de Santiago Arzamendia tras la rotura de ligamentos después de casi 300 días.",
-        "fecha_publicacion": "2026-10-06T13:16:00+00:00",
-        "fuente_id": "est_0221",
-        "fuente_nombre": "0221 Estudiantes",
-        "categoria": "Fulbito"
       }
     ],
     "Internacional": [
@@ -691,68 +777,6 @@
         "fuente_id": "investing_intl",
         "fuente_nombre": "Investing Internacional",
         "categoria": "Internacional"
-      }
-    ],
-    "Logística": [
-      {
-        "id": "c7f1bd5d446f",
-        "titulo": "Los costos logísticos aumentaron 2,55% en septiembre en Argentina",
-        "link": "https://webpicking.com/los-costos-logisticos-aumentaron-255-en-septiembre-en-argentina/",
-        "descripcion": "La Cámara Empresaria de Operadores Logísticos dio a conocer la evolución del Índice de Costos Logísticos Nacionales. La entrada Los costos logísticos aumentaron 2,55% en septiembre en Argentina se publicó primero en Webpicking .",
-        "fecha_publicacion": "2026-10-05T23:46:41+00:00",
-        "fuente_id": "webpicking",
-        "fuente_nombre": "Webpicking",
-        "categoria": "Logística"
-      },
-      {
-        "id": "51ad9d52ebcf",
-        "titulo": "CEDOL Y UIPBA SE UNEN PARA MEJORAR LA COMPETITIVIDAD DE LA INDUSTRIA BONAERENSE",
-        "link": "https://www.cedol.org.ar/logistica/cedol-y-uipba-se-unen-para-mejorar-la-competitividad-de-la-industria-bonaerense/",
-        "descripcion": "Uno de los pilares centrales del convenio es la difusión e incorporación de los índices CEDOL como parámetro de referencia para la evolución de los [&#8230;] The post CEDOL Y UIPBA SE UNEN PARA MEJORAR LA COMPETITIVIDAD DE LA INDUSTRIA BONAERENSE appeared first on CEDOL .",
-        "fecha_publicacion": "2026-10-05T14:11:54+00:00",
-        "fuente_id": "cedol",
-        "fuente_nombre": "CEDOL",
-        "categoria": "Logística"
-      },
-      {
-        "id": "8837f1a9e109",
-        "titulo": "MUJERES LOGÍSTICAS: YASI GARCÍA MIERAVILLA, ANALISTA DE GESTIÓN DE TALENTO DE TP",
-        "link": "https://www.cedol.org.ar/logistica/mujeres-logisticas-yasi-garcia-mieravilla-analista-de-gestion-de-talento-de-tp/",
-        "descripcion": "“En la era de la IA, el secreto para fidelizar talento es volver a la artesanalidad de los vínculos” Yasi García Mieravilla trabaja desde hace [&#8230;] The post MUJERES LOGÍSTICAS: YASI GARCÍA MIERAVILLA, ANALISTA DE GESTIÓN DE TALENTO DE TP appeared first on CEDOL .",
-        "fecha_publicacion": "2026-10-05T14:09:10+00:00",
-        "fuente_id": "cedol",
-        "fuente_nombre": "CEDOL",
-        "categoria": "Logística"
-      },
-      {
-        "id": "cc828e2f5b90",
-        "titulo": "CEDOL PRESENTE EN EL MANAGEMENT LOGÍSTICO",
-        "link": "https://www.cedol.org.ar/logistica/cedol-presente-en-el-management-logistico/",
-        "descripcion": "Hernán Sánchez: “La rentabilidad es el motor de la búsqueda de la eficiencia”. El presidente de CEDOL y FAETYL participó del panel Rentabilidad en Management [&#8230;] The post CEDOL PRESENTE EN EL MANAGEMENT LOGÍSTICO appeared first on CEDOL .",
-        "fecha_publicacion": "2026-10-05T14:00:40+00:00",
-        "fuente_id": "cedol",
-        "fuente_nombre": "CEDOL",
-        "categoria": "Logística"
-      },
-      {
-        "id": "fee8d6007222",
-        "titulo": "Scoring, IA y controles en las fronteras: los desafíos en seguridad vial en las provincias argentinas",
-        "link": "https://webpicking.com/scoring-ia-y-controles-en-las-fronteras-los-desafios-en-seguridad-vial-en-las-provincias-argentinas/",
-        "descripcion": "Son las conclusiones del 106º Asamblea del Consejo Federal de Seguridad Vial que se reunió en Córdoba el 1 de octubre La entrada Scoring, IA y controles en las fronteras: los desafíos en seguridad vial en las provincias argentinas se publicó primero en Webpicking .",
-        "fecha_publicacion": "2026-10-02T18:29:11+00:00",
-        "fuente_id": "webpicking",
-        "fuente_nombre": "Webpicking",
-        "categoria": "Logística"
-      },
-      {
-        "id": "f19e3f6df4b2",
-        "titulo": "Mujeres que transforman: del poder de estar al poder de cambiar",
-        "link": "https://webpicking.com/mujeres-que-transforman-del-poder-de-estar-al-poder-de-cambiar/",
-        "descripcion": "Fue la ponencia de la la senadora Araceli Martínez Esteban ante el Consejo de la Mujer de la Zona Franca Barcelona La entrada Mujeres que transforman: del poder de estar al poder de cambiar se publicó primero en Webpicking .",
-        "fecha_publicacion": "2026-10-02T00:39:32+00:00",
-        "fuente_id": "webpicking",
-        "fuente_nombre": "Webpicking",
-        "categoria": "Logística"
       }
     ],
     "Análisis Consultoras": [

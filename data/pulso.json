@@ -1,19 +1,19 @@
 {
-  "generado_en": "2026-10-06T15:31:17.566741+00:00",
-  "generado_ar": "06/10/2026 12:31",
+  "generado_en": "2026-10-06T23:46:39.301507+00:00",
+  "generado_ar": "06/10/2026 20:46",
   "hechos": [
     {
       "slug": "brecha-dolar",
       "categoria": "Cambiario",
-      "titulo": "La brecha del dólar quedó casi planchada: 0,0%",
-      "bajada": "El MEP ($1.541) frente al oficial ($1.540). Además, el CCL marca 4,4% y el blue, 0,0%.",
+      "titulo": "La brecha del dólar quedó casi planchada: 0,3%",
+      "bajada": "El MEP ($1.544) frente al oficial ($1.540). Además, el CCL marca 4,6% y el blue, 0,6%.",
       "dato": {
-        "n": "0,0%",
+        "n": "0,3%",
         "txt": "Brecha entre el dólar MEP y el oficial"
       },
       "cuerpo": [
-        "El dólar oficial cerró a $1.540 para la venta y el MEP a $1.541, dejando una brecha de 0,0% entre ambos.",
-        "Mirando el resto de las cotizaciones, el contado con liquidación ($1.608) marca 4,4% y el blue ($1.540) queda en 0,0% de brecha contra el oficial."
+        "El dólar oficial cerró a $1.540 para la venta y el MEP a $1.544, dejando una brecha de 0,3% entre ambos.",
+        "Mirando el resto de las cotizaciones, el contado con liquidación ($1.611) marca 4,6% y el blue ($1.550) queda en 0,6% de brecha contra el oficial."
       ],
       "tabla": [
         [
@@ -26,44 +26,44 @@
         ],
         [
           "MEP",
-          "$1.541"
+          "$1.544"
         ],
         [
           "CCL",
-          "$1.608"
+          "$1.611"
         ],
         [
           "Blue",
-          "$1.540"
+          "$1.550"
         ],
         [
           "Tarjeta",
           "$2.002"
         ]
       ],
-      "metodo": "Brecha = (MEP ÷ Oficial − 1) × 100 = (1.541 ÷ 1.540 − 1) × 100 = 0,0%.",
+      "metodo": "Brecha = (MEP ÷ Oficial − 1) × 100 = (1.544 ÷ 1.540 − 1) × 100 = 0,3%.",
       "criollo": "La brecha es cuánto más caro está el dólar financiero (el que se compra con bonos) que el oficial. Cuando es chica, los dos precios casi se tocan.",
       "fuente_nombre": "DolarApi · cálculo PPA",
       "fuente_url": "https://dolarapi.com",
-      "dato_fecha": "06/10/2026 12:31",
+      "dato_fecha": "06/10/2026 20:46",
       "prioridad": 90
     },
     {
       "slug": "reservas-bcra",
       "categoria": "Reservas",
-      "titulo": "Las reservas del BCRA quedaron en US$ 48.288 millones",
-      "bajada": "Stock bruto del Banco Central, una suba del 4,8% en el día.",
+      "titulo": "Las reservas del BCRA quedaron en US$ 48.657 millones",
+      "bajada": "Stock bruto del Banco Central, una suba del 0,8% en el día.",
       "dato": {
-        "n": "48.288",
-        "txt": "millones de USD · reservas brutas · +4,8%"
+        "n": "48.657",
+        "txt": "millones de USD · reservas brutas · +0,8%"
       },
       "cuerpo": [
-        "Las reservas internacionales brutas del Banco Central cerraron en US$ 48.288 millones, una suba del 4,8% en el día. Es el stock bruto, antes de descontar swaps, encajes y otras obligaciones."
+        "Las reservas internacionales brutas del Banco Central cerraron en US$ 48.657 millones, una suba del 0,8% en el día. Es el stock bruto, antes de descontar swaps, encajes y otras obligaciones."
       ],
       "criollo": "Son los dólares que tiene el Banco Central. El número bruto es el total; el neto (que descuenta deudas) suele ser bastante más bajo.",
       "fuente_nombre": "BCRA API v4",
       "fuente_url": "https://www.bcra.gob.ar",
-      "dato_fecha": "01/10/2026",
+      "dato_fecha": "02/10/2026",
       "prioridad": 88
     },
     {
@@ -120,7 +120,7 @@
       "criollo": "El BCRA deja flotar el dólar dentro de un pasillo. Si se pega al techo hay más presión de suba; si se va al piso, lo contrario.",
       "fuente_nombre": "cálculo PPA (esquema BCRA)",
       "fuente_url": "https://www.bcra.gob.ar",
-      "dato_fecha": "06/10/2026 12:31",
+      "dato_fecha": "06/10/2026 20:46",
       "prioridad": 75
     }
   ]
