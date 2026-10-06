@@ -1,19 +1,19 @@
 {
-  "generado_en": "2026-10-05T17:31:12.249915+00:00",
-  "generado_ar": "05/10/2026 14:31",
+  "generado_en": "2026-10-06T01:17:35.431559+00:00",
+  "generado_ar": "05/10/2026 22:17",
   "hechos": [
     {
       "slug": "brecha-dolar",
       "categoria": "Cambiario",
-      "titulo": "La brecha del dólar quedó casi planchada: 0,0%",
-      "bajada": "El MEP ($1.540) frente al oficial ($1.540). Además, el CCL marca 4,5% y el blue, 0,6%.",
+      "titulo": "La brecha del dólar quedó casi planchada: -0,1%",
+      "bajada": "El MEP ($1.538) frente al oficial ($1.540). Además, el CCL marca 4,6% y el blue, 0,3%.",
       "dato": {
-        "n": "0,0%",
+        "n": "-0,1%",
         "txt": "Brecha entre el dólar MEP y el oficial"
       },
       "cuerpo": [
-        "El dólar oficial cerró a $1.540 para la venta y el MEP a $1.540, dejando una brecha de 0,0% entre ambos.",
-        "Mirando el resto de las cotizaciones, el contado con liquidación ($1.609) marca 4,5% y el blue ($1.550) queda en 0,6% de brecha contra el oficial."
+        "El dólar oficial cerró a $1.540 para la venta y el MEP a $1.538, dejando una brecha de -0,1% entre ambos.",
+        "Mirando el resto de las cotizaciones, el contado con liquidación ($1.611) marca 4,6% y el blue ($1.545) queda en 0,3% de brecha contra el oficial."
       ],
       "tabla": [
         [
@@ -22,48 +22,48 @@
         ],
         [
           "Mayorista",
-          "$1.519"
+          "$1.520"
         ],
         [
           "MEP",
-          "$1.540"
+          "$1.538"
         ],
         [
           "CCL",
-          "$1.609"
+          "$1.611"
         ],
         [
           "Blue",
-          "$1.550"
+          "$1.545"
         ],
         [
           "Tarjeta",
           "$2.002"
         ]
       ],
-      "metodo": "Brecha = (MEP ÷ Oficial − 1) × 100 = (1.540 ÷ 1.540 − 1) × 100 = 0,0%.",
+      "metodo": "Brecha = (MEP ÷ Oficial − 1) × 100 = (1.538 ÷ 1.540 − 1) × 100 = -0,1%.",
       "criollo": "La brecha es cuánto más caro está el dólar financiero (el que se compra con bonos) que el oficial. Cuando es chica, los dos precios casi se tocan.",
       "fuente_nombre": "DolarApi · cálculo PPA",
       "fuente_url": "https://dolarapi.com",
-      "dato_fecha": "05/10/2026 14:31",
+      "dato_fecha": "05/10/2026 22:17",
       "prioridad": 90
     },
     {
       "slug": "reservas-bcra",
       "categoria": "Reservas",
-      "titulo": "Las reservas del BCRA quedaron en US$ 46.092 millones",
-      "bajada": "Stock bruto del Banco Central, una baja del 2,9% en el día.",
+      "titulo": "Las reservas del BCRA quedaron en US$ 48.288 millones",
+      "bajada": "Stock bruto del Banco Central, una suba del 4,8% en el día.",
       "dato": {
-        "n": "46.092",
-        "txt": "millones de USD · reservas brutas · -2,9%"
+        "n": "48.288",
+        "txt": "millones de USD · reservas brutas · +4,8%"
       },
       "cuerpo": [
-        "Las reservas internacionales brutas del Banco Central cerraron en US$ 46.092 millones, una baja del 2,9% en el día. Es el stock bruto, antes de descontar swaps, encajes y otras obligaciones."
+        "Las reservas internacionales brutas del Banco Central cerraron en US$ 48.288 millones, una suba del 4,8% en el día. Es el stock bruto, antes de descontar swaps, encajes y otras obligaciones."
       ],
       "criollo": "Son los dólares que tiene el Banco Central. El número bruto es el total; el neto (que descuenta deudas) suele ser bastante más bajo.",
       "fuente_nombre": "BCRA API v4",
       "fuente_url": "https://www.bcra.gob.ar",
-      "dato_fecha": "30/09/2026",
+      "dato_fecha": "01/10/2026",
       "prioridad": 88
     },
     {
@@ -107,20 +107,20 @@
     {
       "slug": "banda-cambiaria",
       "categoria": "Banda cambiaria",
-      "titulo": "El dólar mayorista corre al 64% de la banda",
-      "bajada": "Con piso en $709 y techo en $1.965, el mayorista ($1.519) se ubica en el canal.",
+      "titulo": "El dólar mayorista corre al 65% de la banda",
+      "bajada": "Con piso en $709 y techo en $1.965, el mayorista ($1.520) se ubica en el canal.",
       "dato": {
-        "n": "64%",
+        "n": "65%",
         "txt": "posición del mayorista dentro del canal piso–techo"
       },
       "cuerpo": [
-        "Bajo el esquema de bandas del Banco Central, el piso se desliza a $709 y el techo a $1.965. El dólar mayorista ($1.519) se ubica al 64,5% del recorrido entre ambos."
+        "Bajo el esquema de bandas del Banco Central, el piso se desliza a $709 y el techo a $1.965. El dólar mayorista ($1.520) se ubica al 64,6% del recorrido entre ambos."
       ],
-      "metodo": "Posición = (Mayorista − Piso) ÷ (Techo − Piso) × 100 = (1.519 − 709) ÷ (1.965 − 709) × 100 = 64,5%.",
+      "metodo": "Posición = (Mayorista − Piso) ÷ (Techo − Piso) × 100 = (1.520 − 709) ÷ (1.965 − 709) × 100 = 64,6%.",
       "criollo": "El BCRA deja flotar el dólar dentro de un pasillo. Si se pega al techo hay más presión de suba; si se va al piso, lo contrario.",
       "fuente_nombre": "cálculo PPA (esquema BCRA)",
       "fuente_url": "https://www.bcra.gob.ar",
-      "dato_fecha": "05/10/2026 14:31",
+      "dato_fecha": "05/10/2026 22:17",
       "prioridad": 75
     }
   ]
