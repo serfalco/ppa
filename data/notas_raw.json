@@ -1,56 +1,336 @@
 {
-  "generado_en": "2026-10-06T13:44:23.020288+00:00",
-  "total": 110,
+  "generado_en": "2026-10-06T15:31:03.993733+00:00",
+  "total": 107,
   "notas": [
     {
-      "id": "25712748ba98",
-      "titulo": "Un ranking internacional dejó a la industria argentina entre las cuatro peores del mundo",
-      "link": "https://www.iprofesional.com/economia/465986-industria-argentina-se-desplomo-y-solo-tres-paises-del-mundo-sufrieron-una-caida-peor",
-      "descripcion": "Según datos de la ONUDI, la caída de la actividad en fábricas argentinas contrasta fuertemente con el avance que muestra la industria mundial",
-      "fecha_publicacion": "2026-10-06T13:34:00+00:00",
+      "id": "201aa6181c01",
+      "titulo": "Se define en 48 horas quién será el nuevo dueño de AYSA",
+      "link": "https://www.lanacion.com.ar/economia/se-define-en-48-horas-quien-sera-el-nuevo-dueno-de-aysa-nid06102026/",
+      "descripcion": "Un grupo comandado por la familia Roggio y otro por Wálter Román quedaron calificados; el miércoles a las 10 se conocerá el ganador",
+      "fecha_publicacion": "2026-10-06T15:21:53+00:00",
+      "fuente_id": "lanacion_eco",
+      "fuente_nombre": "La Nación Economía",
+      "categoria": "Finanzas"
+    },
+    {
+      "id": "ca7a0d5f87f1",
+      "titulo": "Plazo fijo: cuál es la tasa de interés banco por banco este martes 6 de octubre",
+      "link": "https://www.lanacion.com.ar/economia/plazo-fijo-cual-es-la-tasa-de-interes-banco-por-banco-este-martes-6-de-octubre-nid06102026/",
+      "descripcion": "El Banco Central de la República Argentina (BCRA) permite a los ahorristas conocer el rendimiento de estos instrumentos de inversión en pesos con una tabla comparativa de tasas",
+      "fecha_publicacion": "2026-10-06T15:21:31+00:00",
+      "fuente_id": "lanacion_eco",
+      "fuente_nombre": "La Nación Economía",
+      "categoria": "Finanzas"
+    },
+    {
+      "id": "26860968e597",
+      "titulo": "El riesgo país cae por debajo de los 580 puntos, mientras los bonos y acciones extienden su repunte",
+      "link": "https://www.ambito.com/finanzas/los-bonos-dolares-extienden-las-subas-el-envion-las-elecciones-brasil-n6330488",
+      "descripcion": "Los títulos soberanos avanzan, con las mayores ganancias en el tramo largo. El resultado electoral en Brasil mejoró el clima para los activos de la región y las monedas latinoamericanas registraron su mayor avance diario en más de una década.",
+      "fecha_publicacion": "2026-10-06T15:19:00+00:00",
+      "fuente_id": "ambito_fin",
+      "fuente_nombre": "Ámbito Finanzas",
+      "categoria": "Finanzas"
+    },
+    {
+      "id": "b425cc308f40",
+      "titulo": "\"El Pirlo de La Plata\": el apodo viral de Bautista Kociubinski luego del gran partido en Estudiantes",
+      "link": "https://www.0221.com.ar/estudiantes/el-pirlo-la-plata-el-apodo-viral-bautista-kociubinski-luego-del-gran-partido-estudiantes-n135358",
+      "descripcion": "Tras la victoria de Estudiantes, los hinchas en las redes sociales bromearon por la buena actuación de Bautista Kociubinski y lo rebautizaron.",
+      "fecha_publicacion": "2026-10-06T15:17:00+00:00",
+      "fuente_id": "est_0221",
+      "fuente_nombre": "0221 Estudiantes",
+      "categoria": "Fulbito"
+    },
+    {
+      "id": "ba2f55dab9e9",
+      "titulo": "Nos fuimos al descenso: La capacidad de molienda de granos oleaginosos en Brasil ya supera en un 23% a la presente en la Argentina",
+      "link": "https://bichosdecampo.com/nos-fuimos-al-descenso-la-capacidad-de-molienda-de-granos-oleaginosos-en-brasil-ya-supera-en-un-23-a-la-presente-en-la-argentina/",
+      "descripcion": "En 2024 Brasil superó por primera vez a la Argentina en capacidad de procesamiento de oleaginosos y desde entonces el gigante agroindustrial no dejó de crecer. Según un relevamiento realizado por la Asociación Brasileña de Industrias de Aceites Vegetales (Abiove), la capacidad total de procesamiento diario de granos oleaginosos este año es de 261.868 toneladas/día [&#8230;]",
+      "fecha_publicacion": "2026-10-06T15:15:13+00:00",
+      "fuente_id": "bichos_campo",
+      "fuente_nombre": "Bichos de Campo",
+      "categoria": "Agro"
+    },
+    {
+      "id": "5534df1aea3d",
+      "titulo": "El dólar opera estable y se mantiene a más de $400 del techo de la banda",
+      "link": "https://www.ambito.com/finanzas/el-dolar-quedo-mas-400-del-techo-la-banda-y-el-mercado-mira-el-efecto-del-real-brasileno-n6330464",
+      "descripcion": "El tipo de cambio mayorista cotiza a $1.520 y se ubica a casi 27% del límite superior del esquema cambiario, la mayor distancia en 17 meses. La apreciación del real tras las elecciones en Brasil sumó alivio al mercado local.",
+      "fecha_publicacion": "2026-10-06T15:11:00+00:00",
+      "fuente_id": "ambito_fin",
+      "fuente_nombre": "Ámbito Finanzas",
+      "categoria": "Finanzas"
+    },
+    {
+      "id": "e0bbc7d5b5e8",
+      "titulo": "El Gobierno pagará con bonos la deuda por obra pública y concentrará los vencimientos en 2027",
+      "link": "https://www.lanacion.com.ar/economia/el-gobierno-pagara-con-bonos-deuda-por-obra-publica-y-concentrara-los-vencimientos-en-2027-nid06102026/",
+      "descripcion": "La operación tiene un cupo de $221.119 millones y comprende obligaciones de 2022 a 2025; el Gobierno había reconocido que no disponía de partidas para afrontar todas las acreencias relevadas",
+      "fecha_publicacion": "2026-10-06T15:07:36+00:00",
+      "fuente_id": "lanacion_eco",
+      "fuente_nombre": "La Nación Economía",
+      "categoria": "Finanzas"
+    },
+    {
+      "id": "5f38dcfd3bb7",
+      "titulo": "Inflación de septiembre 2026: las consultoras anticipan una nueva aceleración y alimentos vuelve a presionar",
+      "link": "https://www.ambito.com/finanzas/inflacion-septiembre-2026-las-consultoras-anticipan-una-nueva-aceleracion-y-alimentos-vuelve-presionar-n6330586",
+      "descripcion": "Las estimaciones privadas se ubican por encima del 1,7% registrado en agosto. Alimentos y bebidas aparece como uno de los principales factores detrás del repunte, mientras el mercado espera el dato oficial del INDEC.",
+      "fecha_publicacion": "2026-10-06T15:00:00+00:00",
+      "fuente_id": "ambito_fin",
+      "fuente_nombre": "Ámbito Finanzas",
+      "categoria": "Finanzas"
+    },
+    {
+      "id": "c4ce66f0ed2e",
+      "titulo": "Precio de las criptomonedas top: cuánto valen en Argentina y a nivel global hoy, 6 de octubre de 2026",
+      "link": "https://www.iproup.com/economia-digital/72102-precio-de-criptomonedas-en-argentina-cuanto-valen-hoy-6-de-octubre-de-2026",
+      "descripcion": "En las últimas 24 horas, la criptomoneda número uno subió 0,75%. Las cotizaciones de de otras divisas digitales y dólares cripto",
+      "fecha_publicacion": "2026-10-06T15:00:00+00:00",
+      "fuente_id": "iproup_eco",
+      "fuente_nombre": "iProUP Economía Digital",
+      "categoria": "Mercados"
+    },
+    {
+      "id": "f394100d18f5",
+      "titulo": "Precio de Bitcoin: cuánto vale en Argentina y a nivel global hoy, 6 de octubre de 2026",
+      "link": "https://www.iproup.com/economia-digital/72103-precio-de-criptomonedas-en-argentina-cuanto-valen-hoy-6-de-octubre-de-2026",
+      "descripcion": "En las últimas 24 horas, la cripto más importante subió 0,75%. Cómo son los precios de otras monedas virtuales y dólares digitales",
+      "fecha_publicacion": "2026-10-06T15:00:00+00:00",
+      "fuente_id": "iproup_eco",
+      "fuente_nombre": "iProUP Economía Digital",
+      "categoria": "Mercados"
+    },
+    {
+      "id": "7217cc78da15",
+      "titulo": "Precio de Ethereum: cuánto vale en Argentina y a nivel global hoy, 6 de octubre de 2026",
+      "link": "https://www.iproup.com/economia-digital/72104-precio-de-criptomonedas-en-argentina-cuanto-valen-hoy-6-de-octubre-de-2026",
+      "descripcion": "Con un incremento del 0,32% En las últimas 24 horas, la segunda criptomoneda sigue al alza. Cómo se comportaron otras criptos y dólares digitales",
+      "fecha_publicacion": "2026-10-06T15:00:00+00:00",
+      "fuente_id": "iproup_eco",
+      "fuente_nombre": "iProUP Economía Digital",
+      "categoria": "Mercados"
+    },
+    {
+      "id": "7bd562628ee9",
+      "titulo": "El Superior Tribunal de Justicia de Brasil define el futuro del fracking en el tramo final de la elección presidencial",
+      "link": "https://econojournal.com.ar/internacionales/el-superior-tribunal-de-justicia-de-brasil-define-el-futuro-del-fracking/",
+      "descripcion": "El fracking ganará visibilidad en la agenda brasileña durante las próximas semanas. Flávio Bolsonaro, quien llega a la segunda vuelta presidencial como favorito, propone explícitamente habilitar el fracking. Su programa plantea “permitir la exploración del gas no convencional con responsabilidad ambiental y cumpliendo la ley”. Sin embargo, el tema está en manos del Superior Tribunal [&#8230;]",
+      "fecha_publicacion": "2026-10-06T14:57:03+00:00",
+      "fuente_id": "econojournal",
+      "fuente_nombre": "EconoJournal",
+      "categoria": "Energía y Minería"
+    },
+    {
+      "id": "55e42b8d1224",
+      "titulo": "Dimon advierte de un aumento de diez veces en el riesgo cibernético por la IA",
+      "link": "https://es.investing.com/news/economy-news/dimon-advierte-de-un-aumento-de-diez-veces-en-el-riesgo-cibernetico-por-la-ia-3863104",
+      "descripcion": "",
+      "fecha_publicacion": "2026-10-06T14:54:40+00:00",
+      "fuente_id": "investing_economia",
+      "fuente_nombre": "Investing Economía",
+      "categoria": "Mercados"
+    },
+    {
+      "id": "2a5d0dac801c",
+      "titulo": "Cómo es la nueva ON de Central Puerto en dólar MEP y cómo operar si te perdiste la licitación",
+      "link": "https://www.iproup.com/economia-digital/72071-central-puerto-lanza-nuevas-obligaciones-negociables-en-dolares",
+      "descripcion": "Con una inversión inicial de u$s100, la mayor generadora eléctrica del país busca financiamiento corporativo con cupón semestral en dólares.",
+      "fecha_publicacion": "2026-10-06T14:49:00+00:00",
+      "fuente_id": "iproup_fintech",
+      "fuente_nombre": "iProUP Fintech",
+      "categoria": "Finanzas"
+    },
+    {
+      "id": "0d49560d04ad",
+      "titulo": "La Ley de Tierras de Kicillof suma fichas: Sergio Berni presentó su propio proyecto y el peronismo apura la pulseada legislativa",
+      "link": "https://bichosdecampo.com/la-ley-de-tierras-de-kicillof-suma-fichas-sergio-berni-presento-su-propio-proyecto-y-el-peronismo-apura-la-pulseada-legislativa/",
+      "descripcion": "Luego de la decisión de la Corte Suprema de Justicia de restituir el DNU 70/23 y, con él, la derogación de la Ley de Tierras Rurales, el camporismo, el cristinismo, el massismo y el kicillofismo aceleran el tratamiento de una ley análoga a aquella que regía desde el 2011, pero exclusiva de la provincia de [&#8230;]",
+      "fecha_publicacion": "2026-10-06T14:41:50+00:00",
+      "fuente_id": "bichos_campo",
+      "fuente_nombre": "Bichos de Campo",
+      "categoria": "Agro"
+    },
+    {
+      "id": "5cdb2fe91241",
+      "titulo": "El comercio del G20 se aceleró en el segundo trimestre de 2026 y Argentina elevó sus exportaciones un 9,3%",
+      "link": "https://aduananews.com/el-comercio-del-g20-se-acelero-en-el-segundo-trimestre-de-2026-y-argentina-elevo-sus-exportaciones-un-93/?utm_source=rss&utm_medium=rss&utm_campaign=el-comercio-del-g20-se-acelero-en-el-segundo-trimestre-de-2026-y-argentina-elevo-sus-exportaciones-un-93",
+      "descripcion": "El G20 O Grupo de los Veinte, que reúne a las principales economías desarrolladas y emergentes y del que Argentina forma parte, concentra una porción significativa del comercio y de la actividad económica mundial. En este contexto, las estadísticas sobre el movimiento de mercancías entre países permiten observar la evolución de los intercambios comerciales y [&#8230;] The post El comercio del G20 se aceleró en el segundo trimestre de 2026 y Argentina elevó sus exportaciones un 9,3% appeared firs",
+      "fecha_publicacion": "2026-10-06T14:37:54+00:00",
+      "fuente_id": "aduana_news",
+      "fuente_nombre": "Aduana News",
+      "categoria": "Comex"
+    },
+    {
+      "id": "f6f9ee05c13f",
+      "titulo": "BCRA cortó racha de megacompras de dólares y la City sospecha de una nueva estrategia",
+      "link": "https://www.iprofesional.com/economia/465953-el-bcra-corto-la-racha-y-en-la-city-sospechan-de-una-nueva-estrategia",
+      "descripcion": "El Banco Central compró tan sólo u$s14 millones este lunes, a pesar de una jornada espectacular en los mercados tras el triunfo de Bolsonaro",
+      "fecha_publicacion": "2026-10-06T14:35:00+00:00",
       "fuente_id": "iprof_economia",
       "fuente_nombre": "iProfesional Economía",
       "categoria": "Finanzas"
     },
     {
-      "id": "4001a1e82b0c",
-      "titulo": "Elon Musk vuelve a ser billonario: el salto de SpaceX llevó su fortuna otra vez por encima de US$1 billón",
-      "link": "https://www.lanacion.com.ar/tecnologia/elon-musk-vuelve-a-ser-billonario-el-salto-de-spacex-llevo-su-fortuna-otra-vez-por-encima-de-us1-nid06102026/",
-      "descripcion": "El empresario sumó unos US$65.000 millones en una jornada; la acción de la empresa cerró en US$171,09 y ya vale alrededor de US$2,2 billones",
-      "fecha_publicacion": "2026-10-06T13:25:05+00:00",
-      "fuente_id": "lanacion_eco",
-      "fuente_nombre": "La Nación Economía",
+      "id": "aec9fae90872",
+      "titulo": "Inflación de septiembre: los alimentos vuelven a presionar y el IPC rondaría el 2%",
+      "link": "https://www.iprofesional.com/economia/466000-inflacion-de-septiembre-el-ipc-rondaria-el-2-por-presion-alimentaria",
+      "descripcion": "Las consultoras privadas estiman que el IPC de septiembre superó el 1,7% de agosto, con alimentos y bebidas entre los rubros que más presionaron.",
+      "fecha_publicacion": "2026-10-06T14:30:00+00:00",
+      "fuente_id": "iprof_economia",
+      "fuente_nombre": "iProfesional Economía",
       "categoria": "Finanzas"
     },
     {
-      "id": "954a5295b430",
-      "titulo": "Paritaria confirmada: cuánto cobran las empleadas domésticas en octubre de 2026 con el aumento oficial",
-      "link": "https://www.lanacion.com.ar/economia/paritaria-confirmada-cuanto-cobran-las-empleadas-domesticas-en-octubre-de-2026-con-el-aumento-nid06102026/",
-      "descripcion": "La actualización salarial es de un 1,7%; cuál es el monto exacto por hora y por mes, según el tipo de contratación",
-      "fecha_publicacion": "2026-10-06T13:22:59+00:00",
-      "fuente_id": "lanacion_eco",
-      "fuente_nombre": "La Nación Economía",
+      "id": "2c7186c3a8af",
+      "titulo": "Con bienes inhibidos, Granja Tres Arroyos ratificó 1.250 despidos en tres plantas clave",
+      "link": "https://www.iprofesional.com/negocios/465998-granja-tres-arroyos-ratifico-1250-despidos-en-tres-plantas-clave",
+      "descripcion": "Venció la tregua en Trabajo y el gigante avícola oficializó los recortes. Incertidumbre en sus empleados por traba judicial y cobro de indemnizaciones",
+      "fecha_publicacion": "2026-10-06T14:26:00+00:00",
+      "fuente_id": "iprof_economia",
+      "fuente_nombre": "iProfesional Economía",
       "categoria": "Finanzas"
     },
     {
-      "id": "d076621a2703",
-      "titulo": "Nvidia quedó a un paso de convertirse en la primera empresa valuada en u$s6 billones ante un nuevo rally alcista",
-      "link": "https://www.ambito.com/finanzas/nvidia-quedo-un-paso-convertirse-la-primera-empresa-valuada-us6-billones-un-nuevo-rally-alcista-n6330528",
-      "descripcion": "La acción del gigante de los semiconductores subió 28% este año, sumando u$s1,2 billones que lo dejan al borde la valoración récord. Además, la recompra de acciones permitió sumar u$s150.000 millones adicionales, reforzando la confianza inversora.",
-      "fecha_publicacion": "2026-10-06T13:22:00+00:00",
-      "fuente_id": "ambito_fin",
-      "fuente_nombre": "Ámbito Finanzas",
+      "id": "66db4a85b572",
+      "titulo": "El Niño, a medias: en algunas zonas ya impacta, en otras lo esperan y ¿podría al final no ser tan intenso?",
+      "link": "https://www.infocampo.com.ar/el-nino-a-medias-en-algunas-zonas-ya-impacta-en-otras-lo-esperan-y-podria-al-final-no-ser-tan-intenso/",
+      "descripcion": "Dos informes conocidos en los últimos días analizan los primeros pasos del fenómeno El Niño en Argentina y por qué hay varias zonas del país donde todavía no se ha reflejado su presencia como ya se esperaba para esta época del año.",
+      "fecha_publicacion": "2026-10-06T14:17:36+00:00",
+      "fuente_id": "infocampo",
+      "fuente_nombre": "Infocampo",
+      "categoria": "Agro"
+    },
+    {
+      "id": "2fa2c0e8162e",
+      "titulo": "Hornero: por qué es el ave nacional de Argentina",
+      "link": "https://www.infocampo.com.ar/hornero-por-que-es-el-ave-nacional-de-argentina/",
+      "descripcion": "El hornero argentino en casi todo el territorio, excepto en la Patagonia más austral y la alta cordillera.",
+      "fecha_publicacion": "2026-10-06T14:16:36+00:00",
+      "fuente_id": "infocampo",
+      "fuente_nombre": "Infocampo",
+      "categoria": "Agro"
+    },
+    {
+      "id": "7d3bd2b1983e",
+      "titulo": "Plazo fijo: cuánto invertir para ganar $200.000 en 30 días y qué banco paga más",
+      "link": "https://www.iprofesional.com/finanzas/465996-plazo-fijo-cuanto-hay-que-invertir-para-ganar-200000-en-30-dias",
+      "descripcion": "Las principales entidades ofrecen distintas tasas para plazos fijos. Cuánto hay que invertir durante 30 días para generar $200.000",
+      "fecha_publicacion": "2026-10-06T14:11:00+00:00",
+      "fuente_id": "iprof_finanzas",
+      "fuente_nombre": "iProfesional Finanzas",
       "categoria": "Finanzas"
     },
     {
-      "id": "bceabfd3cc37",
-      "titulo": "Bitcoin modera el rally alcista del tercer trimestre, presionado por la energía y los bonos",
-      "link": "https://www.ambito.com/finanzas/bitcoin-modera-el-rally-alcista-del-tercer-trimestre-presionado-la-energia-y-los-bonos-n6330529",
-      "descripcion": "EEUU lanzó un proceso regulatorio para la negociación minorista de criptomonedas con apalancamiento, mientras que Strategy compró apenas 334 BTC la semana pasada —una quinta parte de la semana anterior— y destinó seis veces más a recomprar sus propias acciones preferentes.",
-      "fecha_publicacion": "2026-10-06T13:22:00+00:00",
-      "fuente_id": "ambito_fin",
-      "fuente_nombre": "Ámbito Finanzas",
+      "id": "c0f2b3f065f0",
+      "titulo": "Hungría propone un impuesto sobre el patrimonio superior a 3 millones de dólares",
+      "link": "https://es.investing.com/news/economy-news/hungria-propone-un-impuesto-sobre-el-patrimonio-superior-a-3-millones-de-dolares-93CH-3863037",
+      "descripcion": "",
+      "fecha_publicacion": "2026-10-06T14:10:06+00:00",
+      "fuente_id": "investing_economia",
+      "fuente_nombre": "Investing Economía",
+      "categoria": "Mercados"
+    },
+    {
+      "id": "89ea32c089fd",
+      "titulo": "Precio del maíz en Rosario hoy 6 octubre 2026",
+      "link": "https://www.infocampo.com.ar/precio-del-maiz-hoy-6-octubre-2026/",
+      "descripcion": "Todo sobre la cotización de maíz, precio en tiempo real.",
+      "fecha_publicacion": "2026-10-06T14:06:28+00:00",
+      "fuente_id": "infocampo",
+      "fuente_nombre": "Infocampo",
+      "categoria": "Agro"
+    },
+    {
+      "id": "015da675ee56",
+      "titulo": "En Quitilipi, al norte de Chaco, el abigeato no perdona ni al presidente de la Rural: Gonzalo Susara perdió 5 animales en menos de 3 meses y reclama respuestas",
+      "link": "https://bichosdecampo.com/en-quitilipi-al-norte-de-chaco-el-abigeato-no-perdona-ni-al-presidente-de-la-rural-gonzalo-susara-perdio-5-animales-en-menos-de-3-meses-y-reclama-respuestas/",
+      "descripcion": "Esta semana, las comisiones de Agricultura y Seguridad Penal tratarán el proyecto de ley que modificaría la normativa vigente sobre delitos rurales. Mientras tanto, en diferentes regiones se siguen sucediendo casos de diferente índole. Una de ellas es Chaco, cuya zona norte es una de las tantas “zonas calientes” del delito rural. Los casos de [&#8230;]",
+      "fecha_publicacion": "2026-10-06T14:00:08+00:00",
+      "fuente_id": "bichos_campo",
+      "fuente_nombre": "Bichos de Campo",
+      "categoria": "Agro"
+    },
+    {
+      "id": "23ae88ef6f4c",
+      "titulo": "Vuelve la marca Mazda a la Argentina y con el Grupo Belcastro como importador",
+      "link": "https://www.iprofesional.com/autos/465992-mazda-vuelve-a-argentina-grupo-belcastro-sera-el-importador-oficial",
+      "descripcion": "La automotriz japonesa Mazda concreta su regreso al mercado argentino bajo la representación del Grupo Belcastro y define su estrategia arancelaria",
+      "fecha_publicacion": "2026-10-06T13:53:00+00:00",
+      "fuente_id": "iprof_autos",
+      "fuente_nombre": "iProfesional Autos",
+      "categoria": "Automotor"
+    },
+    {
+      "id": "8a8805634487",
+      "titulo": "Las empresas multinacionales giraron más de u$s4.000 millones al exterior en 2026",
+      "link": "https://www.iprofesional.com/finanzas/465989-utilidades-al-exterior-cuanto-giraron-las-multinacionales-en-2026",
+      "descripcion": "El retiro de utilidades de firmas globales alcanzó un máximo sin precedentes desde la flexibilización en el mercado de divisas, según datos oficiales",
+      "fecha_publicacion": "2026-10-06T13:52:00+00:00",
+      "fuente_id": "iprof_finanzas",
+      "fuente_nombre": "iProfesional Finanzas",
       "categoria": "Finanzas"
+    },
+    {
+      "id": "b6e75aef0a8b",
+      "titulo": "Marcos Rojo en Estudiantes: charló con Alexander Medina, conoció a sus compañeros y alentó en el Estadio UNO",
+      "link": "https://www.0221.com.ar/estudiantes/marcos-rojo-estudiantes-charlo-alexander-medina-conocio-sus-companeros-y-alento-el-estadio-uno-n135352",
+      "descripcion": "A la espera de poder sumarse al plantel de Estudiantes, Marcos Rojo volvió al Estadio UNO donde estuvo en el vestuario y alentó al equipo desde un palco.",
+      "fecha_publicacion": "2026-10-06T13:44:00+00:00",
+      "fuente_id": "est_0221",
+      "fuente_nombre": "0221 Estudiantes",
+      "categoria": "Fulbito"
+    },
+    {
+      "id": "d0b1ca9a4d01",
+      "titulo": "El índice de fletes secos báltico cae a su nivel más bajo en seis semanas",
+      "link": "https://es.investing.com/news/commodities-news/el-indice-de-fletes-secos-baltico-cae-a-su-nivel-mas-bajo-en-seis-semanas-93CH-3862964",
+      "descripcion": "",
+      "fecha_publicacion": "2026-10-06T13:42:12+00:00",
+      "fuente_id": "investing_agro",
+      "fuente_nombre": "Investing Agro",
+      "categoria": "Agro"
+    },
+    {
+      "id": "b6bac44d61a5",
+      "titulo": "La evasión fiscal en Italia sube más de 7.000 millones de euros en 2023",
+      "link": "https://es.investing.com/news/economy-news/la-evasion-fiscal-en-italia-sube-mas-de-7000-millones-de-euros-en-2023-93CH-3862901",
+      "descripcion": "",
+      "fecha_publicacion": "2026-10-06T13:24:13+00:00",
+      "fuente_id": "investing_economia",
+      "fuente_nombre": "Investing Economía",
+      "categoria": "Mercados"
+    },
+    {
+      "id": "9a3c4215ed3c",
+      "titulo": "La soja CBOT sube por el lento avance de la cosecha en EE.UU.",
+      "link": "https://es.investing.com/news/commodities-news/la-soja-cbot-sube-por-el-lento-avance-de-la-cosecha-en-eeuu-93CH-3862893",
+      "descripcion": "",
+      "fecha_publicacion": "2026-10-06T13:21:00+00:00",
+      "fuente_id": "investing_agro",
+      "fuente_nombre": "Investing Agro",
+      "categoria": "Agro"
+    },
+    {
+      "id": "d985fdeaa9bc",
+      "titulo": "Los precios del maíz suben mientras la cosecha va por detrás del ritmo habitual",
+      "link": "https://es.investing.com/news/commodities-news/los-precios-del-maiz-suben-mientras-la-cosecha-va-por-detras-del-ritmo-habitual-93CH-3862892",
+      "descripcion": "",
+      "fecha_publicacion": "2026-10-06T13:20:21+00:00",
+      "fuente_id": "investing_agro",
+      "fuente_nombre": "Investing Agro",
+      "categoria": "Agro"
+    },
+    {
+      "id": "68954dcb0463",
+      "titulo": "Video: el mensaje a corazón abierto de Santiago Arzamendia tras su vuelta en Estudiantes",
+      "link": "https://www.0221.com.ar/estudiantes/video-el-mensaje-corazon-abierto-santiago-arzamendia-su-vuelta-estudiantes-n135350",
+      "descripcion": "Una de las buenas noticias del partido ante Gimnasia de Mendoza, fue el regreso de Santiago Arzamendia tras la rotura de ligamentos después de casi 300 días.",
+      "fecha_publicacion": "2026-10-06T13:16:00+00:00",
+      "fuente_id": "est_0221",
+      "fuente_nombre": "0221 Estudiantes",
+      "categoria": "Fulbito"
     },
     {
       "id": "7d3d9b9d434a",
@@ -63,24 +343,14 @@
       "categoria": "Finanzas"
     },
     {
-      "id": "5c1d6b21ce4c",
-      "titulo": "El presupuesto de Irak para 2027 se basa en un precio del petróleo de 58 dólares",
-      "link": "https://es.investing.com/news/economy-news/el-presupuesto-de-irak-para-2027-se-basa-en-un-precio-del-petroleo-de-58-dolares-3862842",
-      "descripcion": "",
-      "fecha_publicacion": "2026-10-06T13:05:24+00:00",
-      "fuente_id": "investing_economia",
-      "fuente_nombre": "Investing Economía",
-      "categoria": "Mercados"
-    },
-    {
-      "id": "2b324c63f139",
-      "titulo": "De Córdoba a la “Tierra Prometida”: en la universidad se le despertó una curiosidad por la Patagonia, compró un campo y hoy logra supercultivos",
-      "link": "https://www.lanacion.com.ar/economia/campo/de-cordoba-a-la-tierra-prometida-la-hidrologia-desperto-su-curiosidad-por-la-patagonia-compro-un-nid05102026/",
-      "descripcion": "En Lamarque, en el Valle Medio de Río Negro, Hugo Lattanzi apunta a estabilizar rindes de maíz superiores a los 120 quintales gracias a condiciones ambientales únicas y con riego",
-      "fecha_publicacion": "2026-10-06T12:53:48+00:00",
-      "fuente_id": "lanacion_eco",
-      "fuente_nombre": "La Nación Economía",
-      "categoria": "Finanzas"
+      "id": "8c05641dd9b5",
+      "titulo": "Confirmado: vuelve la marca Mazda a la Argentina y llegaría de la mano del Grupo Belcastro como importador",
+      "link": "https://arodarpost.com.ar/confirmado-vuelve-la-marca-mazda-a-la-argentina-y-llegaria-de-la-mano-del-grupo-belcastro-como-importador/",
+      "descripcion": "Después de una larga negociación y marchas y contramarchas, el regreso de la marca japonesa Mazda a la Argentina sería un hecho. La confirmación de la noticia se produciría en lo próximos días y la representación para la importación de sus modelos quedaría en manos del Grupo Belcastro. La posible vuelta de Mazda a la [&#8230;]",
+      "fecha_publicacion": "2026-10-06T12:57:59+00:00",
+      "fuente_id": "arodar",
+      "fuente_nombre": "A Rodar Post",
+      "categoria": "Automotor"
     },
     {
       "id": "57708fdde092",
@@ -103,90 +373,20 @@
       "categoria": "Finanzas"
     },
     {
-      "id": "19a4799a8386",
-      "titulo": "\"Un broche de oro\": Sturzenegger mandará al Congreso una reforma al mercado de capitales",
-      "link": "https://www.iprofesional.com/finanzas/465943-el-gobierno-enviara-al-congreso-una-reforma-al-mercado-de-capitales",
-      "descripcion": "La iniciativa incluye once cambios clave que buscan modernizar el acceso al financiamiento, con foco en eliminar barreras regulatorias",
-      "fecha_publicacion": "2026-10-06T12:45:00+00:00",
-      "fuente_id": "iprof_finanzas",
-      "fuente_nombre": "iProfesional Finanzas",
-      "categoria": "Finanzas"
-    },
-    {
-      "id": "26860968e597",
-      "titulo": "Los bonos en dólares extienden las subas tras el envíon de las elecciones en Brasil",
-      "link": "https://www.ambito.com/finanzas/los-bonos-dolares-extienden-las-subas-el-envion-las-elecciones-brasil-n6330488",
-      "descripcion": "Los títulos soberanos avanzan hasta 1%, con las mayores ganancias en el tramo largo. El resultado electoral en Brasil mejoró el clima para los activos de la región y las monedas latinoamericanas registraron su mayor avance diario en más de una década.",
-      "fecha_publicacion": "2026-10-06T12:29:00+00:00",
-      "fuente_id": "ambito_fin",
-      "fuente_nombre": "Ámbito Finanzas",
-      "categoria": "Finanzas"
-    },
-    {
-      "id": "fd74ae7f10b8",
-      "titulo": "Ver a Messi y vestirse como él cuesta más de 70% de un sueldo promedio en Argentina",
-      "link": "https://www.iprofesional.com/actualidad/465980-ver-a-messi-y-vestirse-como-el-cuesta-mas-de-70-por-ciento-de-un-sueldo-promedio",
-      "descripcion": "Ver a Messi ante Benín y comprar toda la colección Adidas exige $1,37 millones, más del 70% del salario formal promedio de Argentina",
-      "fecha_publicacion": "2026-10-06T12:21:00+00:00",
-      "fuente_id": "iprof_economia",
-      "fuente_nombre": "iProfesional Economía",
-      "categoria": "Finanzas"
-    },
-    {
-      "id": "f8415e61f067",
-      "titulo": "OKX promete pagar 10% anual en dólar cripto pero oculta los requisitos clave que definen si conviene",
-      "link": "https://www.iproup.com/finanzas/72088-okx-paga-10-por-ciento-anual-dolares-digitales-clausula-puede-no-convenirte",
-      "descripcion": "Expertos analizan el mecanismo financiero que ofrece retornos elevados con dólares digitales y advierten sobre los riesgos ocultos en las condiciones",
-      "fecha_publicacion": "2026-10-06T12:11:00+00:00",
-      "fuente_id": "iproup_fintech",
-      "fuente_nombre": "iProUP Fintech",
-      "categoria": "Finanzas"
-    },
-    {
-      "id": "9ca0e8e13023",
-      "titulo": "Las refinerías independientes de China recurren al crudo de Irak tras el bloqueo iraní",
-      "link": "https://es.investing.com/news/economy-news/las-refinerias-independientes-de-china-recurren-al-crudo-de-irak-tras-el-bloqueo-irani-3862522",
-      "descripcion": "",
-      "fecha_publicacion": "2026-10-06T11:58:40+00:00",
-      "fuente_id": "investing_economia",
-      "fuente_nombre": "Investing Economía",
-      "categoria": "Mercados"
-    },
-    {
-      "id": "6064ac6a55ba",
-      "titulo": "El director ejecutivo de Vitol advierte que los flujos de Oriente Próximo evitan los 200 dólares por barril",
-      "link": "https://es.investing.com/news/economy-news/el-director-ejecutivo-de-vitol-advierte-que-los-flujos-de-oriente-proximo-evitan-los-200-dolares-por-barril-3862510",
-      "descripcion": "",
-      "fecha_publicacion": "2026-10-06T11:51:30+00:00",
-      "fuente_id": "investing_economia",
-      "fuente_nombre": "Investing Economía",
-      "categoria": "Mercados"
-    },
-    {
-      "id": "ba15f0483bc5",
-      "titulo": "Jubilados de ANSES: qué supermercados ofrecen descuentos para ahorrar hasta 25% en octubre",
-      "link": "https://www.iprofesional.com/finanzas/465918-jubilados-de-anses-como-ahorrar-hasta-25-por-ciento-en-supermercados-en-octubre",
-      "descripcion": "Jubilados y pensionados de ANSeS pueden acceder a descuentos y reintegros en más de 7000 comercios durante octubre, sin hacer trámites",
-      "fecha_publicacion": "2026-10-06T11:42:00+00:00",
-      "fuente_id": "iprof_finanzas",
-      "fuente_nombre": "iProfesional Finanzas",
-      "categoria": "Finanzas"
-    },
-    {
-      "id": "52960e81aadb",
-      "titulo": "Cómo quedó el sueldo de choferes de colectivo en octubre 2026",
-      "link": "https://www.iprofesional.com/impuestos/465869-como-quedo-el-sueldo-de-choferes-de-colectivo-en-octubre",
-      "descripcion": "Para estimar cuánto cobra un chofer durante octubre hay que considerar el básico vigente, los viáticos y la suma extraordinaria (bono)",
+      "id": "49ae893a7318",
+      "titulo": "Obras sociales para monotributistas: la lista actualizada en octubre 2026",
+      "link": "https://www.iprofesional.com/impuestos/465868-obras-sociales-para-monotributistas-la-lista-actualizada-en-octubre-2026",
+      "descripcion": "La Superintendencia de Servicios de Salud (SSS) amplió el listado oficial y más entidades pueden recibir afiliados del monotributo",
       "fecha_publicacion": "2026-10-06T11:42:00+00:00",
       "fuente_id": "iprof_impuestos",
       "fuente_nombre": "iProfesional Impuestos",
       "categoria": "Fiscal"
     },
     {
-      "id": "49ae893a7318",
-      "titulo": "Obras sociales para monotributistas: la lista actualizada en octubre 2026",
-      "link": "https://www.iprofesional.com/impuestos/465868-obras-sociales-para-monotributistas-la-lista-actualizada-en-octubre-2026",
-      "descripcion": "La Superintendencia de Servicios de Salud (SSS) amplió el listado oficial y más entidades pueden recibir afiliados del monotributo",
+      "id": "52960e81aadb",
+      "titulo": "Cómo quedó el sueldo de choferes de colectivo en octubre 2026",
+      "link": "https://www.iprofesional.com/impuestos/465869-como-quedo-el-sueldo-de-choferes-de-colectivo-en-octubre",
+      "descripcion": "Para estimar cuánto cobra un chofer durante octubre hay que considerar el básico vigente, los viáticos y la suma extraordinaria (bono)",
       "fecha_publicacion": "2026-10-06T11:42:00+00:00",
       "fuente_id": "iprof_impuestos",
       "fuente_nombre": "iProfesional Impuestos",
@@ -203,16 +403,6 @@
       "categoria": "Laboral"
     },
     {
-      "id": "4e82729d60fe",
-      "titulo": "Senado de EEUU impulsa alivio fiscal para pagos con stablecoins y deja a Bitcoin fuera del beneficio",
-      "link": "https://www.iproup.com/economia-digital/72069-eeuu-impulsa-alivio-fiscal-para-stablecoins-y-deja-a-bitcoin-fuera-del-beneficio",
-      "descripcion": "La iniciativa busca que ciertos pagos con USDC o USDT no generen obligación de declarar ganancias o pérdidas de capital. Por qué no incluyó a BTC",
-      "fecha_publicacion": "2026-10-06T11:26:00+00:00",
-      "fuente_id": "iproup_eco",
-      "fuente_nombre": "iProUP Economía Digital",
-      "categoria": "Mercados"
-    },
-    {
       "id": "e3309d263538",
       "titulo": "Morgan Stanley rebaja su previsión del PIB de Arabia Saudí para 2026",
       "link": "https://es.investing.com/news/economic-indicators/morgan-stanley-rebaja-su-prevision-del-pib-de-arabia-saudi-para-2026-3862417",
@@ -223,24 +413,14 @@
       "categoria": "Internacional"
     },
     {
-      "id": "00b842f8586b",
-      "titulo": "El outlet de Coto en Abasto donde se consiguen electrodomésticos desde $139.999",
-      "link": "https://www.iprofesional.com/economia/465972-electrodomesticos-baratos-en-coto-con-rebajas-de-hasta-240000-pesos",
-      "descripcion": "El outlet de Coto en Abasto ofrece electrodomésticos con precios rebajados. Hay productos Top House con diferencias de hasta $240.000.",
-      "fecha_publicacion": "2026-10-06T11:12:00+00:00",
-      "fuente_id": "iprof_economia",
-      "fuente_nombre": "iProfesional Economía",
-      "categoria": "Finanzas"
-    },
-    {
-      "id": "0ed0da5f7200",
-      "titulo": "Salario mínimo en octubre: a cuánto sube y qué otros beneficios se actualizan",
-      "link": "https://www.iproup.com/economia-digital/72097-salario-minimo-en-octubre-a-cuanto-sube",
-      "descripcion": "Desde octubre rige el nuevo Salario Mínimo de $391.200: cómo impacta en la prestación por desempleo y en la asistencia social. Los detalles",
-      "fecha_publicacion": "2026-10-06T10:52:00+00:00",
-      "fuente_id": "iproup_eco",
-      "fuente_nombre": "iProUP Economía Digital",
-      "categoria": "Mercados"
+      "id": "0ff6bbca2af0",
+      "titulo": "Ganancias: quienes pueden pedir reducción de anticipos desde octubre",
+      "link": "https://www.iprofesional.com/impuestos/465970-ganancias-quienes-pueden-pedir-reduccion-anticipos-desde-octubre",
+      "descripcion": "Este mes vence el quinto anticipo del Impuesto a las Ganancias y la posibilidad de pedir su reducción para no seguir pagando por adelantado",
+      "fecha_publicacion": "2026-10-06T11:02:00+00:00",
+      "fuente_id": "iprof_impuestos",
+      "fuente_nombre": "iProfesional Impuestos",
+      "categoria": "Fiscal"
     },
     {
       "id": "2dfc3e281f46",
@@ -253,31 +433,11 @@
       "categoria": "Automotor"
     },
     {
-      "id": "3c341bf78652",
-      "titulo": "Desde noviembre cambia el esquema de indemnizaciones: qué deberán hacer las empresas",
-      "link": "https://www.iprofesional.com/impuestos/465895-fondo-de-asistencia-laboral-como-deberan-registrarse-las-empresas-desde-noviembre",
-      "descripcion": "El Fondo de Asistencia Laboral comienza en noviembre: las empresas deberán registrarse, aportar sobre salarios y elegir dónde invertir los fondos",
-      "fecha_publicacion": "2026-10-06T10:27:00+00:00",
-      "fuente_id": "iprof_impuestos",
-      "fuente_nombre": "iProfesional Impuestos",
-      "categoria": "Fiscal"
-    },
-    {
       "id": "8e6ac615a7f1",
       "titulo": "Sorpresas entre los 10 autos más baratos de octubre",
       "link": "https://www.iprofesional.com/autos/465968-sorpresas-entre-los-10-autos-mas-baratos-de-octubre",
       "descripcion": "Con la llegada de nuevos jugadores, aparecen nuevos modelos para elegir con precios más accesibles. Un repaso por las diferentes propuestas",
       "fecha_publicacion": "2026-10-06T10:23:00+00:00",
-      "fuente_id": "iprof_autos",
-      "fuente_nombre": "iProfesional Autos",
-      "categoria": "Automotor"
-    },
-    {
-      "id": "2421ceed61cc",
-      "titulo": "La producción de autos volvió a caer, pero se recuperaron las exportaciones",
-      "link": "https://www.iprofesional.com/autos/465967-la-produccion-de-autos-volvio-a-caer-pero-se-recuperan-las-exportaciones",
-      "descripcion": "En septiembre, el sector automotor cerró un mes negativo en fabricación, por las bajas ventas, pero obtuvo un resultado mejor en envíos al exterior",
-      "fecha_publicacion": "2026-10-06T10:11:00+00:00",
       "fuente_id": "iprof_autos",
       "fuente_nombre": "iProfesional Autos",
       "categoria": "Automotor"
@@ -293,14 +453,24 @@
       "categoria": "Internacional"
     },
     {
-      "id": "abb01e860229",
-      "titulo": "El efecto Bolsonaro ya se empezó a sentir y puede darle aire al plan económico de Milei",
-      "link": "https://www.iprofesional.com/economia/465946-por-que-el-efecto-bolsonaro-puede-traer-alivio-a-la-economia-de-milei",
-      "descripcion": "El real se apreció ante al dólar y se prevé una caída de la tasa de interés. Puede haber efecto de contagio para la economía argentina",
-      "fecha_publicacion": "2026-10-06T10:00:00+00:00",
-      "fuente_id": "iprof_finanzas",
-      "fuente_nombre": "iProfesional Finanzas",
-      "categoria": "Finanzas"
+      "id": "74a458ca5ca9",
+      "titulo": "Honda sin aumentos y con promociones en octubre: lista de precios aquí",
+      "link": "https://motorwebargentina.com/honda-sin-aumentos-y-con-promociones-en-octubre-lista-de-precios-aqui/",
+      "descripcion": "Honda Motor Argentina informó que durante octubre mantiene congelados los precios de toda su gama de automóviles. La única excepción pasa por la WR-V, que actualiza su valor a $43.490.000 en su única versión disponible. Asimismo, continúan vigentes las condiciones especiales de mercado. Paralelamente Honda ofrece interesantes descuentos en tres modelos de su gama media-alta. [&#8230;] La entrada Honda sin aumentos y con promociones en octubre: lista de precios aquí se publicó primero en Motorweb",
+      "fecha_publicacion": "2026-10-06T10:02:43+00:00",
+      "fuente_id": "motorweb",
+      "fuente_nombre": "Motorweb Argentina",
+      "categoria": "Automotor"
+    },
+    {
+      "id": "37ee9541b26c",
+      "titulo": "Honda actualiza al City en sus versiones sedán y hatchback",
+      "link": "https://noticias.autocosmos.com.ar/2026/10/06/honda-actualiza-al-city-en-sus-versiones-sedan-y-hatchback",
+      "descripcion": "Si bien no vimos esta generación en nuestras tierras, vale al pana seguirla en su segunda puesta al día que estrena la variante RS.",
+      "fecha_publicacion": "2026-10-06T09:00:02+00:00",
+      "fuente_id": "autocosmos",
+      "fuente_nombre": "Autocosmos Argentina",
+      "categoria": "Automotor"
     },
     {
       "id": "8b408eb87daf",
@@ -313,16 +483,6 @@
       "categoria": "Automotor"
     },
     {
-      "id": "70914b2ed0d3",
-      "titulo": "El retorno del girasol: el desafío de actualizar la información tras 20 años de un cultivo “olvidado”",
-      "link": "https://www.infocampo.com.ar/el-retorno-del-girasol-el-desafio-de-actualizar-la-informacion-tras-20-anos-de-un-cultivo-olvidado/",
-      "descripcion": "El girasol vuelve a pintar el paisaje en zonas donde había sido relegado por la soja y el maíz. Francisco Pérez Brea, de Marketing de NK Semillas, explicó qué cambió en el manejo y por qué los nuevos híbridos y la tecnología vuelven a ponerlo en carrera.",
-      "fecha_publicacion": "2026-10-06T00:31:41+00:00",
-      "fuente_id": "infocampo",
-      "fuente_nombre": "Infocampo",
-      "categoria": "Agro"
-    },
-    {
       "id": "749c785e756d",
       "titulo": "Estrecho de Ormuz: arribó a la Argentina un equipamiento estratégico para construir la nueva terminal de exportación de petróleo en Río Negro",
       "link": "https://econojournal.com.ar/oilgas/estrecho-de-ormuz-arribo-a-la-argentina-un-equipamiento-estrategico-para-construir-la-nueva-terminal-de-exportacion-de-petroleo-en-rio-negro/",
@@ -333,16 +493,6 @@
       "categoria": "Energía y Minería"
     },
     {
-      "id": "53184887aea6",
-      "titulo": "Los precios del petróleo bajan ante los recortes de precios de Aramco y la oferta en Oriente Próximo",
-      "link": "https://es.investing.com/news/commodities-news/los-precios-del-petroleo-bajan-ante-los-recortes-de-precios-de-aramco-y-la-oferta-en-oriente-proximo-3861635",
-      "descripcion": "",
-      "fecha_publicacion": "2026-10-06T00:09:03+00:00",
-      "fuente_id": "investing_agro",
-      "fuente_nombre": "Investing Agro",
-      "categoria": "Agro"
-    },
-    {
       "id": "c7f1bd5d446f",
       "titulo": "Los costos logísticos aumentaron 2,55% en septiembre en Argentina",
       "link": "https://webpicking.com/los-costos-logisticos-aumentaron-255-en-septiembre-en-argentina/",
@@ -351,26 +501,6 @@
       "fuente_id": "webpicking",
       "fuente_nombre": "Webpicking",
       "categoria": "Logística"
-    },
-    {
-      "id": "f2feeebe7a44",
-      "titulo": "Alcista para trigo y maíz: Un ataque ruso contra un buque proveniente de un puerto del Danubio potencia el estrangulamiento agroexportador de Ucrania",
-      "link": "https://bichosdecampo.com/alcista-para-trigo-y-maiz-un-ataque-ruso-contra-un-buque-proveniente-de-un-puerto-del-danubio-potencia-el-estrangulamiento-agroexportador-de-ucrania/",
-      "descripcion": "Los precios de los contratos de trigo en el CME Group (“Chicago”) comenzaron la semana con alza ante un agravamiento de las condiciones de navegación en el Mar Negro. El buque Royad Mammadov, que transportaba maíz desde el puerto de Izmail, Ucrania, hasta Rávena, Italia, se hundió después de ser alcanzado por un dron ruso [&#8230;]",
-      "fecha_publicacion": "2026-10-05T23:32:47+00:00",
-      "fuente_id": "bichos_campo",
-      "fuente_nombre": "Bichos de Campo",
-      "categoria": "Agro"
-    },
-    {
-      "id": "d366c7087eab",
-      "titulo": "Construir tanto “techos” como “pisos”: el maíz tardío pone el foco en más rindes, pero con estabilidad",
-      "link": "https://www.infocampo.com.ar/construir-tanto-techos-como-pisos-el-maiz-tardio-pone-el-foco-en-mas-rindes-pero-con-estabilidad/",
-      "descripcion": "Con la mitad del maíz argentino sembrado en fecha tardía, Nidera apuesta a híbridos estables, con buena caña y sanidad. Leandro Ulrich detalló en el Congreso Internacional de Maíz los avances en genética, biotecnología y tolerancia al spiroplasma.",
-      "fecha_publicacion": "2026-10-05T23:23:05+00:00",
-      "fuente_id": "infocampo",
-      "fuente_nombre": "Infocampo",
-      "categoria": "Agro"
     },
     {
       "id": "909d007553c8",
@@ -393,16 +523,6 @@
       "categoria": "Automotor"
     },
     {
-      "id": "a4ee2cb8ddfc",
-      "titulo": "El Gobierno aprobó la prórroga de la concesión de Aeropuertos Argentina hasta 2049",
-      "link": "https://tradenews.com.ar/el-gobierno-aprobo-la-prorroga-de-la-concesion-de-aeropuertos-argentina-hasta-2049/",
-      "descripcion": "El Gobierno formalizó el acuerdo de readecuación contractual entre el Organismo Regulador del Sistema Nacional de Aeropuertos (ORSNA) y Aeropuertos Argentina -que hoy opera 35 aeropuertos en el país-, que...",
-      "fecha_publicacion": "2026-10-05T21:57:26+00:00",
-      "fuente_id": "trade_news",
-      "fuente_nombre": "Trade News",
-      "categoria": "Comex"
-    },
-    {
       "id": "1c3d8c07bdab",
       "titulo": "Pluspetrol y Central Puerto concretaron el primer contrato de venta de gas entre un productor y un generador de energía",
       "link": "https://econojournal.com.ar/energia/pluspetrol-acuerda-con-central-puerto-proveerle-gas-que-administraba-cammesa/",
@@ -411,16 +531,6 @@
       "fuente_id": "econojournal",
       "fuente_nombre": "EconoJournal",
       "categoria": "Energía y Minería"
-    },
-    {
-      "id": "936c65732e29",
-      "titulo": "Terminó sin acuerdo la conciliación obligatoria en Wade y Granja Tres Arroyos y los trabajadores reclamaron ser prioridad en el concurso",
-      "link": "https://bichosdecampo.com/termino-sin-acuerdo-la-conciliacion-obligatoria-en-wade-y-granja-tres-arroyos-y-los-trabajadores-reclamaron-ser-prioridad-en-el-concurso/",
-      "descripcion": "Se agotó la conciliación obligatoria en Wade, la empresa de Granja Tres Arroyos, y la situación de los trabajadores quedó en el peor de los escenarios. Sin acuerdo con los gremios, la compañía ratificó los despidos que ya había comunicado y este lunes los empleados se movilizaron para exigir que, cuando se abra el concurso [&#8230;]",
-      "fecha_publicacion": "2026-10-05T21:48:52+00:00",
-      "fuente_id": "bichos_campo",
-      "fuente_nombre": "Bichos de Campo",
-      "categoria": "Agro"
     },
     {
       "id": "08b7d40e2dda",
@@ -433,26 +543,6 @@
       "categoria": "Automotor"
     },
     {
-      "id": "a165bb339fb9",
-      "titulo": "Manejo de la chicharrita del maíz: “El miedo no es sonso, pero el pánico es estúpido”",
-      "link": "https://www.infocampo.com.ar/manejo-de-la-chicharrita-del-maiz-el-miedo-no-es-sonso-pero-el-panico-es-estupido/",
-      "descripcion": "El Congreso Internacional de Maíz incluyó varios paneles en los que se abordó en profundidad la situación sanitaria del cereal, con Dalbulus maidis nuevamente como una amenaza latente. ¿Qué otras plagas pueden ser peligrosas?",
-      "fecha_publicacion": "2026-10-05T21:24:11+00:00",
-      "fuente_id": "infocampo",
-      "fuente_nombre": "Infocampo",
-      "categoria": "Agro"
-    },
-    {
-      "id": "d3122c973a50",
-      "titulo": "¿Avanza la labranza? Aapresid reconoce que la siembra directa retrocedió luego de cuatro décadas en expansión y estima que en la última campaña cayó otro 2% su superficie en Argentina",
-      "link": "https://bichosdecampo.com/avanza-la-labranza-aapresid-reconoce-que-la-siembra-directa-retrocedio-luego-de-cuatro-decadas-en-expansion-estima-que-cayo-2-su-superficie-en-argentina/",
-      "descripcion": "La siembra directa llegó a ocupar 93% del área agrícola argentina. Fue el resultado de más de tres décadas de expansión, desde aquellos primeros ensayos de los años 70 hasta convertirse en el sistema dominante de producción de granos. Pero la curva se dio vuelta. Para la campaña 2025/26, Aapresid estima que la siembra directa [&#8230;]",
-      "fecha_publicacion": "2026-10-05T21:01:19+00:00",
-      "fuente_id": "bichos_campo",
-      "fuente_nombre": "Bichos de Campo",
-      "categoria": "Agro"
-    },
-    {
       "id": "81234a189c35",
       "titulo": "Multas sin control: Preocupación de la CCA por fallas en el sistema",
       "link": "https://motorwebargentina.com/multas-cca-ventas-usados-septiembre-2026/",
@@ -463,24 +553,14 @@
       "categoria": "Automotor"
     },
     {
-      "id": "a2e717efae36",
-      "titulo": "Futuros del petróleo crudo WTI amenazan soporte $88,76: niveles en vivo",
-      "link": "https://es.investing.com/news/commodities-news/futuros-del-petroleo-crudo-wti-en-rango-ruptura-inminente-niveles-en-vivo-93CH-3859970",
-      "descripcion": "",
-      "fecha_publicacion": "2026-10-05T19:08:24+00:00",
-      "fuente_id": "investing_agro",
-      "fuente_nombre": "Investing Agro",
-      "categoria": "Agro"
-    },
-    {
-      "id": "5b1110b71d68",
-      "titulo": "Futuros de la plata con Bear Flag al 80%: niveles en vivo",
-      "link": "https://es.investing.com/news/commodities-news/futuros-de-la-plata-consolidan-bajistas-cerca-de-6160-niveles-en-vivo-93CH-3859967",
-      "descripcion": "",
-      "fecha_publicacion": "2026-10-05T19:08:22+00:00",
-      "fuente_id": "investing_agro",
-      "fuente_nombre": "Investing Agro",
-      "categoria": "Agro"
+      "id": "c1c01167873f",
+      "titulo": "Lanzamiento. Grupo Empresario Prieto da a conocer los precios de las marcas chinas Kaiyi y Maxus",
+      "link": "https://www.diariodeautos.com.ar/index.php/autos/novedades/item/20566-grupo",
+      "descripcion": "Somos un grupo empresario con más de 50 años de trayectoria en el ámbito automotriz, con sólida experiencia en la venta y postventa, y representante e importador en Argentina de las marcas de origen chino Maxus y Kaiyi, dicen desde Grupo Empresario Prieto (GEP), confirmando que, Colgas es la empresa que importa las nuevas marcas de nuestro Grupo. Kaiyi Con un valor de USD 22.000 IVA incluido, el Kaiyi X3 es uno de los autos más accesibles del mercado argentino. Y también integra el ranking de lo",
+      "fecha_publicacion": "2026-10-05T20:31:34+00:00",
+      "fuente_id": "diario_autos",
+      "fuente_nombre": "Diario de Autos",
+      "categoria": "Automotor"
     },
     {
       "id": "d60261939f13",
@@ -490,16 +570,6 @@
       "fecha_publicacion": "2026-10-05T18:20:00+00:00",
       "fuente_id": "ambito_autos",
       "fuente_nombre": "Ámbito Autos",
-      "categoria": "Automotor"
-    },
-    {
-      "id": "fe6c16e9ca01",
-      "titulo": "Stellantis lanza financiación para sus 7 marcas con tasa 0% y hasta $45 millones",
-      "link": "https://arodarpost.com.ar/stellantis-lanza-financiacion-para-sus-7-marcas-con-tasa-0-y-hasta-45-millones/",
-      "descripcion": "Peugeot, Citroën, Fiat, Jeep, DS Automobiles, RAM y Leapmotor renuevan sus propuestas comerciales con alternativas de financiación a tasa 0%, tasas especiales y créditos UVA. Los montos máximos alcanzan los $45.000.000, según la marca y el modelo elegido. ● Peugeot: financiación de hasta $45.000.000 Peugeot ofrece una Tasa Express de 0% a 18 meses, con [&#8230;]",
-      "fecha_publicacion": "2026-10-05T18:07:20+00:00",
-      "fuente_id": "arodar",
-      "fuente_nombre": "A Rodar Post",
       "categoria": "Automotor"
     },
     {
@@ -543,16 +613,6 @@
       "categoria": "Automotor"
     },
     {
-      "id": "59efb349e922",
-      "titulo": "El costo del transporte acumula una suba de 30,3% en los primeros nueve meses de 2026",
-      "link": "https://tradenews.com.ar/el-costo-del-transporte-acumula-una-suba-de-303-en-los-primeros-nueve-meses-de-2026/",
-      "descripcion": "Los costos del transporte de cargas aumentaron 2,55% en septiembre y acumularon una suba de 30,3% en los primeros nueve meses de 2026, según el Índice de Costos de Transporte...",
-      "fecha_publicacion": "2026-10-05T16:44:22+00:00",
-      "fuente_id": "trade_news",
-      "fuente_nombre": "Trade News",
-      "categoria": "Comex"
-    },
-    {
       "id": "f6da562bd4f9",
       "titulo": "Falleció Carlos Canta Yoy, referente del comercio exterior",
       "link": "https://aduananews.com/fallecio-carlos-canta-yoy-referente-del-comercio-exterior/?utm_source=rss&utm_medium=rss&utm_campaign=fallecio-carlos-canta-yoy-referente-del-comercio-exterior",
@@ -563,16 +623,6 @@
       "categoria": "Comex"
     },
     {
-      "id": "be11f0744c28",
-      "titulo": "Estudiantes espera por Marcos Rojo: cuándo firmará su contrato y empezará a entrenar",
-      "link": "https://www.0221.com.ar/estudiantes/estudiantes-espera-marcos-rojo-cuando-firmara-su-contrato-y-empezara-entrenar-n135300",
-      "descripcion": "Marcos Rojo acordó su regreso a Estudiantes y este lunes avanzará con su salida de Racing. Entre martes y miércoles firmaría contrato hasta diciembre de 2027.",
-      "fecha_publicacion": "2026-10-05T15:42:00+00:00",
-      "fuente_id": "est_0221",
-      "fuente_nombre": "0221 Estudiantes",
-      "categoria": "Fulbito"
-    },
-    {
       "id": "f887d0cddf44",
       "titulo": "Ferrari 296 GT Modificata mejora la perfección",
       "link": "https://noticias.autocosmos.com.ar/2026/10/05/ferrari-296-gt-modificata-mejora-la-perfeccion",
@@ -581,26 +631,6 @@
       "fuente_id": "autocosmos",
       "fuente_nombre": "Autocosmos Argentina",
       "categoria": "Automotor"
-    },
-    {
-      "id": "8907e51a8530",
-      "titulo": "Expulsan a funcionarios de Rolando Figueroa del PJ de Neuquén y al intendente denunciado por violencia de género",
-      "link": "https://econojournal.com.ar/enclave/expulsan-a-funcionarios-de-rolando-figueroa-del-pj-de-neuquen-intendente-denunciado/",
-      "descripcion": "El Partido Justicialista (PJ) de Neuquén expulsó a 44 afiliados que participaron como candidatos de otros sellos políticos en las últimas elecciones provinciales, una decisión que se había tomado el año pasado pero que quedó envuelta en una disputa judicial que se zanjó recién la semana pasada. El listado incluye al propio presidente del peronismo [&#8230;]",
-      "fecha_publicacion": "2026-10-05T14:41:25+00:00",
-      "fuente_id": "econojournal",
-      "fuente_nombre": "EconoJournal",
-      "categoria": "Energía y Minería"
-    },
-    {
-      "id": "8866ad865165",
-      "titulo": "Flamengo se prepara para Estudiantes: recuperó una figura y podría vender a otra",
-      "link": "https://www.0221.com.ar/estudiantes/flamengo-se-prepara-estudiantes-recupero-una-figura-y-podria-vender-otra-n135293",
-      "descripcion": "Flamengo recibió una buena noticia en el regreso a los entrenamientos antes de enfrentar a Estudiantes, mientras que un jugador clave puede irse.",
-      "fecha_publicacion": "2026-10-05T14:32:00+00:00",
-      "fuente_id": "est_0221",
-      "fuente_nombre": "0221 Estudiantes",
-      "categoria": "Fulbito"
     },
     {
       "id": "51ad9d52ebcf",
@@ -633,16 +663,6 @@
       "categoria": "Logística"
     },
     {
-      "id": "b6b42f1b0375",
-      "titulo": "Miguel Monsalve adelantó de una forma particular lo que puede ser su debut en Estudiantes",
-      "link": "https://www.0221.com.ar/estudiantes/miguel-monsalve-adelanto-una-forma-particular-lo-que-puede-ser-su-debut-estudiantes-n135288",
-      "descripcion": "Miguel Monsalve todavía no sumó minutos desde su llegada a Estudiantes y podría debutar como titular este lunes ante Gimnasia de Mendoza en el Estadio UNO.",
-      "fecha_publicacion": "2026-10-05T13:39:00+00:00",
-      "fuente_id": "est_0221",
-      "fuente_nombre": "0221 Estudiantes",
-      "categoria": "Fulbito"
-    },
-    {
       "id": "c0cf5b78b2e9",
       "titulo": "La declaración jurada de destino minero se incorpora a la VUCEA",
       "link": "https://aduananews.com/la-declaracion-jurada-de-destino-minero-se-incorpora-a-la-vucea/?utm_source=rss&utm_medium=rss&utm_campaign=la-declaracion-jurada-de-destino-minero-se-incorpora-a-la-vucea",
@@ -673,16 +693,6 @@
       "categoria": "Comex"
     },
     {
-      "id": "68337886d64c",
-      "titulo": "Toyota invertirá 1.340 millones de dólares en Argentina",
-      "link": "https://noticias.autocosmos.com.ar/2026/10/05/toyota-invertira-1340-millones-de-dolares-en-argentina",
-      "descripcion": "Toyota construirá una nueva planta en Zárate, con fuerte enfoque exportador con el fim de producir la nueva Hilux híbrida y más.",
-      "fecha_publicacion": "2026-10-05T08:09:04+00:00",
-      "fuente_id": "autocosmos",
-      "fuente_nombre": "Autocosmos Argentina",
-      "categoria": "Automotor"
-    },
-    {
       "id": "0b3eb6153399",
       "titulo": "La RMIT de Melbourne confirma que el copiloto de flydubai estudió ingeniería sin graduarse",
       "link": "https://es.investing.com/news/world-news/la-rmit-de-melbourne-confirma-que-el-copiloto-de-flydubai-estudio-ingenieria-sin-graduarse-93CH-3859891",
@@ -691,16 +701,6 @@
       "fuente_id": "investing_intl",
       "fuente_nombre": "Investing Internacional",
       "categoria": "Internacional"
-    },
-    {
-      "id": "68ad3143e8f7",
-      "titulo": "Japón habilita la carne bovina con vacunación tras 20 años y abre un mercado de US$ 3000 millones",
-      "link": "https://tradenews.com.ar/japon-habilita-la-carne-bovina-con-vacunacion-tras-20-anos-y-abre-un-mercado-de-us-3000-millones/",
-      "descripcion": "Tras 20 años de negociaciones, la Argentina y Japón acordaron los requisitos sanitarios definitivos para el ingreso de carne bovina y lengua proveniente de la zona libre de fiebre aftosa...",
-      "fecha_publicacion": "2026-10-05T00:21:48+00:00",
-      "fuente_id": "trade_news",
-      "fuente_nombre": "Trade News",
-      "categoria": "Comex"
     },
     {
       "id": "39e1714d3bdc",
@@ -773,16 +773,6 @@
       "categoria": "Comex"
     },
     {
-      "id": "406fb41a300b",
-      "titulo": "¿Por qué los principales beneficiarios del acuerdo entre la Unión Europea y el MERCOSUR no lo usan?  (SEGUNDA PARTE)",
-      "link": "https://aduananews.com/por-que-los-principales-beneficiarios-del-acuerdo-entre-la-union-europea-y-el-mercosur-no-lo-usan-segunda-parte/?utm_source=rss&utm_medium=rss&utm_campaign=por-que-los-principales-beneficiarios-del-acuerdo-entre-la-union-europea-y-el-mercosur-no-lo-usan-segunda-parte",
-      "descripcion": "El pasado 7 de agosto bajo este mismo título y en esta misma revista se publicó la primera parte del análisis del Acuerdo Mercosur, estudiando las consecuencias empresariales que dicho Acuerdo propiciaba para las empresas de la zona, analizando los distintos sujetos intervinientes en el comercio internacional que genera y resaltando como protagonista principal, no [&#8230;] The post ¿Por qué los principales beneficiarios del acuerdo entre la Unión Europea y el MERCOSUR no lo usan? (SEGUNDA PARTE",
-      "fecha_publicacion": "2026-10-04T07:57:00+00:00",
-      "fuente_id": "aduana_news",
-      "fuente_nombre": "Aduana News",
-      "categoria": "Comex"
-    },
-    {
       "id": "451fec618110",
       "titulo": "Lanzamiento. Triumph ofrece la renovada Trident 660, con motor de 95 CV y la nueva Trident 800, con motor de 115 CV",
       "link": "https://www.diariodeautos.com.ar/index.php/autos/novedades/item/20561-triumph",
@@ -843,16 +833,6 @@
       "categoria": "Internacional"
     },
     {
-      "id": "8a318c824a95",
-      "titulo": "Hoy abre las puertas ExpoAutoChino: Motorweb será el streaming de la muestra",
-      "link": "https://motorwebargentina.com/hoy-abre-las-puertas-expoautochino-motorweb-sera-el-streaming-de-la-muestra/",
-      "descripcion": "Hoy, 2 de octubre, abre las puertas ExpoAutoChino, la muestra que reunirá a 26 marcas ofrecidas en Argentina y que se mantendrá durante y los días sábado 3 y domingo 4. Motorweb estará presente en la muestra como el streaming oficial de la muestra y llevará a cabo allí programas especiales con responsables de las [&#8230;] La entrada Hoy abre las puertas ExpoAutoChino: Motorweb será el streaming de la muestra se publicó primero en Motorweb Argentina .",
-      "fecha_publicacion": "2026-10-02T09:35:11+00:00",
-      "fuente_id": "motorweb",
-      "fuente_nombre": "Motorweb Argentina",
-      "categoria": "Automotor"
-    },
-    {
       "id": "f19e3f6df4b2",
       "titulo": "Mujeres que transforman: del poder de estar al poder de cambiar",
       "link": "https://webpicking.com/mujeres-que-transforman-del-poder-de-estar-al-poder-de-cambiar/",
@@ -871,16 +851,6 @@
       "fuente_id": "ambito_fisc",
       "fuente_nombre": "Ámbito Fiscal",
       "categoria": "Fiscal"
-    },
-    {
-      "id": "7c8806833c86",
-      "titulo": "Acara confirma la marcha de los patentamientos de vehículos en el mercado de la Argentina",
-      "link": "https://www.diariodeautos.com.ar/index.php/noticias/nacionales/item/20558-acara",
-      "descripcion": "La Asociación de Concesionarios de Automotores de la República Argentina (Acara) informa que el número de vehículos patentados durante septiembre último, ascendió a 49.814 unidades, lo que representa una baja del 11,4% interanual, ya que en septiembre de 2025, se habían registrado 56.241 unidades. Si la comparación es contra agosto, se observa una suba del 10,7%, ya que en ese pasado mes se habían registrado 45.003 unidades. De esta forma, en los nueve meses acumulados del año se patentaron 435.",
-      "fecha_publicacion": "2026-10-01T20:08:12+00:00",
-      "fuente_id": "diario_autos",
-      "fuente_nombre": "Diario de Autos",
-      "categoria": "Automotor"
     },
     {
       "id": "29fbafe1e0fd",
