@@ -1,6 +1,6 @@
 {
-  "generado_en": "2026-10-11T23:38:49.996661+00:00",
-  "generado_ar": "11/10/2026 20:38",
+  "generado_en": "2026-10-12T18:18:21.799947+00:00",
+  "generado_ar": "12/10/2026 15:18",
   "hechos": [
     {
       "slug": "brecha-dolar",
@@ -45,7 +45,7 @@
       "criollo": "La brecha es cuánto más caro está el dólar financiero (el que se compra con bonos) que el oficial. Cuando es chica, los dos precios casi se tocan.",
       "fuente_nombre": "DolarApi · cálculo PPA",
       "fuente_url": "https://dolarapi.com",
-      "dato_fecha": "11/10/2026 20:38",
+      "dato_fecha": "12/10/2026 15:18",
       "prioridad": 90
     },
     {
@@ -86,22 +86,41 @@
       "prioridad": 85
     },
     {
+      "slug": "inflacion-ipc",
+      "categoria": "Inflación",
+      "titulo": "El IPC marcó 1,6% mensual, con el núcleo en 1,9%",
+      "bajada": "Último dato del índice de precios.",
+      "dato": {
+        "n": "1,6%",
+        "txt": "IPC mensual · núcleo 1,9%"
+      },
+      "cuerpo": [
+        "El último IPC nacional registró una variación mensual del 1,6%.",
+        "El componente núcleo — que excluye precios estacionales y regulados y suele marcar la tendencia de fondo — avanzó 1,9%, por encima del índice general."
+      ],
+      "criollo": "El IPC general mide todo. El núcleo saca lo que sube o baja por temporada o por decisión del Estado, para mostrar la inflación de fondo.",
+      "fuente_nombre": "INDEC · datos.gob.ar",
+      "fuente_url": "https://www.indec.gob.ar",
+      "dato_fecha": "01/08/2026",
+      "prioridad": 80
+    },
+    {
       "slug": "banda-cambiaria",
       "categoria": "Banda cambiaria",
       "titulo": "El dólar mayorista corre al 64% de la banda",
-      "bajada": "Con piso en $705 y techo en $1.975, el mayorista ($1.517) se ubica en el canal.",
+      "bajada": "Con piso en $705 y techo en $1.977, el mayorista ($1.517) se ubica en el canal.",
       "dato": {
         "n": "64%",
         "txt": "posición del mayorista dentro del canal piso–techo"
       },
       "cuerpo": [
-        "Bajo el esquema de bandas del Banco Central, el piso se desliza a $705 y el techo a $1.975. El dólar mayorista ($1.517) se ubica al 63,9% del recorrido entre ambos."
+        "Bajo el esquema de bandas del Banco Central, el piso se desliza a $705 y el techo a $1.977. El dólar mayorista ($1.517) se ubica al 63,9% del recorrido entre ambos."
       ],
-      "metodo": "Posición = (Mayorista − Piso) ÷ (Techo − Piso) × 100 = (1.517 − 705) ÷ (1.975 − 705) × 100 = 63,9%.",
+      "metodo": "Posición = (Mayorista − Piso) ÷ (Techo − Piso) × 100 = (1.517 − 705) ÷ (1.977 − 705) × 100 = 63,9%.",
       "criollo": "El BCRA deja flotar el dólar dentro de un pasillo. Si se pega al techo hay más presión de suba; si se va al piso, lo contrario.",
       "fuente_nombre": "cálculo PPA (esquema BCRA)",
       "fuente_url": "https://www.bcra.gob.ar",
-      "dato_fecha": "11/10/2026 20:38",
+      "dato_fecha": "12/10/2026 15:18",
       "prioridad": 75
     }
   ]
