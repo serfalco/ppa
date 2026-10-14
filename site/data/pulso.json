@@ -1,19 +1,19 @@
 {
-  "generado_en": "2026-10-14T14:07:24.213259+00:00",
-  "generado_ar": "14/10/2026 11:07",
+  "generado_en": "2026-10-14T23:11:05.425214+00:00",
+  "generado_ar": "14/10/2026 20:11",
   "hechos": [
     {
       "slug": "brecha-dolar",
       "categoria": "Cambiario",
-      "titulo": "La brecha del dólar quedó casi planchada: 0,1%",
-      "bajada": "El MEP ($1.537) frente al oficial ($1.535). Además, el CCL marca 5,1% y el blue, 1,0%.",
+      "titulo": "La brecha del dólar quedó casi planchada: 0,3%",
+      "bajada": "El MEP ($1.540) frente al oficial ($1.535). Además, el CCL marca 5,4% y el blue, 1,0%.",
       "dato": {
-        "n": "0,1%",
+        "n": "0,3%",
         "txt": "Brecha entre el dólar MEP y el oficial"
       },
       "cuerpo": [
-        "El dólar oficial cerró a $1.535 para la venta y el MEP a $1.537, dejando una brecha de 0,1% entre ambos.",
-        "Mirando el resto de las cotizaciones, el contado con liquidación ($1.613) marca 5,1% y el blue ($1.550) queda en 1,0% de brecha contra el oficial."
+        "El dólar oficial cerró a $1.535 para la venta y el MEP a $1.540, dejando una brecha de 0,3% entre ambos.",
+        "Mirando el resto de las cotizaciones, el contado con liquidación ($1.617) marca 5,4% y el blue ($1.550) queda en 1,0% de brecha contra el oficial."
       ],
       "tabla": [
         [
@@ -22,15 +22,15 @@
         ],
         [
           "Mayorista",
-          "$1.516"
+          "$1.513"
         ],
         [
           "MEP",
-          "$1.537"
+          "$1.540"
         ],
         [
           "CCL",
-          "$1.613"
+          "$1.617"
         ],
         [
           "Blue",
@@ -41,29 +41,29 @@
           "$1.996"
         ]
       ],
-      "metodo": "Brecha = (MEP ÷ Oficial − 1) × 100 = (1.537 ÷ 1.535 − 1) × 100 = 0,1%.",
+      "metodo": "Brecha = (MEP ÷ Oficial − 1) × 100 = (1.540 ÷ 1.535 − 1) × 100 = 0,3%.",
       "criollo": "La brecha es cuánto más caro está el dólar financiero (el que se compra con bonos) que el oficial. Cuando es chica, los dos precios casi se tocan.",
       "fuente_nombre": "DolarApi · cálculo PPA",
       "fuente_url": "https://dolarapi.com",
-      "dato_fecha": "14/10/2026 11:07",
+      "dato_fecha": "14/10/2026 20:11",
       "prioridad": 90
     },
     {
       "slug": "reservas-bcra",
       "categoria": "Reservas",
-      "titulo": "Las reservas del BCRA quedaron en US$ 49.323 millones",
-      "bajada": "Stock bruto del Banco Central, una suba del 0,4% en el día.",
+      "titulo": "Las reservas del BCRA quedaron en US$ 49.709 millones",
+      "bajada": "Stock bruto del Banco Central, una suba del 0,8% en el día.",
       "dato": {
-        "n": "49.323",
-        "txt": "millones de USD · reservas brutas · +0,4%"
+        "n": "49.709",
+        "txt": "millones de USD · reservas brutas · +0,8%"
       },
       "cuerpo": [
-        "Las reservas internacionales brutas del Banco Central cerraron en US$ 49.323 millones, una suba del 0,4% en el día. Es el stock bruto, antes de descontar swaps, encajes y otras obligaciones."
+        "Las reservas internacionales brutas del Banco Central cerraron en US$ 49.709 millones, una suba del 0,8% en el día. Es el stock bruto, antes de descontar swaps, encajes y otras obligaciones."
       ],
       "criollo": "Son los dólares que tiene el Banco Central. El número bruto es el total; el neto (que descuenta deudas) suele ser bastante más bajo.",
       "fuente_nombre": "BCRA API v4",
       "fuente_url": "https://www.bcra.gob.ar",
-      "dato_fecha": "08/10/2026",
+      "dato_fecha": "09/10/2026",
       "prioridad": 88
     },
     {
@@ -86,22 +86,41 @@
       "prioridad": 85
     },
     {
+      "slug": "inflacion-ipc",
+      "categoria": "Inflación",
+      "titulo": "El IPC marcó 1,6% mensual, con el núcleo en 1,9%",
+      "bajada": "Último dato del índice de precios.",
+      "dato": {
+        "n": "1,6%",
+        "txt": "IPC mensual · núcleo 1,9%"
+      },
+      "cuerpo": [
+        "El último IPC nacional registró una variación mensual del 1,6%.",
+        "El componente núcleo — que excluye precios estacionales y regulados y suele marcar la tendencia de fondo — avanzó 1,9%, por encima del índice general."
+      ],
+      "criollo": "El IPC general mide todo. El núcleo saca lo que sube o baja por temporada o por decisión del Estado, para mostrar la inflación de fondo.",
+      "fuente_nombre": "INDEC · datos.gob.ar",
+      "fuente_url": "https://www.indec.gob.ar",
+      "dato_fecha": "01/08/2026",
+      "prioridad": 80
+    },
+    {
       "slug": "banda-cambiaria",
       "categoria": "Banda cambiaria",
-      "titulo": "El dólar mayorista corre al 64% de la banda",
-      "bajada": "Con piso en $703 y techo en $1.980, el mayorista ($1.516) se ubica en el canal.",
+      "titulo": "El dólar mayorista corre al 63% de la banda",
+      "bajada": "Con piso en $703 y techo en $1.980, el mayorista ($1.513) se ubica en el canal.",
       "dato": {
-        "n": "64%",
+        "n": "63%",
         "txt": "posición del mayorista dentro del canal piso–techo"
       },
       "cuerpo": [
-        "Bajo el esquema de bandas del Banco Central, el piso se desliza a $703 y el techo a $1.980. El dólar mayorista ($1.516) se ubica al 63,6% del recorrido entre ambos."
+        "Bajo el esquema de bandas del Banco Central, el piso se desliza a $703 y el techo a $1.980. El dólar mayorista ($1.513) se ubica al 63,4% del recorrido entre ambos."
       ],
-      "metodo": "Posición = (Mayorista − Piso) ÷ (Techo − Piso) × 100 = (1.516 − 703) ÷ (1.980 − 703) × 100 = 63,6%.",
+      "metodo": "Posición = (Mayorista − Piso) ÷ (Techo − Piso) × 100 = (1.513 − 703) ÷ (1.980 − 703) × 100 = 63,4%.",
       "criollo": "El BCRA deja flotar el dólar dentro de un pasillo. Si se pega al techo hay más presión de suba; si se va al piso, lo contrario.",
       "fuente_nombre": "cálculo PPA (esquema BCRA)",
       "fuente_url": "https://www.bcra.gob.ar",
-      "dato_fecha": "14/10/2026 11:07",
+      "dato_fecha": "14/10/2026 20:11",
       "prioridad": 75
     }
   ]
